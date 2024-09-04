@@ -8,7 +8,7 @@ Go to the following site where you will have access to the following Grafana Clo
 1. K8s
 
 You will have 20 minutes to work through the questions, after which we will regroup to work through everything together. 
-Answers are in the ./breakout_1_answers folder, however we encourage you to try to work through the questions on your own first!
+Answers are in the [breakout_1_answers](./breakout_1_answers) folder, however we encourage you to try to work through the questions on your own first!
 
 ### Questions
 Frontend O11y
