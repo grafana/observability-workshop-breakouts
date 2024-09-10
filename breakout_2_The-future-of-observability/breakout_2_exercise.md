@@ -16,5 +16,6 @@ Asserts
 1. Which namespace is everything deployed in?
 1. What looks to be the first event that caused the issue? 
 1. Which service started having errors first? 
-1. What is the maximum limit of postgres connections in the productcatalog postgres database?
+1. Which version of Redis is deployed?
+1. Is the product catalog service OOMing? How can you confirm if it is or isn't?
 1. Why is the recommendation service impacted by this issue?
