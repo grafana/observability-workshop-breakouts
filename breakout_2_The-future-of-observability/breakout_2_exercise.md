@@ -19,3 +19,5 @@ Asserts
 1. Which version of Redis is deployed?
 1. Is the product catalog service OOMing? How can you confirm if it is or isn't?
 1. Why is the recommendation service impacted by this issue?
+
+Great! You have finished these questions - to really understand why Asserts is awesome, try and solve these same questions without using it. Let us know how you get on :) 
