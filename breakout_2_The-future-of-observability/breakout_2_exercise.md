@@ -17,7 +17,12 @@ Asserts
 1. What looks to be the first event that caused the issue? 
 1. Which service started having errors first? 
 1. Which version of Redis is deployed?
-1. Is the product catalog service OOMing? How can you confirm if it is or isn't?
 1. Why is the recommendation service impacted by this issue?
 
 Great! You have finished these questions - to really understand why Asserts is awesome, try and solve these same questions without using it as you did with the apps in breakout 1. Let us know how you get on :) 
+
+Some interesting ones to try:
+1. How much memory is assigned to the product catalog service?
+1. What error rate percentage has the productcatalog service reached over the last 24 hours?
+1. What error message is the productcatalog service throwing when it errors in the last 24 hours?
+1. Which endpoint or endpoints are erroring within the productcatalog service over the last 24 hours?
