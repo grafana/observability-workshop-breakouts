@@ -1,15 +1,15 @@
 ## Part Two - The Future of Observability
-For this exercise you will work through troubleshooting scenarios using Grafana Cloud Asserts!
+For this exercise you will work through troubleshooting scenarios using Grafana Cloud Asserts! The idea here is to show you some things you can't do with the other tools you looked at in the first hands on lab, but also to show you how you can do some of those activities even easier with Asserts.
 
 ### Instructions
-Go to the URL in the slides where you will have access to the Grafana Cloud with Asserts:
+Go to the URL in the slides where you will have access to the Grafana Cloud with Asserts.
 
 You will have 20 minutes to work through the questions, after which we will regroup to work through everything together.
  
 Answers are in the [breakout_2_answers](./breakout_2_answers) folder, however we encourage you to try to work through the questions on your own first!
 
 ### Questions
-Asserts
+Section 1:
 1. Which service looks to be in the worst state? Why?
 1. How many problematic services are there connected to the productcatalog service?
 1. How many pods does the cart service have?
@@ -19,7 +19,10 @@ Asserts
 1. Which version of Redis is deployed?
 1. Why is the recommendation service impacted by this issue?
 
-Great! You have finished these questions - to really understand why Asserts is awesome, try and solve these same questions without using it as you did with the apps in breakout 1. Let us know how you get on :) 
+Great! 
+
+Section 2:
+To really understand why Asserts is awesome, try and solve these same questions without using it as you did with the apps in breakout 1. Let us know how you get on :) 
 
 Some interesting ones to try:
 1. How much memory is assigned to the product catalog service?

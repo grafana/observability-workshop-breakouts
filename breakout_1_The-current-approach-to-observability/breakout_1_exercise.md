@@ -1,14 +1,15 @@
 ## Part 1 - Current Approach to Observability
-For this exercise you will work through troubleshooting scenarios using various Grafana Cloud Observabilitty Applications that we have discussed.
+For this exercise you will work through troubleshooting scenarios using various Grafana Cloud Observabilitty Applications that we have discussed so that you can get a good understanding of how to use these tools.
 
 ### Instructions
-Go to the following site where you will have access to the following Grafana Cloud Applications:
+Go to the URL in the slides where you will have access to the Grafana Cloud with:
 1. Frontend O11y
 1. App O11y
 1. K8s Monitoring
 
 You will have 20 minutes to work through the questions, after which we will regroup to work through everything together for the final 10 minutes.
-Answers are in the [breakout_1_answers](./breakout_1_answers) folder, however we encourage you to try to work through the questions on your own first!
+
+Answers and guidance on how to get to the answer are in the [breakout_1_answers](./breakout_1_answers) folder, however we encourage you to try to work through the questions on your own first!
 
 ### Questions
 Frontend O11y
