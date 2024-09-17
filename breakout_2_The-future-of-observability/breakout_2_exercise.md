@@ -22,7 +22,7 @@ Section 1:
 Great! 
 
 Section 2:
-To really understand why Asserts is awesome, try and solve these same questions without using it as you did with the apps in breakout 1. Let us know how you get on :) 
+To really understand why Asserts is awesome, try and solve these same questions without using it as you did with the apps in breakout 1. Let us know how you do :) 
 
 Some interesting ones to try:
 1. How much memory is assigned to the product catalog service?
