@@ -9,6 +9,8 @@ You will have 20 minutes to work through the questions, after which we will regr
 Answers are in the [breakout_2_answers](./breakout_2_answers) folder, however we encourage you to try to work through the questions on your own first!
 
 ### Questions
+[Asserts Environment](https://efad77.grafana.net/a/grafana-asserts-app/entities?start=now-24h&end=now&definitionId=15&boundDescription=Show%20all%20Services&bindings%5BentityType%5D=Service&bindings%5BboundTag%5D=Show%20all%20Services&bindings%5Bupdated%5D=1727106940921&view=graph)
+
 Section 1:
 1. Which service looks to be in the worst state? Why?
 1. How many problematic services are there connected to the productcatalog service?
