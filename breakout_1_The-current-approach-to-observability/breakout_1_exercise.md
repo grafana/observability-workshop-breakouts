@@ -2,10 +2,10 @@
 For this exercise you will work through troubleshooting scenarios using various Grafana Cloud Observabilitty Applications that we have discussed so that you can get a good understanding of how to use these tools.
 
 ### Instructions
-Go to the URL in the slides where you will have access to the Grafana Cloud with:
-1. Frontend O11y
-1. App O11y
-1. K8s Monitoring
+Go to this URL https://tinyurl.com/workshop-grafana-1 where you will have access to the Grafana Cloud with:
+1. [Frontend O11y](https://cfdb56.grafana.net/a/grafana-kowalski-app/apps/479/overview?var-show_lab_data=false&from=now-1h&to=now)
+1. [App O11y](https://cfdb56.grafana.net/a/grafana-app-observability-app/services?var-prometheus=grafanacloud-prom&var-loki=grafanacloud-logs&var-tempo=grafanacloud-traces&var-environmentValue=$__all&var-filterBy=serviceNamespace%7C%3D%7Cditl-demo-prod&from=now-1h&to=now&instrumentedFilter=all&sortFilterId=serviceName)
+1. [K8s Monitoring](https://cfdb56.grafana.net/a/grafana-k8s-app/home?from=now-1h&to=now&refresh=1m&var-cluster=%24__all&var-datasource=grafanacloud-cfdb56-prom&var-loki=grafanacloud-cfdb56-logs&var-namespace=%24__all)
 
 You will have 20 minutes to work through the questions, after which we will regroup to work through everything together for the final 10 minutes.
 
@@ -14,7 +14,7 @@ Answers and guidance on how to get to the answer are in the [breakout_1_answers]
 ### Questions
 [Frontend O11y](https://cfdb56.grafana.net/a/grafana-kowalski-app/apps/479/overview?var-show_lab_data=false&from=now-1h&to=now)
 1. How many page loads have there been in the last 1 hour?
-1. What is the value of the first contentful paint core web vital over the past 1 hour? 
+1. What is the value of the largest contentful paint core web vital over the past 1 hour? 
 1. In the last 1 hour which pages have errors?
 1. [Optional] What are an three example of some of the errors over the last 1 hour?
 
