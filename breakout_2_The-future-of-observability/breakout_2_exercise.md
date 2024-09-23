@@ -2,7 +2,7 @@
 For this exercise you will work through troubleshooting scenarios using Grafana Cloud Asserts! The idea here is to show you some things you can't do with the other tools you looked at in the first hands on lab, but also to show you how you can do some of those activities even easier with Asserts.
 
 ### Instructions
-Go to this URL https://tinyurl.com/workshop-grafana-2 where you will have access to the Grafana Cloud with Asserts.
+Go to the URL in the slides where you will have access to the Grafana Cloud Stack with Asserts.
 
 You will have 20 minutes to work through the questions, after which we will regroup to work through everything together.
  
