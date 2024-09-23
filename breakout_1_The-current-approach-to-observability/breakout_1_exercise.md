@@ -14,7 +14,7 @@ Answers and guidance on how to get to the answer are in the [breakout_1_answers]
 ### Questions
 [Frontend O11y](https://cfdb56.grafana.net/a/grafana-kowalski-app/apps/479/overview?var-show_lab_data=false&from=now-1h&to=now)
 1. How many page loads have there been in the last 1 hour?
-1. What is the value of the first contentful pain core web vital over the past 1 hour? 
+1. What is the value of the first contentful paint core web vital over the past 1 hour? 
 1. In the last 1 hour which pages have errors?
 1. [Optional] What are an three example of some of the errors over the last 1 hour?
 
