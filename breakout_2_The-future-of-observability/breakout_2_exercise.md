@@ -12,7 +12,7 @@ Answers are in the [breakout_2_answers](./breakout_2_answers) folder, however we
 
 Section 1:
 1. Which service looks to be in the worst state? Why?
-1. How many problematic services are there connected to the productcatalog service?
+1. How many application services are connected to the productcatalog service?
 1. How many pods does the cart service have?
 1. Which namespace is everything deployed in?
 1. What looks to be the first event that caused the issue? 
