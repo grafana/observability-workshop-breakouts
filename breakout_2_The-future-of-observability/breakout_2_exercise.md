@@ -18,7 +18,6 @@ Section 1:
 1. What looks to be the first event that caused the issue? 
 1. Which service started having errors first? 
 1. Which version of Redis is deployed?
-1. Why is the recommendation service impacted by this issue?
 
 Great! 
 
