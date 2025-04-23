@@ -11,12 +11,12 @@ Answers are in the [breakout_2_answers](./breakout_2_answers) folder, however we
 ### Questions
 
 Section 1:
-1. Which service looks to be in the worst state? Why?
-1. How many application services are connected to the productcatalog service?
+1. Over the last 24 hours which service looks to be in the worst state? Why?
+1. How many application services are connected to the productcatalog service within the last 24 hours?
 1. How many pods does the cart service have?
 1. Which namespace is everything deployed in?
-1. What looks to be the first event that caused the issue? 
-1. Which service started having errors first? 
+1. What looks to be the first event that caused the issue within the last 24 hours? 
+1. Which service started having errors first in the context of the last 24 hours? 
 1. Which version of Redis is deployed?
 
 Great! 
