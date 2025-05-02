@@ -16,7 +16,7 @@ Frontend O11y
 1. How many page loads have there been in the last 1 hour?
 1. What is the value of the largest contentful paint core web vital over the past 1 hour? 
 1. In the last 1 hour which pages have errors?
-1. [Optional] What are an three example of some of the errors over the last 1 hour?
+1. [Optional] What are three example of some of the errors over the last 1 hour?
 
 App O11y
 1. What languages are used for this demo app? 
