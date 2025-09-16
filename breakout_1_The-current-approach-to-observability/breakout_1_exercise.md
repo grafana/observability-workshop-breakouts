@@ -12,13 +12,14 @@ You will have 20 minutes to work through the questions, after which we will regr
 Answers and guidance on how to get to the answer are in the [breakout_1_answers](./breakout_1_answers) folder, however we encourage you to try to work through the questions on your own first!
 
 ### Questions
-Frontend O11y
+**Frontend O11y**
+- Investigate the `ditl-demo-frontend-client` frontend app
 1. How many page loads have there been in the last 1 hour?
 1. What is the value of the largest contentful paint core web vital over the past 1 hour? 
 1. In the last 1 hour which pages have errors?
 1. [Optional] What are three example of some of the errors over the last 1 hour?
 
-App O11y
+**App O11y**
 1. What languages are used for this demo app? 
 1. What error rate percentage has the productcatalog service reached over the last 1 hour?
 1. What error message is the productcatalog service throwing when it errors?
@@ -26,7 +27,7 @@ App O11y
 1. What services interact with the recommendation service?
 1. [Optional] What's the pod name running the product catalog service?
 
-K8s
+**K8s**
 1. How many restarts has the productcatalog service had? 
 1. What image name and version is being used for the productcatalog service?
 1. How much memory is assigned to the product catalog service?
