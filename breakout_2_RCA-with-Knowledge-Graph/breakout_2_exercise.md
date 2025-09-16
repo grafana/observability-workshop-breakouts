@@ -1,8 +1,8 @@
 ## Part Two - The Future of Observability
-For this exercise you will work through troubleshooting scenarios using Grafana Cloud Asserts! The idea here is to show you some things you can't do with the other tools you looked at in the first hands on lab, but also to show you how you can do some of those activities even easier with Asserts.
+For this exercise you will work through troubleshooting scenarios using Grafana Cloud Knowledge Graph - specifically Entity Explorer and RCA Workbench! The idea here is to show you some things you can't do with the other tools you looked at in the first hands on lab, but also to show you how you can do some of those activities even easier with Knowledge Graph.
 
 ### Instructions
-Go to the URL in the slides where you will have access to the Grafana Cloud Stack with Asserts.
+Go to the URL in the slides where you will have access to the Grafana Cloud Stack with Knowledge Graph.
 
 You will have 20 minutes to work through the questions, after which we will regroup to work through everything together.
  
@@ -22,7 +22,7 @@ Section 1:
 Great! 
 
 Section 2:
-To really understand why Asserts is awesome, try and solve these same questions without using it as you did with the apps in breakout 1. Let us know how you do :) 
+To really understand why Knowledge Graph is awesome, try and solve these same questions without using it as you did with the apps in breakout 1. Let us know how you do :) 
 
 Some interesting ones to try:
 1. How much memory is assigned to the product catalog service workload?
