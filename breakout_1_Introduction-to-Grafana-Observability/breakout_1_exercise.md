@@ -1,4 +1,4 @@
-## Part 1 - Current Approach to Observability
+## Part 1 - Introduction to Observability
 For this exercise you will work through troubleshooting scenarios using various Grafana Cloud Observabilitty Applications that we have discussed so that you can get a good understanding of how to use these tools.
 
 ### Instructions

@@ -1,4 +1,4 @@
-## Part Two - The Future of Observability
+## Part Two - Root Cause Analysis with Knowledge Graph
 For this exercise you will work through troubleshooting scenarios using Grafana Cloud Knowledge Graph - specifically Entity Explorer and RCA Workbench! The idea here is to show you some things you can't do with the other tools you looked at in the first hands on lab, but also to show you how you can do some of those activities even easier with Knowledge Graph.
 
 ### Instructions
