@@ -11,7 +11,7 @@ Go to the URL in the slides where you will have access to the Grafana Cloud Stac
 Navigate to the indicated app in each section, then click on the Grafana Assistant button in the upper right hand corner to get started.
 ![grafana-assistant](/images/breakout_3/0.1-grafana-assistant.png)
 
-You will have 20 minutes to work through the questions, after which we will regroup to work through everything together for the final 10 minutes.
+You will have 10 minutes to work through the questions, after which we will regroup to work through everything together for the final 10 minutes.
 
 Answers and guidance on how to get to the answer are in the [breakout_3_answers](./breakout_3_answers) folder, however we encourage you to try to work through the questions on your own first!
 
