@@ -1,5 +1,5 @@
-## Part 3 - Root Cause Analysis with AI
-#### How to find the same root cause with your friendly neighbourhood Grafana Assistant
+## Part 3 - Observability with AI
+#### How to find the same root cause with your friendly neighborhood Grafana Assistant
 For this exercise you will work through troubleshooting scenarios from the previous sections, however this time using AI tools, specifically [Grafana Assistant](https://grafana.com/docs/grafana-cloud/machine-learning/assistant/), to find the solution.
 
 ### Instructions
