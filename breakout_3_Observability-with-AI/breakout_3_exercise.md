@@ -8,7 +8,7 @@ Go to the URL in the slides where you will have access to the Grafana Cloud Stac
 1. App O11y
 1. K8s Monitoring
 
-Navigate to the indicated app in each section, then click on the Grafana Assistant button in the upper right hand corner to get started.
+Navigate to the indicated app in each section, then click on the Grafana Assistant button in the upper right hand corner to get started. The same prompt window can and should be used for a section for context and question continuity.
 ![grafana-assistant](/images/breakout_3/0.1-grafana-assistant.png)
 
 You will have 10 minutes to work through the questions, after which we will regroup to work through everything together for the final 10 minutes.
