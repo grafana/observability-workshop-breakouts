@@ -12,14 +12,18 @@ You will have 20 minutes to work through the questions, after which we will regr
 Answers and guidance on how to get to the answer are in the [breakout_1_answers](./breakout_1_answers) folder, however we encourage you to try to work through the questions on your own first!
 
 ### Questions
-**Frontend O11y**
-- Investigate the `ditl-demo-frontend-client` frontend app
+#### Frontend O11y
+- Navigate to the Frontend O11y App in Grafana
+- Click into the `ditl-demo-frontend-client` frontend app
+![frontend-o11y](/images/breakout_1/0.1-frontend-instructions.png)
 1. How many page loads have there been in the last 1 hour?
 1. What is the value of the largest contentful paint core web vital over the past 1 hour? 
 1. In the last 1 hour which pages have errors?
 1. [Optional] What are three example of some of the errors over the last 1 hour?
 
-**App O11y**
+#### App O11y
+- Navigate to the Application O11y App in Grafana
+![app-o11y](/images/breakout_1/0.2-app-instructions.png)
 1. What languages are used for this demo app? 
 1. What error rate percentage has the productcatalog service reached over the last 1 hour?
 1. What error message is the productcatalog service throwing when it errors?
@@ -27,7 +31,9 @@ Answers and guidance on how to get to the answer are in the [breakout_1_answers]
 1. What services interact with the recommendation service?
 1. [Optional] What's the pod name running the product catalog service?
 
-**K8s**
+#### K8s
+- Navigate to the Kubernetes Monitoring App in Grafana
+![k8s-monitoring](/images/breakout_1/0.3-k8s-instructions.png)
 1. How many restarts has the productcatalog service had? 
 1. What image name and version is being used for the productcatalog service?
 1. How much memory is assigned to the product catalog service?
