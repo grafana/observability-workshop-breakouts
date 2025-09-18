@@ -3,7 +3,7 @@
 For this exercise you will work through troubleshooting scenarios from the previous sections, however this time using AI tools, specifically [Grafana Assistant](https://grafana.com/docs/grafana-cloud/machine-learning/assistant/), to find the solution.
 
 ### Instructions
-Go to the URL in the slides where you will have access to the Grafana Cloud Stack with:
+You will use the __same environment as part 1__ for this exercise. Go to the URL in the slides that references to the part 1 environment where you will have access to the Grafana Cloud Stack with:
 1. Frontend O11y
 1. App O11y
 1. K8s Monitoring
