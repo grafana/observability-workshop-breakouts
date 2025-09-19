@@ -22,10 +22,14 @@ ___NOTE___: Due to the variable nature of an LLM assistant, the results will not
 - Navigate to the Frontend O11y App in Grafana
 - Click into the `ditl-demo-frontend-client` frontend app
 ![frontend-app](/images/breakout_1/0.1-frontend-instructions.png)
+- Please note that engineering is currently working on a specialist tool for frontend o11y integrating with Grafana Assistant, so results may vary! 
+
 1. How many page loads have there been in the last few hours in my web app?
-1. What's the LCP over the past few hours? Any bad pages?
 1. Any pages have any errors?
-1. What's the most common error? 
+- ___Extra Credit___
+
+    1. What's the LCP over the past few hours? Any bad pages?
+    1. What's the most common error? 
 
 **Query K8s Monitoring Data**
 - Navigate to the Kubernetes Monitoring App in Grafana
@@ -40,11 +44,9 @@ ___NOTE___: Due to the variable nature of an LLM assistant, the results will not
     6. What is the energy my k8s cluster uses?
 
 **Query Span Metrics**
-1. What languages are used for my app deployed in that namespace?
-2. Are my services healthy?
-3. What's going on with the productcatalog service?
-
+1. Are my services healthy?
+2. What interacts with the productcatalog service? Any downstream issues?
 - ___Extra Credit___ 
 
-    4. What interacts with the productcatalog service? Any downstream issues?
-    5. What version of postgres is deployed in my app?
+    3. What version of postgres is deployed in my app?
+    4. What's going on with the productcatalog service?
