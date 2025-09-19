@@ -31,9 +31,9 @@ ___NOTE___: Due to the variable nature of an LLM assistant, the results will not
 - Navigate to the Kubernetes Monitoring App in Grafana
 ![k8s-monitoring](/images/breakout_1/0.3-k8s-instructions.png)
 1. What's the health of my containers?
-1. What image and version is being used for the product catalog service?
-1. How much memory is assigned to the product catalog service?
-1. Is the product catalog service right sized? 
+1. What image and version is being used for the productcatalog service?
+1. How much memory is assigned to the productcatalog service?
+1. Is the productcatalog service right sized? 
 1. What resources does my k8s cluster have?
 1. What is the energy my k8s cluster uses?
 1. What's the cost of my k8s clusters?
@@ -44,7 +44,7 @@ ___NOTE___: Due to the variable nature of an LLM assistant, the results will not
 1. Are my services healthy?
 1. What's going on with the productcatalog service?
 
-**General**
-1. What interacts with the product catalog service? Any downstream issues?
-1. My productcatalogservice is angry, what's going on? 
-1. What version of postgres is deployed in my app?
+- ___Extra Credit___
+    1. What interacts with the productcatalog service? Any downstream issues?
+    1. My productcatalogservice is angry, what's going on? 
+    1. What version of postgres is deployed in my app?
