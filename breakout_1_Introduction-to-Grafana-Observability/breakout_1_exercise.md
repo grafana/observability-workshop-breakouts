@@ -41,4 +41,3 @@ Answers and guidance on how to get to the answer are in the [breakout_1_answers]
 1. What's the recommendation for memory of the product catalog service?
 1. [Optional] How much memory and CPU are allocated in the k8s cluster? 
 1. [Optional] What's the total energy usage of the k8s cluster?
-1. [Optional] What's the cost of the k8s cluster per month?
