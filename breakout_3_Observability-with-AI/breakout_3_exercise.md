@@ -30,21 +30,22 @@ ___NOTE___: Due to the variable nature of an LLM assistant, the results will not
 **Query K8s Monitoring Data**
 - Navigate to the Kubernetes Monitoring App in Grafana
 ![k8s-monitoring](/images/breakout_1/0.3-k8s-instructions.png)
-1. What's the health of my containers?
-1. What image and version is being used for the productcatalog service?
-1. How much memory is assigned to the productcatalog service?
-1. Is the productcatalog service right sized? 
-1. What resources does my k8s cluster have?
-1. What is the energy my k8s cluster uses?
-1. What's the cost of my k8s clusters?
-1. What namespace is my app deployed in?
+1. 1.1 What's the health of my containers?
+2. What image and version is being used for the productcatalog service?
+3. Is the productcatalog service right sized? 
+- ___Extra Credit___
+   
+    4. 1.8 What namespace is my app deployed in?
+    5. 1.3 How much memory is assigned to the productcatalog service?
+    6. 1.5 What resources does my k8s cluster have?
+    7. What is the energy my k8s cluster uses?
 
 **Query Span Metrics**
 1. What languages are used for my app deployed in that namespace?
-1. Are my services healthy?
-1. What's going on with the productcatalog service?
+2. Are my services healthy?
+3. What's going on with the productcatalog service?
 
-- ___Extra Credit___
-    1. What interacts with the productcatalog service? Any downstream issues?
-    1. My productcatalogservice is angry, what's going on? 
-    1. What version of postgres is deployed in my app?
+- ___Extra Credit___ 
+
+    4. What interacts with the productcatalog service? Any downstream issues?
+    5. What version of postgres is deployed in my app?
