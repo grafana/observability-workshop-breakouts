@@ -11,7 +11,7 @@ You will use the __same environment as part 1__ for this exercise. Go to the URL
 Navigate to the indicated app in each section, then click on the Grafana Assistant button in the upper right hand corner to get started. The same prompt window can and should be used for a section for context and question continuity.
 ![grafana-assistant](/images/breakout_3/0.1-grafana-assistant.png)
 
-You will have 10 minutes to work through the questions, after which we will regroup to work through everything together for the final 10 minutes.
+You will have 20 minutes to work through the questions, after which we will regroup to work through everything together for the final 10 minutes. Please prioritize the core questions, and if time work through the extra credit.
 
 Answers and guidance on how to get to the answer are in the [breakout_3_answers](./breakout_3_answers) folder, however we encourage you to try to work through the questions on your own first!
 
