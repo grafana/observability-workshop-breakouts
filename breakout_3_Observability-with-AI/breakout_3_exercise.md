@@ -46,7 +46,7 @@ Please note that engineering is currently working on a specialist tool for front
 1. Do any of those pages have errors?
 - ___Extra Credit___
     1. Ask another Frontend O11y question but this time give `@` context so it looks at the logs datasource. The data source will be grafanacloud-*****-logs
-    1. Ask another Frontend O11y question but this time give `@` context to select the log label app_id (there is only one) which is used by frontend o11y to specify which frontend o11y app
+    1. Ask another Frontend O11y question but this time give `@` context to select the log label app_id (there is only one) which is used by frontend o11y to specify which frontend o11y app. The data source will be grafanacloud-*****-logs
 
 **Query K8s Monitoring Data**
 
