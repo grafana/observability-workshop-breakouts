@@ -8,32 +8,49 @@ You will use the __same environment as part 1__ for this exercise. Go to the URL
 1. App O11y
 1. K8s Monitoring
 
-Navigate to the indicated app in each section, then click on the Grafana Assistant button in the upper right hand corner to get started. The same prompt window can and should be used for a section for context and question continuity.
+Click on the Grafana Assistant button in the upper right hand corner to get started. Use the same prompt window for each section below for context and question continuity. We recommend starting a new prompt window when you change between each section though so you can see how Assistant proceses your requests. In the real world, you'd keep the same prompt for a line of questioning / investigation though.
 ![grafana-assistant](/images/breakout_3/0.1-grafana-assistant.png)
 
 You will have 20 minutes to work through the questions, after which we will regroup to work through everything together for the final 10 minutes. Please prioritize the core questions, and if time work through the extra credit.
 
 Answers and guidance on how to get to the answer are in the [breakout_3_answers](./breakout_3_answers) folder, however we encourage you to try to work through the questions on your own first!
 
-___NOTE___: Due to the variable nature of an LLM assistant, the results will not always look the same between users or match what we found in previous exercises. 
+___NOTE___: Due to the variable nature of an LLM assistant, the results will not always look the same between users or match what we found in previous exercises. If Assistant doesn't do want you want it to do, prompt it some more to nudge it in the right direction.
 
-### Questions
+### Things to look out for
+
+When you see: **Tool usage in Assistant**
+
+* LLMs can hallucinate, so we show all the working  
+* Click to expand \- you can see what Assistant is thinking so you can trust its conclusions
+
+When you see: **An error in the Assistant**
+
+* Assistant makes mistakes like humans. We give that error back to the LLM so it can reconsider and iterate.  
+* If Grafana Assistant truly can’t come to a conclusion, it’ll usually tell you that (but only after trying for a long time).
+
+When you see: **A graph or logs visualisation**
+
+* Assistant uses Grafana’s visualisation library to \_show\_ you things, rather than just telling you.  
+* This builds trust and breaks up the wall-of-text that LLMs are famous for
+
+When you see: **Suggested next step buttons**
+
+* Most of the time, Assistant will suggest follow-up questions or actions, or you can just prompt again.
+
+## Questions
 **Query Frontend O11y Data**
-- Navigate to the Frontend O11y App in Grafana
-- Click into the `ditl-demo-frontend-client` frontend app
-![frontend-app](/images/breakout_1/0.1-frontend-instructions.png)
-- Please note that engineering is currently working on a specialist tool for frontend o11y integrating with Grafana Assistant, so results may vary! 
 
-1. How many page loads have there been in the last few hours in my web app?
-1. Any pages have any errors?
+Please note that engineering is currently working on a specialist tool for frontend o11y integrating with Grafana Assistant, so results may vary! 
+1. Looking at my frontend app ditl-demo-frontend-client, how many page loads have there been in the last few hours?
+1. Do any of those pages have errors?
 - ___Extra Credit___
-
     1. What's the LCP over the past few hours? Any bad pages?
     1. What's the most common error? 
 
 **Query K8s Monitoring Data**
-- Navigate to the Kubernetes Monitoring App in Grafana
-![k8s-monitoring](/images/breakout_1/0.3-k8s-instructions.png)
+
+Open a new conversation with Assistant
 1. What's the health of my containers?
 2. What image and version is being used for the productcatalog service?
 3. Is the productcatalog service right sized? 
@@ -44,6 +61,8 @@ ___NOTE___: Due to the variable nature of an LLM assistant, the results will not
     6. What is the energy my k8s cluster uses?
 
 **Query Span Metrics**
+
+Open a new conversation with Assistant
 1. Are my services healthy?
 2. What interacts with the productcatalog service? Any downstream issues?
 - ___Extra Credit___ 
