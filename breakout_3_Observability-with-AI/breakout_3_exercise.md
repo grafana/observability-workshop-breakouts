@@ -42,7 +42,7 @@ When you see: **Suggested next step buttons**
 **Query Frontend O11y Data**
 
 Please note that engineering is currently working on a specialist tool for frontend o11y integrating with Grafana Assistant, so results may vary! 
-1. Looking at my frontend app ditl-demo-frontend-client, how many page loads have there been in the last few hours?
+1. Looking at my frontend app ditl-demo-frontend-client, how many page loads have there been in the last 3 hours?
 1. Do any of those pages have errors?
 - ___Extra Credit___
     1. What's the LCP over the past few hours? Any bad pages?
