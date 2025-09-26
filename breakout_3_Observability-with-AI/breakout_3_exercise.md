@@ -45,8 +45,8 @@ Please note that engineering is currently working on a specialist tool for front
 1. Looking at my frontend app ditl-demo-frontend-client, how many page loads have there been in the last 3 hours?
 1. Do any of those pages have errors?
 - ___Extra Credit___
-    1. What's the LCP over the past few hours? Any bad pages?
-    1. What's the most common error? 
+    1. Ask another Frontend O11y question but this time give `@` context so it looks at the logs datasource. The data source will be grafanacloud-*****-logs
+    1. Ask another Frontend O11y question but this time give `@` context to select the log label app_id (there is only one) which is used by frontend o11y to specify which frontend o11y app
 
 **Query K8s Monitoring Data**
 
@@ -58,7 +58,7 @@ Open a new conversation with Assistant
    
     4. What namespace is my app deployed in?
     5. What resources does my k8s cluster have?
-    6. What is the energy my k8s cluster uses?
+    6. Try and create a rule (just for you) which indicates that you are only interested in applications and infrastructure in the ditl-demo-prod namespace
 
 **Query Span Metrics**
 
