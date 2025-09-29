@@ -15,7 +15,7 @@ You will have 20 minutes to work through the questions, after which we will regr
 
 Answers and guidance on how to get to the answer are in the [breakout_3_answers](./breakout_3_answers) folder, however we encourage you to try to work through the questions on your own first!
 
-___NOTE___: Due to the variable nature of an LLM assistant, the results will not always look the same between users or match what we found in previous exercises. If Assistant doesn't do want you want it to do, prompt it some more to nudge it in the right direction.
+___NOTE___: Due to the variable nature of an LLM assistant, the results will not always look the same between users or match what we found in previous exercises. If Assistant doesn't do what you want it to do, prompt it some more to nudge it in the right direction.
 
 ### Things to look out for
 
