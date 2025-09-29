@@ -43,10 +43,11 @@ When you see: **Suggested next step buttons**
 
 Please note that engineering is currently working on a specialist tool for frontend o11y integrating with Grafana Assistant, so results may vary! 
 1. Looking at my frontend app ditl-demo-frontend-client, how many page loads have there been in the last 3 hours?
-1. Do any of those pages have errors?
+2. Do any of those pages have errors?
 - ___Extra Credit___
-    1. Ask another Frontend O11y question but this time give `@` context so it looks at the logs datasource. The data source will be grafanacloud-*****-logs
-    1. Ask another Frontend O11y question but this time give `@` context to select the log label app_id (there is only one) which is used by frontend o11y to specify which frontend o11y app. The data source will be grafanacloud-*****-logs
+
+    3. Ask another Frontend O11y question but this time give `@` context so it looks at the logs datasource. The data source will be grafanacloud-*****-logs
+    4. Ask another Frontend O11y question but this time give `@` context to select the log label app_id (there is only one) which is used by frontend o11y to specify which frontend o11y app. The data source will be grafanacloud-*****-logs
 
 **Query K8s Monitoring Data**
 
