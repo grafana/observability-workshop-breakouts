@@ -41,8 +41,7 @@ When you see: **Suggested next step buttons**
 ## Questions
 **Query Frontend O11y Data**
 
-Please note that engineering is currently working on a specialist tool for frontend o11y integrating with Grafana Assistant, so results may vary! 
-1. Looking at my frontend app ditl-demo-frontend-client, how many page loads have there been in the last 3 hours?
+1. Looking at my frontend app ecommerce, how many page loads have there been in the last 3 hours?
 2. Do any of those pages have errors?
 - ___Extra Credit___
 
@@ -59,7 +58,7 @@ Open a new conversation with Assistant
    
     4. What namespace is my app deployed in?
     5. What resources does my k8s cluster have?
-    6. Try and create a rule (just for you) which indicates that you are only interested in applications and infrastructure in the ditl-demo-prod namespace
+    6. Try and create a rule (just for you) which indicates that you are only interested in applications and infrastructure in the ecommerce namespace
 
 **Query Span Metrics**
 

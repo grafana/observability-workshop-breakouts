@@ -14,7 +14,7 @@ Answers and guidance on how to get to the answer are in the [breakout_1_answers]
 ### Questions
 #### Frontend O11y
 - Navigate to the Frontend O11y App in Grafana
-- Click into the `ditl-demo-frontend-client` frontend app
+- Click into the `ecommerce` frontend app
 ![frontend-o11y](/images/breakout_1/0.1-frontend-instructions.png)
 1. How many page loads have there been in the last 1 hour?
 1. What is the value of the largest contentful paint core web vital over the past 1 hour? 
