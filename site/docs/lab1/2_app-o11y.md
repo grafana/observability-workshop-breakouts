@@ -3,6 +3,7 @@ sidebar_position: 2
 ---
 
 import TryIt from '@site/src/components/TryIt';
+import Badge from '@site/src/components/Badge';
 
 # 1.2. Application Observability
 
@@ -16,7 +17,9 @@ Navigate to the **Application Observability** app in Grafana.
 
 ---
 
-## Question 1: What languages are used for this demo app?
+## Question 1: Service languages
+
+**What languages are used for this demo app?**
 
 Before troubleshooting, it's useful to know what we're looking at. The **Service Inventory** lists every OpenTelemetry-instrumented service in the app and auto-detects the runtime language. One glance and you know how heterogeneous your stack is.
 
@@ -50,7 +53,9 @@ Quite a few:
 
 ---
 
-## Question 2: What error rate percentage has the `productcatalogservice` reached over the last 1 hour?
+## Question 2: Error rate
+
+**What error rate percentage has the `productcatalogservice` reached over the last 1 hour?**
 
 Now we hunt. The Frontend O11y errors mentioned `/api/products` - which strongly implies `productcatalogservice`. Click into that service and you'll see request rate, error rate, and latency right at the top: the three signals you check first when something looks off.
 
@@ -74,7 +79,9 @@ It can range between **20% and 100%**.
 
 ---
 
-## Question 3: What error message is the `productcatalogservice` throwing when it errors?
+## Question 3: Error message
+
+**What error message is the `productcatalogservice` throwing when it errors?**
 
 20-100% error rate is *very* bad. Now we need the actual exception. There are two routes - through the trace waterfall (drilling into a single failing request) or through the service's logs - and they should converge on the same root cause from different angles.
 
@@ -128,7 +135,9 @@ There are a few answers depending on which path you take:
 
 ---
 
-## Question 4: Which endpoint or endpoints are erroring within the `productcatalogservice`?
+## Question 4: Erroring endpoint
+
+**Which endpoint or endpoints are erroring within the `productcatalogservice`?**
 
 `pq: sorry, too many clients already` is a Postgres connection-exhaustion error - the service is running out of database connections. But is it happening on every endpoint, or just one? The **Operations** panel breaks the service's traffic down by endpoint so we can localize.
 
@@ -152,7 +161,9 @@ There are a few answers depending on which path you take:
 
 ---
 
-## Question 5: What services interact with the `recommendationservice`?
+## Question 5: Service interactions
+
+**What services interact with the `recommendationservice`?**
 
 While we're here, let's get the lay of the land. The recommendation service is sitting next to productcatalog in the call graph - what calls it, and what does it call? The service detail view splits this into **Inbound** (callers) and **Outbound & databases** (dependencies), and the [Service map](https://grafana.com/docs/grafana-cloud/monitor-applications/application-observability/) tab gives you the same picture as a graph.
 
@@ -187,7 +198,9 @@ You can also see this from the **Service map** tab.
 
 ---
 
-## Question 6: What's the pod name running the product catalog service? _(optional)_
+## Question 6: Pod name <Badge variant="optional">Optional</Badge>
+
+**What's the pod name running the product catalog service?**
 
 Application Observability ties OTel telemetry back to Kubernetes via attributes like `k8s.pod.name`. That's how you jump from "service X is broken" to "pod Y is the one to look at." Grab the pod name now - we'll use it as the bridge into the next lab.
 

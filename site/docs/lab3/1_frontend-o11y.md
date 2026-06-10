@@ -3,6 +3,7 @@ sidebar_position: 1
 ---
 
 import TryIt from '@site/src/components/TryIt';
+import Badge from '@site/src/components/Badge';
 
 # 3.1. Query Frontend Observability data
 
@@ -14,13 +15,15 @@ The core questions cover frontend page loads and errors. The extra credit walks 
 
 ---
 
-## Question 1: Looking at my frontend app `ecommerce`, how many page loads have there been in the last 3 hours?
+## Question 1: Page loads
+
+**Looking at my frontend app `ecommerce`, how many page loads have there been in the last 3 hours?**
 
 Same first question as Lab 1.1 - and a good way to see what Assistant does when you give it minimal context. No `@` mention, no data source hint, just the question. Watch which tool calls it picks to answer.
 
 > **Why this matters:** Expanding the tool calls is the difference between "trust me" and "here's my working." Assistant shows them so you can verify it queried the right data before trusting the answer.
 
-<TryIt />
+<TryIt>Ask Grafana Assistant before revealing the answer.</TryIt>
 
 <details className="answer-reveal">
 <summary>Show answer</summary>
@@ -33,11 +36,13 @@ Approximately **1,300-1,780 requests per second** over the last 3 hours.
 
 ---
 
-## Question 2: Do any of those pages have errors?
+## Question 2: Page errors
+
+**Do any of those pages have errors?**
 
 Continuing the same conversation lets Assistant carry forward what it already knows - this is the AI equivalent of staying on the same service detail page. It should remember the `ecommerce` app from the previous prompt without you re-stating it.
 
-<TryIt />
+<TryIt>Ask Grafana Assistant before revealing the answer.</TryIt>
 
 <details className="answer-reveal">
 <summary>Show answer</summary>
@@ -48,11 +53,13 @@ Continuing the same conversation lets Assistant carry forward what it already kn
 
 ---
 
-## Question 3: Ask another Frontend Observability question, this time with `@` context for the logs data source _(extra credit)_
+## Question 3: Logs context <Badge variant="optional">Optional</Badge>
+
+**Ask another Frontend Observability question, this time with `@` context for the logs data source**
 
 So far Assistant has been free to pick its own data source. The `@` syntax is how you take the wheel: point it at a specific resource (here, the logs data source `grafanacloud-*****-logs`) and it runs queries there instead of guessing. Use it whenever the right answer lives in a specific place.
 
-<TryIt />
+<TryIt>Ask Grafana Assistant before revealing the answer.</TryIt>
 
 <details className="answer-reveal">
 <summary>Show answer</summary>
@@ -63,11 +70,13 @@ So far Assistant has been free to pick its own data source. The `@` syntax is ho
 
 ---
 
-## Question 4: Ask another Frontend Observability question with `@` context for the `app_id` label _(extra credit)_
+## Question 4: Label context <Badge variant="optional">Optional</Badge>
+
+**Ask another Frontend Observability question with `@` context for the `app_id` label**
 
 You can pin Assistant even further down: not just to a data source, but to a specific label value within it. Frontend Observability uses the `app_id` label to identify which app each log line belongs to - so pinning Assistant to one `app_id` narrows it to just that frontend.
 
-<TryIt />
+<TryIt>Ask Grafana Assistant before revealing the answer.</TryIt>
 
 <details className="answer-reveal">
 <summary>Show answer</summary>

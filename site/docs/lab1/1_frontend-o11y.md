@@ -3,6 +3,7 @@ sidebar_position: 1
 ---
 
 import TryIt from '@site/src/components/TryIt';
+import Badge from '@site/src/components/Badge';
 
 # 1.1. Frontend Observability
 
@@ -16,7 +17,9 @@ Navigate to the **Frontend Observability** app in Grafana and click into the `ec
 
 ---
 
-## Question 1: How many page loads have there been in the last 1 hour?
+## Question 1: Page loads
+
+**How many page loads have there been in the last 1 hour?**
 
 Before we go hunting for problems, let's get our baseline. How busy is the app right now? The **Page Loads** panel on the app overview is the at-a-glance traffic indicator - the very first number worth knowing.
 
@@ -39,7 +42,9 @@ Between **500 and 700** page loads.
 
 ---
 
-## Question 2: What is the value of the **Largest Contentful Paint** core web vital over the past 1 hour?
+## Question 2: Largest Contentful Paint
+
+**What is the value of the **Largest Contentful Paint** core web vital over the past 1 hour?**
 
 Traffic is fine. But how fast does the page actually feel? LCP is one of the Core Web Vitals Frontend Observability surfaces directly on the app overview - it's how Google measures whether your page loads quickly enough to keep users engaged.
 
@@ -64,7 +69,9 @@ Between **1s and 2s**.
 
 ---
 
-## Question 3: In the last 1 hour, which pages have errors?
+## Question 3: Pages with errors
+
+**In the last 1 hour, which pages have errors?**
 
 OK, traffic is healthy and LCP is reasonable - but errors are what customers are calling about. The **Page Performance** panel groups requests by page so you can immediately see *where* it's breaking. If every page is throwing errors, that points to something deep in the stack. If only one is, you've narrowed it already.
 
@@ -92,7 +99,9 @@ All four pages:
 
 ---
 
-## Question 4: What are three examples of errors over the last 1 hour? _(optional)_
+## Question 4: Example errors <Badge variant="optional">Optional</Badge>
+
+**What are three examples of errors over the last 1 hour?**
 
 Every page is broken - that's a strong signal that whatever's wrong is happening on the backend, not in any single frontend route. Before we leave Frontend Observability, let's grab a few of the actual exception strings the browser is sending back. Those errors are clues we'll carry into the next lab.
 

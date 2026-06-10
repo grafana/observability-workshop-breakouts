@@ -3,6 +3,7 @@ sidebar_position: 2
 ---
 
 import TryIt from '@site/src/components/TryIt';
+import Badge from '@site/src/components/Badge';
 
 # 3.2. Query Kubernetes Monitoring data
 
@@ -12,11 +13,13 @@ Open a **new conversation** with Assistant for this section so it starts with a 
 
 ---
 
-## Question 1: What's the health of my containers?
+## Question 1: Container health
+
+**What's the health of my containers?**
 
 A great opening prompt because it's the kind of question that takes a *human* a few minutes to answer manually - you'd scan the cluster, look for restart counts, check pod events, eyeball errors. Assistant should give you the same summary in one shot, naming the same usual suspects we found in Lab 1.
 
-<TryIt />
+<TryIt>Ask Grafana Assistant before revealing the answer.</TryIt>
 
 <details className="answer-reveal">
 <summary>Show answer</summary>
@@ -29,11 +32,13 @@ Assistant highlights containers with repetitive restarts, bad k8s events, and er
 
 ---
 
-## Question 2: What image and version is being used for the `productcatalogservice`?
+## Question 2: Image and version
+
+**What image and version is being used for the `productcatalogservice`?**
 
 Same image-spec lookup as Lab 1.3 - except instead of finding the Containers panel and reading the IMAGE SPEC column, you just ask. Faster, but still verify by expanding the tool call.
 
-<TryIt />
+<TryIt>Ask Grafana Assistant before revealing the answer.</TryIt>
 
 <details className="answer-reveal">
 <summary>Show answer</summary>
@@ -47,13 +52,15 @@ Same image-spec lookup as Lab 1.3 - except instead of finding the Containers pan
 
 ---
 
-## Question 3: Is the `productcatalogservice` right-sized?
+## Question 3: Right-sizing
+
+**Is the `productcatalogservice` right-sized?**
 
 This was the multi-step deep-dive in Lab 1.3 - click into the container, read the gauge, compare to the recommendation. Assistant pulls the same [right-sizing data](https://grafana.com/docs/grafana-cloud/monitor-infrastructure/kubernetes-monitoring/optimize-resource-usage/) and delivers the verdict in one prompt.
 
 > **Why this matters:** Assistant isn't a new data source - it's a faster route into the same Grafana data you'd otherwise navigate to manually. Trust comes from being able to verify that.
 
-<TryIt />
+<TryIt>Ask Grafana Assistant before revealing the answer.</TryIt>
 
 <details className="answer-reveal">
 <summary>Show answer</summary>
@@ -64,11 +71,13 @@ This was the multi-step deep-dive in Lab 1.3 - click into the container, read th
 
 ---
 
-## Question 4: What namespace is my app deployed in? _(extra credit)_
+## Question 4: Deployment namespace <Badge variant="optional">Optional</Badge>
+
+**What namespace is my app deployed in?**
 
 A one-shot question that would otherwise take a few clicks through the cluster view. The kind of detail it's annoying to remember where to find.
 
-<TryIt />
+<TryIt>Ask Grafana Assistant before revealing the answer.</TryIt>
 
 <details className="answer-reveal">
 <summary>Show answer</summary>
@@ -81,11 +90,13 @@ Your main application is deployed in the **`ecommerce-prod`** namespace.
 
 ---
 
-## Question 5: What resources does my k8s cluster have? _(extra credit)_
+## Question 5: Cluster resources <Badge variant="optional">Optional</Badge>
+
+**What resources does my k8s cluster have?**
 
 Same physical-capacity question from the **Clusters** view in Lab 1.3 - now Assistant produces a full cluster summary including node count, CPU, memory, storage, and pod capacity. The kind of overview you'd otherwise piece together from a few panels.
 
-<TryIt />
+<TryIt>Ask Grafana Assistant before revealing the answer.</TryIt>
 
 <details className="answer-reveal">
 <summary>Show answer</summary>
@@ -130,13 +141,15 @@ Current allocatable: 330 pod slots available
 
 ---
 
-## Question 6: Create a rule scoping Assistant to the `ecommerce-prod` namespace _(extra credit)_
+## Question 6: Assistant rule <Badge variant="optional">Optional</Badge>
+
+**Create a rule scoping Assistant to the `ecommerce-prod` namespace**
 
 The more you use Assistant, the more you'll want it scoped to *your* corner of the world. Rules let you set persistent context - "I'm only ever interested in this namespace" - so it stops searching the whole cluster every time.
 
 Try creating a rule that scopes Assistant to applications and infrastructure in the `ecommerce-prod` namespace. Then open a new conversation and ask "Tell me about what's deployed".
 
-<TryIt />
+<TryIt>Ask Grafana Assistant before revealing the answer.</TryIt>
 
 <details className="answer-reveal">
 <summary>Show answer</summary>
