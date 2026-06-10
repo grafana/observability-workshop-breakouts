@@ -63,37 +63,28 @@
   line-height: 24px;
 }
 
-/* Answer reveal block */
-details.answer-reveal {
-  border: 1px solid var(--ifm-color-emphasis-300);
-  border-radius: var(--ifm-global-radius);
-  padding: 0.6rem 1rem;
-  margin: 1rem 0 1.5rem;
-  background: var(--ifm-background-surface-color);
-}
-
+/* Answer reveal: Docusaurus's themed details box with a small green check after the disclosure triangle */
 details.answer-reveal > summary {
-  cursor: pointer;
   font-weight: 600;
-  color: var(--ifm-color-primary);
-  list-style: none;
 }
 
-details.answer-reveal > summary::-webkit-details-marker {
-  display: none;
+details.answer-reveal > summary::after {
+  content: ' ✓';
+  color: #10b981;
+  font-weight: 700;
+  margin-left: 0.4rem;
 }
 
-details.answer-reveal > summary::before {
-  content: '▶ ';
-  display: inline-block;
-  transition: transform 0.2s ease;
-  margin-right: 0.4rem;
-}
-
-details.answer-reveal[open] > summary::before {
-  transform: rotate(90deg);
+[data-theme='dark'] details.answer-reveal > summary::after {
+  color: #34d399;
 }
 
 details.answer-reveal > summary + * {
   margin-top: 0.75rem;
 }
+
+/* Question heading styling - stronger left accent, smaller top margin since questions sit close to their narration */
+.markdown h2 + p {
+  margin-top: 0.5rem;
+}
+

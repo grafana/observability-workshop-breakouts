@@ -2,15 +2,23 @@
 sidebar_position: 3
 ---
 
+import TryIt from '@site/src/components/TryIt';
+
 # 3.3. Query Span Metrics
+
+*Final stretch. In Lab 1.2 you walked through Application Observability service-by-service to track the productcatalog crash loop. Here you'll do it again, but Assistant drives - and you'll see whether it lands the same conclusions you reached manually.*
+
+Span metrics are derived from your OpenTelemetry traces, so Assistant can reason about service health, dependencies, and the productcatalog story without you opening a single panel.
 
 Open a **new conversation** with Assistant for this section.
 
 ---
 
-## Question 1 - Service health
+## Question 1: Are my services healthy?
 
-Are my services healthy?
+The natural-language equivalent of opening the Service Inventory and scanning the error/latency columns. Watch which services Assistant flags - they should be the same ones you spotted in Lab 1.2.
+
+<TryIt />
 
 <details className="answer-reveal">
 <summary>Show answer</summary>
@@ -21,9 +29,13 @@ Are my services healthy?
 
 ---
 
-## Question 2 - Interactions and downstream issues
+## Question 2: What interacts with the `productcatalogservice`? Any downstream issues?
 
-What interacts with the `productcatalogservice`? Any downstream issues?
+In Lab 1.2 you read the Inbound and Outbound panels to figure out who talks to productcatalog. Now ask the same question, but in one shot - Assistant correlates "what calls this" with "what's broken right now" so you get the dependency map *and* the impact in a single answer.
+
+> **Why this matters:** Assistant isn't just retrieving data, it's joining it. Pulling dependencies + current health in one prompt is something the classic apps would make you do in two separate views.
+
+<TryIt />
 
 <details className="answer-reveal">
 <summary>Show answer</summary>
@@ -55,9 +67,11 @@ What interacts with the `productcatalogservice`? Any downstream issues?
 
 ---
 
-## Question 3 - Postgres version - extra credit
+## Question 3: What version of postgres is deployed in my app? _(extra credit)_
 
-What version of postgres is deployed in my app?
+A quick infrastructure-attribute lookup. The kind of question that'd normally need you to remember where to look - or pop into Knowledge Graph to read the properties bag. Assistant should resolve it without you needing to know either path.
+
+<TryIt />
 
 <details className="answer-reveal">
 <summary>Show answer</summary>
@@ -73,9 +87,13 @@ What version of postgres is deployed in my app?
 
 ---
 
-## Question 4 - What's going on? - extra credit
+## Question 4: What's going on with the `productcatalogservice`? _(extra credit)_
 
-What's going on with the `productcatalogservice`?
+This is the workshop's big finish: the entire investigation from Lab 1 → Lab 2, reduced to a single prompt. Assistant should correlate restarts, error logs, traces, and downstream impact into a triage summary - the kind of paragraph you'd otherwise write yourself after thirty minutes of clicking.
+
+Compare its answer to what you found the long way. How close is it?
+
+<TryIt />
 
 <details className="answer-reveal">
 <summary>Show answer</summary>

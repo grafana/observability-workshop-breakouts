@@ -2,20 +2,30 @@
 sidebar_position: 1
 ---
 
+import TryIt from '@site/src/components/TryIt';
+
 # 3.1. Query Frontend Observability data
 
-Use the Grafana Assistant in this section. The core questions cover frontend page loads and errors; the extra credit walks through using `@` context to pin Assistant to a specific data source and label.
+*You've now solved the productcatalog mystery two ways - the long way through Lab 1's apps, and the short way through Knowledge Graph in Lab 2. There's a third option: don't navigate anywhere. Just ask.*
+
+[Grafana Assistant](https://grafana.com/docs/grafana-cloud/machine-learning/assistant/) is a purpose-built LLM inside Grafana that lets operators, developers, and SREs troubleshoot, manage dashboards, and answer product questions in natural language. In this section you'll point it at the same `ecommerce` frontend app you explored in Lab 1.1 and ask the same questions - then watch how Assistant resolves them.
+
+The core questions cover frontend page loads and errors. The extra credit walks through using `@` context to pin Assistant to a specific data source and label - useful when you want it focused on one slice of telemetry instead of searching everywhere.
 
 ---
 
-## Question 1 - Page loads
+## Question 1: Looking at my frontend app `ecommerce`, how many page loads have there been in the last 3 hours?
 
-Looking at my frontend app `ecommerce`, how many page loads have there been in the last 3 hours?
+Same first question as Lab 1.1 - and a good way to see what Assistant does when you give it minimal context. No `@` mention, no data source hint, just the question. Watch which tool calls it picks to answer.
+
+> **Why this matters:** Expanding the tool calls is the difference between "trust me" and "here's my working." Assistant shows them so you can verify it queried the right data before trusting the answer.
+
+<TryIt />
 
 <details className="answer-reveal">
 <summary>Show answer</summary>
 
-Approximately **1,300–1,780 requests per second** over the last 3 hours.
+Approximately **1,300-1,780 requests per second** over the last 3 hours.
 
 ![Assistant page-loads response](/img/lab3/1.1-grafana-assistant-1.png)
 
@@ -23,9 +33,11 @@ Approximately **1,300–1,780 requests per second** over the last 3 hours.
 
 ---
 
-## Question 2 - Errors
+## Question 2: Do any of those pages have errors?
 
-Do any of those pages have errors?
+Continuing the same conversation lets Assistant carry forward what it already knows - this is the AI equivalent of staying on the same service detail page. It should remember the `ecommerce` app from the previous prompt without you re-stating it.
+
+<TryIt />
 
 <details className="answer-reveal">
 <summary>Show answer</summary>
@@ -36,9 +48,11 @@ Do any of those pages have errors?
 
 ---
 
-## Question 3 - `@` context (logs data source) - extra credit
+## Question 3: Ask another Frontend Observability question, this time with `@` context for the logs data source _(extra credit)_
 
-Ask another Frontend Observability question, but this time give `@` context so Assistant looks at the logs data source. The data source will be `grafanacloud-*****-logs`.
+So far Assistant has been free to pick its own data source. The `@` syntax is how you take the wheel: point it at a specific resource (here, the logs data source `grafanacloud-*****-logs`) and it runs queries there instead of guessing. Use it whenever the right answer lives in a specific place.
+
+<TryIt />
 
 <details className="answer-reveal">
 <summary>Show answer</summary>
@@ -49,9 +63,11 @@ Ask another Frontend Observability question, but this time give `@` context so A
 
 ---
 
-## Question 4 - `@` context (`app_id` label) - extra credit
+## Question 4: Ask another Frontend Observability question with `@` context for the `app_id` label _(extra credit)_
 
-Ask another Frontend Observability question, but this time give `@` context to select the log label `app_id` (there's only one - Frontend O11y uses it to specify which frontend o11y app). The data source will be `grafanacloud-*****-logs`.
+You can pin Assistant even further down: not just to a data source, but to a specific label value within it. Frontend Observability uses the `app_id` label to identify which app each log line belongs to - so pinning Assistant to one `app_id` narrows it to just that frontend.
+
+<TryIt />
 
 <details className="answer-reveal">
 <summary>Show answer</summary>

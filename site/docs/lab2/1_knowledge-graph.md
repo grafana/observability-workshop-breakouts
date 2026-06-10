@@ -2,15 +2,28 @@
 sidebar_position: 1
 ---
 
+import TryIt from '@site/src/components/TryIt';
+
 # 2.1. Using Knowledge Graph
 
-Use **Entity Explorer** and **RCA Workbench** to investigate the demo environment over the last 24 hours.
+*In Lab 1 we walked the trail manually - Frontend O11y → App O11y → Kubernetes Monitoring - hopping between apps to follow the breadcrumbs. It worked, but it was a lot of clicks. Now let's see what the same investigation looks like when the relationships between everything are already mapped for us.*
+
+Grafana Cloud [Knowledge Graph](https://grafana.com/docs/grafana-cloud/knowledge-graph/) automatically discovers your services, infrastructure, and the relationships between them from telemetry you're already sending. It connects metrics, logs, and traces into one workflow so you can troubleshoot without writing complex queries.
+
+You'll use two surfaces in this lab:
+
+- **[Entity Explorer](https://grafana.com/docs/grafana-cloud/knowledge-graph/troubleshoot-infra-apps/)** - filter and explore entities (services, pods, namespaces) to identify what needs attention.
+- **[RCA Workbench](https://grafana.com/docs/grafana-cloud/knowledge-graph/troubleshoot-infra-apps/)** - stream insights into a timeline so you can investigate potential causes correlated over time and dependency.
 
 ---
 
-## Question 1 - Worst service
+## Question 1: Over the last 24 hours, which service looks to be in the worst state? Why?
 
-Over the last 24 hours, which service looks to be in the worst state? Why?
+This is the question Lab 1 made us answer the long way: page-by-page errors → service error rate → restarts. With Knowledge Graph it's the *first thing on the screen*. The list of services on the left of Entity Explorer is sorted by **insights** - the count of anomalies, errors, and failures firing for each entity. The worst-off service floats to the top.
+
+> **Why this matters:** "Sort by insights" replaces the entire triage motion from Lab 1 - errors are pre-correlated to entities, so you don't have to chase them across three different apps.
+
+<TryIt />
 
 <details className="answer-reveal">
 <summary>Show answer</summary>
@@ -39,9 +52,11 @@ Insights observed:
 
 ---
 
-## Question 2 - Connected services
+## Question 2: How many application services are connected to the `productcatalogservice` within the last 24 hours?
 
-How many application services are connected to the `productcatalogservice` within the last 24 hours?
+Remember in Lab 1.2 you clicked into `productcatalogservice`, then into the Inbound and Outbound panels separately? Knowledge Graph builds the whole dependency map for you from telemetry, so you can answer "what services talk to this one" in one view. Graph or search - either works.
+
+<TryIt />
 
 <details className="answer-reveal">
 <summary>Show answer</summary>
@@ -71,9 +86,11 @@ How many application services are connected to the `productcatalogservice` withi
 
 ---
 
-## Question 3 - Cart service pods
+## Question 3: How many pods does the cart service have?
 
-How many pods does the cart service have?
+Connected Entities works across types, not just services. So "how many pods belong to this service?" is the same operation as "how many services are connected" - just a different entity dimension. Same UI, different question.
+
+<TryIt />
 
 <details className="answer-reveal">
 <summary>Show answer</summary>
@@ -86,7 +103,7 @@ How many pods does the cart service have?
 
    ![Show all services](/img/lab2/1.3-knowledge-graph-1.png)
 
-2. This shows _all_ discovered services. The coloured rings may differ from the example image.
+2. This shows _all_ discovered services. The colored rings may differ from the example image.
 
    ![All entities](/img/lab2/1.3-knowledge-graph-2.png)
 
@@ -112,9 +129,11 @@ How many pods does the cart service have?
 
 ---
 
-## Question 4 - Namespace
+## Question 4: Which namespace is everything deployed in?
 
-Which namespace is everything deployed in?
+Namespaces are first-class entities in Knowledge Graph too. That means you can ask "show me all the namespaces" directly in the search bar - no clicking into individual services and reading their labels.
+
+<TryIt />
 
 <details className="answer-reveal">
 <summary>Show answer</summary>
@@ -133,9 +152,13 @@ In the Entity Explorer search bar, type `Show all Namespaces`. Two come back - `
 
 ---
 
-## Question 5 - First event
+## Question 5: What looks to be the first event that caused the issue within the last 24 hours?
 
-What looks to be the first event that caused the issue within the last 24 hours?
+Now we get to the payoff. We *know* productcatalog is broken - we proved that the hard way in Lab 1. But what *caused* it to break? In Lab 1 we never actually answered that. The RCA Workbench is built for exactly this: pull a service in, ask Knowledge Graph to add potential causes, sort by time, read down the list. The first event at the top is the earliest insight that fired - the original sin.
+
+> **Why this matters:** This is the question Lab 1's tools genuinely couldn't answer. The classic apps showed you *what* was broken; RCA Workbench tells you *what changed* and started it.
+
+<TryIt />
 
 <details className="answer-reveal">
 <summary>Show answer</summary>
@@ -210,9 +233,11 @@ This lets you attach any dashboard to any service or type of service - without l
 
 ---
 
-## Question 6 - First erroring service
+## Question 6: Which service started having errors first within the last 24 hours?
 
-Which service started having errors first within the last 24 hours?
+We know the trigger was a feature flag. But what was the *first* service to actually go red as a result? That's a different question - and the **Summary** tab is built to answer it. It's a flat, time-ordered list of every insight, much easier to read than the timeline when you just want to know who broke first.
+
+<TryIt />
 
 <details className="answer-reveal">
 <summary>Show answer</summary>
@@ -236,9 +261,11 @@ Which service started having errors first within the last 24 hours?
 
 ---
 
-## Question 7 - Redis version
+## Question 7: Which version of Redis is deployed?
 
-Which version of Redis is deployed?
+Once the dust settles, you'll want to capture details for the post-mortem. Every entity in Knowledge Graph carries a properties bag - version, image, labels - which you can read directly without leaving the catalog.
+
+<TryIt />
 
 <details className="answer-reveal">
 <summary>Show answer</summary>

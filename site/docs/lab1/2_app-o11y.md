@@ -2,7 +2,13 @@
 sidebar_position: 2
 ---
 
+import TryIt from '@site/src/components/TryIt';
+
 # 1.2. Application Observability
+
+*Frontend Observability told us every page on the ecommerce site is throwing 500s. The browser sees the symptom, but the cause is on the server side. Time to walk into the backend and find out which service is the problem.*
+
+Grafana Cloud [Application Observability](https://grafana.com/docs/grafana-cloud/monitor-applications/application-observability/) is an APM solution built to help your team minimize the mean time to repair (MTTR) for application problems. It uses OpenTelemetry, Grafana Alloy, and pre-built dashboards so every service in your stack is visible from one place.
 
 Navigate to the **Application Observability** app in Grafana.
 
@@ -10,9 +16,11 @@ Navigate to the **Application Observability** app in Grafana.
 
 ---
 
-## Question 1 - Languages
+## Question 1: What languages are used for this demo app?
 
-What languages are used for this demo app?
+Before troubleshooting, it's useful to know what we're looking at. The **Service Inventory** lists every OpenTelemetry-instrumented service in the app and auto-detects the runtime language. One glance and you know how heterogeneous your stack is.
+
+<TryIt />
 
 <details className="answer-reveal">
 <summary>Show answer</summary>
@@ -42,9 +50,11 @@ Quite a few:
 
 ---
 
-## Question 2 - Error rate
+## Question 2: What error rate percentage has the `productcatalogservice` reached over the last 1 hour?
 
-What error rate percentage has the `productcatalogservice` reached over the last 1 hour?
+Now we hunt. The Frontend O11y errors mentioned `/api/products` - which strongly implies `productcatalogservice`. Click into that service and you'll see request rate, error rate, and latency right at the top: the three signals you check first when something looks off.
+
+<TryIt />
 
 <details className="answer-reveal">
 <summary>Show answer</summary>
@@ -64,9 +74,13 @@ It can range between **20% and 100%**.
 
 ---
 
-## Question 3 - Error message
+## Question 3: What error message is the `productcatalogservice` throwing when it errors?
 
-What error message is the `productcatalogservice` throwing when it errors?
+20-100% error rate is *very* bad. Now we need the actual exception. There are two routes - through the trace waterfall (drilling into a single failing request) or through the service's logs - and they should converge on the same root cause from different angles.
+
+> **Why this matters:** Traces and logs are two views of the same incident. A trace tells you "this one request failed and here's the chain"; logs tell you "here's everything the process said out loud." Having both keeps you honest.
+
+<TryIt />
 
 <details className="answer-reveal">
 <summary>Show answer</summary>
@@ -114,9 +128,11 @@ There are a few answers depending on which path you take:
 
 ---
 
-## Question 4 - Erroring endpoints
+## Question 4: Which endpoint or endpoints are erroring within the `productcatalogservice`?
 
-Which endpoint or endpoints are erroring within the `productcatalogservice`?
+`pq: sorry, too many clients already` is a Postgres connection-exhaustion error - the service is running out of database connections. But is it happening on every endpoint, or just one? The **Operations** panel breaks the service's traffic down by endpoint so we can localize.
+
+<TryIt />
 
 <details className="answer-reveal">
 <summary>Show answer</summary>
@@ -136,9 +152,11 @@ Which endpoint or endpoints are erroring within the `productcatalogservice`?
 
 ---
 
-## Question 5 - Service interactions
+## Question 5: What services interact with the `recommendationservice`?
 
-What services interact with the `recommendationservice`?
+While we're here, let's get the lay of the land. The recommendation service is sitting next to productcatalog in the call graph - what calls it, and what does it call? The service detail view splits this into **Inbound** (callers) and **Outbound & databases** (dependencies), and the [Service map](https://grafana.com/docs/grafana-cloud/monitor-applications/application-observability/) tab gives you the same picture as a graph.
+
+<TryIt />
 
 <details className="answer-reveal">
 <summary>Show answer</summary>
@@ -169,9 +187,11 @@ You can also see this from the **Service map** tab.
 
 ---
 
-## Question 6 - Pod name (optional)
+## Question 6: What's the pod name running the product catalog service? _(optional)_
 
-What's the pod name running the product catalog service?
+Application Observability ties OTel telemetry back to Kubernetes via attributes like `k8s.pod.name`. That's how you jump from "service X is broken" to "pod Y is the one to look at." Grab the pod name now - we'll use it as the bridge into the next lab.
+
+<TryIt />
 
 <details className="answer-reveal">
 <summary>Show answer</summary>
