@@ -1,0 +1,262 @@
+---
+sidebar_position: 1
+---
+
+# 2.1. Using Knowledge Graph
+
+Use **Entity Explorer** and **RCA Workbench** to investigate the demo environment over the last 24 hours.
+
+---
+
+## Question 1 - Worst service
+
+Over the last 24 hours, which service looks to be in the worst state? Why?
+
+<details className="answer-reveal">
+<summary>Show answer</summary>
+
+The **`frontend`** service - it has more insights firing than any other service. The frontend is an API gateway, so all service traffic flows through it and errors propagate upward, triggering insights.
+
+Insights observed:
+
+- **Errors / Anomalies:**
+  - `INBOUND:LatencyAverageAnomaly`
+  - `INBOUND:span_errors::ErrorRatioBreach`
+  - `OUTBOUND:LatencyAverageAnomaly`
+  - `OUTBOUND:span_errors::ErrorRatioBreach`
+
+**How to find it:**
+
+1. Open Entity Explorer. The list of services on the left is ordered by **insights** - this surfaces the entity in the worst state.
+
+   ![All entities sorted by insights](/img/lab2/1.1-knowledge-graph-1.png)
+
+2. Hover an entity to see its insights.
+
+   ![Entity insights popover](/img/lab2/1.1-knowledge-graph-2.png)
+
+</details>
+
+---
+
+## Question 2 - Connected services
+
+How many application services are connected to the `productcatalogservice` within the last 24 hours?
+
+<details className="answer-reveal">
+<summary>Show answer</summary>
+
+**7 services.** The Alloy receiver doesn't count - it isn't part of the application.
+
+### Option 1 - Via the Entity Explorer graph
+
+1. Open Entity Explorer, find `productcatalogservice`, click it, and expand **Connected Entities**.
+
+   ![Connected entities](/img/lab2/1.2-knowledge-graph-1.png)
+
+2. Click **Services**.
+3. Count the services that show as connected.
+
+   ![Connected services](/img/lab2/1.2-knowledge-graph-2.png)
+
+### Option 2 - Via the search bar
+
+1. In Entity Explorer, type `productcatalogservice connected services` in the search bar.
+2. Click `productcatalogservice` in the graph results - it gets a blue ring.
+3. Count the connected entities that have colored rings.
+
+   ![Search-based view](/img/lab2/1.2-knowledge-graph-3.png)
+
+</details>
+
+---
+
+## Question 3 - Cart service pods
+
+How many pods does the cart service have?
+
+<details className="answer-reveal">
+<summary>Show answer</summary>
+
+**1.**
+
+### Option 1
+
+1. Start in Entity Explorer. If nothing is showing, click **Show All Services** or type it in the search bar.
+
+   ![Show all services](/img/lab2/1.3-knowledge-graph-1.png)
+
+2. This shows _all_ discovered services. The coloured rings may differ from the example image.
+
+   ![All entities](/img/lab2/1.3-knowledge-graph-2.png)
+
+3. Click the filter button (top right) and type `cart`.
+
+   ![Filtered for cart](/img/lab2/1.3-knowledge-graph-3.png)
+
+4. Click `cartservice` and expand **Connected Entities**. Pod count is shown next to **Pod**.
+
+   ![Cart connected entities](/img/lab2/1.3-knowledge-graph-4.png)
+
+### Option 2
+
+1. In Entity Explorer, type `Show Service cartservice` in the search bar and select the suggestion.
+
+   ![Search suggestion](/img/lab2/1.3-knowledge-graph-5.png)
+
+2. Click `cartservice` and expand **Connected Entities** to see the pod count.
+
+   ![Cart connected entities](/img/lab2/1.3-knowledge-graph-6.png)
+
+</details>
+
+---
+
+## Question 4 - Namespace
+
+Which namespace is everything deployed in?
+
+<details className="answer-reveal">
+<summary>Show answer</summary>
+
+**`ecommerce-prod`**
+
+### Option 1
+
+Go to Entity Explorer, look at all services, and hover over each to read the namespace - slow.
+
+### Option 2
+
+In the Entity Explorer search bar, type `Show all Namespaces`. Two come back - `kube-system` and `ecommerce-prod`. Our app is in `ecommerce-prod`.
+
+</details>
+
+---
+
+## Question 5 - First event
+
+What looks to be the first event that caused the issue within the last 24 hours?
+
+<details className="answer-reveal">
+<summary>Show answer</summary>
+
+A feature flag was enabled called **`productCatalogStopClosingPostgresConnections`**.
+
+This is a custom insight, based on a recording rule that watches the logs from the `flagd` service. When the rule has a value greater than 0 (i.e. a feature flag state changed), the insight fires.
+
+**How to find it:**
+
+1. Open Entity Explorer and find `productcatalogservice` - either click through or type `productcatalogservice` and select **Show Service productcatalogservice**.
+
+There are two ways to add an entity to the RCA Workbench:
+
+**Via the entity graph:**
+
+1. Click `productcatalogservice`.
+2. Click the **Troubleshoot in Workbench** button.
+
+**Via the results table:**
+
+1. Hover `productcatalogservice` in the results table.
+2. Click **Add to Workbench for inspecting**.
+
+   ![Add to workbench](/img/lab2/1.5-knowledge-graph-1.png)
+
+3. Click **Open in Workbench**.
+
+Now the productcatalogservice is in RCA Workbench - let's investigate.
+
+1. Click the second icon on the left, **Add potential causes**.
+
+   ![Add potential causes](/img/lab2/1.5-knowledge-graph-2.png)
+
+2. Sort by **Time**.
+
+   ![Sort by time](/img/lab2/1.5-knowledge-graph-3.png)
+
+3. `flagd` is now at the top - its insight fired first. Occasionally `frontend` will fire an anomaly insight first; this is because the feature flag insight may take a minute or two to fire depending on environment factors.
+4. Click `flagd`, then click the **amend** category. The amend insight is `FeatureFlagStateChange`.
+
+   ![FeatureFlagStateChange](/img/lab2/1.5-knowledge-graph-4.png)
+
+5. To dig in: click `FeatureFlagStateChange` and hover the series in the metrics graph.
+
+   ![Feature flag detail](/img/lab2/1.5-knowledge-graph-5.png)
+
+The `productCatalogStopClosingPostgresConnections` feature flag was turned on (and later turned off).
+
+### Custom dashboards
+
+A custom dashboard has been added to the KPI drawer for the `flagd` service. Click the **KPI** icon on the far right next to `flagd`.
+
+![KPI icon](/img/lab2/1.5-knowledge-graph-6.png)
+
+It shows a custom dashboard listing all feature flags and their current state.
+
+![Custom dashboard](/img/lab2/1.5-knowledge-graph-7.png)
+
+To configure your own: side bar → **Configuration** → **KPI display options**.
+
+![KPI display options](/img/lab2/1.5-knowledge-graph-8.png)
+
+This lets you attach any dashboard to any service or type of service - without leaving the context of the root cause investigation.
+
+**Optional - see how the custom insight was created.** Replace `{STACK_URL}` with the URL of the lab environment.
+
+- Recording Rule: `{STACK_URL}/alerting/list?search=flag_state:change`
+- Custom Insight: `{STACK_URL}/a/grafana-knowledge-graph-app/rules/add/file` - then click the edit icon next to `fieldengotelenv.yml`.
+
+</details>
+
+---
+
+## Question 6 - First erroring service
+
+Which service started having errors first within the last 24 hours?
+
+<details className="answer-reveal">
+<summary>Show answer</summary>
+
+**`productcatalogservice`** - though in some views you may see `productcatalog-postgres` was impacted first. The order between these two is fickle because they error at similar times, depending on when the metric is scraped. Occasionally `frontend` fires an anomaly insight first because the feature flag insight may take a minute or two to fire.
+
+**How to find it:**
+
+1. Continue from the previous question - you should be in RCA Workbench with potential causes added.
+2. Sort by **Time** (as before).
+3. Click the **Summary** tab - it's much easier to read.
+
+   ![Summary tab](/img/lab2/1.6-knowledge-graph.png)
+
+4. The exact order may vary, but the insights you'll see include:
+   - `productcatalog-postgres` throws `PostgresSQLHighConnections` failure insights plus a few anomaly insights.
+   - `productcatalogservice` throws `ErrorRatioBreach` error insights on its `oteldemo.ProductCatalogService/ListProducts` endpoint, and `KubePodCrashLooping` failure insights.
+   - `frontend` shows anomalies and `ErrorRatioBreach` insights, since all requests flow through it. The frontend also complains that the recommendation service is having issues - to surface that, go back to **Timeline** (Summary is read only) and click **Add potential causes** on the frontend service.
+
+</details>
+
+---
+
+## Question 7 - Redis version
+
+Which version of Redis is deployed?
+
+<details className="answer-reveal">
+<summary>Show answer</summary>
+
+**8.2.1**
+
+**How to find it:**
+
+- Type `redis` in the main search bar and select **Show Service redis**.
+
+  ![Search for redis](/img/lab2/1.7-knowledge-graph-1.png)
+
+- Hover the entity - the version is shown as `8.2.1`.
+
+  ![Redis version](/img/lab2/1.7-knowledge-graph-2.png)
+
+- Alternatively, click **Show more** for the full properties page, which also includes the version and other properties.
+
+  ![Full properties page](/img/lab2/1.7-knowledge-graph-3.png)
+
+</details>
