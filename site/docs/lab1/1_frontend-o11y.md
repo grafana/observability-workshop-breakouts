@@ -9,7 +9,7 @@ import Badge from '@site/src/components/Badge';
 
 *Imagine you're on call. Customers are reporting that the ecommerce site is acting up - pages loading slowly, the occasional error. Where do you start? At the same place your users do: in the browser.*
 
-Grafana Cloud [Frontend Observability](https://grafana.com/docs/grafana-cloud/monitor-applications/frontend-observability/) gives you that view. It collects telemetry directly from the browser using the Faro Web SDK - performance metrics, errors, logs, and client-side traces - so you can see what's actually happening across devices, browsers, and networks.
+Grafana Cloud [Frontend Observability](https://grafana.com/docs/grafana-cloud/monitor-applications/frontend-observability/) gives you that view. It collects telemetry directly from the browser using the [Faro Web SDK](https://grafana.com/docs/grafana-cloud/monitor-applications/frontend-observability/instrument/) - performance metrics, errors, logs, and client-side traces - so you can see what's actually happening across devices, browsers, and networks.
 
 Navigate to the **Frontend Observability** app in Grafana and click into the `ecommerce` frontend app.
 
@@ -44,7 +44,7 @@ Between **500 and 700** page loads.
 
 ## Question 2: Largest Contentful Paint
 
-**What is the value of the **Largest Contentful Paint** core web vital over the past 1 hour?**
+**What is the value of the **Largest Contentful Paint (LCP)** core web vital over the past 1 hour?**
 
 Traffic is fine. But how fast does the page actually feel? LCP is one of the Core Web Vitals Frontend Observability surfaces directly on the app overview - it's how Google measures whether your page loads quickly enough to keep users engaged.
 

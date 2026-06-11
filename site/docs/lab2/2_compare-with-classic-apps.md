@@ -8,7 +8,7 @@ import TryIt from '@site/src/components/TryIt';
 
 *Now flip the script. You just answered a series of questions with Knowledge Graph in a few clicks. Try the same questions with only the Lab 1 toolkit - App O11y, K8s Monitoring - and time yourself.*
 
-This isn't meant to make the classic apps look bad. They can answer all of these and they do it well. The point is *how* they answer: how many panels you need to load, how many tabs to switch, how much context you have to hold in your head. That's the difference Knowledge Graph is selling.
+This isn't meant to make the classic apps look bad. They can answer all of these and they do it well. The point is *how* they answer: how many panels you need to load, how many tabs to switch, how much context you have to hold in your head. That's the difference Knowledge Graph is built to address.
 
 :::info
 
@@ -33,7 +33,7 @@ You already answered this in Lab 1.3 by clicking through to the workload view in
 
 **How to find it (Knowledge Graph path):**
 
-1. Use the search bar to show the `productcatalogservice` service, or open Entity Explorer → **Show all services** and filter for `productcatalogservice`.
+1. Use the search bar to show the `productcatalogservice` service, or open Entity Graph → **Show all services** and filter for `productcatalogservice`.
 2. Open the **KPI drawer**.
 3. Click the **Kubernetes** tab.
 4. See **memory limits** within the **Workload Memory** panel.
@@ -59,7 +59,7 @@ Between **15% and 40%**.
 
 **How to find it (Knowledge Graph path):**
 
-1. Use the search bar to show the `productcatalogservice`, or open Entity Explorer → **Show all services** and filter.
+1. Use the search bar to show the `productcatalogservice`, or open Entity Graph → **Show all services** and filter.
 2. Open the **KPI drawer**.
 3. Click the **Service Overview** tab.
 4. Look at the **Errors** panel and see how high the spike gets.
@@ -89,7 +89,7 @@ Compare the journey. In Lab 1.2 you went: services list → service detail → E
 The interesting path here is using the **context-driven RCA Workbench**.
 
 1. Open RCA Workbench with `productcatalogservice` and add connected services (see [the first event question in 2.1](./1_knowledge-graph.md#question-5-first-event)).
-2. Click the **Summary** tab - it's easier to read, though Timeline works too.
+2. Click the **Summary** tab - it's easier to read, though Timeline works too. (See [the Summary vs Timeline note in 2.1](./1_knowledge-graph.md#question-6-first-to-error) for when to prefer Timeline.)
 3. Hover the red bar of the `oteldemo.ProductCatalogService/ListProducts - ErrorRatioBreach` insight.
 
    ![ErrorRatioBreach hover](/img/lab2/2.3-knowledge-graph-1.png)
@@ -130,10 +130,10 @@ Same **Operations** panel concept as Lab 1.2, but you're never leaving the entit
 
 **How to find it:**
 
-1. Use the search bar to show the `productcatalogservice`, or open Entity Explorer → **Show all services** and filter.
+1. Use the search bar to show the `productcatalogservice`, or open Entity Graph → **Show all services** and filter.
 2. Open the **KPI drawer**.
 3. Click the **Service Overview** tab.
-4. Look at the **Operations** panel - `oteldemo.ProductCatalogService/ListProducts` has wiggles in its sparkline.
+4. Look at the **Operations** panel - `oteldemo.ProductCatalogService/ListProducts` shows visible variation in its sparkline.
 
 ![Operations sparkline](/img/lab2/2.4-knowledge-graph.png)
 

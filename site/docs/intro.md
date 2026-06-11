@@ -8,7 +8,7 @@ slug: /
 Welcome to the **Grafana Observability Workshop Breakouts**. Across three hands-on labs, you'll work through troubleshooting scenarios in a real Grafana Cloud stack using:
 
 - **Frontend Observability**, **Application Observability**, and **Kubernetes Monitoring**
-- **Knowledge Graph** (Entity Explorer and RCA Workbench)
+- **Knowledge Graph** (Entity Graph and RCA Workbench)
 - **Grafana Assistant** (AI)
 
 ## Pick your color mode

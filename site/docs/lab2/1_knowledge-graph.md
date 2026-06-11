@@ -8,12 +8,12 @@ import TryIt from '@site/src/components/TryIt';
 
 *In Lab 1 we walked the trail manually - Frontend O11y → App O11y → Kubernetes Monitoring - hopping between apps to follow the breadcrumbs. It worked, but it was a lot of clicks. Now let's see what the same investigation looks like when the relationships between everything are already mapped for us.*
 
-Grafana Cloud [Knowledge Graph](https://grafana.com/docs/grafana-cloud/knowledge-graph/) automatically discovers your services, infrastructure, and the relationships between them from telemetry you're already sending. It connects metrics, logs, and traces into one workflow so you can troubleshoot without writing complex queries.
+Grafana Cloud [Knowledge Graph](https://grafana.com/docs/grafana-cloud/knowledge-graph/) automatically discovers your services, infrastructure, and the relationships between them from telemetry you're already sending. It connects metrics, logs, and traces into one workflow so you can troubleshoot without writing complex queries. Knowledge Graph is a platform-level capability present across all Grafana Cloud solutions; **Entity Graph** is its visual representation.
 
 You'll use two surfaces in this lab:
 
-- **[Entity Explorer](https://grafana.com/docs/grafana-cloud/knowledge-graph/troubleshoot-infra-apps/)** - filter and explore entities (services, pods, namespaces) to identify what needs attention.
-- **[RCA Workbench](https://grafana.com/docs/grafana-cloud/knowledge-graph/troubleshoot-infra-apps/)** - stream insights into a timeline so you can investigate potential causes correlated over time and dependency.
+- **[Entity Graph](https://grafana.com/docs/grafana-cloud/knowledge-graph/troubleshoot-infra-apps/)** - the visual representation of the Knowledge Graph; filter and explore entities (services, pods, namespaces) to identify what needs attention.
+- **[RCA Workbench](https://grafana.com/docs/grafana-cloud/knowledge-graph/troubleshoot-infra-apps/)** - built on top of the Knowledge Graph; stream insights into a timeline so you can investigate potential causes correlated over time and dependency.
 
 ---
 
@@ -21,7 +21,7 @@ You'll use two surfaces in this lab:
 
 **Over the last 24 hours, which service looks to be in the worst state? Why?**
 
-This is the question Lab 1 made us answer the long way: page-by-page errors → service error rate → restarts. With Knowledge Graph it's the *first thing on the screen*. The list of services on the left of Entity Explorer is sorted by **insights** - the count of anomalies, errors, and failures firing for each entity. The worst-off service floats to the top.
+This is the question Lab 1 made us answer the long way: page-by-page errors → service error rate → restarts. With Knowledge Graph it's the *first thing on the screen*. The list of services on the left of Entity Graph is sorted by **insights** - the count of anomalies, errors, and failures firing for each entity. The worst-off service floats to the top.
 
 > **Why this matters:** "Sort by insights" replaces the entire triage motion from Lab 1 - errors are pre-correlated to entities, so you don't have to chase them across three different apps.
 
@@ -42,7 +42,7 @@ Insights observed:
 
 **How to find it:**
 
-1. Open Entity Explorer. The list of services on the left is ordered by **insights** - this surfaces the entity in the worst state.
+1. Open Entity Graph. The list of services on the left is ordered by **insights** - this surfaces the entity in the worst state.
 
    ![All entities sorted by insights](/img/lab2/1.1-knowledge-graph-1.png)
 
@@ -67,9 +67,9 @@ Remember in Lab 1.2 you clicked into `productcatalogservice`, then into the Inbo
 
 **7 services.** The Alloy receiver doesn't count - it isn't part of the application.
 
-### Option 1 - Via the Entity Explorer graph
+### Option 1 - Via the Entity Graph graph
 
-1. Open Entity Explorer, find `productcatalogservice`, click it, and expand **Connected Entities**.
+1. Open Entity Graph, find `productcatalogservice`, click it, and expand **Connected Entities**.
 
    ![Connected entities](/img/lab2/1.2-knowledge-graph-1.png)
 
@@ -80,7 +80,7 @@ Remember in Lab 1.2 you clicked into `productcatalogservice`, then into the Inbo
 
 ### Option 2 - Via the search bar
 
-1. In Entity Explorer, type `productcatalogservice connected services` in the search bar.
+1. In Entity Graph, type `productcatalogservice connected services` in the search bar.
 2. Click `productcatalogservice` in the graph results - it gets a blue ring.
 3. Count the connected entities that have colored rings.
 
@@ -105,7 +105,7 @@ Connected Entities works across types, not just services. So "how many pods belo
 
 ### Option 1
 
-1. Start in Entity Explorer. If nothing is showing, click **Show All Services** or type it in the search bar.
+1. Start in Entity Graph. If nothing is showing, click **Show All Services** or type it in the search bar.
 
    ![Show all services](/img/lab2/1.3-knowledge-graph-1.png)
 
@@ -123,7 +123,7 @@ Connected Entities works across types, not just services. So "how many pods belo
 
 ### Option 2
 
-1. In Entity Explorer, type `Show Service cartservice` in the search bar and select the suggestion.
+1. In Entity Graph, type `Show Service cartservice` in the search bar and select the suggestion.
 
    ![Search suggestion](/img/lab2/1.3-knowledge-graph-5.png)
 
@@ -150,11 +150,11 @@ Namespaces are first-class entities in Knowledge Graph too. That means you can a
 
 ### Option 1
 
-Go to Entity Explorer, look at all services, and hover over each to read the namespace - slow.
+Go to Entity Graph, look at all services, and hover over each to read the namespace - slow.
 
 ### Option 2
 
-In the Entity Explorer search bar, type `Show all Namespaces`. Two come back - `kube-system` and `ecommerce-prod`. Our app is in `ecommerce-prod`.
+In the Entity Graph search bar, type `Show all Namespaces`. Two come back - `kube-system` and `ecommerce-prod`. Our app is in `ecommerce-prod`.
 
 </details>
 
@@ -164,7 +164,7 @@ In the Entity Explorer search bar, type `Show all Namespaces`. Two come back - `
 
 **What looks to be the first event that caused the issue within the last 24 hours?**
 
-Now we get to the payoff. We *know* productcatalog is broken - we proved that the hard way in Lab 1. But what *caused* it to break? In Lab 1 we never actually answered that. The RCA Workbench is built for exactly this: pull a service in, ask Knowledge Graph to add potential causes, sort by time, read down the list. The first event at the top is the earliest insight that fired - the original sin.
+Now we get to the payoff. We *know* productcatalog is broken - we proved that the hard way in Lab 1. But what *caused* it to break? In Lab 1 we never actually answered that. The RCA Workbench is built for exactly this: pull a service in, add potential causes based on the Knowledge Graph, sort by time, read down the list. The first event at the top is the earliest insight that fired - the trigger that started the cascade.
 
 > **Why this matters:** This is the question Lab 1's tools genuinely couldn't answer. The classic apps showed you *what* was broken; RCA Workbench tells you *what changed* and started it.
 
@@ -179,7 +179,7 @@ This is a custom insight, based on a recording rule that watches the logs from t
 
 **How to find it:**
 
-1. Open Entity Explorer and find `productcatalogservice` - either click through or type `productcatalogservice` and select **Show Service productcatalogservice**.
+1. Open Entity Graph and find `productcatalogservice` - either click through or type `productcatalogservice` and select **Show Service productcatalogservice**.
 
 There are two ways to add an entity to the RCA Workbench:
 
@@ -254,7 +254,7 @@ We know the trigger was a feature flag. But what was the *first* service to actu
 <details className="answer-reveal">
 <summary>Show answer</summary>
 
-**`productcatalogservice`** - though in some views you may see `productcatalog-postgres` was impacted first. The order between these two is fickle because they error at similar times, depending on when the metric is scraped. Occasionally `frontend` fires an anomaly insight first because the feature flag insight may take a minute or two to fire.
+**`productcatalogservice`** - though in some views you may see `productcatalog-postgres` was impacted first. The order between these two can vary because they error at similar times, depending on when the metric is scraped. Occasionally `frontend` fires an anomaly insight first because the feature flag insight may take a minute or two to fire.
 
 **How to find it:**
 
@@ -263,6 +263,12 @@ We know the trigger was a feature flag. But what was the *first* service to actu
 3. Click the **Summary** tab - it's much easier to read.
 
    ![Summary tab](/img/lab2/1.6-knowledge-graph.png)
+
+   :::note
+
+   Summary works best when the list is short. With many insights and services it can feel overwhelming because everything is shown at once - the **Timeline** lets you expand and collapse what you want to see, while Summary forces the full view.
+
+   :::
 
 4. The exact order may vary, but the insights you'll see include:
    - `productcatalog-postgres` throws `PostgresSQLHighConnections` failure insights plus a few anomaly insights.
@@ -277,7 +283,7 @@ We know the trigger was a feature flag. But what was the *first* service to actu
 
 **Which version of Redis is deployed?**
 
-Once the dust settles, you'll want to capture details for the post-mortem. Every entity in Knowledge Graph carries a properties bag - version, image, labels - which you can read directly without leaving the catalog.
+Once the incident is resolved, you'll want to capture details for the post-mortem. Every entity in Knowledge Graph carries a collection of properties - version, image, labels - which you can read directly without leaving the catalog.
 
 <TryIt />
 
