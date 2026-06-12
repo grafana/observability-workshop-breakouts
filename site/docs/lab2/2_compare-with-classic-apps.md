@@ -4,7 +4,7 @@ sidebar_position: 2
 
 import TryIt from '@site/src/components/TryIt';
 
-# 2.2. Compare with the classic apps
+# 2.2. Compare with the classic observability apps
 
 *Now flip the script. You just answered a series of questions with Knowledge Graph in a few clicks. Try the same questions with only the Lab 1 toolkit - App O11y, K8s Monitoring - and time yourself.*
 
@@ -89,7 +89,7 @@ Compare the journey. In Lab 1.2 you went: services list → service detail → E
 The interesting path here is using the **context-driven RCA Workbench**.
 
 1. Open RCA Workbench with `productcatalogservice` and add connected services (see [the first event question in 2.1](./1_knowledge-graph.md#question-5-first-event)).
-2. Click the **Summary** tab - it's easier to read, though Timeline works too. (See [the Summary vs Timeline note in 2.1](./1_knowledge-graph.md#question-6-first-to-error) for when to prefer Timeline.)
+2. Click the **Summary** tab - it's easier to read, though Timeline works too. As mentioned in [2.1](./1_knowledge-graph.md#question-6-first-to-error), Summary works best for short lists - prefer Timeline when there are many insights, since it lets you expand and collapse what you want to see.
 3. Hover the red bar of the `oteldemo.ProductCatalogService/ListProducts - ErrorRatioBreach` insight.
 
    ![ErrorRatioBreach hover](/img/lab2/2.3-knowledge-graph-1.png)

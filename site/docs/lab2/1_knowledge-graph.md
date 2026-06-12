@@ -17,7 +17,7 @@ You'll use two surfaces in this lab:
 
 ---
 
-## Question 1: Worst service
+## Question 1: Most impacted service
 
 **Over the last 24 hours, which service looks to be in the worst state? Why?**
 
