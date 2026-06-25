@@ -7,7 +7,7 @@ import Badge from '@site/src/components/Badge';
 
 # 3.1. Query Frontend Observability data
 
-*You've now solved the productcatalog mystery two ways - the long way through Lab 1's apps, and the short way through Knowledge Graph in Lab 2. There's a third option: don't navigate anywhere. Just ask.*
+*You've now solved the productcatalog mystery two ways - one way through Lab 1's apps, and a second, shorter way through Knowledge Graph in Lab 2. There's a third option: don't navigate anywhere. Just ask.*
 
 [Grafana Assistant](https://grafana.com/docs/grafana-cloud/machine-learning/assistant/) is a purpose-built LLM inside Grafana that lets operators, developers, and SREs troubleshoot, manage dashboards, and answer product questions in natural language. In this section you'll point it at the same `ecommerce` frontend app you explored in Lab 1.1 and ask the same questions - then watch how Assistant resolves them.
 
@@ -19,9 +19,7 @@ The core questions cover frontend page loads and errors. The extra credit walks 
 
 **Looking at my frontend app `ecommerce`, how many page loads have there been in the last 3 hours?**
 
-Same first question as Lab 1.1 - and a good way to see what Assistant does when you give it minimal context. No `@` mention, no data source hint, just the question. Watch which tool calls it picks to answer.
-
-> **Why this matters:** Expanding the tool calls is the difference between "trust me" and "here's my working." Assistant shows them so you can verify it queried the right data before trusting the answer.
+Same first question as Lab 1.1 - and a good way to see what Assistant does when you give it minimal context. No `@` mention, no data source hint, just the question. Watch which tool calls it picks to answer: expanding them is the difference between "trust me" and "here's my working," and lets you verify it queried the right data before trusting the result.
 
 <TryIt>Ask Grafana Assistant before revealing the answer.</TryIt>
 
@@ -29,6 +27,8 @@ Same first question as Lab 1.1 - and a good way to see what Assistant does when 
 <summary>Show answer</summary>
 
 Approximately **1,300-1,780 requests per second** over the last 3 hours.
+
+Note that Assistant answered with a *rate* (requests per second) rather than a raw count - a good example of why you expand the tool call to see exactly what it queried.
 
 ![Assistant page-loads response](/img/lab3/1.1-grafana-assistant-1.png)
 
@@ -47,6 +47,8 @@ Continuing the same conversation lets Assistant carry forward what it already kn
 <details className="answer-reveal">
 <summary>Show answer</summary>
 
+Yes - Assistant reports errors on the same pages you saw in Lab 1.1 (`/`, `/cart`, `/cart/checkout/*`, and `/product/*`), carrying forward the `ecommerce` app from the previous prompt.
+
 ![Assistant errors response](/img/lab3/1.2-grafana-assistant.png)
 
 </details>
@@ -63,6 +65,8 @@ So far Assistant has been free to pick its own data source. The `@` syntax is ho
 
 <details className="answer-reveal">
 <summary>Show answer</summary>
+
+With the `@` context set, Assistant runs its query against the pinned logs data source (`grafanacloud-*****-logs`) instead of choosing one itself - expand the tool call to confirm which data source it used.
 
 ![Assistant with logs data source context](/img/lab3/1.3-grafana-assistant.png)
 

@@ -7,7 +7,7 @@ import Badge from '@site/src/components/Badge';
 
 # 3.3. Query Span Metrics
 
-*Final stretch. In Lab 1.2 you walked through Application Observability service-by-service to track the productcatalog crash loop. Here you'll do it again, but Assistant drives - and you'll see whether it lands the same conclusions you reached manually.*
+*In Lab 1.2 you walked through Application Observability service-by-service to track the productcatalog crash loop. Here you'll do it again, but Assistant drives - and you'll see whether it lands the same conclusions you reached manually.*
 
 Span metrics are derived from your OpenTelemetry traces, so Assistant can reason about service health, dependencies, and the productcatalog story without you opening a single panel.
 
@@ -26,6 +26,8 @@ The natural-language equivalent of opening the Service Inventory and scanning th
 <details className="answer-reveal">
 <summary>Show answer</summary>
 
+No - Assistant flags the same unhealthy services you spotted in Lab 1.2, including `productcatalogservice`, `recommendationservice`, and `checkoutservice`.
+
 ![Service health response](/img/lab3/3.1-grafana-assistant-1.png)
 
 </details>
@@ -36,9 +38,7 @@ The natural-language equivalent of opening the Service Inventory and scanning th
 
 **What interacts with the `productcatalogservice`? Any downstream issues?**
 
-In Lab 1.2 you read the Inbound and Outbound panels to figure out who talks to productcatalog. Now ask the same question, but in one shot - Assistant correlates "what calls this" with "what's broken right now" so you get the dependency map *and* the impact in a single answer.
-
-> **Why this matters:** Assistant isn't just retrieving data, it's joining it. Pulling dependencies + current health in one prompt is something the classic apps would make you do in two separate views.
+In Lab 1.2 you read the Inbound and Outbound panels to figure out who talks to productcatalog. Now ask the same question, but in one shot - Assistant correlates "what calls this" with "what's broken right now" so you get the dependency map *and* the impact in a single answer. It isn't just retrieving data, it's joining it: pulling dependencies and current health in one prompt is something the classic apps would make you do in two separate views.
 
 <TryIt>Ask Grafana Assistant before revealing the answer.</TryIt>
 
@@ -55,8 +55,7 @@ In Lab 1.2 you read the Inbound and Outbound panels to figure out who talks to p
 **Confirmed downstream issues:**
 
 1. Checkout service instability.
-2. Checkout service instability.
-3. Service interaction patterns:
+2. Service interaction patterns:
    - gRPC calls failing: `GetProduct` and `ListProducts` methods.
    - Multiple regional failures: all 3 regions affected simultaneously.
    - Time correlation: checkout errors occur during catalog service restart periods.
@@ -98,7 +97,7 @@ A quick infrastructure-attribute lookup. The kind of question that'd normally ne
 
 **What's going on with the `productcatalogservice`?**
 
-This is the workshop's big finish: the entire investigation from Lab 1 → Lab 2, reduced to a single prompt. Assistant should correlate restarts, error logs, traces, and downstream impact into a triage summary - the kind of paragraph you'd otherwise write yourself after thirty minutes of clicking.
+This is the workshop's final question: the entire investigation from Lab 1 → Lab 2, reduced to a single prompt. Assistant should correlate restarts, error logs, traces, and downstream impact into a triage summary - the kind of assessment that would otherwise take you several views and a fair amount of clicking to assemble.
 
 Compare its answer to what you found the long way. How close is it?
 

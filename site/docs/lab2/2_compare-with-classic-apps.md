@@ -6,9 +6,9 @@ import TryIt from '@site/src/components/TryIt';
 
 # 2.2. Compare with the classic observability apps
 
-*Now flip the script. You just answered a series of questions with Knowledge Graph in a few clicks. Try the same questions with only the Lab 1 toolkit - App O11y, K8s Monitoring - and time yourself.*
+*You just answered a series of questions with Knowledge Graph in a few clicks. Now try the same questions with only the Lab 1 toolkit - App O11y, K8s Monitoring - and time yourself.*
 
-This isn't meant to make the classic apps look bad. They can answer all of these and they do it well. The point is *how* they answer: how many panels you need to load, how many tabs to switch, how much context you have to hold in your head. That's the difference Knowledge Graph is built to address.
+The classic apps can answer all of these, and they do it well - this isn't about replacing them. The point is *how* they answer: how many panels you need to load, how many tabs to switch, how much context you have to hold in your head. That's the difference Knowledge Graph is built to address.
 
 :::info
 
@@ -33,7 +33,7 @@ You already answered this in Lab 1.3 by clicking through to the workload view in
 
 **How to find it (Knowledge Graph path):**
 
-1. Use the search bar to show the `productcatalogservice` service, or open Entity Graph → **Show all services** and filter for `productcatalogservice`.
+1. Use the search bar to show the `productcatalogservice` service, or open the Entity Catalog → **Show all services** and filter for `productcatalogservice`.
 2. Open the **KPI drawer**.
 3. Click the **Kubernetes** tab.
 4. See **memory limits** within the **Workload Memory** panel.
@@ -59,7 +59,7 @@ Between **15% and 40%**.
 
 **How to find it (Knowledge Graph path):**
 
-1. Use the search bar to show the `productcatalogservice`, or open Entity Graph → **Show all services** and filter.
+1. Use the search bar to show the `productcatalogservice`, or open the Entity Catalog → **Show all services** and filter.
 2. Open the **KPI drawer**.
 3. Click the **Service Overview** tab.
 4. Look at the **Errors** panel and see how high the spike gets.
@@ -72,9 +72,7 @@ Between **15% and 40%**.
 
 **What error message is the `productcatalogservice` throwing when it errors in the last 24 hours?**
 
-Compare the journey. In Lab 1.2 you went: services list → service detail → Errors panel → Traces button → pick a trace → expand the span → expand events. That's six clicks before you saw the error string. RCA Workbench compresses that: hover the insight bar, jump straight to logs or traces filtered to the exact insight window.
-
-> **Why this matters:** RCA Workbench is context-aware. When you click "Logs" from an insight, the logs are already filtered to the time range and service that insight relates to. You're not picking up filters; the workbench is.
+Compare the journey. In Lab 1.2 you went: Services list → service detail → Errors panel → Traces button → pick a trace → expand the span → expand events. That's six clicks before you saw the error string. RCA Workbench compresses that: hover the insight bar, jump straight to logs or traces filtered to the exact insight window. It's context-aware - when you click "Logs" from an insight, the logs are already filtered to the time range and service that insight relates to. You're not applying filters; the workbench is.
 
 <TryIt />
 
@@ -130,7 +128,7 @@ Same **Operations** panel concept as Lab 1.2, but you're never leaving the entit
 
 **How to find it:**
 
-1. Use the search bar to show the `productcatalogservice`, or open Entity Graph → **Show all services** and filter.
+1. Use the search bar to show the `productcatalogservice`, or open the Entity Catalog → **Show all services** and filter.
 2. Open the **KPI drawer**.
 3. Click the **Service Overview** tab.
 4. Look at the **Operations** panel - `oteldemo.ProductCatalogService/ListProducts` shows visible variation in its sparkline.

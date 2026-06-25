@@ -56,14 +56,14 @@ Same image-spec lookup as Lab 1.3 - except instead of finding the Containers pan
 
 **Is the `productcatalogservice` right-sized?**
 
-This was the multi-step deep-dive in Lab 1.3 - click into the container, read the gauge, compare to the recommendation. Assistant pulls the same [right-sizing data](https://grafana.com/docs/grafana-cloud/monitor-infrastructure/kubernetes-monitoring/optimize-resource-usage/) and delivers the verdict in one prompt.
-
-> **Why this matters:** Assistant isn't a new data source - it's a faster route into the same Grafana data you'd otherwise navigate to manually. Trust comes from being able to verify that.
+This was the multi-step deep-dive in Lab 1.3 - click into the container, read the gauge, compare to the recommendation. Assistant pulls the same [right-sizing data](https://grafana.com/docs/grafana-cloud/monitor-infrastructure/kubernetes-monitoring/optimize-resource-usage/) and delivers the verdict in one prompt. It isn't a new data source - it's a faster route into the same Grafana data you'd otherwise navigate to manually, and trust comes from being able to verify that.
 
 <TryIt>Ask Grafana Assistant before revealing the answer.</TryIt>
 
 <details className="answer-reveal">
 <summary>Show answer</summary>
+
+No - Assistant reports the service as oversized on memory (assigned ~100 MiB but using far less), the same verdict you reached manually in Lab 1.3.
 
 ![Right-sizing response](/img/lab3/2.3-grafana-assistant-1.png)
 
@@ -75,7 +75,7 @@ This was the multi-step deep-dive in Lab 1.3 - click into the container, read th
 
 **What namespace is my app deployed in?**
 
-A one-shot question that would otherwise take a few clicks through the cluster view. The kind of detail it's annoying to remember where to find.
+A single-prompt question that would otherwise take a few clicks through the cluster view. The kind of detail it's annoying to remember where to find.
 
 <TryIt>Ask Grafana Assistant before revealing the answer.</TryIt>
 

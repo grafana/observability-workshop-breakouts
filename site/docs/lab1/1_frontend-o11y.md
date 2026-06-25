@@ -46,9 +46,7 @@ Between **500 and 700** page loads.
 
 **What is the value of the **Largest Contentful Paint (LCP)** core web vital over the past 1 hour?**
 
-Traffic is fine. But how fast does the page actually feel? LCP is one of the Core Web Vitals Frontend Observability surfaces directly on the app overview - it's how Google measures whether your page loads quickly enough to keep users engaged.
-
-> **Why this matters:** Page load metrics are a leading indicator of frustration. Slow pages are abandoned pages, and abandoned pages are lost orders.
+Traffic is fine. But how fast does the page actually feel? LCP is one of the Core Web Vitals Frontend Observability surfaces directly on the app overview - it's how Google measures whether your page loads quickly enough to keep users engaged. Page load metrics are a leading indicator of frustration: slow pages are abandoned pages, and abandoned pages are lost orders.
 
 <TryIt />
 

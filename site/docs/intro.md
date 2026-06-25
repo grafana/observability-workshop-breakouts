@@ -31,6 +31,6 @@ If you didn't receive a username and password, please speak to your friendly fac
 
 Each lab contains a set of questions. We **encourage you to attempt each question on your own first**, and only reveal the answer afterwards by clicking **Show answer** under each question.
 
-You'll have around 20 minutes per breakout, after which the group regroups to walk through the answers together.
+You'll have around 20 minutes per breakout.
 
 Click **Next** to start with Lab 1.

@@ -57,7 +57,7 @@ Quite a few:
 
 **What error rate percentage has the `productcatalogservice` reached over the last 1 hour?**
 
-Now we hunt. The Frontend O11y errors mentioned `/api/products` - which strongly implies `productcatalogservice`. Click into that service and you'll see request rate, error rate, and latency right at the top: the three signals you check first when something looks off.
+The Frontend O11y errors mentioned `/api/products` - which strongly implies `productcatalogservice`. Click into that service and you'll see request rate, error rate, and latency right at the top: the three signals you check first when something looks off.
 
 <TryIt />
 
@@ -83,9 +83,7 @@ It can range between **20% and 100%**.
 
 **What error message is the `productcatalogservice` throwing when it errors?**
 
-20-100% error rate is *very* bad. Now we need the actual exception. There are two routes - through the trace waterfall (drilling into a single failing request) or through the service's logs - and they should converge on the same root cause from different angles.
-
-> **Why this matters:** Traces and logs are two views of the same incident. A trace tells you "this one request failed and here's the chain"; logs tell you "here's everything the process said out loud." Having both keeps you honest.
+A 20-100% error rate is severe. Now we need the actual exception. There are two routes - through the trace waterfall (drilling into a single failing request) or through the service's logs - and they should converge on the same root cause from different angles. Traces and logs are two views of the same incident: a trace tells you "this one request failed and here's the chain," while logs tell you "here's everything the process said out loud."
 
 <TryIt />
 
