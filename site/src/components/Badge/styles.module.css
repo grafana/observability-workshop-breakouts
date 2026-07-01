@@ -1,0 +1,43 @@
+.badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.25rem 0.65rem;
+  border-radius: 999px;
+  vertical-align: middle;
+  margin-left: 0.6rem;
+  line-height: 1.4;
+  border: 1px solid transparent;
+}
+
+.neutral {
+  background: var(--ifm-color-emphasis-200);
+  color: var(--ifm-color-emphasis-800);
+  border-color: var(--ifm-color-emphasis-300);
+}
+
+[data-theme='dark'] .neutral {
+  background: var(--ifm-color-emphasis-300);
+  color: var(--ifm-color-emphasis-900);
+  border-color: var(--ifm-color-emphasis-400);
+}
+
+/* Optional: warm amber pill with a star prefix so it pops in the heading */
+.optional {
+  background: #fef3c7;
+  color: #92400e;
+  border-color: #f59e0b;
+}
+
+.optional::before {
+  content: '★ ';
+  margin-right: 0.1rem;
+}
+
+[data-theme='dark'] .optional {
+  background: rgba(251, 191, 36, 0.18);
+  color: #fbbf24;
+  border-color: #d97706;
+}
