@@ -16,13 +16,7 @@ npm install
 npm start
 ```
 
-The site is served at http://localhost:3001/observability-workshop-breakouts/.
+Then open http://localhost:3001/observability-workshop-breakouts/.
 
-## Build for production
-
-```sh
-cd site
-npm run build
-npm run serve
-```
-
+## Production
+The official workshop site can be viewed here https://grafana.github.io/observability-workshop-breakouts/
