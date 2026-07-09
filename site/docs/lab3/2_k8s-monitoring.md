@@ -108,24 +108,17 @@ Here's a comprehensive overview of your sedemoditl-cluster resources:
 🏗️ Cluster architecture
 Node configuration:
 
-3 nodes with identical specifications
+4 nodes with identical specifications
 AWS EC2 instances (ARM-based architecture)
 Distributed across 3 availability zones: us-east-1a, us-east-1b, us-east-1c
-OS: Amazon Linux 2023.8.20250818
-Kubernetes version: v1.33.3-eks-3abbec1
+OS: Amazon Linux VERSION
+Kubernetes version: VERSION
 
 💾 Total cluster capacity
 Compute resources:
 
-Total CPU: 6 cores (2 cores per node)
-Total Memory: 11.22 GB (~4 GB per node)
-System overhead: 3.5% CPU reserved for Kubernetes system components
-
-Storage & networking:
-
-Ephemeral storage: ~21.4 GB per node
-Container runtime: containerd 1.7.27
-Network: Private IPs in 10.0.x.x range
+Total CPU: 8 cores (2 cores per node)
+Total Memory: 15 GB (~4 GB per node)
 
 📊 Pod capacity
 Maximum pods: 330 total (110 per node)
@@ -133,9 +126,6 @@ Current allocatable: 330 pod slots available
 ```
 
 ![Prompt](/img/lab3/2.5-grafana-assistant-1.png)
-![Findings 1](/img/lab3/2.5-grafana-assistant-2.png)
-![Findings 2](/img/lab3/2.5-grafana-assistant-3.png)
-![Answer](/img/lab3/2.5-grafana-assistant-4.png)
 
 </details>
 
