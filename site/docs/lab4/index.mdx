@@ -1,0 +1,34 @@
+---
+sidebar_position: 5
+---
+
+import DocCardList from '@theme/DocCardList';
+
+# Lab 4 - A new app, the same instincts
+
+Different application, different domain: this is **Grafana Bank**, an online-banking app. Customers say the **transaction history** page has become sluggish - it loads, but it takes far too long. Nothing is erroring.
+
+You've never seen this app before, and that's the point. The tools and instincts from the first three labs carry straight over. This time you'll lead with **[Traces Drilldown](https://grafana.com/docs/grafana/latest/explore/simplified-exploration/traces/)** to expose the shape of the problem, then confirm it in **Database Observability**.
+
+## What this lab teaches
+
+**Traces Drilldown** is queryless trace exploration: you investigate by clicking through **Rate / Errors / Duration** and span attributes - no TraceQL. It's ideal for a problem where the *pattern* of requests, not any single slow component, is the issue. You'll:
+
+- use **Duration** and the analysis tabs to find why a request is slow,
+- recognise an **N+1 query** pattern from the shape of a trace,
+- confirm it in **Database Observability** using **Calls** and **Query Samples**,
+- and check the **Assistant** names the same anti-pattern.
+
+:::info Why this matters
+
+Some problems don't have a single slow part - they have *too many* small ones. An N+1 query (one request quietly firing hundreds of tiny database calls) is a classic example that individual metrics call "healthy." Traces reveal the shape.
+
+:::
+
+## Instructions
+
+Use the Grafana Cloud stack from the slides; this lab uses the **banking** app. A scenario is already running.
+
+You have around 20 minutes. Attempt each question first, then open **Show answer**.
+
+<DocCardList />

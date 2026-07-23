@@ -4,23 +4,33 @@ sidebar_position: 2
 
 import DocCardList from '@theme/DocCardList';
 
-# Lab 1 - Introduction to Grafana Observability
+# Lab 1 - The customer sees it first
 
-In this lab, you'll work through troubleshooting scenarios using the Grafana Cloud Observability apps you've just been introduced to, so you can get hands-on experience with each tool.
+Support tickets are trickling in about the `ecommerce` store: *"the site feels sluggish,"* *"product images take forever to appear."* You open your backend dashboards - CPU is calm, error rates are flat, every service is healthy. Nothing is on fire. And yet customers are clearly hurting.
+
+This is the blind spot of backend-only monitoring. The experience lives in a place your server-side telemetry can't reach: the user's browser, on their device, on their network. **[Frontend Observability](https://grafana.com/docs/grafana-cloud/monitor-applications/frontend-observability/)** is how you see it.
+
+## What this lab teaches
+
+This workshop is a guided tour of Grafana Cloud's observability suite - one signal, one story at a time. This first stop is **Frontend Observability**, Grafana's Real User Monitoring (RUM) product, powered by the open-source [Faro Web SDK](https://grafana.com/docs/grafana-cloud/monitor-applications/frontend-observability/instrument/faro/). It streams telemetry straight from every visitor's browser: Core Web Vitals, page loads, errors with de-obfuscated stack traces, full user sessions, and browser traces that link into your backend.
+
+You'll walk the app the way a real investigation flows - from a top-level health read, down to the exact resource that's slow, to a single user's journey, and finally into the backend trace to prove where the time *isn't* being spent. Along the way you'll learn what each view is for and the question it answers.
+
+:::info Why start at the frontend?
+
+It's the earliest, most honest signal you have. A degraded experience shows up here **before** it shows up as churn - and often when every backend metric still looks perfect.
+
+:::
 
 ## Instructions
 
-Go to the URL in the slides where you have access to a Grafana Cloud stack with:
+Go to the URL in the slides for your Grafana Cloud stack. This lab uses the `ecommerce` app; a scenario has already been started against it, so there's something real to find.
 
-1. Frontend Observability
-2. Application Observability
-3. Kubernetes Monitoring
-
-You have 20 minutes to work through the questions.
+You have around 20 minutes. Work each question yourself first, then open **Show answer** for the walkthrough.
 
 :::tip
 
-Try each question on your own first. The **Show answer** block under each question reveals the walkthrough and screenshots.
+Every answer names the exact view and steps to get there, so you can use this lab as a reference later.
 
 :::
 

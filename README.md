@@ -2,11 +2,14 @@
 
 ![Grafana Logo](./site/static/img/grafana.png)
 
-Hands-on breakout labs for the Grafana Cloud Observability workshop, served as a Docusaurus site.
+Hands-on labs for the Grafana Cloud Observability workshop, served as a Docusaurus site. Each lab is a self-contained story: a different app, a different problem, and a different tool suited to solving it.
 
-- **Lab 1** - Introduction to Grafana Observability (Frontend O11y, App O11y, K8s)
-- **Lab 2** - Root Cause Analysis with Knowledge Graph
-- **Lab 3** - Observability with AI (Grafana Assistant)
+- **Lab 1** - The customer sees it first (Frontend Observability)
+- **Lab 2** - Follow the trail into the database (Database Observability)
+- **Lab 3** - Map the whole system with the Knowledge Graph (Entity Catalog, Entity Graph, RCA Workbench)
+- **Lab 4** - A new app, the same instincts (Traces Drilldown + Database Observability, banking app)
+
+Every lab enters from a user-facing symptom and ends by having the **Grafana Assistant** investigate, then verifying its findings.
 
 ## Run locally
 
