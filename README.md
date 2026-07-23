@@ -6,7 +6,7 @@ Hands-on labs for the Grafana Cloud Observability workshop, served as a Docusaur
 
 - **Lab 1** - The customer sees it first (Frontend Observability)
 - **Lab 2** - Follow the trail into the database (Database Observability)
-- **Lab 3** - Map the whole system with the Knowledge Graph (Entity Catalog, Entity Graph, RCA Workbench)
+- **Lab 3** - Map the whole system with the Knowledge Graph (Entity Catalog, Entity Graph, RCA Workbench) + Kubernetes Monitoring
 - **Lab 4** - A new app, the same instincts (Traces Drilldown + Database Observability, banking app)
 
 Every lab enters from a user-facing symptom and ends by having the **Grafana Assistant** investigate, then verifying its findings.

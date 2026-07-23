@@ -3,7 +3,6 @@ sidebar_position: 1
 ---
 
 import TryIt from '@site/src/components/TryIt';
-import Badge from '@site/src/components/Badge';
 
 # 3.1. Find the unhealthy entity and its blast radius
 
@@ -73,27 +72,4 @@ The graph shows **`frontend` calls `productcatalogservice`** (so the crash-loopi
 
 ---
 
-## Question 3: What kind of failure is this? <Badge variant="optional">Optional</Badge>
-
-**From the entity's Kubernetes detail, what is happening to its memory and why is it restarting?**
-
-The same entity carries its infrastructure metrics. For a crash-looping pod, the memory-vs-limit trend and the restart reason tell you the failure mode.
-
-<TryIt />
-
-<details className="answer-reveal">
-<summary>Show answer</summary>
-
-The entity's **Kubernetes** detail shows memory **climbing steadily into the configured limit**, then the container being **OOMKilled** and restarting - over and over. It's a **memory leak**: the service consumes more and more memory until the kernel kills it, and Kubernetes restarts it into the same fate (`KubePodCrashLooping`).
-
-**How to find it:**
-
-1. Open `productcatalogservice` and select its **Kubernetes** detail/tab (or open it in **Kubernetes Monitoring**).
-2. Read the **container memory vs limit** graph.
-3. Check the **restarts / termination reason** - **OOMKilled**.
-
-![Memory climbing into the limit, OOMKilled](/img/lab3/3.4-oomkilled.png)
-
-> **The value:** the graph unifies application health and Kubernetes infrastructure on the same entity, so "the service is erroring" and "the pod is OOMKilling" are one story, not two tools.
-
-</details>
+*You've found the source and mapped its blast radius. Two questions remain: **how** is it failing, and **what started it**. Next, step into Kubernetes Monitoring for the infrastructure detail.*

@@ -9,6 +9,7 @@ Welcome to the **Grafana Observability Workshop**. Over four hands-on labs you'l
 
 - **Frontend Observability** - real user monitoring in the browser
 - **Database Observability** - query-level visibility into your databases
+- **Kubernetes Monitoring** - infrastructure health, from crash-looping pods to right-sizing
 - **Knowledge Graph** - the Entity Catalog, Entity Graph, and RCA Workbench that map your whole system
 - **Drilldown** - queryless exploration of traces and logs
 - **Grafana Assistant** - an AI that can investigate alongside you

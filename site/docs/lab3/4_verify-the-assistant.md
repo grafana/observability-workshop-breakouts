@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 import TryIt from '@site/src/components/TryIt';
@@ -62,8 +62,8 @@ The Assistant is only as trustworthy as its evidence. You have the timeline and 
 Check each claim against what you already established:
 
 - **Source entity** = `productcatalogservice` - matches the entity with critical *own* insights (3.1 Q1). ✅
-- **First event** = the feature-flag change - matches the earliest timeline insight (3.2 Q1). ✅
-- **Mechanism** = memory saturation → OOMKilled → crash loop - matches the Kubernetes detail and the logs (3.1 Q3, 3.2 Q2). ✅
+- **First event** = the feature-flag change - matches the earliest timeline insight (3.3 Q1). ✅
+- **Mechanism** = memory saturation → OOMKilled → crash loop - matches Kubernetes Monitoring (3.2 Q1) and the logs (3.3 Q2). ✅
 - **Propagation** = `frontend` errors *because* it calls `productcatalogservice` - matches the Entity Graph edge (3.1 Q2). ✅
 
 Because the knowledge graph gives the Assistant a pre-built, typed map of entities and relationships, its analysis is grounded in the same structure you verified - which is why the story lines up. If any claim *didn't* match the timeline, that's your cue to dig, not to trust.
@@ -79,10 +79,11 @@ Because the knowledge graph gives the Assistant a pre-built, typed map of entiti
 
 ## Wrap-up
 
-Faced with a wide-blast-radius incident, you used the Knowledge Graph to:
+Faced with a wide-blast-radius incident, you used the Knowledge Graph and Kubernetes Monitoring to:
 
 - rank health across the estate and identify the **source** entity via its own vs propagated insights (**Entity Catalog**),
 - see the **blast radius** from failing pod to frontend (**Entity Graph**),
+- characterise the failure as an **OOMKill** with memory climbing into its limit, and see the right-sizing fix (**Kubernetes Monitoring**),
 - reconstruct the incident's **order of events** and find the feature-flag change that started it (**RCA Workbench**),
 - confirm the crash in **logs** and its impact in **traces** (**Drilldown**),
 - and had the **Assistant** produce the same narrative from the same graph - which you verified.
