@@ -5,11 +5,11 @@ sidebar_position: 2
 import TryIt from '@site/src/components/TryIt';
 import Badge from '@site/src/components/Badge';
 
-# 3.2. Characterise the failure in Kubernetes Monitoring
+# 3.2. Characterize the failure in Kubernetes Monitoring
 
 *The graph told you `productcatalogservice` is crash-looping. **[Kubernetes Monitoring](https://grafana.com/docs/grafana-cloud/monitor-infrastructure/kubernetes-monitoring/)** is where you get the deep infrastructure picture - exactly why it's dying, and what to do about it.*
 
-Open **Infrastructure → Kubernetes**. This view mirrors the Kubernetes hierarchy - **Clusters → Namespaces → Workloads → Nodes → Pods → Containers** - with an **Overview** carrying **Alerts**, **Efficiency**, and **Cost** tabs, and a dedicated **Health** page summarising active issues.
+Open **Infrastructure → Kubernetes**. This view mirrors the Kubernetes hierarchy - **Clusters → Namespaces → Workloads → Nodes → Pods → Containers** - with an **Overview** carrying **Alerts**, **Efficiency**, and **Cost** tabs, and a dedicated **Health** page summarizing active issues.
 
 ![Kubernetes Monitoring overview](/img/lab3/3.10-k8s-crashloop.png)
 
@@ -87,7 +87,7 @@ Every Kubernetes Monitoring detail page carries a **Grafana Assistant health-che
 <details className="answer-reveal">
 <summary>Show answer</summary>
 
-The banner should report the container **Unhealthy** and summarise the OOMKill / crash-loop in a sentence. Clicking **Investigate** opens the Assistant with the detail and next steps. It should agree with the graphs you just read - and if it doesn't, that's your cue to trust the graphs.
+The banner should report the container **Unhealthy** and summarize the OOMKill / crash-loop in a sentence. Clicking **Investigate** opens the Assistant with the detail and next steps. It should agree with the graphs you just read - and if it doesn't, that's your cue to trust the graphs.
 
 As a recent-feature aside, the detail page also shows **Knowledge Graph annotations** and a ring-icon that opens this entity in the **RCA Workbench** - the same workbench you'll use next, reached directly from the infrastructure view.
 

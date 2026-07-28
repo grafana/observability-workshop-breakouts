@@ -75,7 +75,7 @@ This query has a **modest call count** but a **high average duration**, and - th
 
 **Open the query's Explain Plan. What operation is making it expensive?**
 
-The **Explain Plan** tab renders the database's execution plan as a graph - each node is an operation (scan, join, sort), colour-coded by cost. It shows you *how* the database is fulfilling the query.
+The **Explain Plan** tab renders the database's execution plan as a graph - each node is an operation (scan, join, sort), color-coded by cost. It shows you *how* the database is fulfilling the query.
 
 <TryIt />
 

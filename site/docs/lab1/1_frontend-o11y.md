@@ -9,7 +9,7 @@ import Badge from '@site/src/components/Badge';
 
 *You start where your users are. Open the browser telemetry and let the app tell you what's wrong.*
 
-In Grafana, open the left-hand menu and select **Frontend**. You'll land on **Frontend Apps** - the list of every application instrumented with Faro. Click into the `ecommerce` app and set the time range to the **last 3 hours** so you can see before and after the slowdown began.
+In Grafana, open the left-hand menu and select **Observability** -> **Frontend**. You'll see a list of every application instrumented with Faro. Click into the `ecommerce` app and set the time range to the **last 24 hours** so you can see before and after the slowdown began.
 
 The app opens on the **Performance** tab - your application health at a glance.
 
@@ -21,7 +21,7 @@ The app opens on the **Performance** tab - your application health at a glance.
 
 **On the Performance tab, how many page loads have there been, and are any of them failing?**
 
-Before hunting for the problem, get your bearings. The **Page Loads** panel is your traffic baseline - and it colours successful loads blue and failed loads red, so you immediately know whether this is a "broken" problem or a "slow" problem.
+Before hunting for the problem, get your bearings. The **Page Loads** panel is your traffic baseline - and it colors successful loads blue and failed loads red, so you immediately know whether this is a "broken" problem or a "slow" problem.
 
 <TryIt />
 
@@ -48,7 +48,7 @@ There's healthy, steady traffic, and the **Page Loads** panel is essentially **a
 
 **Look at the Core Web Vitals row. Which vital is in the "poor" (red) range, and what does it measure?**
 
-Grafana surfaces Google's [Core Web Vitals](https://grafana.com/docs/grafana-cloud/monitor-applications/frontend-observability/instrument/web-vitals/) as colour-coded tiles - green (good), amber (needs improvement), red (poor) - each measured at the 75th percentile of real users. The vital that's red tells you *what kind* of bad experience users are having.
+Grafana surfaces Google's [Core Web Vitals](https://grafana.com/docs/grafana-cloud/monitor-applications/frontend-observability/instrument/web-vitals/) as color-coded tiles - green (good), amber (needs improvement), red (poor) - each measured at the 75th percentile of real users. The vital that's red tells you *what kind* of bad experience users are having.
 
 <TryIt />
 

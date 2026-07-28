@@ -18,7 +18,7 @@ Open **Observability → Entity catalog**. This is the inventory of every entity
 
 **Filter the catalog to the ecommerce namespace. Which entity has the worst health, and what kind of insight is firing on it?**
 
-Every entity shows two **insight rings**: the **outer** ring is its *own* insights, the **inner** ring is insights **propagated up from things it depends on**. Colours are **red** (critical), **yellow** (warning), **blue** (info). The entity with critical insights *of its own* is where to look.
+Every entity shows two **insight rings**: the **outer** ring is its *own* insights, the **inner** ring is insights **propagated up from things it depends on**. Colors are **red** (critical), **yellow** (warning), **blue** (info). The entity with critical insights *of its own* is where to look.
 
 <TryIt />
 

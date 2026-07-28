@@ -83,7 +83,7 @@ Faced with a wide-blast-radius incident, you used the Knowledge Graph and Kubern
 
 - rank health across the estate and identify the **source** entity via its own vs propagated insights (**Entity Catalog**),
 - see the **blast radius** from failing pod to frontend (**Entity Graph**),
-- characterise the failure as an **OOMKill** with memory climbing into its limit, and see the right-sizing fix (**Kubernetes Monitoring**),
+- characterize the failure as an **OOMKill** with memory climbing into its limit, and see the right-sizing fix (**Kubernetes Monitoring**),
 - reconstruct the incident's **order of events** and find the feature-flag change that started it (**RCA Workbench**),
 - confirm the crash in **logs** and its impact in **traces** (**Drilldown**),
 - and had the **Assistant** produce the same narrative from the same graph - which you verified.

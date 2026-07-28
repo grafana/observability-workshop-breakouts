@@ -15,7 +15,7 @@ You've never seen this app before, and that's the point. The tools and instincts
 **Traces Drilldown** is queryless trace exploration: you investigate by clicking through **Rate / Errors / Duration** and span attributes - no TraceQL. It's ideal for a problem where the *pattern* of requests, not any single slow component, is the issue. You'll:
 
 - use **Duration** and the analysis tabs to find why a request is slow,
-- recognise an **N+1 query** pattern from the shape of a trace,
+- recognize an **N+1 query** pattern from the shape of a trace,
 - confirm it in **Database Observability** using **Calls** and **Query Samples**,
 - and check the **Assistant** names the same anti-pattern.
 
@@ -27,7 +27,13 @@ Some problems don't have a single slow part - they have *too many* small ones. A
 
 ## Instructions
 
-Use the Grafana Cloud stack from the slides; this lab uses the **banking** app. A scenario is already running.
+Use the Grafana Cloud stack from the slides; this lab uses the **banking** app.
+
+:::info When does this scenario run?
+
+**It's always on.** Unlike the other labs, the N+1 behavior runs continuously in the banking app, so any recent time range (the last hour is fine) will show it. No window to line up with.
+
+:::
 
 You have around 20 minutes. Attempt each question first, then open **Show answer**.
 

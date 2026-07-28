@@ -29,7 +29,13 @@ Applications spend an enormous amount of their time waiting on the database. A s
 
 ## Instructions
 
-Use the Grafana Cloud stack from the slides. This lab uses the `ecommerce` app and its **orders database**; a scenario is already running.
+Use the Grafana Cloud stack from the slides. This lab uses the `ecommerce` app and its **orders database**.
+
+:::info When does this scenario run?
+
+The slow-query scenario fires automatically **every day during the `{LAB2_WINDOW}` window** (default 09:00-10:00 UTC - your facilitator will share today's exact times). Set your Grafana **time range** to cover that window: the hour of accumulated query history is what fills the Queries Overview, samples, and explain plans you'll use.
+
+:::
 
 You have around 20 minutes. Attempt each question first, then open **Show answer**.
 

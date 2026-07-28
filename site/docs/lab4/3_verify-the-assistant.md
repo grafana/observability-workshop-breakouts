@@ -6,7 +6,7 @@ import TryIt from '@site/src/components/TryIt';
 
 # 4.3. Check the Assistant's read
 
-*One last time: ask the [Grafana Assistant](https://grafana.com/docs/grafana-cloud/machine-learning/assistant/) to investigate, and verify it recognises the anti-pattern you found.*
+*One last time: ask the [Grafana Assistant](https://grafana.com/docs/grafana-cloud/machine-learning/assistant/) to investigate, and verify it recognizes the anti-pattern you found.*
 
 :::note
 
@@ -80,7 +80,7 @@ If its evidence maps to what you found, the conclusion is sound. If it proposed 
 In an app you'd never seen, you:
 
 - framed the slowness with **Traces Drilldown** (Duration + Root cause latency),
-- recognised an **N+1 query** from the repeated span in the trace,
+- recognized an **N+1 query** from the repeated span in the trace,
 - confirmed it from the database side via **Calls** and **Query Samples** in Database Observability,
 - understood **why duration-based views missed it**,
 - and verified the **Assistant** reached the same conclusion from the same evidence.
