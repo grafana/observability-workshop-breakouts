@@ -6,7 +6,7 @@ import TryIt from '@site/src/components/TryIt';
 
 # 4.3. Check the Assistant's read
 
-*One last time: ask the [Grafana Assistant](https://grafana.com/docs/grafana-cloud/machine-learning/assistant/) to investigate, and verify it recognizes the anti-pattern you found.*
+*One last time: ask the [Grafana Assistant](https://grafana.com/docs/grafana-cloud/machine-learning/assistant/) to investigate, and check that it recognizes the pattern you found.*
 
 :::note
 
@@ -18,16 +18,16 @@ LLM output varies between runs. Judge the Assistant on whether it identifies the
 
 ## Question 1: What does the Assistant find?
 
-**Ask the Assistant to investigate the slow transaction-history requests. What does it report?**
+**Ask the Assistant to investigate the slow transaction-history requests.**
 
-Open the Assistant and prompt something like: *"The banking transaction history page is slow but nothing is erroring. Investigate the traces and database for the transaction service and tell me why."*
+Use a prompt like: *"The banking transaction history page is slow but nothing is erroring. Investigate the traces and database for the transaction service and tell me why."*
 
-<TryIt>Ask the Assistant before revealing the answer below.</TryIt>
+<TryIt where="the Grafana Assistant button in the top-right corner of Grafana.">Ask Grafana Assistant before revealing the answer below.</TryIt>
 
 <details className="answer-reveal">
 <summary>Show answer</summary>
 
-The Assistant should identify the **N+1 query pattern**: a single request issuing many repeated, identical database queries, each fast but collectively slow, and recommend **batching them into one query / JOIN**.
+The Assistant should identify the N+1 pattern - a single request issuing many repeated, identical database queries, each fast but collectively slow - and recommend batching them into one query / JOIN.
 
 ```
 The transaction-history request executes the same per-transaction query hundreds
@@ -52,22 +52,22 @@ Fix: fetch the related rows in a single batched query or JOIN.
 
 **Did the Assistant reach the N+1 conclusion from real evidence - the repeated span and the call count?**
 
-<TryIt />
+<TryIt where="the Assistant's expanded tool calls - check them against the trace (4.1) and the Calls column (4.2)." />
 
 <details className="answer-reveal">
 <summary>Show answer</summary>
 
 Check its reasoning against yours:
 
-- Did it observe the **repeated database span** within one trace (matching 4.1)? ✅
-- Did it note the **high Calls / low Duration** shape in the query metrics (matching 4.2)? ✅
-- Does its fix (**batch / JOIN**) actually address an N+1, rather than, say, suggesting an index (which wouldn't fix the round-trip count)?
+- Did it observe the **repeated database span** within one trace (matching 4.1)?
+- Did it note the **high Calls / low Duration** shape in the query metrics (matching 4.2)?
+- Does its fix (batch / JOIN) actually address an N+1? An index suggestion, for example, wouldn't - the problem is the round-trip count, not the per-query cost.
 
-If its evidence maps to what you found, the conclusion is sound. If it proposed a fix that doesn't match an N+1, that's exactly the kind of plausible-but-wrong answer this verification habit is built to catch.
+If the evidence maps to what you found, the conclusion is sound.
 
 **How to find it:**
 
-1. Expand the Assistant's tool calls / steps.
+1. Expand the Assistant's tool calls.
 2. Confirm it cited the repeated span and the call count.
 3. Sanity-check that the fix fits an N+1 specifically.
 
@@ -75,18 +75,8 @@ If its evidence maps to what you found, the conclusion is sound. If it proposed 
 
 ---
 
-## Wrap-up
-
-In an app you'd never seen, you:
-
-- framed the slowness with **Traces Drilldown** (Duration + Root cause latency),
-- recognized an **N+1 query** from the repeated span in the trace,
-- confirmed it from the database side via **Calls** and **Query Samples** in Database Observability,
-- understood **why duration-based views missed it**,
-- and verified the **Assistant** reached the same conclusion from the same evidence.
-
-> **Why this matters:** the tools and the instincts transfer. Enter from the user's symptom, pick the lens that fits the problem, follow the evidence, and verify the AI. That's the whole workshop, in any application.
-
 ## You've finished!
 
-Across four labs you've used **Frontend Observability**, **Database Observability**, the **Knowledge Graph** (Entity Catalog, Entity Graph, RCA Workbench), **Drilldown** for logs and traces, and the **Grafana Assistant** - each on a problem it's well suited to. Thanks for taking part!
+Across four labs you've used **Frontend Observability**, **Database Observability**, **Kubernetes Monitoring**, the **Knowledge Graph** (Entity Catalog, Entity Graph, RCA Workbench), **Drilldown** for logs and traces, and the **Grafana Assistant** - each on a problem it's suited to. The pattern is the same everywhere: start from the user's symptom, pick the right lens, follow the evidence, and verify the AI.
+
+Thanks for taking part!

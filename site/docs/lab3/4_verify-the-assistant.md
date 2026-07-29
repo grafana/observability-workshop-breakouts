@@ -4,11 +4,11 @@ sidebar_position: 4
 
 import TryIt from '@site/src/components/TryIt';
 
-# 3.3. Let the Assistant read the graph
+# 3.4. Does the Assistant tell the same story?
 
-*You reconstructed the incident by hand. Now let the [Grafana Assistant](https://grafana.com/docs/grafana-cloud/knowledge-graph/troubleshoot-infra-apps/workbench-ai/) do it from the same graph - and verify that its story matches yours.*
+*You reconstructed the incident by hand. Now have the [Grafana Assistant](https://grafana.com/docs/grafana-cloud/knowledge-graph/troubleshoot-infra-apps/workbench-ai/) do it from the same graph, and check that its story matches yours.*
 
-Inside the RCA Workbench, the Assistant runs in **Knowledge Graph mode**: it reasons over the entities, their relationships, and the insight timeline you're looking at. Click **Analyze RCA Workbench** (or open the Assistant and reference the entities with `@`).
+Inside the RCA Workbench, the Assistant runs in **Knowledge Graph mode**: it reasons over the entities, relationships, and insight timeline you're looking at. Click **Analyze RCA Workbench** (or open the Assistant and reference entities with `@`).
 
 :::note
 
@@ -22,7 +22,7 @@ LLM output varies between runs. Judge the Assistant on whether it names the same
 
 **Ask the Assistant to analyze the workbench. What root cause and sequence does it report?**
 
-<TryIt>Ask the Assistant before revealing the answer below.</TryIt>
+<TryIt where="the Analyze RCA Workbench button, bottom-right of the workbench.">Ask the Assistant before revealing the answer below.</TryIt>
 
 <details className="answer-reveal">
 <summary>Show answer</summary>
@@ -52,21 +52,19 @@ frontend. Root cause: the feature-flag change; the frontend 500s are the symptom
 
 **Does the Assistant's story match the graph - the source entity, the order of events, and the propagation path?**
 
-The Assistant is only as trustworthy as its evidence. You have the timeline and the graph in front of you - check its narrative against them.
-
-<TryIt />
+<TryIt where="the Assistant's summary, side by side with the Timeline and Entity Graph you already have open." />
 
 <details className="answer-reveal">
 <summary>Show answer</summary>
 
-Check each claim against what you already established:
+Check each claim against what you established:
 
-- **Source entity** = `productcatalogservice` - matches the entity with critical *own* insights (3.1 Q1). ✅
-- **First event** = the feature-flag change - matches the earliest timeline insight (3.3 Q1). ✅
-- **Mechanism** = memory saturation → OOMKilled → crash loop - matches Kubernetes Monitoring (3.2 Q1) and the logs (3.3 Q2). ✅
-- **Propagation** = `frontend` errors *because* it calls `productcatalogservice` - matches the Entity Graph edge (3.1 Q2). ✅
+- **Source entity** = `productcatalogservice` - matches the entity with critical *own* insights (3.1 Q1).
+- **First event** = the feature-flag change - matches the earliest timeline insight (3.3 Q1).
+- **Mechanism** = memory saturation -> OOMKilled -> crash loop - matches Kubernetes Monitoring (3.2 Q1) and the logs (3.3 Q2).
+- **Propagation** = `frontend` errors because it calls `productcatalogservice` - matches the Entity Graph edge (3.1 Q2).
 
-Because the knowledge graph gives the Assistant a pre-built, typed map of entities and relationships, its analysis is grounded in the same structure you verified - which is why the story lines up. If any claim *didn't* match the timeline, that's your cue to dig, not to trust.
+The knowledge graph gives the Assistant the same typed map of entities and relationships you just verified, which is why the stories line up. If any claim didn't match the timeline, that's your cue to dig further, not to trust it.
 
 **How to find it:**
 
@@ -79,15 +77,6 @@ Because the knowledge graph gives the Assistant a pre-built, typed map of entiti
 
 ## Wrap-up
 
-Faced with a wide-blast-radius incident, you used the Knowledge Graph and Kubernetes Monitoring to:
+You identified the source entity via its own vs propagated insights (Entity Catalog), saw the blast radius from failing pod to frontend (Entity Graph), confirmed the OOMKill and right-sizing fix (Kubernetes Monitoring), found the feature-flag change that started it all (RCA Workbench), confirmed the crash in logs and its impact in traces (Drilldown), and verified the Assistant's analysis against the same timeline.
 
-- rank health across the estate and identify the **source** entity via its own vs propagated insights (**Entity Catalog**),
-- see the **blast radius** from failing pod to frontend (**Entity Graph**),
-- characterize the failure as an **OOMKill** with memory climbing into its limit, and see the right-sizing fix (**Kubernetes Monitoring**),
-- reconstruct the incident's **order of events** and find the feature-flag change that started it (**RCA Workbench**),
-- confirm the crash in **logs** and its impact in **traces** (**Drilldown**),
-- and had the **Assistant** produce the same narrative from the same graph - which you verified.
-
-> **Why this matters:** a graph of your system - entities, relationships, and time-ordered insights - is what turns "half of everything is red" into "one change, here, caused all of it." It's also what lets an AI reason about your system reliably.
-
-In **Lab 4**, you'll take these skills to an entirely different application - and lead with **Traces Drilldown** to catch a problem hiding in plain sight.
+In Lab 4, you'll take these tools to a different application - the banking app.

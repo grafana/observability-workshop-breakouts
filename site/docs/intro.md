@@ -5,20 +5,20 @@ slug: /
 
 # Welcome
 
-Welcome to the **Grafana Observability Workshop**. Over four hands-on labs you'll troubleshoot real problems in real applications running in a Grafana Cloud stack - and along the way get a guided tour of the tools that make up Grafana's observability suite:
+Welcome to the **Grafana Observability Workshop**. Across four hands-on labs, you'll troubleshoot problems in real applications running in a Grafana Cloud stack using:
 
 - **Frontend Observability** - real user monitoring in the browser
 - **Database Observability** - query-level visibility into your databases
 - **Kubernetes Monitoring** - infrastructure health, from crash-looping pods to right-sizing
-- **Knowledge Graph** - the Entity Catalog, Entity Graph, and RCA Workbench that map your whole system
+- **Knowledge Graph** - Entity Catalog, Entity Graph, and RCA Workbench
 - **Drilldown** - queryless exploration of traces and logs
-- **Grafana Assistant** - an AI that can investigate alongside you
+- **Grafana Assistant** (AI)
 
 ## How the labs work
 
-Each lab is a **self-contained story**: a different application, a different problem, and a different tool suited to solving it. There's no single "right" tool for everything - the point is to learn what each one is *for*, how to use it, and the value it brings. Every lab starts from a symptom a real user would notice and walks down to the root cause.
+Each lab is self-contained: a different application, a different problem, and a different tool for solving it. Every lab starts from a symptom a user would notice, works down to the root cause, and finishes by asking the Grafana Assistant to investigate the same problem - then checking its answer.
 
-Because the labs are independent, you can do them in any order. Taken together, they show how the pieces of Grafana Cloud fit around a real system.
+The labs don't depend on each other, so you can do them in any order.
 
 ## Pick your color mode
 
@@ -38,7 +38,7 @@ If you didn't receive a username and password, please speak to your friendly fac
 
 ## How it works
 
-Each lab contains a set of questions. We **encourage you to attempt each question on your own first**, and only reveal the answer afterwards by clicking **Show answer** under each question. Every answer names the exact view and steps, so you can use these labs as a reference later.
+Each lab contains a set of questions. We **encourage you to attempt each question on your own first**, and only reveal the answer afterwards by clicking **Show answer** under each question.
 
 You'll have around 20 minutes per lab.
 

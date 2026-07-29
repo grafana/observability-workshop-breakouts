@@ -2,14 +2,14 @@
 
 ![Grafana Logo](./site/static/img/grafana.png)
 
-Hands-on labs for the Grafana Cloud Observability workshop, served as a Docusaurus site. Each lab is a self-contained story: a different app, a different problem, and a different tool suited to solving it.
+Hands-on labs for the Grafana Cloud Observability workshop, served as a Docusaurus site. Each lab is self-contained: a different app, a different problem, and a different tool for solving it.
 
-- **Lab 1** - The customer sees it first (Frontend Observability)
-- **Lab 2** - Follow the trail into the database (Database Observability)
-- **Lab 3** - Map the whole system with the Knowledge Graph (Entity Catalog, Entity Graph, RCA Workbench) + Kubernetes Monitoring
-- **Lab 4** - A new app, the same instincts (Traces Drilldown + Database Observability, banking app)
+- **Lab 1** - Users say slow, dashboards say fine (Frontend Observability)
+- **Lab 2** - It's always the database (Database Observability)
+- **Lab 3** - When everything breaks at once (Knowledge Graph + Kubernetes Monitoring)
+- **Lab 4** - One page, a thousand queries (Traces Drilldown + Database Observability, banking app)
 
-Every lab enters from a user-facing symptom and ends by having the **Grafana Assistant** investigate, then verifying its findings.
+Every lab starts from a user-facing symptom, works down to the root cause, and ends by asking the **Grafana Assistant** to investigate - then checking its answer.
 
 ## Run locally
 

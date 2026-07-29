@@ -7,71 +7,68 @@ import Badge from '@site/src/components/Badge';
 
 # 1.1. See what your users see
 
-*You start where your users are. Open the browser telemetry and let the app tell you what's wrong.*
+*Imagine you're on call. Customers say the ecommerce site feels slow, but every backend dashboard is green. Where do you start? At the same place your users do: in the browser.*
 
-In Grafana, open the left-hand menu and select **Observability** -> **Frontend**. You'll see a list of every application instrumented with Faro. Click into the `ecommerce` app and set the time range to the **last 24 hours** so you can see before and after the slowdown began.
+Frontend Observability collects telemetry directly from the browser using the Faro Web SDK - Core Web Vitals, page loads, errors, sessions, and client-side traces - so you can see what real users on real devices actually experience.
 
-The app opens on the **Performance** tab - your application health at a glance.
+In Grafana, open the left-hand menu and select **Observability** -> **Frontend**. You'll see a list of every application instrumented with Faro. Click into the `ecommerce` app and set the time range to cover **today's slow-images window** (`{LAB1_WINDOW}` - see the lab intro), starting about an hour before it so you can see the healthy baseline and the moment the slowdown began. Avoid a much wider range like 24 hours: it would also pick up yesterday's other lab scenarios and muddy the picture.
+
+The app opens on the **Performance** tab.
 
 ![Frontend Observability - Performance overview](/img/lab1/1.1-frontend-overview.png)
 
 ---
 
-## Question 1: Is the app even busy, and are page loads succeeding?
+## Question 1: Page loads
 
-**On the Performance tab, how many page loads have there been, and are any of them failing?**
+**How many page loads have there been, and are any of them failing?**
 
-Before hunting for the problem, get your bearings. The **Page Loads** panel is your traffic baseline - and it colors successful loads blue and failed loads red, so you immediately know whether this is a "broken" problem or a "slow" problem.
+Before hunting for problems, get your baseline.
 
-<TryIt />
+<TryIt where="the Page Loads panel on the Performance tab - successful loads in blue, failed loads in red." />
 
 <details className="answer-reveal">
 <summary>Show answer</summary>
 
-There's healthy, steady traffic, and the **Page Loads** panel is essentially **all blue** - pages *are* loading successfully. Nothing is failing outright. That already reframes the investigation: this is a **performance** problem, not an availability one.
+Traffic is steady and the **Page Loads** panel is essentially all blue - pages are loading successfully. Nothing is failing outright, so this is a performance problem, not an availability problem.
 
 **How to find it:**
 
-1. Left menu → **Frontend** → **Frontend Apps** → **`ecommerce`**.
+1. Open **Observability** -> **Frontend** -> **`ecommerce`**.
 2. On the **Performance** tab, read the **Page Loads** panel and its time series.
 3. Note the absence of red (failed) segments.
 
 ![Page Loads panel](/img/lab1/1.1-frontend-overview.png)
 
-> **The value:** RUM measures real visits from real browsers. One glance tells you traffic is normal and loads are succeeding - so whatever customers are feeling, it isn't an outage.
-
 </details>
 
 ---
 
-## Question 2: Which Core Web Vital has gone bad?
+## Question 2: Core Web Vitals
 
-**Look at the Core Web Vitals row. Which vital is in the "poor" (red) range, and what does it measure?**
+**Which Core Web Vital is in the "poor" (red) range, and what does it measure?**
 
-Grafana surfaces Google's [Core Web Vitals](https://grafana.com/docs/grafana-cloud/monitor-applications/frontend-observability/instrument/web-vitals/) as color-coded tiles - green (good), amber (needs improvement), red (poor) - each measured at the 75th percentile of real users. The vital that's red tells you *what kind* of bad experience users are having.
+Grafana surfaces Google's [Core Web Vitals](https://grafana.com/docs/grafana-cloud/monitor-applications/frontend-observability/instrument/web-vitals/) as color-coded tiles - green (good), amber (needs improvement), red (poor) - measured at the 75th percentile of real users.
 
-<TryIt />
+<TryIt where="the Core Web Vitals row on the Performance tab; hover the ? on each tile to see what it measures." />
 
 <details className="answer-reveal">
 <summary>Show answer</summary>
 
-**Largest Contentful Paint (LCP)** is in the red. LCP measures how long until the largest element on the page finishes rendering - and its "good" threshold is **2.5s**. Here it has climbed well past that, while the other vitals stay green:
+**Largest Contentful Paint (LCP)** is in the red. LCP measures how long until the largest element on the page finishes rendering; its "good" threshold is **2.5s**, and here it has climbed well past that. The other vitals stay green:
 
-- **LCP** (loading) - **poor** ⬆
+- **LCP** (loading) - poor
 - TTFB (server response), FCP (first paint) - fine
 - CLS (visual stability), INP (interaction responsiveness) - fine
 
-Because only the *loading* vital regressed - and specifically the *largest* element - the prime suspect is a big, slow asset like an image. (Note: older views may still label responsiveness as **FID**; Google and Grafana are moving to **INP**.)
+Only the loading vital regressed, and specifically the *largest* element - which points at a big, slow asset like an image. (Older views may still label responsiveness as **FID**; Google and Grafana are moving to **INP**.)
 
 **How to find it:**
 
 1. On the **Performance** tab, read the **Core Web Vitals** row.
-2. Hover the **?** on each tile to recall what it measures.
-3. Identify **LCP** as the red one; note its p75 value vs the 2.5s threshold.
+2. Identify **LCP** as the red one; note its p75 value against the 2.5s threshold.
 
 ![Core Web Vitals - LCP poor](/img/lab1/1.2-lcp-regression.png)
-
-> **The value:** Web Vitals turn a vague "it feels slow" into a specific, industry-standard number tied to a specific dimension of user experience - and a threshold you can hold yourself to.
 
 </details>
 
@@ -79,28 +76,26 @@ Because only the *loading* vital regressed - and specifically the *largest* elem
 
 ## Question 3: Which pages are affected?
 
-**Use the Page Performance panel. Is every page slow, or only some?**
+**Is every page slow, or only some?**
 
-The **Page Performance** panel breaks the same metrics down per page (by page ID), each with its own vitals and error columns. Whether the regression is everywhere or isolated is the single most useful early clue - it points straight at the common ingredient.
+Whether a regression is everywhere or isolated to certain routes is one of the most useful early clues.
 
-<TryIt />
+<TryIt where="the Page Performance panel, which breaks the same metrics down per page." />
 
 <details className="answer-reveal">
 <summary>Show answer</summary>
 
-The regression is concentrated on the **image-heavy pages** - the product pages (`/product/*`) and the home page (`/`) with its banner. Lighter pages such as `/cart` look fine.
+The regression is concentrated on the image-heavy pages - the product pages (`/product/*`) and the home page (`/`) with its banner. Lighter pages such as `/cart` look fine.
 
-The pattern *"slow only where there are big images"* combined with *"only LCP is bad"* narrows this almost to a diagnosis: something is wrong with how images load.
+"Slow only where there are big images" plus "only LCP is bad" narrows this down: something is wrong with how images load.
 
 **How to find it:**
 
 1. On the **Performance** tab, find the **Page Performance** panel.
 2. Compare the LCP column across page IDs.
-3. Note that image-heavy routes stand out while others are green.
+3. Note that the image-heavy routes stand out while others are green.
 
 ![Page Performance panel](/img/lab1/1.3-page-performance.png)
-
-> **The value:** Per-page breakdown converts "the site is slow" into "these specific pages are slow," shrinking the search space before you've left the overview.
 
 </details>
 
@@ -110,24 +105,22 @@ The pattern *"slow only where there are big images"* combined with *"only LCP is
 
 **Use filters and Geolocation insights to check whether one browser, device, or country is worse.**
 
-Real users aren't uniform. Frontend Observability lets you slice the *same* metric by browser, OS, device, release version, and geography. Even when a problem turns out to be universal, knowing how to segment is the skill that catches the ones that aren't (a bad CDN edge, a broken browser version, a regional outage).
+Frontend Observability can slice the same metric by browser, OS, device, release version, and geography. Even when a problem turns out to be universal, segmenting is how you catch the ones that aren't - a bad CDN edge, a broken browser version, a regional outage.
 
-<TryIt />
+<TryIt where="the filter bar at the top of any tab, and the Geolocation insights tab." />
 
 <details className="answer-reveal">
 <summary>Show answer</summary>
 
-The slowdown is **universal** - every browser, device, and country degrades together. That itself is informative: a segment-specific cause (one CDN region, one browser) is ruled out, pointing at something in the application itself rather than the delivery network.
+The slowdown is universal - every browser, device, and country degrades together. That rules out a segment-specific cause (one CDN region, one browser) and points at the application itself rather than the delivery network.
 
 **How to find it:**
 
-1. Use the **filter bar** at the top of any tab; add a filter on `browser`, then `os`, then compare.
-2. Open the **Geolocation insights** tab to see performance broken down by country on a map.
+1. Use the **filter bar** at the top of any tab; add a filter on `browser`, then `os`, and compare.
+2. Open the **Geolocation insights** tab to see performance broken down by country.
 3. Confirm the regression is present across all segments.
 
 ![Geolocation and segmentation](/img/lab1/1.6-geo-breakdown.png)
-
-> **The value:** Segmentation answers "who is actually affected?" - the difference between a global rollback and a targeted fix.
 
 </details>
 
@@ -137,24 +130,22 @@ The slowdown is **universal** - every browser, device, and country degrades toge
 
 **Open the Errors tab. Are exceptions elevated during this window?**
 
-It's tempting to assume "slow" and "broken" travel together. Check the **Errors overview** - the **Top Exceptions**, **Top URLs**, and **Top Browsers** panels. What you *don't* find here is as important as what you do.
+It's tempting to assume "slow" and "broken" travel together.
 
-<TryIt />
+<TryIt where="the Errors tab - the Top Exceptions, Top URLs, and Top Browsers panels." />
 
 <details className="answer-reveal">
 <summary>Show answer</summary>
 
-**No.** Exceptions are flat - **Top Exceptions** shows nothing new lining up with the slowdown. The pages render correctly and completely; they're just *slow*.
+No. Exceptions are flat - **Top Exceptions** shows nothing new lining up with the slowdown. The pages render correctly; they're just slow.
 
-This is the crux of why Frontend Observability exists. There is no error to catch, no 500 in a log, no failing span. Every backend signal is green. The only evidence of a real, revenue-affecting problem is a Web Vital measured in the browser.
+> **Why this matters:** there is no error to catch here - no 500 in a log, no failing span. The only evidence of a real, revenue-affecting problem is a Web Vital measured in the browser. Without RUM, this incident is invisible.
 
 **How to find it:**
 
-1. Open the **Errors** (Errors overview) tab.
+1. Open the **Errors** tab.
 2. Read **Top Exceptions** and its distribution over your time range.
 3. Confirm counts are unchanged across the slowdown window.
-
-> **The value:** RUM captures client-side exceptions your backend never sees - and, just as usefully, confirms when there *are* none, so you don't chase a bug that doesn't exist. (When there are errors, uploaded **source maps** turn minified stack traces back into readable code.)
 
 ![Errors overview - flat](/img/lab1/1.4-errors-flat.png)
 
@@ -162,49 +153,45 @@ This is the crux of why Frontend Observability exists. There is no error to catc
 
 ---
 
-## Question 6: Watch one real user
+## Question 6: Look at a real user session
 
 **Open a session on an affected page. In the User Journey, what specifically took so long?**
 
-KPIs tell you *that* it's slow; a **session** tells you *why*. Each session is one visitor's timeline - navigations, network calls, errors, and traces in order. Expand a navigation event to see exactly which phase of the page load ate the time.
+Each session is one visitor's timeline - navigations, network calls, errors, and traces in order.
 
-<TryIt />
+<TryIt where="the Sessions tab; open a session on /product/* and expand its User Journey navigation event." />
 
 <details className="answer-reveal">
 <summary>Show answer</summary>
 
-In the session's **User Journey** table, expand a `faro.performance.navigation` event on `/product/*`. The navigation-timings breakdown shows the network and document phases (DNS, TCP, TLS, document parsing, DOM processing) all completing quickly - but the page's **image resource loads** stretch out for seconds. The images are the long pole; everything else is fast.
+In the session's **User Journey** table, expand a `faro.performance.navigation` event on `/product/*`. The network and document phases (DNS, TCP, TLS, document parsing, DOM processing) all complete quickly - but the page's **image resource loads** stretch out for seconds.
 
-You've now localised the problem completely: image assets, on image-heavy pages, in the browser, with no errors.
+That localizes the problem completely: image assets, on image-heavy pages, in the browser, with no errors.
 
 **How to find it:**
 
 1. From an affected page or the **Sessions** tab, open a recent session on `/product/*`.
 2. In the **User Journey** table, expand the `faro.performance.navigation` event.
-3. Read the timing breakdown and spot the slow image resource(s). (If **session replay** is enabled, you can even watch the visit play back.)
+3. Read the timing breakdown and spot the slow image resource(s). (If session replay is enabled, you can also watch the visit play back.)
 
 ![Session User Journey - slow image resource](/img/lab1/1.5-session-slow-image.png)
-
-> **The value:** Sessions replace guesswork with a single user's ground truth - the exact sequence and timing of what they experienced.
 
 </details>
 
 ---
 
-## Question 7: Prove the backend is innocent
+## Question 7: Check the backend
 
 **Follow a slow page's request into its backend trace. Where did the time actually go?**
 
-Faro links browser spans to backend distributed traces (the backend returns a `Server-Timing` / `traceparent` header, and Faro stitches them together). Before you hand this off as a frontend issue, *prove* it: jump to the trace and look at the backend spans.
+Faro links browser spans to backend distributed traces (the backend returns a `Server-Timing` / `traceparent` header, and Faro stitches them together). Before calling this a frontend issue, confirm it with a trace.
 
-<TryIt />
+<TryIt where="an HTTP request inside a session (or the HTTP insights tab) - the Services action jumps to the backend trace." />
 
 <details className="answer-reveal">
 <summary>Show answer</summary>
 
-The **backend spans are fast**. From a session's HTTP request (or the **HTTP insights** tab), click through to the trace in Application Observability: the API, the services, and the database all return in milliseconds. The seconds of delay live entirely on the client, fetching and rendering images.
-
-You didn't just *suspect* a frontend problem - you followed the request end to end and **proved** the backend was healthy.
+The backend spans are fast. From a session's HTTP request (or the **HTTP insights** tab), click through to the trace: the API, the services, and the database all return in milliseconds. The delay is entirely client-side, in fetching and rendering images.
 
 **How to find it:**
 
@@ -212,7 +199,5 @@ You didn't just *suspect* a frontend problem - you followed the request end to e
 2. Inspect the span durations - backend work is fast; the time is client-side.
 
 ![Trace - fast backend spans](/img/lab1/1.7-trace-fast-backend.png)
-
-> **The value:** Frontend-to-backend trace correlation is the full-stack payoff - one click from "the browser is slow" to "and here's exactly how far down the stack the slowness does (or doesn't) go." In **Lab 2** you'll take that same click when the trail *keeps going* - all the way into a database query.
 
 </details>

@@ -4,27 +4,17 @@ sidebar_position: 4
 
 import DocCardList from '@theme/DocCardList';
 
-# Lab 3 - Map the whole system with the Knowledge Graph
+# Lab 3 - When everything breaks at once
 
-This time the `ecommerce` store is throwing errors - 500s across multiple pages, coming and going. Something is genuinely broken, several services look unhappy at once, and it's not obvious which one is the cause and which are just collateral damage.
+This time the `ecommerce` store is throwing errors - 500s across multiple pages, coming and going. Several services look unhealthy at once, and it's not obvious which one is the cause and which are collateral damage.
 
-When a problem has a wide blast radius, what you need first is a **map**: every service and piece of infrastructure, how they connect, what's unhealthy, and *what changed first*. That's the **[Knowledge Graph](https://grafana.com/docs/grafana-cloud/knowledge-graph/introduction/)**.
-
-## What this lab teaches
-
-The Knowledge Graph automatically models your applications and infrastructure into one connected graph of **entities** (services, pods, nodes, namespaces, databases...) and their **relationships**, and continuously attaches **insights** about their health. You'll use its three surfaces:
+In this lab you'll use the **[Knowledge Graph](https://grafana.com/docs/grafana-cloud/knowledge-graph/introduction/)**, which automatically models your applications and infrastructure into a graph of **entities** (services, pods, nodes, namespaces, databases) and their **relationships**, with continuously generated health **insights**. You'll work with its three surfaces:
 
 - **Entity Catalog** - a searchable inventory of everything, with health at a glance
-- **Entity Graph** - the visual dependency map, for blast radius
-- **RCA Workbench** - a timeline of insights that shows what failed, in what order
+- **Entity Graph** - the visual dependency map
+- **RCA Workbench** - a timeline of insights showing what failed, in what order
 
-Because the failure is a crash-looping pod, you'll also step into **[Kubernetes Monitoring](https://grafana.com/docs/grafana-cloud/monitor-infrastructure/kubernetes-monitoring/)** for the deep infrastructure detail - the OOMKill, the memory climbing into its limit, and how to right-size it. You'll find the unhealthy entity, see how far the damage spreads, characterize the infrastructure failure, trace the incident back to the **first event that caused it**, drop into **Drilldown** for the logs and traces that confirm it - then let the **Grafana Assistant** narrate the whole thing.
-
-:::info Why a graph?
-
-Individual dashboards each show you one entity. A graph shows you the *relationships* - which is exactly what you need when the symptom (frontend errors) and the cause (a crashing backend service) are several hops apart.
-
-:::
+Because the failure is a crash-looping pod, you'll also use **[Kubernetes Monitoring](https://grafana.com/docs/grafana-cloud/monitor-infrastructure/kubernetes-monitoring/)** for the infrastructure detail - the OOMKill, the memory climbing into its limit, and right-sizing - plus **Drilldown** for the logs and traces, and the **Grafana Assistant** to close it out.
 
 ## Instructions
 
@@ -32,10 +22,16 @@ Use the Grafana Cloud stack from the slides; this lab uses the `ecommerce` app r
 
 :::info When does this scenario run?
 
-The memory-leak scenario fires automatically **every day during the `{LAB3_WINDOW}` window** (default 12:00-13:00 UTC - your facilitator will share today's exact times). Set your Grafana **time range** to cover that window, starting a little before it. The feature flag flips on at the start of the window - that flip is the very "first event" you'll be hunting for on the RCA timeline.
+The memory-leak scenario runs automatically **every day during the `{LAB3_WINDOW}` window** (default 12:00-13:00 UTC - your facilitator will share today's exact times). Set your Grafana **time range** to cover that window, starting a little before it. The feature flag flips on at the start of the window - that flip is the "first event" you'll be looking for on the RCA timeline.
 
 :::
 
-You have around 20 minutes. Attempt each question first, then open **Show answer**.
+You have around 20 minutes to work through the questions.
+
+:::tip
+
+Try each question on your own first. The **Show answer** block under each question reveals the walkthrough and screenshots.
+
+:::
 
 <DocCardList />
