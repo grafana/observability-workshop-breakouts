@@ -14,9 +14,11 @@ In this lab you'll use [Frontend Observability](https://grafana.com/docs/grafana
 
 Go to the URL in the slides for your Grafana Cloud stack. This lab uses the `ecommerce` app.
 
-:::info When does this scenario run?
+:::info The scenario running
 
-The slow-images scenario runs automatically **every day during the `{LAB1_WINDOW}` window** (default 06:00-08:00 UTC - your facilitator will share today's exact times). Set your Grafana **time range** to cover that window. Starting slightly before it lets you see the healthy baseline and when the regression begins.
+A k6 load test drives steady user traffic against the store while the **`imageSlowLoad`** feature flag injects the fault: it adds a 1.5-3 second delay to the banner and product images. Expect Largest Contentful Paint (LCP) to be in the "poor" range on image-heavy pages, while page loads still succeed and errors stay flat - a pure performance regression with no backend errors.
+
+It runs automatically **every day during the `{LAB1_WINDOW}` window** (default 06:00-08:00 UTC - your facilitator will share today's exact times). Set your Grafana **time range** to cover that window; starting slightly before it lets you see the healthy baseline and when the regression begins.
 
 :::
 

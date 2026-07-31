@@ -20,9 +20,11 @@ Because the failure is a crash-looping pod, you'll also use **[Kubernetes Monito
 
 Use the Grafana Cloud stack from the slides; this lab uses the `ecommerce` app running in Kubernetes.
 
-:::info When does this scenario run?
+:::info The scenario running
 
-The memory-leak scenario runs automatically **every day during the `{LAB3_WINDOW}` window** (default 12:00-13:00 UTC - your facilitator will share today's exact times). Set your Grafana **time range** to cover that window, starting a little before it. The feature flag flips on at the start of the window - that flip is the "first event" you'll be looking for on the RCA timeline.
+A k6 load test drives steady traffic while the **`productCatalogResponseCache`** feature flag turns on an in-memory response cache in `productcatalogservice` that grows without bound. Memory climbs into the pod's limit until it is OOMKilled and crash-loops, throwing 500s across the store. Expect several services to look unhealthy at once - the crash-looping pod is the cause, the rest are collateral.
+
+It runs automatically **every day during the `{LAB3_WINDOW}` window** (default 12:00-13:00 UTC - your facilitator will share today's exact times). Set your Grafana **time range** to cover that window, starting a little before it. The feature flag flips on at the start of the window - that flip is the "first event" you'll be looking for on the RCA timeline.
 
 :::
 

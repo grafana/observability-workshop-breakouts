@@ -13,7 +13,13 @@ Frontend Observability collects telemetry directly from the browser using the Fa
 
 In Grafana, open the left-hand menu and select **Observability** -> **Frontend**. You'll see a list of every application instrumented with Faro. Click into the `ecommerce` app and set the time range to cover **today's slow-images window** (`{LAB1_WINDOW}` - see the lab intro), starting about an hour before it so you can see the healthy baseline and the moment the slowdown began. Avoid a much wider range like 24 hours: it would also pick up yesterday's other lab scenarios and muddy the picture.
 
-The app opens on the **Performance** tab.
+<div style={{maxWidth: '340px'}}>
+
+![Set the time range to today's slow-images window](/img/lab1/1.0-time-range.png)
+
+</div>
+
+The app opens on the **Overview** tab.
 
 ![Frontend Observability - Performance overview](/img/lab1/1.1-frontend-overview.png)
 
@@ -25,7 +31,7 @@ The app opens on the **Performance** tab.
 
 Before hunting for problems, get your baseline.
 
-<TryIt where="the Page Loads panel on the Performance tab - successful loads in blue, failed loads in red." />
+<TryIt where="the Page Loads panel on the Overview tab - successful loads in blue, failed loads in red." />
 
 <details className="answer-reveal">
 <summary>Show answer</summary>
@@ -35,10 +41,14 @@ Traffic is steady and the **Page Loads** panel is essentially all blue - pages a
 **How to find it:**
 
 1. Open **Observability** -> **Frontend** -> **`ecommerce`**.
-2. On the **Performance** tab, read the **Page Loads** panel and its time series.
+2. On the **Overview** tab, read the **Page Loads** panel and its time series.
 3. Note the absence of red (failed) segments.
 
-![Page Loads panel](/img/lab1/1.1-frontend-overview.png)
+<div style={{maxWidth: '520px'}}>
+
+![Page Loads panel](/img/lab1/1.1-page-loads.png)
+
+</div>
 
 </details>
 
@@ -50,7 +60,7 @@ Traffic is steady and the **Page Loads** panel is essentially all blue - pages a
 
 Grafana surfaces Google's [Core Web Vitals](https://grafana.com/docs/grafana-cloud/monitor-applications/frontend-observability/instrument/web-vitals/) as color-coded tiles - green (good), amber (needs improvement), red (poor) - measured at the 75th percentile of real users.
 
-<TryIt where="the Core Web Vitals row on the Performance tab; hover the ? on each tile to see what it measures." />
+<TryIt where="the Core Web Vitals row on the Overview tab; hover the ? on each tile to see what it measures." />
 
 <details className="answer-reveal">
 <summary>Show answer</summary>
@@ -65,7 +75,7 @@ Only the loading vital regressed, and specifically the *largest* element - which
 
 **How to find it:**
 
-1. On the **Performance** tab, read the **Core Web Vitals** row.
+1. On the **Overview** tab, read the **Core Web Vitals** row.
 2. Identify **LCP** as the red one; note its p75 value against the 2.5s threshold.
 
 ![Core Web Vitals - LCP poor](/img/lab1/1.2-lcp-regression.png)
@@ -91,9 +101,9 @@ The regression is concentrated on the image-heavy pages - the product pages (`/p
 
 **How to find it:**
 
-1. On the **Performance** tab, find the **Page Performance** panel.
+1. On the **Overview** tab, find the **Page Performance** panel.
 2. Compare the LCP column across page IDs.
-3. Note that the image-heavy routes stand out while others are green.
+3. Note that the image-heavy routes stand out in red.
 
 ![Page Performance panel](/img/lab1/1.3-page-performance.png)
 
@@ -101,26 +111,29 @@ The regression is concentrated on the image-heavy pages - the product pages (`/p
 
 ---
 
-## Question 4: Is it everyone, or one segment? <Badge variant="optional">Optional</Badge>
+## Question 4: Is one region worse than another? <Badge variant="optional">Optional</Badge>
 
-**Use filters and Geolocation insights to check whether one browser, device, or country is worse.**
+**Use the Geolocation tab to check whether the slowdown hits one part of the world harder than the rest.**
 
-Frontend Observability can slice the same metric by browser, OS, device, release version, and geography. Even when a problem turns out to be universal, segmenting is how you catch the ones that aren't - a bad CDN edge, a broken browser version, a regional outage.
+Frontend Observability can group the same metric by geography, so you can tell a global regression from a regional one - a bad CDN edge, or a single region degrading on its own.
 
-<TryIt where="the filter bar at the top of any tab, and the Geolocation insights tab." />
+<TryIt where="the Geolocation tab; set Explore by to LCP. To confirm, add a geo_city filter on the Overview tab to zoom into one city." />
 
 <details className="answer-reveal">
 <summary>Show answer</summary>
 
-The slowdown is universal - every browser, device, and country degrades together. That rules out a segment-specific cause (one CDN region, one browser) and points at the application itself rather than the delivery network.
+The slowdown is global. With **Explore by** set to **LCP**, every region is red in the **LCP by location** table - North America ~5.0s, Europe ~4.9s, Asia ~4.8s - and the error rate is 0% everywhere. Filtering the Overview to a single city (for example `geo_city = Stockholm`) shows the same poor LCP. That rules out a regional or CDN cause and points at the application itself.
 
 **How to find it:**
 
-1. Use the **filter bar** at the top of any tab; add a filter on `browser`, then `os`, and compare.
-2. Open the **Geolocation insights** tab to see performance broken down by country.
-3. Confirm the regression is present across all segments.
+1. Open the **Geolocation** tab.
+2. Set **Explore by** to **LCP**; read the **LCP by location** table and the map - LCP is poor across every region.
 
-![Geolocation and segmentation](/img/lab1/1.6-geo-breakdown.png)
+![Geolocation - LCP poor in every region](/img/lab1/1.6-geo-breakdown.png)
+
+3. To confirm, go to the **Overview** tab and add a filter `geo_city = <a city>`; LCP stays in the red, so no single location is the cause.
+
+![Filtered to one city - still slow](/img/lab1/1.6-geo-filter.png)
 
 </details>
 
@@ -159,19 +172,24 @@ No. Exceptions are flat - **Top Exceptions** shows nothing new lining up with th
 
 Each session is one visitor's timeline - navigations, network calls, errors, and traces in order.
 
-<TryIt where="the Sessions tab; open a session on /product/* and expand its User Journey navigation event." />
+<TryIt where="the Sessions tab; open a session that visited a product page and expand its User Journey navigation event." />
+
+> **Seeing "No session data in this time range"?** Two common causes:
+>
+> - **A `page_id = /product/*` filter.** The filter bar does exact matching, so a typed wildcard matches nothing - real page IDs look like `/product/123`. Remove the filter (click its `x`); you don't need it to find a product-page session.
+> - **A time range that misses the window.** The time picker shows your local timezone, but the lab window is given in UTC. Open the time picker, switch the timezone to UTC (at the bottom of the picker), and set the range to cover today's window.
 
 <details className="answer-reveal">
 <summary>Show answer</summary>
 
-In the session's **User Journey** table, expand a `faro.performance.navigation` event on `/product/*`. The network and document phases (DNS, TCP, TLS, document parsing, DOM processing) all complete quickly - but the page's **image resource loads** stretch out for seconds.
+In the session's **User Journey** table, expand a `faro.performance.navigation` event on a `/product/...` page. The network and document phases (DNS, TCP, TLS, document parsing, DOM processing) all complete quickly - but the page's **image resource loads** stretch out for seconds.
 
 That localizes the problem completely: image assets, on image-heavy pages, in the browser, with no errors.
 
 **How to find it:**
 
-1. From an affected page or the **Sessions** tab, open a recent session on `/product/*`.
-2. In the **User Journey** table, expand the `faro.performance.navigation` event.
+1. Open the **Sessions** tab and pick a recent session from the list - most sessions visit a product page, so almost any will do. To be sure, open one and check its User Journey for a `/product/...` navigation; if there isn't one, go back and try another.
+2. In the **User Journey** table, expand the `faro.performance.navigation` event for the product page.
 3. Read the timing breakdown and spot the slow image resource(s). (If session replay is enabled, you can also watch the visit play back.)
 
 ![Session User Journey - slow image resource](/img/lab1/1.5-session-slow-image.png)
@@ -186,17 +204,18 @@ That localizes the problem completely: image assets, on image-heavy pages, in th
 
 Faro links browser spans to backend distributed traces (the backend returns a `Server-Timing` / `traceparent` header, and Faro stitches them together). Before calling this a frontend issue, confirm it with a trace.
 
-<TryIt where="an HTTP request inside a session (or the HTTP insights tab) - the Services action jumps to the backend trace." />
+<TryIt where="an HTTP request inside a session (or the HTTP tab) - the Services action jumps to the backend trace." />
 
 <details className="answer-reveal">
 <summary>Show answer</summary>
 
-The backend spans are fast. From a session's HTTP request (or the **HTTP insights** tab), click through to the trace: the API, the services, and the database all return in milliseconds. The delay is entirely client-side, in fetching and rendering images.
+The backend spans are fast. From a session's HTTP request (or the **HTTP** tab), click through to the trace: the API, the services, and the database all return in milliseconds. The delay is entirely client-side, in fetching and rendering images.
 
 **How to find it:**
 
-1. In a **Session** (or **HTTP insights**), open an HTTP request and click the **Services** action to jump to its backend trace.
-2. Inspect the span durations - backend work is fast; the time is client-side.
+1. Stay in the session you opened in Question 6. In its **User Journey**, find an HTTP request event (a `fetch`/`xhr` call to the API, not an image load).
+2. Click the request's **Services** action to jump to its backend trace. (Alternatively, use the **HTTP** tab and open a trace from there.)
+3. Inspect the span durations - backend work is fast; the time is client-side.
 
 ![Trace - fast backend spans](/img/lab1/1.7-trace-fast-backend.png)
 

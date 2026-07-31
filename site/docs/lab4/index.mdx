@@ -14,7 +14,9 @@ In this lab you'll lead with **[Traces Drilldown](https://grafana.com/docs/grafa
 
 Use the Grafana Cloud stack from the slides; this lab uses the **banking** app.
 
-:::info When does this scenario run?
+:::info The scenario running
+
+A k6 load test drives steady traffic against the banking app while the **`transactionsNPlusOne`** feature flag makes the transaction-history endpoint enrich each row with its own query - one database call per transaction (an N+1) instead of a single batched join. Expect the transaction-history page to load slowly with nothing erroring, and a single request to fan out into hundreds of tiny, near-identical database queries.
 
 **It's always on.** Unlike the other labs, the N+1 behavior runs continuously in the banking app, so any recent time range (the last hour is fine) will show it.
 
