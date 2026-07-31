@@ -4,6 +4,7 @@ sidebar_position: 1
 
 import TryIt from '@site/src/components/TryIt';
 import Badge from '@site/src/components/Badge';
+import EnvLink from '@site/src/components/EnvLink';
 
 # 1.1. See what your users see
 
@@ -18,6 +19,12 @@ In Grafana, open the left-hand menu and select **Observability** -> **Frontend**
 ![Set the time range to today's slow-images window](/img/lab1/1.0-time-range.png)
 
 </div>
+
+:::tip Jump straight there
+
+<EnvLink appIdKey="frontendAppId" path="/a/grafana-kowalski-app/apps/{appId}" from="06:00" to="08:00">Open Frontend Observability for the ecommerce app</EnvLink> - opens the app with the slow-images window (previous day, UTC) already applied. Needs your environment ID and Frontend Observability app ID from the Welcome page.
+
+:::
 
 The app opens on the **Overview** tab.
 
@@ -91,6 +98,8 @@ Only the loading vital regressed, and specifically the *largest* element - which
 Whether a regression is everywhere or isolated to certain routes is one of the most useful early clues.
 
 <TryIt where="the Page Performance panel, which breaks the same metrics down per page." />
+
+To focus on product pages only, open <EnvLink appIdKey="frontendAppId" path="/a/grafana-kowalski-app/apps/{appId}" from="06:00" to="08:00" params="var-Filters=page_id%7C%3D%7C%2Fproduct%2F%2A">Frontend Observability filtered to `/product/*`</EnvLink>.
 
 <details className="answer-reveal">
 <summary>Show answer</summary>

@@ -3,6 +3,8 @@ sidebar_position: 1
 slug: /
 ---
 
+import EnvSetup from '@site/src/components/EnvSetup';
+
 # Welcome
 
 Welcome to the **Grafana Observability Workshop**. Across four hands-on labs, you'll troubleshoot problems in real applications running in a Grafana Cloud stack using:
@@ -13,6 +15,12 @@ Welcome to the **Grafana Observability Workshop**. Across four hands-on labs, yo
 - **Knowledge Graph** - Entity Catalog, Entity Graph, and RCA Workbench
 - **Drilldown** - queryless exploration of traces and logs
 - **Grafana Assistant** (AI)
+
+## Set your environment ID
+
+Enter your Grafana Cloud environment ID below. It's saved in this browser, and every **Open in Grafana** link in the labs will use it - dropping you straight onto the right screen with the correct time range already applied.
+
+<EnvSetup />
 
 ## How the labs work
 
