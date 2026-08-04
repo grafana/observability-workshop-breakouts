@@ -177,11 +177,11 @@ No. Exceptions are flat - **Top Exceptions** shows nothing new lining up with th
 
 ## Question 6: Look at a real user session
 
-**Open a session on an affected page. In the User Journey, what specifically took so long?**
+**Open a session on an affected page. In its event timeline, what specifically took so long?**
 
 Each session is one visitor's timeline - navigations, network calls, errors, and traces in order.
 
-<TryIt where="the Sessions tab; open a session that visited a product page and expand its User Journey navigation event." />
+<TryIt where="the Sessions tab. Click a Session ID to open the session; its Activity section lists every event, starting with the Page Load event." />
 
 > **Seeing "No session data in this time range"?** Two common causes:
 >
@@ -191,17 +191,27 @@ Each session is one visitor's timeline - navigations, network calls, errors, and
 <details className="answer-reveal">
 <summary>Show answer</summary>
 
-In the session's **User Journey** table, expand a `faro.performance.navigation` event on a `/product/...` page. The network and document phases (DNS, TCP, TLS, document parsing, DOM processing) all complete quickly - but the page's **image resource loads** stretch out for seconds.
+In the session's **Activity** section, click the event whose **Type** is **Page Load** (the first row). The drawer's **Performance** tab breaks the load into **Summary**, **Network**, and **Render**: TTFB and the network phases (DNS, TCP, TLS, request, response) finish in milliseconds and add up to a few percent - while **Render** takes 90%+ of the time. The browser spends seconds laying out the page while its images arrive: close the drawer and the **HTTP** events for `/images/products/...` carry the inflated durations, alongside a late FCP.
 
 That localizes the problem completely: image assets, on image-heavy pages, in the browser, with no errors.
 
 **How to find it:**
 
-1. Open the **Sessions** tab and pick a recent session from the list - most sessions visit a product page, so almost any will do. To be sure, open one and check its User Journey for a `/product/...` navigation; if there isn't one, go back and try another.
-2. In the **User Journey** table, expand the `faro.performance.navigation` event for the product page.
-3. Read the timing breakdown and spot the slow image resource(s). (If session replay is enabled, you can also watch the visit play back.)
+1. Open the **Sessions** tab and pick a session from the **middle of the incident window** - the list sorts newest-first, and a session that started in the final minutes of the window will mostly post-date the slowdown, so everything in it looks fast. Scroll down to a mid-window **Timestamp**; most sessions visit a product page, so almost any will do.
 
-![Session User Journey - slow image resource](/img/lab1/1.5-session-slow-image.png)
+   ![Sessions tab - the sessions list](/img/lab1/1.5-sessions-list.png)
+
+2. Click the value in the **Session ID** column to open the session - the `>` chevron only expands the row in place. The session page shows summary panels (Session, Environment, User Experience - note the poor LCP) and, below them, the **Activity** section: an event list with **Elapsed**, **Page**, **Type**, and **Details** columns. (The **User Journey**/**Traces** toggle above it should be on **User Journey**, the default.)
+
+   ![Session page - Activity section with the Page Load event](/img/lab1/1.5-session-detail.png)
+
+3. Click the **Page Load** event (the first row) and read the **Summary** in the drawer: TTFB and Network are a few percent each, Render dominates.
+
+   ![Page Load drawer - Render takes 95% of the load](/img/lab1/1.5-page-load-drawer.png)
+
+4. Close the drawer and look at the events with Type **HTTP** whose Details path is `/images/products/...` - those requests are what's slow, each taking seconds. (If session replay is enabled, you can also watch the visit play back.)
+
+   ![HTTP events - product images taking seconds each](/img/lab1/1.5-slow-images.png)
 
 </details>
 
@@ -213,19 +223,30 @@ That localizes the problem completely: image assets, on image-heavy pages, in th
 
 Faro links browser spans to backend distributed traces (the backend returns a `Server-Timing` / `traceparent` header, and Faro stitches them together). Before calling this a frontend issue, confirm it with a trace.
 
-<TryIt where="an HTTP request inside a session (or the HTTP tab) - the Services action jumps to the backend trace." />
+<TryIt where="an HTTP event in the session's Activity list - the Traces tab in its drawer shows the linked backend trace." />
 
 <details className="answer-reveal">
 <summary>Show answer</summary>
 
-The backend spans are fast. From a session's HTTP request (or the **HTTP** tab), click through to the trace: the API, the services, and the database all return in milliseconds. The delay is entirely client-side, in fetching and rendering images.
+The backend spans are fast. Open an API request from a session and view its trace: the browser-side span carries almost all of the duration, while the proxy, frontend server, API route, and downstream services each return in milliseconds. The same holds for the slow images themselves - trace one of the multi-second `/images/products/...` requests and the actual server-side work is a few milliseconds; the seconds accumulate before the request ever reaches the backend. The delay is entirely client-side.
 
 **How to find it:**
 
-1. Stay in the session you opened in Question 6. In its **User Journey**, find an HTTP request event (a `fetch`/`xhr` call to the API, not an image load).
-2. Click the request's **Services** action to jump to its backend trace. (Alternatively, use the **HTTP** tab and open a trace from there.)
-3. Inspect the span durations - backend work is fast; the time is client-side.
+1. Stay in the session you opened in Question 6. In its **Activity** list, click an event with Type **HTTP** whose Details show an API call (for example `GET /api/products` - not an image load).
 
-![Trace - fast backend spans](/img/lab1/1.7-trace-fast-backend.png)
+   ![Activity list - the HTTP event for /api/products](/img/lab1/1.7-http-event.png)
+
+2. In the drawer, switch to the **Traces** tab to see the full distributed trace stitched to that browser request. (The **Traces** button in the drawer header opens the same trace in Application Observability.)
+
+   ![HTTP drawer - Traces tab with the backend trace](/img/lab1/1.7-traces-tab.png)
+
+3. Compare the span durations - the browser span is hundreds of milliseconds, the backend spans milliseconds. The time is client-side.
+4. Have the Assistant check your reading: click **Explain in Assistant** above the trace. It breaks the trace down the same way - only ~15ms of server-side work in a ~195ms request, the rest client-side.
+
+   ![Explain in Assistant - trace breakdown](/img/lab1/1.7-explain-in-assistant.png)
+
+5. For the strongest proof, open one of the multi-second `/images/products/...` events the same way: its trace shows seconds spent before the request reaches the proxy, and ~3ms of backend work.
+
+   ![Image request trace - 2.68s total, ~3ms backend](/img/lab1/1.7-image-trace.png)
 
 </details>
