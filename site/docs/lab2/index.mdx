@@ -4,17 +4,25 @@ sidebar_position: 3
 
 import DocCardList from '@theme/DocCardList';
 
-# Lab 2 - Root Cause Analysis with Knowledge Graph
+# Lab 2 - It's always the database
 
-In this lab, you'll work through troubleshooting scenarios using **Grafana Cloud Knowledge Graph** - specifically **Entity Graph** and **RCA Workbench**.
+A new complaint about the `ecommerce` store: product pages hang for several seconds before the recommendations appear. It's slow rather than broken, and it started recently. This time the trail doesn't stop at the browser - it leads through a trace and into the database.
 
-The idea is to show you things you can't easily do with the apps from Lab 1, and how some of those same activities become much easier with Knowledge Graph.
+In this lab you'll use [Database Observability](https://grafana.com/docs/grafana-cloud/monitor-applications/database-observability/) (GA since April 2026; MySQL and PostgreSQL, self-managed or managed - RDS, Aurora, Cloud SQL, Azure; collected by Grafana Alloy with no agent on the database host). You'll work through the **Queries Overview**, per-query metrics, the **Explain Plan**, **Table Schema Details**, and the Grafana Assistant's query optimization.
 
 ## Instructions
 
-Go to the URL in the slides where you have access to a Grafana Cloud stack with Knowledge Graph enabled.
+Use the Grafana Cloud stack from the slides. This lab uses the `ecommerce` app and its **orders database**.
 
-You have 20 minutes to work through the questions.
+:::info The scenario running
+
+A k6 load test drives steady browse and checkout traffic while the **`recommendationsFromOrderAnalysis`** feature flag switches the recommendation service to build its "you might also like" results with an inefficient query against the orders database. Expect product pages to hang for several seconds while recommendations load, with the delay tracing down to a single expensive SQL query - not a broken service.
+
+It runs automatically **every day during the `{LAB2_WINDOW}` window** (default 09:00-10:00 UTC - your facilitator will share today's exact times). Set your Grafana **time range** to cover that window - the accumulated query history is what fills the Queries Overview, samples, and explain plans.
+
+:::
+
+You have around 20 minutes to work through the questions.
 
 :::tip
 

@@ -1,0 +1,42 @@
+[   25742ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://devfedb13.grafana.net/apis/userstorage.grafana.app/v0alpha1/namespaces/stacks-1757201/user-storage/saved-queries:dfuhj9wjtgge8e:0
+[   26002ms] [ERROR] Faro
+ @grafana/faro-instrumentation-replay
+ Error occurred during session replay SyntaxError: Failed to execute 'insertRule' on 'CSSStyleSheet': Failed to parse the rule '.inci-qkfbqu-btn::-moz-focus-inner{border:0;padding:0;}'.
+    at https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:160861
+    at Object.apply (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:152759)
+    at t.insert (https://plugins-cdn.grafana.net/grafana-irm-app/0.113.0/public/plugins/grafana-irm-app/vendor-13d7706362b7b61d07de.js:2:49401)
+    at f (https://plugins-cdn.grafana.net/grafana-irm-app/0.113.0/public/plugins/grafana-irm-app/vendor-13d7706362b7b61d07de.js:2:57681)
+    at Array.p (https://plugins-cdn.grafana.net/grafana-irm-app/0.113.0/public/plugins/grafana-irm-app/vendor-13d7706362b7b61d07de.js:2:57726)
+    at m (https://plugins-cdn.grafana.net/grafana-irm-app/0.113.0/public/plugins/grafana-irm-app/vendor-13d7706362b7b61d07de.js:2:57815)
+    at U (https://plugins-cdn.grafana.net/grafana-irm-app/0.113.0/public/plugins/grafana-irm-app/vendor-13d7706362b7b61d07de.js:2:51382)
+    at Object.o [as insert] (https://plugins-cdn.grafana.net/grafana-irm-app/0.113.0/public/plugins/grafana-irm-app/vendor-13d7706362b7b61d07de.js:2:57864)
+    at o (https://plugins-cdn.grafana.net/grafana-irm-app/0.113.0/public/plugins/grafana-irm-app/vendor-13d7706362b7b61d07de.js:2:62950)
+    at n (https://plugins-cdn.grafana.net/grafana-irm-app/0.113.0/public/plugins/grafana-irm-app/vendor-13d7706362b7b61d07de.js:2:58335) @ https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:1
+[   26026ms] [ERROR] Faro
+ @grafana/faro-instrumentation-replay
+ Error occurred during session replay SyntaxError: Failed to execute 'insertRule' on 'CSSStyleSheet': Failed to parse the rule '.inci-1c5615l-btn::-moz-focus-inner{border:0;padding:0;}'.
+    at https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:160861
+    at Object.apply (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:152759)
+    at t.insert (https://plugins-cdn.grafana.net/grafana-irm-app/0.113.0/public/plugins/grafana-irm-app/vendor-13d7706362b7b61d07de.js:2:49401)
+    at f (https://plugins-cdn.grafana.net/grafana-irm-app/0.113.0/public/plugins/grafana-irm-app/vendor-13d7706362b7b61d07de.js:2:57681)
+    at Array.p (https://plugins-cdn.grafana.net/grafana-irm-app/0.113.0/public/plugins/grafana-irm-app/vendor-13d7706362b7b61d07de.js:2:57726)
+    at m (https://plugins-cdn.grafana.net/grafana-irm-app/0.113.0/public/plugins/grafana-irm-app/vendor-13d7706362b7b61d07de.js:2:57815)
+    at U (https://plugins-cdn.grafana.net/grafana-irm-app/0.113.0/public/plugins/grafana-irm-app/vendor-13d7706362b7b61d07de.js:2:51382)
+    at Object.o [as insert] (https://plugins-cdn.grafana.net/grafana-irm-app/0.113.0/public/plugins/grafana-irm-app/vendor-13d7706362b7b61d07de.js:2:57864)
+    at o (https://plugins-cdn.grafana.net/grafana-irm-app/0.113.0/public/plugins/grafana-irm-app/vendor-13d7706362b7b61d07de.js:2:62950)
+    at n (https://plugins-cdn.grafana.net/grafana-irm-app/0.113.0/public/plugins/grafana-irm-app/vendor-13d7706362b7b61d07de.js:2:58335) @ https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:1
+[   26026ms] [ERROR] Faro
+ @grafana/faro-instrumentation-replay
+ Error occurred during session replay SyntaxError: Failed to execute 'insertRule' on 'CSSStyleSheet': Failed to parse the rule '.inci-zrn669-btn-menu-item::-moz-focus-inner{border:0;padding:0;}'.
+    at https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:160861
+    at Object.apply (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:152759)
+    at t.insert (https://plugins-cdn.grafana.net/grafana-irm-app/0.113.0/public/plugins/grafana-irm-app/vendor-13d7706362b7b61d07de.js:2:49401)
+    at f (https://plugins-cdn.grafana.net/grafana-irm-app/0.113.0/public/plugins/grafana-irm-app/vendor-13d7706362b7b61d07de.js:2:57681)
+    at Array.p (https://plugins-cdn.grafana.net/grafana-irm-app/0.113.0/public/plugins/grafana-irm-app/vendor-13d7706362b7b61d07de.js:2:57726)
+    at m (https://plugins-cdn.grafana.net/grafana-irm-app/0.113.0/public/plugins/grafana-irm-app/vendor-13d7706362b7b61d07de.js:2:57815)
+    at U (https://plugins-cdn.grafana.net/grafana-irm-app/0.113.0/public/plugins/grafana-irm-app/vendor-13d7706362b7b61d07de.js:2:51382)
+    at Object.o [as insert] (https://plugins-cdn.grafana.net/grafana-irm-app/0.113.0/public/plugins/grafana-irm-app/vendor-13d7706362b7b61d07de.js:2:57864)
+    at o (https://plugins-cdn.grafana.net/grafana-irm-app/0.113.0/public/plugins/grafana-irm-app/vendor-13d7706362b7b61d07de.js:2:62950)
+    at n (https://plugins-cdn.grafana.net/grafana-irm-app/0.113.0/public/plugins/grafana-irm-app/vendor-13d7706362b7b61d07de.js:2:58335) @ https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:1
+[   26177ms] [ERROR] Faro
+ Attempted to create a new user action while one is already running. This is not possible. @ https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:1

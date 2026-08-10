@@ -1,0 +1,370 @@
+- generic [active] [ref=f40e1]:
+  - generic [ref=f40e9]:
+    - generic [ref=f40e10]:
+      - link "Skip to main content" [ref=f40e11] [cursor=pointer]:
+        - /url: "#pageContent"
+      - generic [ref=f40e13]:
+        - generic [ref=f40e14]:
+          - generic [ref=f40e15]:
+            - link [ref=f40e16] [cursor=pointer]:
+              - /url: /
+              - img "Grafana" [ref=f40e17]
+            - link "Grafana" [ref=f40e18] [cursor=pointer]:
+              - /url: /
+          - button "Undock menu" [ref=f40e19] [cursor=pointer]
+          - button "Close menu" [ref=f40e22] [cursor=pointer]
+        - navigation [ref=f40e25]:
+          - list "Navigation" [ref=f40e30]:
+            - listitem [ref=f40e31]:
+              - generic [ref=f40e32]:
+                - link [ref=f40e35] [cursor=pointer]:
+                  - /url: /bookmarks
+                  - paragraph [ref=f40e40]: Bookmarks
+                - 'button "Expand section: Bookmarks" [ref=f40e42] [cursor=pointer]'
+            - listitem [ref=f40e45]:
+              - generic [ref=f40e46]:
+                - link [ref=f40e49] [cursor=pointer]:
+                  - /url: /dashboards?starred
+                  - paragraph [ref=f40e54]: Starred
+                - 'button "Expand section: Starred" [ref=f40e57] [cursor=pointer]'
+            - listitem [ref=f40e60]:
+              - generic [ref=f40e61]:
+                - link [ref=f40e64] [cursor=pointer]:
+                  - /url: /dashboards
+                  - paragraph [ref=f40e69]: Dashboards
+                - 'button "Expand section: Dashboards" [ref=f40e72] [cursor=pointer]'
+            - listitem [ref=f40e75]:
+              - link [ref=f40e79] [cursor=pointer]:
+                - /url: /explore
+                - paragraph [ref=f40e84]: Explore
+            - listitem [ref=f40e86]:
+              - generic [ref=f40e87]:
+                - link [ref=f40e90] [cursor=pointer]:
+                  - /url: /drilldown
+                  - paragraph [ref=f40e98]: Drilldown
+                - 'button "Expand section: Drilldown" [ref=f40e101] [cursor=pointer]'
+            - listitem [ref=f40e104]:
+              - generic [ref=f40e105]:
+                - link [ref=f40e108] [cursor=pointer]:
+                  - /url: /a/grafana-assistant-app
+                  - paragraph [ref=f40e114]: Assistant
+                - 'button "Expand section: Assistant" [ref=f40e117] [cursor=pointer]'
+            - listitem [ref=f40e120]:
+              - generic [ref=f40e121]:
+                - link [ref=f40e124] [cursor=pointer]:
+                  - /url: /alerts-and-incidents
+                  - paragraph [ref=f40e129]: Alerts & IRM
+                - 'button "Expand section: Alerts &amp; IRM" [ref=f40e132] [cursor=pointer]'
+            - listitem [ref=f40e135]:
+              - generic [ref=f40e136]:
+                - link [ref=f40e139] [cursor=pointer]:
+                  - /url: /a/grafana-ml-app/home
+                  - paragraph [ref=f40e146]: AI & machine learning
+                - 'button "Expand section: AI &amp; machine learning" [ref=f40e149] [cursor=pointer]'
+            - listitem [ref=f40e152]:
+              - generic [ref=f40e153]:
+                - link [ref=f40e156] [cursor=pointer]:
+                  - /url: adaptive-telemetry
+                  - generic [ref=f40e158]:
+                    - paragraph [ref=f40e176]: Adaptive Telemetry
+                    - generic [ref=f40e177]: New!
+                - 'button "Expand section: Adaptive Telemetry" [ref=f40e183] [cursor=pointer]'
+            - listitem [ref=f40e186]:
+              - generic [ref=f40e187]:
+                - link [ref=f40e190] [cursor=pointer]:
+                  - /url: /a/grafana-cmab-app/
+                  - generic [ref=f40e192]:
+                    - paragraph [ref=f40e195]: Cost Management and Billing
+                    - generic [ref=f40e196]: New!
+                - 'button "Expand section: Cost Management and Billing" [ref=f40e202] [cursor=pointer]'
+            - listitem [ref=f40e205]:
+              - generic [ref=f40e206]:
+                - link [ref=f40e209] [cursor=pointer]:
+                  - /url: /testing-and-synthetics
+                  - paragraph [ref=f40e216]: Testing & synthetics
+                - 'button "Expand section: Testing &amp; synthetics" [ref=f40e219] [cursor=pointer]'
+            - listitem [ref=f40e222]:
+              - generic [ref=f40e223]:
+                - link [ref=f40e226] [cursor=pointer]:
+                  - /url: /observability
+                  - paragraph [ref=f40e231]: Observability
+                - 'button "Collapse section: Observability" [expanded] [ref=f40e234] [cursor=pointer]'
+              - list [ref=f40e237]:
+                - listitem [ref=f40e238]:
+                  - link [ref=f40e242] [cursor=pointer]:
+                    - /url: /a/grafana-asserts-app/entities
+                    - paragraph [ref=f40e245]: Entity graph
+                - listitem [ref=f40e247]:
+                  - link [ref=f40e251] [cursor=pointer]:
+                    - /url: /a/grafana-asserts-app/catalog
+                    - paragraph [ref=f40e254]: Entity catalog
+                - listitem [ref=f40e256]:
+                  - link [ref=f40e260] [cursor=pointer]:
+                    - /url: /a/grafana-asserts-app/assertions
+                    - paragraph [ref=f40e263]: RCA workbench
+                - listitem [ref=f40e265]:
+                  - link [ref=f40e269] [cursor=pointer]:
+                    - /url: /a/grafana-asserts-app/slo
+                    - paragraph [ref=f40e272]: Health target
+                - listitem [ref=f40e274]:
+                  - link [ref=f40e278] [cursor=pointer]:
+                    - /url: /a/grafana-asserts-app/rules
+                    - paragraph [ref=f40e281]: Rules
+                - listitem [ref=f40e283]:
+                  - link [ref=f40e287] [cursor=pointer]:
+                    - /url: /a/grafana-asserts-app/configuration
+                    - paragraph [ref=f40e290]: Configuration
+                - listitem [ref=f40e292]:
+                  - generic [ref=f40e293]:
+                    - link [ref=f40e296] [cursor=pointer]:
+                      - /url: /a/grafana-agento11y-app
+                      - generic [ref=f40e298]:
+                        - paragraph [ref=f40e299]: Agent
+                        - generic [ref=f40e300]: New!
+                    - 'button "Expand section: Agent" [ref=f40e306] [cursor=pointer]'
+                - listitem [ref=f40e309]:
+                  - generic [ref=f40e310]:
+                    - link [ref=f40e313] [cursor=pointer]:
+                      - /url: /a/grafana-kowalski-app
+                      - paragraph [ref=f40e316]: Frontend
+                    - 'button "Expand section: Frontend" [ref=f40e319] [cursor=pointer]'
+                - listitem [ref=f40e322]:
+                  - generic [ref=f40e323]:
+                    - link [ref=f40e326] [cursor=pointer]:
+                      - /url: /a/grafana-app-observability-app
+                      - paragraph [ref=f40e329]: Application
+                    - 'button "Expand section: Application" [ref=f40e332] [cursor=pointer]'
+                - listitem [ref=f40e335]:
+                  - generic [ref=f40e336]:
+                    - link [ref=f40e339] [cursor=pointer]:
+                      - /url: /a/grafana-dbo11y-app/
+                      - generic [ref=f40e341]:
+                        - paragraph [ref=f40e342]: Database
+                        - generic [ref=f40e343]: New!
+                    - 'button "Collapse section: Database" [expanded] [ref=f40e349] [cursor=pointer]'
+                  - list [ref=f40e352]:
+                    - listitem [ref=f40e353]:
+                      - link [ref=f40e358] [cursor=pointer]:
+                        - /url: /a/grafana-dbo11y-app/overview
+                        - paragraph [ref=f40e361]: Queries Overview
+                    - listitem [ref=f40e363]:
+                      - link [ref=f40e368] [cursor=pointer]:
+                        - /url: /a/grafana-dbo11y-app/configuration
+                        - paragraph [ref=f40e371]: Configuration
+                - listitem [ref=f40e373]:
+                  - generic [ref=f40e374]:
+                    - link [ref=f40e377] [cursor=pointer]:
+                      - /url: /a/grafana-k8s-app/home
+                      - paragraph [ref=f40e380]: Kubernetes
+                    - 'button "Expand section: Kubernetes" [ref=f40e383] [cursor=pointer]'
+                - listitem [ref=f40e386]:
+                  - generic [ref=f40e387]:
+                    - link [ref=f40e390] [cursor=pointer]:
+                      - /url: /a/grafana-csp-app
+                      - paragraph [ref=f40e393]: Cloud provider
+                    - 'button "Expand section: Cloud provider" [ref=f40e396] [cursor=pointer]'
+            - listitem [ref=f40e399]:
+              - generic [ref=f40e400]:
+                - link [ref=f40e403] [cursor=pointer]:
+                  - /url: /connections
+                  - paragraph [ref=f40e408]: Connections
+                - 'button "Expand section: Connections" [ref=f40e411] [cursor=pointer]'
+            - listitem [ref=f40e414]:
+              - generic [ref=f40e415]:
+                - link [ref=f40e418] [cursor=pointer]:
+                  - /url: /apps
+                  - paragraph [ref=f40e423]: More apps
+                - 'button "Expand section: More apps" [ref=f40e426] [cursor=pointer]'
+            - listitem [ref=f40e429]:
+              - generic [ref=f40e430]:
+                - link [ref=f40e433] [cursor=pointer]:
+                  - /url: /admin
+                  - paragraph [ref=f40e438]: Administration
+                - 'button "Expand section: Administration" [ref=f40e441] [cursor=pointer]'
+      - banner [ref=f40e444]:
+        - generic [ref=f40e445]:
+          - navigation "Breadcrumbs" [ref=f40e447]:
+            - list [ref=f40e448]:
+              - listitem [ref=f40e449]:
+                - link "Observability" [ref=f40e450] [cursor=pointer]:
+                  - /url: /observability
+              - listitem [ref=f40e454]:
+                - link "Database" [ref=f40e455] [cursor=pointer]:
+                  - /url: /a/grafana-dbo11y-app/
+              - listitem [ref=f40e459]:
+                - link "Queries Overview" [ref=f40e1741] [cursor=pointer]:
+                  - /url: /a/grafana-dbo11y-app/overview?from=2026-08-07T09:00:00.000Z&to=2026-08-07T10:00:00.000Z
+              - listitem [ref=f40e1745]:
+                - generic "Query Details" [ref=f40e1746]
+          - generic [ref=f40e461]:
+            - generic [ref=f40e463]:
+              - button "Search..." [ref=f40e467] [cursor=pointer]
+              - generic [ref=f40e468]: ⌘+k
+            - button "New" [ref=f40e470] [cursor=pointer]
+            - button "Help" [ref=f40e476] [cursor=pointer]
+            - button "Open Grafana Assistant" [ref=f40e480] [cursor=pointer]
+            - button "Profile" [ref=f40e485] [cursor=pointer]:
+              - img "User avatar" [ref=f40e486]
+      - main [ref=f40e489]:
+        - generic [ref=f40e1748]:
+          - generic [ref=f40e1750]:
+            - generic [ref=f40e1753]:
+              - img "MySQL" [ref=f40e1756]
+              - heading "Query Details" [level=1] [ref=f40e1761]
+              - generic [ref=f40e1762]: MySQL
+            - generic [ref=f40e1764]:
+              - generic [ref=f40e1765]:
+                - generic "Data source picker select container" [ref=f40e1768]:
+                  - generic [ref=f40e1769] [cursor=pointer]:
+                    - log [ref=f40e1771]
+                    - generic [ref=f40e1773]:
+                      - generic [ref=f40e1774]:
+                        - img "grafanacloud-devfedb13-prom" [ref=f40e1776]
+                        - text: grafanacloud-devfedb13-prom
+                      - combobox "Select a data source" [ref=f40e1778]
+                - generic "Data source picker select container" [ref=f40e1784]:
+                  - generic [ref=f40e1785] [cursor=pointer]:
+                    - log [ref=f40e1787]
+                    - generic [ref=f40e1789]:
+                      - generic [ref=f40e1790]:
+                        - img "grafanacloud-devfedb13-logs" [ref=f40e1792]
+                        - text: grafanacloud-devfedb13-logs
+                      - combobox "Select a data source" [ref=f40e1794]
+                - generic [ref=f40e1798]:
+                  - button "Move 30m backward" [ref=f40e1799] [cursor=pointer]
+                  - 'button "Time range selected: 2026-08-07 04:00:00 to 2026-08-07 05:00:00" [ref=f40e1802] [cursor=pointer]':
+                    - generic [ref=f40e1805]: 2026-08-07 04:00:00 to 2026-08-07 05:00:00
+                  - button "Move 30m forward" [ref=f40e1810] [cursor=pointer]
+                  - button "Zoom out time range" [ref=f40e1813] [cursor=pointer]
+                - generic [ref=f40e1816]:
+                  - button [ref=f40e1817] [cursor=pointer]
+                  - button "Auto refresh turned off. Choose refresh time interval" [ref=f40e1820] [cursor=pointer]
+              - link "Give feedback" [ref=f40e1824] [cursor=pointer]:
+                - /url: https://docs.google.com/forms/d/e/1FAIpQLSe8NJFlPoPN62grDM8hOBDVZM57HHQVXIEbQNTQ4foBMa7IQw/viewform?usp=header
+          - tablist [ref=f40e1830]:
+            - tab "Query Performance" [selected] [ref=f40e1832] [cursor=pointer]
+            - tab "Query Samples" [ref=f40e1834] [cursor=pointer]
+            - tab "Wait Events" [ref=f40e1836] [cursor=pointer]
+            - tab "Table Schema Details" [ref=f40e1838] [cursor=pointer]
+            - tab "Explain Plan" [ref=f40e1840] [cursor=pointer]
+          - generic [ref=f40e1844]:
+            - generic [ref=f40e1845]:
+              - generic [ref=f40e1846]:
+                - generic [ref=f40e1848]:
+                  - generic [ref=f40e1850]:
+                    - generic [ref=f40e1851]: Instance
+                    - generic [ref=f40e1853]:
+                      - heading "orders-db" [level=2] [ref=f40e1854]
+                      - link "Filter Queries" [ref=f40e1862] [cursor=pointer]:
+                        - /url: /a/grafana-dbo11y-app/overview?var-filters=instance%7C%3D%7Corders-db&from=2026-08-07T09:00:00.000Z&to=2026-08-07T10:00:00.000Z
+                    - generic [ref=f40e1865]: AWS · us-east-1
+                  - generic [ref=f40e1869]:
+                    - generic [ref=f40e1870]: Schema
+                    - generic [ref=f40e1872]:
+                      - heading "orders" [level=2] [ref=f40e1873]
+                      - link "Filter Queries" [ref=f40e1875] [cursor=pointer]:
+                        - /url: /a/grafana-dbo11y-app/overview?var-filters=schema%7C%3D%7Corders&from=2026-08-07T09:00:00.000Z&to=2026-08-07T10:00:00.000Z
+                  - generic [ref=f40e1881]:
+                    - generic [ref=f40e1882]: Tables
+                    - heading [level=2] [ref=f40e1885]:
+                      - generic [ref=f40e1886]:
+                        - link "customers" [ref=f40e1887] [cursor=pointer]:
+                          - /url: /a/grafana-dbo11y-app/overview/mysql/cc943387fb876feb26078b25c068ea459ac60523477dba0de94eb14c2c147f9e/orders/239470d9dded57d2ed34704acc673f496c08f2123350b31e6a315a52139b8c00/tableSchema?table=customers
+                        - text: ","
+                        - link "order_items" [ref=f40e1889] [cursor=pointer]:
+                          - /url: /a/grafana-dbo11y-app/overview/mysql/cc943387fb876feb26078b25c068ea459ac60523477dba0de94eb14c2c147f9e/orders/239470d9dded57d2ed34704acc673f496c08f2123350b31e6a315a52139b8c00/tableSchema?table=order_items
+                        - text: ","
+                        - button "+2 more" [ref=f40e1891] [cursor=pointer]
+                  - generic [ref=f40e1895]:
+                    - generic [ref=f40e1896]: Times Called
+                    - heading "20" [level=2] [ref=f40e1899]
+                - generic [ref=f40e1903]:
+                  - button "Explain this query" [ref=f40e1904] [cursor=pointer]
+                  - button "More AI actions" [ref=f40e1909] [cursor=pointer]
+              - generic [ref=f40e1913]:
+                - generic [ref=f40e1914]: SQL Query Text
+                - code [ref=f40e1920]:
+                  - generic [ref=f40e1921]:
+                    - generic [ref=f40e1933]:
+                      - generic [ref=f40e1934]: EXPLAIN FORMAT = JSON
+                      - generic [ref=f40e1936]: SELECT
+                      - generic [ref=f40e1938]: "`products`.`product_id` AS `recommended_product_id`,"
+                    - textbox "Editor content;Press Alt+F1 for Accessibility Options." [ref=f40e1940]: "EXPLAIN FORMAT = JSON SELECT `products`.`product_id` AS `recommended_product_id`, `products`.`name` AS `recommended_product_name`, ( SELECT COUNT(DISTINCTROW `order_items_cart`.`order_id`) FROM `order_items` AS `order_items_cart` WHERE"
+                - button [ref=f40e1941] [cursor=pointer]
+            - generic [ref=f40e1946]:
+              - generic [ref=f40e1947]: Insights
+              - switch [checked] [ref=f40e1950]
+            - generic [ref=f40e1952]:
+              - region [ref=f40e1957]:
+                - generic [ref=f40e1958]:
+                  - heading "Duration" [level=2] [ref=f40e1960]
+                  - link "Explore" [ref=f40e1961] [cursor=pointer]:
+                    - /url: /explore?left=%7B%22datasource%22%3A%22grafanacloud-prom%22%2C%22queries%22%3A%5B%7B%22refId%22%3A%22Duration%20AVG%22%2C%22expr%22%3A%22(%5Cn%20%20%20%20(%5Cn%20%20%20%20%20%20sum(rate(mysql_perf_schema_events_statements_seconds_total%7Bjob%3D%5C%22integrations%2Fdb-o11y%5C%22%2C%20server_id%3D%5C%22cc943387fb876feb26078b25c068ea459ac60523477dba0de94eb14c2c147f9e%5C%22%2C%20digest%3D%5C%22239470d9dded57d2ed34704acc673f496c08f2123350b31e6a315a52139b8c00%5C%22%2C%20schema%3D%5C%22orders%5C%22%7D%5B%24__rate_interval%3A%5D)%20or%20on()%20vector(0))%5Cn%20%20%20%20)%20%2F%20(%5Cn%20%20%20%20%20%20sum(rate(mysql_perf_schema_events_statements_total%7Bjob%3D%5C%22integrations%2Fdb-o11y%5C%22%2C%20server_id%3D%5C%22cc943387fb876feb26078b25c068ea459ac60523477dba0de94eb14c2c147f9e%5C%22%2C%20digest%3D%5C%22239470d9dded57d2ed34704acc673f496c08f2123350b31e6a315a52139b8c00%5C%22%2C%20schema%3D%5C%22orders%5C%22%7D%5B%24__rate_interval%3A%5D)%20or%20on()%20vector(0))%5Cn%20%20%20%20)%5Cn%20%20)%22%2C%22legendFormat%22%3A%22AVG%22%2C%22interval%22%3A%221m%22%2C%22intervalMs%22%3A60000%2C%22datasource%22%3A%7B%22type%22%3A%22prometheus%22%2C%22uid%22%3A%22grafanacloud-prom%22%7D%7D%2C%7B%22refId%22%3A%22Duration%20P95%22%2C%22expr%22%3A%22(%5Cn%20%20%20%20%20%20(rate(mysql_perf_schema_events_statements_total%7Bjob%3D%5C%22integrations%2Fdb-o11y%5C%22%2C%20server_id%3D%5C%22cc943387fb876feb26078b25c068ea459ac60523477dba0de94eb14c2c147f9e%5C%22%2C%20digest%3D%5C%22239470d9dded57d2ed34704acc673f496c08f2123350b31e6a315a52139b8c00%5C%22%2C%20schema%3D%5C%22orders%5C%22%7D%5B%24__rate_interval%5D)%5Cn%20%20%20%20%20%20%20%20%3E%20bool%200%5Cn%20%20%20%20%20%20)%20*%20on()%5Cn%20%20%20%20%20%20(mysql_perf_schema_events_statements_latency%7Bquantile%3D~%5C%2295%7C95.0%5C%22%2C%20job%3D%5C%22integrations%2Fdb-o11y%5C%22%2C%20server_id%3D%5C%22cc943387fb876feb26078b25c068ea459ac60523477dba0de94eb14c2c147f9e%5C%22%2C%20digest%3D%5C%22239470d9dded57d2ed34704acc673f496c08f2123350b31e6a315a52139b8c00%5C%22%2C%20schema%3D%5C%22orders%5C%22%7D)%5Cn%20%20%20%20%20%20)%20!%3D%200%22%2C%22legendFormat%22%3A%22P95%22%2C%22interval%22%3A%221m%22%2C%22intervalMs%22%3A60000%2C%22datasource%22%3A%7B%22type%22%3A%22prometheus%22%2C%22uid%22%3A%22grafanacloud-prom%22%7D%7D%2C%7B%22refId%22%3A%22Duration%20P99%22%2C%22expr%22%3A%22(%5Cn%20%20%20%20%20%20(rate(mysql_perf_schema_events_statements_total%7Bjob%3D%5C%22integrations%2Fdb-o11y%5C%22%2C%20server_id%3D%5C%22cc943387fb876feb26078b25c068ea459ac60523477dba0de94eb14c2c147f9e%5C%22%2C%20digest%3D%5C%22239470d9dded57d2ed34704acc673f496c08f2123350b31e6a315a52139b8c00%5C%22%2C%20schema%3D%5C%22orders%5C%22%7D%5B%24__rate_interval%5D)%5Cn%20%20%20%20%20%20%20%20%3E%20bool%200%5Cn%20%20%20%20%20%20)%20*%20on()%5Cn%20%20%20%20%20%20(mysql_perf_schema_events_statements_latency%7Bquantile%3D~%5C%2299%7C99.0%5C%22%2C%20job%3D%5C%22integrations%2Fdb-o11y%5C%22%2C%20server_id%3D%5C%22cc943387fb876feb26078b25c068ea459ac60523477dba0de94eb14c2c147f9e%5C%22%2C%20digest%3D%5C%22239470d9dded57d2ed34704acc673f496c08f2123350b31e6a315a52139b8c00%5C%22%2C%20schema%3D%5C%22orders%5C%22%7D)%5Cn%20%20%20%20%20%20)%20!%3D%200%22%2C%22legendFormat%22%3A%22P99%22%2C%22interval%22%3A%221m%22%2C%22intervalMs%22%3A60000%2C%22datasource%22%3A%7B%22type%22%3A%22prometheus%22%2C%22uid%22%3A%22grafanacloud-prom%22%7D%7D%5D%2C%22range%22%3A%7B%22from%22%3A%222026-08-07T09%3A00%3A00.000Z%22%2C%22to%22%3A%222026-08-07T10%3A00%3A00.000Z%22%7D%7D
+                - list [ref=f40e1982]:
+                  - listitem [ref=f40e1983]:
+                    - generic [ref=f40e1985]:
+                      - button "Edit color for AVG" [ref=f40e1986] [cursor=pointer]
+                      - button "All series selected" [ref=f40e1987] [cursor=pointer]: AVG
+                  - listitem [ref=f40e1988]:
+                    - generic [ref=f40e1990]:
+                      - button "Edit color for P95" [ref=f40e1991] [cursor=pointer]
+                      - button "All series selected" [ref=f40e1992] [cursor=pointer]: P95
+                  - listitem [ref=f40e1993]:
+                    - generic [ref=f40e1995]:
+                      - button "Edit color for P99" [ref=f40e1996] [cursor=pointer]
+                      - button "All series selected" [ref=f40e1997] [cursor=pointer]: P99
+              - region [ref=f40e2002]:
+                - generic [ref=f40e2003]:
+                  - heading "Errors" [level=2] [ref=f40e2005]
+                  - link "Explore" [ref=f40e2006] [cursor=pointer]:
+                    - /url: /explore?left=%7B%22datasource%22%3A%22grafanacloud-prom%22%2C%22queries%22%3A%5B%7B%22refId%22%3A%22Errors%22%2C%22expr%22%3A%22(rate(sum(mysql_perf_schema_events_statements_errors_total%7Bjob%3D%5C%22integrations%2Fdb-o11y%5C%22%2C%20server_id%3D%5C%22cc943387fb876feb26078b25c068ea459ac60523477dba0de94eb14c2c147f9e%5C%22%2C%20digest%3D%5C%22239470d9dded57d2ed34704acc673f496c08f2123350b31e6a315a52139b8c00%5C%22%2C%20schema%3D%5C%22orders%5C%22%7D%20or%20on()%20vector(0))%5B%24__rate_interval%3A%5D))%20%2F%20(rate(sum(mysql_perf_schema_events_statements_total%7Bjob%3D%5C%22integrations%2Fdb-o11y%5C%22%2C%20server_id%3D%5C%22cc943387fb876feb26078b25c068ea459ac60523477dba0de94eb14c2c147f9e%5C%22%2C%20digest%3D%5C%22239470d9dded57d2ed34704acc673f496c08f2123350b31e6a315a52139b8c00%5C%22%2C%20schema%3D%5C%22orders%5C%22%7D%20or%20on()%20vector(0))%5B%24__rate_interval%3A%5D))%20*%20100%22%2C%22interval%22%3A%221m%22%2C%22intervalMs%22%3A60000%2C%22datasource%22%3A%7B%22type%22%3A%22prometheus%22%2C%22uid%22%3A%22grafanacloud-prom%22%7D%7D%5D%2C%22range%22%3A%7B%22from%22%3A%222026-08-07T09%3A00%3A00.000Z%22%2C%22to%22%3A%222026-08-07T10%3A00%3A00.000Z%22%7D%7D
+              - region [ref=f40e2025]:
+                - generic [ref=f40e2026]:
+                  - heading "Rate" [level=2] [ref=f40e2028]
+                  - link "Explore" [ref=f40e2029] [cursor=pointer]:
+                    - /url: /explore?left=%7B%22datasource%22%3A%22grafanacloud-prom%22%2C%22queries%22%3A%5B%7B%22refId%22%3A%22QueryCount%22%2C%22expr%22%3A%22sum(rate(mysql_perf_schema_events_statements_total%7Bjob%3D%5C%22integrations%2Fdb-o11y%5C%22%2C%20server_id%3D%5C%22cc943387fb876feb26078b25c068ea459ac60523477dba0de94eb14c2c147f9e%5C%22%2C%20schema%3D%5C%22orders%5C%22%2C%20digest%3D%5C%22239470d9dded57d2ed34704acc673f496c08f2123350b31e6a315a52139b8c00%5C%22%7D%5B%24__rate_interval%5D))%22%2C%22interval%22%3A%221m%22%2C%22intervalMs%22%3A60000%2C%22datasource%22%3A%7B%22type%22%3A%22prometheus%22%2C%22uid%22%3A%22grafanacloud-prom%22%7D%7D%5D%2C%22range%22%3A%7B%22from%22%3A%222026-08-07T09%3A00%3A00.000Z%22%2C%22to%22%3A%222026-08-07T10%3A00%3A00.000Z%22%7D%7D
+            - generic [ref=f40e2044]:
+              - region [ref=f40e2049]:
+                - generic [ref=f40e2050]:
+                  - heading "Rows" [level=2] [ref=f40e2052]
+                  - link "Explore" [ref=f40e2053] [cursor=pointer]:
+                    - /url: /explore?left=%7B%22datasource%22%3A%22grafanacloud-prom%22%2C%22queries%22%3A%5B%7B%22refId%22%3A%22Rows%20Examined%22%2C%22expr%22%3A%22(rate(sum(mysql_perf_schema_events_statements_rows_examined_total%7Bjob%3D%5C%22integrations%2Fdb-o11y%5C%22%2C%20server_id%3D%5C%22cc943387fb876feb26078b25c068ea459ac60523477dba0de94eb14c2c147f9e%5C%22%2C%20schema%3D%5C%22orders%5C%22%2C%20digest%3D%5C%22239470d9dded57d2ed34704acc673f496c08f2123350b31e6a315a52139b8c00%5C%22%7D%20or%20on()%20vector(0))%5B%24__rate_interval%3A%5D))%20%2F%20(rate(sum(mysql_perf_schema_events_statements_total%7Bjob%3D%5C%22integrations%2Fdb-o11y%5C%22%2C%20server_id%3D%5C%22cc943387fb876feb26078b25c068ea459ac60523477dba0de94eb14c2c147f9e%5C%22%2C%20schema%3D%5C%22orders%5C%22%2C%20digest%3D%5C%22239470d9dded57d2ed34704acc673f496c08f2123350b31e6a315a52139b8c00%5C%22%7D%20or%20on()%20vector(0))%5B%24__rate_interval%3A%5D))%22%2C%22legendFormat%22%3A%22Rows%20Examined%22%2C%22interval%22%3A%221m%22%2C%22intervalMs%22%3A60000%2C%22datasource%22%3A%7B%22type%22%3A%22prometheus%22%2C%22uid%22%3A%22grafanacloud-prom%22%7D%7D%2C%7B%22refId%22%3A%22Rows%20Sent%22%2C%22expr%22%3A%22(rate(sum(mysql_perf_schema_events_statements_rows_sent_total%7Bjob%3D%5C%22integrations%2Fdb-o11y%5C%22%2C%20server_id%3D%5C%22cc943387fb876feb26078b25c068ea459ac60523477dba0de94eb14c2c147f9e%5C%22%2C%20schema%3D%5C%22orders%5C%22%2C%20digest%3D%5C%22239470d9dded57d2ed34704acc673f496c08f2123350b31e6a315a52139b8c00%5C%22%7D%20or%20on()%20vector(0))%5B%24__rate_interval%3A%5D))%20%2F%20(rate(sum(mysql_perf_schema_events_statements_total%7Bjob%3D%5C%22integrations%2Fdb-o11y%5C%22%2C%20server_id%3D%5C%22cc943387fb876feb26078b25c068ea459ac60523477dba0de94eb14c2c147f9e%5C%22%2C%20schema%3D%5C%22orders%5C%22%2C%20digest%3D%5C%22239470d9dded57d2ed34704acc673f496c08f2123350b31e6a315a52139b8c00%5C%22%7D%20or%20on()%20vector(0))%5B%24__rate_interval%3A%5D))%22%2C%22legendFormat%22%3A%22Rows%20Sent%22%2C%22interval%22%3A%221m%22%2C%22intervalMs%22%3A60000%2C%22datasource%22%3A%7B%22type%22%3A%22prometheus%22%2C%22uid%22%3A%22grafanacloud-prom%22%7D%7D%2C%7B%22refId%22%3A%22Rows%20Affected%22%2C%22expr%22%3A%22(rate(sum(mysql_perf_schema_events_statements_rows_affected_total%7Bjob%3D%5C%22integrations%2Fdb-o11y%5C%22%2C%20server_id%3D%5C%22cc943387fb876feb26078b25c068ea459ac60523477dba0de94eb14c2c147f9e%5C%22%2C%20schema%3D%5C%22orders%5C%22%2C%20digest%3D%5C%22239470d9dded57d2ed34704acc673f496c08f2123350b31e6a315a52139b8c00%5C%22%7D%20or%20on()%20vector(0))%5B%24__rate_interval%3A%5D))%20%2F%20(rate(sum(mysql_perf_schema_events_statements_total%7Bjob%3D%5C%22integrations%2Fdb-o11y%5C%22%2C%20server_id%3D%5C%22cc943387fb876feb26078b25c068ea459ac60523477dba0de94eb14c2c147f9e%5C%22%2C%20schema%3D%5C%22orders%5C%22%2C%20digest%3D%5C%22239470d9dded57d2ed34704acc673f496c08f2123350b31e6a315a52139b8c00%5C%22%7D%20or%20on()%20vector(0))%5B%24__rate_interval%3A%5D))%22%2C%22legendFormat%22%3A%22Rows%20Affected%22%2C%22interval%22%3A%221m%22%2C%22intervalMs%22%3A60000%2C%22datasource%22%3A%7B%22type%22%3A%22prometheus%22%2C%22uid%22%3A%22grafanacloud-prom%22%7D%7D%5D%2C%22range%22%3A%7B%22from%22%3A%222026-08-07T09%3A00%3A00.000Z%22%2C%22to%22%3A%222026-08-07T10%3A00%3A00.000Z%22%7D%7D
+                - list [ref=f40e2074]:
+                  - listitem [ref=f40e2075]:
+                    - generic [ref=f40e2077]:
+                      - button "Edit color for Rows Examined" [ref=f40e2078] [cursor=pointer]
+                      - button "All series selected" [ref=f40e2079] [cursor=pointer]: Rows Examined
+                  - listitem [ref=f40e2080]:
+                    - generic [ref=f40e2082]:
+                      - button "Edit color for Rows Sent" [ref=f40e2083] [cursor=pointer]
+                      - button "All series selected" [ref=f40e2084] [cursor=pointer]: Rows Sent
+                  - listitem [ref=f40e2085]:
+                    - generic [ref=f40e2087]:
+                      - button "Edit color for Rows Affected" [ref=f40e2088] [cursor=pointer]
+                      - button "All series selected" [ref=f40e2089] [cursor=pointer]: Rows Affected
+              - region [ref=f40e2094]:
+                - generic [ref=f40e2095]:
+                  - heading "Lock Waits" [level=2] [ref=f40e2097]
+                  - link "Explore" [ref=f40e2098] [cursor=pointer]:
+                    - /url: /explore?left=%7B%22datasource%22%3A%22grafanacloud-prom%22%2C%22queries%22%3A%5B%7B%22refId%22%3A%22Lock%20Wait%22%2C%22expr%22%3A%22(rate(sum(mysql_perf_schema_events_statements_lock_time_seconds_total%7Bjob%3D%5C%22integrations%2Fdb-o11y%5C%22%2C%20server_id%3D%5C%22cc943387fb876feb26078b25c068ea459ac60523477dba0de94eb14c2c147f9e%5C%22%2C%20digest%3D%5C%22239470d9dded57d2ed34704acc673f496c08f2123350b31e6a315a52139b8c00%5C%22%2C%20schema%3D%5C%22orders%5C%22%7D%20or%20on()%20vector(0))%5B%24__rate_interval%3A%5D))%20%2F%20(rate(sum(mysql_perf_schema_events_statements_total%7Bjob%3D%5C%22integrations%2Fdb-o11y%5C%22%2C%20server_id%3D%5C%22cc943387fb876feb26078b25c068ea459ac60523477dba0de94eb14c2c147f9e%5C%22%2C%20digest%3D%5C%22239470d9dded57d2ed34704acc673f496c08f2123350b31e6a315a52139b8c00%5C%22%2C%20schema%3D%5C%22orders%5C%22%7D%20or%20on()%20vector(0))%5B%24__rate_interval%3A%5D))%22%2C%22legendFormat%22%3A%22Lock%20Wait%22%2C%22interval%22%3A%221m%22%2C%22intervalMs%22%3A60000%2C%22datasource%22%3A%7B%22type%22%3A%22prometheus%22%2C%22uid%22%3A%22grafanacloud-prom%22%7D%7D%5D%2C%22range%22%3A%7B%22from%22%3A%222026-08-07T09%3A00%3A00.000Z%22%2C%22to%22%3A%222026-08-07T10%3A00%3A00.000Z%22%7D%7D
+                - list [ref=f40e2119]:
+                  - listitem [ref=f40e2120]:
+                    - generic [ref=f40e2122]:
+                      - button "Edit color for Lock Wait" [ref=f40e2123] [cursor=pointer]
+                      - button "All series selected" [ref=f40e2124] [cursor=pointer]: Lock Wait
+              - region [ref=f40e2129]:
+                - generic [ref=f40e2130]:
+                  - heading "CPU Time" [level=2] [ref=f40e2132]
+                  - link "Explore" [ref=f40e2133] [cursor=pointer]:
+                    - /url: /explore?left=%7B%22datasource%22%3A%22grafanacloud-prom%22%2C%22queries%22%3A%5B%7B%22refId%22%3A%22CPU%20Time%22%2C%22expr%22%3A%22(rate(sum(mysql_perf_schema_events_statements_cpu_time_seconds_total%7Bjob%3D%5C%22integrations%2Fdb-o11y%5C%22%2C%20server_id%3D%5C%22cc943387fb876feb26078b25c068ea459ac60523477dba0de94eb14c2c147f9e%5C%22%2C%20digest%3D%5C%22239470d9dded57d2ed34704acc673f496c08f2123350b31e6a315a52139b8c00%5C%22%2C%20schema%3D%5C%22orders%5C%22%7D%20or%20on()%20vector(0))%5B%24__rate_interval%3A%5D))%20%2F%20(rate(sum(mysql_perf_schema_events_statements_total%7Bjob%3D%5C%22integrations%2Fdb-o11y%5C%22%2C%20server_id%3D%5C%22cc943387fb876feb26078b25c068ea459ac60523477dba0de94eb14c2c147f9e%5C%22%2C%20digest%3D%5C%22239470d9dded57d2ed34704acc673f496c08f2123350b31e6a315a52139b8c00%5C%22%2C%20schema%3D%5C%22orders%5C%22%7D%20or%20on()%20vector(0))%5B%24__rate_interval%3A%5D))%22%2C%22legendFormat%22%3A%22CPU%20Time%22%2C%22interval%22%3A%221m%22%2C%22intervalMs%22%3A60000%2C%22datasource%22%3A%7B%22type%22%3A%22prometheus%22%2C%22uid%22%3A%22grafanacloud-prom%22%7D%7D%5D%2C%22range%22%3A%7B%22from%22%3A%222026-08-07T09%3A00%3A00.000Z%22%2C%22to%22%3A%222026-08-07T10%3A00%3A00.000Z%22%7D%7D
+                - list [ref=f40e2154]:
+                  - listitem [ref=f40e2155]:
+                    - generic [ref=f40e2157]:
+                      - button "Edit color for CPU Time" [ref=f40e2158] [cursor=pointer]
+                      - button "All series selected" [ref=f40e2159] [cursor=pointer]: CPU Time
+    - log [ref=f40e1740]
+  - generic [ref=f40e2160]:
+    - alert
+    - alert
+    - complementary
+    - complementary

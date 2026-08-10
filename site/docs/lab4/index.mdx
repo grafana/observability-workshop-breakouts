@@ -1,0 +1,33 @@
+---
+sidebar_position: 5
+---
+
+import DocCardList from '@theme/DocCardList';
+
+# Lab 4 - One page, a thousand queries
+
+Different application this time: **Grafana Bank**, an online-banking app. Customers say the **transaction history** page has become sluggish - it loads, but takes far too long. Nothing is erroring.
+
+In this lab you'll lead with **[Traces Drilldown](https://grafana.com/docs/grafana/latest/explore/simplified-exploration/traces/)** - queryless trace exploration where you investigate by clicking through **Rate / Errors / Duration** and span attributes, no TraceQL - then confirm what you find in **Database Observability**. The problem here is an access pattern (an N+1 query), which is the kind of thing traces reveal and single-query metrics miss.
+
+## Instructions
+
+Use the Grafana Cloud stack from the slides; this lab uses the **banking** app.
+
+:::info The scenario running
+
+A k6 load test drives steady traffic against the banking app while the **`transactionsNPlusOne`** feature flag makes the transaction-history endpoint enrich each row with its own query - one database call per transaction (an N+1) instead of a single batched join. Expect the transaction-history page to load slowly with nothing erroring, and a single request to fan out into hundreds of tiny, near-identical database queries.
+
+**It's always on.** Unlike the other labs, the N+1 behavior runs continuously in the banking app, so any recent time range (the last hour is fine) will show it.
+
+:::
+
+You have around 20 minutes to work through the questions.
+
+:::tip
+
+Try each question on your own first. The **Show answer** block under each question reveals the walkthrough and screenshots.
+
+:::
+
+<DocCardList />

@@ -3,13 +3,30 @@ sidebar_position: 1
 slug: /
 ---
 
+import EnvSetup from '@site/src/components/EnvSetup';
+
 # Welcome
 
-Welcome to the **Grafana Observability Workshop Breakouts**. Across three hands-on labs, you'll work through troubleshooting scenarios in a real Grafana Cloud stack using:
+Welcome to the **Grafana Observability Workshop**. Across four hands-on labs, you'll troubleshoot problems in real applications running in a Grafana Cloud stack using:
 
-- **Frontend Observability**, **Application Observability**, and **Kubernetes Monitoring**
-- **Knowledge Graph** (Entity Graph and RCA Workbench)
+- **Frontend Observability** - real user monitoring in the browser
+- **Database Observability** - query-level visibility into your databases
+- **Kubernetes Monitoring** - infrastructure health, from crash-looping pods to right-sizing
+- **Knowledge Graph** - Entity Catalog, Entity Graph, and RCA Workbench
+- **Drilldown** - queryless exploration of traces and logs
 - **Grafana Assistant** (AI)
+
+## Set your environment ID
+
+Enter your Grafana Cloud environment ID below. It's saved in this browser, and every **Open in Grafana** link in the labs will use it - dropping you straight onto the right screen with the correct time range already applied.
+
+<EnvSetup />
+
+## How the labs work
+
+Each lab is self-contained: a different application, a different problem, and a different tool for solving it. Every lab starts from a symptom a user would notice and works down to the root cause, with the Grafana Assistant along the way - most labs finish by asking it to investigate the same problem, then checking its answer.
+
+The labs don't depend on each other, so you can do them in any order.
 
 ## Pick your color mode
 
@@ -31,6 +48,6 @@ If you didn't receive a username and password, please speak to your friendly fac
 
 Each lab contains a set of questions. We **encourage you to attempt each question on your own first**, and only reveal the answer afterwards by clicking **Show answer** under each question.
 
-You'll have around 20 minutes per breakout.
+You'll have around 20 minutes per lab.
 
 Click **Next** to start with Lab 1.

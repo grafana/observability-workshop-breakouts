@@ -1,0 +1,12 @@
+.link {
+  font-weight: 600;
+}
+
+.missing {
+  color: var(--ifm-color-emphasis-600);
+}
+
+.hint {
+  font-size: 0.85em;
+  font-style: italic;
+}

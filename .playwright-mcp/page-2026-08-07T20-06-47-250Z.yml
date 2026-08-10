@@ -1,0 +1,377 @@
+- generic [ref=f25e9]:
+  - generic [ref=f25e10]:
+    - link "Skip to main content" [ref=f25e11] [cursor=pointer]:
+      - /url: "#pageContent"
+    - generic [ref=f25e13]:
+      - generic [ref=f25e14]:
+        - generic [ref=f25e15]:
+          - link [ref=f25e16] [cursor=pointer]:
+            - /url: /
+            - img "Grafana" [ref=f25e17]
+          - link "Grafana" [ref=f25e18] [cursor=pointer]:
+            - /url: /
+        - button "Undock menu" [ref=f25e19] [cursor=pointer]
+        - button "Close menu" [ref=f25e22] [cursor=pointer]
+      - navigation [ref=f25e25]:
+        - list "Navigation" [ref=f25e30]:
+          - listitem [ref=f25e31]:
+            - generic [ref=f25e32]:
+              - link [ref=f25e35] [cursor=pointer]:
+                - /url: /bookmarks
+                - paragraph [ref=f25e40]: Bookmarks
+              - 'button "Expand section: Bookmarks" [ref=f25e42] [cursor=pointer]'
+          - listitem [ref=f25e45]:
+            - generic [ref=f25e46]:
+              - link [ref=f25e49] [cursor=pointer]:
+                - /url: /dashboards?starred
+                - paragraph [ref=f25e54]: Starred
+              - 'button "Expand section: Starred" [ref=f25e57] [cursor=pointer]'
+          - listitem [ref=f25e60]:
+            - generic [ref=f25e61]:
+              - link [ref=f25e64] [cursor=pointer]:
+                - /url: /dashboards
+                - paragraph [ref=f25e69]: Dashboards
+              - 'button "Expand section: Dashboards" [ref=f25e72] [cursor=pointer]'
+          - listitem [ref=f25e75]:
+            - link [ref=f25e79] [cursor=pointer]:
+              - /url: /explore
+              - paragraph [ref=f25e84]: Explore
+          - listitem [ref=f25e86]:
+            - generic [ref=f25e87]:
+              - link [ref=f25e90] [cursor=pointer]:
+                - /url: /drilldown
+                - paragraph [ref=f25e98]: Drilldown
+              - 'button "Expand section: Drilldown" [ref=f25e101] [cursor=pointer]'
+          - listitem [ref=f25e104]:
+            - generic [ref=f25e105]:
+              - link [ref=f25e108] [cursor=pointer]:
+                - /url: /a/grafana-assistant-app
+                - paragraph [ref=f25e114]: Assistant
+              - 'button "Expand section: Assistant" [ref=f25e117] [cursor=pointer]'
+          - listitem [ref=f25e120]:
+            - generic [ref=f25e121]:
+              - link [ref=f25e124] [cursor=pointer]:
+                - /url: /alerts-and-incidents
+                - paragraph [ref=f25e129]: Alerts & IRM
+              - 'button "Expand section: Alerts &amp; IRM" [ref=f25e132] [cursor=pointer]'
+          - listitem [ref=f25e135]:
+            - generic [ref=f25e136]:
+              - link [ref=f25e139] [cursor=pointer]:
+                - /url: /a/grafana-ml-app/home
+                - paragraph [ref=f25e146]: AI & machine learning
+              - 'button "Expand section: AI &amp; machine learning" [ref=f25e149] [cursor=pointer]'
+          - listitem [ref=f25e152]:
+            - generic [ref=f25e153]:
+              - link [ref=f25e156] [cursor=pointer]:
+                - /url: adaptive-telemetry
+                - generic [ref=f25e158]:
+                  - paragraph [ref=f25e176]: Adaptive Telemetry
+                  - generic [ref=f25e177]: New!
+              - 'button "Expand section: Adaptive Telemetry" [ref=f25e183] [cursor=pointer]'
+          - listitem [ref=f25e186]:
+            - generic [ref=f25e187]:
+              - link [ref=f25e190] [cursor=pointer]:
+                - /url: /a/grafana-cmab-app/
+                - generic [ref=f25e192]:
+                  - paragraph [ref=f25e195]: Cost Management and Billing
+                  - generic [ref=f25e196]: New!
+              - 'button "Expand section: Cost Management and Billing" [ref=f25e202] [cursor=pointer]'
+          - listitem [ref=f25e205]:
+            - generic [ref=f25e206]:
+              - link [ref=f25e209] [cursor=pointer]:
+                - /url: /testing-and-synthetics
+                - paragraph [ref=f25e216]: Testing & synthetics
+              - 'button "Expand section: Testing &amp; synthetics" [ref=f25e219] [cursor=pointer]'
+          - listitem [ref=f25e222]:
+            - generic [ref=f25e223]:
+              - link [ref=f25e226] [cursor=pointer]:
+                - /url: /observability
+                - paragraph [ref=f25e231]: Observability
+              - 'button "Collapse section: Observability" [expanded] [ref=f25e234] [cursor=pointer]'
+            - list [ref=f25e237]:
+              - listitem [ref=f25e238]:
+                - link [ref=f25e242] [cursor=pointer]:
+                  - /url: /a/grafana-asserts-app/entities
+                  - paragraph [ref=f25e245]: Entity graph
+              - listitem [ref=f25e247]:
+                - link [ref=f25e251] [cursor=pointer]:
+                  - /url: /a/grafana-asserts-app/catalog
+                  - paragraph [ref=f25e254]: Entity catalog
+              - listitem [ref=f25e256]:
+                - link [ref=f25e260] [cursor=pointer]:
+                  - /url: /a/grafana-asserts-app/assertions
+                  - paragraph [ref=f25e263]: RCA workbench
+              - listitem [ref=f25e265]:
+                - link [ref=f25e269] [cursor=pointer]:
+                  - /url: /a/grafana-asserts-app/slo
+                  - paragraph [ref=f25e272]: Health target
+              - listitem [ref=f25e274]:
+                - link [ref=f25e278] [cursor=pointer]:
+                  - /url: /a/grafana-asserts-app/rules
+                  - paragraph [ref=f25e281]: Rules
+              - listitem [ref=f25e283]:
+                - link [ref=f25e287] [cursor=pointer]:
+                  - /url: /a/grafana-asserts-app/configuration
+                  - paragraph [ref=f25e290]: Configuration
+              - listitem [ref=f25e292]:
+                - generic [ref=f25e293]:
+                  - link [ref=f25e296] [cursor=pointer]:
+                    - /url: /a/grafana-agento11y-app
+                    - generic [ref=f25e298]:
+                      - paragraph [ref=f25e299]: Agent
+                      - generic [ref=f25e300]: New!
+                  - 'button "Expand section: Agent" [ref=f25e306] [cursor=pointer]'
+              - listitem [ref=f25e309]:
+                - generic [ref=f25e310]:
+                  - link [ref=f25e313] [cursor=pointer]:
+                    - /url: /a/grafana-kowalski-app
+                    - paragraph [ref=f25e316]: Frontend
+                  - 'button "Expand section: Frontend" [ref=f25e319] [cursor=pointer]'
+              - listitem [ref=f25e322]:
+                - generic [ref=f25e323]:
+                  - link [ref=f25e326] [cursor=pointer]:
+                    - /url: /a/grafana-app-observability-app
+                    - paragraph [ref=f25e329]: Application
+                  - 'button "Expand section: Application" [ref=f25e332] [cursor=pointer]'
+              - listitem [ref=f25e335]:
+                - generic [ref=f25e336]:
+                  - link [ref=f25e339] [cursor=pointer]:
+                    - /url: /a/grafana-dbo11y-app/
+                    - generic [ref=f25e341]:
+                      - paragraph [ref=f25e342]: Database
+                      - generic [ref=f25e343]: New!
+                  - 'button "Collapse section: Database" [expanded] [ref=f25e349] [cursor=pointer]'
+                - list [ref=f25e352]:
+                  - listitem [ref=f25e353]:
+                    - link [ref=f25e358] [cursor=pointer]:
+                      - /url: /a/grafana-dbo11y-app/overview
+                      - paragraph [ref=f25e361]: Queries Overview
+                  - listitem [ref=f25e363]:
+                    - link [ref=f25e368] [cursor=pointer]:
+                      - /url: /a/grafana-dbo11y-app/configuration
+                      - paragraph [ref=f25e371]: Configuration
+              - listitem [ref=f25e373]:
+                - generic [ref=f25e374]:
+                  - link [ref=f25e377] [cursor=pointer]:
+                    - /url: /a/grafana-k8s-app/home
+                    - paragraph [ref=f25e380]: Kubernetes
+                  - 'button "Expand section: Kubernetes" [ref=f25e383] [cursor=pointer]'
+              - listitem [ref=f25e386]:
+                - generic [ref=f25e387]:
+                  - link [ref=f25e390] [cursor=pointer]:
+                    - /url: /a/grafana-csp-app
+                    - paragraph [ref=f25e393]: Cloud provider
+                  - 'button "Expand section: Cloud provider" [ref=f25e396] [cursor=pointer]'
+          - listitem [ref=f25e399]:
+            - generic [ref=f25e400]:
+              - link [ref=f25e403] [cursor=pointer]:
+                - /url: /connections
+                - paragraph [ref=f25e408]: Connections
+              - 'button "Expand section: Connections" [ref=f25e411] [cursor=pointer]'
+          - listitem [ref=f25e414]:
+            - generic [ref=f25e415]:
+              - link [ref=f25e418] [cursor=pointer]:
+                - /url: /apps
+                - paragraph [ref=f25e423]: More apps
+              - 'button "Expand section: More apps" [ref=f25e426] [cursor=pointer]'
+          - listitem [ref=f25e429]:
+            - generic [ref=f25e430]:
+              - link [ref=f25e433] [cursor=pointer]:
+                - /url: /admin
+                - paragraph [ref=f25e438]: Administration
+              - 'button "Expand section: Administration" [ref=f25e441] [cursor=pointer]'
+    - banner [ref=f25e444]:
+      - generic [ref=f25e445]:
+        - navigation "Breadcrumbs" [ref=f25e447]:
+          - list [ref=f25e448]:
+            - listitem [ref=f25e449]:
+              - link "Observability" [ref=f25e450] [cursor=pointer]:
+                - /url: /observability
+            - listitem [ref=f25e454]:
+              - link "Frontend" [ref=f25e455] [cursor=pointer]:
+                - /url: /a/grafana-kowalski-app
+            - listitem [ref=f25e459]:
+              - link "ecommerce" [ref=f25e460] [cursor=pointer]:
+                - /url: /a/grafana-kowalski-app/apps/5158/overview?from=2026-08-07T09:00:00.000Z&to=2026-08-07T10:00:00.000Z
+            - listitem [ref=f25e464]:
+              - link "Errors" [ref=f25e465] [cursor=pointer]:
+                - /url: /a/grafana-kowalski-app/apps/5158/errors?from=2026-08-07T09:00:00.000Z&to=2026-08-07T10:00:00.000Z
+            - listitem [ref=f25e469]:
+              - generic "Error Summary" [ref=f25e470]
+        - generic [ref=f25e471]:
+          - generic [ref=f25e473]:
+            - button "Search..." [ref=f25e477] [cursor=pointer]
+            - generic [ref=f25e478]: ⌘+k
+          - button "New" [ref=f25e480] [cursor=pointer]
+          - button "Help" [ref=f25e486] [cursor=pointer]
+          - button "Open Grafana Assistant" [ref=f25e490] [cursor=pointer]
+          - button "Profile" [ref=f25e495] [cursor=pointer]:
+            - img "User avatar" [ref=f25e496]
+    - main [ref=f25e499]:
+      - generic [ref=f25e503]:
+        - generic [ref=f25e505]:
+          - generic [ref=f25e508]:
+            - generic [ref=f25e509]:
+              - heading "user-actions" [level=1] [ref=f25e511]
+              - generic [ref=f25e512]: Error group
+            - generic [ref=f25e513]:
+              - generic [ref=f25e514]: in application
+              - link "ecommerce" [ref=f25e515] [cursor=pointer]:
+                - /url: /a/grafana-kowalski-app/apps/5158/errors?from=2026-08-07T09:00:00.000Z&to=2026-08-07T10:00:00.000Z
+          - generic [ref=f25e516]:
+            - generic [ref=f25e517]:
+              - button "Move 30m backward" [ref=f25e518] [cursor=pointer]
+              - 'button "Time range selected: 2026-08-07 09:00:00 to 2026-08-07 10:00:00" [ref=f25e521] [cursor=pointer]':
+                - generic [ref=f25e525]:
+                  - generic [ref=f25e526]: 2026-08-07 09:00:00 to 2026-08-07 10:00:00
+                  - generic [ref=f25e527]: UTC
+              - button "Move 30m forward" [ref=f25e530] [cursor=pointer]
+              - button "Zoom out time range" [ref=f25e533] [cursor=pointer]
+            - generic [ref=f25e536]:
+              - button [ref=f25e537] [cursor=pointer]
+              - button "Auto refresh turned off. Choose refresh time interval" [ref=f25e540] [cursor=pointer]
+            - generic [ref=f25e543]:
+              - button "Share" [ref=f25e544] [cursor=pointer]
+              - button "Share URL dropdown" [ref=f25e549] [cursor=pointer]
+            - generic [ref=f25e552]:
+              - button "RCA Workbench 0" [disabled] [ref=f25e553]:
+                - generic [ref=f25e557]:
+                  - generic [ref=f25e558]: RCA Workbench
+                  - generic [ref=f25e559]: "0"
+              - button "Open RCA Workbench" [disabled] [ref=f25e560]
+        - generic [ref=f25e564]:
+          - generic [ref=f25e565]:
+            - radiogroup [ref=f25e566]:
+              - radio [checked] [ref=f25e568] [cursor=pointer]
+              - radio [ref=f25e576] [cursor=pointer]
+            - generic [ref=f25e583]:
+              - generic [ref=f25e584]: Filters
+              - generic [ref=f25e585]:
+                - textbox "Add filter" [ref=f25e586]:
+                  - /placeholder: + label = value
+                - button "Clear filters" [ref=f25e588] [cursor=pointer]
+            - generic [ref=f25e591]:
+              - generic [ref=f25e592]: Insights
+              - switch [checked] [ref=f25e597]
+            - button "Analyze" [ref=f25e600] [cursor=pointer]
+          - generic [ref=f25e607]:
+            - generic [ref=f25e609]:
+              - generic [ref=f25e610]:
+                - generic [ref=f25e611]: Attribute Explorer
+                - generic [ref=f25e615]:
+                  - generic [ref=f25e616]:
+                    - generic [ref=f25e617]:
+                      - button "Browser" [ref=f25e618] [cursor=pointer]
+                      - link "View Browser in Logs Drilldown field tab" [ref=f25e620] [cursor=pointer]:
+                        - /url: /a/grafana-lokiexplore-app/explore/app_id/5158/field/browser_name?var-ds=grafanacloud-logs&from=1786093200000&to=1786096800000&var-filters=app_id%7C%3D%7C__CV%CE%A9__5158%2C5158&var-filters=kind%7C%3D%7C__CV%CE%A9__exception%2Cexception
+                    - generic [ref=f25e623]: No values found
+                  - generic [ref=f25e624]:
+                    - generic [ref=f25e625]:
+                      - button "Version" [ref=f25e626] [cursor=pointer]
+                      - link "View Version in Logs Drilldown field tab" [ref=f25e628] [cursor=pointer]:
+                        - /url: /a/grafana-lokiexplore-app/explore/app_id/5158/field/app_version?var-ds=grafanacloud-logs&from=1786093200000&to=1786096800000&var-filters=app_id%7C%3D%7C__CV%CE%A9__5158%2C5158&var-filters=kind%7C%3D%7C__CV%CE%A9__exception%2Cexception
+                    - generic [ref=f25e631]: No values found
+                  - generic [ref=f25e632]:
+                    - generic [ref=f25e633]:
+                      - button "View / Page" [ref=f25e634] [cursor=pointer]
+                      - link "View View &#x2F; Page in Logs Drilldown field tab" [ref=f25e636] [cursor=pointer]:
+                        - /url: /a/grafana-lokiexplore-app/explore/app_id/5158/field/page_id?var-ds=grafanacloud-logs&from=1786093200000&to=1786096800000&var-filters=app_id%7C%3D%7C__CV%CE%A9__5158%2C5158&var-filters=kind%7C%3D%7C__CV%CE%A9__exception%2Cexception
+                    - generic [ref=f25e639]: No values found
+                  - generic [ref=f25e640]:
+                    - generic [ref=f25e641]:
+                      - button "OS / Device" [ref=f25e642] [cursor=pointer]
+                      - link "View OS &#x2F; Device in Logs Drilldown field tab" [ref=f25e644] [cursor=pointer]:
+                        - /url: /a/grafana-lokiexplore-app/explore/app_id/5158/field/os_name?var-ds=grafanacloud-logs&from=1786093200000&to=1786096800000&var-filters=app_id%7C%3D%7C__CV%CE%A9__5158%2C5158&var-filters=kind%7C%3D%7C__CV%CE%A9__exception%2Cexception
+                    - generic [ref=f25e647]: No values found
+                  - generic [ref=f25e648]:
+                    - generic [ref=f25e649]:
+                      - button "Location" [ref=f25e650] [cursor=pointer]
+                      - link "View Location in Logs Drilldown field tab" [ref=f25e652] [cursor=pointer]:
+                        - /url: /a/grafana-lokiexplore-app/explore/app_id/5158/field/geo_country_iso?var-ds=grafanacloud-logs&from=1786093200000&to=1786096800000&var-filters=app_id%7C%3D%7C__CV%CE%A9__5158%2C5158&var-filters=kind%7C%3D%7C__CV%CE%A9__exception%2Cexception
+                    - generic [ref=f25e655]: No values found
+                  - link "Open in Logs Drilldown" [ref=f25e657] [cursor=pointer]:
+                    - /url: /a/grafana-lokiexplore-app/explore/app_id/5158/logs?var-ds=grafanacloud-logs&from=1786093200000&to=1786096800000&var-filters=app_id%7C%3D%7C__CV%CE%A9__5158%2C5158&var-filters=kind%7C%3D%7C__CV%CE%A9__exception%2Cexception
+              - button "Resize sidebar" [ref=f25e658]
+            - generic [ref=f25e660]:
+              - generic [ref=f25e661]:
+                - region [ref=f25e666]:
+                  - generic [ref=f25e667]:
+                    - heading "Total events" [level=2] [ref=f25e669]
+                    - button "More options" [ref=f25e671] [cursor=pointer]
+                  - generic [ref=f25e673]: "0"
+                - region [ref=f25e684]:
+                  - generic [ref=f25e685]:
+                    - heading "Affected users" [level=2] [ref=f25e687]
+                    - generic [ref=f25e688]:
+                      - button "No user meta data available. Update your Faro instrumentation to track users so we can display affected users." [ref=f25e689] [cursor=pointer]
+                      - button "More options" [ref=f25e692] [cursor=pointer]
+                  - generic [ref=f25e694]: "0"
+                - region [ref=f25e705]:
+                  - generic [ref=f25e706]:
+                    - heading "Affected pages" [level=2] [ref=f25e708]
+                    - button "More options" [ref=f25e710] [cursor=pointer]
+                  - generic [ref=f25e712]: "0"
+                - region [ref=f25e723]:
+                  - generic [ref=f25e724]:
+                    - heading "Affected sessions" [level=2] [ref=f25e726]
+                    - button "More options" [ref=f25e728] [cursor=pointer]
+                  - generic [ref=f25e730]: "0"
+                - region [ref=f25e740]:
+                  - heading "Trend" [level=2] [ref=f25e743]
+                  - generic [ref=f25e744]: "-"
+                - region [ref=f25e750]:
+                  - heading "First seen" [level=2] [ref=f25e753]
+                  - generic [ref=f25e754]: "-"
+              - region [ref=f25e760]:
+                - generic [ref=f25e761]:
+                  - heading "Error history" [level=2] [ref=f25e763]
+                  - link "Explore" [ref=f25e765] [cursor=pointer]:
+                    - /url: /explore?left=%7B%22datasource%22%3A%22grafanacloud-logs%22%2C%22queries%22%3A%5B%7B%22refId%22%3A%22error-history%22%2C%22expr%22%3A%22(sum(count_over_time(%7Bapp_id%3D%5C%225158%5C%22%2C%20kind%3D%5C%22exception%5C%22%7D%20%7C%20logfmt%20%20%7C%20k6_isK6Browser%3D~%5C%22%5C%22%20%7C%20geo_country_iso%3D~%5C%22%5C%22%20or%20geo_country_iso%3D~%5C%22.%2B%5C%22%20%7C%20attribute_hash%3D%5C%22user-actions%5C%22%20or%20hash%3D%5C%22user-actions%5C%22%20%7C%20keep%20value_template%20%5B%24__auto%5D))%20or%20vector(0))%22%2C%22queryType%22%3A%22range%22%2C%22datasource%22%3A%7B%22type%22%3A%22loki%22%2C%22uid%22%3A%22grafanacloud-logs%22%7D%7D%2C%7B%22refId%22%3A%22affected-sessions-count%22%2C%22expr%22%3A%22%5Cn%20%20%20%20%20%20%20%20(%5Cn%20%20%20%20%20%20%20%20%20%20count(%5Cn%20%20%20%20%20%20%20%20%20%20%20%20sum%20by%20(session_id)%20(%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20count_over_time(%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7Bapp_id%3D%5C%225158%5C%22%2C%20kind%3D%5C%22exception%5C%22%7D%20%7C%3D%20%5C%22session_id%3D%5C%22%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7C%20logfmt%20%20%7C%20k6_isK6Browser%3D~%5C%22%5C%22%20%7C%20geo_country_iso%3D~%5C%22%5C%22%20or%20geo_country_iso%3D~%5C%22.%2B%5C%22%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7C%20attribute_hash%3D%5C%22user-actions%5C%22%20or%20hash%3D%5C%22user-actions%5C%22%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7C%20session_id%20!%3D%20%5C%22%5C%22%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7C%20keep%20session_id%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%5B%24__auto%5D%5Cn%20%20%20%20%20%20%20%20%20%20%20%20%20%20)%5Cn%20%20%20%20%20%20%20%20%20%20%20%20)%5Cn%20%20%20%20%20%20%20%20%20%20)%5Cn%20%20%20%20%20%20%20%20)%20or%20vector(0)%5Cn%20%20%20%20%20%20%22%2C%22queryType%22%3A%22range%22%2C%22datasource%22%3A%7B%22type%22%3A%22loki%22%2C%22uid%22%3A%22grafanacloud-logs%22%7D%7D%5D%2C%22range%22%3A%7B%22from%22%3A%222026-08-07T09%3A00%3A00.000Z%22%2C%22to%22%3A%222026-08-07T10%3A00%3A00.000Z%22%7D%7D
+                - generic [ref=f25e770]:
+                  - generic [ref=f25e779]:
+                    - button "Annotation region" [ref=f25e780] [cursor=pointer]
+                    - button "Annotation region" [ref=f25e781] [cursor=pointer]
+                    - button "Annotation region" [ref=f25e782] [cursor=pointer]
+                    - button "Annotation region" [ref=f25e783] [cursor=pointer]
+                    - button "Annotation region" [ref=f25e784] [cursor=pointer]
+                    - button "Annotation region" [ref=f25e785] [cursor=pointer]
+                  - list [ref=f25e792]:
+                    - listitem [ref=f25e793]:
+                      - generic [ref=f25e795]:
+                        - button "Edit color for Errors" [ref=f25e796] [cursor=pointer]
+                        - button "All series selected" [ref=f25e797] [cursor=pointer]: Errors
+                    - listitem [ref=f25e798]:
+                      - generic [ref=f25e800]:
+                        - button "Edit color for Affected sessions" [ref=f25e801] [cursor=pointer]
+                        - button "All series selected" [ref=f25e802] [cursor=pointer]: Affected sessions
+              - region "Suspect Commits" [ref=f25e806]:
+                - generic [ref=f25e807]:
+                  - generic [ref=f25e808]:
+                    - generic [ref=f25e809]:
+                      - heading "Suspect commits" [level=5] [ref=f25e812]
+                      - img "About suspect commits" [ref=f25e813]
+                    - generic [ref=f25e815]:
+                      - generic [ref=f25e816]:
+                        - generic [ref=f25e817]: Is this accurate?
+                        - button "Yes, these commit(s) are correct" [ref=f25e819] [cursor=pointer]
+                        - button "No, these commit(s) are not correct" [ref=f25e823] [cursor=pointer]
+                      - button "Hide suspect commits" [ref=f25e826] [cursor=pointer]
+                  - status "GitHub datasource not selected" [ref=f25e829]:
+                    - generic [ref=f25e836]:
+                      - text: GitHub datasource not selected
+                      - generic [ref=f25e837]:
+                        - text: Select a GitHub data source for this app in the
+                        - link "GitHub settings tab" [ref=f25e838] [cursor=pointer]:
+                          - /url: /a/grafana-kowalski-app/apps/5158/edit?tab=github
+                        - text: to enable suspect commit identification.
+              - generic [ref=f25e841]:
+                - generic [ref=f25e842]:
+                  - heading "Error instances" [level=6] [ref=f25e843]
+                  - generic [ref=f25e847]:
+                    - search "search-interactive-table" [ref=f25e848]:
+                      - textbox "search text" [ref=f25e857]:
+                        - /placeholder: Search...
+                    - link "Explore" [ref=f25e858] [cursor=pointer]:
+                      - /url: /explore?left=%7B%22datasource%22%3A%22grafanacloud-logs%22%2C%22queries%22%3A%5B%7B%22refId%22%3A%22error-instances%22%2C%22expr%22%3A%22%7Bapp_id%3D%5C%225158%5C%22%2C%20kind%3D%5C%22exception%5C%22%7D%20%7C%20logfmt%20%20%7C%20k6_isK6Browser%3D~%5C%22%5C%22%20%7C%20geo_country_iso%3D~%5C%22%5C%22%20or%20geo_country_iso%3D~%5C%22.%2B%5C%22%20%7C%20attribute_hash%3D%5C%22user-actions%5C%22%20or%20hash%3D%5C%22user-actions%5C%22%20%7C%20line_format%20%5C%22%7B%7B.labels%7D%7D%5C%22%22%2C%22queryType%22%3A%22range%22%2C%22maxLines%22%3A1000%2C%22datasource%22%3A%7B%22type%22%3A%22loki%22%2C%22uid%22%3A%22grafanacloud-logs%22%7D%7D%5D%2C%22range%22%3A%7B%22from%22%3A%222026-08-07T09%3A00%3A00.000Z%22%2C%22to%22%3A%222026-08-07T10%3A00%3A00.000Z%22%7D%7D
+                - generic [ref=f25e862]: No data
+  - log [ref=f25e864]

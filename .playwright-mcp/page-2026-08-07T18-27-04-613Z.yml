@@ -1,0 +1,16 @@
+- generic [ref=f1e3]:
+  - banner [ref=f1e4]:
+    - generic [ref=f1e5]: Grafana Labs Workshops
+  - main [ref=f1e6]:
+    - heading "Sign in to your account" [level=1] [ref=f1e8]
+    - generic [ref=f1e12]:
+      - generic [ref=f1e13]:
+        - generic [ref=f1e14]: Username
+        - textbox "Username" [active] [ref=f1e17]
+      - generic [ref=f1e18]:
+        - generic [ref=f1e19]: Password
+        - generic [ref=f1e21]:
+          - textbox "Password" [ref=f1e24]
+          - button "Show password" [ref=f1e26] [cursor=pointer]:
+            - generic [ref=f1e27]: 
+      - button "Sign In" [ref=f1e30] [cursor=pointer]

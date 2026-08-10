@@ -1,0 +1,552 @@
+- generic [ref=f22e9]:
+  - generic [ref=f22e10]:
+    - link "Skip to main content" [ref=f22e11] [cursor=pointer]:
+      - /url: "#pageContent"
+    - generic [ref=f22e13]:
+      - generic [ref=f22e14]:
+        - generic [ref=f22e15]:
+          - link [ref=f22e16] [cursor=pointer]:
+            - /url: /
+            - img "Grafana" [ref=f22e17]
+          - link "Grafana" [ref=f22e18] [cursor=pointer]:
+            - /url: /
+        - button "Undock menu" [ref=f22e19] [cursor=pointer]
+        - button "Close menu" [ref=f22e22] [cursor=pointer]
+      - navigation [ref=f22e25]:
+        - list "Navigation" [ref=f22e30]:
+          - listitem [ref=f22e31]:
+            - generic [ref=f22e32]:
+              - link [ref=f22e35] [cursor=pointer]:
+                - /url: /bookmarks
+                - paragraph [ref=f22e40]: Bookmarks
+              - 'button "Expand section: Bookmarks" [ref=f22e42] [cursor=pointer]'
+          - listitem [ref=f22e45]:
+            - generic [ref=f22e46]:
+              - link [ref=f22e49] [cursor=pointer]:
+                - /url: /dashboards?starred
+                - paragraph [ref=f22e54]: Starred
+              - 'button "Expand section: Starred" [ref=f22e57] [cursor=pointer]'
+          - listitem [ref=f22e60]:
+            - generic [ref=f22e61]:
+              - link [ref=f22e64] [cursor=pointer]:
+                - /url: /dashboards
+                - paragraph [ref=f22e69]: Dashboards
+              - 'button "Expand section: Dashboards" [ref=f22e72] [cursor=pointer]'
+          - listitem [ref=f22e75]:
+            - link [ref=f22e79] [cursor=pointer]:
+              - /url: /explore
+              - paragraph [ref=f22e84]: Explore
+          - listitem [ref=f22e86]:
+            - generic [ref=f22e87]:
+              - link [ref=f22e90] [cursor=pointer]:
+                - /url: /drilldown
+                - paragraph [ref=f22e98]: Drilldown
+              - 'button "Expand section: Drilldown" [ref=f22e101] [cursor=pointer]'
+          - listitem [ref=f22e104]:
+            - generic [ref=f22e105]:
+              - link [ref=f22e108] [cursor=pointer]:
+                - /url: /a/grafana-assistant-app
+                - paragraph [ref=f22e114]: Assistant
+              - 'button "Expand section: Assistant" [ref=f22e117] [cursor=pointer]'
+          - listitem [ref=f22e120]:
+            - generic [ref=f22e121]:
+              - link [ref=f22e124] [cursor=pointer]:
+                - /url: /alerts-and-incidents
+                - paragraph [ref=f22e129]: Alerts & IRM
+              - 'button "Expand section: Alerts &amp; IRM" [ref=f22e132] [cursor=pointer]'
+          - listitem [ref=f22e135]:
+            - generic [ref=f22e136]:
+              - link [ref=f22e139] [cursor=pointer]:
+                - /url: /a/grafana-ml-app/home
+                - paragraph [ref=f22e146]: AI & machine learning
+              - 'button "Expand section: AI &amp; machine learning" [ref=f22e149] [cursor=pointer]'
+          - listitem [ref=f22e152]:
+            - generic [ref=f22e153]:
+              - link [ref=f22e156] [cursor=pointer]:
+                - /url: adaptive-telemetry
+                - generic [ref=f22e158]:
+                  - paragraph [ref=f22e176]: Adaptive Telemetry
+                  - generic [ref=f22e177]: New!
+              - 'button "Expand section: Adaptive Telemetry" [ref=f22e183] [cursor=pointer]'
+          - listitem [ref=f22e186]:
+            - generic [ref=f22e187]:
+              - link [ref=f22e190] [cursor=pointer]:
+                - /url: /a/grafana-cmab-app/
+                - generic [ref=f22e192]:
+                  - paragraph [ref=f22e195]: Cost Management and Billing
+                  - generic [ref=f22e196]: New!
+              - 'button "Expand section: Cost Management and Billing" [ref=f22e202] [cursor=pointer]'
+          - listitem [ref=f22e205]:
+            - generic [ref=f22e206]:
+              - link [ref=f22e209] [cursor=pointer]:
+                - /url: /testing-and-synthetics
+                - paragraph [ref=f22e216]: Testing & synthetics
+              - 'button "Expand section: Testing &amp; synthetics" [ref=f22e219] [cursor=pointer]'
+          - listitem [ref=f22e222]:
+            - generic [ref=f22e223]:
+              - link [ref=f22e226] [cursor=pointer]:
+                - /url: /observability
+                - paragraph [ref=f22e231]: Observability
+              - 'button "Collapse section: Observability" [expanded] [ref=f22e234] [cursor=pointer]'
+            - list [ref=f22e237]:
+              - listitem [ref=f22e238]:
+                - link [ref=f22e242] [cursor=pointer]:
+                  - /url: /a/grafana-asserts-app/entities
+                  - paragraph [ref=f22e245]: Entity graph
+              - listitem [ref=f22e247]:
+                - link [ref=f22e251] [cursor=pointer]:
+                  - /url: /a/grafana-asserts-app/catalog
+                  - paragraph [ref=f22e254]: Entity catalog
+              - listitem [ref=f22e256]:
+                - link [ref=f22e260] [cursor=pointer]:
+                  - /url: /a/grafana-asserts-app/assertions
+                  - paragraph [ref=f22e263]: RCA workbench
+              - listitem [ref=f22e265]:
+                - link [ref=f22e269] [cursor=pointer]:
+                  - /url: /a/grafana-asserts-app/slo
+                  - paragraph [ref=f22e272]: Health target
+              - listitem [ref=f22e274]:
+                - link [ref=f22e278] [cursor=pointer]:
+                  - /url: /a/grafana-asserts-app/rules
+                  - paragraph [ref=f22e281]: Rules
+              - listitem [ref=f22e283]:
+                - link [ref=f22e287] [cursor=pointer]:
+                  - /url: /a/grafana-asserts-app/configuration
+                  - paragraph [ref=f22e290]: Configuration
+              - listitem [ref=f22e292]:
+                - generic [ref=f22e293]:
+                  - link [ref=f22e296] [cursor=pointer]:
+                    - /url: /a/grafana-agento11y-app
+                    - generic [ref=f22e298]:
+                      - paragraph [ref=f22e299]: Agent
+                      - generic [ref=f22e300]: New!
+                  - 'button "Expand section: Agent" [ref=f22e306] [cursor=pointer]'
+              - listitem [ref=f22e309]:
+                - generic [ref=f22e310]:
+                  - link [ref=f22e313] [cursor=pointer]:
+                    - /url: /a/grafana-kowalski-app
+                    - paragraph [ref=f22e316]: Frontend
+                  - 'button "Expand section: Frontend" [ref=f22e319] [cursor=pointer]'
+              - listitem [ref=f22e322]:
+                - generic [ref=f22e323]:
+                  - link [ref=f22e326] [cursor=pointer]:
+                    - /url: /a/grafana-app-observability-app
+                    - paragraph [ref=f22e329]: Application
+                  - 'button "Expand section: Application" [ref=f22e332] [cursor=pointer]'
+              - listitem [ref=f22e335]:
+                - generic [ref=f22e336]:
+                  - link [ref=f22e339] [cursor=pointer]:
+                    - /url: /a/grafana-dbo11y-app/
+                    - generic [ref=f22e341]:
+                      - paragraph [ref=f22e342]: Database
+                      - generic [ref=f22e343]: New!
+                  - 'button "Collapse section: Database" [expanded] [ref=f22e349] [cursor=pointer]'
+                - list [ref=f22e352]:
+                  - listitem [ref=f22e353]:
+                    - link [ref=f22e358] [cursor=pointer]:
+                      - /url: /a/grafana-dbo11y-app/overview
+                      - paragraph [ref=f22e361]: Queries Overview
+                  - listitem [ref=f22e363]:
+                    - link [ref=f22e368] [cursor=pointer]:
+                      - /url: /a/grafana-dbo11y-app/configuration
+                      - paragraph [ref=f22e371]: Configuration
+              - listitem [ref=f22e373]:
+                - generic [ref=f22e374]:
+                  - link [ref=f22e377] [cursor=pointer]:
+                    - /url: /a/grafana-k8s-app/home
+                    - paragraph [ref=f22e380]: Kubernetes
+                  - 'button "Expand section: Kubernetes" [ref=f22e383] [cursor=pointer]'
+              - listitem [ref=f22e386]:
+                - generic [ref=f22e387]:
+                  - link [ref=f22e390] [cursor=pointer]:
+                    - /url: /a/grafana-csp-app
+                    - paragraph [ref=f22e393]: Cloud provider
+                  - 'button "Expand section: Cloud provider" [ref=f22e396] [cursor=pointer]'
+          - listitem [ref=f22e399]:
+            - generic [ref=f22e400]:
+              - link [ref=f22e403] [cursor=pointer]:
+                - /url: /connections
+                - paragraph [ref=f22e408]: Connections
+              - 'button "Expand section: Connections" [ref=f22e411] [cursor=pointer]'
+          - listitem [ref=f22e414]:
+            - generic [ref=f22e415]:
+              - link [ref=f22e418] [cursor=pointer]:
+                - /url: /apps
+                - paragraph [ref=f22e423]: More apps
+              - 'button "Expand section: More apps" [ref=f22e426] [cursor=pointer]'
+          - listitem [ref=f22e429]:
+            - generic [ref=f22e430]:
+              - link [ref=f22e433] [cursor=pointer]:
+                - /url: /admin
+                - paragraph [ref=f22e438]: Administration
+              - 'button "Expand section: Administration" [ref=f22e441] [cursor=pointer]'
+    - banner [ref=f22e444]:
+      - generic [ref=f22e445]:
+        - navigation "Breadcrumbs" [ref=f22e447]:
+          - list [ref=f22e448]:
+            - listitem [ref=f22e449]:
+              - link "Observability" [ref=f22e450] [cursor=pointer]:
+                - /url: /observability
+            - listitem [ref=f22e454]:
+              - link "Database" [ref=f22e455] [cursor=pointer]:
+                - /url: /a/grafana-dbo11y-app/
+            - listitem [ref=f22e459]:
+              - generic "Queries Overview" [ref=f22e460]
+        - generic [ref=f22e461]:
+          - generic [ref=f22e463]:
+            - button "Search..." [ref=f22e467] [cursor=pointer]
+            - generic [ref=f22e468]: ⌘+k
+          - button "New" [ref=f22e470] [cursor=pointer]
+          - button "Help" [ref=f22e476] [cursor=pointer]
+          - button "Open Grafana Assistant" [ref=f22e480] [cursor=pointer]
+          - button "Profile" [ref=f22e485] [cursor=pointer]:
+            - img "User avatar" [ref=f22e486]
+    - main [ref=f22e489]:
+      - generic [ref=f22e492]:
+        - generic [ref=f22e494]:
+          - heading "Queries Overview" [level=1] [ref=f22e497]
+          - generic [ref=f22e499]:
+            - generic [ref=f22e500]:
+              - generic "Data source picker select container" [ref=f22e503]:
+                - generic [ref=f22e504] [cursor=pointer]:
+                  - log [ref=f22e506]
+                  - generic [ref=f22e508]:
+                    - generic [ref=f22e509]:
+                      - img "grafanacloud-devfedb13-prom" [ref=f22e511]
+                      - text: grafanacloud-devfedb13-prom
+                    - combobox "Select a data source" [ref=f22e513]
+              - generic "Data source picker select container" [ref=f22e519]:
+                - generic [ref=f22e520] [cursor=pointer]:
+                  - log [ref=f22e522]
+                  - generic [ref=f22e524]:
+                    - generic [ref=f22e525]:
+                      - img "grafanacloud-devfedb13-logs" [ref=f22e527]
+                      - text: grafanacloud-devfedb13-logs
+                    - combobox "Select a data source" [ref=f22e529]
+              - generic [ref=f22e533]:
+                - button "Move 30m backward" [ref=f22e534] [cursor=pointer]
+                - 'button "Time range selected: 2026-08-07 04:00:00 to 2026-08-07 05:00:00" [ref=f22e537] [cursor=pointer]':
+                  - generic [ref=f22e540]: 2026-08-07 04:00:00 to 2026-08-07 05:00:00
+                - button "Move 30m forward" [ref=f22e545] [cursor=pointer]
+                - button "Zoom out time range" [ref=f22e548] [cursor=pointer]
+              - generic [ref=f22e551]:
+                - button [ref=f22e552] [cursor=pointer]
+                - button "Auto refresh turned off. Choose refresh time interval" [ref=f22e555] [cursor=pointer]
+              - generic [ref=f22e558]:
+                - button "RCA Workbench 0" [disabled] [ref=f22e559]:
+                  - generic [ref=f22e563]:
+                    - generic [ref=f22e564]: RCA Workbench
+                    - generic [ref=f22e565]: "0"
+                - button "Open RCA Workbench" [disabled] [ref=f22e566]
+            - link "Give feedback" [ref=f22e570] [cursor=pointer]:
+              - /url: https://docs.google.com/forms/d/e/1FAIpQLSe8NJFlPoPN62grDM8hOBDVZM57HHQVXIEbQNTQ4foBMa7IQw/viewform?usp=header
+        - generic [ref=f22e575]:
+          - generic [ref=f22e577]:
+            - generic [ref=f22e579]:
+              - heading "Search" [level=6] [ref=f22e583]
+              - textbox "Search by query" [ref=f22e593]
+            - generic [ref=f22e594]:
+              - button "Saved views" [ref=f22e596] [cursor=pointer]
+              - generic [ref=f22e601]:
+                - generic [ref=f22e602]: Engine
+                - generic [ref=f22e603] [cursor=pointer]:
+                  - log [ref=f22e605]
+                  - generic [ref=f22e606]:
+                    - generic [ref=f22e607]:
+                      - generic [ref=f22e608]:
+                        - generic [ref=f22e609]: MySQL
+                        - button "Remove" [ref=f22e610]
+                      - generic [ref=f22e613]:
+                        - generic [ref=f22e614]: PostgreSQL
+                        - button "Remove" [ref=f22e615]
+                      - combobox "Engine" [ref=f22e619]
+                    - button "Clear value" [ref=f22e621]
+              - generic [ref=f22e625]:
+                - generic [ref=f22e626]: Group by
+                - generic [ref=f22e627] [cursor=pointer]:
+                  - log [ref=f22e629]
+                  - generic [ref=f22e631]:
+                    - generic [ref=f22e632]: Group by label
+                    - combobox "Group by selector" [ref=f22e634]
+              - generic [ref=f22e638]:
+                - generic [ref=f22e639]: Filters
+                - generic [ref=f22e640]:
+                  - combobox "Filters" [ref=f22e642]
+                  - button "Clear all" [ref=f22e645] [cursor=pointer]
+          - generic [ref=f22e649]:
+            - generic [ref=f22e651]:
+              - region [ref=f22e656]:
+                - generic [ref=f22e657]:
+                  - heading "Instances" [level=2] [ref=f22e659]
+                  - link "Explore" [ref=f22e664] [cursor=pointer]:
+                    - /url: /explore?left=%7B%22datasource%22%3A%22grafanacloud-prom%22%2C%22queries%22%3A%5B%7B%22refId%22%3A%22Instances%20stat%22%2C%22expr%22%3A%22count(count%20by%20(server_id)%20(database_observability_connection_info%7Bjob%3D~%5C%22integrations%2Fdb-o11y%5C%22%2C%20server_id!%3D%5C%22%5C%22%2C%20engine%3D%5C%22mysql%5C%22%2C%20%7D%20or%20database_observability_connection_info%7Bjob%3D~%5C%22integrations%2Fdb-o11y%5C%22%2C%20server_id!%3D%5C%22%5C%22%2C%20engine%3D%5C%22postgres%5C%22%2C%20%7D))%22%2C%22queryType%22%3A%22instant%22%2C%22interval%22%3A%221m%22%2C%22intervalMs%22%3A60000%2C%22datasource%22%3A%7B%22type%22%3A%22prometheus%22%2C%22uid%22%3A%22grafanacloud-prom%22%7D%7D%5D%2C%22range%22%3A%7B%22from%22%3A%222026-08-07T09%3A00%3A00.000Z%22%2C%22to%22%3A%222026-08-07T10%3A00%3A00.000Z%22%7D%7D
+                - 'generic "count(count by (server_id) (database_observability_connection_info{job=~\"integrations/db-o11y\", server_id!=\"\", engine=\"mysql\", } or database_observability_connection_info{job=~\"integrations/db-o11y\", server_id!=\"\", engine=\"postgres\", }))" [ref=f22e671]': "4"
+              - region [ref=f22e679]:
+                - generic [ref=f22e680]:
+                  - heading "Databases" [level=2] [ref=f22e682]
+                  - link "Explore" [ref=f22e687] [cursor=pointer]:
+                    - /url: /explore?left=%7B%22datasource%22%3A%22grafanacloud-prom%22%2C%22queries%22%3A%5B%7B%22refId%22%3A%22Schema%20stat%22%2C%22expr%22%3A%22last_over_time((count(count%20by%20(schema%2C%20server_id)%20(mysql_perf_schema_events_statements_total%7Bjob%3D~%5C%22integrations%2Fdb-o11y%5C%22%2C%20digest%3D~%5C%22.%2B%5C%22%2C%20%7D)%20or%20count%20by%20(datname%2C%20server_id)%20(pg_stat_statements_calls_total%7Bjob%3D~%5C%22integrations%2Fdb-o11y%5C%22%2C%20queryid%3D~%5C%22.%2B%5C%22%2C%20%7D)))%5B%24__range%3A%5D)%22%2C%22queryType%22%3A%22instant%22%2C%22interval%22%3A%221m%22%2C%22intervalMs%22%3A60000%2C%22datasource%22%3A%7B%22type%22%3A%22prometheus%22%2C%22uid%22%3A%22grafanacloud-prom%22%7D%7D%5D%2C%22range%22%3A%7B%22from%22%3A%222026-08-07T09%3A00%3A00.000Z%22%2C%22to%22%3A%222026-08-07T10%3A00%3A00.000Z%22%7D%7D
+                - 'generic "last_over_time((count(count by (schema, server_id) (mysql_perf_schema_events_statements_total{job=~\"integrations/db-o11y\", digest=~\".+\", }) or count by (datname, server_id) (pg_stat_statements_calls_total{job=~\"integrations/db-o11y\", queryid=~\".+\", })))[3600s:])" [ref=f22e694]': "6"
+              - region [ref=f22e702]:
+                - generic [ref=f22e703]:
+                  - heading "Tables" [level=2] [ref=f22e705]
+                  - link "Explore" [ref=f22e710] [cursor=pointer]:
+                    - /url: /explore?left=%7B%22datasource%22%3A%22grafanacloud-logs%22%2C%22queries%22%3A%5B%7B%22refId%22%3A%22Tables%22%2C%22expr%22%3A%22count(count_over_time(%7Bjob%3D%5C%22integrations%2Fdb-o11y%5C%22%2C%20op%3D%5C%22table_detection%5C%22%7D%20%7C%20logfmt%20%20%7C%20table%3D~%5C%22.%2B%5C%22%20%20%5B15m%5D))%22%2C%22instant%22%3Atrue%2C%22interval%22%3A%221m%22%2C%22intervalMs%22%3A60000%2C%22datasource%22%3A%7B%22type%22%3A%22loki%22%2C%22uid%22%3A%22grafanacloud-logs%22%7D%7D%5D%2C%22range%22%3A%7B%22from%22%3A%222026-08-07T09%3A00%3A00.000Z%22%2C%22to%22%3A%222026-08-07T10%3A00%3A00.000Z%22%7D%7D
+                - 'generic "Value #Tables" [ref=f22e717]': "29"
+              - region [ref=f22e725]:
+                - generic [ref=f22e726]:
+                  - heading "Total Queries Executed" [level=2] [ref=f22e728]
+                  - link "Explore" [ref=f22e729] [cursor=pointer]:
+                    - /url: /explore?left=%7B%22datasource%22%3A%22grafanacloud-prom%22%2C%22queries%22%3A%5B%7B%22refId%22%3A%22totalQueriesExecutedStat%22%2C%22expr%22%3A%22round(sum(increase(mysql_perf_schema_events_statements_total%7Bjob%3D~%5C%22integrations%2Fdb-o11y%5C%22%2C%20digest%3D~%5C%22.%2B%5C%22%2C%20%7D%5B%24__range%5D)%20or%20increase(pg_stat_statements_calls_total%7Bjob%3D~%5C%22integrations%2Fdb-o11y%5C%22%2C%20queryid%3D~%5C%22.%2B%5C%22%2C%20%7D%5B%24__range%5D)))%22%2C%22queryType%22%3A%22range%22%2C%22interval%22%3A%221m%22%2C%22intervalMs%22%3A60000%2C%22datasource%22%3A%7B%22type%22%3A%22prometheus%22%2C%22uid%22%3A%22grafanacloud-prom%22%7D%7D%5D%2C%22range%22%3A%7B%22from%22%3A%222026-08-07T09%3A00%3A00.000Z%22%2C%22to%22%3A%222026-08-07T10%3A00%3A00.000Z%22%7D%7D
+                - 'generic "round(sum(increase(mysql_perf_schema_events_statements_total{job=~\"integrations/db-o11y\", digest=~\".+\", }[3600s]) or increase(pg_stat_statements_calls_total{job=~\"integrations/db-o11y\", queryid=~\".+\", }[3600s])))" [ref=f22e736]': 25.1 K
+              - region [ref=f22e744]:
+                - generic [ref=f22e745]:
+                  - heading "Current rate" [level=2] [ref=f22e747]
+                  - link "Explore" [ref=f22e752] [cursor=pointer]:
+                    - /url: /explore?left=%7B%22datasource%22%3A%22grafanacloud-prom%22%2C%22queries%22%3A%5B%7B%22refId%22%3A%22currentRateStat%22%2C%22expr%22%3A%22last_over_time((sum(rate(mysql_perf_schema_events_statements_total%7Bjob%3D~%5C%22integrations%2Fdb-o11y%5C%22%2C%20digest%3D~%5C%22.%2B%5C%22%2C%20%7D%5B%24__rate_interval%5D)%20or%20rate(pg_stat_statements_calls_total%7Bjob%3D~%5C%22integrations%2Fdb-o11y%5C%22%2C%20queryid%3D~%5C%22.%2B%5C%22%2C%20%7D%5B%24__rate_interval%5D)))%5B%24__range%3A%5D)%22%2C%22queryType%22%3A%22instant%22%2C%22interval%22%3A%221m%22%2C%22intervalMs%22%3A60000%2C%22datasource%22%3A%7B%22type%22%3A%22prometheus%22%2C%22uid%22%3A%22grafanacloud-prom%22%7D%7D%5D%2C%22range%22%3A%7B%22from%22%3A%222026-08-07T09%3A00%3A00.000Z%22%2C%22to%22%3A%222026-08-07T10%3A00%3A00.000Z%22%7D%7D
+                - 'generic "last_over_time((sum(rate(mysql_perf_schema_events_statements_total{job=~\"integrations/db-o11y\", digest=~\".+\", }[4m0s]) or rate(pg_stat_statements_calls_total{job=~\"integrations/db-o11y\", queryid=~\".+\", }[4m0s])))[3600s:])" [ref=f22e759]': 5.90 qps
+            - generic [ref=f22e765]:
+              - region [ref=f22e770]:
+                - generic [ref=f22e771]:
+                  - heading "Duration Avg" [level=2] [ref=f22e773]
+                  - link "Explore" [ref=f22e774] [cursor=pointer]:
+                    - /url: /explore?left=%7B%22datasource%22%3A%22grafanacloud-prom%22%2C%22queries%22%3A%5B%7B%22refId%22%3A%22OverviewDurationAvgPanel%22%2C%22expr%22%3A%22(sum(rate(mysql_perf_schema_events_statements_seconds_total%7Bjob%3D~%5C%22integrations%2Fdb-o11y%5C%22%2C%20digest%3D~%5C%22.%2B%5C%22%2C%20%7D%5B%24__rate_interval%3A%5D)%20or%20rate(pg_stat_statements_seconds_total%7Bjob%3D~%5C%22integrations%2Fdb-o11y%5C%22%2C%20queryid%3D~%5C%22.%2B%5C%22%2C%20%7D%5B%24__rate_interval%3A%5D)))%20%2F%20(sum(rate(mysql_perf_schema_events_statements_total%7Bjob%3D~%5C%22integrations%2Fdb-o11y%5C%22%2C%20digest%3D~%5C%22.%2B%5C%22%2C%20%7D%5B%24__rate_interval%3A%5D)%20or%20rate(pg_stat_statements_calls_total%7Bjob%3D~%5C%22integrations%2Fdb-o11y%5C%22%2C%20queryid%3D~%5C%22.%2B%5C%22%2C%20%7D%5B%24__rate_interval%3A%5D)))%20*%201000%22%2C%22interval%22%3A%221m%22%2C%22intervalMs%22%3A60000%2C%22datasource%22%3A%7B%22type%22%3A%22prometheus%22%2C%22uid%22%3A%22grafanacloud-prom%22%7D%7D%5D%2C%22range%22%3A%7B%22from%22%3A%222026-08-07T09%3A00%3A00.000Z%22%2C%22to%22%3A%222026-08-07T10%3A00%3A00.000Z%22%7D%7D
+              - region [ref=f22e793]:
+                - generic [ref=f22e794]:
+                  - heading "Errors" [level=2] [ref=f22e796]
+                  - link "Explore" [ref=f22e801] [cursor=pointer]:
+                    - /url: /explore?left=%7B%22datasource%22%3A%22grafanacloud-prom%22%2C%22queries%22%3A%5B%7B%22refId%22%3A%22OverviewErrorPanel%22%2C%22expr%22%3A%22(sum(rate(mysql_perf_schema_events_statements_errors_total%7Bjob%3D~%5C%22integrations%2Fdb-o11y%5C%22%2C%20digest%3D~%5C%22.%2B%5C%22%2C%20%7D%5B%24__rate_interval%3A%5D)%20or%20rate(database_observability_pg_errors_total%7Bjob%3D~%5C%22integrations%2Fdb-o11y%5C%22%2C%20%7D%5B%24__rate_interval%3A%5D)))%20%2F%20(sum(rate(mysql_perf_schema_events_statements_total%7Bjob%3D~%5C%22integrations%2Fdb-o11y%5C%22%2C%20digest%3D~%5C%22.%2B%5C%22%2C%20%7D%5B%24__rate_interval%3A%5D)%20or%20rate(pg_stat_statements_calls_total%7Bjob%3D~%5C%22integrations%2Fdb-o11y%5C%22%2C%20queryid%3D~%5C%22.%2B%5C%22%2C%20%7D%5B%24__rate_interval%3A%5D)%20or%20rate(database_observability_pg_errors_total%7Bjob%3D~%5C%22integrations%2Fdb-o11y%5C%22%2C%20%7D%5B%24__rate_interval%3A%5D)))%22%2C%22interval%22%3A%221m%22%2C%22intervalMs%22%3A60000%2C%22datasource%22%3A%7B%22type%22%3A%22prometheus%22%2C%22uid%22%3A%22grafanacloud-prom%22%7D%7D%5D%2C%22range%22%3A%7B%22from%22%3A%222026-08-07T09%3A00%3A00.000Z%22%2C%22to%22%3A%222026-08-07T10%3A00%3A00.000Z%22%7D%7D
+              - region [ref=f22e820]:
+                - generic [ref=f22e821]:
+                  - heading "Rate" [level=2] [ref=f22e823]
+                  - link "Explore" [ref=f22e824] [cursor=pointer]:
+                    - /url: /explore?left=%7B%22datasource%22%3A%22grafanacloud-prom%22%2C%22queries%22%3A%5B%7B%22refId%22%3A%22OverviewRatePanel%22%2C%22expr%22%3A%22sum(rate(mysql_perf_schema_events_statements_total%7Bjob%3D~%5C%22integrations%2Fdb-o11y%5C%22%2C%20digest%3D~%5C%22.%2B%5C%22%2C%20%7D%5B%24__rate_interval%3A%5D)%20or%20rate(pg_stat_statements_calls_total%7Bjob%3D~%5C%22integrations%2Fdb-o11y%5C%22%2C%20queryid%3D~%5C%22.%2B%5C%22%2C%20%7D%5B%24__rate_interval%3A%5D))%22%2C%22interval%22%3A%221m%22%2C%22intervalMs%22%3A60000%2C%22datasource%22%3A%7B%22type%22%3A%22prometheus%22%2C%22uid%22%3A%22grafanacloud-prom%22%7D%7D%5D%2C%22range%22%3A%7B%22from%22%3A%222026-08-07T09%3A00%3A00.000Z%22%2C%22to%22%3A%222026-08-07T10%3A00%3A00.000Z%22%7D%7D
+            - region [ref=f22e843]:
+              - generic [ref=f22e844]:
+                - heading "Cumulative duration of wait events by group / type (min 1ms)" [level=2] [ref=f22e846]
+                - combobox "Wait events dropdown" [ref=f22e855] [cursor=pointer]: Duration of wait events (by group)
+                - link "Explore" [ref=f22e856] [cursor=pointer]:
+                  - /url: /explore?left=%7B%22datasource%22%3A%22grafanacloud-logs%22%2C%22queries%22%3A%5B%7B%22refId%22%3A%22WaitEvents-1ms%22%2C%22expr%22%3A%22((sum%20by%20(wait_event_type)%20(sum_over_time(%7Bjob%3D%5C%22integrations%2Fdb-o11y%5C%22%2C%20op%3D%5C%22wait_event_v2%5C%22%2C%20server_id!%3D%5C%22%5C%22%7D%20%7C%20logfmt%20%7C%20backend_type%20%3D~%20%5C%22%5E(client%20backend)%3F%24%5C%22%20%7C%20queryid%20!%3D%20%5C%220%5C%22%20%7C%20wait_time%3E%3D1ms%20%7C%20unwrap%20duration_seconds(wait_time)%5B%24__auto%5D)))%20or%20(sum%20by%20(wait_event_type)%20(label_replace(label_replace(label_replace(label_replace(label_replace(label_replace(sum_over_time(%7Bjob%3D%5C%22integrations%2Fdb-o11y%5C%22%2C%20op%3D%5C%22wait_event%5C%22%2C%20server_id!%3D%5C%22%5C%22%7D%20%7C%20logfmt%20%7C%20backend_type%20%3D~%20%5C%22%5E(client%20backend)%3F%24%5C%22%20%7C%20queryid%20!%3D%20%5C%220%5C%22%20%7C%20wait_time%3E%3D1ms%20%7C%20(wait_event_type%3D~%5C%22(IO)%7C(Lock%7CLWLock%7CActivity%7CExtension%7CInjectionPoint%7CIPC%7CTimeout%7CBufferPin)%7C(Client)%5C%22%20or%20wait_event_name%3D~%5C%22(wait%2Fio%2F(file%7Ctable).%2B)%7C(wait%2F((io%2Flock%7Csynch)%7Clock).%2B)%7C(wait%2Fio%2Fsocket.%2B)%5C%22)%20%7C%20unwrap%20duration_seconds(wait_time)%5B%24__auto%5D)%2C%20%5C%22wait_event_type%5C%22%2C%20%5C%22IO%20Wait%5C%22%2C%20%5C%22wait_event_type%5C%22%2C%20%5C%22IO%5C%22)%2C%20%5C%22wait_event_type%5C%22%2C%20%5C%22Lock%20Wait%5C%22%2C%20%5C%22wait_event_type%5C%22%2C%20%5C%22Lock%7CLWLock%7CActivity%7CExtension%7CInjectionPoint%7CIPC%7CTimeout%7CBufferPin%5C%22)%2C%20%5C%22wait_event_type%5C%22%2C%20%5C%22Network%20Wait%5C%22%2C%20%5C%22wait_event_type%5C%22%2C%20%5C%22Client%5C%22)%2C%20%5C%22wait_event_type%5C%22%2C%20%5C%22IO%20Wait%5C%22%2C%20%5C%22wait_event_name%5C%22%2C%20%5C%22wait%2Fio%2F(file%7Ctable).%2B%5C%22)%2C%20%5C%22wait_event_type%5C%22%2C%20%5C%22Lock%20Wait%5C%22%2C%20%5C%22wait_event_name%5C%22%2C%20%5C%22wait%2F((io%2Flock%7Csynch)%7Clock).%2B%5C%22)%2C%20%5C%22wait_event_type%5C%22%2C%20%5C%22Network%20Wait%5C%22%2C%20%5C%22wait_event_name%5C%22%2C%20%5C%22wait%2Fio%2Fsocket.%2B%5C%22))))%20%3E%200%22%2C%22datasource%22%3A%7B%22type%22%3A%22loki%22%2C%22uid%22%3A%22grafanacloud-logs%22%7D%2C%22interval%22%3A%221m%22%2C%22intervalMs%22%3A60000%7D%5D%2C%22range%22%3A%7B%22from%22%3A%222026-08-07T09%3A00%3A00.000Z%22%2C%22to%22%3A%222026-08-07T10%3A00%3A00.000Z%22%7D%7D
+              - list [ref=f22e877]:
+                - listitem [ref=f22e878]:
+                  - generic [ref=f22e880]:
+                    - button "Edit color for IO Wait" [ref=f22e881] [cursor=pointer]
+                    - button "All series selected" [ref=f22e882] [cursor=pointer]: IO Wait
+                - listitem [ref=f22e883]:
+                  - generic [ref=f22e885]:
+                    - button "Edit color for Network Wait" [ref=f22e886] [cursor=pointer]
+                    - button "All series selected" [ref=f22e887] [cursor=pointer]: Network Wait
+            - generic [ref=f22e890]:
+              - generic [ref=f22e891]:
+                - heading "Top 30 out of 57 queries sorted by Wait Events Duration (descending)" [level=2] [ref=f22e894]
+                - button "Edit column selection" [ref=f22e898] [cursor=pointer]
+              - generic [ref=f22e901]:
+                - table [ref=f22e902]:
+                  - rowgroup [ref=f22e903]:
+                    - row [ref=f22e904]:
+                      - columnheader "Query" [ref=f22e905]
+                      - columnheader "Database" [ref=f22e906]
+                      - columnheader "Instance" [ref=f22e907]
+                      - columnheader [ref=f22e910]:
+                        - button "Sort column Wait Events Duration" [ref=f22e911] [cursor=pointer]: Wait Events Duration
+                      - columnheader [ref=f22e917]:
+                        - button "Sort column Calls" [ref=f22e918] [cursor=pointer]: Calls
+                      - columnheader [ref=f22e921]:
+                        - button "Sort column Duration" [ref=f22e922] [cursor=pointer]: Duration
+                      - columnheader [ref=f22e925]:
+                        - button "Sort column Errors" [ref=f22e926] [cursor=pointer]: Errors
+                      - columnheader [ref=f22e929]:
+                        - button "Sort column Rate" [ref=f22e930] [cursor=pointer]: Rate
+                      - columnheader [ref=f22e933]:
+                        - button "Sort column Lock Time" [ref=f22e934] [cursor=pointer]: Lock Time
+                      - columnheader [ref=f22e937]:
+                        - button "Sort column Rows Examined" [ref=f22e938] [cursor=pointer]: Rows Examined
+                      - columnheader [ref=f22e941]:
+                        - button "Sort column Rows Sent" [ref=f22e942] [cursor=pointer]: Rows Sent
+                      - columnheader [ref=f22e945]:
+                        - button "Sort column Rows" [ref=f22e946] [cursor=pointer]: Rows
+                  - rowgroup [ref=f22e949]:
+                    - row [ref=f22e950]:
+                      - cell [ref=f22e951]:
+                        - generic [ref=f22e952]:
+                          - img "MySQL" [ref=f22e954]
+                          - link [ref=f22e959] [cursor=pointer]:
+                            - /url: /a/grafana-dbo11y-app/overview/mysql/cc943387fb876feb26078b25c068ea459ac60523477dba0de94eb14c2c147f9e/orders/239470d9dded57d2ed34704acc673f496c08f2123350b31e6a315a52139b8c00
+                      - cell "orders" [ref=f22e961]
+                      - cell "orders-db" [ref=f22e963]
+                      - cell [ref=f22e974]
+                      - cell "20" [ref=f22e981]
+                      - cell "1.03 s" [ref=f22e983]
+                      - cell "0.00%" [ref=f22e995]
+                      - cell "0.00 req/s" [ref=f22e1007]
+                      - cell "10.58 µs" [ref=f22e1019]
+                      - cell "500,134.02" [ref=f22e1021]
+                      - cell "1.00" [ref=f22e1023]
+                      - cell "-" [ref=f22e1025]
+                    - row [ref=f22e1027]:
+                      - cell [ref=f22e1028]:
+                        - generic [ref=f22e1029]:
+                          - img "MySQL" [ref=f22e1031]
+                          - link "COMMIT" [ref=f22e1036] [cursor=pointer]:
+                            - /url: /a/grafana-dbo11y-app/overview/mysql/cc943387fb876feb26078b25c068ea459ac60523477dba0de94eb14c2c147f9e/orders/f2b9be5f0f32ca7507e4ddf133cd2fad0993a1c26fde9caa6f067b1af2b7603c
+                      - cell "orders" [ref=f22e1038]
+                      - cell "orders-db" [ref=f22e1040]
+                      - cell [ref=f22e1051]
+                      - cell "224" [ref=f22e1058]
+                      - cell "10.98 ms" [ref=f22e1060]
+                      - cell "0.00%" [ref=f22e1072]
+                      - cell "3.82 req/min" [ref=f22e1084]
+                      - cell "0.00 s" [ref=f22e1096]
+                      - cell "0.00" [ref=f22e1098]
+                      - cell "0.00" [ref=f22e1100]
+                      - cell "-" [ref=f22e1102]
+                    - row [ref=f22e1104]:
+                      - cell [ref=f22e1105]:
+                        - generic [ref=f22e1106]:
+                          - img "MySQL" [ref=f22e1108]
+                          - link "COMMIT" [ref=f22e1113] [cursor=pointer]:
+                            - /url: /a/grafana-dbo11y-app/overview/mysql/1fea9010709986891d7229e257a3ac7f0b66353bd4fa7455fab813fd194bd6a0/bankingcustomer/f2b9be5f0f32ca7507e4ddf133cd2fad0993a1c26fde9caa6f067b1af2b7603c
+                      - cell "bankingcustomer" [ref=f22e1115]
+                      - cell "mysql" [ref=f22e1117]:
+                        - generic "mysql" [ref=f22e1124] [cursor=pointer]
+                      - cell [ref=f22e1125]
+                      - cell "216" [ref=f22e1132]
+                      - cell "6.15 ms" [ref=f22e1134]
+                      - cell "0.00%" [ref=f22e1146]
+                      - cell "1.09 req/min" [ref=f22e1158]
+                      - cell "0.00 s" [ref=f22e1170]
+                      - cell "0.00" [ref=f22e1172]
+                      - cell "0.00" [ref=f22e1174]
+                      - cell "-" [ref=f22e1176]
+                    - row [ref=f22e1178]:
+                      - cell [ref=f22e1179]:
+                        - generic [ref=f22e1180]:
+                          - img "MySQL" [ref=f22e1182]
+                          - 'link "INSERT INTO `order_items` ( `order_id` , `product_id` , `quantity` , `unit_price` ) VALUES (...)" [ref=f22e1187] [cursor=pointer]':
+                            - /url: /a/grafana-dbo11y-app/overview/mysql/cc943387fb876feb26078b25c068ea459ac60523477dba0de94eb14c2c147f9e/orders/08ad9cc6c5d106b3361250dacbe7769b3c8e7278f1e4a4a94523e385ce93f885
+                      - cell "orders" [ref=f22e1189]
+                      - cell "orders-db" [ref=f22e1191]
+                      - cell [ref=f22e1202]
+                      - cell "206" [ref=f22e1209]
+                      - cell "677.46 µs" [ref=f22e1211]
+                      - cell "0.00%" [ref=f22e1223]
+                      - cell "3.82 req/min" [ref=f22e1235]
+                      - cell "1.80 µs" [ref=f22e1247]
+                      - cell "0.00" [ref=f22e1249]
+                      - cell "0.00" [ref=f22e1251]
+                      - cell "-" [ref=f22e1253]
+                    - row [ref=f22e1255]:
+                      - cell [ref=f22e1256]:
+                        - generic [ref=f22e1257]:
+                          - img "MySQL" [ref=f22e1259]
+                          - 'link "INSERT INTO `customers` ( `email` , `country` ) VALUES (...)" [ref=f22e1264] [cursor=pointer]':
+                            - /url: /a/grafana-dbo11y-app/overview/mysql/cc943387fb876feb26078b25c068ea459ac60523477dba0de94eb14c2c147f9e/orders/8e6a81da324bf4f36cd208d19075f7cf442780d5f9f36d9a8e9c319946a766ea
+                      - cell "orders" [ref=f22e1266]
+                      - cell "orders-db" [ref=f22e1268]
+                      - cell [ref=f22e1279]
+                      - cell "223" [ref=f22e1286]
+                      - cell "703.50 µs" [ref=f22e1288]
+                      - cell "0.00%" [ref=f22e1300]
+                      - cell "3.55 req/min" [ref=f22e1312]
+                      - cell "5.89 µs" [ref=f22e1324]
+                      - cell "0.00" [ref=f22e1326]
+                      - cell "0.00" [ref=f22e1328]
+                      - cell "-" [ref=f22e1330]
+                    - row [ref=f22e1332]:
+                      - cell [ref=f22e1333]:
+                        - generic [ref=f22e1334]:
+                          - img "MySQL" [ref=f22e1336]
+                          - 'link "INSERT INTO `orders` ( `customer_id` , `order_date` , `total_amount` , STATUS , `device` ) VALUES ( ? , NOW ( ) , ?, ... )" [ref=f22e1341] [cursor=pointer]':
+                            - /url: /a/grafana-dbo11y-app/overview/mysql/cc943387fb876feb26078b25c068ea459ac60523477dba0de94eb14c2c147f9e/orders/0c5418345c3878d3984ef0364b097df1af40479b36e306250a3f5bca5e36132a
+                      - cell "orders" [ref=f22e1343]
+                      - cell "orders-db" [ref=f22e1345]
+                      - cell [ref=f22e1356]
+                      - cell "224" [ref=f22e1363]
+                      - cell "367.44 µs" [ref=f22e1365]
+                      - cell "0.00%" [ref=f22e1377]
+                      - cell "3.82 req/min" [ref=f22e1389]
+                      - cell "2.22 µs" [ref=f22e1401]
+                      - cell "0.00" [ref=f22e1403]
+                      - cell "0.00" [ref=f22e1405]
+                      - cell "-" [ref=f22e1407]
+                    - row [ref=f22e1409]:
+                      - cell [ref=f22e1410]:
+                        - generic [ref=f22e1411]:
+                          - img "MySQL" [ref=f22e1413]
+                          - 'link "SELECT COUNT ( DISTINCTROW `oi` . `product_id` ) AS `distinct_products_bought` , COALESCE ( SUM ( `oi` . `quantity` ) , ? ) AS `total_items_ever_bought` FROM `customers` `c` LEFT JOIN `orders` `o` ON `o` . `customer_id` = `c` . `customer_id` LEFT JOIN `order_items` `oi` ON `oi` . `order_id` = `o` . `order_id` WHERE `c` . `email` = ?" [ref=f22e1418] [cursor=pointer]':
+                            - /url: /a/grafana-dbo11y-app/overview/mysql/cc943387fb876feb26078b25c068ea459ac60523477dba0de94eb14c2c147f9e/orders/f641fdebb83008d856099d60e25e084d2d76f03b10fbf3218fb09567c21de53a
+                      - cell "orders" [ref=f22e1420]
+                      - cell "orders-db" [ref=f22e1422]
+                      - cell [ref=f22e1433]
+                      - cell "223" [ref=f22e1440]
+                      - cell "690.97 µs" [ref=f22e1442]
+                      - cell "0.00%" [ref=f22e1454]
+                      - cell "3.82 req/min" [ref=f22e1466]
+                      - cell "4.15 µs" [ref=f22e1478]
+                      - cell "1.50" [ref=f22e1480]
+                      - cell "1.01" [ref=f22e1482]
+                      - cell "-" [ref=f22e1484]
+                    - row [ref=f22e1486]:
+                      - cell [ref=f22e1487]:
+                        - generic [ref=f22e1488]:
+                          - img "MySQL" [ref=f22e1490]
+                          - 'link "EXPLAIN FORMAT = JSON SELECT COUNT ( DISTINCTROW `oi` . `product_id` ) AS `distinct_products_bought` , COALESCE ( SUM ( `oi` . `quantity` ) , ? ) AS `total_items_ever_bought` FROM `customers` `c` LEFT JOIN `orders` `o` ON `o` . `customer_id` = `c` . `customer_id` LEFT JOIN `order_items` `oi` ON `oi` . `order_id` = `o` . `order_id` WHERE `c` . `email` = ?" [ref=f22e1495] [cursor=pointer]':
+                            - /url: /a/grafana-dbo11y-app/overview/mysql/cc943387fb876feb26078b25c068ea459ac60523477dba0de94eb14c2c147f9e/orders/085fc7cb461b58922f94f9dcc5cbce28229afcf6f9d281d41297b1835b778aa4
+                      - cell "orders" [ref=f22e1497]
+                      - cell "orders-db" [ref=f22e1499]
+                      - cell [ref=f22e1510]
+                      - cell "59" [ref=f22e1517]
+                      - cell "1.83 ms" [ref=f22e1519]
+                      - cell "0.00%" [ref=f22e1531]
+                      - cell "1.09 req/min" [ref=f22e1543]
+                      - cell "4.50 µs" [ref=f22e1555]
+                      - cell "0.00" [ref=f22e1557]
+                      - cell "1.00" [ref=f22e1559]
+                      - cell "-" [ref=f22e1561]
+                    - row [ref=f22e1563]:
+                      - cell [ref=f22e1564]:
+                        - generic [ref=f22e1565]:
+                          - img "MySQL" [ref=f22e1567]
+                          - 'link "EXPLAIN FORMAT = JSON SELECT COUNT ( `o` . `order_id` ) AS `past_order_count` , COALESCE ( SUM ( `o` . `total_amount` ) , ? ) AS `past_total_spent` FROM `customers` `c` LEFT JOIN `orders` `o` ON `o` . `customer_id` = `c` . `customer_id` WHERE `c` . `email` = ?" [ref=f22e1572] [cursor=pointer]':
+                            - /url: /a/grafana-dbo11y-app/overview/mysql/cc943387fb876feb26078b25c068ea459ac60523477dba0de94eb14c2c147f9e/orders/45580689d03d70ab505ad9444313d8ba139ff03706f5e1bcba17c37fecfc86af
+                      - cell "orders" [ref=f22e1574]
+                      - cell "orders-db" [ref=f22e1576]
+                      - cell [ref=f22e1587]
+                      - cell "59" [ref=f22e1594]
+                      - cell "2.24 ms" [ref=f22e1596]
+                      - cell "0.00%" [ref=f22e1608]
+                      - cell "1.09 req/min" [ref=f22e1620]
+                      - cell "3.97 µs" [ref=f22e1632]
+                      - cell "0.00" [ref=f22e1634]
+                      - cell "1.00" [ref=f22e1636]
+                      - cell "-" [ref=f22e1638]
+                    - row [ref=f22e1640]:
+                      - cell [ref=f22e1641]:
+                        - generic [ref=f22e1642]:
+                          - img "MySQL" [ref=f22e1644]
+                          - 'link "SELECT COUNT ( `o` . `order_id` ) AS `past_order_count` , COALESCE ( SUM ( `o` . `total_amount` ) , ? ) AS `past_total_spent` FROM `customers` `c` LEFT JOIN `orders` `o` ON `o` . `customer_id` = `c` . `customer_id` WHERE `c` . `email` = ?" [ref=f22e1649] [cursor=pointer]':
+                            - /url: /a/grafana-dbo11y-app/overview/mysql/cc943387fb876feb26078b25c068ea459ac60523477dba0de94eb14c2c147f9e/orders/6828946cd220659b5a040524c54013a5d860b587402ec7698b1f0c690431394e
+                      - cell "orders" [ref=f22e1651]
+                      - cell "orders-db" [ref=f22e1653]
+                      - cell [ref=f22e1664]
+                      - cell "224" [ref=f22e1671]
+                      - cell "674.48 µs" [ref=f22e1673]
+                      - cell "0.00%" [ref=f22e1685]
+                      - cell "3.82 req/min" [ref=f22e1697]
+                      - cell "22.34 µs" [ref=f22e1709]
+                      - cell "1.36" [ref=f22e1711]
+                      - cell "1.01" [ref=f22e1713]
+                      - cell "-" [ref=f22e1715]
+                - navigation [ref=f22e1718]:
+                  - list [ref=f22e1719]:
+                    - listitem [ref=f22e1720]:
+                      - button "previous page" [disabled] [ref=f22e1721]
+                    - listitem [ref=f22e1725]:
+                      - button "1" [ref=f22e1726] [cursor=pointer]
+                    - listitem [ref=f22e1728]:
+                      - button "2" [ref=f22e1729] [cursor=pointer]
+                    - listitem [ref=f22e1731]:
+                      - button "3" [ref=f22e1732] [cursor=pointer]
+                    - listitem [ref=f22e1734]:
+                      - button "next page" [ref=f22e1735] [cursor=pointer]
+  - log [ref=f22e1739]

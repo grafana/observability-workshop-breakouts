@@ -38,3 +38,28 @@
 .body > :last-child {
   margin-bottom: 0;
 }
+
+.where {
+  margin-top: 0.6rem;
+  padding-top: 0.6rem;
+  border-top: 1px dashed var(--try-it-color);
+  font-size: 0.9rem;
+  color: var(--ifm-color-emphasis-800);
+}
+
+.whereLabel {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--try-it-color);
+  margin-right: 0.5rem;
+}
+
+.whereLabel::before {
+  content: '📍';
+  font-size: 0.9rem;
+}
