@@ -1,0 +1,462 @@
+- generic [ref=f12e9]:
+  - generic [ref=f12e10]:
+    - link "Skip to main content" [ref=f12e11] [cursor=pointer]:
+      - /url: "#pageContent"
+    - generic [ref=f12e13]:
+      - generic [ref=f12e14]:
+        - generic [ref=f12e15]:
+          - link [ref=f12e16] [cursor=pointer]:
+            - /url: /
+            - img "Grafana" [ref=f12e17]
+          - link "Grafana" [ref=f12e18] [cursor=pointer]:
+            - /url: /
+        - button "Undock menu" [ref=f12e19] [cursor=pointer]
+        - button "Close menu" [ref=f12e22] [cursor=pointer]
+      - navigation [ref=f12e25]:
+        - list "Navigation" [ref=f12e30]:
+          - listitem [ref=f12e31]:
+            - generic [ref=f12e32]:
+              - link [ref=f12e35] [cursor=pointer]:
+                - /url: /bookmarks
+                - paragraph [ref=f12e40]: Bookmarks
+              - 'button "Expand section: Bookmarks" [ref=f12e42] [cursor=pointer]'
+          - listitem [ref=f12e45]:
+            - generic [ref=f12e46]:
+              - link [ref=f12e49] [cursor=pointer]:
+                - /url: /dashboards?starred
+                - paragraph [ref=f12e54]: Starred
+              - 'button "Expand section: Starred" [ref=f12e57] [cursor=pointer]'
+          - listitem [ref=f12e60]:
+            - generic [ref=f12e61]:
+              - link [ref=f12e64] [cursor=pointer]:
+                - /url: /dashboards
+                - paragraph [ref=f12e69]: Dashboards
+              - 'button "Expand section: Dashboards" [ref=f12e72] [cursor=pointer]'
+          - listitem [ref=f12e75]:
+            - link [ref=f12e79] [cursor=pointer]:
+              - /url: /explore
+              - paragraph [ref=f12e84]: Explore
+          - listitem [ref=f12e86]:
+            - generic [ref=f12e87]:
+              - link [ref=f12e90] [cursor=pointer]:
+                - /url: /drilldown
+                - paragraph [ref=f12e98]: Drilldown
+              - 'button "Expand section: Drilldown" [ref=f12e101] [cursor=pointer]'
+          - listitem [ref=f12e104]:
+            - generic [ref=f12e105]:
+              - link [ref=f12e108] [cursor=pointer]:
+                - /url: /a/grafana-assistant-app
+                - paragraph [ref=f12e114]: Assistant
+              - 'button "Expand section: Assistant" [ref=f12e117] [cursor=pointer]'
+          - listitem [ref=f12e120]:
+            - generic [ref=f12e121]:
+              - link [ref=f12e124] [cursor=pointer]:
+                - /url: /alerts-and-incidents
+                - paragraph [ref=f12e129]: Alerts & IRM
+              - 'button "Expand section: Alerts &amp; IRM" [ref=f12e132] [cursor=pointer]'
+          - listitem [ref=f12e135]:
+            - generic [ref=f12e136]:
+              - link [ref=f12e139] [cursor=pointer]:
+                - /url: /a/grafana-ml-app/home
+                - paragraph [ref=f12e146]: AI & machine learning
+              - 'button "Expand section: AI &amp; machine learning" [ref=f12e149] [cursor=pointer]'
+          - listitem [ref=f12e152]:
+            - generic [ref=f12e153]:
+              - link [ref=f12e156] [cursor=pointer]:
+                - /url: adaptive-telemetry
+                - generic [ref=f12e158]:
+                  - paragraph [ref=f12e176]: Adaptive Telemetry
+                  - generic [ref=f12e177]: New!
+              - 'button "Expand section: Adaptive Telemetry" [ref=f12e183] [cursor=pointer]'
+          - listitem [ref=f12e186]:
+            - generic [ref=f12e187]:
+              - link [ref=f12e190] [cursor=pointer]:
+                - /url: /a/grafana-cmab-app/
+                - generic [ref=f12e192]:
+                  - paragraph [ref=f12e195]: Cost Management and Billing
+                  - generic [ref=f12e196]: New!
+              - 'button "Expand section: Cost Management and Billing" [ref=f12e202] [cursor=pointer]'
+          - listitem [ref=f12e205]:
+            - generic [ref=f12e206]:
+              - link [ref=f12e209] [cursor=pointer]:
+                - /url: /testing-and-synthetics
+                - paragraph [ref=f12e216]: Testing & synthetics
+              - 'button "Expand section: Testing &amp; synthetics" [ref=f12e219] [cursor=pointer]'
+          - listitem [ref=f12e222]:
+            - generic [ref=f12e223]:
+              - link [ref=f12e226] [cursor=pointer]:
+                - /url: /observability
+                - paragraph [ref=f12e231]: Observability
+              - 'button "Collapse section: Observability" [expanded] [ref=f12e234] [cursor=pointer]'
+            - list [ref=f12e237]:
+              - listitem [ref=f12e238]:
+                - link [ref=f12e242] [cursor=pointer]:
+                  - /url: /a/grafana-asserts-app/entities
+                  - paragraph [ref=f12e245]: Entity graph
+              - listitem [ref=f12e247]:
+                - link [ref=f12e251] [cursor=pointer]:
+                  - /url: /a/grafana-asserts-app/catalog
+                  - paragraph [ref=f12e254]: Entity catalog
+              - listitem [ref=f12e256]:
+                - link [ref=f12e260] [cursor=pointer]:
+                  - /url: /a/grafana-asserts-app/assertions
+                  - paragraph [ref=f12e263]: RCA workbench
+              - listitem [ref=f12e265]:
+                - link [ref=f12e269] [cursor=pointer]:
+                  - /url: /a/grafana-asserts-app/slo
+                  - paragraph [ref=f12e272]: Health target
+              - listitem [ref=f12e274]:
+                - link [ref=f12e278] [cursor=pointer]:
+                  - /url: /a/grafana-asserts-app/rules
+                  - paragraph [ref=f12e281]: Rules
+              - listitem [ref=f12e283]:
+                - link [ref=f12e287] [cursor=pointer]:
+                  - /url: /a/grafana-asserts-app/configuration
+                  - paragraph [ref=f12e290]: Configuration
+              - listitem [ref=f12e292]:
+                - generic [ref=f12e293]:
+                  - link [ref=f12e296] [cursor=pointer]:
+                    - /url: /a/grafana-agento11y-app
+                    - generic [ref=f12e298]:
+                      - paragraph [ref=f12e299]: Agent
+                      - generic [ref=f12e300]: New!
+                  - 'button "Expand section: Agent" [ref=f12e306] [cursor=pointer]'
+              - listitem [ref=f12e309]:
+                - generic [ref=f12e310]:
+                  - link [ref=f12e313] [cursor=pointer]:
+                    - /url: /a/grafana-kowalski-app
+                    - paragraph [ref=f12e316]: Frontend
+                  - 'button "Expand section: Frontend" [ref=f12e319] [cursor=pointer]'
+              - listitem [ref=f12e322]:
+                - generic [ref=f12e323]:
+                  - link [ref=f12e326] [cursor=pointer]:
+                    - /url: /a/grafana-app-observability-app
+                    - paragraph [ref=f12e329]: Application
+                  - 'button "Expand section: Application" [ref=f12e332] [cursor=pointer]'
+              - listitem [ref=f12e335]:
+                - generic [ref=f12e336]:
+                  - link [ref=f12e339] [cursor=pointer]:
+                    - /url: /a/grafana-dbo11y-app/
+                    - generic [ref=f12e341]:
+                      - paragraph [ref=f12e342]: Database
+                      - generic [ref=f12e343]: New!
+                  - 'button "Expand section: Database" [ref=f12e349] [cursor=pointer]'
+              - listitem [ref=f12e352]:
+                - generic [ref=f12e353]:
+                  - link [ref=f12e356] [cursor=pointer]:
+                    - /url: /a/grafana-k8s-app/home
+                    - paragraph [ref=f12e359]: Kubernetes
+                  - 'button "Expand section: Kubernetes" [ref=f12e362] [cursor=pointer]'
+              - listitem [ref=f12e365]:
+                - generic [ref=f12e366]:
+                  - link [ref=f12e369] [cursor=pointer]:
+                    - /url: /a/grafana-csp-app
+                    - paragraph [ref=f12e372]: Cloud provider
+                  - 'button "Expand section: Cloud provider" [ref=f12e375] [cursor=pointer]'
+          - listitem [ref=f12e378]:
+            - generic [ref=f12e379]:
+              - link [ref=f12e382] [cursor=pointer]:
+                - /url: /connections
+                - paragraph [ref=f12e387]: Connections
+              - 'button "Expand section: Connections" [ref=f12e390] [cursor=pointer]'
+          - listitem [ref=f12e393]:
+            - generic [ref=f12e394]:
+              - link [ref=f12e397] [cursor=pointer]:
+                - /url: /apps
+                - paragraph [ref=f12e402]: More apps
+              - 'button "Expand section: More apps" [ref=f12e405] [cursor=pointer]'
+          - listitem [ref=f12e408]:
+            - generic [ref=f12e409]:
+              - link [ref=f12e412] [cursor=pointer]:
+                - /url: /admin
+                - paragraph [ref=f12e417]: Administration
+              - 'button "Expand section: Administration" [ref=f12e420] [cursor=pointer]'
+    - banner [ref=f12e423]:
+      - generic [ref=f12e424]:
+        - navigation "Breadcrumbs" [ref=f12e426]:
+          - list [ref=f12e427]:
+            - listitem [ref=f12e428]:
+              - link "Observability" [ref=f12e429] [cursor=pointer]:
+                - /url: /observability
+            - listitem [ref=f12e433]:
+              - link "Frontend" [ref=f12e434] [cursor=pointer]:
+                - /url: /a/grafana-kowalski-app
+            - listitem [ref=f12e438]:
+              - link "ecommerce" [ref=f12e1155] [cursor=pointer]:
+                - /url: /a/grafana-kowalski-app/apps/5158/overview?from=2026-08-07T09:00:00.000Z&to=2026-08-07T10:00:00.000Z
+            - listitem [ref=f12e1159]:
+              - generic "Sessions" [ref=f12e1160]
+        - generic [ref=f12e440]:
+          - generic [ref=f12e442]:
+            - button "Search..." [ref=f12e446] [cursor=pointer]
+            - generic [ref=f12e447]: ⌘+k
+          - button "New" [ref=f12e449] [cursor=pointer]
+          - button "Help" [ref=f12e455] [cursor=pointer]
+          - button "Open Grafana Assistant" [ref=f12e459] [cursor=pointer]
+          - button "Profile" [ref=f12e464] [cursor=pointer]:
+            - img "User avatar" [ref=f12e465]
+    - main [ref=f12e468]:
+      - generic [ref=f12e1162]:
+        - generic [ref=f12e1164]:
+          - generic [ref=f12e1167]:
+            - heading "ecommerce" [level=1] [ref=f12e1168]
+            - button "Insights 3" [ref=f12e1170] [cursor=pointer]:
+              - generic [ref=f12e1172]:
+                - generic [ref=f12e1173]: Insights
+                - generic [ref=f12e1176]: "3"
+          - generic [ref=f12e1180]:
+            - generic [ref=f12e1181]:
+              - button "Move 30m backward" [ref=f12e1182] [cursor=pointer]
+              - 'button "Time range selected: 2026-08-07 04:00:00 to 2026-08-07 05:00:00" [ref=f12e1185] [cursor=pointer]':
+                - generic [ref=f12e1188]: 2026-08-07 04:00:00 to 2026-08-07 05:00:00
+              - button "Move 30m forward" [ref=f12e1193] [cursor=pointer]
+              - button "Zoom out time range" [ref=f12e1196] [cursor=pointer]
+            - generic [ref=f12e1199]:
+              - button [ref=f12e1200] [cursor=pointer]
+              - button "Auto refresh turned off. Choose refresh time interval" [ref=f12e1203] [cursor=pointer]
+            - generic [ref=f12e1206]:
+              - button "Share" [ref=f12e1207] [cursor=pointer]
+              - button "Share URL dropdown" [ref=f12e1212] [cursor=pointer]
+            - generic [ref=f12e1215]:
+              - button "RCA Workbench 0" [disabled] [ref=f12e1216]:
+                - generic [ref=f12e1220]:
+                  - generic [ref=f12e1221]: RCA Workbench
+                  - generic [ref=f12e1222]: "0"
+              - button "Open RCA Workbench" [disabled] [ref=f12e1223]
+        - tablist [ref=f12e1228]:
+          - tab "Overview" [ref=f12e1230] [cursor=pointer]
+          - tab "Errors" [ref=f12e1232] [cursor=pointer]
+          - tab "Sessions" [selected] [ref=f12e1234] [cursor=pointer]
+          - tab "User actions" [ref=f12e1236] [cursor=pointer]
+          - tab "HTTP Preview" [ref=f12e1238] [cursor=pointer]:
+            - text: HTTP
+            - generic [ref=f12e1239]: Preview
+          - tab "Geolocation" [ref=f12e1241] [cursor=pointer]
+          - tab "Settings" [ref=f12e1243] [cursor=pointer]
+        - generic [ref=f12e1245]:
+          - generic [ref=f12e1246]:
+            - radiogroup [ref=f12e1247]:
+              - radio [checked] [ref=f12e1249] [cursor=pointer]
+              - radio [ref=f12e1257] [cursor=pointer]
+            - generic [ref=f12e1264]:
+              - generic [ref=f12e1265]: Filters
+              - generic [ref=f12e1266]:
+                - textbox "Add filter" [ref=f12e1267]:
+                  - /placeholder: + label = value
+                - button "Clear filters" [ref=f12e1269] [cursor=pointer]
+            - generic [ref=f12e1272]:
+              - generic [ref=f12e1273]: Insights
+              - switch [checked] [ref=f12e1278]
+          - generic [ref=f12e1282]:
+            - region [ref=f12e1287]:
+              - generic [ref=f12e1288]:
+                - heading "Sessions Overview" [level=2] [ref=f12e1290]
+                - link "Explore" [ref=f12e1292] [cursor=pointer]:
+                  - /url: /explore?left=%7B%22datasource%22%3A%22grafanacloud-logs%22%2C%22queries%22%3A%5B%7B%22expr%22%3A%22sum(count_over_time(%7Bapp_id%3D%5C%225158%5C%22%2C%20kind%3D%5C%22event%5C%22%7D%20%7C~%20%5C%22session_start%7Csession_extend%7Csession_resume%5C%22%20%7C%20logfmt%20%20%7C%20k6_isK6Browser%3D~%5C%22%5C%22%20%7C%20geo_country_iso%3D~%5C%22%5C%22%20or%20geo_country_iso%3D~%5C%22.%2B%5C%22%20%7C%20event_name%3D~%5C%22session_start%7Csession_extend%7Csession_resume%5C%22%20%5B%24__auto%5D))%20by%20(page_id)%22%2C%22queryType%22%3A%22range%22%2C%22refId%22%3A%22sessions-count%22%2C%22datasource%22%3A%7B%22type%22%3A%22loki%22%2C%22uid%22%3A%22grafanacloud-logs%22%7D%7D%5D%2C%22range%22%3A%7B%22from%22%3A%222026-08-07T09%3A00%3A00.000Z%22%2C%22to%22%3A%222026-08-07T10%3A00%3A00.000Z%22%7D%7D
+              - generic [ref=f12e1297]:
+                - generic [ref=f12e1306]:
+                  - button "Annotation region" [ref=f12e1307] [cursor=pointer]
+                  - button "Annotation region" [ref=f12e1308] [cursor=pointer]
+                  - button "Annotation region" [ref=f12e1309] [cursor=pointer]
+                  - button "Annotation region" [ref=f12e1310] [cursor=pointer]
+                  - button "Annotation region" [ref=f12e1311] [cursor=pointer]
+                  - button "Annotation region" [ref=f12e1312] [cursor=pointer]
+                - list [ref=f12e1319]:
+                  - listitem [ref=f12e1320]:
+                    - generic [ref=f12e1322]:
+                      - 'button "Edit color for Page ID: &#x2F;" [ref=f12e1323] [cursor=pointer]'
+                      - button "All series selected" [ref=f12e1324] [cursor=pointer]: "Page ID: /"
+            - generic [ref=f12e1326]:
+              - status "loading Sessions" [ref=f12e1328]
+              - generic [ref=f12e1329]:
+                - generic [ref=f12e1330]:
+                  - heading "Sessions" [level=6] [ref=f12e1331]
+                  - generic [ref=f12e1333]:
+                    - search "search-interactive-table" [ref=f12e1334]:
+                      - textbox "search text" [ref=f12e1343]:
+                        - /placeholder: Search...
+                    - link "Explore" [ref=f12e1344] [cursor=pointer]:
+                      - /url: /explore?left=%7B%22datasource%22%3A%22grafanacloud-logs%22%2C%22queries%22%3A%5B%7B%22expr%22%3A%22%7Bapp_id%3D%5C%225158%5C%22%2C%20kind%3D%5C%22event%5C%22%7D%20%7C~%20%5C%22session_start%7Csession_extend%7Csession_resume%5C%22%20%20%7C%20logfmt%20%20%7C%20k6_isK6Browser%3D~%5C%22%5C%22%20%7C%20geo_country_iso%3D~%5C%22%5C%22%20or%20geo_country_iso%3D~%5C%22.%2B%5C%22%20%7C%20%20event_name%3D~%5C%22session_start%7Csession_extend%7Csession_resume%5C%22%20%7C%20line_format%20%5C%22%7B%7B.labels%7D%7D%5C%22%22%2C%22refId%22%3A%22sessions%22%2C%22queryType%22%3A%22range%22%2C%22datasource%22%3A%7B%22type%22%3A%22loki%22%2C%22uid%22%3A%22grafanacloud-logs%22%7D%7D%2C%7B%22expr%22%3A%22sum(count_over_time(%7Bapp_id%3D%5C%225158%5C%22%2C%20kind%3D%5C%22exception%5C%22%7D%20%20%7C%20logfmt%20%20%7C%20k6_isK6Browser%3D~%5C%22%5C%22%20%7C%20geo_country_iso%3D~%5C%22%5C%22%20or%20geo_country_iso%3D~%5C%22.%2B%5C%22%20%20%5B%24__auto%5D)%20)%20by%20(session_id)%22%2C%22refId%22%3A%22errors-totalExceptions%22%2C%22format%22%3A%22table%22%2C%22queryType%22%3A%22instant%22%2C%22datasource%22%3A%7B%22type%22%3A%22loki%22%2C%22uid%22%3A%22grafanacloud-logs%22%7D%7D%2C%7B%22expr%22%3A%22sum(count_over_time(%7Bapp_id%3D%5C%225158%5C%22%2C%20kind%3D%5C%22event%5C%22%7D%20%7C~%20%5C%22event_name%3Dfaro.tracing.fetch%7Cevent_name%3Dfaro.tracing.xml-http-request%5C%22%20%7C%3D%20%5C%22event_data_http.status_code%3D%5C%22%20%20%7C%20logfmt%20%20%7C%20k6_isK6Browser%3D~%5C%22%5C%22%20%7C%20geo_country_iso%3D~%5C%22%5C%22%20or%20geo_country_iso%3D~%5C%22.%2B%5C%22%20%7C%20(event_data_http_status_code%20%3E%3D%20400%20and%20event_data_http_status_code%20%3C%20600)%20or%20event_data_http_status_code%20%3D%200%20%5B%24__auto%5D))%20by%20(session_id)%22%2C%22refId%22%3A%22errors-httpErrors%22%2C%22format%22%3A%22table%22%2C%22queryType%22%3A%22instant%22%2C%22datasource%22%3A%7B%22type%22%3A%22loki%22%2C%22uid%22%3A%22grafanacloud-logs%22%7D%7D%5D%2C%22range%22%3A%7B%22from%22%3A%222026-08-07T09%3A00%3A00.000Z%22%2C%22to%22%3A%222026-08-07T10%3A00%3A00.000Z%22%7D%7D
+                - generic [ref=f12e1348]:
+                  - table [ref=f12e1349]:
+                    - rowgroup [ref=f12e1350]:
+                      - row [ref=f12e1351]:
+                        - columnheader [ref=f12e1352]
+                        - columnheader [ref=f12e1353]
+                        - columnheader [ref=f12e1354]:
+                          - button "Timestamp" [ref=f12e1355] [cursor=pointer]
+                        - columnheader [ref=f12e1356]:
+                          - button "JS Errors" [ref=f12e1357] [cursor=pointer]
+                        - columnheader [ref=f12e1358]:
+                          - button "Session ID" [ref=f12e1359] [cursor=pointer]
+                        - columnheader [ref=f12e1360]:
+                          - button [ref=f12e1361] [cursor=pointer]
+                        - columnheader [ref=f12e1365]:
+                          - button "Page ID" [ref=f12e1366] [cursor=pointer]
+                        - columnheader [ref=f12e1367]:
+                          - button "Lifecycle" [ref=f12e1368] [cursor=pointer]
+                    - rowgroup [ref=f12e1369]:
+                      - row [ref=f12e1370] [cursor=pointer]:
+                        - cell [ref=f12e1371]:
+                          - button "toggle row expanded" [ref=f12e1373]
+                        - cell [ref=f12e1376]
+                        - cell "2026-08-07 04:59:05.284" [ref=f12e1377]
+                        - cell "0" [ref=f12e1378]
+                        - cell [ref=f12e1380]:
+                          - link "gHRPH0EjGd" [ref=f12e1381]:
+                            - /url: /a/grafana-kowalski-app/apps/5158/sessions/gHRPH0EjGd?from=2026-08-07T09:00:00.000Z&to=2026-08-07T10:00:00.000Z
+                        - cell "-" [ref=f12e1385]
+                        - cell [ref=f12e1386]:
+                          - link / [ref=f12e1390]:
+                            - /url: /a/grafana-kowalski-app/apps/5158/route?from=2026-08-07T09:00:00.000Z&to=2026-08-07T10:00:00.000Z
+                        - cell "Start" [ref=f12e1392]
+                      - row [ref=f12e1394] [cursor=pointer]:
+                        - cell [ref=f12e1395]:
+                          - button "toggle row expanded" [ref=f12e1397]
+                        - cell [ref=f12e1400]
+                        - cell "2026-08-07 04:58:56.899" [ref=f12e1401]
+                        - cell "0" [ref=f12e1402]
+                        - cell [ref=f12e1404]:
+                          - link "cHK7L5JYEX" [ref=f12e1405]:
+                            - /url: /a/grafana-kowalski-app/apps/5158/sessions/cHK7L5JYEX?from=2026-08-07T09:00:00.000Z&to=2026-08-07T10:00:00.000Z
+                        - cell "-" [ref=f12e1409]
+                        - cell [ref=f12e1410]:
+                          - link / [ref=f12e1414]:
+                            - /url: /a/grafana-kowalski-app/apps/5158/route?from=2026-08-07T09:00:00.000Z&to=2026-08-07T10:00:00.000Z
+                        - cell "Start" [ref=f12e1416]
+                      - row [ref=f12e1418] [cursor=pointer]:
+                        - cell [ref=f12e1419]:
+                          - button "toggle row expanded" [ref=f12e1421]
+                        - cell [ref=f12e1424]
+                        - cell "2026-08-07 04:58:46.034" [ref=f12e1425]
+                        - cell "0" [ref=f12e1426]
+                        - cell [ref=f12e1428]:
+                          - link "1EaUXaSHf5" [ref=f12e1429]:
+                            - /url: /a/grafana-kowalski-app/apps/5158/sessions/1EaUXaSHf5?from=2026-08-07T09:00:00.000Z&to=2026-08-07T10:00:00.000Z
+                        - cell "-" [ref=f12e1433]
+                        - cell [ref=f12e1434]:
+                          - link / [ref=f12e1438]:
+                            - /url: /a/grafana-kowalski-app/apps/5158/route?from=2026-08-07T09:00:00.000Z&to=2026-08-07T10:00:00.000Z
+                        - cell "Start" [ref=f12e1440]
+                      - row [ref=f12e1442] [cursor=pointer]:
+                        - cell [ref=f12e1443]:
+                          - button "toggle row expanded" [ref=f12e1445]
+                        - cell [ref=f12e1448]
+                        - cell "2026-08-07 04:58:44.316" [ref=f12e1449]
+                        - cell "0" [ref=f12e1450]
+                        - cell [ref=f12e1452]:
+                          - link "ZDNfarCpSo" [ref=f12e1453]:
+                            - /url: /a/grafana-kowalski-app/apps/5158/sessions/ZDNfarCpSo?from=2026-08-07T09:00:00.000Z&to=2026-08-07T10:00:00.000Z
+                        - cell "-" [ref=f12e1457]
+                        - cell [ref=f12e1458]:
+                          - link / [ref=f12e1462]:
+                            - /url: /a/grafana-kowalski-app/apps/5158/route?from=2026-08-07T09:00:00.000Z&to=2026-08-07T10:00:00.000Z
+                        - cell "Start" [ref=f12e1464]
+                      - row [ref=f12e1466] [cursor=pointer]:
+                        - cell [ref=f12e1467]:
+                          - button "toggle row expanded" [ref=f12e1469]
+                        - cell [ref=f12e1472]
+                        - cell "2026-08-07 04:58:40.622" [ref=f12e1473]
+                        - cell "0" [ref=f12e1474]
+                        - cell [ref=f12e1476]:
+                          - link "RV9LjRtAhe" [ref=f12e1477]:
+                            - /url: /a/grafana-kowalski-app/apps/5158/sessions/RV9LjRtAhe?from=2026-08-07T09:00:00.000Z&to=2026-08-07T10:00:00.000Z
+                        - cell "-" [ref=f12e1481]
+                        - cell [ref=f12e1482]:
+                          - link / [ref=f12e1486]:
+                            - /url: /a/grafana-kowalski-app/apps/5158/route?from=2026-08-07T09:00:00.000Z&to=2026-08-07T10:00:00.000Z
+                        - cell "Start" [ref=f12e1488]
+                      - row [ref=f12e1490] [cursor=pointer]:
+                        - cell [ref=f12e1491]:
+                          - button "toggle row expanded" [ref=f12e1493]
+                        - cell [ref=f12e1496]
+                        - cell "2026-08-07 04:58:32.651" [ref=f12e1497]
+                        - cell "0" [ref=f12e1498]
+                        - cell [ref=f12e1500]:
+                          - link "Ra65ac6hf3" [ref=f12e1501]:
+                            - /url: /a/grafana-kowalski-app/apps/5158/sessions/Ra65ac6hf3?from=2026-08-07T09:00:00.000Z&to=2026-08-07T10:00:00.000Z
+                        - cell "-" [ref=f12e1505]
+                        - cell [ref=f12e1506]:
+                          - link / [ref=f12e1510]:
+                            - /url: /a/grafana-kowalski-app/apps/5158/route?from=2026-08-07T09:00:00.000Z&to=2026-08-07T10:00:00.000Z
+                        - cell "Start" [ref=f12e1512]
+                      - row [ref=f12e1514] [cursor=pointer]:
+                        - cell [ref=f12e1515]:
+                          - button "toggle row expanded" [ref=f12e1517]
+                        - cell [ref=f12e1520]
+                        - cell "2026-08-07 04:58:18.269" [ref=f12e1521]
+                        - cell "0" [ref=f12e1522]
+                        - cell [ref=f12e1524]:
+                          - link "LGaeuPnNUq" [ref=f12e1525]:
+                            - /url: /a/grafana-kowalski-app/apps/5158/sessions/LGaeuPnNUq?from=2026-08-07T09:00:00.000Z&to=2026-08-07T10:00:00.000Z
+                        - cell "-" [ref=f12e1529]
+                        - cell [ref=f12e1530]:
+                          - link / [ref=f12e1534]:
+                            - /url: /a/grafana-kowalski-app/apps/5158/route?from=2026-08-07T09:00:00.000Z&to=2026-08-07T10:00:00.000Z
+                        - cell "Start" [ref=f12e1536]
+                      - row [ref=f12e1538] [cursor=pointer]:
+                        - cell [ref=f12e1539]:
+                          - button "toggle row expanded" [ref=f12e1541]
+                        - cell [ref=f12e1544]
+                        - cell "2026-08-07 04:58:05.433" [ref=f12e1545]
+                        - cell "0" [ref=f12e1546]
+                        - cell [ref=f12e1548]:
+                          - link "W6yjff1tQz" [ref=f12e1549]:
+                            - /url: /a/grafana-kowalski-app/apps/5158/sessions/W6yjff1tQz?from=2026-08-07T09:00:00.000Z&to=2026-08-07T10:00:00.000Z
+                        - cell "-" [ref=f12e1553]
+                        - cell [ref=f12e1554]:
+                          - link / [ref=f12e1558]:
+                            - /url: /a/grafana-kowalski-app/apps/5158/route?from=2026-08-07T09:00:00.000Z&to=2026-08-07T10:00:00.000Z
+                        - cell "Start" [ref=f12e1560]
+                      - row [ref=f12e1562] [cursor=pointer]:
+                        - cell [ref=f12e1563]:
+                          - button "toggle row expanded" [ref=f12e1565]
+                        - cell [ref=f12e1568]
+                        - cell "2026-08-07 04:57:54.008" [ref=f12e1569]
+                        - cell "0" [ref=f12e1570]
+                        - cell [ref=f12e1572]:
+                          - link "Gd6j0LTdkD" [ref=f12e1573]:
+                            - /url: /a/grafana-kowalski-app/apps/5158/sessions/Gd6j0LTdkD?from=2026-08-07T09:00:00.000Z&to=2026-08-07T10:00:00.000Z
+                        - cell "-" [ref=f12e1577]
+                        - cell [ref=f12e1578]:
+                          - link / [ref=f12e1582]:
+                            - /url: /a/grafana-kowalski-app/apps/5158/route?from=2026-08-07T09:00:00.000Z&to=2026-08-07T10:00:00.000Z
+                        - cell "Start" [ref=f12e1584]
+                      - row [ref=f12e1586] [cursor=pointer]:
+                        - cell [ref=f12e1587]:
+                          - button "toggle row expanded" [ref=f12e1589]
+                        - cell [ref=f12e1592]
+                        - cell "2026-08-07 04:57:53.157" [ref=f12e1593]
+                        - cell "0" [ref=f12e1594]
+                        - cell [ref=f12e1596]:
+                          - link "6YvwJxE75S" [ref=f12e1597]:
+                            - /url: /a/grafana-kowalski-app/apps/5158/sessions/6YvwJxE75S?from=2026-08-07T09:00:00.000Z&to=2026-08-07T10:00:00.000Z
+                        - cell "-" [ref=f12e1601]
+                        - cell [ref=f12e1602]:
+                          - link / [ref=f12e1606]:
+                            - /url: /a/grafana-kowalski-app/apps/5158/route?from=2026-08-07T09:00:00.000Z&to=2026-08-07T10:00:00.000Z
+                        - cell "Start" [ref=f12e1608]
+                  - navigation [ref=f12e1611]:
+                    - list [ref=f12e1612]:
+                      - listitem [ref=f12e1613]:
+                        - button "previous page" [disabled] [ref=f12e1614]
+                      - listitem [ref=f12e1618]:
+                        - button "1" [ref=f12e1619] [cursor=pointer]
+                      - listitem [ref=f12e1621]:
+                        - button "2" [ref=f12e1622] [cursor=pointer]
+                      - listitem [ref=f12e1624]:
+                        - button "3" [ref=f12e1625] [cursor=pointer]
+                      - listitem [ref=f12e1627]:
+                        - button "4" [ref=f12e1628] [cursor=pointer]
+                      - listitem [ref=f12e1630]:
+                        - button "5" [ref=f12e1631] [cursor=pointer]
+                      - listitem [ref=f12e1633]:
+                        - button "6" [ref=f12e1634] [cursor=pointer]
+                      - listitem [ref=f12e1636]:
+                        - button "7" [ref=f12e1637] [cursor=pointer]
+                      - listitem [ref=f12e1639]
+                      - listitem [ref=f12e1642]:
+                        - button "33" [ref=f12e1643] [cursor=pointer]
+                      - listitem [ref=f12e1645]:
+                        - button "next page" [ref=f12e1646] [cursor=pointer]
+  - log [ref=f12e1650]

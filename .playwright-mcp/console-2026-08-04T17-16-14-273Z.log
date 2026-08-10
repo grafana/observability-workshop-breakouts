@@ -113,3 +113,519 @@
  Attempted to create a new user action while one is already running. This is not possible. @ https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:1
 [   15952ms] [WARNING] SceneObject already has a parent set that is different from the new parent. You cannot share the same SceneObject instance in multiple scenes or in multiple different places of the same scene graph. Use SceneObject.clone() to duplicate a SceneObject or store a state key reference and use sceneGraph.findObject to locate it. u wN @ https://edge.fullstory.com/s/fs.js:1
 [   15953ms] [WARNING] SceneObject already has a parent set that is different from the new parent. You cannot share the same SceneObject instance in multiple scenes or in multiple different places of the same scene graph. Use SceneObject.clone() to duplicate a SceneObject or store a state key reference and use sceneGraph.findObject to locate it. u gN @ https://edge.fullstory.com/s/fs.js:1
+[ 5201586ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[ 5201949ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://deveadf53.grafana.net/api/login/ping:0
+[ 6838332ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[ 7797901ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://deveadf53.grafana.net/api/login/ping:0
+[ 7798900ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[ 7799384ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://deveadf53.grafana.net/api/login/ping:0
+[ 8690146ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[ 8690545ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://deveadf53.grafana.net/api/login/ping:0
+[10225063ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[10225109ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[10225194ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/2aaaae17b963ac219cd6e23a4850f00e:0
+[10225323ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/2aaaae17b963ac219cd6e23a4850f00e:0
+[10225323ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(1)} TypeError: Failed to fetch
+    at https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/1849-react19.2ac26fdddffdb4cf8597.js:177:52559
+    at window.fetch (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:206687)
+    at https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:336969
+    at o.<computed>.o.<computed> (https://rsi.grafana.com/v1.1/js-integrations/Fullstory.min.js:1:5852)
+    at Mr.<anonymous> (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:268817)
+    at Generator.throw (<anonymous>)
+    at a (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:264709) @ https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:1
+[11290914ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: Error in connection establishment: net::ERR_NAME_NOT_RESOLVED @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[11290984ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://deveadf53.grafana.net/api/login/ping:0
+[11292837ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[11295167ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[12342135ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[12342443ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://deveadf53.grafana.net/api/login/ping:0
+[13304886ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/2aaaae17b963ac219cd6e23a4850f00e:0
+[13304897ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(4)} TypeError: Failed to fetch
+    at https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/1849-react19.2ac26fdddffdb4cf8597.js:177:52559
+    at window.fetch (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:206687)
+    at https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:336969
+    at o.<computed>.o.<computed> (https://rsi.grafana.com/v1.1/js-integrations/Fullstory.min.js:1:5852)
+    at Mr.<anonymous> (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:268575)
+    at Generator.next (<anonymous>)
+    at https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:264856
+    at new Promise (<anonymous>)
+    at Tr (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:264601)
+    at Mr.fetchWithKeepaliveRetry (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:268487) @ https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:1
+[13309292ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[14230869ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://deveadf53.grafana.net/api/login/ping:0
+[14231235ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/2aaaae17b963ac219cd6e23a4850f00e:0
+[14231243ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(4)} TypeError: Failed to fetch
+    at https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/1849-react19.2ac26fdddffdb4cf8597.js:177:52559
+    at window.fetch (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:206687)
+    at https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:336969
+    at o.<computed>.o.<computed> (https://rsi.grafana.com/v1.1/js-integrations/Fullstory.min.js:1:5852)
+    at Mr.<anonymous> (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:268575)
+    at Generator.next (<anonymous>)
+    at https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:264856
+    at new Promise (<anonymous>)
+    at Tr (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:264601)
+    at Mr.fetchWithKeepaliveRetry (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:268487) @ https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:1
+[14235118ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[15292917ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://deveadf53.grafana.net/api/login/ping:0
+[15293290ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/2aaaae17b963ac219cd6e23a4850f00e:0
+[16360663ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[16361183ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://deveadf53.grafana.net/api/login/ping:0
+[16525118ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[16992238ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[16992763ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://deveadf53.grafana.net/api/login/ping:0
+[23629118ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[23629645ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://deveadf53.grafana.net/api/login/ping:0
+[26829634ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[26830019ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://deveadf53.grafana.net/api/login/ping:0
+[27755833ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[27756021ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[30826863ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: Error in connection establishment: net::ERR_NAME_NOT_RESOLVED @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[30827141ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://deveadf53.grafana.net/api/login/ping:0
+[30828634ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[30830736ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[30831892ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[30832238ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://deveadf53.grafana.net/api/login/ping:0
+[35849676ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: Error in connection establishment: net::ERR_NAME_NOT_RESOLVED @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[35849782ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://deveadf53.grafana.net/api/login/ping:0
+[35850011ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/2aaaae17b963ac219cd6e23a4850f00e:0
+[35850093ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/2aaaae17b963ac219cd6e23a4850f00e:0
+[35850094ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(1)} TypeError: Failed to fetch
+    at https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/1849-react19.2ac26fdddffdb4cf8597.js:177:52559
+    at window.fetch (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:206687)
+    at https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:336969
+    at o.<computed>.o.<computed> (https://rsi.grafana.com/v1.1/js-integrations/Fullstory.min.js:1:5852)
+    at Mr.<anonymous> (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:268817)
+    at Generator.throw (<anonymous>)
+    at a (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:264709) @ https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:1
+[35850097ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/2aaaae17b963ac219cd6e23a4850f00e:0
+[35850221ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/2aaaae17b963ac219cd6e23a4850f00e:0
+[35850222ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(1)} TypeError: Failed to fetch
+    at https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/1849-react19.2ac26fdddffdb4cf8597.js:177:52559
+    at window.fetch (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:206687)
+    at https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:336969
+    at o.<computed>.o.<computed> (https://rsi.grafana.com/v1.1/js-integrations/Fullstory.min.js:1:5852)
+    at Mr.<anonymous> (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:268817)
+    at Generator.throw (<anonymous>)
+    at a (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:264709) @ https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:1
+[35851609ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[35853027ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[35855214ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[35855513ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://deveadf53.grafana.net/api/login/ping:0
+[39166893ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[39168018ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://deveadf53.grafana.net/api/login/ping:0
+[39168064ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[40146423ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[40146854ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://deveadf53.grafana.net/api/login/ping:0
+[40146924ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://deveadf53.grafana.net/api/user/auth-tokens/rotate:0
+[41056173ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[41057044ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://deveadf53.grafana.net/api/login/ping:0
+[41057518ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[51586806ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[51587241ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://deveadf53.grafana.net/api/login/ping:0
+[52567006ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[52567111ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[52568078ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[52568695ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://deveadf53.grafana.net/api/login/ping:0
+[62947414ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[62947913ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://deveadf53.grafana.net/api/login/ping:0
+[62948505ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[63893068ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[63893143ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://deveadf53.grafana.net/api/login/ping:0
+[63894797ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[64810367ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[64810627ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://deveadf53.grafana.net/api/login/ping:0
+[65850762ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/2aaaae17b963ac219cd6e23a4850f00e:0
+[65850778ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(3)} TypeError: Failed to fetch
+    at https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/1849-react19.2ac26fdddffdb4cf8597.js:177:52559
+    at window.fetch (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:206687)
+    at https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:336969
+    at o.<computed>.o.<computed> (https://rsi.grafana.com/v1.1/js-integrations/Fullstory.min.js:1:5852)
+    at Mr.<anonymous> (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:268575)
+    at Generator.next (<anonymous>)
+    at https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:264856
+    at new Promise (<anonymous>)
+    at Tr (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:264601)
+    at Mr.fetchWithKeepaliveRetry (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:268487) @ https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:1
+[65850867ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[65850968ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[66861990ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[66862680ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://deveadf53.grafana.net/api/login/ping:0
+[73247229ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[73247731ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://deveadf53.grafana.net/api/login/ping:0
+[77631339ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[77631850ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://deveadf53.grafana.net/api/login/ping:0
+[81529892ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[81530594ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://deveadf53.grafana.net/api/login/ping:0
+[84376232ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[84376501ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://deveadf53.grafana.net/api/login/ping:0
+[84513608ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: Error during WebSocket handshake: net::ERR_CONNECTION_RESET @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[84513725ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/2aaaae17b963ac219cd6e23a4850f00e:0
+[84513776ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://deveadf53.grafana.net/api/login/ping:0
+[84513783ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[84513783ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/2aaaae17b963ac219cd6e23a4850f00e:0
+[84513784ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/2aaaae17b963ac219cd6e23a4850f00e:0
+[84513788ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(1)} TypeError: Failed to fetch
+    at https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/1849-react19.2ac26fdddffdb4cf8597.js:177:52559
+    at window.fetch (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:206687)
+    at https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:336969
+    at o.<computed>.o.<computed> (https://rsi.grafana.com/v1.1/js-integrations/Fullstory.min.js:1:5852)
+    at Mr.<anonymous> (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:268817)
+    at Generator.throw (<anonymous>)
+    at a (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:264709) @ https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:1
+[84513903ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[84513903ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/2aaaae17b963ac219cd6e23a4850f00e:0
+[84513903ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(1)} TypeError: Failed to fetch
+    at https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/1849-react19.2ac26fdddffdb4cf8597.js:177:52559
+    at window.fetch (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:206687)
+    at https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:336969
+    at o.<computed>.o.<computed> (https://rsi.grafana.com/v1.1/js-integrations/Fullstory.min.js:1:5852)
+    at Mr.<anonymous> (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:268817)
+    at Generator.throw (<anonymous>)
+    at a (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:264709) @ https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:1
+[88185630ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[88185951ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://deveadf53.grafana.net/api/login/ping:0
+[92478374ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[92479287ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://deveadf53.grafana.net/api/login/ping:0
+[96439910ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[97405758ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://deveadf53.grafana.net/api/login/ping:0
+[97406171ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/2aaaae17b963ac219cd6e23a4850f00e:0
+[97406182ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(4)} TypeError: Failed to fetch
+    at https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/1849-react19.2ac26fdddffdb4cf8597.js:177:52559
+    at window.fetch (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:206687)
+    at https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:336969
+    at o.<computed>.o.<computed> (https://rsi.grafana.com/v1.1/js-integrations/Fullstory.min.js:1:5852)
+    at Mr.<anonymous> (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:268575)
+    at Generator.next (<anonymous>)
+    at https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:264856
+    at new Promise (<anonymous>)
+    at Tr (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:264601)
+    at Mr.fetchWithKeepaliveRetry (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:268487) @ https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:1
+[97406214ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[97406749ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://deveadf53.grafana.net/api/login/ping:0
+[100135797ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[100136251ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://deveadf53.grafana.net/api/login/ping:0
+[100136813ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[101123976ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[101124605ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://deveadf53.grafana.net/api/login/ping:0
+[102083126ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[102083127ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[102083239ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[102083239ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[102085640ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[102085984ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://deveadf53.grafana.net/api/login/ping:0
+[102823750ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[102824063ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://deveadf53.grafana.net/api/login/ping:0
+[103825719ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[103825720ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://deveadf53.grafana.net/api/login/ping:0
+[103825722ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/2aaaae17b963ac219cd6e23a4850f00e:0
+[103825835ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[103825835ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/2aaaae17b963ac219cd6e23a4850f00e:0
+[103825835ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(2)} TypeError: Failed to fetch
+    at https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/1849-react19.2ac26fdddffdb4cf8597.js:177:52559
+    at window.fetch (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:206687)
+    at https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:336969
+    at o.<computed>.o.<computed> (https://rsi.grafana.com/v1.1/js-integrations/Fullstory.min.js:1:5852)
+    at Mr.<anonymous> (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:268817)
+    at Generator.throw (<anonymous>)
+    at a (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:264709) @ https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:1
+[103825999ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/2aaaae17b963ac219cd6e23a4850f00e:0
+[103826000ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(4)} TypeError: Failed to fetch
+    at https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/1849-react19.2ac26fdddffdb4cf8597.js:177:52559
+    at window.fetch (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:206687)
+    at https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:336969
+    at o.<computed>.o.<computed> (https://rsi.grafana.com/v1.1/js-integrations/Fullstory.min.js:1:5852)
+    at Mr.<anonymous> (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:268575)
+    at Generator.next (<anonymous>)
+    at https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:264856
+    at new Promise (<anonymous>)
+    at Tr (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:264601)
+    at Mr.fetchWithKeepaliveRetry (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:268487) @ https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:1
+[105811674ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[105812351ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://deveadf53.grafana.net/api/login/ping:0
+[106473766ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[106473838ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[106485893ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[106486239ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://deveadf53.grafana.net/api/login/ping:0
+[108433923ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[108434380ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://deveadf53.grafana.net/api/login/ping:0
+[109388936ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[109389003ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[110136723ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[110137245ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://deveadf53.grafana.net/api/login/ping:0
+[114755584ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: Error in connection establishment: net::ERR_NAME_NOT_RESOLVED @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[114755655ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://deveadf53.grafana.net/api/login/ping:0
+[114755783ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/2aaaae17b963ac219cd6e23a4850f00e:0
+[114755863ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/2aaaae17b963ac219cd6e23a4850f00e:0
+[114755863ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(1)} TypeError: Failed to fetch
+    at https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/1849-react19.2ac26fdddffdb4cf8597.js:177:52559
+    at window.fetch (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:206687)
+    at https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:336969
+    at o.<computed>.o.<computed> (https://rsi.grafana.com/v1.1/js-integrations/Fullstory.min.js:1:5852)
+    at Mr.<anonymous> (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:268817)
+    at Generator.throw (<anonymous>)
+    at a (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:264709) @ https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:1
+[114757208ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[114758260ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[114759521ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[116628067ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: Error in connection establishment: net::ERR_NAME_NOT_RESOLVED @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[116628176ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://deveadf53.grafana.net/api/login/ping:0
+[117460821ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[117461269ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://deveadf53.grafana.net/api/login/ping:0
+[118419637ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/2aaaae17b963ac219cd6e23a4850f00e:0
+[118419668ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/2aaaae17b963ac219cd6e23a4850f00e:0
+[118419668ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(2)} TypeError: Failed to fetch
+    at https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/1849-react19.2ac26fdddffdb4cf8597.js:177:52559
+    at window.fetch (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:206687)
+    at https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:336969
+    at o.<computed>.o.<computed> (https://rsi.grafana.com/v1.1/js-integrations/Fullstory.min.js:1:5852)
+    at Mr.<anonymous> (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:268817)
+    at Generator.throw (<anonymous>)
+    at a (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:264709) @ https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:1
+[118419772ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[118419946ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/2aaaae17b963ac219cd6e23a4850f00e:0
+[118419947ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(4)} TypeError: Failed to fetch
+    at https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/1849-react19.2ac26fdddffdb4cf8597.js:177:52559
+    at window.fetch (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:206687)
+    at https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:336969
+    at o.<computed>.o.<computed> (https://rsi.grafana.com/v1.1/js-integrations/Fullstory.min.js:1:5852)
+    at Mr.<anonymous> (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:268575)
+    at Generator.next (<anonymous>)
+    at https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:264856
+    at new Promise (<anonymous>)
+    at Tr (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:264601)
+    at Mr.fetchWithKeepaliveRetry (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:268487) @ https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:1
+[118419948ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[119451414ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[119451713ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://deveadf53.grafana.net/api/login/ping:0
+[120355450ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/2aaaae17b963ac219cd6e23a4850f00e:0
+[120355451ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/2aaaae17b963ac219cd6e23a4850f00e:0
+[120355543ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/2aaaae17b963ac219cd6e23a4850f00e:0
+[120355544ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(1)} TypeError: Failed to fetch
+    at https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/1849-react19.2ac26fdddffdb4cf8597.js:177:52559
+    at window.fetch (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:206687)
+    at https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:336969
+    at o.<computed>.o.<computed> (https://rsi.grafana.com/v1.1/js-integrations/Fullstory.min.js:1:5852)
+    at Mr.<anonymous> (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:268817)
+    at Generator.throw (<anonymous>)
+    at a (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:264709) @ https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:1
+[120355544ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/2aaaae17b963ac219cd6e23a4850f00e:0
+[120355544ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(2)} TypeError: Failed to fetch
+    at https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/1849-react19.2ac26fdddffdb4cf8597.js:177:52559
+    at window.fetch (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:206687)
+    at https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:336969
+    at o.<computed>.o.<computed> (https://rsi.grafana.com/v1.1/js-integrations/Fullstory.min.js:1:5852)
+    at Mr.<anonymous> (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:268817)
+    at Generator.throw (<anonymous>)
+    at a (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:264709) @ https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:1
+[120355743ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/2aaaae17b963ac219cd6e23a4850f00e:0
+[120355744ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(4)} TypeError: Failed to fetch
+    at https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/1849-react19.2ac26fdddffdb4cf8597.js:177:52559
+    at window.fetch (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:206687)
+    at https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:336969
+    at o.<computed>.o.<computed> (https://rsi.grafana.com/v1.1/js-integrations/Fullstory.min.js:1:5852)
+    at Mr.<anonymous> (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:268575)
+    at Generator.next (<anonymous>)
+    at https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:264856
+    at new Promise (<anonymous>)
+    at Tr (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:264601)
+    at Mr.fetchWithKeepaliveRetry (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:268487) @ https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:1
+[120355947ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[120356076ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[121118595ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[121119121ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://deveadf53.grafana.net/api/login/ping:0
+[122053560ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[122053890ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://deveadf53.grafana.net/api/login/ping:0
+[123015818ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[123015905ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[128433554ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: Error in connection establishment: net::ERR_NAME_NOT_RESOLVED @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[128433612ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://deveadf53.grafana.net/api/login/ping:0
+[128433946ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/2aaaae17b963ac219cd6e23a4850f00e:0
+[128433948ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(4)} TypeError: Failed to fetch
+    at https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/1849-react19.2ac26fdddffdb4cf8597.js:177:52559
+    at window.fetch (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:206687)
+    at https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:336969
+    at o.<computed>.o.<computed> (https://rsi.grafana.com/v1.1/js-integrations/Fullstory.min.js:1:5852)
+    at Mr.<anonymous> (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:268575)
+    at Generator.next (<anonymous>)
+    at https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:264856
+    at new Promise (<anonymous>)
+    at Tr (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:264601)
+    at Mr.fetchWithKeepaliveRetry (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:268487) @ https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:1
+[128434668ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[128436545ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[128439895ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[128440235ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://deveadf53.grafana.net/api/login/ping:0
+[128566704ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[128566840ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[128595520ms] [WARNING] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: WebSocket is closed before the connection is established. @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[131852715ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[131853137ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://deveadf53.grafana.net/api/login/ping:0
+[142003583ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[142003982ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://deveadf53.grafana.net/api/login/ping:0
+[142923989ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[142924131ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[142925184ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[142925672ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://deveadf53.grafana.net/api/login/ping:0
+[150879096ms] [WARNING] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: WebSocket is closed before the connection is established. @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[151831485ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://deveadf53.grafana.net/api/login/ping:0
+[151831842ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[151831873ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://deveadf53.grafana.net/api/login/ping:0
+[151831874ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/2aaaae17b963ac219cd6e23a4850f00e:0
+[151831895ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(4)} TypeError: Failed to fetch
+    at https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/1849-react19.2ac26fdddffdb4cf8597.js:177:52559
+    at window.fetch (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:206687)
+    at https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:336969
+    at o.<computed>.o.<computed> (https://rsi.grafana.com/v1.1/js-integrations/Fullstory.min.js:1:5852)
+    at Mr.<anonymous> (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:268575)
+    at Generator.next (<anonymous>)
+    at https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:264856
+    at new Promise (<anonymous>)
+    at Tr (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:264601)
+    at Mr.fetchWithKeepaliveRetry (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:268487) @ https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:1
+[151832048ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[151832132ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/2aaaae17b963ac219cd6e23a4850f00e:0
+[151832133ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[151834088ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[152888717ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: Error in connection establishment: net::ERR_NAME_NOT_RESOLVED @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[152888983ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://deveadf53.grafana.net/api/login/ping:0
+[152890261ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[154528387ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[154529278ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://deveadf53.grafana.net/api/login/ping:0
+[157597561ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: Error in connection establishment: net::ERR_NAME_NOT_RESOLVED @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[157597820ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://deveadf53.grafana.net/api/login/ping:0
+[159260442ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: Error in connection establishment: net::ERR_NAME_NOT_RESOLVED @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[159260515ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://deveadf53.grafana.net/api/login/ping:0
+[159260819ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/2aaaae17b963ac219cd6e23a4850f00e:0
+[159260827ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(4)} TypeError: Failed to fetch
+    at https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/1849-react19.2ac26fdddffdb4cf8597.js:177:52559
+    at window.fetch (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:206687)
+    at https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:336969
+    at o.<computed>.o.<computed> (https://rsi.grafana.com/v1.1/js-integrations/Fullstory.min.js:1:5852)
+    at Mr.<anonymous> (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:268575)
+    at Generator.next (<anonymous>)
+    at https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:264856
+    at new Promise (<anonymous>)
+    at Tr (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:264601)
+    at Mr.fetchWithKeepaliveRetry (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:268487) @ https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:1
+[160276494ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: Error in connection establishment: net::ERR_NAME_NOT_RESOLVED @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[160276775ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://deveadf53.grafana.net/api/login/ping:0
+[161329467ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[161329969ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://deveadf53.grafana.net/api/login/ping:0
+[162371705ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[162372064ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://deveadf53.grafana.net/api/login/ping:0
+[162372981ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(2)} TypeError: Cannot read properties of undefined (reading 'internalLogger')
+    at logDebug (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:659)
+    at Mr.extendFaroSession (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:269852)
+    at Mr.<anonymous> (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:269074)
+    at Generator.next (<anonymous>)
+    at https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:264856
+    at new Promise (<anonymous>)
+    at Tr (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:264601)
+    at Mr.handleResponse (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:268963)
+    at Mr.<anonymous> (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:268655)
+    at Generator.next (<anonymous>) @ https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:1
+[169494460ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[169494754ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://deveadf53.grafana.net/api/login/ping:0
+[170111151ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[170111303ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://deveadf53.grafana.net/api/login/ping:0
+[171011640ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[171011933ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://deveadf53.grafana.net/api/login/ping:0
+[171012938ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(2)} TypeError: Cannot read properties of undefined (reading 'internalLogger')
+    at logDebug (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:659)
+    at Mr.extendFaroSession (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:269852)
+    at Mr.<anonymous> (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:269074)
+    at Generator.next (<anonymous>)
+    at https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:264856
+    at new Promise (<anonymous>)
+    at Tr (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:264601)
+    at Mr.handleResponse (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:268963)
+    at Mr.<anonymous> (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:268655)
+    at Generator.next (<anonymous>) @ https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:1
+[172097869ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[172098585ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://deveadf53.grafana.net/api/login/ping:0
+[173056018ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[173056551ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://deveadf53.grafana.net/api/login/ping:0
+[174031798ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[174031980ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://deveadf53.grafana.net/api/login/ping:0
+[179866502ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://deveadf53.grafana.net/api/user/auth-tokens/rotate:0
+[179866540ms] [ERROR] TypeError: Failed to fetch
+    at https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/1849-react19.2ac26fdddffdb4cf8597.js:177:53597
+    at jE.with (https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/1849-react19.2ac26fdddffdb4cf8597.js:177:28814)
+    at n.with (https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:86:14910)
+    at https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/1849-react19.2ac26fdddffdb4cf8597.js:177:53500
+    at window.fetch (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:206687)
+    at https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:338072
+    at jE.with (https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/1849-react19.2ac26fdddffdb4cf8597.js:177:28814)
+    at e.with (https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:279933)
+    at https://plugins-cdn.grafana.net/grafana-kowalski-app/1.64.0/public/plugins/grafana-kowalski-app/463.js?_cache=1ed629a5641ef9c0de99:2:337978
+    at o.<computed>.o.<computed> (https://rsi.grafana.com/v1.1/js-integrations/Fullstory.min.js:1:5852) @ https://edge.fullstory.com/s/fs.js:1
+[179890879ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[179891054ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://deveadf53.grafana.net/api/login/ping:0
+[180634108ms] [ERROR] WebSocket connection to 'wss://deveadf53.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30537469096/public/build/8021-react19.1ab7cede6b6360c3a4e0.js:291
+[180634507ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://deveadf53.grafana.net/api/login/ping:0

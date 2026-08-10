@@ -1,0 +1,461 @@
+- generic [active] [ref=f12e1]:
+  - generic [ref=f12e10]:
+    - link "Skip to main content" [ref=f12e11] [cursor=pointer]:
+      - /url: "#pageContent"
+    - generic [ref=f12e13]:
+      - generic [ref=f12e14]:
+        - generic [ref=f12e15]:
+          - link [ref=f12e16] [cursor=pointer]:
+            - /url: /
+            - img "Grafana" [ref=f12e17]
+          - link "Grafana" [ref=f12e18] [cursor=pointer]:
+            - /url: /
+        - button "Undock menu" [ref=f12e19] [cursor=pointer]
+        - button "Close menu" [ref=f12e22] [cursor=pointer]
+      - navigation [ref=f12e25]:
+        - list "Navigation" [ref=f12e30]:
+          - listitem [ref=f12e31]:
+            - generic [ref=f12e32]:
+              - link [ref=f12e35] [cursor=pointer]:
+                - /url: /bookmarks
+                - paragraph [ref=f12e40]: Bookmarks
+              - 'button "Expand section: Bookmarks" [ref=f12e42] [cursor=pointer]'
+          - listitem [ref=f12e45]:
+            - generic [ref=f12e46]:
+              - link [ref=f12e49] [cursor=pointer]:
+                - /url: /dashboards?starred
+                - paragraph [ref=f12e54]: Starred
+              - 'button "Expand section: Starred" [ref=f12e57] [cursor=pointer]'
+          - listitem [ref=f12e60]:
+            - generic [ref=f12e61]:
+              - link [ref=f12e64] [cursor=pointer]:
+                - /url: /dashboards
+                - paragraph [ref=f12e69]: Dashboards
+              - 'button "Expand section: Dashboards" [ref=f12e72] [cursor=pointer]'
+          - listitem [ref=f12e75]:
+            - link [ref=f12e79] [cursor=pointer]:
+              - /url: /explore
+              - paragraph [ref=f12e84]: Explore
+          - listitem [ref=f12e86]:
+            - generic [ref=f12e87]:
+              - link [ref=f12e90] [cursor=pointer]:
+                - /url: /drilldown
+                - paragraph [ref=f12e98]: Drilldown
+              - 'button "Expand section: Drilldown" [ref=f12e101] [cursor=pointer]'
+          - listitem [ref=f12e104]:
+            - generic [ref=f12e105]:
+              - link [ref=f12e108] [cursor=pointer]:
+                - /url: /a/grafana-assistant-app
+                - paragraph [ref=f12e114]: Assistant
+              - 'button "Expand section: Assistant" [ref=f12e117] [cursor=pointer]'
+          - listitem [ref=f12e120]:
+            - generic [ref=f12e121]:
+              - link [ref=f12e124] [cursor=pointer]:
+                - /url: /alerts-and-incidents
+                - paragraph [ref=f12e129]: Alerts & IRM
+              - 'button "Expand section: Alerts &amp; IRM" [ref=f12e132] [cursor=pointer]'
+          - listitem [ref=f12e135]:
+            - generic [ref=f12e136]:
+              - link [ref=f12e139] [cursor=pointer]:
+                - /url: /a/grafana-ml-app/home
+                - paragraph [ref=f12e146]: AI & machine learning
+              - 'button "Expand section: AI &amp; machine learning" [ref=f12e149] [cursor=pointer]'
+          - listitem [ref=f12e152]:
+            - generic [ref=f12e153]:
+              - link [ref=f12e156] [cursor=pointer]:
+                - /url: adaptive-telemetry
+                - generic [ref=f12e158]:
+                  - paragraph [ref=f12e176]: Adaptive Telemetry
+                  - generic [ref=f12e177]: New!
+              - 'button "Expand section: Adaptive Telemetry" [ref=f12e183] [cursor=pointer]'
+          - listitem [ref=f12e186]:
+            - generic [ref=f12e187]:
+              - link [ref=f12e190] [cursor=pointer]:
+                - /url: /a/grafana-cmab-app/
+                - generic [ref=f12e192]:
+                  - paragraph [ref=f12e195]: Cost Management and Billing
+                  - generic [ref=f12e196]: New!
+              - 'button "Expand section: Cost Management and Billing" [ref=f12e202] [cursor=pointer]'
+          - listitem [ref=f12e205]:
+            - generic [ref=f12e206]:
+              - link [ref=f12e209] [cursor=pointer]:
+                - /url: /testing-and-synthetics
+                - paragraph [ref=f12e216]: Testing & synthetics
+              - 'button "Expand section: Testing &amp; synthetics" [ref=f12e219] [cursor=pointer]'
+          - listitem [ref=f12e222]:
+            - generic [ref=f12e223]:
+              - link [ref=f12e226] [cursor=pointer]:
+                - /url: /observability
+                - paragraph [ref=f12e231]: Observability
+              - 'button "Collapse section: Observability" [expanded] [ref=f12e234] [cursor=pointer]'
+            - list [ref=f12e237]:
+              - listitem [ref=f12e238]:
+                - link [ref=f12e242] [cursor=pointer]:
+                  - /url: /a/grafana-asserts-app/entities
+                  - paragraph [ref=f12e245]: Entity graph
+              - listitem [ref=f12e247]:
+                - link [ref=f12e251] [cursor=pointer]:
+                  - /url: /a/grafana-asserts-app/catalog
+                  - paragraph [ref=f12e254]: Entity catalog
+              - listitem [ref=f12e256]:
+                - link [ref=f12e260] [cursor=pointer]:
+                  - /url: /a/grafana-asserts-app/assertions
+                  - paragraph [ref=f12e263]: RCA workbench
+              - listitem [ref=f12e265]:
+                - link [ref=f12e269] [cursor=pointer]:
+                  - /url: /a/grafana-asserts-app/slo
+                  - paragraph [ref=f12e272]: Health target
+              - listitem [ref=f12e274]:
+                - link [ref=f12e278] [cursor=pointer]:
+                  - /url: /a/grafana-asserts-app/rules
+                  - paragraph [ref=f12e281]: Rules
+              - listitem [ref=f12e283]:
+                - link [ref=f12e287] [cursor=pointer]:
+                  - /url: /a/grafana-asserts-app/configuration
+                  - paragraph [ref=f12e290]: Configuration
+              - listitem [ref=f12e292]:
+                - generic [ref=f12e293]:
+                  - link [ref=f12e296] [cursor=pointer]:
+                    - /url: /a/grafana-agento11y-app
+                    - generic [ref=f12e298]:
+                      - paragraph [ref=f12e299]: Agent
+                      - generic [ref=f12e300]: New!
+                  - 'button "Expand section: Agent" [ref=f12e306] [cursor=pointer]'
+              - listitem [ref=f12e309]:
+                - generic [ref=f12e310]:
+                  - link [ref=f12e313] [cursor=pointer]:
+                    - /url: /a/grafana-kowalski-app
+                    - paragraph [ref=f12e316]: Frontend
+                  - 'button "Expand section: Frontend" [ref=f12e319] [cursor=pointer]'
+              - listitem [ref=f12e322]:
+                - generic [ref=f12e323]:
+                  - link [ref=f12e326] [cursor=pointer]:
+                    - /url: /a/grafana-app-observability-app
+                    - paragraph [ref=f12e329]: Application
+                  - 'button "Expand section: Application" [ref=f12e332] [cursor=pointer]'
+              - listitem [ref=f12e335]:
+                - generic [ref=f12e336]:
+                  - link [ref=f12e339] [cursor=pointer]:
+                    - /url: /a/grafana-dbo11y-app/
+                    - generic [ref=f12e341]:
+                      - paragraph [ref=f12e342]: Database
+                      - generic [ref=f12e343]: New!
+                  - 'button "Expand section: Database" [ref=f12e349] [cursor=pointer]'
+              - listitem [ref=f12e352]:
+                - generic [ref=f12e353]:
+                  - link [ref=f12e356] [cursor=pointer]:
+                    - /url: /a/grafana-k8s-app/home
+                    - paragraph [ref=f12e359]: Kubernetes
+                  - 'button "Expand section: Kubernetes" [ref=f12e362] [cursor=pointer]'
+              - listitem [ref=f12e365]:
+                - generic [ref=f12e366]:
+                  - link [ref=f12e369] [cursor=pointer]:
+                    - /url: /a/grafana-csp-app
+                    - paragraph [ref=f12e372]: Cloud provider
+                  - 'button "Expand section: Cloud provider" [ref=f12e375] [cursor=pointer]'
+          - listitem [ref=f12e378]:
+            - generic [ref=f12e379]:
+              - link [ref=f12e382] [cursor=pointer]:
+                - /url: /connections
+                - paragraph [ref=f12e387]: Connections
+              - 'button "Expand section: Connections" [ref=f12e390] [cursor=pointer]'
+          - listitem [ref=f12e393]:
+            - generic [ref=f12e394]:
+              - link [ref=f12e397] [cursor=pointer]:
+                - /url: /apps
+                - paragraph [ref=f12e402]: More apps
+              - 'button "Expand section: More apps" [ref=f12e405] [cursor=pointer]'
+          - listitem [ref=f12e408]:
+            - generic [ref=f12e409]:
+              - link [ref=f12e412] [cursor=pointer]:
+                - /url: /admin
+                - paragraph [ref=f12e417]: Administration
+              - 'button "Expand section: Administration" [ref=f12e420] [cursor=pointer]'
+    - banner [ref=f12e423]:
+      - generic [ref=f12e424]:
+        - navigation "Breadcrumbs" [ref=f12e426]:
+          - list [ref=f12e427]:
+            - listitem [ref=f12e428]:
+              - link "Observability" [ref=f12e429] [cursor=pointer]:
+                - /url: /observability
+            - listitem [ref=f12e433]:
+              - link "Frontend" [ref=f12e434] [cursor=pointer]:
+                - /url: /a/grafana-kowalski-app
+            - listitem [ref=f12e438]:
+              - generic "ecommerce" [ref=f12e439]
+        - generic [ref=f12e440]:
+          - generic [ref=f12e442]:
+            - button "Search..." [ref=f12e446] [cursor=pointer]
+            - generic [ref=f12e447]: ⌘+k
+          - button "New" [ref=f12e449] [cursor=pointer]
+          - button "Help" [ref=f12e455] [cursor=pointer]
+          - button "Open Grafana Assistant" [ref=f12e459] [cursor=pointer]
+          - button "Profile" [ref=f12e464] [cursor=pointer]:
+            - img "User avatar" [ref=f12e465]
+    - main [ref=f12e468]:
+      - generic [ref=f12e472]:
+        - generic [ref=f12e474]:
+          - generic [ref=f12e477]:
+            - heading "ecommerce" [level=1] [ref=f12e478]
+            - button "Insights 3" [ref=f12e480] [cursor=pointer]:
+              - generic [ref=f12e482]:
+                - generic [ref=f12e483]: Insights
+                - generic [ref=f12e486]: "3"
+          - generic [ref=f12e490]:
+            - generic [ref=f12e491]:
+              - button "Move 30m backward" [ref=f12e492] [cursor=pointer]
+              - 'button "Time range selected: 2026-08-07 09:00:00 to 2026-08-07 10:00:00" [ref=f12e495] [cursor=pointer]':
+                - generic [ref=f12e499]:
+                  - generic [ref=f12e500]: 2026-08-07 09:00:00 to 2026-08-07 10:00:00
+                  - generic [ref=f12e501]: UTC
+              - button "Move 30m forward" [ref=f12e504] [cursor=pointer]
+              - button "Zoom out time range" [ref=f12e507] [cursor=pointer]
+            - generic [ref=f12e510]:
+              - button [ref=f12e511] [cursor=pointer]
+              - button "Auto refresh turned off. Choose refresh time interval" [ref=f12e514] [cursor=pointer]
+            - generic [ref=f12e517]:
+              - button "Share" [ref=f12e518] [cursor=pointer]
+              - button "Share URL dropdown" [ref=f12e523] [cursor=pointer]
+            - generic [ref=f12e526]:
+              - button "RCA Workbench 0" [disabled] [ref=f12e527]:
+                - generic [ref=f12e531]:
+                  - generic [ref=f12e532]: RCA Workbench
+                  - generic [ref=f12e533]: "0"
+              - button "Open RCA Workbench" [disabled] [ref=f12e534]
+        - tablist [ref=f12e539]:
+          - tab "Overview" [selected] [ref=f12e541] [cursor=pointer]
+          - tab "Errors" [ref=f12e543] [cursor=pointer]
+          - tab "Sessions" [ref=f12e545] [cursor=pointer]
+          - tab "User actions" [ref=f12e547] [cursor=pointer]
+          - tab "HTTP Preview" [ref=f12e549] [cursor=pointer]:
+            - text: HTTP
+            - generic [ref=f12e550]: Preview
+          - tab "Geolocation" [ref=f12e552] [cursor=pointer]
+          - tab "Settings" [ref=f12e554] [cursor=pointer]
+        - generic [ref=f12e556]:
+          - generic [ref=f12e557]:
+            - radiogroup [ref=f12e558]:
+              - radio [checked] [ref=f12e560] [cursor=pointer]
+              - radio [ref=f12e568] [cursor=pointer]
+            - generic [ref=f12e575]:
+              - generic [ref=f12e576]: Filters
+              - generic [ref=f12e577]:
+                - textbox "Add filter" [ref=f12e578]:
+                  - /placeholder: + label = value
+                - button "Clear filters" [ref=f12e580] [cursor=pointer]
+            - generic [ref=f12e583]:
+              - generic [ref=f12e584]: Insights
+              - switch [checked] [ref=f12e589]
+          - generic [ref=f12e593]:
+            - generic [ref=f12e594]:
+              - region [ref=f12e599]:
+                - heading "Page Loads" [level=2] [ref=f12e602]
+                - 'generic "Value #page_loads" [ref=f12e606]': "322"
+              - region [ref=f12e614]:
+                - heading "JS errors" [level=2] [ref=f12e617]
+                - generic [ref=f12e618]: "0"
+              - region [ref=f12e629]:
+                - heading "User action errors" [level=2] [ref=f12e632]
+                - generic [ref=f12e633]: "0"
+              - generic [ref=f12e642]:
+                - generic [ref=f12e643]:
+                  - heading "TTFB" [level=3] [ref=f12e645]
+                  - generic [ref=f12e648]: Time to First Byte
+                - generic [ref=f12e649]:
+                  - heading "145 ms (Good)" [level=4] [ref=f12e650]:
+                    - generic [ref=f12e651]: "145"
+                    - generic [ref=f12e652]: ms
+                    - generic [ref=f12e653]: (Good)
+                  - generic [ref=f12e665]:
+                    - generic [ref=f12e666]: 800ms
+                    - generic [ref=f12e667]: 1800ms
+              - generic [ref=f12e670]:
+                - generic [ref=f12e671]:
+                  - heading "FCP" [level=3] [ref=f12e673]
+                  - generic [ref=f12e676]: First Contentful Paint
+                - generic [ref=f12e677]:
+                  - heading "4.08 s (Poor)" [level=4] [ref=f12e678]:
+                    - generic [ref=f12e679]: "4.08"
+                    - generic [ref=f12e680]: s
+                    - generic [ref=f12e681]: (Poor)
+                  - generic [ref=f12e693]:
+                    - generic [ref=f12e694]: 1.80s
+                    - generic [ref=f12e695]: 3.00s
+              - generic [ref=f12e698]:
+                - generic [ref=f12e699]:
+                  - heading "LCP" [level=3] [ref=f12e701]
+                  - generic [ref=f12e704]: Largest Contentful Paint
+                - generic [ref=f12e705]:
+                  - heading "9.90 s (Poor)" [level=4] [ref=f12e706]:
+                    - generic [ref=f12e707]: "9.90"
+                    - generic [ref=f12e708]: s
+                    - generic [ref=f12e709]: (Poor)
+                  - generic [ref=f12e721]:
+                    - generic [ref=f12e722]: 2.50s
+                    - generic [ref=f12e723]: 4.00s
+              - generic [ref=f12e726]:
+                - generic [ref=f12e727]:
+                  - heading "CLS" [level=3] [ref=f12e729]
+                  - generic [ref=f12e732]: Cumulative Layout Shift
+                - generic [ref=f12e733]:
+                  - heading "0.37 (Poor)" [level=4] [ref=f12e734]:
+                    - generic [ref=f12e735]: "0.37"
+                    - generic [ref=f12e736]: (Poor)
+                  - generic [ref=f12e748]:
+                    - generic [ref=f12e749]: "0.10"
+                    - generic [ref=f12e750]: "0.25"
+              - generic [ref=f12e753]:
+                - generic [ref=f12e754]:
+                  - heading "INP" [level=3] [ref=f12e756]
+                  - generic [ref=f12e759]: Interaction to next paint
+                - generic [ref=f12e760]:
+                  - heading "2730 ms (Poor)" [level=4] [ref=f12e761]:
+                    - generic [ref=f12e762]: "2730"
+                    - generic [ref=f12e763]: ms
+                    - generic [ref=f12e764]: (Poor)
+                  - generic [ref=f12e776]:
+                    - generic [ref=f12e777]: 200ms
+                    - generic [ref=f12e778]: 500ms
+            - region [ref=f12e784]:
+              - generic [ref=f12e785]:
+                - heading "Page Loads & Errors" [level=2] [ref=f12e787]
+                - link "Explore" [ref=f12e789] [cursor=pointer]:
+                  - /url: /explore?left=%7B%22datasource%22%3A%22grafanacloud-logs%22%2C%22queries%22%3A%5B%7B%22refId%22%3A%22pageLoadsAndErrors-5158%22%2C%22queryType%22%3A%22range%22%2C%22expr%22%3A%22sum(count_over_time(%7Bapp_id%3D%5C%225158%5C%22%2C%20kind%3D~%5C%22measurement%7Cexception%5C%22%7D%20%7C~%20%5C%22%20ttfb%3D%7Ckind%3Dexception%5C%22%20%7C%20logfmt%20%20%7C%20k6_isK6Browser%3D~%5C%22%5C%22%20%7C%20geo_country_iso%3D~%5C%22%5C%22%20or%20geo_country_iso%3D~%5C%22.%2B%5C%22%20%5B%24__auto%5D))%20by%20(app%2C%20app_id%2C%20kind)%22%2C%22datasource%22%3A%7B%22type%22%3A%22loki%22%2C%22uid%22%3A%22grafanacloud-logs%22%7D%7D%5D%2C%22range%22%3A%7B%22from%22%3A%222026-08-07T09%3A00%3A00.000Z%22%2C%22to%22%3A%222026-08-07T10%3A00%3A00.000Z%22%7D%7D
+              - generic [ref=f12e794]:
+                - generic [ref=f12e803]:
+                  - button "Annotation region" [ref=f12e804] [cursor=pointer]
+                  - button "Annotation region" [ref=f12e805] [cursor=pointer]
+                  - button "Annotation region" [ref=f12e806] [cursor=pointer]
+                  - button "Annotation region" [ref=f12e807] [cursor=pointer]
+                  - button "Annotation region" [ref=f12e808] [cursor=pointer]
+                  - button "Annotation region" [ref=f12e809] [cursor=pointer]
+                - list [ref=f12e816]:
+                  - listitem [ref=f12e817]:
+                    - generic [ref=f12e819]:
+                      - button "Edit color for Page Loads" [ref=f12e820] [cursor=pointer]
+                      - button "All series selected" [ref=f12e821] [cursor=pointer]: Page Loads
+            - generic [ref=f12e825]:
+              - generic [ref=f12e826]:
+                - heading "Page Performance" [level=6] [ref=f12e827]
+                - generic [ref=f12e829]:
+                  - search "search-interactive-table" [ref=f12e830]:
+                    - textbox "search text" [ref=f12e839]:
+                      - /placeholder: Search...
+                  - link "Explore" [ref=f12e840] [cursor=pointer]:
+                    - /url: /explore?left=%7B%22datasource%22%3A%22grafanacloud-logs%22%2C%22queries%22%3A%5B%7B%22refId%22%3A%22wv-page-id-ttfb%22%2C%22expr%22%3A%22quantile_over_time(0.75%2C%7Bkind%3D%5C%22measurement%5C%22%2Capp_id%3D%5C%225158%5C%22%7D%20%7C%3D%20%5C%22ttfb%5C%22%20%7C%3D%20%5C%22page_id%5C%22%20%7C%20logfmt%20%20%7C%20k6_isK6Browser%3D~%5C%22%5C%22%20%7C%20geo_country_iso%3D~%5C%22%5C%22%20or%20geo_country_iso%3D~%5C%22.%2B%5C%22%20%7C%20unwrap%20ttfb%20%5B%24__auto%5D)%20by%20(page_id)%22%2C%22queryType%22%3A%22range%22%2C%22datasource%22%3A%7B%22type%22%3A%22loki%22%2C%22uid%22%3A%22grafanacloud-logs%22%7D%7D%2C%7B%22refId%22%3A%22wv-page-id-fcp%22%2C%22expr%22%3A%22quantile_over_time(0.75%2C%7Bkind%3D%5C%22measurement%5C%22%2Capp_id%3D%5C%225158%5C%22%7D%20%7C%3D%20%5C%22fcp%5C%22%20%7C%3D%20%5C%22page_id%5C%22%20%7C%20logfmt%20%20%7C%20k6_isK6Browser%3D~%5C%22%5C%22%20%7C%20geo_country_iso%3D~%5C%22%5C%22%20or%20geo_country_iso%3D~%5C%22.%2B%5C%22%20%7C%20unwrap%20fcp%20%5B%24__auto%5D)%20by%20(page_id)%22%2C%22queryType%22%3A%22range%22%2C%22datasource%22%3A%7B%22type%22%3A%22loki%22%2C%22uid%22%3A%22grafanacloud-logs%22%7D%7D%2C%7B%22refId%22%3A%22wv-page-id-lcp%22%2C%22expr%22%3A%22quantile_over_time(0.75%2C%7Bkind%3D%5C%22measurement%5C%22%2Capp_id%3D%5C%225158%5C%22%7D%20%7C%3D%20%5C%22lcp%5C%22%20%7C%3D%20%5C%22page_id%5C%22%20%7C%20logfmt%20%20%7C%20k6_isK6Browser%3D~%5C%22%5C%22%20%7C%20geo_country_iso%3D~%5C%22%5C%22%20or%20geo_country_iso%3D~%5C%22.%2B%5C%22%20%7C%20unwrap%20lcp%20%5B%24__auto%5D)%20by%20(page_id)%22%2C%22queryType%22%3A%22range%22%2C%22datasource%22%3A%7B%22type%22%3A%22loki%22%2C%22uid%22%3A%22grafanacloud-logs%22%7D%7D%2C%7B%22refId%22%3A%22wv-page-id-cls%22%2C%22expr%22%3A%22quantile_over_time(0.75%2C%7Bkind%3D%5C%22measurement%5C%22%2Capp_id%3D%5C%225158%5C%22%7D%20%7C%3D%20%5C%22cls%5C%22%20%7C%3D%20%5C%22page_id%5C%22%20%7C%20logfmt%20%20%7C%20k6_isK6Browser%3D~%5C%22%5C%22%20%7C%20geo_country_iso%3D~%5C%22%5C%22%20or%20geo_country_iso%3D~%5C%22.%2B%5C%22%20%7C%20unwrap%20cls%20%5B%24__auto%5D)%20by%20(page_id)%22%2C%22queryType%22%3A%22range%22%2C%22datasource%22%3A%7B%22type%22%3A%22loki%22%2C%22uid%22%3A%22grafanacloud-logs%22%7D%7D%2C%7B%22refId%22%3A%22wv-page-id-inp%22%2C%22expr%22%3A%22quantile_over_time(0.75%2C%7Bkind%3D%5C%22measurement%5C%22%2Capp_id%3D%5C%225158%5C%22%7D%20%7C%3D%20%5C%22inp%5C%22%20%7C%3D%20%5C%22page_id%5C%22%20%7C%20logfmt%20%20%7C%20k6_isK6Browser%3D~%5C%22%5C%22%20%7C%20geo_country_iso%3D~%5C%22%5C%22%20or%20geo_country_iso%3D~%5C%22.%2B%5C%22%20%7C%20unwrap%20inp%20%5B%24__auto%5D)%20by%20(page_id)%22%2C%22queryType%22%3A%22range%22%2C%22datasource%22%3A%7B%22type%22%3A%22loki%22%2C%22uid%22%3A%22grafanacloud-logs%22%7D%7D%2C%7B%22refId%22%3A%22wv-errors%22%2C%22expr%22%3A%22sum(count_over_time(%7Bapp_id%3D%5C%225158%5C%22%2Ckind%3D%5C%22exception%5C%22%7D%20%7C%3D%20%5C%22page_id%5C%22%20%7C%20logfmt%20%20%7C%20k6_isK6Browser%3D~%5C%22%5C%22%20%7C%20geo_country_iso%3D~%5C%22%5C%22%20or%20geo_country_iso%3D~%5C%22.%2B%5C%22%20%5B%24__auto%5D))%20by%20(page_id)%22%2C%22queryType%22%3A%22range%22%2C%22datasource%22%3A%7B%22type%22%3A%22loki%22%2C%22uid%22%3A%22grafanacloud-logs%22%7D%7D%2C%7B%22refId%22%3A%22wv-page-id-ttfb-instant%22%2C%22expr%22%3A%22quantile_over_time(0.75%2C%7Bkind%3D%5C%22measurement%5C%22%2Capp_id%3D%5C%225158%5C%22%7D%20%7C%3D%20%5C%22ttfb%5C%22%20%7C%3D%20%5C%22page_id%5C%22%20%7C%20logfmt%20%20%7C%20k6_isK6Browser%3D~%5C%22%5C%22%20%7C%20geo_country_iso%3D~%5C%22%5C%22%20or%20geo_country_iso%3D~%5C%22.%2B%5C%22%20%7C%20unwrap%20ttfb%20%5B%24__auto%5D)%20by%20(page_id)%22%2C%22queryType%22%3A%22instant%22%2C%22datasource%22%3A%7B%22type%22%3A%22loki%22%2C%22uid%22%3A%22grafanacloud-logs%22%7D%7D%2C%7B%22refId%22%3A%22wv-page-id-fcp-instant%22%2C%22expr%22%3A%22quantile_over_time(0.75%2C%7Bkind%3D%5C%22measurement%5C%22%2Capp_id%3D%5C%225158%5C%22%7D%20%7C%3D%20%5C%22fcp%5C%22%20%7C%3D%20%5C%22page_id%5C%22%20%7C%20logfmt%20%20%7C%20k6_isK6Browser%3D~%5C%22%5C%22%20%7C%20geo_country_iso%3D~%5C%22%5C%22%20or%20geo_country_iso%3D~%5C%22.%2B%5C%22%20%7C%20unwrap%20fcp%20%5B%24__auto%5D)%20by%20(page_id)%22%2C%22queryType%22%3A%22instant%22%2C%22datasource%22%3A%7B%22type%22%3A%22loki%22%2C%22uid%22%3A%22grafanacloud-logs%22%7D%7D%2C%7B%22refId%22%3A%22wv-page-id-lcp-instant%22%2C%22expr%22%3A%22quantile_over_time(0.75%2C%7Bkind%3D%5C%22measurement%5C%22%2Capp_id%3D%5C%225158%5C%22%7D%20%7C%3D%20%5C%22lcp%5C%22%20%7C%3D%20%5C%22page_id%5C%22%20%7C%20logfmt%20%20%7C%20k6_isK6Browser%3D~%5C%22%5C%22%20%7C%20geo_country_iso%3D~%5C%22%5C%22%20or%20geo_country_iso%3D~%5C%22.%2B%5C%22%20%7C%20unwrap%20lcp%20%5B%24__auto%5D)%20by%20(page_id)%22%2C%22queryType%22%3A%22instant%22%2C%22datasource%22%3A%7B%22type%22%3A%22loki%22%2C%22uid%22%3A%22grafanacloud-logs%22%7D%7D%2C%7B%22refId%22%3A%22wv-page-id-cls-instant%22%2C%22expr%22%3A%22quantile_over_time(0.75%2C%7Bkind%3D%5C%22measurement%5C%22%2Capp_id%3D%5C%225158%5C%22%7D%20%7C%3D%20%5C%22cls%5C%22%20%7C%3D%20%5C%22page_id%5C%22%20%7C%20logfmt%20%20%7C%20k6_isK6Browser%3D~%5C%22%5C%22%20%7C%20geo_country_iso%3D~%5C%22%5C%22%20or%20geo_country_iso%3D~%5C%22.%2B%5C%22%20%7C%20unwrap%20cls%20%5B%24__auto%5D)%20by%20(page_id)%22%2C%22queryType%22%3A%22instant%22%2C%22datasource%22%3A%7B%22type%22%3A%22loki%22%2C%22uid%22%3A%22grafanacloud-logs%22%7D%7D%2C%7B%22refId%22%3A%22wv-page-id-inp-instant%22%2C%22expr%22%3A%22quantile_over_time(0.75%2C%7Bkind%3D%5C%22measurement%5C%22%2Capp_id%3D%5C%225158%5C%22%7D%20%7C%3D%20%5C%22inp%5C%22%20%7C%3D%20%5C%22page_id%5C%22%20%7C%20logfmt%20%20%7C%20k6_isK6Browser%3D~%5C%22%5C%22%20%7C%20geo_country_iso%3D~%5C%22%5C%22%20or%20geo_country_iso%3D~%5C%22.%2B%5C%22%20%7C%20unwrap%20inp%20%5B%24__auto%5D)%20by%20(page_id)%22%2C%22queryType%22%3A%22instant%22%2C%22datasource%22%3A%7B%22type%22%3A%22loki%22%2C%22uid%22%3A%22grafanacloud-logs%22%7D%7D%2C%7B%22refId%22%3A%22wv-errors-instant%22%2C%22expr%22%3A%22sum(count_over_time(%7Bapp_id%3D%5C%225158%5C%22%2Ckind%3D%5C%22exception%5C%22%7D%20%7C%3D%20%5C%22page_id%5C%22%20%7C%20logfmt%20%20%7C%20k6_isK6Browser%3D~%5C%22%5C%22%20%7C%20geo_country_iso%3D~%5C%22%5C%22%20or%20geo_country_iso%3D~%5C%22.%2B%5C%22%20%5B%24__auto%5D))%20by%20(page_id)%22%2C%22queryType%22%3A%22instant%22%2C%22datasource%22%3A%7B%22type%22%3A%22loki%22%2C%22uid%22%3A%22grafanacloud-logs%22%7D%7D%5D%2C%22range%22%3A%7B%22from%22%3A%222026-08-07T09%3A00%3A00.000Z%22%2C%22to%22%3A%222026-08-07T10%3A00%3A00.000Z%22%7D%7D
+              - table [ref=f12e845]:
+                - rowgroup [ref=f12e846]:
+                  - row [ref=f12e847]:
+                    - columnheader [ref=f12e848]
+                    - columnheader [ref=f12e849]:
+                      - button "Page ID" [ref=f12e850] [cursor=pointer]
+                    - columnheader [ref=f12e851]:
+                      - button "TTFB" [ref=f12e852] [cursor=pointer]
+                    - columnheader [ref=f12e853]:
+                      - button "FCP" [ref=f12e854] [cursor=pointer]
+                    - columnheader [ref=f12e855]:
+                      - button "LCP" [ref=f12e856] [cursor=pointer]
+                    - columnheader [ref=f12e857]:
+                      - button "CLS" [ref=f12e858] [cursor=pointer]
+                    - columnheader [ref=f12e859]:
+                      - button "INP" [ref=f12e860] [cursor=pointer]
+                    - columnheader [ref=f12e861]:
+                      - button "Errors" [ref=f12e862] [cursor=pointer]
+                - rowgroup [ref=f12e863]:
+                  - row [ref=f12e864] [cursor=pointer]:
+                    - cell [ref=f12e865]
+                    - cell "/cart" [ref=f12e866]
+                    - cell "-" [ref=f12e867]
+                    - cell "-" [ref=f12e870]
+                    - cell "-" [ref=f12e873]
+                    - cell "0.05" [ref=f12e876]
+                    - cell "2.45 s" [ref=f12e886]
+                    - cell "0" [ref=f12e896]
+                  - row [ref=f12e899] [cursor=pointer]:
+                    - cell [ref=f12e900]
+                    - cell "/cart/checkout/*" [ref=f12e901]
+                    - cell "-" [ref=f12e902]
+                    - cell "-" [ref=f12e905]
+                    - cell "-" [ref=f12e908]
+                    - cell "0.37" [ref=f12e911]
+                    - cell "2.72 s" [ref=f12e921]
+                    - cell "0" [ref=f12e931]
+                  - row [ref=f12e934] [cursor=pointer]:
+                    - cell [ref=f12e935]
+                    - cell "/product/*" [ref=f12e936]
+                    - cell "-" [ref=f12e937]
+                    - cell "-" [ref=f12e940]
+                    - cell "-" [ref=f12e943]
+                    - cell "0.06" [ref=f12e946]
+                    - cell "2.88 s" [ref=f12e956]
+                    - cell "0" [ref=f12e966]
+                  - row [ref=f12e969] [cursor=pointer]:
+                    - cell [ref=f12e970]
+                    - cell / [ref=f12e971]
+                    - cell "50 ms" [ref=f12e972]
+                    - cell "3.30 s" [ref=f12e982]
+                    - cell "6.35 s" [ref=f12e992]
+                    - cell "-" [ref=f12e1002]
+                    - cell "-" [ref=f12e1005]
+                    - cell "0" [ref=f12e1008]
+            - generic [ref=f12e1011]:
+              - region [ref=f12e1016]:
+                - generic [ref=f12e1017]:
+                  - heading "Page Load (TTFB, FCP, LCP) - p75" [level=2] [ref=f12e1019]
+                  - button "More options" [ref=f12e1025] [cursor=pointer]
+                - generic [ref=f12e1028]:
+                  - generic [ref=f12e1037]:
+                    - button "Annotation region" [ref=f12e1038] [cursor=pointer]
+                    - button "Annotation region" [ref=f12e1039] [cursor=pointer]
+                    - button "Annotation region" [ref=f12e1040] [cursor=pointer]
+                    - button "Annotation region" [ref=f12e1041] [cursor=pointer]
+                    - button "Annotation region" [ref=f12e1042] [cursor=pointer]
+                    - button "Annotation region" [ref=f12e1043] [cursor=pointer]
+                  - list [ref=f12e1050]:
+                    - listitem [ref=f12e1051]:
+                      - generic [ref=f12e1053]:
+                        - button "Edit color for TTFB" [ref=f12e1054] [cursor=pointer]
+                        - button "All series selected" [ref=f12e1055] [cursor=pointer]: TTFB
+                    - listitem [ref=f12e1056]:
+                      - generic [ref=f12e1058]:
+                        - button "Edit color for FCP" [ref=f12e1059] [cursor=pointer]
+                        - button "All series selected" [ref=f12e1060] [cursor=pointer]: FCP
+                    - listitem [ref=f12e1061]:
+                      - generic [ref=f12e1063]:
+                        - button "Edit color for LCP" [ref=f12e1064] [cursor=pointer]
+                        - button "All series selected" [ref=f12e1065] [cursor=pointer]: LCP
+              - region [ref=f12e1070]:
+                - generic [ref=f12e1071]:
+                  - heading "Cumulative Layout Shift (CLS) - p75" [level=2] [ref=f12e1073]
+                  - button "More options" [ref=f12e1079] [cursor=pointer]
+                - generic [ref=f12e1082]:
+                  - generic [ref=f12e1091]:
+                    - button "Annotation region" [ref=f12e1092] [cursor=pointer]
+                    - button "Annotation region" [ref=f12e1093] [cursor=pointer]
+                    - button "Annotation region" [ref=f12e1094] [cursor=pointer]
+                    - button "Annotation region" [ref=f12e1095] [cursor=pointer]
+                    - button "Annotation region" [ref=f12e1096] [cursor=pointer]
+                    - button "Annotation region" [ref=f12e1097] [cursor=pointer]
+                  - list [ref=f12e1104]:
+                    - listitem [ref=f12e1105]:
+                      - generic [ref=f12e1107]:
+                        - button "Edit color for CLS" [ref=f12e1108] [cursor=pointer]
+                        - button "All series selected" [ref=f12e1109] [cursor=pointer]: CLS
+              - region [ref=f12e1114]:
+                - generic [ref=f12e1115]:
+                  - heading "Input Response time (INP) - p75" [level=2] [ref=f12e1117]
+                  - button "More options" [ref=f12e1123] [cursor=pointer]
+                - generic [ref=f12e1126]:
+                  - generic [ref=f12e1135]:
+                    - button "Annotation region" [ref=f12e1136] [cursor=pointer]
+                    - button "Annotation region" [ref=f12e1137] [cursor=pointer]
+                    - button "Annotation region" [ref=f12e1138] [cursor=pointer]
+                    - button "Annotation region" [ref=f12e1139] [cursor=pointer]
+                    - button "Annotation region" [ref=f12e1140] [cursor=pointer]
+                    - button "Annotation region" [ref=f12e1141] [cursor=pointer]
+                  - list [ref=f12e1148]:
+                    - listitem [ref=f12e1149]:
+                      - generic [ref=f12e1151]:
+                        - button "Edit color for INP" [ref=f12e1152] [cursor=pointer]
+                        - button "All series selected" [ref=f12e1153] [cursor=pointer]: INP
+  - log [ref=f12e1154]

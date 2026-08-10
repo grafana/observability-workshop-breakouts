@@ -1,0 +1,122 @@
+[    1960ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://devfedb13.grafana.net/apis/userstorage.grafana.app/v0alpha1/namespaces/stacks-1757201/user-storage/saved-queries:dfuhj9wjtgge8e:0
+[    3702ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://devfedb13.grafana.net/apis/userstorage.grafana.app/v0alpha1/namespaces/stacks-1757201/user-storage/grafana-dbo11y-app:dfuhj9wjtgge8e:0
+[    4484ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://devfedb13.grafana.net/api/ds/query?ds_type=loki&requestId=SQR112_1:0
+[    4486ms] [ERROR] Error: maximum number of series (500) reached for a single query; consider reducing query cardinality by adding more specific stream selectors, reducing the time range, or aggregating results with functions like sum(), count() or topk()
+    at m (https://plugins-cdn.grafana.net/loki/13.1.0/public/plugins/loki/module.js:4:134079)
+    at O (https://plugins-cdn.grafana.net/loki/13.1.0/public/plugins/loki/module.js:9:176601)
+    at Object.next (https://plugins-cdn.grafana.net/loki/13.1.0/public/plugins/loki/module.js:9:177109)
+    at Le.next (https://grafana-assets.grafana.net/grafana/13.2.0-30616302309/public/build/8703-react19.f21c4f6b315c2cb27ec6.js:156:52593)
+    at Ne._next (https://grafana-assets.grafana.net/grafana/13.2.0-30616302309/public/build/8703-react19.f21c4f6b315c2cb27ec6.js:156:52178)
+    at Ne.next (https://grafana-assets.grafana.net/grafana/13.2.0-30616302309/public/build/8703-react19.f21c4f6b315c2cb27ec6.js:156:51794)
+    at https://plugins-cdn.grafana.net/loki/13.1.0/public/plugins/loki/module.js:9:75730
+    at s._next (https://plugins-cdn.grafana.net/loki/13.1.0/public/plugins/loki/module.js:9:75144)
+    at t.next (https://plugins-cdn.grafana.net/loki/13.1.0/public/plugins/loki/module.js:9:73188)
+    at https://grafana-assets.grafana.net/grafana/13.2.0-30616302309/public/build/3788-react19.93988d65f50992991cc7.js:229:28192 @ https://edge.fullstory.com/s/fs.js:1
+[    4627ms] [WARNING] [FilterByValue] Could not find index for field name: Value #TimesCalled @ https://edge.fullstory.com/s/fs.js:1
+[    4627ms] [WARNING] [FilterByValue] Could not find index for field name: Value #TimesCalled @ https://edge.fullstory.com/s/fs.js:1
+[    4832ms] [WARNING] [FilterByValue] Could not find index for field name: Value #TimesCalled @ https://edge.fullstory.com/s/fs.js:1
+[    4832ms] [WARNING] [FilterByValue] Could not find index for field name: Value #TimesCalled @ https://edge.fullstory.com/s/fs.js:1
+[    4832ms] [WARNING] [FilterByValue] Could not find index for field name: Value @ https://edge.fullstory.com/s/fs.js:1
+[    4832ms] [WARNING] [FilterByValue] Could not find index for field name: Value @ https://edge.fullstory.com/s/fs.js:1
+[    5644ms] [WARNING] [FilterByValue] Could not find index for field name: Value @ https://edge.fullstory.com/s/fs.js:1
+[    5644ms] [WARNING] [FilterByValue] Could not find index for field name: Value @ https://edge.fullstory.com/s/fs.js:1
+[   13697ms] [ERROR] Failed to load resource: net::ERR_NETWORK_IO_SUSPENDED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[  933458ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: Error in connection establishment: net::ERR_INTERNET_DISCONNECTED @ https://grafana-assets.grafana.net/grafana/13.2.0-30616302309/public/build/3788-react19.93988d65f50992991cc7.js:291
+[  933468ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://devfedb13.grafana.net/api/login/ping:0
+[  933553ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://grafana-assets.grafana.net/grafana/13.2.0-30616302309/public/build/img/icons/unicons/exclamation-circle.svg:0
+[  933658ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/fcd7d319e52795eaaf8f85047ed69ec0:0
+[  933659ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/fcd7d319e52795eaaf8f85047ed69ec0:0
+[  933659ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(2)} TypeError: Failed to fetch
+    at https://grafana-assets.grafana.net/grafana/13.2.0-30616302309/public/build/1849-react19.2ac26fdddffdb4cf8597.js:177:52559
+    at o.<computed>.o.<computed> (https://rsi.grafana.com/v1.1/js-integrations/Fullstory.min.js:1:5852)
+    at se.<anonymous> (https://plugins-cdn.grafana.net/grafana-dbo11y-app/2.29.0/public/plugins/grafana-dbo11y-app/361.js?_cache=dd29b607b3ead26e7745:398:86092)
+    at Generator.throw (<anonymous>)
+    at s (https://plugins-cdn.grafana.net/grafana-dbo11y-app/2.29.0/public/plugins/grafana-dbo11y-app/361.js?_cache=dd29b607b3ead26e7745:398:81999) @ https://plugins-cdn.grafana.net/grafana-dbo11y-app/2.29.0/public/plugins/grafana-dbo11y-app/361.js?_cache=dd29b607b3ead26e7745:397
+[  934129ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: Error in connection establishment: net::ERR_INTERNET_DISCONNECTED @ https://grafana-assets.grafana.net/grafana/13.2.0-30616302309/public/build/3788-react19.93988d65f50992991cc7.js:291
+[  935038ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://rs.fullstory.com/rec/bundle/v2?OrgId=o-1CN5TD-na1&UserId=2cfceefd-14d1-402f-b042-9c7873884a3b&SessionId=eb906dcb-3e05-4760-aeb6-6e36d9eade2a&PageId=e86ce2a8-b73f-44d2-818a-d436b7bb96ec&Seq=4&ClientTime=1786128833897&CompiledVersion=f12d87c7e2a8c68a8f855cc16ce6a0e337dfc1da&PageStart=1786127902158&PrevBundleTime=1786127912331&LastActivity=931430&ContentEncoding=gzip:0
+[  935159ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/fcd7d319e52795eaaf8f85047ed69ec0:0
+[  935161ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/fcd7d319e52795eaaf8f85047ed69ec0:0
+[  935161ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(1)} TypeError: Failed to fetch
+    at https://grafana-assets.grafana.net/grafana/13.2.0-30616302309/public/build/1849-react19.2ac26fdddffdb4cf8597.js:177:52559
+    at o.<computed>.o.<computed> (https://rsi.grafana.com/v1.1/js-integrations/Fullstory.min.js:1:5852)
+    at se.<anonymous> (https://plugins-cdn.grafana.net/grafana-dbo11y-app/2.29.0/public/plugins/grafana-dbo11y-app/361.js?_cache=dd29b607b3ead26e7745:398:86092)
+    at Generator.throw (<anonymous>)
+    at s (https://plugins-cdn.grafana.net/grafana-dbo11y-app/2.29.0/public/plugins/grafana-dbo11y-app/361.js?_cache=dd29b607b3ead26e7745:398:81999) @ https://plugins-cdn.grafana.net/grafana-dbo11y-app/2.29.0/public/plugins/grafana-dbo11y-app/361.js?_cache=dd29b607b3ead26e7745:397
+[  935305ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[  935307ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[  936313ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: Error in connection establishment: net::ERR_INTERNET_DISCONNECTED @ https://grafana-assets.grafana.net/grafana/13.2.0-30616302309/public/build/3788-react19.93988d65f50992991cc7.js:291
+[  937310ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[  937314ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[ 1843685ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://rs.fullstory.com/rec/bundle/v2?OrgId=o-1CN5TD-na1&UserId=2cfceefd-14d1-402f-b042-9c7873884a3b&SessionId=eb906dcb-3e05-4760-aeb6-6e36d9eade2a&PageId=e86ce2a8-b73f-44d2-818a-d436b7bb96ec&Seq=4&ClientTime=1786129742174&CompiledVersion=f12d87c7e2a8c68a8f855cc16ce6a0e337dfc1da&PageStart=1786127902158&PrevBundleTime=1786127912331&SkipResponseBody=true:0
+[ 1843687ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://rs.fullstory.com/rec/bundle/v2?OrgId=o-1CN5TD-na1&UserId=2cfceefd-14d1-402f-b042-9c7873884a3b&SessionId=eb906dcb-3e05-4760-aeb6-6e36d9eade2a&PageId=e86ce2a8-b73f-44d2-818a-d436b7bb96ec&Seq=5&ClientTime=1786129742177&CompiledVersion=f12d87c7e2a8c68a8f855cc16ce6a0e337dfc1da&PageStart=1786127902158&PrevBundleTime=1786127912331&SkipResponseBody=true:0
+[ 1846168ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: Error in connection establishment: net::ERR_INTERNET_DISCONNECTED @ https://grafana-assets.grafana.net/grafana/13.2.0-30616302309/public/build/3788-react19.93988d65f50992991cc7.js:291
+[ 1846185ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://devfedb13.grafana.net/api/login/ping:0
+[ 1846426ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/fcd7d319e52795eaaf8f85047ed69ec0:0
+[ 1846428ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/fcd7d319e52795eaaf8f85047ed69ec0:0
+[ 1846428ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(1)} TypeError: Failed to fetch
+    at https://grafana-assets.grafana.net/grafana/13.2.0-30616302309/public/build/1849-react19.2ac26fdddffdb4cf8597.js:177:52559
+    at o.<computed>.o.<computed> (https://rsi.grafana.com/v1.1/js-integrations/Fullstory.min.js:1:5852)
+    at se.<anonymous> (https://plugins-cdn.grafana.net/grafana-dbo11y-app/2.29.0/public/plugins/grafana-dbo11y-app/361.js?_cache=dd29b607b3ead26e7745:398:86092)
+    at Generator.throw (<anonymous>)
+    at s (https://plugins-cdn.grafana.net/grafana-dbo11y-app/2.29.0/public/plugins/grafana-dbo11y-app/361.js?_cache=dd29b607b3ead26e7745:398:81999) @ https://plugins-cdn.grafana.net/grafana-dbo11y-app/2.29.0/public/plugins/grafana-dbo11y-app/361.js?_cache=dd29b607b3ead26e7745:397
+[ 1846782ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: Error in connection establishment: net::ERR_INTERNET_DISCONNECTED @ https://grafana-assets.grafana.net/grafana/13.2.0-30616302309/public/build/3788-react19.93988d65f50992991cc7.js:291
+[ 1847066ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[ 1847068ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[ 2802531ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[ 2802534ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[ 2804520ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: Error in connection establishment: net::ERR_INTERNET_DISCONNECTED @ https://grafana-assets.grafana.net/grafana/13.2.0-30616302309/public/build/3788-react19.93988d65f50992991cc7.js:291
+[ 2804568ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://devfedb13.grafana.net/api/login/ping:0
+[ 2804660ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/fcd7d319e52795eaaf8f85047ed69ec0:0
+[ 2804661ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://grafana-assets.grafana.net/grafana/13.2.0-30616302309/public/build/img/icons/unicons/exclamation-circle.svg:0
+[ 2804663ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/fcd7d319e52795eaaf8f85047ed69ec0:0
+[ 2804664ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(1)} TypeError: Failed to fetch
+    at https://grafana-assets.grafana.net/grafana/13.2.0-30616302309/public/build/1849-react19.2ac26fdddffdb4cf8597.js:177:52559
+    at o.<computed>.o.<computed> (https://rsi.grafana.com/v1.1/js-integrations/Fullstory.min.js:1:5852)
+    at se.<anonymous> (https://plugins-cdn.grafana.net/grafana-dbo11y-app/2.29.0/public/plugins/grafana-dbo11y-app/361.js?_cache=dd29b607b3ead26e7745:398:86092)
+    at Generator.throw (<anonymous>)
+    at s (https://plugins-cdn.grafana.net/grafana-dbo11y-app/2.29.0/public/plugins/grafana-dbo11y-app/361.js?_cache=dd29b607b3ead26e7745:398:81999) @ https://plugins-cdn.grafana.net/grafana-dbo11y-app/2.29.0/public/plugins/grafana-dbo11y-app/361.js?_cache=dd29b607b3ead26e7745:397
+[ 2804882ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/fcd7d319e52795eaaf8f85047ed69ec0:0
+[ 2804884ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/fcd7d319e52795eaaf8f85047ed69ec0:0
+[ 2804884ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(1)} TypeError: Failed to fetch
+    at https://grafana-assets.grafana.net/grafana/13.2.0-30616302309/public/build/1849-react19.2ac26fdddffdb4cf8597.js:177:52559
+    at o.<computed>.o.<computed> (https://rsi.grafana.com/v1.1/js-integrations/Fullstory.min.js:1:5852)
+    at se.<anonymous> (https://plugins-cdn.grafana.net/grafana-dbo11y-app/2.29.0/public/plugins/grafana-dbo11y-app/361.js?_cache=dd29b607b3ead26e7745:398:86092)
+    at Generator.throw (<anonymous>)
+    at s (https://plugins-cdn.grafana.net/grafana-dbo11y-app/2.29.0/public/plugins/grafana-dbo11y-app/361.js?_cache=dd29b607b3ead26e7745:398:81999) @ https://plugins-cdn.grafana.net/grafana-dbo11y-app/2.29.0/public/plugins/grafana-dbo11y-app/361.js?_cache=dd29b607b3ead26e7745:397
+[ 2806535ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[ 2806539ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[ 4282458ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://devfedb13.grafana.net/api/datasources:0
+[ 4282706ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/fcd7d319e52795eaaf8f85047ed69ec0:0
+[ 4282710ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/fcd7d319e52795eaaf8f85047ed69ec0:0
+[ 4282710ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(1)} TypeError: Failed to fetch
+    at https://grafana-assets.grafana.net/grafana/13.2.0-30616302309/public/build/1849-react19.2ac26fdddffdb4cf8597.js:177:52559
+    at o.<computed>.o.<computed> (https://rsi.grafana.com/v1.1/js-integrations/Fullstory.min.js:1:5852)
+    at se.<anonymous> (https://plugins-cdn.grafana.net/grafana-dbo11y-app/2.29.0/public/plugins/grafana-dbo11y-app/361.js?_cache=dd29b607b3ead26e7745:398:86092)
+    at Generator.throw (<anonymous>)
+    at s (https://plugins-cdn.grafana.net/grafana-dbo11y-app/2.29.0/public/plugins/grafana-dbo11y-app/361.js?_cache=dd29b607b3ead26e7745:398:81999) @ https://plugins-cdn.grafana.net/grafana-dbo11y-app/2.29.0/public/plugins/grafana-dbo11y-app/361.js?_cache=dd29b607b3ead26e7745:397
+[ 4282767ms] [WARNING] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: WebSocket is closed before the connection is established. @ https://grafana-assets.grafana.net/grafana/13.2.0-30616302309/public/build/3788-react19.93988d65f50992991cc7.js:291
+[ 4283252ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[ 4283272ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[ 4285256ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[ 4285262ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[ 4289147ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30616302309/public/build/3788-react19.93988d65f50992991cc7.js:291
+[ 4289327ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/datasources:0
+[ 4289349ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0

@@ -24,7 +24,7 @@ Enter your Grafana Cloud environment ID below. It's saved in this browser, and e
 
 ## How the labs work
 
-Each lab is self-contained: a different application, a different problem, and a different tool for solving it. Every lab starts from a symptom a user would notice, works down to the root cause, and finishes by asking the Grafana Assistant to investigate the same problem - then checking its answer.
+Each lab is self-contained: a different application, a different problem, and a different tool for solving it. Every lab starts from a symptom a user would notice and works down to the root cause, with the Grafana Assistant along the way - most labs finish by asking it to investigate the same problem, then checking its answer.
 
 The labs don't depend on each other, so you can do them in any order.
 

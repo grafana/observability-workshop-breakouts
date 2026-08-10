@@ -228,7 +228,7 @@ Faro links browser spans to backend distributed traces (the backend returns a `S
 <details className="answer-reveal">
 <summary>Show answer</summary>
 
-The backend spans are fast. Open an API request from a session and view its trace: the browser-side span carries almost all of the duration, while the proxy, frontend server, API route, and downstream services each return in milliseconds. The same holds for the slow images themselves - trace one of the multi-second `/images/products/...` requests and the actual server-side work is a few milliseconds; the seconds accumulate before the request ever reaches the backend. The delay is entirely client-side.
+The application is fast. Open an API request from a session and view its trace: the frontend server, API route, and downstream services each return in milliseconds. Trace one of the multi-second `/images/products/...` requests and the same picture holds - the actual application work is a few milliseconds, and the seconds sit on the proxy span in front of the app: the image responses themselves are being delayed (the `imageSlowLoad` fault from the lab intro). Nothing in the backend services or database is slow - the regression lives between the user's browser and the application.
 
 **How to find it:**
 
@@ -240,13 +240,21 @@ The backend spans are fast. Open an API request from a session and view its trac
 
    ![HTTP drawer - Traces tab with the backend trace](/img/lab1/1.7-traces-tab.png)
 
-3. Compare the span durations - the browser span is hundreds of milliseconds, the backend spans milliseconds. The time is client-side.
-4. Have the Assistant check your reading: click **Explain in Assistant** above the trace. It breaks the trace down the same way - only ~15ms of server-side work in a ~195ms request, the rest client-side.
+3. Compare the span durations - the browser span carries the total, and every application span below it finishes in milliseconds.
+4. Have the Assistant check your reading: click **Explain in Assistant** above the trace. It breaks the trace down the same way - only ~15ms of server-side work in a ~195ms request.
 
    ![Explain in Assistant - trace breakdown](/img/lab1/1.7-explain-in-assistant.png)
 
-5. For the strongest proof, open one of the multi-second `/images/products/...` events the same way: its trace shows seconds spent before the request reaches the proxy, and ~3ms of backend work.
+5. For the strongest proof, open one of the multi-second `/images/products/...` events the same way: the seconds sit on the `frontendproxy` span - the injected image delay - with ~3ms of actual application work behind it.
 
-   ![Image request trace - 2.68s total, ~3ms backend](/img/lab1/1.7-image-trace.png)
+   ![Image request trace - 2.68s total, ~3ms of application work](/img/lab1/1.7-image-trace.png)
 
 </details>
+
+---
+
+## Wrap-up
+
+You found a customer-facing problem that never showed up in a backend dashboard: a slow-image regression visible only through real user monitoring. You confirmed the LCP regression, narrowed it to the image-heavy pages, ruled out errors, pinned the slow image requests in a real user session, and used a trace to prove the application itself was healthy - the delay sits in front of it, on the image responses. Along the way you also saw how **Explain in Assistant** can read a trace and reach the same conclusion, which you verified against your own findings.
+
+In Lab 2, a similar frontend symptom will lead somewhere different - into a database query.

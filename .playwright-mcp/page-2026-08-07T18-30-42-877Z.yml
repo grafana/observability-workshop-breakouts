@@ -1,0 +1,576 @@
+- generic [ref=f17e9]:
+  - generic [ref=f17e10]:
+    - link "Skip to main content" [ref=f17e11] [cursor=pointer]:
+      - /url: "#pageContent"
+    - generic [ref=f17e13]:
+      - generic [ref=f17e14]:
+        - generic [ref=f17e15]:
+          - link [ref=f17e16] [cursor=pointer]:
+            - /url: /
+            - img "Grafana" [ref=f17e17]
+          - link "Grafana" [ref=f17e18] [cursor=pointer]:
+            - /url: /
+        - button "Undock menu" [ref=f17e19] [cursor=pointer]
+        - button "Close menu" [ref=f17e22] [cursor=pointer]
+      - navigation [ref=f17e25]:
+        - list "Navigation" [ref=f17e30]:
+          - listitem [ref=f17e31]:
+            - generic [ref=f17e32]:
+              - link [ref=f17e35] [cursor=pointer]:
+                - /url: /bookmarks
+                - paragraph [ref=f17e40]: Bookmarks
+              - 'button "Expand section: Bookmarks" [ref=f17e42] [cursor=pointer]'
+          - listitem [ref=f17e45]:
+            - generic [ref=f17e46]:
+              - link [ref=f17e49] [cursor=pointer]:
+                - /url: /dashboards?starred
+                - paragraph [ref=f17e54]: Starred
+              - 'button "Expand section: Starred" [ref=f17e57] [cursor=pointer]'
+          - listitem [ref=f17e60]:
+            - generic [ref=f17e61]:
+              - link [ref=f17e64] [cursor=pointer]:
+                - /url: /dashboards
+                - paragraph [ref=f17e69]: Dashboards
+              - 'button "Expand section: Dashboards" [ref=f17e72] [cursor=pointer]'
+          - listitem [ref=f17e75]:
+            - link [ref=f17e79] [cursor=pointer]:
+              - /url: /explore
+              - paragraph [ref=f17e84]: Explore
+          - listitem [ref=f17e86]:
+            - generic [ref=f17e87]:
+              - link [ref=f17e90] [cursor=pointer]:
+                - /url: /drilldown
+                - paragraph [ref=f17e98]: Drilldown
+              - 'button "Expand section: Drilldown" [ref=f17e101] [cursor=pointer]'
+          - listitem [ref=f17e104]:
+            - generic [ref=f17e105]:
+              - link [ref=f17e108] [cursor=pointer]:
+                - /url: /a/grafana-assistant-app
+                - paragraph [ref=f17e114]: Assistant
+              - 'button "Expand section: Assistant" [ref=f17e117] [cursor=pointer]'
+          - listitem [ref=f17e120]:
+            - generic [ref=f17e121]:
+              - link [ref=f17e124] [cursor=pointer]:
+                - /url: /alerts-and-incidents
+                - paragraph [ref=f17e129]: Alerts & IRM
+              - 'button "Expand section: Alerts &amp; IRM" [ref=f17e132] [cursor=pointer]'
+          - listitem [ref=f17e135]:
+            - generic [ref=f17e136]:
+              - link [ref=f17e139] [cursor=pointer]:
+                - /url: /a/grafana-ml-app/home
+                - paragraph [ref=f17e146]: AI & machine learning
+              - 'button "Expand section: AI &amp; machine learning" [ref=f17e149] [cursor=pointer]'
+          - listitem [ref=f17e152]:
+            - generic [ref=f17e153]:
+              - link [ref=f17e156] [cursor=pointer]:
+                - /url: adaptive-telemetry
+                - generic [ref=f17e158]:
+                  - paragraph [ref=f17e176]: Adaptive Telemetry
+                  - generic [ref=f17e177]: New!
+              - 'button "Expand section: Adaptive Telemetry" [ref=f17e183] [cursor=pointer]'
+          - listitem [ref=f17e186]:
+            - generic [ref=f17e187]:
+              - link [ref=f17e190] [cursor=pointer]:
+                - /url: /a/grafana-cmab-app/
+                - generic [ref=f17e192]:
+                  - paragraph [ref=f17e195]: Cost Management and Billing
+                  - generic [ref=f17e196]: New!
+              - 'button "Expand section: Cost Management and Billing" [ref=f17e202] [cursor=pointer]'
+          - listitem [ref=f17e205]:
+            - generic [ref=f17e206]:
+              - link [ref=f17e209] [cursor=pointer]:
+                - /url: /testing-and-synthetics
+                - paragraph [ref=f17e216]: Testing & synthetics
+              - 'button "Expand section: Testing &amp; synthetics" [ref=f17e219] [cursor=pointer]'
+          - listitem [ref=f17e222]:
+            - generic [ref=f17e223]:
+              - link [ref=f17e226] [cursor=pointer]:
+                - /url: /observability
+                - paragraph [ref=f17e231]: Observability
+              - 'button "Collapse section: Observability" [expanded] [ref=f17e234] [cursor=pointer]'
+            - list [ref=f17e237]:
+              - listitem [ref=f17e238]:
+                - link [ref=f17e242] [cursor=pointer]:
+                  - /url: /a/grafana-asserts-app/entities
+                  - paragraph [ref=f17e245]: Entity graph
+              - listitem [ref=f17e247]:
+                - link [ref=f17e251] [cursor=pointer]:
+                  - /url: /a/grafana-asserts-app/catalog
+                  - paragraph [ref=f17e254]: Entity catalog
+              - listitem [ref=f17e256]:
+                - link [ref=f17e260] [cursor=pointer]:
+                  - /url: /a/grafana-asserts-app/assertions
+                  - paragraph [ref=f17e263]: RCA workbench
+              - listitem [ref=f17e265]:
+                - link [ref=f17e269] [cursor=pointer]:
+                  - /url: /a/grafana-asserts-app/slo
+                  - paragraph [ref=f17e272]: Health target
+              - listitem [ref=f17e274]:
+                - link [ref=f17e278] [cursor=pointer]:
+                  - /url: /a/grafana-asserts-app/rules
+                  - paragraph [ref=f17e281]: Rules
+              - listitem [ref=f17e283]:
+                - link [ref=f17e287] [cursor=pointer]:
+                  - /url: /a/grafana-asserts-app/configuration
+                  - paragraph [ref=f17e290]: Configuration
+              - listitem [ref=f17e292]:
+                - generic [ref=f17e293]:
+                  - link [ref=f17e296] [cursor=pointer]:
+                    - /url: /a/grafana-agento11y-app
+                    - generic [ref=f17e298]:
+                      - paragraph [ref=f17e299]: Agent
+                      - generic [ref=f17e300]: New!
+                  - 'button "Expand section: Agent" [ref=f17e306] [cursor=pointer]'
+              - listitem [ref=f17e309]:
+                - generic [ref=f17e310]:
+                  - link [ref=f17e313] [cursor=pointer]:
+                    - /url: /a/grafana-kowalski-app
+                    - paragraph [ref=f17e316]: Frontend
+                  - 'button "Expand section: Frontend" [ref=f17e319] [cursor=pointer]'
+              - listitem [ref=f17e322]:
+                - generic [ref=f17e323]:
+                  - link [ref=f17e326] [cursor=pointer]:
+                    - /url: /a/grafana-app-observability-app
+                    - paragraph [ref=f17e329]: Application
+                  - 'button "Expand section: Application" [ref=f17e332] [cursor=pointer]'
+              - listitem [ref=f17e335]:
+                - generic [ref=f17e336]:
+                  - link [ref=f17e339] [cursor=pointer]:
+                    - /url: /a/grafana-dbo11y-app/
+                    - generic [ref=f17e341]:
+                      - paragraph [ref=f17e342]: Database
+                      - generic [ref=f17e343]: New!
+                  - 'button "Expand section: Database" [ref=f17e349] [cursor=pointer]'
+              - listitem [ref=f17e352]:
+                - generic [ref=f17e353]:
+                  - link [ref=f17e356] [cursor=pointer]:
+                    - /url: /a/grafana-k8s-app/home
+                    - paragraph [ref=f17e359]: Kubernetes
+                  - 'button "Expand section: Kubernetes" [ref=f17e362] [cursor=pointer]'
+              - listitem [ref=f17e365]:
+                - generic [ref=f17e366]:
+                  - link [ref=f17e369] [cursor=pointer]:
+                    - /url: /a/grafana-csp-app
+                    - paragraph [ref=f17e372]: Cloud provider
+                  - 'button "Expand section: Cloud provider" [ref=f17e375] [cursor=pointer]'
+          - listitem [ref=f17e378]:
+            - generic [ref=f17e379]:
+              - link [ref=f17e382] [cursor=pointer]:
+                - /url: /connections
+                - paragraph [ref=f17e387]: Connections
+              - 'button "Expand section: Connections" [ref=f17e390] [cursor=pointer]'
+          - listitem [ref=f17e393]:
+            - generic [ref=f17e394]:
+              - link [ref=f17e397] [cursor=pointer]:
+                - /url: /apps
+                - paragraph [ref=f17e402]: More apps
+              - 'button "Expand section: More apps" [ref=f17e405] [cursor=pointer]'
+          - listitem [ref=f17e408]:
+            - generic [ref=f17e409]:
+              - link [ref=f17e412] [cursor=pointer]:
+                - /url: /admin
+                - paragraph [ref=f17e417]: Administration
+              - 'button "Expand section: Administration" [ref=f17e420] [cursor=pointer]'
+    - banner [ref=f17e423]:
+      - generic [ref=f17e424]:
+        - navigation "Breadcrumbs" [ref=f17e426]:
+          - list [ref=f17e427]:
+            - listitem [ref=f17e428]:
+              - link "Observability" [ref=f17e429] [cursor=pointer]:
+                - /url: /observability
+            - listitem [ref=f17e433]:
+              - link "Frontend" [ref=f17e434] [cursor=pointer]:
+                - /url: /a/grafana-kowalski-app
+            - listitem [ref=f17e438]:
+              - link "ecommerce" [ref=f17e439] [cursor=pointer]:
+                - /url: /a/grafana-kowalski-app/apps/5158/overview?from=2026-08-07T09:00:00.000Z&to=2026-08-07T10:00:00.000Z
+            - listitem [ref=f17e443]:
+              - link "Sessions" [ref=f17e444] [cursor=pointer]:
+                - /url: /a/grafana-kowalski-app/apps/5158/sessions?from=2026-08-07T09:00:00.000Z&to=2026-08-07T10:00:00.000Z
+            - listitem [ref=f17e448]:
+              - generic "gHRPH0EjGd" [ref=f17e449]
+        - generic [ref=f17e450]:
+          - generic [ref=f17e452]:
+            - button "Search..." [ref=f17e456] [cursor=pointer]
+            - generic [ref=f17e457]: ⌘+k
+          - button "New" [ref=f17e459] [cursor=pointer]
+          - button "Help" [ref=f17e465] [cursor=pointer]
+          - button "Open Grafana Assistant" [ref=f17e469] [cursor=pointer]
+          - button "Profile" [ref=f17e474] [cursor=pointer]:
+            - img "User avatar" [ref=f17e475]
+    - main [ref=f17e478]:
+      - generic [ref=f17e482]:
+        - generic [ref=f17e484]:
+          - generic [ref=f17e487]:
+            - generic [ref=f17e488]:
+              - heading "gHRPH0EjGd" [level=1] [ref=f17e490]
+              - generic [ref=f17e491]: User session
+            - generic [ref=f17e492]:
+              - generic [ref=f17e493]: in application
+              - link "ecommerce" [ref=f17e494] [cursor=pointer]:
+                - /url: /a/grafana-kowalski-app/apps/5158/sessions?from=2026-08-07T09:00:00.000Z&to=2026-08-07T10:00:00.000Z
+          - generic [ref=f17e495]:
+            - generic [ref=f17e496]:
+              - button "Move 30m backward" [ref=f17e497] [cursor=pointer]
+              - 'button "Time range selected: 2026-08-07 09:00:00 to 2026-08-07 10:00:00" [ref=f17e500] [cursor=pointer]':
+                - generic [ref=f17e504]:
+                  - generic [ref=f17e505]: 2026-08-07 09:00:00 to 2026-08-07 10:00:00
+                  - generic [ref=f17e506]: UTC
+              - button "Move 30m forward" [ref=f17e509] [cursor=pointer]
+              - button "Zoom out time range" [ref=f17e512] [cursor=pointer]
+            - generic [ref=f17e515]:
+              - button [ref=f17e516] [cursor=pointer]
+              - button "Auto refresh turned off. Choose refresh time interval" [ref=f17e519] [cursor=pointer]
+            - generic [ref=f17e522]:
+              - button "Share" [ref=f17e523] [cursor=pointer]
+              - button "Share URL dropdown" [ref=f17e528] [cursor=pointer]
+            - generic [ref=f17e531]:
+              - button "RCA Workbench 0" [disabled] [ref=f17e532]:
+                - generic [ref=f17e536]:
+                  - generic [ref=f17e537]: RCA Workbench
+                  - generic [ref=f17e538]: "0"
+              - button "Open RCA Workbench" [disabled] [ref=f17e539]
+        - generic [ref=f17e546]:
+          - generic [ref=f17e547]:
+            - generic [ref=f17e548]:
+              - generic [ref=f17e549]: Session
+              - generic [ref=f17e551]:
+                - generic [ref=f17e552]:
+                  - generic [ref=f17e553]: ID
+                  - generic [ref=f17e554]: gHRPH0EjGd
+                - generic [ref=f17e556]:
+                  - generic [ref=f17e557]: Lifecycle
+                  - generic [ref=f17e558]: Start
+                - generic [ref=f17e561]:
+                  - generic [ref=f17e562]: User
+                  - generic [ref=f17e563]: "-"
+                - generic [ref=f17e565]:
+                  - generic [ref=f17e566]: Location
+                  - generic [ref=f17e568]:
+                    - generic [ref=f17e569]: Columbus
+                    - generic [ref=f17e572]: Ohio, United States
+            - generic [ref=f17e573]:
+              - generic [ref=f17e574]: Environment
+              - generic [ref=f17e576]:
+                - generic [ref=f17e577]:
+                  - generic [ref=f17e578]: App Version
+                  - generic [ref=f17e579]: 1.0.0
+                - generic [ref=f17e582]:
+                  - generic [ref=f17e583]: Browser
+                  - generic [ref=f17e584]: Chrome 149.0.0.0
+                - generic [ref=f17e589]:
+                  - generic [ref=f17e590]: Platform
+                  - generic [ref=f17e591]: Linux unknown
+            - generic [ref=f17e596]:
+              - generic [ref=f17e597]:
+                - generic [ref=f17e598]: User Experience
+                - button [ref=f17e600] [cursor=pointer]
+              - generic [ref=f17e603]:
+                - generic [ref=f17e604]:
+                  - generic [ref=f17e605]: Errors (JS | HTTP)
+                  - generic [ref=f17e608]:
+                    - generic [ref=f17e609]: "0"
+                    - generic [ref=f17e610]: "|"
+                    - generic [ref=f17e611]: "0"
+                - generic [ref=f17e612]:
+                  - generic [ref=f17e613]: TTFB
+                  - generic [ref=f17e614]:
+                    - generic [ref=f17e615]:
+                      - generic [ref=f17e616]: 50ms
+                      - generic [ref=f17e617]: Good
+                    - link "Explore TTFB" [ref=f17e618] [cursor=pointer]:
+                      - /url: /explore?left=%7B%22datasource%22%3A%22grafanacloud-logs%22%2C%22queries%22%3A%5B%7B%22refId%22%3A%22wv-ttfb%22%2C%22datasource%22%3A%7B%22type%22%3A%22loki%22%2C%22uid%22%3A%22grafanacloud-logs%22%7D%2C%22expr%22%3A%22quantile_over_time(0.75%2C%7Bkind%3D%5C%22measurement%5C%22%2Capp_id%3D%5C%225158%5C%22%7D%20%7C%3D%20%5C%22ttfb%5C%22%20%7C%3D%20%5C%22session_id%3DgHRPH0EjGd%5C%22%20%7C%20logfmt%20%7C%20session_id%3D%5C%22gHRPH0EjGd%5C%22%20%7C%20unwrap%20ttfb%20%5B%24__auto%5D)%20by%20(app)%22%2C%22queryType%22%3A%22instant%22%7D%5D%2C%22range%22%3A%7B%22from%22%3A%222026-08-07T09%3A00%3A00.000Z%22%2C%22to%22%3A%222026-08-07T10%3A00%3A00.000Z%22%7D%7D
+                - generic [ref=f17e621]:
+                  - generic [ref=f17e622]: LCP
+                  - generic [ref=f17e623]:
+                    - generic [ref=f17e624]:
+                      - generic [ref=f17e625]: 6.94s
+                      - generic [ref=f17e626]: Poor
+                    - link "Explore LCP" [ref=f17e627] [cursor=pointer]:
+                      - /url: /explore?left=%7B%22datasource%22%3A%22grafanacloud-logs%22%2C%22queries%22%3A%5B%7B%22refId%22%3A%22wv-lcp%22%2C%22datasource%22%3A%7B%22type%22%3A%22loki%22%2C%22uid%22%3A%22grafanacloud-logs%22%7D%2C%22expr%22%3A%22quantile_over_time(0.75%2C%7Bkind%3D%5C%22measurement%5C%22%2Capp_id%3D%5C%225158%5C%22%7D%20%7C%3D%20%5C%22lcp%5C%22%20%7C%3D%20%5C%22session_id%3DgHRPH0EjGd%5C%22%20%7C%20logfmt%20%7C%20session_id%3D%5C%22gHRPH0EjGd%5C%22%20%7C%20unwrap%20lcp%20%5B%24__auto%5D)%20by%20(app)%22%2C%22queryType%22%3A%22instant%22%7D%5D%2C%22range%22%3A%7B%22from%22%3A%222026-08-07T09%3A00%3A00.000Z%22%2C%22to%22%3A%222026-08-07T10%3A00%3A00.000Z%22%7D%7D
+                - generic [ref=f17e630]:
+                  - generic [ref=f17e631]: FCP
+                  - generic [ref=f17e632]:
+                    - generic [ref=f17e633]:
+                      - generic [ref=f17e634]: 3.30s
+                      - generic [ref=f17e635]: Poor
+                    - link "Explore FCP" [ref=f17e636] [cursor=pointer]:
+                      - /url: /explore?left=%7B%22datasource%22%3A%22grafanacloud-logs%22%2C%22queries%22%3A%5B%7B%22refId%22%3A%22wv-fcp%22%2C%22datasource%22%3A%7B%22type%22%3A%22loki%22%2C%22uid%22%3A%22grafanacloud-logs%22%7D%2C%22expr%22%3A%22quantile_over_time(0.75%2C%7Bkind%3D%5C%22measurement%5C%22%2Capp_id%3D%5C%225158%5C%22%7D%20%7C%3D%20%5C%22fcp%5C%22%20%7C%3D%20%5C%22session_id%3DgHRPH0EjGd%5C%22%20%7C%20logfmt%20%7C%20session_id%3D%5C%22gHRPH0EjGd%5C%22%20%7C%20unwrap%20fcp%20%5B%24__auto%5D)%20by%20(app)%22%2C%22queryType%22%3A%22instant%22%7D%5D%2C%22range%22%3A%7B%22from%22%3A%222026-08-07T09%3A00%3A00.000Z%22%2C%22to%22%3A%222026-08-07T10%3A00%3A00.000Z%22%7D%7D
+                - generic [ref=f17e639]:
+                  - generic [ref=f17e640]: CLS
+                  - generic [ref=f17e641]:
+                    - generic [ref=f17e642]:
+                      - generic [ref=f17e643]: "0.00"
+                      - generic [ref=f17e644]: Good
+                    - link "Explore CLS" [ref=f17e645] [cursor=pointer]:
+                      - /url: /explore?left=%7B%22datasource%22%3A%22grafanacloud-logs%22%2C%22queries%22%3A%5B%7B%22refId%22%3A%22wv-cls%22%2C%22datasource%22%3A%7B%22type%22%3A%22loki%22%2C%22uid%22%3A%22grafanacloud-logs%22%7D%2C%22expr%22%3A%22quantile_over_time(0.75%2C%7Bkind%3D%5C%22measurement%5C%22%2Capp_id%3D%5C%225158%5C%22%7D%20%7C%3D%20%5C%22cls%5C%22%20%7C%3D%20%5C%22session_id%3DgHRPH0EjGd%5C%22%20%7C%20logfmt%20%7C%20session_id%3D%5C%22gHRPH0EjGd%5C%22%20%7C%20unwrap%20cls%20%5B%24__auto%5D)%20by%20(app)%22%2C%22queryType%22%3A%22instant%22%7D%5D%2C%22range%22%3A%7B%22from%22%3A%222026-08-07T09%3A00%3A00.000Z%22%2C%22to%22%3A%222026-08-07T10%3A00%3A00.000Z%22%7D%7D
+                - generic [ref=f17e648]:
+                  - generic [ref=f17e649]: INP
+                  - generic [ref=f17e650]:
+                    - generic [ref=f17e651]:
+                      - generic [ref=f17e652]: 504ms
+                      - generic [ref=f17e653]: Poor
+                    - link "Explore INP" [ref=f17e654] [cursor=pointer]:
+                      - /url: /explore?left=%7B%22datasource%22%3A%22grafanacloud-logs%22%2C%22queries%22%3A%5B%7B%22refId%22%3A%22wv-inp%22%2C%22datasource%22%3A%7B%22type%22%3A%22loki%22%2C%22uid%22%3A%22grafanacloud-logs%22%7D%2C%22expr%22%3A%22quantile_over_time(0.75%2C%7Bkind%3D%5C%22measurement%5C%22%2Capp_id%3D%5C%225158%5C%22%7D%20%7C%3D%20%5C%22inp%5C%22%20%7C%3D%20%5C%22session_id%3DgHRPH0EjGd%5C%22%20%7C%20logfmt%20%7C%20session_id%3D%5C%22gHRPH0EjGd%5C%22%20%7C%20unwrap%20inp%20%5B%24__auto%5D)%20by%20(app)%22%2C%22queryType%22%3A%22instant%22%7D%5D%2C%22range%22%3A%7B%22from%22%3A%222026-08-07T09%3A00%3A00.000Z%22%2C%22to%22%3A%222026-08-07T10%3A00%3A00.000Z%22%7D%7D
+          - generic [ref=f17e657]:
+            - heading "Activity" [level=2] [ref=f17e659]
+            - generic [ref=f17e661]:
+              - radiogroup [ref=f17e663]:
+                - generic [ref=f17e664]:
+                  - radio "User Journey" [checked] [ref=f17e665] [cursor=pointer]
+                  - generic "User Journey" [ref=f17e666] [cursor=pointer]
+                - generic [ref=f17e668]:
+                  - radio "Traces" [ref=f17e669] [cursor=pointer]
+                  - generic "Traces" [ref=f17e670] [cursor=pointer]
+              - generic [ref=f17e675]:
+                - generic [ref=f17e676]:
+                  - generic [ref=f17e677]: "Show:"
+                  - button "Errors (0)" [pressed] [ref=f17e678] [cursor=pointer]
+                  - button "Web Vitals (6)" [pressed] [ref=f17e679] [cursor=pointer]
+                  - button "Lifecycle (1)" [pressed] [ref=f17e680] [cursor=pointer]
+                  - button "Network (64)" [pressed] [ref=f17e681] [cursor=pointer]
+                  - button "User actions (3)" [pressed] [ref=f17e682] [cursor=pointer]
+                  - button "Logs (0)" [pressed] [ref=f17e683] [cursor=pointer]
+                  - button "Custom events (0)" [pressed] [ref=f17e684] [cursor=pointer]
+                  - button "View change (0)" [pressed] [ref=f17e685] [cursor=pointer]
+                  - generic [ref=f17e686]: 8 of 8 active
+                  - button "Show all" [ref=f17e687] [cursor=pointer]
+                - generic [ref=f17e688]:
+                  - generic [ref=f17e689]:
+                    - link "Explore" [ref=f17e690] [cursor=pointer]:
+                      - /url: /explore?left=%7B%22datasource%22%3A%22grafanacloud-logs%22%2C%22queries%22%3A%5B%7B%22refId%22%3A%22user-journey%22%2C%22expr%22%3A%22%7Bapp_id%3D%5C%225158%5C%22%7D%20%7C%3D%20%5C%22session_id%3DgHRPH0EjGd%5C%22%20!~%20%5C%22performanceEntry%7Cfaro.performanceEntry%7Cfaro.performance.resource%5C%22%20%7C%20logfmt%22%2C%22datasource%22%3A%7B%22type%22%3A%22loki%22%2C%22uid%22%3A%22grafanacloud-logs%22%7D%7D%5D%2C%22range%22%3A%7B%22from%22%3A%222026-08-07T09%3A00%3A00.000Z%22%2C%22to%22%3A%222026-08-07T10%3A00%3A00.000Z%22%7D%7D
+                    - textbox "Find in session" [ref=f17e695]:
+                      - /placeholder: Find in session...
+                    - button "Previous match" [disabled] [ref=f17e696]
+                    - button "Next match" [disabled] [ref=f17e699]
+                    - button "Clear search" [disabled] [ref=f17e702]
+                  - generic [ref=f17e705]:
+                    - generic [ref=f17e706]:
+                      - text: Elapsed
+                      - img "What Elapsed means" [ref=f17e707]
+                    - generic [ref=f17e710]: Page
+                    - generic [ref=f17e711]: Type
+                    - generic [ref=f17e712]: Details
+                  - generic [ref=f17e714]:
+                    - button "00:00.000 / Page Load Duration NaNs TTFB 50ms Network 60ms Render 2.76s" [ref=f17e716] [cursor=pointer]:
+                      - generic [ref=f17e717]: 00:00.000
+                      - link / [ref=f17e723]:
+                        - /url: /a/grafana-kowalski-app/apps/5158/route?from=2026-08-07T09:00:00.000Z&to=2026-08-07T10:00:00.000Z
+                      - generic [ref=f17e725]: Page Load
+                      - generic [ref=f17e739]:
+                        - generic [ref=f17e743]:
+                          - generic [ref=f17e744]: Duration
+                          - generic [ref=f17e745]: NaNs
+                        - generic [ref=f17e749]:
+                          - generic [ref=f17e750]: TTFB
+                          - generic [ref=f17e751]: 50ms
+                        - generic [ref=f17e755]:
+                          - generic [ref=f17e756]: Network
+                          - generic [ref=f17e757]: 60ms
+                        - generic [ref=f17e761]:
+                          - generic [ref=f17e762]: Render
+                          - generic [ref=f17e763]: 2.76s
+                    - button "00:00.050 / TTFB delta 49.599999997764826 cache_duration 3.100000001490116 connection_duration 15.399999998509884 request_duration 25.5" [ref=f17e765] [cursor=pointer]:
+                      - generic [ref=f17e766]: 00:00.050
+                      - link / [ref=f17e772]:
+                        - /url: /a/grafana-kowalski-app/apps/5158/route?from=2026-08-07T09:00:00.000Z&to=2026-08-07T10:00:00.000Z
+                      - generic [ref=f17e774]: TTFB
+                      - generic [ref=f17e785]:
+                        - generic [ref=f17e789]:
+                          - generic [ref=f17e790]: delta
+                          - generic [ref=f17e791]: "49.599999997764826"
+                        - generic [ref=f17e795]:
+                          - generic [ref=f17e796]: cache_duration
+                          - generic [ref=f17e797]: "3.100000001490116"
+                        - generic [ref=f17e801]:
+                          - generic [ref=f17e802]: connection_duration
+                          - generic [ref=f17e803]: "15.399999998509884"
+                        - generic [ref=f17e807]:
+                          - generic [ref=f17e808]: request_duration
+                          - generic [ref=f17e809]: "25.5"
+                    - button "00:02.596 / Session sessionId gHRPH0EjGd" [ref=f17e811] [cursor=pointer]:
+                      - generic [ref=f17e812]: 00:02.596
+                      - link / [ref=f17e818]:
+                        - /url: /a/grafana-kowalski-app/apps/5158/route?from=2026-08-07T09:00:00.000Z&to=2026-08-07T10:00:00.000Z
+                      - generic [ref=f17e820]: Session
+                      - generic [ref=f17e835]:
+                        - generic [ref=f17e836]: sessionId
+                        - generic [ref=f17e837]: gHRPH0EjGd
+                    - button "00:02.616 / HTTP Method POST Path /api/metrics Status 200 (OK) Duration 355ms" [ref=f17e839] [cursor=pointer]:
+                      - generic [ref=f17e840]: 00:02.616
+                      - link / [ref=f17e846]:
+                        - /url: /a/grafana-kowalski-app/apps/5158/route?from=2026-08-07T09:00:00.000Z&to=2026-08-07T10:00:00.000Z
+                      - generic [ref=f17e848]: HTTP
+                      - generic [ref=f17e859]:
+                        - generic [ref=f17e863]:
+                          - generic [ref=f17e864]: Method
+                          - generic [ref=f17e865]: POST
+                        - generic [ref=f17e869]:
+                          - generic [ref=f17e870]: Path
+                          - generic [ref=f17e871]: /api/metrics
+                        - generic [ref=f17e875]:
+                          - generic [ref=f17e876]: Status
+                          - generic [ref=f17e877]: 200 (OK)
+                        - generic [ref=f17e881]:
+                          - generic [ref=f17e882]: Duration
+                          - generic [ref=f17e883]: 355ms
+                    - button "00:02.974 / HTTP Method GET Path /images/products/StarsenseExplorer.jpg Status 200 (OK) Duration 326ms" [ref=f17e885] [cursor=pointer]:
+                      - generic [ref=f17e886]: 00:02.974
+                      - link / [ref=f17e892]:
+                        - /url: /a/grafana-kowalski-app/apps/5158/route?from=2026-08-07T09:00:00.000Z&to=2026-08-07T10:00:00.000Z
+                      - generic [ref=f17e894]: HTTP
+                      - generic [ref=f17e905]:
+                        - generic [ref=f17e909]:
+                          - generic [ref=f17e910]: Method
+                          - generic [ref=f17e911]: GET
+                        - generic [ref=f17e915]:
+                          - generic [ref=f17e916]: Path
+                          - generic [ref=f17e917]: /images/products/StarsenseExplorer.jpg
+                        - generic [ref=f17e921]:
+                          - generic [ref=f17e922]: Status
+                          - generic [ref=f17e923]: 200 (OK)
+                        - generic [ref=f17e927]:
+                          - generic [ref=f17e928]: Duration
+                          - generic [ref=f17e929]: 326ms
+                    - button "00:02.979 / User Action Name view-products Trigger faroApiCall Duration 994ms" [ref=f17e931] [cursor=pointer]:
+                      - generic [ref=f17e932]: 00:02.979
+                      - link / [ref=f17e938]:
+                        - /url: /a/grafana-kowalski-app/apps/5158/route?from=2026-08-07T09:00:00.000Z&to=2026-08-07T10:00:00.000Z
+                      - generic [ref=f17e940]: User Action
+                      - generic [ref=f17e951]:
+                        - generic [ref=f17e955]:
+                          - generic [ref=f17e956]: Name
+                          - generic [ref=f17e957]: view-products
+                        - generic [ref=f17e961]:
+                          - generic [ref=f17e962]: Trigger
+                          - generic [ref=f17e963]: faroApiCall
+                        - generic [ref=f17e967]:
+                          - generic [ref=f17e968]: Duration
+                          - generic [ref=f17e969]: 994ms
+                    - button "00:02.981 / HTTP Method GET Path /api/products Status 200 (OK) Duration 342ms" [ref=f17e971] [cursor=pointer]:
+                      - generic [ref=f17e972]: 00:02.981
+                      - link / [ref=f17e978]:
+                        - /url: /a/grafana-kowalski-app/apps/5158/route?from=2026-08-07T09:00:00.000Z&to=2026-08-07T10:00:00.000Z
+                      - generic [ref=f17e980]: HTTP
+                      - generic [ref=f17e991]:
+                        - generic [ref=f17e995]:
+                          - generic [ref=f17e996]: Method
+                          - generic [ref=f17e997]: GET
+                        - generic [ref=f17e1001]:
+                          - generic [ref=f17e1002]: Path
+                          - generic [ref=f17e1003]: /api/products
+                        - generic [ref=f17e1007]:
+                          - generic [ref=f17e1008]: Status
+                          - generic [ref=f17e1009]: 200 (OK)
+                        - generic [ref=f17e1013]:
+                          - generic [ref=f17e1014]: Duration
+                          - generic [ref=f17e1015]: 342ms
+                    - button "00:02.984 / HTTP Method GET Path /api/cart Status 200 (OK) Duration 723ms" [ref=f17e1017] [cursor=pointer]:
+                      - generic [ref=f17e1018]: 00:02.984
+                      - link / [ref=f17e1024]:
+                        - /url: /a/grafana-kowalski-app/apps/5158/route?from=2026-08-07T09:00:00.000Z&to=2026-08-07T10:00:00.000Z
+                      - generic [ref=f17e1026]: HTTP
+                      - generic [ref=f17e1037]:
+                        - generic [ref=f17e1041]:
+                          - generic [ref=f17e1042]: Method
+                          - generic [ref=f17e1043]: GET
+                        - generic [ref=f17e1047]:
+                          - generic [ref=f17e1048]: Path
+                          - generic [ref=f17e1049]: /api/cart
+                        - generic [ref=f17e1053]:
+                          - generic [ref=f17e1054]: Status
+                          - generic [ref=f17e1055]: 200 (OK)
+                        - generic [ref=f17e1059]:
+                          - generic [ref=f17e1060]: Duration
+                          - generic [ref=f17e1061]: 723ms
+                    - button "00:02.986 / HTTP Method GET Path /api/currency Status 200 (OK) Duration 1.02s" [ref=f17e1063] [cursor=pointer]:
+                      - generic [ref=f17e1064]: 00:02.986
+                      - link / [ref=f17e1070]:
+                        - /url: /a/grafana-kowalski-app/apps/5158/route?from=2026-08-07T09:00:00.000Z&to=2026-08-07T10:00:00.000Z
+                      - generic [ref=f17e1072]: HTTP
+                      - generic [ref=f17e1083]:
+                        - generic [ref=f17e1087]:
+                          - generic [ref=f17e1088]: Method
+                          - generic [ref=f17e1089]: GET
+                        - generic [ref=f17e1093]:
+                          - generic [ref=f17e1094]: Path
+                          - generic [ref=f17e1095]: /api/currency
+                        - generic [ref=f17e1099]:
+                          - generic [ref=f17e1100]: Status
+                          - generic [ref=f17e1101]: 200 (OK)
+                        - generic [ref=f17e1105]:
+                          - generic [ref=f17e1106]: Duration
+                          - generic [ref=f17e1107]: 1.02s
+                    - button "00:03.007 / HTTP Method POST Path /feature/flagd/flagd.evaluation.v1.Service/ResolveAll Status 200 (OK) Duration 292ms" [ref=f17e1109] [cursor=pointer]:
+                      - generic [ref=f17e1110]: 00:03.007
+                      - link / [ref=f17e1116]:
+                        - /url: /a/grafana-kowalski-app/apps/5158/route?from=2026-08-07T09:00:00.000Z&to=2026-08-07T10:00:00.000Z
+                      - generic [ref=f17e1118]: HTTP
+                      - generic [ref=f17e1129]:
+                        - generic [ref=f17e1133]:
+                          - generic [ref=f17e1134]: Method
+                          - generic [ref=f17e1135]: POST
+                        - generic [ref=f17e1139]:
+                          - generic [ref=f17e1140]: Path
+                          - generic [ref=f17e1141]: /feature/flagd/flagd.evaluation.v1.Service/ResolveAll
+                        - generic [ref=f17e1145]:
+                          - generic [ref=f17e1146]: Status
+                          - generic [ref=f17e1147]: 200 (OK)
+                        - generic [ref=f17e1151]:
+                          - generic [ref=f17e1152]: Duration
+                          - generic [ref=f17e1153]: 292ms
+                    - button "00:03.269 / HTTP Method GET Path /api/products Status 200 (OK) Duration 116ms" [ref=f17e1155] [cursor=pointer]:
+                      - generic [ref=f17e1156]: 00:03.269
+                      - link / [ref=f17e1162]:
+                        - /url: /a/grafana-kowalski-app/apps/5158/route?from=2026-08-07T09:00:00.000Z&to=2026-08-07T10:00:00.000Z
+                      - generic [ref=f17e1164]: HTTP
+                      - generic [ref=f17e1175]:
+                        - generic [ref=f17e1179]:
+                          - generic [ref=f17e1180]: Method
+                          - generic [ref=f17e1181]: GET
+                        - generic [ref=f17e1185]:
+                          - generic [ref=f17e1186]: Path
+                          - generic [ref=f17e1187]: /api/products
+                        - generic [ref=f17e1191]:
+                          - generic [ref=f17e1192]: Status
+                          - generic [ref=f17e1193]: 200 (OK)
+                        - generic [ref=f17e1197]:
+                          - generic [ref=f17e1198]: Duration
+                          - generic [ref=f17e1199]: 116ms
+                    - button "00:03.273 / HTTP Method GET Path /api/cart Status 200 (OK) Duration 437ms" [ref=f17e1201] [cursor=pointer]:
+                      - generic [ref=f17e1202]: 00:03.273
+                      - link / [ref=f17e1208]:
+                        - /url: /a/grafana-kowalski-app/apps/5158/route?from=2026-08-07T09:00:00.000Z&to=2026-08-07T10:00:00.000Z
+                      - generic [ref=f17e1210]: HTTP
+                      - generic [ref=f17e1221]:
+                        - generic [ref=f17e1225]:
+                          - generic [ref=f17e1226]: Method
+                          - generic [ref=f17e1227]: GET
+                        - generic [ref=f17e1231]:
+                          - generic [ref=f17e1232]: Path
+                          - generic [ref=f17e1233]: /api/cart
+                        - generic [ref=f17e1237]:
+                          - generic [ref=f17e1238]: Status
+                          - generic [ref=f17e1239]: 200 (OK)
+                        - generic [ref=f17e1243]:
+                          - generic [ref=f17e1244]: Duration
+                          - generic [ref=f17e1245]: 437ms
+                    - button "00:03.296 / FCP delta 3296 time_to_first_byte 49.599999997764826 fcp 3296 first_byte_to_fcp 3246.400000002235" [ref=f17e1247] [cursor=pointer]:
+                      - generic [ref=f17e1248]: 00:03.296
+                      - link / [ref=f17e1254]:
+                        - /url: /a/grafana-kowalski-app/apps/5158/route?from=2026-08-07T09:00:00.000Z&to=2026-08-07T10:00:00.000Z
+                      - generic [ref=f17e1256]: FCP
+                      - generic [ref=f17e1267]:
+                        - generic [ref=f17e1271]:
+                          - generic [ref=f17e1272]: delta
+                          - generic [ref=f17e1273]: "3296"
+                        - generic [ref=f17e1277]:
+                          - generic [ref=f17e1278]: time_to_first_byte
+                          - generic [ref=f17e1279]: "49.599999997764826"
+                        - generic [ref=f17e1283]:
+                          - generic [ref=f17e1284]: fcp
+                          - generic [ref=f17e1285]: "3296"
+                        - generic [ref=f17e1289]:
+                          - generic [ref=f17e1290]: first_byte_to_fcp
+                          - generic [ref=f17e1291]: "3246.400000002235"
+  - log [ref=f17e1292]

@@ -1,0 +1,470 @@
+- generic [ref=f17e9]:
+  - generic [ref=f17e10]:
+    - link "Skip to main content" [ref=f17e11] [cursor=pointer]:
+      - /url: "#pageContent"
+    - generic [ref=f17e13]:
+      - generic [ref=f17e14]:
+        - generic [ref=f17e15]:
+          - link [ref=f17e16] [cursor=pointer]:
+            - /url: /
+            - img "Grafana" [ref=f17e17]
+          - link "Grafana" [ref=f17e18] [cursor=pointer]:
+            - /url: /
+        - button "Undock menu" [ref=f17e19] [cursor=pointer]
+        - button "Close menu" [ref=f17e22] [cursor=pointer]
+      - navigation [ref=f17e25]:
+        - list "Navigation" [ref=f17e30]:
+          - listitem [ref=f17e31]:
+            - generic [ref=f17e32]:
+              - link [ref=f17e35] [cursor=pointer]:
+                - /url: /bookmarks
+                - paragraph [ref=f17e40]: Bookmarks
+              - 'button "Expand section: Bookmarks" [ref=f17e42] [cursor=pointer]'
+          - listitem [ref=f17e45]:
+            - generic [ref=f17e46]:
+              - link [ref=f17e49] [cursor=pointer]:
+                - /url: /dashboards?starred
+                - paragraph [ref=f17e54]: Starred
+              - 'button "Expand section: Starred" [ref=f17e57] [cursor=pointer]'
+          - listitem [ref=f17e60]:
+            - generic [ref=f17e61]:
+              - link [ref=f17e64] [cursor=pointer]:
+                - /url: /dashboards
+                - paragraph [ref=f17e69]: Dashboards
+              - 'button "Expand section: Dashboards" [ref=f17e72] [cursor=pointer]'
+          - listitem [ref=f17e75]:
+            - link [ref=f17e79] [cursor=pointer]:
+              - /url: /explore
+              - paragraph [ref=f17e84]: Explore
+          - listitem [ref=f17e86]:
+            - generic [ref=f17e87]:
+              - link [ref=f17e90] [cursor=pointer]:
+                - /url: /drilldown
+                - paragraph [ref=f17e98]: Drilldown
+              - 'button "Expand section: Drilldown" [ref=f17e101] [cursor=pointer]'
+          - listitem [ref=f17e104]:
+            - generic [ref=f17e105]:
+              - link [ref=f17e108] [cursor=pointer]:
+                - /url: /a/grafana-assistant-app
+                - paragraph [ref=f17e114]: Assistant
+              - 'button "Expand section: Assistant" [ref=f17e117] [cursor=pointer]'
+          - listitem [ref=f17e120]:
+            - generic [ref=f17e121]:
+              - link [ref=f17e124] [cursor=pointer]:
+                - /url: /alerts-and-incidents
+                - paragraph [ref=f17e129]: Alerts & IRM
+              - 'button "Expand section: Alerts &amp; IRM" [ref=f17e132] [cursor=pointer]'
+          - listitem [ref=f17e135]:
+            - generic [ref=f17e136]:
+              - link [ref=f17e139] [cursor=pointer]:
+                - /url: /a/grafana-ml-app/home
+                - paragraph [ref=f17e146]: AI & machine learning
+              - 'button "Expand section: AI &amp; machine learning" [ref=f17e149] [cursor=pointer]'
+          - listitem [ref=f17e152]:
+            - generic [ref=f17e153]:
+              - link [ref=f17e156] [cursor=pointer]:
+                - /url: adaptive-telemetry
+                - generic [ref=f17e158]:
+                  - paragraph [ref=f17e176]: Adaptive Telemetry
+                  - generic [ref=f17e177]: New!
+              - 'button "Expand section: Adaptive Telemetry" [ref=f17e183] [cursor=pointer]'
+          - listitem [ref=f17e186]:
+            - generic [ref=f17e187]:
+              - link [ref=f17e190] [cursor=pointer]:
+                - /url: /a/grafana-cmab-app/
+                - generic [ref=f17e192]:
+                  - paragraph [ref=f17e195]: Cost Management and Billing
+                  - generic [ref=f17e196]: New!
+              - 'button "Expand section: Cost Management and Billing" [ref=f17e202] [cursor=pointer]'
+          - listitem [ref=f17e205]:
+            - generic [ref=f17e206]:
+              - link [ref=f17e209] [cursor=pointer]:
+                - /url: /testing-and-synthetics
+                - paragraph [ref=f17e216]: Testing & synthetics
+              - 'button "Expand section: Testing &amp; synthetics" [ref=f17e219] [cursor=pointer]'
+          - listitem [ref=f17e222]:
+            - generic [ref=f17e223]:
+              - link [ref=f17e226] [cursor=pointer]:
+                - /url: /observability
+                - paragraph [ref=f17e231]: Observability
+              - 'button "Collapse section: Observability" [expanded] [ref=f17e234] [cursor=pointer]'
+            - list [ref=f17e237]:
+              - listitem [ref=f17e238]:
+                - link [ref=f17e242] [cursor=pointer]:
+                  - /url: /a/grafana-asserts-app/entities
+                  - paragraph [ref=f17e245]: Entity graph
+              - listitem [ref=f17e247]:
+                - link [ref=f17e251] [cursor=pointer]:
+                  - /url: /a/grafana-asserts-app/catalog
+                  - paragraph [ref=f17e254]: Entity catalog
+              - listitem [ref=f17e256]:
+                - link [ref=f17e260] [cursor=pointer]:
+                  - /url: /a/grafana-asserts-app/assertions
+                  - paragraph [ref=f17e263]: RCA workbench
+              - listitem [ref=f17e265]:
+                - link [ref=f17e269] [cursor=pointer]:
+                  - /url: /a/grafana-asserts-app/slo
+                  - paragraph [ref=f17e272]: Health target
+              - listitem [ref=f17e274]:
+                - link [ref=f17e278] [cursor=pointer]:
+                  - /url: /a/grafana-asserts-app/rules
+                  - paragraph [ref=f17e281]: Rules
+              - listitem [ref=f17e283]:
+                - link [ref=f17e287] [cursor=pointer]:
+                  - /url: /a/grafana-asserts-app/configuration
+                  - paragraph [ref=f17e290]: Configuration
+              - listitem [ref=f17e292]:
+                - generic [ref=f17e293]:
+                  - link [ref=f17e296] [cursor=pointer]:
+                    - /url: /a/grafana-agento11y-app
+                    - generic [ref=f17e298]:
+                      - paragraph [ref=f17e299]: Agent
+                      - generic [ref=f17e300]: New!
+                  - 'button "Expand section: Agent" [ref=f17e306] [cursor=pointer]'
+              - listitem [ref=f17e309]:
+                - generic [ref=f17e310]:
+                  - link [ref=f17e313] [cursor=pointer]:
+                    - /url: /a/grafana-kowalski-app
+                    - paragraph [ref=f17e316]: Frontend
+                  - 'button "Expand section: Frontend" [ref=f17e319] [cursor=pointer]'
+              - listitem [ref=f17e322]:
+                - generic [ref=f17e323]:
+                  - link [ref=f17e326] [cursor=pointer]:
+                    - /url: /a/grafana-app-observability-app
+                    - paragraph [ref=f17e329]: Application
+                  - 'button "Expand section: Application" [ref=f17e332] [cursor=pointer]'
+              - listitem [ref=f17e335]:
+                - generic [ref=f17e336]:
+                  - link [ref=f17e339] [cursor=pointer]:
+                    - /url: /a/grafana-dbo11y-app/
+                    - generic [ref=f17e341]:
+                      - paragraph [ref=f17e342]: Database
+                      - generic [ref=f17e343]: New!
+                  - 'button "Expand section: Database" [ref=f17e349] [cursor=pointer]'
+              - listitem [ref=f17e352]:
+                - generic [ref=f17e353]:
+                  - link [ref=f17e356] [cursor=pointer]:
+                    - /url: /a/grafana-k8s-app/home
+                    - paragraph [ref=f17e359]: Kubernetes
+                  - 'button "Expand section: Kubernetes" [ref=f17e362] [cursor=pointer]'
+              - listitem [ref=f17e365]:
+                - generic [ref=f17e366]:
+                  - link [ref=f17e369] [cursor=pointer]:
+                    - /url: /a/grafana-csp-app
+                    - paragraph [ref=f17e372]: Cloud provider
+                  - 'button "Expand section: Cloud provider" [ref=f17e375] [cursor=pointer]'
+          - listitem [ref=f17e378]:
+            - generic [ref=f17e379]:
+              - link [ref=f17e382] [cursor=pointer]:
+                - /url: /connections
+                - paragraph [ref=f17e387]: Connections
+              - 'button "Expand section: Connections" [ref=f17e390] [cursor=pointer]'
+          - listitem [ref=f17e393]:
+            - generic [ref=f17e394]:
+              - link [ref=f17e397] [cursor=pointer]:
+                - /url: /apps
+                - paragraph [ref=f17e402]: More apps
+              - 'button "Expand section: More apps" [ref=f17e405] [cursor=pointer]'
+          - listitem [ref=f17e408]:
+            - generic [ref=f17e409]:
+              - link [ref=f17e412] [cursor=pointer]:
+                - /url: /admin
+                - paragraph [ref=f17e417]: Administration
+              - 'button "Expand section: Administration" [ref=f17e420] [cursor=pointer]'
+    - banner [ref=f17e423]:
+      - generic [ref=f17e424]:
+        - navigation "Breadcrumbs" [ref=f17e426]:
+          - list [ref=f17e427]:
+            - listitem [ref=f17e428]:
+              - link "Observability" [ref=f17e429] [cursor=pointer]:
+                - /url: /observability
+            - listitem [ref=f17e433]:
+              - link "Frontend" [ref=f17e434] [cursor=pointer]:
+                - /url: /a/grafana-kowalski-app
+            - listitem [ref=f17e438]:
+              - link "ecommerce" [ref=f17e439] [cursor=pointer]:
+                - /url: /a/grafana-kowalski-app/apps/5158/overview?from=2026-08-07T09:00:00.000Z&to=2026-08-07T10:00:00.000Z
+            - listitem [ref=f17e443]:
+              - link "Sessions" [ref=f17e444] [cursor=pointer]:
+                - /url: /a/grafana-kowalski-app/apps/5158/sessions?from=2026-08-07T09:00:00.000Z&to=2026-08-07T10:00:00.000Z
+            - listitem [ref=f17e448]:
+              - generic "gHRPH0EjGd" [ref=f17e449]
+        - generic [ref=f17e450]:
+          - generic [ref=f17e452]:
+            - button "Search..." [ref=f17e456] [cursor=pointer]
+            - generic [ref=f17e457]: ⌘+k
+          - button "New" [ref=f17e459] [cursor=pointer]
+          - button "Help" [ref=f17e465] [cursor=pointer]
+          - button "Open Grafana Assistant" [ref=f17e469] [cursor=pointer]
+          - button "Profile" [ref=f17e474] [cursor=pointer]:
+            - img "User avatar" [ref=f17e475]
+    - main [ref=f17e478]:
+      - generic [ref=f17e482]:
+        - generic [ref=f17e484]:
+          - generic [ref=f17e487]:
+            - generic [ref=f17e488]:
+              - heading "gHRPH0EjGd" [level=1] [ref=f17e490]
+              - generic [ref=f17e491]: User session
+            - generic [ref=f17e492]:
+              - generic [ref=f17e493]: in application
+              - link "ecommerce" [ref=f17e494] [cursor=pointer]:
+                - /url: /a/grafana-kowalski-app/apps/5158/sessions?from=2026-08-07T09:00:00.000Z&to=2026-08-07T10:00:00.000Z
+          - generic [ref=f17e495]:
+            - generic [ref=f17e496]:
+              - button "Move 30m backward" [ref=f17e497] [cursor=pointer]
+              - 'button "Time range selected: 2026-08-07 09:00:00 to 2026-08-07 10:00:00" [ref=f17e500] [cursor=pointer]':
+                - generic [ref=f17e504]:
+                  - generic [ref=f17e505]: 2026-08-07 09:00:00 to 2026-08-07 10:00:00
+                  - generic [ref=f17e506]: UTC
+              - button "Move 30m forward" [ref=f17e509] [cursor=pointer]
+              - button "Zoom out time range" [ref=f17e512] [cursor=pointer]
+            - generic [ref=f17e515]:
+              - button [ref=f17e516] [cursor=pointer]
+              - button "Auto refresh turned off. Choose refresh time interval" [ref=f17e519] [cursor=pointer]
+            - generic [ref=f17e522]:
+              - button "Share" [ref=f17e523] [cursor=pointer]
+              - button "Share URL dropdown" [ref=f17e528] [cursor=pointer]
+            - generic [ref=f17e531]:
+              - button "RCA Workbench 0" [disabled] [ref=f17e532]:
+                - generic [ref=f17e536]:
+                  - generic [ref=f17e537]: RCA Workbench
+                  - generic [ref=f17e538]: "0"
+              - button "Open RCA Workbench" [disabled] [ref=f17e539]
+        - generic [ref=f17e546]:
+          - generic [ref=f17e547]:
+            - generic [ref=f17e548]:
+              - generic [ref=f17e549]: Session
+              - generic [ref=f17e551]:
+                - generic [ref=f17e552]:
+                  - generic [ref=f17e553]: ID
+                  - generic [ref=f17e554]: gHRPH0EjGd
+                - generic [ref=f17e556]:
+                  - generic [ref=f17e557]: Lifecycle
+                  - generic [ref=f17e558]: Start
+                - generic [ref=f17e561]:
+                  - generic [ref=f17e562]: User
+                  - generic [ref=f17e563]: "-"
+                - generic [ref=f17e565]:
+                  - generic [ref=f17e566]: Location
+                  - generic [ref=f17e568]:
+                    - generic [ref=f17e569]: Columbus
+                    - generic [ref=f17e572]: Ohio, United States
+            - generic [ref=f17e573]:
+              - generic [ref=f17e574]: Environment
+              - generic [ref=f17e576]:
+                - generic [ref=f17e577]:
+                  - generic [ref=f17e578]: App Version
+                  - generic [ref=f17e579]: 1.0.0
+                - generic [ref=f17e582]:
+                  - generic [ref=f17e583]: Browser
+                  - generic [ref=f17e584]: Chrome 149.0.0.0
+                - generic [ref=f17e589]:
+                  - generic [ref=f17e590]: Platform
+                  - generic [ref=f17e591]: Linux unknown
+            - generic [ref=f17e596]:
+              - generic [ref=f17e597]:
+                - generic [ref=f17e598]: User Experience
+                - button [ref=f17e600] [cursor=pointer]
+              - generic [ref=f17e603]:
+                - generic [ref=f17e604]:
+                  - generic [ref=f17e605]: Errors (JS | HTTP)
+                  - generic [ref=f17e608]:
+                    - generic [ref=f17e609]: "0"
+                    - generic [ref=f17e610]: "|"
+                    - generic [ref=f17e611]: "0"
+                - generic [ref=f17e612]:
+                  - generic [ref=f17e613]: TTFB
+                  - generic [ref=f17e614]:
+                    - generic [ref=f17e615]:
+                      - generic [ref=f17e616]: 50ms
+                      - generic [ref=f17e617]: Good
+                    - link "Explore TTFB" [ref=f17e618] [cursor=pointer]:
+                      - /url: /explore?left=%7B%22datasource%22%3A%22grafanacloud-logs%22%2C%22queries%22%3A%5B%7B%22refId%22%3A%22wv-ttfb%22%2C%22datasource%22%3A%7B%22type%22%3A%22loki%22%2C%22uid%22%3A%22grafanacloud-logs%22%7D%2C%22expr%22%3A%22quantile_over_time(0.75%2C%7Bkind%3D%5C%22measurement%5C%22%2Capp_id%3D%5C%225158%5C%22%7D%20%7C%3D%20%5C%22ttfb%5C%22%20%7C%3D%20%5C%22session_id%3DgHRPH0EjGd%5C%22%20%7C%20logfmt%20%7C%20session_id%3D%5C%22gHRPH0EjGd%5C%22%20%7C%20unwrap%20ttfb%20%5B%24__auto%5D)%20by%20(app)%22%2C%22queryType%22%3A%22instant%22%7D%5D%2C%22range%22%3A%7B%22from%22%3A%222026-08-07T09%3A00%3A00.000Z%22%2C%22to%22%3A%222026-08-07T10%3A00%3A00.000Z%22%7D%7D
+                - generic [ref=f17e621]:
+                  - generic [ref=f17e622]: LCP
+                  - generic [ref=f17e623]:
+                    - generic [ref=f17e624]:
+                      - generic [ref=f17e625]: 6.94s
+                      - generic [ref=f17e626]: Poor
+                    - link "Explore LCP" [ref=f17e627] [cursor=pointer]:
+                      - /url: /explore?left=%7B%22datasource%22%3A%22grafanacloud-logs%22%2C%22queries%22%3A%5B%7B%22refId%22%3A%22wv-lcp%22%2C%22datasource%22%3A%7B%22type%22%3A%22loki%22%2C%22uid%22%3A%22grafanacloud-logs%22%7D%2C%22expr%22%3A%22quantile_over_time(0.75%2C%7Bkind%3D%5C%22measurement%5C%22%2Capp_id%3D%5C%225158%5C%22%7D%20%7C%3D%20%5C%22lcp%5C%22%20%7C%3D%20%5C%22session_id%3DgHRPH0EjGd%5C%22%20%7C%20logfmt%20%7C%20session_id%3D%5C%22gHRPH0EjGd%5C%22%20%7C%20unwrap%20lcp%20%5B%24__auto%5D)%20by%20(app)%22%2C%22queryType%22%3A%22instant%22%7D%5D%2C%22range%22%3A%7B%22from%22%3A%222026-08-07T09%3A00%3A00.000Z%22%2C%22to%22%3A%222026-08-07T10%3A00%3A00.000Z%22%7D%7D
+                - generic [ref=f17e630]:
+                  - generic [ref=f17e631]: FCP
+                  - generic [ref=f17e632]:
+                    - generic [ref=f17e633]:
+                      - generic [ref=f17e634]: 3.30s
+                      - generic [ref=f17e635]: Poor
+                    - link "Explore FCP" [ref=f17e636] [cursor=pointer]:
+                      - /url: /explore?left=%7B%22datasource%22%3A%22grafanacloud-logs%22%2C%22queries%22%3A%5B%7B%22refId%22%3A%22wv-fcp%22%2C%22datasource%22%3A%7B%22type%22%3A%22loki%22%2C%22uid%22%3A%22grafanacloud-logs%22%7D%2C%22expr%22%3A%22quantile_over_time(0.75%2C%7Bkind%3D%5C%22measurement%5C%22%2Capp_id%3D%5C%225158%5C%22%7D%20%7C%3D%20%5C%22fcp%5C%22%20%7C%3D%20%5C%22session_id%3DgHRPH0EjGd%5C%22%20%7C%20logfmt%20%7C%20session_id%3D%5C%22gHRPH0EjGd%5C%22%20%7C%20unwrap%20fcp%20%5B%24__auto%5D)%20by%20(app)%22%2C%22queryType%22%3A%22instant%22%7D%5D%2C%22range%22%3A%7B%22from%22%3A%222026-08-07T09%3A00%3A00.000Z%22%2C%22to%22%3A%222026-08-07T10%3A00%3A00.000Z%22%7D%7D
+                - generic [ref=f17e639]:
+                  - generic [ref=f17e640]: CLS
+                  - generic [ref=f17e641]:
+                    - generic [ref=f17e642]:
+                      - generic [ref=f17e643]: "0.00"
+                      - generic [ref=f17e644]: Good
+                    - link "Explore CLS" [ref=f17e645] [cursor=pointer]:
+                      - /url: /explore?left=%7B%22datasource%22%3A%22grafanacloud-logs%22%2C%22queries%22%3A%5B%7B%22refId%22%3A%22wv-cls%22%2C%22datasource%22%3A%7B%22type%22%3A%22loki%22%2C%22uid%22%3A%22grafanacloud-logs%22%7D%2C%22expr%22%3A%22quantile_over_time(0.75%2C%7Bkind%3D%5C%22measurement%5C%22%2Capp_id%3D%5C%225158%5C%22%7D%20%7C%3D%20%5C%22cls%5C%22%20%7C%3D%20%5C%22session_id%3DgHRPH0EjGd%5C%22%20%7C%20logfmt%20%7C%20session_id%3D%5C%22gHRPH0EjGd%5C%22%20%7C%20unwrap%20cls%20%5B%24__auto%5D)%20by%20(app)%22%2C%22queryType%22%3A%22instant%22%7D%5D%2C%22range%22%3A%7B%22from%22%3A%222026-08-07T09%3A00%3A00.000Z%22%2C%22to%22%3A%222026-08-07T10%3A00%3A00.000Z%22%7D%7D
+                - generic [ref=f17e648]:
+                  - generic [ref=f17e649]: INP
+                  - generic [ref=f17e650]:
+                    - generic [ref=f17e651]:
+                      - generic [ref=f17e652]: 504ms
+                      - generic [ref=f17e653]: Poor
+                    - link "Explore INP" [ref=f17e654] [cursor=pointer]:
+                      - /url: /explore?left=%7B%22datasource%22%3A%22grafanacloud-logs%22%2C%22queries%22%3A%5B%7B%22refId%22%3A%22wv-inp%22%2C%22datasource%22%3A%7B%22type%22%3A%22loki%22%2C%22uid%22%3A%22grafanacloud-logs%22%7D%2C%22expr%22%3A%22quantile_over_time(0.75%2C%7Bkind%3D%5C%22measurement%5C%22%2Capp_id%3D%5C%225158%5C%22%7D%20%7C%3D%20%5C%22inp%5C%22%20%7C%3D%20%5C%22session_id%3DgHRPH0EjGd%5C%22%20%7C%20logfmt%20%7C%20session_id%3D%5C%22gHRPH0EjGd%5C%22%20%7C%20unwrap%20inp%20%5B%24__auto%5D)%20by%20(app)%22%2C%22queryType%22%3A%22instant%22%7D%5D%2C%22range%22%3A%7B%22from%22%3A%222026-08-07T09%3A00%3A00.000Z%22%2C%22to%22%3A%222026-08-07T10%3A00%3A00.000Z%22%7D%7D
+          - generic [ref=f17e657]:
+            - heading "Activity" [level=2] [ref=f17e659]
+            - generic [ref=f17e661]:
+              - radiogroup [ref=f17e663]:
+                - generic [ref=f17e664]:
+                  - radio "User Journey" [ref=f17e665] [cursor=pointer]
+                  - generic "User Journey" [ref=f17e666] [cursor=pointer]
+                - generic [ref=f17e668]:
+                  - radio "Traces" [checked] [active] [ref=f17e669] [cursor=pointer]
+                  - generic "Traces" [ref=f17e670] [cursor=pointer]
+              - generic [ref=f17e1297]:
+                - generic [ref=f17e1299]:
+                  - generic [ref=f17e1301]:
+                    - button "Edit filter with key nestedSetParent" [ref=f17e1303] [cursor=pointer]:
+                      - generic [ref=f17e1304]: nestedSetParent < 0
+                      - button "Remove filter with key nestedSetParent" [ref=f17e1305]
+                    - button "Edit filter with key resource.gf.feo11y.app.id" [ref=f17e1308] [cursor=pointer]:
+                      - generic [ref=f17e1309]: resource.gf.feo11y.app.id = "5158"
+                      - button "Remove filter with key resource.gf.feo11y.app.id" [ref=f17e1310]
+                    - button "Edit filter with key span.session.id" [ref=f17e1313] [cursor=pointer]:
+                      - generic [ref=f17e1314]: span.session.id = gHRPH0EjGd
+                      - button "Remove filter with key span.session.id" [ref=f17e1315]
+                    - combobox "+ label = value" [ref=f17e1319]
+                    - button "Clear all" [ref=f17e1322] [cursor=pointer]
+                  - link "Traces Drilldown" [ref=f17e1326] [cursor=pointer]:
+                    - /url: /a/grafana-exploretraces-app/explore?from=2026-08-07T09:00:00.000Z&to=2026-08-07T10:00:00.000Z&timezone=utc&var-ds=grafanacloud-traces&var-primarySignal=true&var-filters=nestedSetParent%7C%3C%7C0&var-filters=resource.gf.feo11y.app.id%7C%3D%7C%225158%22&var-filters=span.session.id%7C%3D%7CgHRPH0EjGd&var-metric=rate&var-groupBy=&var-spanListColumns=&var-latencyThreshold=&var-partialLatencyThreshold=&var-durationPercentiles=0.9&actionView=traceList
+                - generic [ref=f17e1333]:
+                  - generic [ref=f17e1334]: View a list of spans for the current set of filters.
+                  - generic [ref=f17e1337]:
+                    - generic [ref=f17e1338]:
+                      - generic [ref=f17e1339]:
+                        - generic [ref=f17e1340]: Attributes
+                        - generic [ref=f17e1342]:
+                          - strong [ref=f17e1343]: "Selected (0):"
+                          - text: None
+                        - textbox "Search attributes..." [ref=f17e1350]
+                        - tablist [ref=f17e1353]:
+                          - tab "Favorites" [selected] [ref=f17e1355] [cursor=pointer]
+                          - tab "All" [ref=f17e1357] [cursor=pointer]
+                          - tab "Resource" [ref=f17e1359] [cursor=pointer]
+                          - tab "Span" [ref=f17e1361] [cursor=pointer]
+                      - list [ref=f17e1362]:
+                        - listitem "service.name" [ref=f17e1363]:
+                          - checkbox [ref=f17e1366]
+                          - generic [ref=f17e1368]:
+                            - generic [ref=f17e1369]: resource.
+                            - generic [ref=f17e1370]: service.name
+                          - button "Remove from favorites" [ref=f17e1371] [cursor=pointer]
+                        - listitem "service.namespace" [ref=f17e1374]:
+                          - checkbox [ref=f17e1377]
+                          - generic [ref=f17e1379]:
+                            - generic [ref=f17e1380]: resource.
+                            - generic [ref=f17e1381]: service.namespace
+                          - button "Remove from favorites" [ref=f17e1382] [cursor=pointer]
+                        - listitem "service.version" [ref=f17e1385]:
+                          - checkbox [ref=f17e1388]
+                          - generic [ref=f17e1390]:
+                            - generic [ref=f17e1391]: resource.
+                            - generic [ref=f17e1392]: service.version
+                          - button "Remove from favorites" [ref=f17e1393] [cursor=pointer]
+                        - listitem "cluster" [ref=f17e1396]:
+                          - checkbox [ref=f17e1399]
+                          - generic [ref=f17e1401]:
+                            - generic [ref=f17e1402]: resource.
+                            - generic [ref=f17e1403]: cluster
+                          - button "Remove from favorites" [ref=f17e1404] [cursor=pointer]
+                        - listitem "deployment.environment" [ref=f17e1407]:
+                          - checkbox [ref=f17e1410]
+                          - generic [ref=f17e1412]:
+                            - generic [ref=f17e1413]: resource.
+                            - generic [ref=f17e1414]: deployment.environment
+                          - button "Remove from favorites" [ref=f17e1415] [cursor=pointer]
+                        - listitem "k8s.namespace.name" [ref=f17e1418]:
+                          - checkbox [ref=f17e1421]
+                          - generic [ref=f17e1423]:
+                            - generic [ref=f17e1424]: resource.
+                            - generic [ref=f17e1425]: k8s.namespace.name
+                          - button "Remove from favorites" [ref=f17e1426] [cursor=pointer]
+                        - listitem "k8s.pod.name" [ref=f17e1429]:
+                          - checkbox [ref=f17e1432]
+                          - generic [ref=f17e1434]:
+                            - generic [ref=f17e1435]: resource.
+                            - generic [ref=f17e1436]: k8s.pod.name
+                          - button "Remove from favorites" [ref=f17e1437] [cursor=pointer]
+                        - listitem "k8s.node.name" [ref=f17e1440]:
+                          - checkbox [ref=f17e1443]
+                          - generic [ref=f17e1445]:
+                            - generic [ref=f17e1446]: resource.
+                            - generic [ref=f17e1447]: k8s.node.name
+                          - button "Remove from favorites" [ref=f17e1448] [cursor=pointer]
+                        - listitem "name" [ref=f17e1451]:
+                          - checkbox [ref=f17e1454]
+                          - generic [ref=f17e1456]:
+                            - generic [ref=f17e1457]: span.
+                            - generic [ref=f17e1458]: name
+                          - button "Remove from favorites" [ref=f17e1459] [cursor=pointer]
+                        - listitem "kind" [ref=f17e1462]:
+                          - checkbox [ref=f17e1465]
+                          - generic [ref=f17e1467]:
+                            - generic [ref=f17e1468]: span.
+                            - generic [ref=f17e1469]: kind
+                          - button "Remove from favorites" [ref=f17e1470] [cursor=pointer]
+                        - listitem "rootName" [ref=f17e1473]:
+                          - checkbox [ref=f17e1476]
+                          - generic [ref=f17e1478]:
+                            - generic [ref=f17e1479]: span.
+                            - generic [ref=f17e1480]: rootName
+                          - button "Remove from favorites" [ref=f17e1481] [cursor=pointer]
+                        - listitem "rootServiceName" [ref=f17e1484]:
+                          - checkbox [ref=f17e1487]
+                          - generic [ref=f17e1489]:
+                            - generic [ref=f17e1490]: span.
+                            - generic [ref=f17e1491]: rootServiceName
+                          - button "Remove from favorites" [ref=f17e1492] [cursor=pointer]
+                        - listitem "status" [ref=f17e1495]:
+                          - checkbox [ref=f17e1498]
+                          - generic [ref=f17e1500]:
+                            - generic [ref=f17e1501]: span.
+                            - generic [ref=f17e1502]: status
+                          - button "Remove from favorites" [ref=f17e1503] [cursor=pointer]
+                        - listitem "statusMessage" [ref=f17e1506]:
+                          - checkbox [ref=f17e1509]
+                          - generic [ref=f17e1511]:
+                            - generic [ref=f17e1512]: span.
+                            - generic [ref=f17e1513]: statusMessage
+                          - button "Remove from favorites" [ref=f17e1514] [cursor=pointer]
+                        - listitem "http.status_code" [ref=f17e1517]:
+                          - checkbox [ref=f17e1520]
+                          - generic [ref=f17e1522]:
+                            - generic [ref=f17e1523]: span.
+                            - generic [ref=f17e1524]: http.status_code
+                          - button "Remove from favorites" [ref=f17e1525] [cursor=pointer]
+                    - generic [ref=f17e1529]:
+                      - generic [ref=f17e1530]: ‌
+                      - generic [ref=f17e1533]:
+                        - generic [ref=f17e1534]: ‌
+                        - generic [ref=f17e1537]: ‌
+                        - generic [ref=f17e1540]: ‌
+                        - generic [ref=f17e1543]: ‌
+                        - generic [ref=f17e1546]: ‌
+                        - generic [ref=f17e1549]: ‌
+                      - generic [ref=f17e1552]:
+                        - generic [ref=f17e1553]: ‌
+                        - generic [ref=f17e1556]: ‌
+                        - generic [ref=f17e1559]: ‌
+                        - generic [ref=f17e1562]: ‌
+                        - generic [ref=f17e1565]: ‌
+                        - generic [ref=f17e1568]: ‌
+                      - generic [ref=f17e1571]:
+                        - generic [ref=f17e1572]: ‌
+                        - generic [ref=f17e1575]: ‌
+                        - generic [ref=f17e1578]: ‌
+                        - generic [ref=f17e1581]: ‌
+                        - generic [ref=f17e1584]: ‌
+                        - generic [ref=f17e1587]: ‌
+  - log [ref=f17e1292]

@@ -3,6 +3,7 @@ sidebar_position: 2
 ---
 
 import TryIt from '@site/src/components/TryIt';
+import Badge from '@site/src/components/Badge';
 
 # 2.2. Get the fix, then verify it
 
@@ -76,6 +77,34 @@ The evidence and the fix line up, so this is safe to take forward (in practice: 
 
 1. Re-open the **Explain Plan** and **Table Schema Details** tabs.
 2. Confirm each part of the Assistant's fix maps to something you observed.
+
+</details>
+
+---
+
+## Question 3: Let the Assistant analyze the saturated instance <Badge variant="optional">Optional</Badge>
+
+**From the RDS instance you found in Question 5 of the previous section, ask the Assistant to analyze it - does it reach the same conclusion you did?**
+
+Every entity in Grafana Cloud carries **Insights** from the Knowledge Graph. On the `orders-db` RDS instance, the **Insights** button lists what's firing - `AwsRDSHighCpuLoad`, `AwsRDSHighCpuSpikes`, a latency breach - and an **Analyze** button hands the entity and its insights to the Assistant.
+
+<TryIt where="the Insights button on the orders-db RDS instance (Cloud Provider Observability), then Analyze.">Read the Assistant's analysis before revealing the answer.</TryIt>
+
+<details className="answer-reveal">
+<summary>Show answer</summary>
+
+The instance's own insights already name the problem - high CPU load and spikes - and the Assistant's analysis correlates them back to the cause: it points at the **recommendation service** as a caller of the orders DB and recommends checking the **slow-query log / Performance Insights** for the incident window to find "the actual query driving CPU." That's the same query you found by hand - the Assistant arrived at it from the infrastructure side.
+
+**How to find it:**
+
+1. On the `orders-db` instance dashboard, click the **Insights** button and review the firing insights (`AwsRDSHighCpuLoad`, etc.).
+
+   ![RDS instance Insights, with the Analyze button](/img/lab2/2.6-assistant-analyze.png)
+
+2. Click **Analyze**. The Assistant investigates the instance's health and reports back.
+3. Check its conclusion against yours: it should tie the CPU saturation to the recommendation service and the slow query - not send you off in a different direction.
+
+   ![The Assistant's analysis of the RDS instance, pointing back to the recommendation service and slow query](/img/lab2/2.6-assistant-analysis.png)
 
 </details>
 

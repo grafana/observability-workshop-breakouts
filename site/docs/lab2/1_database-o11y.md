@@ -4,6 +4,7 @@ sidebar_position: 1
 
 import TryIt from '@site/src/components/TryIt';
 import Badge from '@site/src/components/Badge';
+import EnvLink from '@site/src/components/EnvLink';
 
 # 2.1. From symptom to slow query
 
@@ -11,11 +12,53 @@ import Badge from '@site/src/components/Badge';
 
 ## Getting there: frontend -> trace -> query
 
-Start in **Frontend Observability** (`ecommerce` app). The slow experience shows up as a slow user action / high page duration on `/product/*`. Open a slow request and follow it into its **trace** (the **Services** action, or open it in **Traces Drilldown**). In the trace waterfall, one span dominates: the recommendation service's call to the database - a `db.Query` span taking several seconds.
+You'll start at the slow **user action**, follow it into a **trace** to see *which* service and database are involved, and then open **Database Observability** to inspect the query itself.
 
-Click into the query that span represents to land in **Database Observability**. (You can also open Database Observability directly from the menu and pick the **orders** database.)
+:::tip Jump straight to the ecommerce app
 
-![From a slow trace span into Database Observability](/img/lab2/2.1-trace-to-db.png)
+<EnvLink appIdKey="frontendAppId" path="/a/grafana-kowalski-app/apps/{appId}" from="09:00" to="10:00">Open Frontend Observability for the ecommerce app</EnvLink> - opens the app with this lab's window (previous day, UTC) already applied. Needs your environment ID and Frontend Observability app ID from the Welcome page. If you'd rather navigate by hand: left menu -> **Observability -> Frontend -> `ecommerce`**.
+
+:::
+
+:::note Time range keeps resetting?
+Two gotchas caught us while building this lab: (1) switching Frontend Observability tabs can flip the time picker back to your **browser** timezone (so a `09:00-10:00 UTC` window shows as `04:00-05:00` local, for example) - the data is the same, but re-set it to **UTC** if you want the times to match the lab; (2) the **Database** app snaps to its own default range when it opens, so you'll re-apply the window there. If a screen looks empty, fix the time range first.
+:::
+
+**Step 1 - Find the slow user action.** Click the **User actions** tab. This lists the key interactions instrumented in the app (add-product-to-cart, initiate-checkout, open-product-detail, order-complete...) with their **Duration** and **Duration P95**. Two stand out as slow - **`open-product-detail`** and **`order-complete`**, both around ~8s average and ~10s P95. Click **`open-product-detail`**.
+
+![The User actions tab: open-product-detail and order-complete both around 8s / 10s P95](/img/lab2/2.1-user-actions-list.png)
+
+**Step 2 - Read the user action.** The action page shows **Total executions**, **Error rate** (0 - nothing is *failing*, it's just slow), and **Duration p95** (~10s), with a chart where the duration jumps at the start of the window. This is the customer-facing symptom: opening a product detail page went from ~500ms to ~10s.
+
+![The open-product-detail user action: p95 ~10s, 0 errors, with the Traces sub-tab](/img/lab2/2.1-user-action.png)
+
+**Step 3 - Open a trace.** In the **User Action Overview** panel lower down, click the **Traces** sub-tab. It lists the requests this action made, each ~10s. Click any row to open it as a waterfall.
+
+![The Traces sub-tab listing ~10s requests](/img/lab2/2.1-trace-list.png)
+
+**Step 4 - Read the trace.** The slow trace is the `GET /api/recommendations` request, ~10s end to end. The waterfall walks the request from the browser through `frontendproxy` and the `frontend` API route down to the span that consumes essentially the whole 10 seconds: **`oteldemo.RecommendationService/ListRecommendations`**. That tells you *where* the time goes - the recommendation service and its call to the orders database - but not yet *why*.
+
+![The trace for GET /api/recommendations - ~10s, dominated by RecommendationService/ListRecommendations](/img/lab2/2.1-trace-to-db.png)
+
+:::note Does it matter whether you picked open-product-detail or order-complete?
+No. Both pages show "you might also like" recommendations, so both fire the same `GET /api/recommendations` call - and open a trace from *either* action and you land on the same `ListRecommendations` span eating ~10 seconds. Whichever you chose, you're looking at the same root cause. (That's also a preview of the blast radius: one slow query, showing up across multiple customer journeys.)
+
+![The order-complete action's slow trace is the same /api/recommendations -> ListRecommendations span](/img/lab2/2.1-order-complete-trace.png)
+:::
+
+**Step 5 - Go to Database Observability.** Now open the query from the database's side. In the left menu choose **Observability -> Database**.
+
+:::note TODO - screenshot needed
+Capture the alternative jump: open a *completed* recommendation trace, expand to the recommendation service's **SELECT** span, and screenshot the span attributes showing the clickable **`db.statement`** / SQL text that links straight into Database Observability. Save as `site/static/img/lab2/2.1-span-to-db.png` and reference it here. (In this lab's *cancelled* 10s request that link isn't reliable, which is why the menu route below is the primary path.)
+:::
+
+:::tip Open Database Observability directly
+<EnvLink path="/a/grafana-dbo11y-app/overview" from="09:00" to="10:00">Open Database Observability (Queries Overview)</EnvLink> - needs only your environment ID from the Welcome page. Note the Database app tends to reset to its own default range when it loads, so if the window looks off, re-apply **09:00-10:00** (previous day) and switch the timezone to **UTC** using the time picker.
+:::
+
+**Verify you're in the right place.** Database Observability opens on **Queries Overview**, showing datasources for your stack (`...-prom` and `...-logs`), engine filters for **MySQL** and **PostgreSQL**, and RED summary tiles across the top (Instances, Databases, Tables, Total Queries Executed, Current rate) over Duration / Errors / Rate charts. If you see that, continue to Question 1.
+
+![Database Observability - Queries Overview landing](/img/lab2/2.2-queries-overview.png)
 
 ---
 
@@ -30,18 +73,21 @@ The **Queries Overview** dashboard ranks every normalized query with its RED met
 <details className="answer-reveal">
 <summary>Show answer</summary>
 
-Sorting by **Duration** puts a single `SELECT` at the top - a recommendation query that reads from the orders tables. Its total and average duration dwarf everything else running against the database.
+Sorting by **Duration** puts a single `SELECT` at the top - a recommendation query against the **orders** database (instance `orders-db`), with ~369s of total duration across 55 calls. Everything below it is in the low seconds or milliseconds, so this one query dwarfs the rest.
 
 Queries are shown normalized (literal values replaced with placeholders), so every execution of the same statement collapses into one ranked row.
 
 **How to find it:**
 
 1. Go to **Database Observability** -> **Queries Overview**.
-2. Scope the filters to the **orders** database / instance.
-3. Click the **Duration** column header to sort descending.
-4. The slow `SELECT` sits at the top of the table.
+2. Click the **Duration** column header to sort descending (the table header reads *"Top 30 out of N queries sorted by Duration (descending)"*).
+3. The slow `SELECT ... AS recommended_product_id ...` on `orders` / `orders-db` sits at the top.
 
-![Queries Overview sorted by duration](/img/lab2/2.2-queries-overview.png)
+![Queries Overview sorted by Duration - the recommendation SELECT on orders-db is far and away the slowest](/img/lab2/2.2-queries-by-duration.png)
+
+Hover the query text (or open it) to read the full statement - it's a tangle of **correlated subqueries** against `order_items` and `cart_items`, which is exactly why it's so expensive (you'll confirm this in the Explain Plan in Question 3).
+
+![The full recommendation query - nested correlated subqueries](/img/lab2/2.2-query-text.png)
 
 </details>
 
@@ -127,19 +173,35 @@ A single expensive query doesn't just slow itself down - by saturating CPU it sl
 
 > **Why this matters:** this is the difference between "the DB is slow" and "*this query* is why the DB is slow."
 
-<TryIt where="the query's CPU time trend in Query Details, alongside the RDS (Cloud Provider) CPU panel for the instance." />
+<TryIt where="the CPU Time panel on Query Details (bottom row), then the instance's host CPU in Cloud Provider Observability." />
+
+Jump to the host CPU: <EnvLink path="/a/grafana-csp-app/aws/dashboards/rds" from="09:00" to="10:00" params="var-datasource=grafanacloud-prom&var-job=$__all&var-account=$__all&var-region=$__all">open the AWS RDS dashboard in Cloud Provider Observability</EnvLink> (needs your environment ID from the Welcome page).
 
 <details className="answer-reveal">
 <summary>Show answer</summary>
 
-The instance's CPU climbs to near saturation exactly when this query's duration and CPU time rise. Because the orders database also handles order inserts and lookups, those get slower too - which is why the impact reached checkout and the frontend, not just recommendations.
+This query's CPU time climbs across the window - and the **instance** it runs on is an **AWS RDS** database (`orders-db`, `us-east-1`), whose host CPU saturates at the same time. Because the orders database also handles order inserts and lookups, those get slower too - which is why the impact reached checkout and the frontend, not just recommendations.
 
 **How to find it:**
 
-1. In **Query Details**, view the query's **CPU time / duration** trend.
-2. Open the correlated host / **RDS (Cloud Provider)** CPU panel for the instance.
-3. Confirm the timelines line up.
+1. On **Query Details** (**Query Performance** tab), scroll to the **CPU Time** panel in the bottom row (next to Rows and Lock Waits). It shows *this query's* CPU time rising during the incident window (into the minutes). The **Instance** panel at the top confirms it runs on `orders-db` / **AWS · us-east-1**.
 
-![Query cost tracking DB CPU](/img/lab2/2.5-db-cpu.png)
+   ![The query's CPU Time panel on Query Details](/img/lab2/2.5-query-cpu.png)
+
+2. To see the **host / RDS CPU**, you leave Database Observability - the instance name here isn't a link to a CPU panel (its only link is *Filter Queries*). In the left menu open **Observability -> Cloud provider**, choose **AWS**, and under **Quick Links to Dashboards** click **RDS**.
+
+   ![Cloud Provider Observability - AWS, RDS quick link](/img/lab2/2.5-cloud-provider-rds.png)
+
+   :::tip Jump straight to the RDS dashboard
+   <EnvLink path="/a/grafana-csp-app/aws/dashboards/rds" from="09:00" to="10:00" params="var-datasource=grafanacloud-prom&var-job=$__all&var-account=$__all&var-region=$__all">Open the AWS RDS dashboard in Cloud Provider Observability</EnvLink> - needs only your environment ID from the Welcome page. Skips the menu clicks and lands on the RDS fleet view with the lab window applied.
+   :::
+
+3. In the **DB fleet overview**, find `devfedb13-orders-db` (`us-east-1`). Its **CPU util max** is ~100%. Click the instance ID to open its dashboard.
+
+   ![RDS fleet overview - orders-db at ~100% CPU max](/img/lab2/2.5-rds-fleet.png)
+
+4. The instance dashboard's **CPU Utilization Average** and **Maximum** panels sit pegged at 100% from the moment the scenario starts (~09:12) - crossing the alert threshold - and drop back only when it ends. Line this up against the query's CPU time from step 1: the query's cost and the instance's saturation rise and fall together.
+
+   ![RDS instance CPU pinned at 100% for the incident window](/img/lab2/2.5-rds-cpu.png)
 
 </details>
