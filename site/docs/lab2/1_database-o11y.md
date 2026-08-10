@@ -48,9 +48,7 @@ No. Both pages show "you might also like" recommendations, so both fire the same
 
 **Step 5 - Go to Database Observability.** Now open the query from the database's side. In the left menu choose **Observability -> Database**.
 
-:::note TODO - screenshot needed
-Capture the alternative jump: open a *completed* recommendation trace, expand to the recommendation service's **SELECT** span, and screenshot the span attributes showing the clickable **`db.statement`** / SQL text that links straight into Database Observability. Save as `site/static/img/lab2/2.1-span-to-db.png` and reference it here. (In this lab's *cancelled* 10s request that link isn't reliable, which is why the menu route below is the primary path.)
-:::
+{/* AUTHOR TODO (not rendered): optional alternative jump - open a completed recommendation trace, expand the recommendation service's SELECT span, and capture the span attributes showing the clickable db.statement / SQL text that links straight into Database Observability. Save as site/static/img/lab2/2.1-span-to-db.png and add it here. In this lab's cancelled 10s request that link isn't reliable, so the menu route + direct link below are the primary paths. */}
 
 :::tip Open Database Observability directly
 <EnvLink path="/a/grafana-dbo11y-app/overview" from="09:00" to="10:00">Open Database Observability (Queries Overview)</EnvLink> - needs only your environment ID from the Welcome page. Note the Database app tends to reset to its own default range when it loads, so if the window looks off, re-apply **09:00-10:00** (previous day) and switch the timezone to **UTC** using the time picker.
@@ -106,10 +104,14 @@ A query can be a problem because it runs thousands of times (each one cheap), or
 
 This query has a modest call count but a high average duration - and a huge **Rows Examined** count compared to **Rows Sent**. It reads enormous numbers of rows to return only a few. That's an expensive-per-run query, not a high-frequency one.
 
+Click the query to open **Query Details**; the **Rows** panel makes it vivid - **Rows Examined** peaks around **22.9M rows/s** while **Rows Sent** is about **10 rows/s**. Meanwhile the **Duration** panel shows average runs of ~9 minutes (P99 over 11). It scans millions of rows to hand back a handful.
+
 **How to find it:**
 
 1. In the Queries Overview row for the slow query, read **Calls**, **Duration (avg)**, **Rows Examined**, and **Rows Sent**.
-2. Note that Rows Examined is far larger than Rows Sent.
+2. Click the query to open **Query Details** and read the **Rows** panel: Rows Examined is orders of magnitude larger than Rows Sent.
+
+![Query Details Rows panel - Rows Examined ~22.9M/s vs Rows Sent ~10/s](/img/lab2/2.2-rows.png)
 
 </details>
 
@@ -205,3 +207,75 @@ This query's CPU time climbs across the window - and the **instance** it runs on
    ![RDS instance CPU pinned at 100% for the incident window](/img/lab2/2.5-rds-cpu.png)
 
 </details>
+
+---
+
+## Question 6: Ask the Assistant for the fix
+
+**From Query Details, ask the [Grafana Assistant](https://grafana.com/docs/grafana-cloud/machine-learning/assistant/) to optimize the query. Does its diagnosis match yours - and what does it recommend?**
+
+The Assistant is built into Database Observability - no need to leave Query Details. Open it from the **sparkle icon** at the top-right (or the **Explain this query** button), and it automatically pulls the SQL, the tables, the Explain Plan, and the RED/CPU metrics as context, so it reasons about *this exact query* rather than a generic one.
+
+<TryIt where="the sparkle (Assistant) icon top-right, or the Explain this query button on Query Details. Ask: This query is slow - explain why and suggest how to optimize it.">Ask the Assistant before revealing the answer.</TryIt>
+
+<details className="answer-reveal">
+<summary>Show answer</summary>
+
+The Assistant loads the query's context automatically - the SQL, all four tables, the Explain Plan, the current tab, and the Duration / Rows Examined / CPU Time metrics.
+
+![The Assistant opened from Query Details, with the query's context attached](/img/lab2/2.6-assistant-context.png)
+
+Its **diagnosis matches what you found by hand**: a correlated subquery run once per product row (an N+1 pattern), `UPPER(product_id)` that defeats the `order_items` index, a non-sargable `DATE()` predicate, and four near-identical `UNION ALL` branches that each re-scan.
+
+![The Assistant's explanation of why the query is slow](/img/lab2/2.6-assistant-why.png)
+
+And it proposes concrete, dialect-specific fixes with ready-to-run SQL: rewrite the correlated subquery as a single aggregated **JOIN**, drop the `UPPER()` wrapper (or add a functional index), add `idx_order_date` and fix the date predicate, collapse the four `UNION ALL` branches, and index `customers.country`.
+
+![The Assistant's optimization recommendations with ALTER TABLE / CREATE INDEX statements](/img/lab2/2.6-assistant-fix.png)
+
+:::note Trust, but verify
+Check each recommendation against your own evidence before acting on it: the **JOIN rewrite** addresses the correlated subquery from the **Explain Plan** (Question 3); the **index** addresses the missing "Indexed" badge from **Table Schema Details** (Question 4); and both cut the **Rows Examined** and **CPU** you saw in Questions 2 and 5. The diagnosis and fix line up with what you found - so it's safe to take forward (in practice: test on a copy and confirm the new Explain Plan uses the index). LLM output varies between runs; judge it on whether it matches the evidence, not on the wording.
+:::
+
+**How to find it:**
+
+1. On **Query Details**, click the **sparkle** icon (top-right) or **Explain this query**.
+2. Ask it to explain why the query is slow and how to optimize it.
+3. Read its diagnosis and recommended rewrite/indexes, and check them against your Explain Plan and schema findings.
+
+</details>
+
+---
+
+## Question 7: Let the Assistant analyze the saturated instance <Badge variant="optional">Optional</Badge>
+
+**From the RDS instance in Question 5, ask the Assistant to analyze it - does it reach the same conclusion from the infrastructure side?**
+
+Every entity in Grafana Cloud carries **Insights** from the Knowledge Graph. On the `orders-db` RDS instance, the **Insights** button lists what's firing - `AwsRDSHighCpuLoad`, `AwsRDSHighCpuSpikes`, a latency breach - and an **Analyze** button hands the entity and its insights to the Assistant.
+
+<TryIt where="the Insights button on the orders-db RDS instance (Cloud Provider Observability), then Analyze.">Read the Assistant's analysis before revealing the answer.</TryIt>
+
+<details className="answer-reveal">
+<summary>Show answer</summary>
+
+The instance's own insights already name the problem - high CPU load and spikes - and the Assistant's analysis correlates them back to the cause: it points at the **recommendation service** as a caller of the orders DB and recommends checking the **slow-query log / Performance Insights** for the incident window to find "the actual query driving CPU." That's the same query you found by hand - reached this time from the infrastructure side.
+
+**How to find it:**
+
+1. On the `orders-db` instance dashboard, click the **Insights** button and review the firing insights (`AwsRDSHighCpuLoad`, etc.).
+
+   ![RDS instance Insights, with the Analyze button](/img/lab2/2.6-assistant-analyze.png)
+
+2. Click **Analyze**, then check its conclusion against yours - it should tie the CPU saturation to the recommendation service and the slow query, not send you elsewhere.
+
+   ![The Assistant's analysis of the RDS instance, pointing back to the recommendation service and slow query](/img/lab2/2.6-assistant-analysis.png)
+
+</details>
+
+---
+
+## Wrap-up
+
+You started at a slow product page, followed the `open-product-detail` user action into a trace, and saw the recommendation service's call to the orders database eating ~10 seconds. From there Database Observability let you name the exact query, diagnose it (correlated subquery, full scan, missing index), confirm it saturated the RDS instance's CPU, and get a concrete fix from the Assistant - which you verified against the plan and schema you'd already read.
+
+In Lab 3, the problem has a much wider blast radius, and you'll use the Knowledge Graph to map it.
