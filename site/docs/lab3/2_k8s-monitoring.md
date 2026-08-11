@@ -102,27 +102,17 @@ Same physical-capacity question from the **Clusters** view in Lab 1.3 - now Assi
 <summary>Show answer</summary>
 
 ```
-Kubernetes cluster resource summary
-Here's a comprehensive overview of your sedemoditl-cluster resources:
+Cluster WORKSHOP-ID-cluster resource summary (last 1h snapshot):
 
-🏗️ Cluster architecture
-Node configuration:
+Nodes: 4
+Namespaces: 4
+Pods running: 89 (allocatable capacity: 440 pods total, 110 per node)
+CPU: 8 cores total capacity, 7.72 cores allocatable
+Memory: 32.6 GB total capacity, 29.7 GB allocatable
+Ephemeral storage: 85.6 GB total capacity, 72.7 GB allocatable
 
-4 nodes with identical specifications
-AWS EC2 instances (ARM-based architecture)
-Distributed across 3 availability zones: us-east-1a, us-east-1b, us-east-1c
-OS: Amazon Linux VERSION
-Kubernetes version: VERSION
-
-💾 Total cluster capacity
-Compute resources:
-
-Total CPU: 8 cores (2 cores per node)
-Total Memory: 15 GB (~4 GB per node)
-
-📊 Pod capacity
-Maximum pods: 330 total (110 per node)
-Current allocatable: 330 pod slots available
+Allocatable is slightly lower than capacity because Kubernetes reserves some
+CPU/memory/storage for system and kubelet overhead on each node.
 ```
 
 ![Prompt](/img/lab3/2.5-grafana-assistant-1.png)
