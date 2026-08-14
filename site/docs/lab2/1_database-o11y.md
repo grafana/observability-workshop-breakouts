@@ -109,9 +109,13 @@ Click the query to open **Query Details**; the **Rows** panel makes it vivid - *
 **How to find it:**
 
 1. In the Queries Overview row for the slow query, read **Calls**, **Duration (avg)**, **Rows Examined**, and **Rows Sent**.
-2. Click the query to open **Query Details** and read the **Rows** panel: Rows Examined is orders of magnitude larger than Rows Sent.
+2. Click the query to open **Query Details** and read the **Duration** panel - hover the chart for the AVG/P95/P99 values (average runs in the minutes, P99 over 11).
 
-![Query Details Rows panel - Rows Examined ~22.9M/s vs Rows Sent ~10/s](/img/lab2/2.2-rows.png)
+   ![Query Details Duration panel - average runs in the minutes, P99 over 11](/img/lab2/2.2-duration.png)
+
+3. Read the **Rows** panel: Rows Examined is orders of magnitude larger than Rows Sent.
+
+   ![Query Details Rows panel - Rows Examined ~22.9M/s vs Rows Sent ~10/s](/img/lab2/2.2-rows.png)
 
 </details>
 
@@ -192,7 +196,9 @@ This query's CPU time climbs across the window - and the **instance** it runs on
 
 2. To see the **host / RDS CPU**, you leave Database Observability - the instance name here isn't a link to a CPU panel (its only link is *Filter Queries*). In the left menu open **Observability -> Cloud provider**, choose **AWS**, and under **Quick Links to Dashboards** click **RDS**.
 
-   ![Cloud Provider Observability - AWS, RDS quick link](/img/lab2/2.5-cloud-provider-rds.png)
+   <img src={require('@site/static/img/lab2/2.5-cloud-provider-nav.png').default} alt="The left menu - Observability, Cloud provider" width="664" />
+
+   <img src={require('@site/static/img/lab2/2.5-cloud-provider-rds.png').default} alt="Cloud Provider Observability - AWS, RDS quick link" width="547" />
 
    :::tip Jump straight to the RDS dashboard
    <EnvLink path="/a/grafana-csp-app/aws/dashboards/rds" from="09:00" to="10:00" params="var-datasource=grafanacloud-prom&var-job=$__all&var-account=$__all&var-region=$__all">Open the AWS RDS dashboard in Cloud Provider Observability</EnvLink> - needs only your environment ID from the Welcome page. Skips the menu clicks and lands on the RDS fleet view with the lab window applied.
@@ -227,11 +233,11 @@ The Assistant loads the query's context automatically - the SQL, all four tables
 
 Its **diagnosis matches what you found by hand**: a correlated subquery run once per product row (an N+1 pattern), `UPPER(product_id)` that defeats the `order_items` index, a non-sargable `DATE()` predicate, and four near-identical `UNION ALL` branches that each re-scan.
 
-![The Assistant's explanation of why the query is slow](/img/lab2/2.6-assistant-why.png)
+<img src={require('@site/static/img/lab2/2.6-assistant-why.png').default} alt="The Assistant's explanation of why the query is slow" width="500" />
 
 And it proposes concrete, dialect-specific fixes with ready-to-run SQL: rewrite the correlated subquery as a single aggregated **JOIN**, drop the `UPPER()` wrapper (or add a functional index), add `idx_order_date` and fix the date predicate, collapse the four `UNION ALL` branches, and index `customers.country`.
 
-![The Assistant's optimization recommendations with ALTER TABLE / CREATE INDEX statements](/img/lab2/2.6-assistant-fix.png)
+<img src={require('@site/static/img/lab2/2.6-assistant-fix.png').default} alt="The Assistant's optimization recommendations with ALTER TABLE / CREATE INDEX statements" width="500" />
 
 :::note Trust, but verify
 Check each recommendation against your own evidence before acting on it: the **JOIN rewrite** addresses the correlated subquery from the **Explain Plan** (Question 3); the **index** addresses the missing "Indexed" badge from **Table Schema Details** (Question 4); and both cut the **Rows Examined** and **CPU** you saw in Questions 2 and 5. The diagnosis and fix line up with what you found - so it's safe to take forward (in practice: test on a copy and confirm the new Explain Plan uses the index). LLM output varies between runs; judge it on whether it matches the evidence, not on the wording.
@@ -262,11 +268,13 @@ The instance's own insights already name the problem - high CPU load and spikes 
 
 **How to find it:**
 
-1. On the `orders-db` instance dashboard, click the **Insights** button and review the firing insights (`AwsRDSHighCpuLoad`, etc.).
+1. On the `orders-db` instance dashboard, click the **Insights** button (next to the time picker) and review the firing insights (`AwsRDSHighCpuLoad`, etc.).
 
-   ![RDS instance Insights, with the Analyze button](/img/lab2/2.6-assistant-analyze.png)
+   ![The orders-db instance dashboard with the Insights button open, listing the firing insights](/img/lab2/2.6-rds-insights.png)
 
-2. Click **Analyze**, then check its conclusion against yours - it should tie the CPU saturation to the recommendation service and the slow query, not send you elsewhere.
+2. Click **Analyze** at the bottom of the Insights popover, then check its conclusion against yours - it should tie the CPU saturation to the recommendation service and the slow query, not send you elsewhere.
+
+   ![The Insights popover's Analyze button hands the entity to the Assistant](/img/lab2/2.6-assistant-analyze.png)
 
    ![The Assistant's analysis of the RDS instance, pointing back to the recommendation service and slow query](/img/lab2/2.6-assistant-analysis.png)
 

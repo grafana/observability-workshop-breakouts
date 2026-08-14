@@ -1,0 +1,23 @@
+[    3808ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://devfedb13.grafana.net/apis/userstorage.grafana.app/v0alpha1/namespaces/stacks-1757201/user-storage/saved-queries:dfuhj9wjtgge8e:0
+[    5238ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://devfedb13.grafana.net/apis/userstorage.grafana.app/v0alpha1/namespaces/stacks-1757201/user-storage/grafana-runtime:dfuhj9wjtgge8e:0
+[   22878ms] [ERROR] Failed to load resource: the server responded with a status of 522 () @ https://devfedb13.grafana.net/api/plugins/grafana-auth-app/settings:0
+[   22895ms] [ERROR] PluginSettings: getting legacy plugin settings failed {source: grafana/runtime.plugins.settings, pluginId: grafana-auth-app} TracedError: PluginSettings: getting legacy plugin settings failed
+    at o (https://grafana-assets.grafana.net/grafana/13.2.0-31683987170/public/build/5119.65de45476341df3d2a2b.js:6:188527)
+    at https://grafana-assets.grafana.net/grafana/13.2.0-31683987170/public/build/5119.65de45476341df3d2a2b.js:6:186888
+    at async r (https://grafana-assets.grafana.net/grafana/13.2.0-31683987170/public/build/5119.65de45476341df3d2a2b.js:1243:44625)
+    at async Promise.all (index 6)
+    at async c (https://grafana-assets.grafana.net/grafana/13.2.0-31683987170/public/build/5119.65de45476341df3d2a2b.js:1243:44541) @ https://plugins-cdn.grafana.net/grafana-k8s-app/2.36.1/public/plugins/grafana-k8s-app/8283.js?_cache=9f6a36359f0d53d5f0be:0
+[   22897ms] [ERROR] [Plugins] Failed to preload plugin: https://plugins-cdn.grafana.net/grafana-auth-app/2.11.23/public/plugins/grafana-auth-app/module.js (version: 2.11.23) Error: Unknown Plugin
+    at https://grafana-assets.grafana.net/grafana/13.2.0-31683987170/public/build/5119.65de45476341df3d2a2b.js:6:186976
+    at async r (https://grafana-assets.grafana.net/grafana/13.2.0-31683987170/public/build/5119.65de45476341df3d2a2b.js:1243:44625)
+    at async Promise.all (index 6)
+    at async c (https://grafana-assets.grafana.net/grafana/13.2.0-31683987170/public/build/5119.65de45476341df3d2a2b.js:1243:44541) @ https://plugins-cdn.grafana.net/grafana-k8s-app/2.36.1/public/plugins/grafana-k8s-app/8283.js?_cache=9f6a36359f0d53d5f0be:0
+[   22899ms] [ERROR] Failed to load resource: the server responded with a status of 522 () @ https://devfedb13.grafana.net/api/plugins/grafana-lokiexplore-app/settings:0
+[   22900ms] [ERROR] PluginSettings: getting legacy plugin settings failed {source: grafana/runtime.plugins.settings, pluginId: grafana-lokiexplore-app} TracedError: PluginSettings: getting legacy plugin settings failed
+    at o (https://grafana-assets.grafana.net/grafana/13.2.0-31683987170/public/build/5119.65de45476341df3d2a2b.js:6:188527)
+    at https://grafana-assets.grafana.net/grafana/13.2.0-31683987170/public/build/5119.65de45476341df3d2a2b.js:6:186888
+    at async r (https://grafana-assets.grafana.net/grafana/13.2.0-31683987170/public/build/5119.65de45476341df3d2a2b.js:1243:44625) @ https://plugins-cdn.grafana.net/grafana-k8s-app/2.36.1/public/plugins/grafana-k8s-app/8283.js?_cache=9f6a36359f0d53d5f0be:0
+[   22900ms] [ERROR] [Plugins] Failed to preload plugin: https://plugins-cdn.grafana.net/grafana-lokiexplore-app/2.5.0/public/plugins/grafana-lokiexplore-app/module.js (version: 2.5.0) Error: Unknown Plugin
+    at https://grafana-assets.grafana.net/grafana/13.2.0-31683987170/public/build/5119.65de45476341df3d2a2b.js:6:186976
+    at async r (https://grafana-assets.grafana.net/grafana/13.2.0-31683987170/public/build/5119.65de45476341df3d2a2b.js:1243:44625) @ https://plugins-cdn.grafana.net/grafana-k8s-app/2.36.1/public/plugins/grafana-k8s-app/8283.js?_cache=9f6a36359f0d53d5f0be:0
+[   24142ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://devfedb13.grafana.net/apis/productactivation.ext.grafana.com/v1alpha1/namespaces/stacks-1757201/hosto11yconfigs/global:0

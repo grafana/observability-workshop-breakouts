@@ -1,0 +1,1137 @@
+[    2201ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://devfedb13.grafana.net/apis/userstorage.grafana.app/v0alpha1/namespaces/stacks-1757201/user-storage/saved-queries:dfuhj9wjtgge8e:0
+[    3128ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://devfedb13.grafana.net/apis/productactivation.ext.grafana.com/v1alpha1/namespaces/stacks-1757201/hosto11yconfigs/global:0
+[  232817ms] [WARNING] Deprecation warning: value provided is not in a recognized RFC2822 or ISO format. moment construction falls back to js Date(), which is not reliable across all browsers and versions. Non RFC2822/ISO date formats are discouraged. Please refer to http://momentjs.com/guides/#/warnings/js-date/ for more info.
+Arguments: 
+[0] _isAMomentObject: true, _isUTC: false, _useUTC: false, _l: undefined, _i: 1786104000000, _f: undefined, _strict: undefined, _locale: [object Object]
+Error
+    at a.createFromInputFallback (https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/6029-react19.bd349141416938549393.js:624:3)
+    at an (https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/6029-react19.bd349141416938549393.js:624:25639)
+    at un (https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/6029-react19.bd349141416938549393.js:624:29347)
+    at aa (https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/6029-react19.bd349141416938549393.js:624:29213)
+    at on (https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/6029-react19.bd349141416938549393.js:624:28930)
+    at sa (https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/6029-react19.bd349141416938549393.js:624:29707)
+    at A (https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/6029-react19.bd349141416938549393.js:624:29740)
+    at a (https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/6029-react19.bd349141416938549393.js:621:89)
+    at m (https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/5119-react19.04839b77a0857c727c26.js:2:29887)
+    at x (https://plugins-cdn.grafana.net/grafana-k8s-app/2.36.1/public/plugins/grafana-k8s-app/6810.js?_cache=f22f6186339643ff2926:1:4579) @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[  232840ms] [WARNING] SceneObject already has a parent set that is different from the new parent. You cannot share the same SceneObject instance in multiple scenes or in multiple different places of the same scene graph. Use SceneObject.clone() to duplicate a SceneObject or store a state key reference and use sceneGraph.findObject to locate it. d u @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[  293108ms] [ERROR] TypeError: Cannot read properties of undefined (reading 'utc')
+    at https://plugins-cdn.grafana.net/grafana-k8s-app/2.36.1/public/plugins/grafana-k8s-app/9770.js?_cache=0b713f2558b8befec317:1:936
+    at Object.Ks [as useMemo] (https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:263:58697)
+    at https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:248:7490
+    at a (https://plugins-cdn.grafana.net/grafana-k8s-app/2.36.1/public/plugins/grafana-k8s-app/9770.js?_cache=0b713f2558b8befec317:1:809)
+    at Zl (https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:263:49468)
+    at Ki (https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:263:72956)
+    at Su (https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:263:83764)
+    at zh (https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:263:120751)
+    at Ap (https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:263:119768)
+    at ah (https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:263:119593) @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[  293128ms] [ERROR] Extension "grafana-k8s-app/K8s Object Detail" failed to load. {title: K8s Object Detail, description: Metrics details for various k8s objects, pluginId: grafana-k8s-app, message: Cannot read properties of undefined (reading 'utc'), componentStack: 
+    at a (https://plugins-cdn.grafana.net/grafana…/5119-react19.04839b77a0857c727c26.js:170:125297)} @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[  293133ms] [ERROR] PanelQueryRunner Error TypeError: Cannot read properties of undefined (reading 'valueOf')
+    at Module.B (https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/5119-react19.04839b77a0857c727c26.js:2:39771)
+    at $.prepareRequests (https://plugins-cdn.grafana.net/grafana-k8s-app/2.36.1/public/plugins/grafana-k8s-app/6262.js?_cache=81c4e95901776f0a6448:2:101194)
+    at $.runWithTimeRange (https://plugins-cdn.grafana.net/grafana-k8s-app/2.36.1/public/plugins/grafana-k8s-app/6262.js?_cache=81c4e95901776f0a6448:2:98707) @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[  293133ms] [ERROR] PanelQueryRunner Error TypeError: Cannot read properties of undefined (reading 'valueOf')
+    at Module.B (https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/5119-react19.04839b77a0857c727c26.js:2:39771)
+    at $.prepareRequests (https://plugins-cdn.grafana.net/grafana-k8s-app/2.36.1/public/plugins/grafana-k8s-app/6262.js?_cache=81c4e95901776f0a6448:2:101194)
+    at $.runWithTimeRange (https://plugins-cdn.grafana.net/grafana-k8s-app/2.36.1/public/plugins/grafana-k8s-app/6262.js?_cache=81c4e95901776f0a6448:2:98707) @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[  293134ms] [ERROR] PanelQueryRunner Error TypeError: Cannot read properties of undefined (reading 'valueOf')
+    at Module.B (https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/5119-react19.04839b77a0857c727c26.js:2:39771)
+    at $.prepareRequests (https://plugins-cdn.grafana.net/grafana-k8s-app/2.36.1/public/plugins/grafana-k8s-app/6262.js?_cache=81c4e95901776f0a6448:2:101194)
+    at $.runWithTimeRange (https://plugins-cdn.grafana.net/grafana-k8s-app/2.36.1/public/plugins/grafana-k8s-app/6262.js?_cache=81c4e95901776f0a6448:2:98707) @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[  293134ms] [ERROR] PanelQueryRunner Error TypeError: Cannot read properties of undefined (reading 'valueOf')
+    at Module.B (https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/5119-react19.04839b77a0857c727c26.js:2:39771)
+    at $.prepareRequests (https://plugins-cdn.grafana.net/grafana-k8s-app/2.36.1/public/plugins/grafana-k8s-app/6262.js?_cache=81c4e95901776f0a6448:2:101194)
+    at $.runWithTimeRange (https://plugins-cdn.grafana.net/grafana-k8s-app/2.36.1/public/plugins/grafana-k8s-app/6262.js?_cache=81c4e95901776f0a6448:2:98707) @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[  293134ms] [ERROR] PanelQueryRunner Error TypeError: Cannot read properties of undefined (reading 'valueOf')
+    at Module.B (https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/5119-react19.04839b77a0857c727c26.js:2:39771)
+    at $.prepareRequests (https://plugins-cdn.grafana.net/grafana-k8s-app/2.36.1/public/plugins/grafana-k8s-app/6262.js?_cache=81c4e95901776f0a6448:2:101194)
+    at $.runWithTimeRange (https://plugins-cdn.grafana.net/grafana-k8s-app/2.36.1/public/plugins/grafana-k8s-app/6262.js?_cache=81c4e95901776f0a6448:2:98707) @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[  293134ms] [ERROR] PanelQueryRunner Error TypeError: Cannot read properties of undefined (reading 'valueOf')
+    at Module.B (https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/5119-react19.04839b77a0857c727c26.js:2:39771)
+    at $.prepareRequests (https://plugins-cdn.grafana.net/grafana-k8s-app/2.36.1/public/plugins/grafana-k8s-app/6262.js?_cache=81c4e95901776f0a6448:2:101194)
+    at $.runWithTimeRange (https://plugins-cdn.grafana.net/grafana-k8s-app/2.36.1/public/plugins/grafana-k8s-app/6262.js?_cache=81c4e95901776f0a6448:2:98707) @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[  293134ms] [ERROR] PanelQueryRunner Error TypeError: Cannot read properties of undefined (reading 'valueOf')
+    at Module.B (https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/5119-react19.04839b77a0857c727c26.js:2:39771)
+    at $.prepareRequests (https://plugins-cdn.grafana.net/grafana-k8s-app/2.36.1/public/plugins/grafana-k8s-app/6262.js?_cache=81c4e95901776f0a6448:2:101194)
+    at $.runWithTimeRange (https://plugins-cdn.grafana.net/grafana-k8s-app/2.36.1/public/plugins/grafana-k8s-app/6262.js?_cache=81c4e95901776f0a6448:2:98707) @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[  293135ms] [ERROR] PanelQueryRunner Error TypeError: Cannot read properties of undefined (reading 'valueOf')
+    at Module.B (https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/5119-react19.04839b77a0857c727c26.js:2:39771)
+    at $.prepareRequests (https://plugins-cdn.grafana.net/grafana-k8s-app/2.36.1/public/plugins/grafana-k8s-app/6262.js?_cache=81c4e95901776f0a6448:2:101194)
+    at $.runWithTimeRange (https://plugins-cdn.grafana.net/grafana-k8s-app/2.36.1/public/plugins/grafana-k8s-app/6262.js?_cache=81c4e95901776f0a6448:2:98707) @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[  293135ms] [ERROR] PanelQueryRunner Error TypeError: Cannot read properties of undefined (reading 'valueOf')
+    at Module.B (https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/5119-react19.04839b77a0857c727c26.js:2:39771)
+    at $.prepareRequests (https://plugins-cdn.grafana.net/grafana-k8s-app/2.36.1/public/plugins/grafana-k8s-app/6262.js?_cache=81c4e95901776f0a6448:2:101194)
+    at $.runWithTimeRange (https://plugins-cdn.grafana.net/grafana-k8s-app/2.36.1/public/plugins/grafana-k8s-app/6262.js?_cache=81c4e95901776f0a6448:2:98707) @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[  293135ms] [ERROR] PanelQueryRunner Error TypeError: Cannot read properties of undefined (reading 'valueOf')
+    at Module.B (https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/5119-react19.04839b77a0857c727c26.js:2:39771)
+    at $.prepareRequests (https://plugins-cdn.grafana.net/grafana-k8s-app/2.36.1/public/plugins/grafana-k8s-app/6262.js?_cache=81c4e95901776f0a6448:2:101194)
+    at $.runWithTimeRange (https://plugins-cdn.grafana.net/grafana-k8s-app/2.36.1/public/plugins/grafana-k8s-app/6262.js?_cache=81c4e95901776f0a6448:2:98707) @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[  293135ms] [ERROR] PanelQueryRunner Error TypeError: Cannot read properties of undefined (reading 'valueOf')
+    at Module.B (https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/5119-react19.04839b77a0857c727c26.js:2:39771)
+    at $.prepareRequests (https://plugins-cdn.grafana.net/grafana-k8s-app/2.36.1/public/plugins/grafana-k8s-app/6262.js?_cache=81c4e95901776f0a6448:2:101194)
+    at $.runWithTimeRange (https://plugins-cdn.grafana.net/grafana-k8s-app/2.36.1/public/plugins/grafana-k8s-app/6262.js?_cache=81c4e95901776f0a6448:2:98707) @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[  293135ms] [ERROR] PanelQueryRunner Error TypeError: Cannot read properties of undefined (reading 'valueOf')
+    at Module.B (https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/5119-react19.04839b77a0857c727c26.js:2:39771)
+    at $.prepareRequests (https://plugins-cdn.grafana.net/grafana-k8s-app/2.36.1/public/plugins/grafana-k8s-app/6262.js?_cache=81c4e95901776f0a6448:2:101194)
+    at $.runWithTimeRange (https://plugins-cdn.grafana.net/grafana-k8s-app/2.36.1/public/plugins/grafana-k8s-app/6262.js?_cache=81c4e95901776f0a6448:2:98707) @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[  293135ms] [ERROR] PanelQueryRunner Error TypeError: Cannot read properties of undefined (reading 'valueOf')
+    at Module.B (https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/5119-react19.04839b77a0857c727c26.js:2:39771)
+    at $.prepareRequests (https://plugins-cdn.grafana.net/grafana-k8s-app/2.36.1/public/plugins/grafana-k8s-app/6262.js?_cache=81c4e95901776f0a6448:2:101194)
+    at $.runWithTimeRange (https://plugins-cdn.grafana.net/grafana-k8s-app/2.36.1/public/plugins/grafana-k8s-app/6262.js?_cache=81c4e95901776f0a6448:2:98707) @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[  293135ms] [ERROR] PanelQueryRunner Error TypeError: Cannot read properties of undefined (reading 'valueOf')
+    at Module.B (https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/5119-react19.04839b77a0857c727c26.js:2:39771)
+    at $.prepareRequests (https://plugins-cdn.grafana.net/grafana-k8s-app/2.36.1/public/plugins/grafana-k8s-app/6262.js?_cache=81c4e95901776f0a6448:2:101194)
+    at $.runWithTimeRange (https://plugins-cdn.grafana.net/grafana-k8s-app/2.36.1/public/plugins/grafana-k8s-app/6262.js?_cache=81c4e95901776f0a6448:2:98707) @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[  293136ms] [ERROR] PanelQueryRunner Error TypeError: Cannot read properties of undefined (reading 'valueOf')
+    at Module.B (https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/5119-react19.04839b77a0857c727c26.js:2:39771)
+    at $.prepareRequests (https://plugins-cdn.grafana.net/grafana-k8s-app/2.36.1/public/plugins/grafana-k8s-app/6262.js?_cache=81c4e95901776f0a6448:2:101194)
+    at $.runWithTimeRange (https://plugins-cdn.grafana.net/grafana-k8s-app/2.36.1/public/plugins/grafana-k8s-app/6262.js?_cache=81c4e95901776f0a6448:2:98707) @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[  293136ms] [ERROR] PanelQueryRunner Error TypeError: Cannot read properties of undefined (reading 'valueOf')
+    at Module.B (https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/5119-react19.04839b77a0857c727c26.js:2:39771)
+    at $.prepareRequests (https://plugins-cdn.grafana.net/grafana-k8s-app/2.36.1/public/plugins/grafana-k8s-app/6262.js?_cache=81c4e95901776f0a6448:2:101194)
+    at $.runWithTimeRange (https://plugins-cdn.grafana.net/grafana-k8s-app/2.36.1/public/plugins/grafana-k8s-app/6262.js?_cache=81c4e95901776f0a6448:2:98707) @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[  293136ms] [ERROR] PanelQueryRunner Error TypeError: Cannot read properties of undefined (reading 'valueOf')
+    at Module.B (https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/5119-react19.04839b77a0857c727c26.js:2:39771)
+    at $.prepareRequests (https://plugins-cdn.grafana.net/grafana-k8s-app/2.36.1/public/plugins/grafana-k8s-app/6262.js?_cache=81c4e95901776f0a6448:2:101194)
+    at $.runWithTimeRange (https://plugins-cdn.grafana.net/grafana-k8s-app/2.36.1/public/plugins/grafana-k8s-app/6262.js?_cache=81c4e95901776f0a6448:2:98707) @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[  293136ms] [ERROR] PanelQueryRunner Error TypeError: Cannot read properties of undefined (reading 'valueOf')
+    at Module.B (https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/5119-react19.04839b77a0857c727c26.js:2:39771)
+    at $.prepareRequests (https://plugins-cdn.grafana.net/grafana-k8s-app/2.36.1/public/plugins/grafana-k8s-app/6262.js?_cache=81c4e95901776f0a6448:2:101194)
+    at $.runWithTimeRange (https://plugins-cdn.grafana.net/grafana-k8s-app/2.36.1/public/plugins/grafana-k8s-app/6262.js?_cache=81c4e95901776f0a6448:2:98707) @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[  293136ms] [ERROR] AnnotationsDataLayer error TypeError: Cannot read properties of undefined (reading 'valueOf')
+    at Module.B (https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/5119-react19.04839b77a0857c727c26.js:2:39771)
+    at ge (https://plugins-cdn.grafana.net/grafana-k8s-app/2.36.1/public/plugins/grafana-k8s-app/58.js?_cache=5f13042613d50d9db665:1:19862)
+    at Ee.runWithTimeRange (https://plugins-cdn.grafana.net/grafana-k8s-app/2.36.1/public/plugins/grafana-k8s-app/58.js?_cache=5f13042613d50d9db665:1:21839) @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[  293136ms] [ERROR] AnnotationsDataLayer error TypeError: Cannot read properties of undefined (reading 'valueOf')
+    at Module.B (https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/5119-react19.04839b77a0857c727c26.js:2:39771)
+    at ge (https://plugins-cdn.grafana.net/grafana-k8s-app/2.36.1/public/plugins/grafana-k8s-app/58.js?_cache=5f13042613d50d9db665:1:19862)
+    at Ee.runWithTimeRange (https://plugins-cdn.grafana.net/grafana-k8s-app/2.36.1/public/plugins/grafana-k8s-app/58.js?_cache=5f13042613d50d9db665:1:21839) @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[  293137ms] [ERROR] AnnotationsDataLayer error TypeError: Cannot read properties of undefined (reading 'valueOf')
+    at Module.B (https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/5119-react19.04839b77a0857c727c26.js:2:39771)
+    at ge (https://plugins-cdn.grafana.net/grafana-k8s-app/2.36.1/public/plugins/grafana-k8s-app/58.js?_cache=5f13042613d50d9db665:1:19862)
+    at Ee.runWithTimeRange (https://plugins-cdn.grafana.net/grafana-k8s-app/2.36.1/public/plugins/grafana-k8s-app/58.js?_cache=5f13042613d50d9db665:1:21839) @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[  293137ms] [ERROR] AnnotationsDataLayer error TypeError: Cannot read properties of undefined (reading 'valueOf')
+    at Module.B (https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/5119-react19.04839b77a0857c727c26.js:2:39771)
+    at ge (https://plugins-cdn.grafana.net/grafana-k8s-app/2.36.1/public/plugins/grafana-k8s-app/58.js?_cache=5f13042613d50d9db665:1:19862)
+    at Ee.runWithTimeRange (https://plugins-cdn.grafana.net/grafana-k8s-app/2.36.1/public/plugins/grafana-k8s-app/58.js?_cache=5f13042613d50d9db665:1:21839) @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[  293137ms] [ERROR] AnnotationsDataLayer error TypeError: Cannot read properties of undefined (reading 'valueOf')
+    at Module.B (https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/5119-react19.04839b77a0857c727c26.js:2:39771)
+    at ge (https://plugins-cdn.grafana.net/grafana-k8s-app/2.36.1/public/plugins/grafana-k8s-app/58.js?_cache=5f13042613d50d9db665:1:19862)
+    at Ee.runWithTimeRange (https://plugins-cdn.grafana.net/grafana-k8s-app/2.36.1/public/plugins/grafana-k8s-app/58.js?_cache=5f13042613d50d9db665:1:21839) @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[  293137ms] [ERROR] AnnotationsDataLayer error TypeError: Cannot read properties of undefined (reading 'valueOf')
+    at Module.B (https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/5119-react19.04839b77a0857c727c26.js:2:39771)
+    at ge (https://plugins-cdn.grafana.net/grafana-k8s-app/2.36.1/public/plugins/grafana-k8s-app/58.js?_cache=5f13042613d50d9db665:1:19862)
+    at Ee.runWithTimeRange (https://plugins-cdn.grafana.net/grafana-k8s-app/2.36.1/public/plugins/grafana-k8s-app/58.js?_cache=5f13042613d50d9db665:1:21839) @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[  891771ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[  892263ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[ 1669864ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[ 1670058ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[ 2618599ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[ 2619109ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[ 2619668ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[ 3840465ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[ 3840808ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[ 3841611ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(2)} TypeError: Cannot read properties of undefined (reading 'internalLogger')
+    at logDebug (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:34525)
+    at J.extendFaroSession (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:93777)
+    at J.<anonymous> (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:92856)
+    at Generator.next (<anonymous>)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:90500
+    at new Promise (<anonymous>)
+    at K (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:90248)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:92747 @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[ 4982734ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[ 4983026ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[ 5994206ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[ 5994647ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[ 7010829ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[ 7011228ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[ 7011862ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[ 8031275ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[ 8031777ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[ 9398079ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[ 9398603ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[13912380ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[13912874ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[14887841ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[14888220ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[15838987ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[15839596ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[15840109ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[16789109ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[16789710ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[16790216ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[17791369ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[17791663ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[18729510ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[18730124ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[18730526ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[19717701ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[19718030ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[20785585ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[20785932ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[22227744ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[22228090ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[23230941ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[23231228ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[24168841ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[24169313ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[24169927ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[24170246ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(2)} TypeError: Cannot read properties of undefined (reading 'internalLogger')
+    at logDebug (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:34525)
+    at J.extendFaroSession (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:93777)
+    at J.<anonymous> (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:92856)
+    at Generator.next (<anonymous>)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:90500
+    at new Promise (<anonymous>)
+    at K (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:90248)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:92747 @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[24878883ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[24879254ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[25511438ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[25511620ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[26134449ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[26134860ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[27026630ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[27027229ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[33921705ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[33922060ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[34974640ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[34975148ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[35642679ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[35643213ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[53564109ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: Error in connection establishment: net::ERR_INTERNET_DISCONNECTED @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[53564150ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://devfedb13.grafana.net/api/login/ping:0
+[53564399ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/e3c6e2fd455e8f85102e5c6bcdf0ef29:0
+[53564403ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(1)} TypeError: Failed to fetch
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:164781
+    at o.<computed>.o.<computed> (https://rsi.grafana.com/v1.1/js-integrations/Fullstory.min.js:1:5852)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:92514
+    at o (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91308)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91491
+    at new Promise (<anonymous>)
+    at Object.add (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91431)
+    at J.<anonymous> (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91852)
+    at Generator.next (<anonymous>)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:90500 @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[53564414ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/img/icons/unicons/exclamation-circle.svg:0
+[53564555ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/e3c6e2fd455e8f85102e5c6bcdf0ef29:0
+[53564556ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(1)} TypeError: Failed to fetch
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:164781
+    at o.<computed>.o.<computed> (https://rsi.grafana.com/v1.1/js-integrations/Fullstory.min.js:1:5852)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:92514
+    at o (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91308)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91491
+    at new Promise (<anonymous>)
+    at Object.add (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91431)
+    at J.<anonymous> (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91852)
+    at Generator.next (<anonymous>)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:90500 @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[53565004ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: Error in connection establishment: net::ERR_INTERNET_DISCONNECTED @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[53565263ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[53565269ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[53566776ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: Error in connection establishment: net::ERR_INTERNET_DISCONNECTED @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[53567288ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[53567295ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[53570223ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: Error in connection establishment: net::ERR_INTERNET_DISCONNECTED @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[53570269ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://devfedb13.grafana.net/api/login/ping:0
+[53570307ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/e3c6e2fd455e8f85102e5c6bcdf0ef29:0
+[53570307ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(1)} TypeError: Failed to fetch
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:164781
+    at o.<computed>.o.<computed> (https://rsi.grafana.com/v1.1/js-integrations/Fullstory.min.js:1:5852)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:92514
+    at o (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91308)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91491
+    at new Promise (<anonymous>)
+    at Object.add (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91431)
+    at J.<anonymous> (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91852)
+    at Generator.next (<anonymous>)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:90500 @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[53571269ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[53571274ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[53571276ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: Error in connection establishment: net::ERR_INTERNET_DISCONNECTED @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[53573287ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[53573293ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[53574795ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: Error in connection establishment: net::ERR_INTERNET_DISCONNECTED @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[53584244ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: Error in connection establishment: net::ERR_INTERNET_DISCONNECTED @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[53584258ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://devfedb13.grafana.net/api/login/ping:0
+[53584291ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/e3c6e2fd455e8f85102e5c6bcdf0ef29:0
+[53584291ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(1)} TypeError: Failed to fetch
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:164781
+    at o.<computed>.o.<computed> (https://rsi.grafana.com/v1.1/js-integrations/Fullstory.min.js:1:5852)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:92514
+    at o (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91308)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91491
+    at new Promise (<anonymous>)
+    at Object.add (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91431)
+    at J.<anonymous> (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91852)
+    at Generator.next (<anonymous>)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:90500 @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[53584337ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/img/icons/unicons/exclamation-circle.svg:0
+[53584541ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/e3c6e2fd455e8f85102e5c6bcdf0ef29:0
+[53584541ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(1)} TypeError: Failed to fetch
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:164781
+    at o.<computed>.o.<computed> (https://rsi.grafana.com/v1.1/js-integrations/Fullstory.min.js:1:5852)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:92514
+    at o (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91308)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91491
+    at new Promise (<anonymous>)
+    at Object.add (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91431)
+    at J.<anonymous> (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91852)
+    at Generator.next (<anonymous>)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:90500 @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[53585260ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[53585266ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[53587264ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[53587270ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[53592056ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: Error in connection establishment: net::ERR_INTERNET_DISCONNECTED @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[53592063ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://devfedb13.grafana.net/api/login/ping:0
+[53592121ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/img/icons/unicons/exclamation-circle.svg:0
+[53592314ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/e3c6e2fd455e8f85102e5c6bcdf0ef29:0
+[53592315ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(2)} TypeError: Failed to fetch
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:164781
+    at o.<computed>.o.<computed> (https://rsi.grafana.com/v1.1/js-integrations/Fullstory.min.js:1:5852)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:92514
+    at o (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91308)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91491
+    at new Promise (<anonymous>)
+    at Object.add (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91431)
+    at J.<anonymous> (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91852)
+    at Generator.next (<anonymous>)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:90500 @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[53594617ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://devfedb13.grafana.net/api/datasources/uid/grafanacloud-profiles/resources/labelValues?label=service_name&query=%7B%7D&start=1786392261601&end=1786395861601:0
+[53594628ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://devfedb13.grafana.net/api/plugins/grafana-asserts-app/resources/asserts/kg-quality/v1/entities/quality-reports?type=Service&page=0&pageSize=1&sortDirection=ASC&namespace=ecommerce-prod&entityName=productcatalog:0
+[53594629ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://devfedb13.grafana.net/api/datasources/proxy/uid/grafanacloud-prom/api/v1/query?query=count%28%7B__name__%3D~%22process_cpu_time_seconds_total%7Cprocess_cpu_time%22%2C%20job%3D%22ecommerce-prod%2Fproductcatalogservice%22%7D%29:0
+[53594630ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://devfedb13.grafana.net/api/plugins/grafana-asserts-app/resources/asserts/api-server/v1/search:0
+[53594630ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://devfedb13.grafana.net/api/plugins/grafana-asserts-app/resources/asserts/api-server/v1/config/display/kpi:0
+[53594630ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://devfedb13.grafana.net/api/plugins/grafana-asserts-app/resources/asserts/kg-quality/v1/entities/Service/productcatalogservice/quality-report?env=devfedb13-cluster&namespace=ecommerce-prod&site=us-east-2:0
+[53594663ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[54562897ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[54562901ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[54562902ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/e3c6e2fd455e8f85102e5c6bcdf0ef29:0
+[54562903ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(6)} TypeError: Failed to fetch
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:164781
+    at o.<computed>.o.<computed> (https://rsi.grafana.com/v1.1/js-integrations/Fullstory.min.js:1:5852)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:92514
+    at o (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91308)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91491
+    at new Promise (<anonymous>)
+    at Object.add (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91431)
+    at J.<anonymous> (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91852)
+    at Generator.next (<anonymous>)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:90500 @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[54562904ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[54562919ms] [WARNING] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: WebSocket is closed before the connection is established. @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[54562936ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[54562937ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[54571883ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: Error in connection establishment: net::ERR_INTERNET_DISCONNECTED @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[54571896ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://devfedb13.grafana.net/api/login/ping:0
+[54571979ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/img/icons/unicons/exclamation-circle.svg:0
+[54572056ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/e3c6e2fd455e8f85102e5c6bcdf0ef29:0
+[54572056ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(2)} TypeError: Failed to fetch
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:164781
+    at o.<computed>.o.<computed> (https://rsi.grafana.com/v1.1/js-integrations/Fullstory.min.js:1:5852)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:92514
+    at o (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91308)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91491
+    at new Promise (<anonymous>)
+    at Object.add (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91431)
+    at J.<anonymous> (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91852)
+    at Generator.next (<anonymous>)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:90500 @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[54572273ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[54572275ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[54573342ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: Error in connection establishment: net::ERR_INTERNET_DISCONNECTED @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[54574273ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[54574278ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[56649598ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: Error in connection establishment: net::ERR_INTERNET_DISCONNECTED @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[56649620ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://devfedb13.grafana.net/api/login/ping:0
+[56649701ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/img/icons/unicons/exclamation-circle.svg:0
+[56649845ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/e3c6e2fd455e8f85102e5c6bcdf0ef29:0
+[56649846ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(2)} TypeError: Failed to fetch
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:164781
+    at o.<computed>.o.<computed> (https://rsi.grafana.com/v1.1/js-integrations/Fullstory.min.js:1:5852)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:92514
+    at o (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91308)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91491
+    at new Promise (<anonymous>)
+    at Object.add (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91431)
+    at J.<anonymous> (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91852)
+    at Generator.next (<anonymous>)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:90500 @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[57604846ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[57604852ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[57604884ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/e3c6e2fd455e8f85102e5c6bcdf0ef29:0
+[57604884ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(1)} TypeError: Failed to fetch
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:164781
+    at o.<computed>.o.<computed> (https://rsi.grafana.com/v1.1/js-integrations/Fullstory.min.js:1:5852)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:92514
+    at o (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91308)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91491
+    at new Promise (<anonymous>)
+    at Object.add (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91431)
+    at J.<anonymous> (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91852)
+    at Generator.next (<anonymous>)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:90500 @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[60486691ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: Error in connection establishment: net::ERR_INTERNET_DISCONNECTED @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[60486709ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://devfedb13.grafana.net/api/login/ping:0
+[60486724ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/e3c6e2fd455e8f85102e5c6bcdf0ef29:0
+[60486724ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(1)} TypeError: Failed to fetch
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:164781
+    at o.<computed>.o.<computed> (https://rsi.grafana.com/v1.1/js-integrations/Fullstory.min.js:1:5852)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:92514
+    at o (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91308)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91491
+    at new Promise (<anonymous>)
+    at Object.add (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91431)
+    at J.<anonymous> (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91852)
+    at Generator.next (<anonymous>)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:90500 @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[60486777ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/img/icons/unicons/exclamation-circle.svg:0
+[60486974ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/e3c6e2fd455e8f85102e5c6bcdf0ef29:0
+[60486974ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(1)} TypeError: Failed to fetch
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:164781
+    at o.<computed>.o.<computed> (https://rsi.grafana.com/v1.1/js-integrations/Fullstory.min.js:1:5852)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:92514
+    at o (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91308)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91491
+    at new Promise (<anonymous>)
+    at Object.add (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91431)
+    at J.<anonymous> (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91852)
+    at Generator.next (<anonymous>)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:90500 @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[60488187ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[60488189ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[61443629ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: Error in connection establishment: net::ERR_INTERNET_DISCONNECTED @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[61443644ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://devfedb13.grafana.net/api/login/ping:0
+[61443721ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/e3c6e2fd455e8f85102e5c6bcdf0ef29:0
+[61443721ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(1)} TypeError: Failed to fetch
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:164781
+    at o.<computed>.o.<computed> (https://rsi.grafana.com/v1.1/js-integrations/Fullstory.min.js:1:5852)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:92514
+    at o (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91308)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91491
+    at new Promise (<anonymous>)
+    at Object.add (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91431)
+    at J.<anonymous> (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91852)
+    at Generator.next (<anonymous>)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:90500 @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[61444892ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[61444897ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[61446888ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[61446892ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[62408381ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: Error in connection establishment: net::ERR_INTERNET_DISCONNECTED @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[62408390ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://devfedb13.grafana.net/api/login/ping:0
+[62408452ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/e3c6e2fd455e8f85102e5c6bcdf0ef29:0
+[62408452ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(1)} TypeError: Failed to fetch
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:164781
+    at o.<computed>.o.<computed> (https://rsi.grafana.com/v1.1/js-integrations/Fullstory.min.js:1:5852)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:92514
+    at o (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91308)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91491
+    at new Promise (<anonymous>)
+    at Object.add (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91431)
+    at J.<anonymous> (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91852)
+    at Generator.next (<anonymous>)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:90500 @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[62408457ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/img/icons/unicons/exclamation-circle.svg:0
+[62408691ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/e3c6e2fd455e8f85102e5c6bcdf0ef29:0
+[62408691ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(1)} TypeError: Failed to fetch
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:164781
+    at o.<computed>.o.<computed> (https://rsi.grafana.com/v1.1/js-integrations/Fullstory.min.js:1:5852)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:92514
+    at o (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91308)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91491
+    at new Promise (<anonymous>)
+    at Object.add (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91431)
+    at J.<anonymous> (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91852)
+    at Generator.next (<anonymous>)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:90500 @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[62409655ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[62409657ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[62409967ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: Error in connection establishment: net::ERR_INTERNET_DISCONNECTED @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[62411663ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[62411667ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[63534950ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: Error in connection establishment: net::ERR_INTERNET_DISCONNECTED @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[63534972ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://devfedb13.grafana.net/api/login/ping:0
+[63535058ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/img/icons/unicons/exclamation-circle.svg:0
+[63535127ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[63535130ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[63535157ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/e3c6e2fd455e8f85102e5c6bcdf0ef29:0
+[63535157ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(2)} TypeError: Failed to fetch
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:164781
+    at o.<computed>.o.<computed> (https://rsi.grafana.com/v1.1/js-integrations/Fullstory.min.js:1:5852)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:92514
+    at o (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91308)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91491
+    at new Promise (<anonymous>)
+    at Object.add (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91431)
+    at J.<anonymous> (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91852)
+    at Generator.next (<anonymous>)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:90500 @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[63537124ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[63537129ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[63543193ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: Error in connection establishment: net::ERR_INTERNET_DISCONNECTED @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[63543207ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://devfedb13.grafana.net/api/login/ping:0
+[63543271ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/img/icons/unicons/exclamation-circle.svg:0
+[63543408ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/e3c6e2fd455e8f85102e5c6bcdf0ef29:0
+[63543408ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(2)} TypeError: Failed to fetch
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:164781
+    at o.<computed>.o.<computed> (https://rsi.grafana.com/v1.1/js-integrations/Fullstory.min.js:1:5852)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:92514
+    at o (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91308)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91491
+    at new Promise (<anonymous>)
+    at Object.add (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91431)
+    at J.<anonymous> (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91852)
+    at Generator.next (<anonymous>)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:90500 @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[63545123ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[63545126ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[63555991ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: Error in connection establishment: net::ERR_INTERNET_DISCONNECTED @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[63556013ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://devfedb13.grafana.net/api/login/ping:0
+[63556081ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/img/icons/unicons/exclamation-circle.svg:0
+[63556156ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/e3c6e2fd455e8f85102e5c6bcdf0ef29:0
+[63556156ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(2)} TypeError: Failed to fetch
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:164781
+    at o.<computed>.o.<computed> (https://rsi.grafana.com/v1.1/js-integrations/Fullstory.min.js:1:5852)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:92514
+    at o (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91308)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91491
+    at new Promise (<anonymous>)
+    at Object.add (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91431)
+    at J.<anonymous> (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91852)
+    at Generator.next (<anonymous>)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:90500 @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[63557123ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[63557125ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[63559046ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[63559245ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/plugins/grafana-asserts-app/resources/asserts/kg-quality/v1/entities/quality-reports?type=Service&page=0&pageSize=1&sortDirection=ASC&namespace=ecommerce-prod&entityName=productcatalog:0
+[63559362ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/datasources/proxy/uid/grafanacloud-prom/api/v1/query?query=count%28%7B__name__%3D~%22process_cpu_time_seconds_total%7Cprocess_cpu_time%22%2C%20job%3D%22ecommerce-prod%2Fproductcatalogservice%22%7D%29:0
+[63559366ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/plugins/grafana-asserts-app/resources/asserts/kg-quality/v1/entities/Service/productcatalogservice/quality-report?env=devfedb13-cluster&namespace=ecommerce-prod&site=us-east-2:0
+[63559367ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/datasources/uid/grafanacloud-profiles/resources/labelValues?label=service_name&query=%7B%7D&start=1786402227341&end=1786405827341:0
+[63559385ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/plugins/grafana-asserts-app/resources/asserts/api-server/v1/config/display/kpi:0
+[63559386ms] [ERROR] Failed to load resource: net::ERR_ADDRESS_UNREACHABLE @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[63559392ms] [ERROR] Failed to load resource: net::ERR_ADDRESS_UNREACHABLE @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[63559394ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/plugins/grafana-asserts-app/resources/asserts/api-server/v1/search:0
+[63559404ms] [ERROR] Failed to load resource: net::ERR_ADDRESS_UNREACHABLE @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/e3c6e2fd455e8f85102e5c6bcdf0ef29:0
+[63559404ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(6)} TypeError: Failed to fetch
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:164781
+    at o.<computed>.o.<computed> (https://rsi.grafana.com/v1.1/js-integrations/Fullstory.min.js:1:5852)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:92514
+    at o (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91308)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91491
+    at new Promise (<anonymous>)
+    at Object.add (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91431)
+    at J.<anonymous> (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91852)
+    at Generator.next (<anonymous>)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:90500 @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[63560697ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://devfedb13.grafana.net/api/datasources/uid/grafanacloud-profiles/resources/labelValues?label=service_name&query=%7B%7D&start=1786402227341&end=1786405827341:0
+[63560752ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/e3c6e2fd455e8f85102e5c6bcdf0ef29:0
+[63560752ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(1)} TypeError: Failed to fetch
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:164781
+    at o.<computed>.o.<computed> (https://rsi.grafana.com/v1.1/js-integrations/Fullstory.min.js:1:5852)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:92514
+    at o (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91308)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91491
+    at new Promise (<anonymous>)
+    at Object.add (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91431)
+    at J.<anonymous> (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91852)
+    at Generator.next (<anonymous>)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:90500 @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[64147678ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: Error in connection establishment: net::ERR_INTERNET_DISCONNECTED @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[64147688ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://devfedb13.grafana.net/api/login/ping:0
+[64147753ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/e3c6e2fd455e8f85102e5c6bcdf0ef29:0
+[64147753ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(1)} TypeError: Failed to fetch
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:164781
+    at o.<computed>.o.<computed> (https://rsi.grafana.com/v1.1/js-integrations/Fullstory.min.js:1:5852)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:92514
+    at o (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91308)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91491
+    at new Promise (<anonymous>)
+    at Object.add (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91431)
+    at J.<anonymous> (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91852)
+    at Generator.next (<anonymous>)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:90500 @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[64147759ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/img/icons/unicons/exclamation-circle.svg:0
+[64147996ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/e3c6e2fd455e8f85102e5c6bcdf0ef29:0
+[64147996ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(1)} TypeError: Failed to fetch
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:164781
+    at o.<computed>.o.<computed> (https://rsi.grafana.com/v1.1/js-integrations/Fullstory.min.js:1:5852)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:92514
+    at o (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91308)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91491
+    at new Promise (<anonymous>)
+    at Object.add (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91431)
+    at J.<anonymous> (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91852)
+    at Generator.next (<anonymous>)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:90500 @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[64148991ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: Error in connection establishment: net::ERR_INTERNET_DISCONNECTED @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[64149222ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[64149225ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[64151315ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: Error in connection establishment: net::ERR_INTERNET_DISCONNECTED @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[64154936ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: Error in connection establishment: net::ERR_INTERNET_DISCONNECTED @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[64154942ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://devfedb13.grafana.net/api/login/ping:0
+[64155002ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/e3c6e2fd455e8f85102e5c6bcdf0ef29:0
+[64155002ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(1)} TypeError: Failed to fetch
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:164781
+    at o.<computed>.o.<computed> (https://rsi.grafana.com/v1.1/js-integrations/Fullstory.min.js:1:5852)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:92514
+    at o (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91308)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91491
+    at new Promise (<anonymous>)
+    at Object.add (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91431)
+    at J.<anonymous> (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91852)
+    at Generator.next (<anonymous>)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:90500 @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[64155008ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/img/icons/unicons/exclamation-circle.svg:0
+[64155215ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[64155221ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[64155246ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/e3c6e2fd455e8f85102e5c6bcdf0ef29:0
+[64155246ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(1)} TypeError: Failed to fetch
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:164781
+    at o.<computed>.o.<computed> (https://rsi.grafana.com/v1.1/js-integrations/Fullstory.min.js:1:5852)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:92514
+    at o (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91308)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91491
+    at new Promise (<anonymous>)
+    at Object.add (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91431)
+    at J.<anonymous> (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91852)
+    at Generator.next (<anonymous>)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:90500 @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[64156259ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: Error in connection establishment: net::ERR_INTERNET_DISCONNECTED @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[64157208ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[64157210ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[64172003ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: Error in connection establishment: net::ERR_INTERNET_DISCONNECTED @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[64172014ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://devfedb13.grafana.net/api/login/ping:0
+[64172090ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/img/icons/unicons/exclamation-circle.svg:0
+[64172243ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/e3c6e2fd455e8f85102e5c6bcdf0ef29:0
+[64172244ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(2)} TypeError: Failed to fetch
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:164781
+    at o.<computed>.o.<computed> (https://rsi.grafana.com/v1.1/js-integrations/Fullstory.min.js:1:5852)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:92514
+    at o (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91308)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91491
+    at new Promise (<anonymous>)
+    at Object.add (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91431)
+    at J.<anonymous> (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91852)
+    at Generator.next (<anonymous>)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:90500 @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[64173216ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[64173219ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[64175214ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[64175218ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[64178962ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: Error in connection establishment: net::ERR_INTERNET_DISCONNECTED @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[64178966ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://devfedb13.grafana.net/api/login/ping:0
+[64178993ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/e3c6e2fd455e8f85102e5c6bcdf0ef29:0
+[64178993ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(1)} TypeError: Failed to fetch
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:164781
+    at o.<computed>.o.<computed> (https://rsi.grafana.com/v1.1/js-integrations/Fullstory.min.js:1:5852)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:92514
+    at o (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91308)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91491
+    at new Promise (<anonymous>)
+    at Object.add (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91431)
+    at J.<anonymous> (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91852)
+    at Generator.next (<anonymous>)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:90500 @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[64179212ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[64179214ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[64181215ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[64181218ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[64184405ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: Error in connection establishment: net::ERR_INTERNET_DISCONNECTED @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[64184413ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://devfedb13.grafana.net/api/login/ping:0
+[64184483ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/img/icons/unicons/exclamation-circle.svg:0
+[64184494ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/e3c6e2fd455e8f85102e5c6bcdf0ef29:0
+[64184494ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(2)} TypeError: Failed to fetch
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:164781
+    at o.<computed>.o.<computed> (https://rsi.grafana.com/v1.1/js-integrations/Fullstory.min.js:1:5852)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:92514
+    at o (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91308)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91491
+    at new Promise (<anonymous>)
+    at Object.add (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91431)
+    at J.<anonymous> (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91852)
+    at Generator.next (<anonymous>)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:90500 @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[64185209ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[64185212ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[64187215ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[64187220ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[66227618ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: Error in connection establishment: net::ERR_INTERNET_DISCONNECTED @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[66227640ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://devfedb13.grafana.net/api/login/ping:0
+[66227713ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/img/icons/unicons/exclamation-circle.svg:0
+[66227875ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/e3c6e2fd455e8f85102e5c6bcdf0ef29:0
+[66227875ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(2)} TypeError: Failed to fetch
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:164781
+    at o.<computed>.o.<computed> (https://rsi.grafana.com/v1.1/js-integrations/Fullstory.min.js:1:5852)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:92514
+    at o (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91308)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91491
+    at new Promise (<anonymous>)
+    at Object.add (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91431)
+    at J.<anonymous> (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91852)
+    at Generator.next (<anonymous>)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:90500 @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[66228341ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[66228346ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[66230344ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[66230347ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[66232114ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[66232194ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/datasources/uid/grafanacloud-profiles/resources/labelValues?label=service_name&query=%7B%7D&start=1786404900727&end=1786408500727:0
+[66232336ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/datasources/proxy/uid/grafanacloud-prom/api/v1/query?query=count%28%7B__name__%3D~%22process_cpu_time_seconds_total%7Cprocess_cpu_time%22%2C%20job%3D%22ecommerce-prod%2Fproductcatalogservice%22%7D%29:0
+[66242625ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://devfedb13.grafana.net/api/datasources/uid/grafanacloud-profiles/resources/labelValues?label=service_name&query=%7B%7D&start=1786404900727&end=1786408500727:0
+[67813983ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[67814359ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[70756281ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[70756518ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[71498208ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[71498501ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[72215010ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[72215416ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[75391315ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[75391651ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[83638987ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[83639804ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[89075213ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[89075908ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[89076551ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[98940329ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[98941011ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[98941923ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(1)} TypeError: Cannot read properties of undefined (reading 'internalLogger')
+    at logDebug (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:34525)
+    at J.extendFaroSession (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:93777)
+    at J.<anonymous> (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:92856)
+    at Generator.next (<anonymous>)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:90500
+    at new Promise (<anonymous>)
+    at K (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:90248)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:92747 @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[100014372ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[100014673ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[101098482ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[101098878ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[101099848ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(2)} TypeError: Cannot read properties of undefined (reading 'internalLogger')
+    at logDebug (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:34525)
+    at J.extendFaroSession (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:93777)
+    at J.<anonymous> (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:92856)
+    at Generator.next (<anonymous>)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:90500
+    at new Promise (<anonymous>)
+    at K (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:90248)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:92747 @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[102182903ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[102183190ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[104015365ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[104015744ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[104978812ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[104979256ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[104980073ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[118518016ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[118518717ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[119471352ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[119471436ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[121455320ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[121455860ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[122507517ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[122507843ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[124448903ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[124449321ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[126700120ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[126700517ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[128100272ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[128100637ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[131093641ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[131094318ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[131767294ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[131767613ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[134841212ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[134841491ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[136306768ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[136307075ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[151635780ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[151636400ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[152708356ms] [WARNING] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: WebSocket is closed before the connection is established. @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[152709092ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[152709995ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(2)} TypeError: Cannot read properties of undefined (reading 'internalLogger')
+    at logDebug (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:34525)
+    at J.extendFaroSession (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:93777)
+    at J.<anonymous> (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:92856)
+    at Generator.next (<anonymous>)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:90500
+    at new Promise (<anonymous>)
+    at K (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:90248)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:92747 @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[156374048ms] [WARNING] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: WebSocket is closed before the connection is established. @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[156374673ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[156375199ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[160015300ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[160015677ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[161112680ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[161113827ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[161113976ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[161114877ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(1)} TypeError: Cannot read properties of undefined (reading 'internalLogger')
+    at logDebug (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:34525)
+    at J.extendFaroSession (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:93777)
+    at J.<anonymous> (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:92856)
+    at Generator.next (<anonymous>)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:90500
+    at new Promise (<anonymous>)
+    at K (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:90248)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:92747 @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[161114904ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(1)} TypeError: Cannot read properties of undefined (reading 'internalLogger')
+    at logDebug (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:34525)
+    at J.extendFaroSession (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:93777)
+    at J.<anonymous> (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:92856)
+    at Generator.next (<anonymous>)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:90500
+    at new Promise (<anonymous>)
+    at K (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:90248)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:92747 @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[168072317ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[168072878ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[172039877ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[172040323ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[172993252ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[172993523ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[183494425ms] [WARNING] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: WebSocket is closed before the connection is established. @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[183494964ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[185912334ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[185912892ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[189878442ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: Error in connection establishment: net::ERR_INTERNET_DISCONNECTED @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[189878465ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://devfedb13.grafana.net/api/login/ping:0
+[189878654ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[189878666ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[189878685ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/e3c6e2fd455e8f85102e5c6bcdf0ef29:0
+[189878686ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(1)} TypeError: Failed to fetch
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:164781
+    at o.<computed>.o.<computed> (https://rsi.grafana.com/v1.1/js-integrations/Fullstory.min.js:1:5852)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:92514
+    at o (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91308)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91491
+    at new Promise (<anonymous>)
+    at Object.add (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91431)
+    at J.<anonymous> (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91852)
+    at Generator.next (<anonymous>)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:90500 @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[189879686ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: Error in connection establishment: net::ERR_INTERNET_DISCONNECTED @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[189880653ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[189880655ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[189881362ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: Error in connection establishment: net::ERR_INTERNET_DISCONNECTED @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[189884588ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[189884602ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://devfedb13.grafana.net/api/datasources/uid/grafanacloud-profiles/resources/labelValues?label=service_name&query=%7B%7D&start=1786528553383&end=1786532153383:0
+[189884607ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://devfedb13.grafana.net/api/plugins/grafana-asserts-app/resources/asserts/kg-quality/v1/entities/Service/productcatalogservice/quality-report?env=devfedb13-cluster&namespace=ecommerce-prod&site=us-east-2:0
+[189884608ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://devfedb13.grafana.net/api/plugins/grafana-asserts-app/resources/asserts/api-server/v1/search:0
+[189884608ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://devfedb13.grafana.net/api/plugins/grafana-asserts-app/resources/asserts/api-server/v1/config/display/kpi:0
+[189884608ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://devfedb13.grafana.net/api/datasources/proxy/uid/grafanacloud-prom/api/v1/query?query=count%28%7B__name__%3D~%22process_cpu_time_seconds_total%7Cprocess_cpu_time%22%2C%20job%3D%22ecommerce-prod%2Fproductcatalogservice%22%7D%29:0
+[189884629ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://devfedb13.grafana.net/api/plugins/grafana-asserts-app/resources/asserts/kg-quality/v1/entities/quality-reports?type=Service&page=0&pageSize=1&sortDirection=ASC&namespace=ecommerce-prod&entityName=productcatalog:0
+[189884629ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://devfedb13.grafana.net/api/login/ping:0
+[189885192ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(7)} TypeError: Cannot read properties of undefined (reading 'internalLogger')
+    at logDebug (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:34525)
+    at J.extendFaroSession (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:93777)
+    at J.<anonymous> (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:92856)
+    at Generator.next (<anonymous>)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:90500
+    at new Promise (<anonymous>)
+    at K (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:90248)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:92747 @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[189887364ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[189895241ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[189895571ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[193170355ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[193170854ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[196750340ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[196750766ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[199844168ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[199844519ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[199845418ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(2)} TypeError: Cannot read properties of undefined (reading 'internalLogger')
+    at logDebug (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:34525)
+    at J.extendFaroSession (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:93777)
+    at J.<anonymous> (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:92856)
+    at Generator.next (<anonymous>)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:90500
+    at new Promise (<anonymous>)
+    at K (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:90248)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:92747 @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[201864413ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[201864725ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[201865516ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(2)} TypeError: Cannot read properties of undefined (reading 'internalLogger')
+    at logDebug (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:34525)
+    at J.extendFaroSession (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:93777)
+    at J.<anonymous> (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:92856)
+    at Generator.next (<anonymous>)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:90500
+    at new Promise (<anonymous>)
+    at K (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:90248)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:92747 @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[216661382ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[216662100ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[227936556ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[227936920ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[232136416ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: Error in connection establishment: net::ERR_NAME_NOT_RESOLVED @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[232137119ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[236335997ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[236336717ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[242425671ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[242426073ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[243026931ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/e3c6e2fd455e8f85102e5c6bcdf0ef29:0
+[243026935ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(2)} TypeError: Failed to fetch
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:164781
+    at o.<computed>.o.<computed> (https://rsi.grafana.com/v1.1/js-integrations/Fullstory.min.js:1:5852)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:92514
+    at o (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91308)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91491
+    at new Promise (<anonymous>)
+    at Object.add (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91431)
+    at J.<anonymous> (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91852)
+    at Generator.next (<anonymous>)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:90500 @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[243026946ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/e3c6e2fd455e8f85102e5c6bcdf0ef29:0
+[243026946ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(1)} TypeError: Failed to fetch
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:164781
+    at o.<computed>.o.<computed> (https://rsi.grafana.com/v1.1/js-integrations/Fullstory.min.js:1:5852)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:92514
+    at o (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91308)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91491
+    at new Promise (<anonymous>)
+    at Object.add (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91431)
+    at J.<anonymous> (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91852)
+    at Generator.next (<anonymous>)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:90500 @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[243027258ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[243027344ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://devfedb13.grafana.net/api/login/ping:0
+[243027652ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[243027653ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/e3c6e2fd455e8f85102e5c6bcdf0ef29:0
+[243027653ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(1)} TypeError: Failed to fetch
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:164781
+    at o.<computed>.o.<computed> (https://rsi.grafana.com/v1.1/js-integrations/Fullstory.min.js:1:5852)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:92514
+    at o (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91308)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91491
+    at new Promise (<anonymous>)
+    at Object.add (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91431)
+    at J.<anonymous> (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:91852)
+    at Generator.next (<anonymous>)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:90500 @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[243027729ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[243029700ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[243034296ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[243034618ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[243532397ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[243532575ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[246703505ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[246703835ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[247608104ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[247608399ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://faro-collector-ops-eu-south-0.grafana-ops.net/collect/bc03dd0f2a088059ae67a23bc296a26d:0
+[247608962ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[247609949ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[247610537ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[247610602ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(2)} TypeError: Cannot read properties of undefined (reading 'internalLogger')
+    at logDebug (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:34525)
+    at J.extendFaroSession (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:93777)
+    at J.<anonymous> (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:92856)
+    at Generator.next (<anonymous>)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:90500
+    at new Promise (<anonymous>)
+    at K (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:90248)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:92747 @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[252520855ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: Error in connection establishment: net::ERR_NAME_NOT_RESOLVED @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[252521455ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[255255606ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[255256055ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[255256565ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[257426210ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[257426520ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[258740893ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[258741209ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[259793951ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[259794267ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[260798357ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[260799047ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[261802923ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[261803234ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[263513882ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[263514324ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[264595192ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[264595534ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[264596255ms] [ERROR] Faro
+ @grafana/faro-web-sdk:transport-fetch
+ Failed sending payload to the receiver
+ {meta: Object, events: Array(1)} TypeError: Cannot read properties of undefined (reading 'internalLogger')
+    at logDebug (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:34525)
+    at J.extendFaroSession (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:93777)
+    at J.<anonymous> (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:92856)
+    at Generator.next (<anonymous>)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:90500
+    at new Promise (<anonymous>)
+    at K (https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:90248)
+    at https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:2:92747 @ https://plugins-cdn.grafana.net/grafana-asserts-app/1.19.0/public/plugins/grafana-asserts-app/2399.js?_cache=f846e65e7b0558250bae:1
+[265530602ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[265531045ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[266488588ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[266488994ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[267443985ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[267444586ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[267445273ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[268380600ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[268380901ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[269463692ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[269463998ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[270467459ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[270467776ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[271470781ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[271471355ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[272487618ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[272487922ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[273520930ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[273521187ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[278282299ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[278282503ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[279307626ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[279308128ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[280392566ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[280392864ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[281213561ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[281214077ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[282219928ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[282220432ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[283276153ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[283276665ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[283277371ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[283961273ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[283961653ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[284953273ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[284953951ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0
+[288351452ms] [ERROR] WebSocket connection to 'wss://devfedb13.grafana.net/api/live/ws' failed: HTTP Authentication failed; no valid credentials available @ https://grafana-assets.grafana.net/grafana/13.2.0-30890958429/public/build/1573-react19.e6419c404c5b3262750f.js:473
+[288352169ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://devfedb13.grafana.net/api/login/ping:0

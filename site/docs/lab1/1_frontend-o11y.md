@@ -16,7 +16,7 @@ In Grafana, open the left-hand menu and select **Observability** -> **Frontend**
 
 <div style={{maxWidth: '340px'}}>
 
-![Set the time range to today's slow-images window](/img/lab1/1.0-time-range.png)
+<img src={require('@site/static/img/lab1/1.0-time-range.png').default} alt="Set the time range to today's slow-images window" width="450" />
 
 </div>
 
@@ -53,7 +53,7 @@ Traffic is steady and the **Page Loads** panel is essentially all blue - pages a
 
 <div style={{maxWidth: '520px'}}>
 
-![Page Loads panel](/img/lab1/1.1-page-loads.png)
+<img src={require('@site/static/img/lab1/1.1-page-loads.png').default} alt="Page Loads panel" width="570" />
 
 </div>
 
