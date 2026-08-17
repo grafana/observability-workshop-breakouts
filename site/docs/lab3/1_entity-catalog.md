@@ -35,13 +35,11 @@ Every entity shows two insight rings: the **outer** ring is its *own* insights, 
 <details className="answer-reveal">
 <summary>Show answer</summary>
 
-Several services light up, but the **source** is **`productcatalogservice`** - it carries a red (critical) insight ring for a **Failure** (it's crash-looping / OOMKilled) and a **Saturation** (memory climbing into its limit).
+Several services light up, but the **source** is **`productcatalogservice`** - it carries a red (critical) insight ring, and its KPIs stand out (latency in the minutes, error ratio spiking).
 
-Click `productcatalogservice` to open its **KPI drawer** - the one-stop view for an entity, with tabs the Knowledge Graph picks based on what it knows about the entity: **Service overview**, **Kubernetes**, **Metrics**, **Logs**, **Traces**, **Profiles**, **Go Runtime**, **Service KPI**.
+![Entity Catalog - productcatalogservice with its critical insight ring](/img/lab3/3.2-catalog-source.png)
 
-![productcatalogservice KPI drawer - Service overview, with a Kubernetes tab](/img/lab3/3.2-kpi-drawer.png)
-
-Open the **Kubernetes** tab in that drawer and the root cause is right there: **Workload memory** climbs toward its **limit** (usage peaking near the ~100 MiB container limit) and the pods restart - the OOM. You investigate all of this from the *service* entity; the drawer's **Open in Kubernetes** button takes you into Kubernetes Monitoring for the deeper dive (further down this page).
+Click `productcatalogservice` to open its **KPI drawer** - the one-stop view for an entity, with tabs the Knowledge Graph picks based on what it knows about the entity: **Service overview**, **Kubernetes**, **Metrics**, **Logs**, **Traces**, **Profiles**, **Go Runtime**, **Service KPI**. Open the **Kubernetes** tab and the root cause is right there: **Workload memory** climbs toward its **limit** (usage peaking near the ~100 MiB container limit) and the pods restart - the OOM. You investigate all of this from the *service* entity; the drawer's **Open in Kubernetes** button takes you into Kubernetes Monitoring for the deeper dive (further down this page).
 
 ![The KPI drawer's Kubernetes tab - workload memory climbing into its limit](/img/lab3/3.2-kpi-k8s-memory.png)
 
@@ -66,25 +64,33 @@ Because a crashing pod doesn't *emit* errors - it stops responding. While `produ
 
 The **Entity Graph** draws the dependency topology - `CALLS`, `HOSTS`, and other relationships as edges between entities, with the call rate on each edge and a health ring on each node.
 
-<TryIt where="Observability → Entity graph (or Show connected entities from the catalog entry); search productcatalogservice connected services." />
+<TryIt where="the View button on productcatalogservice's KPI drawer, then See in entity graph. Or Observability → Entity graph, searching productcatalogservice connected services." />
 
 <details className="answer-reveal">
 <summary>Show answer</summary>
 
-Searching **`productcatalogservice` connected services** draws the immediate neighbourhood - and every connected service has a red ring. The callers are all here: **`frontend`**, three regional **`checkoutservice`** instances, and **`recommendationservice`** - each with a `CALLS` edge into `productcatalogservice` labelled with its call rate. So the crash-looping service is exactly why the frontend and checkout are erroring: they call it, and it keeps dying under them. **`flagd`** (the feature-flag service) is connected too - a hint at what set this off, which the RCA Workbench will confirm.
+The graph draws the immediate neighbourhood - and every connected service has a red ring. The callers are all here: **`frontend`**, three regional **`checkoutservice`** instances, and **`recommendationservice`** - each with a `CALLS` edge into `productcatalogservice` labelled with its call rate. So the crash-looping service is exactly why the frontend and checkout are erroring: they call it, and it keeps dying under them. **`flagd`** (the feature-flag service) is connected too - a hint at what set this off, which the RCA Workbench will confirm.
 
 ![Entity Graph - productcatalogservice and its connected, erroring callers](/img/lab3/3.3-entity-graph.png)
 
-Zooming out to the whole namespace shows the same picture at scale - `productcatalogservice` sits in the middle of a web of red-ringed services. From here the **Analyze with Assistant** button (bottom-right) can take the current graph selection straight to the Assistant.
-
-![Entity Graph - the full ecommerce-prod namespace, productcatalogservice highlighted](/img/lab3/3.3-entity-graph-all.png)
-
 **How to find it:**
 
-1. Open **Observability** -> **Entity graph** (or **Show connected entities** from the catalog entry).
-2. Search `productcatalogservice connected services`.
-3. Follow the `CALLS` edges from `frontend` / `checkoutservice` / `recommendationservice` into `productcatalogservice`, and note the call rate and health ring on each.
-4. Read the health rings - the whole chain, from the failing service up to the customer-facing frontend, is red.
+1. In the KPI drawer, click the **View** button next to the entity name.
+
+   ![The KPI drawer's View button](/img/lab3/3.3-drawer-view.png)
+
+2. The **Explore connected entities** dialog lists the connected services (all red-ringed); click **See in entity graph**.
+
+   ![Explore connected entities - See in entity graph](/img/lab3/3.3-connected-entities.png)
+
+3. On the graph, follow the `CALLS` edges from `frontend` / `checkoutservice` / `recommendationservice` into `productcatalogservice`, and note the call rate and health ring on each - the whole chain, from the failing service up to the customer-facing frontend, is red.
+4. You can reach the same view from **Observability** -> **Entity graph** by searching `productcatalogservice connected services`.
+
+   ![Entity graph search - productcatalogservice connected services](/img/lab3/3.3-graph-search.png)
+
+5. To see it at namespace scale, search `Show all Services` and use the filter (funnel icon) to pick out `productcatalogservice` - it sits in the middle of a web of red-ringed services. From here the **Analyze with Assistant** button (bottom-right) can take the current graph selection straight to the Assistant.
+
+   ![Entity Graph - all services, productcatalogservice picked out with the filter](/img/lab3/3.3-graph-all-services.png)
 
 </details>
 
@@ -96,39 +102,51 @@ You've found the source and its blast radius. Now: *how exactly is it failing?* 
 
 You can go straight there from `productcatalogservice`. On the graph, click the entity to open its card and hit the **KPI** button.
 
-![The entity card on the graph, with the KPI button](/img/lab3/3.3-graph-kpi-button.png)
+<img src={require('@site/static/img/lab3/3.4-graph-kpi-button.png').default} alt="The entity card on the graph, with the KPI button" width="509" />
 
-In the KPI drawer's **Kubernetes** section, the `k8s.pod.name` link points at the crash-looping pod (`productcatalogservice-bb8bf6869-8mq2s`). Click it - or use the drawer's **Open in Kubernetes** button - to land on that pod's page in Kubernetes Monitoring, which mirrors the Kubernetes hierarchy (**Clusters -> Namespaces -> Workloads -> Nodes -> Pods -> Containers**).
+Back in the KPI drawer, the **Kubernetes** dropdown (on the **Service overview** tab) lists everything the graph knows about where this service runs - the cluster, node, namespace, deployment, and the crash-looping pod - and each is a link into Kubernetes Monitoring, which mirrors the Kubernetes hierarchy (**Clusters -> Namespaces -> Workloads -> Nodes -> Pods -> Containers**). Open the **`k8s.deployment.name`** link (`productcatalogservice`).
 
-![The KPI drawer's Kubernetes section links straight to the crash-looping pod](/img/lab3/3.4-kpi-to-pod.png)
+![The KPI drawer's Kubernetes dropdown links into Kubernetes Monitoring](/img/lab3/3.4-kpi-to-pod.png)
 
 ## Question 3: Why is the pod dying?
 
-**Open the crash-looping pod in Kubernetes Monitoring. How many times has it restarted, and what is its memory doing?**
+**Open the crash-looping workload in Kubernetes Monitoring. How many times has its pod restarted, and what is its memory doing?**
 
-<TryIt where="the productcatalogservice pod page (opened from the KPI drawer's Kubernetes section, or Open in Kubernetes) - the Pod information panel, then the Container optimization section. Set the time range to the incident window." />
+<TryIt where="the productcatalogservice deployment page (opened from the KPI drawer's Kubernetes dropdown) - then drill through the Pods table to the pod, its Containers table, the container's Events tab, and the pod's Memory tab. Set the time range to the incident window." />
 
 <details className="answer-reveal">
 <summary>Show answer</summary>
 
-The pod page opens with an **Assistant health-check** banner ("Investigating pod...") and a **Pod information** panel that already tells the story: status **Running**, but **number of restarts: 15** - it keeps dying and coming back.
+The deployment page's **Assistant health check** already names the failure mode: **Unhealthy** - *"Workload has 0 running pods despite 1 ready replica, with OOMKilled terminations detected."*
 
-![Pod detail - 15 restarts and the Assistant health-check banner](/img/lab3/3.4-pod-detail.png)
+![Deployment page - the health check names the OOMKill](/img/lab3/3.4-deployment-health.png)
 
-The **Containers** table shows why: memory is blowing past what it asked for - **MEM MAX 99.54 MiB, ~181%** of its request (deep red).
+Scroll to the **Pods** table: the pod reads **Running (CrashLoopBackOff)** - it keeps dying and coming back. Click through to it.
 
-![Containers table - memory at 181% of request](/img/lab3/3.4-container-mem.png)
+![Pods table - Running (CrashLoopBackOff)](/img/lab3/3.4-pods-table.png)
 
-The **Container optimization -> Container memory** graph is the smoking gun: usage climbs to the **100 MiB limit** (dashed line) and stays pinned there, with periodic sharp drops - each drop is the kernel OOMKilling the container, which then restarts and starts filling memory again. Memory that only ever rises until it hits the limit is a memory leak. (The explicit `OOMKilled` termination reason is on the pod's **Events** tab.)
+The pod page counts the crash loop - **number of restarts: 10** in this window, with the health check reporting elevated restarts and a container waiting state.
 
-![Container memory climbing into the 100 MiB limit, with the OOMKill sawtooth](/img/lab3/3.4-oomkilled.png)
+![Pod detail - elevated restarts and the health check](/img/lab3/3.4-pod-restarts.png)
+
+The **Containers** table shows why: the container sits in **CrashLoopBackOff**, with **MEM MAX 76.93 MiB - 140%** of what it requested (deep red).
+
+![Containers table - CrashLoopBackOff, memory at 140% of request](/img/lab3/3.4-containers-table.png)
+
+The container's **Events** tab has Kubernetes' side of the story: *"Back-off restarting failed container productcatalogservice..."* repeating with every restart of the loop.
+
+![Container Events - back-off restarting the failed container](/img/lab3/3.4-events-backoff.png)
+
+The pod's **Memory** tab is the smoking gun: usage climbs from a baseline far below the request up to the **100 MiB limit**, then drops sharply - each drop is the kernel OOMKilling the container, which restarts and starts filling memory again. The **Alignment: usage/requests** panel reads **140%** (76.9 MiB used against a 55 MiB request). Memory that only ever rises until it hits the limit is a memory leak.
+
+![Pod Memory tab - usage/requests at 140%, climbing into the limit](/img/lab3/3.4-memory-alignment.png)
 
 **How to find it:**
 
-1. Open the `productcatalogservice` pod (from the KPI drawer's **Kubernetes** section, or **Open in Kubernetes**).
-2. In **Pod information**, read **number of restarts** (15 here) - the crash loop.
-3. In the **Containers** table, note **MEM MAX** is ~181% of the request.
-4. In **Container optimization**, read the **Container memory** graph - usage rising into the 100 MiB limit with repeated drops. (The **Events** tab shows the `OOMKilled` reason.)
+1. From the KPI drawer's **Kubernetes** dropdown, open the **deployment** and read the Assistant health check.
+2. In the **Pods** table, open the pod - `Running (CrashLoopBackOff)`, **number of restarts: 10**.
+3. In the **Containers** table, note **MEM MAX** at **140%** of the request.
+4. Read the container's **Events** tab (back-off restarting) and the pod's **Memory** tab (usage pinned against the 100 MiB limit, alignment 140%).
 
 </details>
 
@@ -140,7 +158,7 @@ The **Container optimization -> Container memory** graph is the smoking gun: usa
 
 The **Efficiency** tab is a fleet-wide cost/right-sizing lens. It doesn't hand you a per-container recommendation - instead it surfaces **waste and configuration gaps** across every workload, so you can find over-provisioned or mis-configured containers to trim.
 
-<TryIt where="Observability → Kubernetes → the Efficiency tab. Read the stat tiles and the waste-by-namespace charts; scroll for the per-gap tables." />
+<TryIt where="Observability → Kubernetes → the Efficiency tab, with the namespace filter set to ecommerce-prod. Read the stat tiles and the waste charts; scroll for the per-gap tables." />
 
 :::tip Jump straight there
 
@@ -151,37 +169,24 @@ The **Efficiency** tab is a fleet-wide cost/right-sizing lens. It doesn't hand y
 <details className="answer-reveal">
 <summary>Show answer</summary>
 
-The stat tiles count fleet-wide config gaps - here **44** containers with **no resource requests**, **155** with **no limits**, **62** **CPU over-requested**, and **89** **memory over-requested**. Below them, **CPU waste by namespace** and **Memory waste by namespace** both put **`ecommerce-prod` at the top** (~1.33 wasted CPU cores, ~1.55 wasted memory GiB), and the tables list the specific offending containers (without requests, without limits, over-requested).
+Scoped to the `ecommerce-prod` namespace, the stat tiles count its config gaps - **12** containers with **no resource requests**, **46** with **no limits**, **23** **CPU over-requested**, and **31** **memory over-requested** - and the waste charts quantify it: ~**1.70** wasted CPU cores and ~**1.64** wasted memory GiB.
 
-![Efficiency tab - waste by namespace and config-gap tiles](/img/lab3/3.12-efficiency.png)
+![Efficiency tab scoped to ecommerce-prod - config-gap tiles and waste charts](/img/lab3/3.12-efficiency.png)
 
-:::note This tab won't fix *this* leak - and that's the point
+Scroll down and the per-gap tables name the specific containers to fix - `frontend`, `recommendationservice`, and `kafka-bus` over-request CPU; the regional `checkoutservice` deployments and `productcatalog-postgres` over-request memory.
+
+![The per-gap tables - the specific over-requested containers](/img/lab3/3.12-gap-tables.png)
+
+:::note Why this tab won't fix *this* leak
 Efficiency is about **over-provisioning and waste**. `productcatalogservice` is the *opposite* problem: it isn't wasting memory, it's pinned at its limit (you saw its usage climb into the 100 MiB limit in Question 3, with a request of only 55 MiB). Closing that request-vs-limit gap is good hygiene, but **raising the limit only delays the OOMKill - it doesn't stop the leak**. Right-sizing is an operational mitigation; the actual root cause is a change someone made, which the RCA Workbench pins down next.
 :::
 
 **How to find it:**
 
-1. Open **Observability** -> **Kubernetes** in the left menu.
-
-   <img src={require('@site/static/img/lab3/3.12-k8s-nav.png').default} alt="The left menu - Observability, Kubernetes" width="280" />
-
-   You land on **Kubernetes Overview** - note the **Stability** tiles already flag this lab's incident (Restarting containers, OOMKilled containers).
-
-   ![Kubernetes Overview - the Stability tiles flag the restarts and OOMKill](/img/lab3/3.12-k8s-overview.png)
-
-2. Open the **Efficiency** tab.
-
-   ![The Efficiency tab on Kubernetes Overview](/img/lab3/3.12-efficiency-tab.png)
-
-3. Read the stat tiles (no requests / no limits / CPU & memory over-requested).
-4. Read **CPU/Memory waste by namespace** - note `ecommerce-prod` at the top.
-5. Set the **namespace** filter to `ecommerce-prod` to scope the whole tab to the offender - the stat tiles recount for just that namespace.
-
-   ![The namespace filter scoped to ecommerce-prod](/img/lab3/3.12-namespace-filter.png)
-
-6. Scroll to the per-gap tables (**CPU over-requested containers**, **Memory over-requested containers**, and the no-requests/no-limits lists) for the specific containers to fix.
-
-   ![The per-gap tables - the specific over-requested containers](/img/lab3/3.12-gap-tables.png)
+1. Open **Observability** -> **Kubernetes** in the left menu, then the **Efficiency** tab.
+2. Set the **namespace** filter to `ecommerce-prod` to scope the whole tab to the offender - the stat tiles recount for just that namespace.
+3. Read the stat tiles (no requests / no limits / CPU & memory over-requested) and the **CPU/Memory waste by namespace** charts.
+4. Scroll to the per-gap tables (**CPU over-requested containers**, **Memory over-requested containers**, and the no-requests/no-limits lists) for the specific containers to fix.
 
 </details>
 
@@ -198,33 +203,33 @@ Every Kubernetes Monitoring detail page carries a Grafana Assistant **health che
 <details className="answer-reveal">
 <summary>Show answer</summary>
 
-**1. Sidebar -> Workloads.** Expand **Observability -> Kubernetes** in the left menu and choose **Workloads**.
+**1. Sidebar -> Workloads.** Expand **Observability -> Kubernetes** in the left menu and choose **Workloads**. In the list, `productcatalogservice` (a `deployment` in `ecommerce-prod`) stands out - **MEM MAX 140%**, deep red. Open it.
 
-<img src={require('@site/static/img/lab3/3.13-nav-workloads.png').default} alt="Kubernetes -> Workloads in the sidebar" width="312" />
+![Workloads list - productcatalogservice in the red](/img/lab3/3.13-workloads-list.png)
 
-**2. Find the workload.** In the Workloads list, `productcatalogservice` (a `deployment` in `ecommerce-prod`) stands out with red CPU/memory usage. Open it.
-
-![Workloads list - productcatalogservice in the red](/img/lab3/3.13-workload-list.png)
-
-**3. Read the workload health check.** At the top of the deployment page, the **Assistant health check** reports **Unhealthy** - *"Pod 0/1 ready; OOMKilled container detected in productcatalogservice-bb8bf6869-8mq2s."* That matches the OOM you already found.
+**2. Read the workload health check.** At the top of the deployment page, the **Assistant health check** reports **Unhealthy** - *"productcatalogservice deployment has 1 ready pod but container is OOMKilled."* That matches the OOM you already found. (For a fuller analysis, open **Insights** and click **Analyze** to hand the entity to the Assistant.)
 
 ![Workload Assistant health check - Unhealthy, OOMKilled](/img/lab3/3.13-workload-health.png)
 
-For a fuller analysis, open **Insights** (it lists the latency/error breaches and anomalies the graph is firing) and click **Analyze** to hand the entity to the Assistant.
+**3. Drill to the pod.** Scroll to the **Pods** table - note the firing alert in the **ALERTS** column - and click the `productcatalogservice-*` pod.
 
-![Insights and the Analyze button on the workload](/img/lab3/3.13-workload-analyze.png)
+![Pods table - the crash-looping pod, one alert firing](/img/lab3/3.13-pods-table.png)
 
-**4. Drill to the pod.** Scroll down to the **Pods** table and click the `productcatalogservice-*` pod.
+The pod's health check reads **Degraded** - *"Pod is Running but has experienced 11 restarts; investigate crash/OOM root cause."*
 
-![Pods table - open the crash-looping pod](/img/lab3/3.13-pods-table.png)
+![Pod Assistant health check - Degraded, 11 restarts](/img/lab3/3.13-pod-health.png)
 
-**5. Drill to the container.** On the pod page, scroll to the **Containers** table (MEM MAX ~181%) and click the container.
+**4. Drill to the container.** On the pod page, scroll to the **Containers** table (three alerts firing) and click the container.
 
 ![Containers table - open the container](/img/lab3/3.13-containers-table.png)
 
-**6. Read the container health check.** The container page's Assistant health check reports **Unhealthy** - *"Container has 15 restarts; pods experiencing wait conditions or status issues."* Same verdict, one level deeper.
+The table's **Cost** toggle adds a right-sizing verdict along the way: this container's memory is **Undersized** - the flip side of the over-provisioning on the Efficiency tab, and exactly what you'd expect of a workload pinned at its limit.
 
-![Container Assistant health check - Unhealthy, 15 restarts](/img/lab3/3.13-container-health.png)
+![Containers Cost view - memory Undersized](/img/lab3/3.13-container-cost.png)
+
+**5. Read the container health check.** **Degraded** - *"Container has 11 restarts and 1+ firing alert; check waiting reasons and memory/CPU status."* Same verdict, one level deeper.
+
+![Container Assistant health check - Degraded, 11 restarts](/img/lab3/3.13-container-health.png)
 
 The Assistant's verdict agrees at every level with the graphs you read - the OOMKill and the crash-loop. (If it ever disagreed with the graphs, trust the graphs.) Each page also carries **Knowledge Graph annotations** and a ring icon that opens the entity in the **RCA Workbench** - which is where you're headed next.
 
@@ -234,64 +239,99 @@ The Assistant's verdict agrees at every level with the graphs you read - the OOM
 
 ## RCA Workbench
 
-You've confirmed the failure mode is a memory leak. The [RCA Workbench](https://grafana.com/docs/grafana-cloud/knowledge-graph/troubleshoot-infra-apps/workbench/) streams every insight for your entities onto one timeline - sorted by time and severity - so you can see the sequence of what fired and correlate the cascade back to a source.
+You know the failure mode is a memory leak. But a leak doesn't start itself - something changed. The [RCA Workbench](https://grafana.com/docs/grafana-cloud/knowledge-graph/troubleshoot-infra-apps/workbench/) puts every insight on one timeline so you can see what happened first.
 
-Open **Observability** -> **RCA workbench**. Add `productcatalogservice` and `frontend`, then click **Causes** - it automatically pulls in related upstream entities that could be the root cause (the pods, the node, and connected services). Set the time range to start a little before the errors began.
+You can build the workbench right from where you are. On the `productcatalogservice` deployment page, open the **Insights** dropdown - it lists what the graph knows is firing (`KubeContainerOomKiller`, `KubePodCrashLooping`) - and click **Workbench** to add the entity.
 
-![RCA Workbench timeline](/img/lab3/3.5-rca-workbench.png)
+<img src={require('@site/static/img/lab3/3.5-insights-workbench.png').default} alt="The deployment's Insights dropdown, with the Workbench button" width="797" />
 
-## Question 6: Read the timeline - where does it point?
+The **RCA Workbench** button in the toolbar now counts 1 entity - click it to open the workbench.
 
-**Read the Timeline in time order. Which categories of insight are firing, and which entity do they cluster on?**
+![The RCA Workbench button in the toolbar](/img/lab3/3.5-workbench-button.png)
 
-The summary bar at the top breaks the insights into categories - **Saturation, Amend, Anomaly, Failure, Error** - with a count for each. Read those first, then the per-entity rows.
+On the workbench **Timeline**, hover the `productcatalogservice` row and click **Show connected entities**.
 
-<TryIt where="the Timeline tab; read the category counts in the summary bar, then the per-entity insight rows in time order." />
+![The entity row's Show connected entities button](/img/lab3/3.5-show-connected.png)
+
+Add the connected **Services** (the **+** adds all 8 at once - the pod and namespace can come too) so the timeline shows the whole neighbourhood.
+
+![Adding all connected Services to the workbench](/img/lab3/3.5-add-services.png)
+
+## Question 6: What was the first event?
+
+**Read the Timeline in time order. What is the earliest insight - before the memory saturation and the crashes?**
+
+The failure and error insights are loud, but they're symptoms.
+
+<TryIt where="the Timeline, read in time order - scroll to the earliest entries." />
 
 <details className="answer-reveal">
 <summary>Show answer</summary>
 
-The timeline here is made up of **Error** and **Anomaly** insights (roughly `error 18` / `anomaly 11` across these entities), and they cluster on **`productcatalogservice`** and the services that call it. Read top-to-bottom in time order and productcatalogservice leads, with its callers' (`frontend`, `checkoutservice`, `recommendationservice`) error and anomaly insights following - the workbench correlates the whole cascade back to `productcatalogservice` as the origin.
+The earliest insight is a change event (an **Amend** insight, shown in blue) on **`flagd`** - the feature-flag service: its short blue bar starts before every red band on the timeline, right before `productcatalogservice`'s failure begins.
 
-![RCA Workbench timeline - Error and Anomaly insights clustering on productcatalogservice](/img/lab3/3.6-first-event.png)
+![The timeline - flagd's blue Amend bar precedes every red band](/img/lab3/3.6-first-event.png)
 
-:::note Where's the "feature flag changed" event?
-The trigger for this incident is a feature-flag flip, and in some Grafana Cloud setups that surfaces on the timeline as a blue **Amend** (change) insight on `flagd` - the literal "what changed first." In this workshop stack that change-detection insight isn't wired up, so the summary bar reads **Amend 0** (and **Saturation 0 / Failure 0**) - the timeline carries only the **Error** and **Anomaly** symptoms. Don't hunt for an Amend that isn't there: you already know the trigger from the scenario, and you confirmed the mechanism (memory into the limit -> OOMKill -> crash loop) in Kubernetes Monitoring back in Question 3. The workbench's value here is correlating the symptom cascade, by time and dependency, to the source entity.
-:::
+Expand the `flagd` row and the amend names itself: a **FeatureFlagStateChange** (~12:03 in this run) - a **feature flag was switched on**. Everything after it follows in order:
+
+1. **Change** - the feature flag flips (Amend, blue, on `flagd`).
+2. **Saturation** - `productcatalogservice` memory climbs toward the limit (yellow -> red).
+3. **Failure** - the pod is OOMKilled and crash-loops (red).
+4. **Error** - `frontend` starts returning 500s (red).
+
+The flag change is the root cause; the 500s customers noticed are the last link in the chain.
+
+![Expanding flagd - the FeatureFlagStateChange amend insight](/img/lab3/3.6-feature-flag.png)
+
+> **Why this matters:** "what changed first" is usually the fix, and it's the one thing a single dashboard can't tell you.
 
 **How to find it:**
 
-1. In the **RCA workbench**, open the **Timeline** tab.
-2. Read the summary bar's category counts (Saturation / Amend / Anomaly / Failure / Error).
-3. Read the per-entity rows in time order - the earliest, most-severe insights are on `productcatalogservice`; its callers' errors follow.
-
-> **Why this matters:** correlating symptoms by time and dependency points you at the source even when the raw trigger isn't itself an insight.
+1. In the **RCA workbench**, read the **Timeline** in time order - the blue **Amend** bar on `ecommerce-prod/flagd` is the earliest event.
+2. Expand the `flagd` row - the amend is a **FeatureFlagStateChange**.
+3. Trace the sequence forward through Saturation -> Failure -> Error.
 
 </details>
 
 ---
 
-## Question 7: Confirm it in the logs
+## Question 7: What do the logs actually show?
 
-**From the workbench, open the entity's logs. What do the logs say as it dies?**
+**Open `productcatalogservice`'s logs for the incident window. Does the crash show up - and if not, what does?**
 
-The workbench links each entity into **Logs Drilldown**, pre-filtered - no LogQL needed.
+The workbench links each entity into **Logs Drilldown**, pre-filtered - no LogQL needed. You'd expect a crashing service to log the crash. Check whether it actually does, then read what *is* there.
 
-<TryIt where="the Logs link on productcatalogservice in the workbench, then the Patterns tab." />
+<TryIt where="productcatalogservice's Logs tab in the workbench; line-filter for oom|panic|fatal|error, then clear it and look at the info-level lines that flood in during the incident." />
 
 <details className="answer-reveal">
 <summary>Show answer</summary>
 
-Filtering to `productcatalogservice` at error level, the **Patterns** view surfaces the crash: out-of-memory messages and the runtime stack trace as the process is killed, repeating with each restart of the crash loop.
+**The crash isn't in the logs.** An OOMKill is a **kernel SIGKILL** - the process is terminated instantly and never gets to log a panic or a stack trace. Filter the incident window for `oom|panic|fatal|error` and you get **no matches**: the service logs no errors at all during the crash-loop.
+
+![Searching productcatalogservice's logs for oom / panic / fatal / error returns nothing](/img/lab3/3.7-logs-no-crash.png)
+
+But the logs aren't empty. Clear the filter and the info lines tell you what happened. The moment the flag flips on, `productcatalogservice` starts emitting a flood of info logs:
+
+```
+level=info msg="cache stats: entries=136 hits=2 misses=136 pending_events=136 sent_events=0"
+```
+
+That's the **in-memory response cache** the `productCatalogResponseCache` flag just switched on. Watch the numbers climb across the stream (`entries=30 -> 63 -> 90 -> 136 ...`): **entries only ever grow, hits stay pinned near zero**. It's an unbounded, useless cache - every request adds an entry and almost none are ever served from it. That is the *mechanism* behind the memory climb you watched in Question 3, and it ties straight back to the flag change from Question 6. (When the flag is off, the service logs nothing at all - so this stream appearing is itself the signal that the feature is live.)
+
+![productcatalogservice logs - a flood of cache-stats info lines with entries climbing and hits near zero, no crash or error](/img/lab3/3.7-logs-drilldown.png)
+
+The logs point at the *cause*; the crash itself you confirm from **Kubernetes** - the restart count and `OOMKilled` reason (Question 3) or the pod's **Events** tab.
+
+:::note Rule of thumb
+When a crash isn't in the app logs, reach for the infrastructure signals - restarts, last-terminated reason, Events. But still read the logs: they often show the *behavior* that led to the crash, even when they never name it.
+:::
 
 **How to find it:**
 
-1. From `productcatalogservice` in the workbench, open **Logs** (Logs Drilldown).
-2. Filter to `detected_level = error` (and the service, if not already applied).
-3. Open the **Patterns** tab; **Include** the OOM/panic pattern.
-4. Click a line to read the full stack trace in the details panel.
-
-![Logs Drilldown - OOM pattern](/img/lab3/3.7-logs-drilldown.png)
+1. Open `productcatalogservice` in the workbench and click its **Logs** tab (or the **Logs Drilldown** button), scoped to the incident window.
+2. Add a **Line filter** for `oom|panic|fatal|error` - note there are **no matches** (no errors at all).
+3. Clear the filter and read the info lines that dominate the stream: `cache stats: entries=... hits=... misses=...` - entries climbing, hits near zero: the response cache filling without ever serving a hit.
+4. Confirm the OOMKill itself via Kubernetes Monitoring (Question 3) or the pod's **Events** tab.
 
 </details>
 
@@ -299,24 +339,39 @@ Filtering to `productcatalogservice` at error level, the **Patterns** view surfa
 
 ## Question 8: See the impact on traces <Badge variant="optional">Optional</Badge>
 
-**Open the entity's traces. What happens to requests during the crash loop?**
+**Open the traces. Where do the errors actually show up - on `productcatalogservice`, or somewhere else?**
 
-The same workbench links open **Traces Drilldown** for the entity.
+Every entity's KPI drawer has a **Traces** tab with the same RED metrics. Open `productcatalogservice`'s, then compare a couple of its callers.
 
-<TryIt where="the Traces link on the entity, with the Errors metric selected." />
+<TryIt where="the Traces tab in the KPI drawer - productcatalogservice first, then its callers (frontend, frontendproxy); compare the Errors rate on each." />
 
 <details className="answer-reveal">
 <summary>Show answer</summary>
 
-During each crash window, requests to `productcatalogservice` error or hang - the **Errors** RED metric spikes, and traces that touch the service show failed spans. This is how an infrastructure problem (OOM) becomes a user-facing one (frontend 500s).
+**Not on `productcatalogservice`.** Open its **Traces** tab, select the **Errors** metric, and the rate sits flat at **zero** - no errored traces across the whole incident window. Same reason as the logs and the 0% error ratio from Question 1: a crashing pod stops responding, it doesn't emit error spans.
+
+![productcatalogservice Traces tab - errors rate flat at zero](/img/lab3/3.8-traces-productcatalog.png)
+
+To check its callers, hover an entity in the workbench timeline and click **KPIs** to open its drawer. If you're not sure which services call it, **Show connected entities** lists them (and lets you add one, like `frontendproxy`, to the workbench).
+
+![Opening a caller's KPI drawer from the workbench timeline](/img/lab3/3.8-show-kpis.png)
+
+![frontend's connected entities - the services that call it and that it calls](/img/lab3/3.8-connected-entities.png)
+
+Open the same **Traces** tab on those user-facing services and the error rate climbs steeply through the 12:00-13:00 window: **`frontend`** racks up ~600 errored traces and **`frontendproxy`** ~400 - the 500s customers actually saw. The service that *caused* the incident contributes none of them.
+
+![frontend Traces tab - errors rate spiking, ~600 errored traces](/img/lab3/3.8-traces-frontend.png)
+
+![frontendproxy Traces tab - errors rate spiking, ~400 errored traces](/img/lab3/3.8-traces-frontendproxy.png)
+
+The service that crashed shows no errors; the ones that depend on it show all of them. That's how the OOM reached customers as frontend 500s.
 
 **How to find it:**
 
-1. From the entity, open **Traces** (Traces Drilldown).
-2. Choose the **Errors** metric; open **Root cause errors** / **Exceptions**.
-3. See the error spikes aligned with the crash-loop windows.
-
-![Traces Drilldown - errors during crashes](/img/lab3/3.8-traces-drilldown.png)
+1. In the workbench, open `productcatalogservice` and its **Traces** tab; select the **Errors** metric - the rate is flat at **zero**.
+2. Hover a caller's row in the timeline and click **KPIs** (use **Show connected entities** first if you need to find or add one).
+3. Open that caller's **Traces** tab - `frontend` and `frontendproxy` both spike through the incident window, hundreds of errored traces each.
+4. Prefer TraceQL? `{resource.service.name="productcatalogservice" && status=error}` returns nothing; the same query on the callers returns the failures.
 
 </details>
 
@@ -343,22 +398,35 @@ LLM output varies between runs. Judge the Assistant on whether it names the same
 <details className="answer-reveal">
 <summary>Show answer</summary>
 
-The Assistant should narrate the same causal chain you assembled from the timeline:
+Click **Analyze RCA Workbench** (bottom-right) and the Assistant works over the same insight timeline you just read.
+
+![The Analyze RCA Workbench button in the timeline](/img/lab3/3.9-analyze-button.png)
+
+It reconstructs the sequence from the workbench summary - converting the raw timestamps to UTC and mapping when the flag changed, when the OOM hit, and when each downstream service started erroring.
+
+![The Assistant reasoning through the workbench timeline](/img/lab3/3.9-assistant-thinking.png)
+
+It lands on the same causal chain you assembled by hand - an **Impact Chain** from the flag flip to the OOM to the cascading caller errors:
+
+![The Assistant's Impact Chain - feature flag change to productcatalogservice OOM to cascading downstream errors](/img/lab3/3.9-assistant-analyze.png)
 
 ```
-A feature-flag change on productcatalogservice preceded a steady rise in memory
-(saturation), leading to OOMKills and a crash loop (failure). Because frontend
-depends on productcatalogservice, those failures propagated as 5xx errors to the
-frontend. Root cause: the feature-flag change; the frontend 500s are the symptom.
+A feature-flag change (productCatalogResponseCache) enabled an in-memory cache on
+productcatalogservice; ~1 minute later the pod is OOMKilled and crash-loops
+(failure). Its callers - checkoutservice, recommendationservice, frontend,
+frontendproxy - then breach their error ratios in order. Root cause: the flag
+change; the frontend 500s are the symptom.
 ```
+
+Each step is backed by the graph: `flagd` flipped the flag at 12:16, the OOM hits at 12:17, and every downstream breach traces along the `ROUTES` / `CALLS` edges back to a caller of `productcatalogservice`. It even sets aside a `RequestRateAnomaly` that began *before* the flag change, calling it a pre-existing condition rather than part of the chain.
+
+![The Assistant grounding its hypothesis in specific timestamps and service-graph edges](/img/lab3/3.9-assistant-evidence.png)
 
 **How to find it:**
 
 1. In the **RCA workbench**, click **Analyze RCA Workbench** (bottom-right).
 2. Let its analysis finish before asking follow-ups.
-3. Read its root cause and event ordering.
-
-![Assistant analyzing the workbench](/img/lab3/3.9-assistant-analyze.png)
+3. Read its Impact Chain, the primary hypothesis, and the evidence it cites.
 
 </details>
 
@@ -375,17 +443,17 @@ frontend. Root cause: the feature-flag change; the frontend 500s are the symptom
 
 Check each claim against what you established:
 
-- **Source entity** = `productcatalogservice` - matches the entity the timeline's insights cluster on (Question 6) and whose Kubernetes state is unhealthy (Question 1).
-- **Mechanism** = memory into the limit -> OOMKilled -> crash loop - matches Kubernetes Monitoring (Question 3) and the logs (Question 7).
-- **Propagation** = `frontend`/`checkoutservice`/`recommendationservice` error because they call `productcatalogservice` - matches the Entity Graph edges (Question 2) and the Error insights on the timeline.
-- **Trigger / root cause** - if the Assistant names the feature-flag change as the trigger, note that *this timeline doesn't carry that as an insight* (**Amend 0**, Question 6). It fits the scenario and the OOM mechanism you confirmed, but you can't verify it on the graph here - so treat it as a lead to check (the flag history), not a fact to take on faith.
+- **Source entity** = `productcatalogservice` - matches the entity with critical *own* insights (Question 1).
+- **First event** = the feature-flag change - matches the earliest timeline insight (Question 6).
+- **Mechanism** = memory saturation -> OOMKilled -> crash loop - matches Kubernetes Monitoring (Question 3) and the logs (Question 7).
+- **Propagation** = `frontend` errors because it calls `productcatalogservice` - matches the Entity Graph edge (Question 2).
 
-The knowledge graph gives the Assistant the same typed map of entities and relationships you just verified, which is why the source, mechanism, and propagation line up. A claim you *can't* tie to a signal on the timeline is exactly the kind to verify rather than trust.
+The knowledge graph gives the Assistant the same typed map of entities and relationships you just verified, which is why the stories line up. If any claim didn't match the timeline, that's your cue to dig further, not to trust it.
 
 **How to find it:**
 
 1. Compare the Assistant's narrative point-by-point with the **Timeline** and **Entity Graph**.
-2. Confirm the source entity, mechanism, and propagation path agree - and flag any claim (like a specific trigger) that isn't backed by an insight on the timeline.
+2. Confirm the source entity, first event, mechanism, and propagation path all agree.
 
 </details>
 

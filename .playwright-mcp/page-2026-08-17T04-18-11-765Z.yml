@@ -1,0 +1,655 @@
+- generic [ref=e10]:
+  - link "Skip to main content" [ref=e11] [cursor=pointer]:
+    - /url: "#pageContent"
+  - generic [ref=e13]:
+    - generic [ref=e14]:
+      - generic [ref=e15]:
+        - link [ref=e16] [cursor=pointer]:
+          - /url: /
+          - img "Grafana" [ref=e17]
+        - link "Grafana" [ref=e18] [cursor=pointer]:
+          - /url: /
+      - button "Close menu" [ref=e19] [cursor=pointer]
+    - navigation "Navigation" [ref=e22]:
+      - list "Navigation" [ref=e27]:
+        - listitem [ref=e28]:
+          - generic [ref=e29]:
+            - link [ref=e32] [cursor=pointer]:
+              - /url: /bookmarks
+              - paragraph [ref=e37]: Bookmarks
+            - 'button "Expand section: Bookmarks" [ref=e39] [cursor=pointer]'
+        - listitem [ref=e42]:
+          - generic [ref=e43]:
+            - link [ref=e46] [cursor=pointer]:
+              - /url: /dashboards?starred
+              - paragraph [ref=e51]: Starred
+            - 'button "Expand section: Starred" [ref=e54] [cursor=pointer]'
+        - listitem [ref=e57]:
+          - generic [ref=e58]:
+            - link [ref=e61] [cursor=pointer]:
+              - /url: /dashboards
+              - paragraph [ref=e66]: Dashboards
+            - 'button "Expand section: Dashboards" [ref=e69] [cursor=pointer]'
+        - listitem [ref=e72]:
+          - link [ref=e76] [cursor=pointer]:
+            - /url: /explore
+            - paragraph [ref=e81]: Explore
+        - listitem [ref=e83]:
+          - generic [ref=e84]:
+            - link [ref=e87] [cursor=pointer]:
+              - /url: /drilldown
+              - paragraph [ref=e95]: Drilldown
+            - 'button "Collapse section: Drilldown" [expanded] [ref=e98] [cursor=pointer]'
+          - list [ref=e101]:
+            - listitem [ref=e102]:
+              - link [ref=e106] [cursor=pointer]:
+                - /url: /a/grafana-metricsdrilldown-app/drilldown
+                - paragraph [ref=e109]: Metrics
+            - listitem [ref=e111]:
+              - link [ref=e115] [cursor=pointer]:
+                - /url: /a/grafana-lokiexplore-app/explore
+                - paragraph [ref=e118]: Logs
+            - listitem [ref=e120]:
+              - link [ref=e124] [cursor=pointer]:
+                - /url: /a/grafana-exploretraces-app/
+                - paragraph [ref=e127]: Traces
+            - listitem [ref=e129]:
+              - link [ref=e133] [cursor=pointer]:
+                - /url: /a/grafana-pyroscope-app/explore
+                - paragraph [ref=e136]: Profiles
+        - listitem [ref=e138]:
+          - generic [ref=e139]:
+            - link [ref=e142] [cursor=pointer]:
+              - /url: /a/grafana-assistant-app
+              - paragraph [ref=e148]: Assistant
+            - 'button "Expand section: Assistant" [ref=e151] [cursor=pointer]'
+        - listitem [ref=e154]:
+          - generic [ref=e155]:
+            - link [ref=e158] [cursor=pointer]:
+              - /url: /alerts-and-incidents
+              - paragraph [ref=e163]: Alerts & IRM
+            - 'button "Expand section: Alerts &amp; IRM" [ref=e166] [cursor=pointer]'
+        - listitem [ref=e169]:
+          - generic [ref=e170]:
+            - link [ref=e173] [cursor=pointer]:
+              - /url: /a/grafana-ml-app/home
+              - paragraph [ref=e180]: AI & machine learning
+            - 'button "Expand section: AI &amp; machine learning" [ref=e183] [cursor=pointer]'
+        - listitem [ref=e186]:
+          - generic [ref=e187]:
+            - link [ref=e190] [cursor=pointer]:
+              - /url: adaptive-telemetry
+              - generic [ref=e192]:
+                - paragraph [ref=e210]: Adaptive Telemetry
+                - generic [ref=e211]: New!
+            - 'button "Expand section: Adaptive Telemetry" [ref=e217] [cursor=pointer]'
+        - listitem [ref=e220]:
+          - generic [ref=e221]:
+            - link [ref=e224] [cursor=pointer]:
+              - /url: /a/grafana-cmab-app/
+              - generic [ref=e226]:
+                - paragraph [ref=e229]: Cost Management and Billing
+                - generic [ref=e230]: New!
+            - 'button "Expand section: Cost Management and Billing" [ref=e236] [cursor=pointer]'
+        - listitem [ref=e239]:
+          - generic [ref=e240]:
+            - link [ref=e243] [cursor=pointer]:
+              - /url: /testing-and-synthetics
+              - paragraph [ref=e250]: Testing & synthetics
+            - 'button "Expand section: Testing &amp; synthetics" [ref=e253] [cursor=pointer]'
+        - listitem [ref=e256]:
+          - generic [ref=e257]:
+            - link [ref=e260] [cursor=pointer]:
+              - /url: /observability
+              - paragraph [ref=e265]: Observability
+            - 'button "Collapse section: Observability" [expanded] [ref=e268] [cursor=pointer]'
+          - list [ref=e271]:
+            - listitem [ref=e272]:
+              - link [ref=e276] [cursor=pointer]:
+                - /url: /a/grafana-asserts-app/entities
+                - paragraph [ref=e279]: Entity graph
+            - listitem [ref=e281]:
+              - link [ref=e285] [cursor=pointer]:
+                - /url: /a/grafana-asserts-app/catalog
+                - paragraph [ref=e288]: Entity catalog
+            - listitem [ref=e290]:
+              - link [ref=e294] [cursor=pointer]:
+                - /url: /a/grafana-asserts-app/assertions
+                - paragraph [ref=e297]: RCA workbench
+            - listitem [ref=e299]:
+              - link [ref=e303] [cursor=pointer]:
+                - /url: /a/grafana-asserts-app/slo
+                - paragraph [ref=e306]: Health target
+            - listitem [ref=e308]:
+              - link [ref=e312] [cursor=pointer]:
+                - /url: /a/grafana-asserts-app/rules
+                - paragraph [ref=e315]: Rules
+            - listitem [ref=e317]:
+              - link [ref=e321] [cursor=pointer]:
+                - /url: /a/grafana-asserts-app/configuration
+                - paragraph [ref=e324]: Configuration
+            - listitem [ref=e326]:
+              - generic [ref=e327]:
+                - link [ref=e330] [cursor=pointer]:
+                  - /url: /a/grafana-agento11y-app
+                  - generic [ref=e332]:
+                    - paragraph [ref=e333]: Agent
+                    - generic [ref=e334]: New!
+                - 'button "Expand section: Agent" [ref=e340] [cursor=pointer]'
+            - listitem [ref=e343]:
+              - generic [ref=e344]:
+                - link [ref=e347] [cursor=pointer]:
+                  - /url: /a/grafana-kowalski-app
+                  - paragraph [ref=e350]: Frontend
+                - 'button "Expand section: Frontend" [ref=e353] [cursor=pointer]'
+            - listitem [ref=e356]:
+              - generic [ref=e357]:
+                - link [ref=e360] [cursor=pointer]:
+                  - /url: /a/grafana-app-observability-app
+                  - paragraph [ref=e363]: Application
+                - 'button "Expand section: Application" [ref=e366] [cursor=pointer]'
+            - listitem [ref=e369]:
+              - generic [ref=e370]:
+                - link [ref=e373] [cursor=pointer]:
+                  - /url: /a/grafana-dbo11y-app/
+                  - generic [ref=e375]:
+                    - paragraph [ref=e376]: Database
+                    - generic [ref=e377]: New!
+                - 'button "Collapse section: Database" [expanded] [ref=e383] [cursor=pointer]'
+              - list [ref=e386]:
+                - listitem [ref=e387]:
+                  - link [ref=e392] [cursor=pointer]:
+                    - /url: /a/grafana-dbo11y-app/overview
+                    - paragraph [ref=e395]: Queries Overview
+                - listitem [ref=e397]:
+                  - link [ref=e402] [cursor=pointer]:
+                    - /url: /a/grafana-dbo11y-app/configuration
+                    - paragraph [ref=e405]: Configuration
+            - listitem [ref=e407]:
+              - generic [ref=e408]:
+                - link [ref=e411] [cursor=pointer]:
+                  - /url: /a/grafana-k8s-app/home
+                  - paragraph [ref=e414]: Kubernetes
+                - 'button "Expand section: Kubernetes" [ref=e417] [cursor=pointer]'
+            - listitem [ref=e420]:
+              - generic [ref=e421]:
+                - link [ref=e424] [cursor=pointer]:
+                  - /url: /a/grafana-csp-app
+                  - paragraph [ref=e427]: Cloud provider
+                - 'button "Expand section: Cloud provider" [ref=e430] [cursor=pointer]'
+        - listitem [ref=e433]:
+          - generic [ref=e434]:
+            - link [ref=e437] [cursor=pointer]:
+              - /url: /connections
+              - paragraph [ref=e442]: Connections
+            - 'button "Expand section: Connections" [ref=e445] [cursor=pointer]'
+        - listitem [ref=e448]:
+          - generic [ref=e449]:
+            - link [ref=e452] [cursor=pointer]:
+              - /url: /apps
+              - paragraph [ref=e457]: More apps
+            - 'button "Expand section: More apps" [ref=e460] [cursor=pointer]'
+        - listitem [ref=e463]:
+          - generic [ref=e464]:
+            - link [ref=e467] [cursor=pointer]:
+              - /url: /admin
+              - paragraph [ref=e472]: Administration
+            - 'button "Expand section: Administration" [ref=e475] [cursor=pointer]'
+      - separator [ref=e478]
+      - button "Undock menu" [ref=e480] [cursor=pointer]
+  - banner [ref=e483]:
+    - generic [ref=e484]:
+      - navigation "Breadcrumbs" [ref=e486]:
+        - list [ref=e487]:
+          - listitem [ref=e488]:
+            - link "Observability" [ref=e489] [cursor=pointer]:
+              - /url: /observability
+          - listitem [ref=e493]:
+            - generic "Entity catalog" [ref=e494]
+      - generic [ref=e495]:
+        - generic [ref=e497]:
+          - button "Search..." [ref=e501] [cursor=pointer]
+          - generic [ref=e502]: ⌘+k
+        - button "New" [ref=e504] [cursor=pointer]
+        - button "Help" [ref=e510] [cursor=pointer]
+        - button "Open Grafana Assistant" [ref=e514] [cursor=pointer]
+        - button "Profile" [ref=e519] [cursor=pointer]:
+          - img "User avatar" [ref=e520]
+  - main [ref=e523]:
+    - generic [ref=e526]:
+      - generic [ref=e527]:
+        - generic [ref=e532]:
+          - generic [ref=e533]:
+            - generic [ref=e534]: Env
+            - generic [ref=e535] [cursor=pointer]:
+              - log [ref=e537]
+              - generic [ref=e539]:
+                - generic [ref=e540]:
+                  - generic [ref=e541]: all
+                  - button "Remove" [ref=e542]
+                - combobox [ref=e546]
+          - generic [ref=e550]:
+            - generic [ref=e551]: Region
+            - generic [ref=e552] [cursor=pointer]:
+              - log [ref=e554]
+              - generic [ref=e556]:
+                - generic [ref=e557]:
+                  - generic [ref=e558]: all
+                  - button "Remove" [ref=e559]
+                - combobox [ref=e563]
+          - generic [ref=e567]:
+            - generic [ref=e568]: K8s namespace
+            - generic [ref=e569] [cursor=pointer]:
+              - log [ref=e571]
+              - generic [ref=e573]:
+                - generic [ref=e574]:
+                  - generic [ref=e575]: ecommerce-prod
+                  - button "Remove" [ref=e576]
+                - combobox [ref=e580]
+        - generic [ref=e585]:
+          - button "Entity Graph" [ref=e586] [cursor=pointer]
+          - generic [ref=e592]:
+            - generic [ref=e593]:
+              - button "Move time range backwards" [ref=e594] [cursor=pointer]
+              - 'button "Time range selected: Last 24 hours" [ref=e597] [cursor=pointer]':
+                - generic [ref=e600]: Last 24 hours
+              - button "Move time range forwards" [ref=e605] [cursor=pointer]
+              - button "Zoom out time range" [ref=e608] [cursor=pointer]
+            - button [ref=e612] [cursor=pointer]
+          - button "Documentation" [ref=e615] [cursor=pointer]
+          - generic [ref=e618]:
+            - button "RCA Workbench 0" [disabled] [ref=e619]:
+              - generic [ref=e623]:
+                - generic [ref=e624]: RCA Workbench
+                - generic [ref=e625]: "0"
+            - button "Open RCA Workbench" [disabled] [ref=e626]
+      - generic [ref=e630]:
+        - generic [ref=e631]:
+          - button "Filters" [ref=e632] [cursor=pointer]
+          - 'button "Entity: Service +1" [ref=e637] [cursor=pointer]':
+            - generic [ref=e639]:
+              - text: "Entity:"
+              - strong [ref=e640]: Service
+              - generic [ref=e641]: "+1"
+          - generic [ref=e644]:
+            - generic [ref=e647]:
+              - generic [ref=e648] [cursor=pointer]: Only OTel services
+              - switch "Only OTel services" [ref=e650]
+            - radiogroup "Instrumentation status" [ref=e655]:
+              - generic [ref=e656]:
+                - radio "Instrumented" [checked] [ref=e657] [cursor=pointer]
+                - generic "Instrumented" [ref=e658] [cursor=pointer]
+              - generic [ref=e660]:
+                - radio "Uninstrumented" [ref=e661] [cursor=pointer]
+                - generic "Uninstrumented" [ref=e662] [cursor=pointer]
+              - generic [ref=e664]:
+                - radio "All" [ref=e665] [cursor=pointer]
+                - generic "All" [ref=e666] [cursor=pointer]
+        - generic [ref=e670]:
+          - tablist [ref=e674]:
+            - tab "Performance" [selected] [ref=e676] [cursor=pointer]
+            - tab "Instrumentation quality2" [ref=e678] [cursor=pointer]
+          - generic [ref=e679]:
+            - table [ref=e685]:
+              - rowgroup [ref=e686]:
+                - row [ref=e687]:
+                  - columnheader [ref=e688]:
+                    - button "Sort column Insights" [ref=e689] [cursor=pointer]: Insights
+                  - columnheader [ref=e693]:
+                    - button "Sort column Name" [ref=e694] [cursor=pointer]: Name
+                  - columnheader [ref=e695]:
+                    - button "Sort column Technology" [ref=e696] [cursor=pointer]: Technology
+                  - columnheader [ref=e697]:
+                    - button "Sort column Latency P95" [ref=e698] [cursor=pointer]: Latency P95
+                  - columnheader [ref=e699]:
+                    - button "Sort column Error Ratio %" [ref=e700] [cursor=pointer]: Error Ratio %
+                  - columnheader [ref=e701]:
+                    - button "Sort column Request Rate" [ref=e702] [cursor=pointer]: Request Rate
+                  - columnheader [ref=e703]:
+                    - button [ref=e705] [cursor=pointer]
+              - rowgroup [ref=e709]:
+                - row [ref=e710]:
+                  - cell "" [ref=e711]
+                  - cell "ecommerce-prod/productcatalogservice devfedb13-cluster·us-east-2·ecommerce-prod" [ref=e717]:
+                    - generic [ref=e718]:
+                      - button "ecommerce-prod/productcatalogservice" [ref=e722] [cursor=pointer]
+                      - generic [ref=e723]: devfedb13-cluster·us-east-2·ecommerce-prod
+                  - cell [ref=e724]
+                  - cell "7.50 ms" [ref=e734]
+                  - cell "0%" [ref=e746]
+                  - cell "2.72 req/s" [ref=e757]
+                  - cell [ref=e769]:
+                    - button "RCA Workbench" [ref=e771] [cursor=pointer]
+                - row [ref=e775]:
+                  - cell "" [ref=e776]
+                  - cell "ecommerce-prod/productcatalogservice-europe devfedb13-cluster·us-east-2·ecommerce-prod" [ref=e782]:
+                    - generic [ref=e783]:
+                      - button "ecommerce-prod/productcatalogservice-europe" [ref=e787] [cursor=pointer]
+                      - generic [ref=e788]: devfedb13-cluster·us-east-2·ecommerce-prod
+                  - cell [ref=e789]
+                  - cell "No Data" [ref=e799]
+                  - cell "No Data" [ref=e802]
+                  - cell "No Data" [ref=e805]
+                  - cell [ref=e808]:
+                    - button "RCA Workbench" [ref=e810] [cursor=pointer]
+            - separator [ref=e815]
+            - generic [ref=e818]:
+              - paragraph [ref=e819]: "Rows per page:"
+              - combobox "Rows per page:" [ref=e822] [cursor=pointer]: "15"
+    - dialog [ref=e825]:
+      - dialog "Drawer title no title" [ref=e826]:
+        - generic [ref=e828]:
+          - button "Close" [ref=e830] [cursor=pointer]
+          - generic [ref=e833]:
+            - generic [ref=e835]:
+              - generic [ref=e836]:
+                - generic [ref=e837]: 
+                - generic [ref=e841]:
+                  - generic [ref=e842]: ecommerce-prod/productcatalogservice
+                  - generic [ref=e843]: devfedb13-cluster·us-east-2·ecommerce-prod
+                - generic [ref=e845]:
+                  - generic [ref=e846]: Service
+                  - generic [ref=e847]:
+                    - button "View" [ref=e848] [cursor=pointer]
+                    - button "Declare incident" [ref=e852] [cursor=pointer]
+                    - button "Open additional actions menu" [ref=e855] [cursor=pointer]
+              - generic [ref=e858]:
+                - button "Add to RCA Workbench" [ref=e859] [cursor=pointer]
+                - generic [ref=e863]:
+                  - button "RCA Workbench 0" [disabled] [ref=e864]:
+                    - generic [ref=e868]:
+                      - generic [ref=e869]: RCA Workbench
+                      - generic [ref=e870]: "0"
+                  - button "Open RCA Workbench" [disabled] [ref=e871]
+            - tablist [ref=e876]:
+              - tab "Service overview" [selected] [ref=e878] [cursor=pointer]
+              - tab "Kubernetes" [ref=e880] [cursor=pointer]
+              - tab "Metrics" [ref=e882] [cursor=pointer]
+              - tab "Logs" [ref=e884] [cursor=pointer]
+              - tab "Traces" [ref=e886] [cursor=pointer]
+              - tab "Profiles" [ref=e888] [cursor=pointer]
+              - tab "Go Runtime" [ref=e890] [cursor=pointer]
+              - tab "Service KPI" [ref=e892] [cursor=pointer]
+              - tab "Quality report3" [ref=e894] [cursor=pointer]
+              - tab "Properties" [ref=e896] [cursor=pointer]
+        - generic [ref=e902]:
+          - generic [ref=e903]:
+            - button "Kubernetes" [ref=e904] [cursor=pointer]
+            - button "Runtime" [ref=e914] [cursor=pointer]
+            - generic [ref=e924]:
+              - button "Move 12h backward" [ref=e925] [cursor=pointer]
+              - 'button "Time range selected: Last 24 hours" [ref=e928] [cursor=pointer]':
+                - generic [ref=e931]: Last 24 hours
+              - button "Move time range forwards" [ref=e936] [cursor=pointer]
+              - button "Zoom out time range" [ref=e939] [cursor=pointer]
+            - generic [ref=e942]:
+              - button "Enable time frame comparison" [ref=e943] [cursor=pointer]:
+                - generic [ref=e944]:
+                  - checkbox [ref=e947]
+                  - text: Comparison
+              - button "Previous period" [disabled] [ref=e949]
+            - generic [ref=e953]:
+              - button [ref=e954] [cursor=pointer]
+              - button "Auto refresh turned off. Choose refresh time interval" [ref=e957] [cursor=pointer]
+          - generic [ref=e961]:
+            - generic [ref=e964]:
+              - generic [ref=e965]:
+                - generic [ref=e966]: Request type
+                - generic [ref=e967] [cursor=pointer]:
+                  - log [ref=e969]
+                  - generic [ref=e971]:
+                    - generic [ref=e972]: inbound
+                    - combobox [ref=e974]
+              - generic [ref=e978]:
+                - generic [ref=e979]: Source
+                - generic [ref=e980] [cursor=pointer]:
+                  - log [ref=e982]
+                  - generic [ref=e984]:
+                    - generic [ref=e985]: app_o11y_spanmetrics
+                    - combobox [ref=e987]
+              - generic [ref=e991]:
+                - generic [ref=e992]: Operation
+                - generic [ref=e993] [cursor=pointer]:
+                  - log [ref=e995]
+                  - generic [ref=e997]:
+                    - generic [ref=e998]: All
+                    - combobox [ref=e1000]
+              - generic [ref=e1004]:
+                - generic [ref=e1005]: Group by
+                - generic [ref=e1006] [cursor=pointer]:
+                  - log [ref=e1008]
+                  - generic [ref=e1010]:
+                    - generic [ref=e1011]: Group by label
+                    - combobox "Group by selector" [ref=e1013]
+              - generic [ref=e1017]:
+                - generic [ref=e1018]: Filter by
+                - button "Add filter" [ref=e1020] [cursor=pointer]
+            - generic [ref=e1023]:
+              - region [ref=e1028]:
+                - generic [ref=e1029]:
+                  - heading "Latency" [level=2] [ref=e1031]
+                  - generic [ref=e1032] [cursor=pointer]:
+                    - log [ref=e1034]
+                    - generic [ref=e1036]:
+                      - generic [ref=e1037]: P95
+                      - combobox [ref=e1039]
+                  - link "Explore" [ref=e1043] [cursor=pointer]:
+                    - /url: /explore?left=%7B%22datasource%22%3A%22grafanacloud-prom%22%2C%22queries%22%3A%5B%7B%22exemplar%22%3Atrue%2C%22expr%22%3A%22((histogram_quantile(0.99%2C%20sum(rate(%7Basserts_metric_latency%3D%5C%22native_histogram_seconds%5C%22%2C%20job%3D%5C%22ecommerce-prod%2Fproductcatalogservice%5C%22%2C%20service%3D~%5C%22%7Cproductcatalogservice%5C%22%2C%20asserts_env%3D%5C%22devfedb13-cluster%5C%22%2C%20asserts_site%3D%5C%22us-east-2%5C%22%2C%20asserts_source%3D%5C%22app_o11y_spanmetrics%5C%22%2C%20asserts_request_type%3D~%5C%22inbound%5C%22%2C%20namespace%3D%5C%22ecommerce-prod%5C%22%2C%20asserts_request_type!%3D%5C%22client_connections%5C%22%2C%20asserts_request_type!%3D%5C%22logger%5C%22%7D%20%5B%24__rate_interval%5D))%20by%20())))%22%2C%22refId%22%3A%22durationP99Query%22%2C%22legendFormat%22%3A%22Duration%22%2C%22datasource%22%3A%7B%22type%22%3A%22prometheus%22%2C%22uid%22%3A%22grafanacloud-prom%22%7D%2C%22interval%22%3A%222m%22%2C%22intervalMs%22%3A120000%7D%2C%7B%22exemplar%22%3Atrue%2C%22expr%22%3A%22((histogram_quantile(0.95%2C%20sum(rate(%7Basserts_metric_latency%3D%5C%22native_histogram_seconds%5C%22%2C%20job%3D%5C%22ecommerce-prod%2Fproductcatalogservice%5C%22%2C%20service%3D~%5C%22%7Cproductcatalogservice%5C%22%2C%20asserts_env%3D%5C%22devfedb13-cluster%5C%22%2C%20asserts_site%3D%5C%22us-east-2%5C%22%2C%20asserts_source%3D%5C%22app_o11y_spanmetrics%5C%22%2C%20asserts_request_type%3D~%5C%22inbound%5C%22%2C%20namespace%3D%5C%22ecommerce-prod%5C%22%2C%20asserts_request_type!%3D%5C%22client_connections%5C%22%2C%20asserts_request_type!%3D%5C%22logger%5C%22%7D%20%5B%24__rate_interval%5D))%20by%20())))%22%2C%22refId%22%3A%22durationP95Query%22%2C%22legendFormat%22%3A%22Duration%22%2C%22datasource%22%3A%7B%22type%22%3A%22prometheus%22%2C%22uid%22%3A%22grafanacloud-prom%22%7D%2C%22interval%22%3A%222m%22%2C%22intervalMs%22%3A120000%7D%2C%7B%22exemplar%22%3Atrue%2C%22expr%22%3A%22((%5Cn%20%20%20%20(%5Cn%20%20%20%20%20%20(%5Cn%20%20%20%20%20%20%20%20histogram_sum(sum(%7Basserts_metric_latency%3D%5C%22native_histogram_seconds%5C%22%2C%20job%3D%5C%22ecommerce-prod%2Fproductcatalogservice%5C%22%2C%20service%3D~%5C%22%7Cproductcatalogservice%5C%22%2C%20asserts_env%3D%5C%22devfedb13-cluster%5C%22%2C%20asserts_site%3D%5C%22us-east-2%5C%22%2C%20asserts_source%3D%5C%22app_o11y_spanmetrics%5C%22%2C%20asserts_request_type%3D~%5C%22inbound%5C%22%2C%20namespace%3D%5C%22ecommerce-prod%5C%22%2C%20asserts_request_type!%3D%5C%22client_connections%5C%22%2C%20asserts_request_type!%3D%5C%22logger%5C%22%7D)%20by%20())%5Cn%20%20%20%20%20%20)%5Cn%20%20%20%20%2F%20%5Cn%20%20%20%20%20%20(%5Cn%20%20%20%20%20%20%20%20histogram_count(sum(%7Basserts_metric_latency%3D%5C%22native_histogram_seconds%5C%22%2C%20job%3D%5C%22ecommerce-prod%2Fproductcatalogservice%5C%22%2C%20service%3D~%5C%22%7Cproductcatalogservice%5C%22%2C%20asserts_env%3D%5C%22devfedb13-cluster%5C%22%2C%20asserts_site%3D%5C%22us-east-2%5C%22%2C%20asserts_source%3D%5C%22app_o11y_spanmetrics%5C%22%2C%20asserts_request_type%3D~%5C%22inbound%5C%22%2C%20namespace%3D%5C%22ecommerce-prod%5C%22%2C%20asserts_request_type!%3D%5C%22client_connections%5C%22%2C%20asserts_request_type!%3D%5C%22logger%5C%22%7D)%20by%20())%5Cn%20%20%20%20%20%20)%5Cn%20%20%20%20)))%22%2C%22refId%22%3A%22durationAvgQuery%22%2C%22legendFormat%22%3A%22Duration%22%2C%22datasource%22%3A%7B%22type%22%3A%22prometheus%22%2C%22uid%22%3A%22grafanacloud-prom%22%7D%2C%22interval%22%3A%222m%22%2C%22intervalMs%22%3A120000%7D%2C%7B%22exemplar%22%3Afalse%2C%22expr%22%3A%22asserts%3Alatency%3Ap95%3Aservice%3Aanomaly_upper_threshold%7Bjob%3D%5C%22ecommerce-prod%2Fproductcatalogservice%5C%22%2C%20service%3D~%5C%22%7Cproductcatalogservice%5C%22%2C%20asserts_env%3D%5C%22devfedb13-cluster%5C%22%2C%20asserts_site%3D%5C%22us-east-2%5C%22%2C%20asserts_source%3D%5C%22app_o11y_spanmetrics%5C%22%2C%20asserts_request_type%3D~%5C%22inbound%5C%22%2C%20namespace%3D%5C%22ecommerce-prod%5C%22%2C%20asserts_request_type!%3D%5C%22client_connections%5C%22%2C%20asserts_request_type!%3D%5C%22logger%5C%22%7D%22%2C%22refId%22%3A%22durationP95QueryUpperThreshold%22%2C%22legendFormat%22%3A%22Upper%20Anomaly%20Threshold%22%2C%22datasource%22%3A%7B%22type%22%3A%22prometheus%22%2C%22uid%22%3A%22grafanacloud-prom%22%7D%2C%22interval%22%3A%222m%22%2C%22intervalMs%22%3A120000%7D%5D%2C%22range%22%3A%7B%22from%22%3A%22now-24h%22%2C%22to%22%3A%22now%22%7D%7D
+                - generic [ref=e1292]:
+                  - generic:
+                    - button [ref=e1302] [cursor=pointer]
+                    - button [ref=e1306] [cursor=pointer]
+                    - button [ref=e1310] [cursor=pointer]
+                    - button [ref=e1314] [cursor=pointer]
+                    - button [ref=e1318] [cursor=pointer]
+                    - button [ref=e1322] [cursor=pointer]
+                    - button [ref=e1326] [cursor=pointer]
+                    - button [ref=e1330] [cursor=pointer]
+                    - button [ref=e1334] [cursor=pointer]
+                    - button [ref=e1338] [cursor=pointer]
+                    - button [ref=e1342] [cursor=pointer]
+                    - button [ref=e1346] [cursor=pointer]
+                    - button [ref=e1350] [cursor=pointer]
+                    - button [ref=e1354] [cursor=pointer]
+                    - button [ref=e1358] [cursor=pointer]
+                    - button [ref=e1362] [cursor=pointer]
+                    - button [ref=e1366] [cursor=pointer]
+                    - button [ref=e1370] [cursor=pointer]
+                    - button [ref=e1374] [cursor=pointer]
+                    - button [ref=e1378] [cursor=pointer]
+                    - button [ref=e1382] [cursor=pointer]
+                    - button [ref=e1386] [cursor=pointer]
+                    - button [ref=e1390] [cursor=pointer]
+                    - button [ref=e1394] [cursor=pointer]
+                    - button [ref=e1398] [cursor=pointer]
+                    - button [ref=e1402] [cursor=pointer]
+                    - button [ref=e1406] [cursor=pointer]
+                    - button [ref=e1410] [cursor=pointer]
+                    - button [ref=e1414] [cursor=pointer]
+                    - button [ref=e1418] [cursor=pointer]
+                    - button [ref=e1422] [cursor=pointer]
+                    - button [ref=e1426] [cursor=pointer]
+                    - button [ref=e1430] [cursor=pointer]
+                    - button [ref=e1434] [cursor=pointer]
+                    - button [ref=e1438] [cursor=pointer]
+                    - button [ref=e1442] [cursor=pointer]
+                    - button [ref=e1446] [cursor=pointer]
+                    - button [ref=e1450] [cursor=pointer]
+                    - button [ref=e1454] [cursor=pointer]
+                    - button [ref=e1458] [cursor=pointer]
+                    - button [ref=e1462] [cursor=pointer]
+                    - button [ref=e1466] [cursor=pointer]
+                    - button [ref=e1470] [cursor=pointer]
+                    - button [ref=e1474] [cursor=pointer]
+                    - button [ref=e1478] [cursor=pointer]
+                    - button [ref=e1482] [cursor=pointer]
+                    - button [ref=e1486] [cursor=pointer]
+                    - button [ref=e1490] [cursor=pointer]
+                    - button [ref=e1494] [cursor=pointer]
+                    - button [ref=e1498] [cursor=pointer]
+                    - button [ref=e1502] [cursor=pointer]
+                    - button [ref=e1506] [cursor=pointer]
+                    - button [ref=e1510] [cursor=pointer]
+                    - button [ref=e1514] [cursor=pointer]
+                    - button [ref=e1518] [cursor=pointer]
+                    - button [ref=e1522] [cursor=pointer]
+                    - button [ref=e1526] [cursor=pointer]
+                    - button [ref=e1530] [cursor=pointer]
+                    - button [ref=e1534] [cursor=pointer]
+                    - button [ref=e1538] [cursor=pointer]
+                    - button [ref=e1542] [cursor=pointer]
+                    - button [ref=e1546] [cursor=pointer]
+                    - button [ref=e1550] [cursor=pointer]
+                    - button [ref=e1554] [cursor=pointer]
+                    - button [ref=e1558] [cursor=pointer]
+                    - button [ref=e1562] [cursor=pointer]
+                    - button [ref=e1566] [cursor=pointer]
+                    - button [ref=e1570] [cursor=pointer]
+                    - button [ref=e1574] [cursor=pointer]
+                    - button [ref=e1578] [cursor=pointer]
+                    - button [ref=e1582] [cursor=pointer]
+                    - button [ref=e1586] [cursor=pointer]
+                    - button [ref=e1590] [cursor=pointer]
+                    - button [ref=e1594] [cursor=pointer]
+                    - button [ref=e1598] [cursor=pointer]
+              - region [ref=e1052]:
+                - generic [ref=e1053]:
+                  - heading "Error Ratio" [level=2] [ref=e1055]
+                  - link "Explore" [ref=e1056] [cursor=pointer]:
+                    - /url: /explore?left=%7B%22datasource%22%3A%22grafanacloud-prom%22%2C%22queries%22%3A%5B%7B%22datasource%22%3A%7B%22type%22%3A%22prometheus%22%2C%22uid%22%3A%22grafanacloud-prom%22%7D%2C%22refId%22%3A%22errorsQuery%22%2C%22legendFormat%22%3A%22Error%20ratio%22%2C%22expr%22%3A%22(((sum(rate(%7Basserts_metric_error%3D%5C%22total%5C%22%2C%20job%3D%5C%22ecommerce-prod%2Fproductcatalogservice%5C%22%2C%20service%3D~%5C%22%7Cproductcatalogservice%5C%22%2C%20asserts_env%3D%5C%22devfedb13-cluster%5C%22%2C%20asserts_site%3D%5C%22us-east-2%5C%22%2C%20asserts_source%3D%5C%22app_o11y_spanmetrics%5C%22%2C%20asserts_request_type%3D~%5C%22inbound%5C%22%2C%20namespace%3D%5C%22ecommerce-prod%5C%22%2C%20asserts_request_type!%3D%5C%22client_connections%5C%22%2C%20asserts_request_type!%3D%5C%22logger%5C%22%7D%5B%24__rate_interval%5D))%20by%20()))%20OR%20((sum(rate(%7Basserts_metric_request%3D%5C%22total%5C%22%2C%20job%3D%5C%22ecommerce-prod%2Fproductcatalogservice%5C%22%2C%20service%3D~%5C%22%7Cproductcatalogservice%5C%22%2C%20asserts_env%3D%5C%22devfedb13-cluster%5C%22%2C%20asserts_site%3D%5C%22us-east-2%5C%22%2C%20asserts_source%3D%5C%22app_o11y_spanmetrics%5C%22%2C%20asserts_request_type%3D~%5C%22inbound%5C%22%2C%20namespace%3D%5C%22ecommerce-prod%5C%22%2C%20asserts_request_type!%3D%5C%22client_connections%5C%22%2C%20asserts_request_type!%3D%5C%22logger%5C%22%7D%5B%24__rate_interval%5D))%20by%20())%20%5CnOR%20%5Cn(avg_over_time((sum%20by%20()(%7Basserts_metric_request%3D%5C%22gauge%5C%22%2C%20job%3D%5C%22ecommerce-prod%2Fproductcatalogservice%5C%22%2C%20service%3D~%5C%22%7Cproductcatalogservice%5C%22%2C%20asserts_env%3D%5C%22devfedb13-cluster%5C%22%2C%20asserts_site%3D%5C%22us-east-2%5C%22%2C%20asserts_source%3D%5C%22app_o11y_spanmetrics%5C%22%2C%20asserts_request_type%3D~%5C%22inbound%5C%22%2C%20namespace%3D%5C%22ecommerce-prod%5C%22%2C%20asserts_request_type!%3D%5C%22client_connections%5C%22%2C%20asserts_request_type!%3D%5C%22logger%5C%22%7D))%5B%24__rate_interval%3A%5D)%20*%2060))%20*%200)%20%2F%20((sum(rate(%7Basserts_metric_request%3D%5C%22total%5C%22%2C%20job%3D%5C%22ecommerce-prod%2Fproductcatalogservice%5C%22%2C%20service%3D~%5C%22%7Cproductcatalogservice%5C%22%2C%20asserts_env%3D%5C%22devfedb13-cluster%5C%22%2C%20asserts_site%3D%5C%22us-east-2%5C%22%2C%20asserts_source%3D%5C%22app_o11y_spanmetrics%5C%22%2C%20asserts_request_type%3D~%5C%22inbound%5C%22%2C%20namespace%3D%5C%22ecommerce-prod%5C%22%2C%20asserts_request_type!%3D%5C%22client_connections%5C%22%2C%20asserts_request_type!%3D%5C%22logger%5C%22%7D%5B%24__rate_interval%5D))%20by%20())%20%5CnOR%20%5Cn(avg_over_time((sum%20by%20()(%7Basserts_metric_request%3D%5C%22gauge%5C%22%2C%20job%3D%5C%22ecommerce-prod%2Fproductcatalogservice%5C%22%2C%20service%3D~%5C%22%7Cproductcatalogservice%5C%22%2C%20asserts_env%3D%5C%22devfedb13-cluster%5C%22%2C%20asserts_site%3D%5C%22us-east-2%5C%22%2C%20asserts_source%3D%5C%22app_o11y_spanmetrics%5C%22%2C%20asserts_request_type%3D~%5C%22inbound%5C%22%2C%20namespace%3D%5C%22ecommerce-prod%5C%22%2C%20asserts_request_type!%3D%5C%22client_connections%5C%22%2C%20asserts_request_type!%3D%5C%22logger%5C%22%7D))%5B%24__rate_interval%3A%5D)%20*%2060))%22%2C%22interval%22%3A%222m%22%2C%22intervalMs%22%3A120000%7D%2C%7B%22exemplar%22%3Afalse%2C%22expr%22%3A%22asserts%3Aerror%3Aratio%3Aservice%3Aanomaly_upper_threshold%7Bjob%3D%5C%22ecommerce-prod%2Fproductcatalogservice%5C%22%2C%20service%3D~%5C%22%7Cproductcatalogservice%5C%22%2C%20asserts_env%3D%5C%22devfedb13-cluster%5C%22%2C%20asserts_site%3D%5C%22us-east-2%5C%22%2C%20asserts_source%3D%5C%22app_o11y_spanmetrics%5C%22%2C%20asserts_request_type%3D~%5C%22inbound%5C%22%2C%20namespace%3D%5C%22ecommerce-prod%5C%22%2C%20asserts_request_type!%3D%5C%22client_connections%5C%22%2C%20asserts_request_type!%3D%5C%22logger%5C%22%7D%22%2C%22refId%22%3A%22upperAnomalyThreshold%22%2C%22legendFormat%22%3A%22Upper%20Anomaly%20Threshold%22%2C%22datasource%22%3A%7B%22type%22%3A%22prometheus%22%2C%22uid%22%3A%22grafanacloud-prom%22%7D%2C%22interval%22%3A%222m%22%2C%22intervalMs%22%3A120000%7D%5D%2C%22range%22%3A%7B%22from%22%3A%22now-24h%22%2C%22to%22%3A%22now%22%7D%7D
+              - region [ref=e1075]:
+                - generic [ref=e1076]:
+                  - heading "Request Rate" [level=2] [ref=e1078]
+                  - link "Explore" [ref=e1083] [cursor=pointer]:
+                    - /url: /explore?left=%7B%22datasource%22%3A%22grafanacloud-prom%22%2C%22queries%22%3A%5B%7B%22datasource%22%3A%7B%22type%22%3A%22prometheus%22%2C%22uid%22%3A%22grafanacloud-prom%22%7D%2C%22refId%22%3A%22rateQuery%22%2C%22legendFormat%22%3A%22Rate%22%2C%22expr%22%3A%22((sum(rate(%7Basserts_metric_request%3D%5C%22total%5C%22%2C%20job%3D%5C%22ecommerce-prod%2Fproductcatalogservice%5C%22%2C%20service%3D~%5C%22%7Cproductcatalogservice%5C%22%2C%20asserts_env%3D%5C%22devfedb13-cluster%5C%22%2C%20asserts_site%3D%5C%22us-east-2%5C%22%2C%20asserts_source%3D%5C%22app_o11y_spanmetrics%5C%22%2C%20asserts_request_type%3D~%5C%22inbound%5C%22%2C%20namespace%3D%5C%22ecommerce-prod%5C%22%2C%20asserts_request_type!%3D%5C%22client_connections%5C%22%2C%20asserts_request_type!%3D%5C%22logger%5C%22%7D%5B%24__rate_interval%5D))%20by%20())%20%5CnOR%20%5Cn(avg_over_time((sum%20by%20()(%7Basserts_metric_request%3D%5C%22gauge%5C%22%2C%20job%3D%5C%22ecommerce-prod%2Fproductcatalogservice%5C%22%2C%20service%3D~%5C%22%7Cproductcatalogservice%5C%22%2C%20asserts_env%3D%5C%22devfedb13-cluster%5C%22%2C%20asserts_site%3D%5C%22us-east-2%5C%22%2C%20asserts_source%3D%5C%22app_o11y_spanmetrics%5C%22%2C%20asserts_request_type%3D~%5C%22inbound%5C%22%2C%20namespace%3D%5C%22ecommerce-prod%5C%22%2C%20asserts_request_type!%3D%5C%22client_connections%5C%22%2C%20asserts_request_type!%3D%5C%22logger%5C%22%7D))%5B%24__rate_interval%3A%5D)%20*%2060))%22%2C%22interval%22%3A%222m%22%2C%22intervalMs%22%3A120000%7D%2C%7B%22exemplar%22%3Afalse%2C%22expr%22%3A%22sum(asserts%3Arequest%3Arate5m%3Aservice%3Aanomaly_upper_threshold%7Bjob%3D%5C%22ecommerce-prod%2Fproductcatalogservice%5C%22%2C%20service%3D~%5C%22%7Cproductcatalogservice%5C%22%2C%20asserts_env%3D%5C%22devfedb13-cluster%5C%22%2C%20asserts_site%3D%5C%22us-east-2%5C%22%2C%20asserts_source%3D%5C%22app_o11y_spanmetrics%5C%22%2C%20asserts_request_type%3D~%5C%22inbound%5C%22%2C%20namespace%3D%5C%22ecommerce-prod%5C%22%2C%20asserts_request_type!%3D%5C%22client_connections%5C%22%2C%20asserts_request_type!%3D%5C%22logger%5C%22%7D)%22%2C%22refId%22%3A%22upperAnomalyThreshold%22%2C%22legendFormat%22%3A%22Upper%20Anomaly%20Threshold%22%2C%22datasource%22%3A%7B%22type%22%3A%22prometheus%22%2C%22uid%22%3A%22grafanacloud-prom%22%7D%2C%22interval%22%3A%222m%22%2C%22intervalMs%22%3A120000%7D%2C%7B%22exemplar%22%3Afalse%2C%22expr%22%3A%22sum(asserts%3Arequest%3Arate5m%3Aservice%3Aanomaly_lower_threshold%7Bjob%3D%5C%22ecommerce-prod%2Fproductcatalogservice%5C%22%2C%20service%3D~%5C%22%7Cproductcatalogservice%5C%22%2C%20asserts_env%3D%5C%22devfedb13-cluster%5C%22%2C%20asserts_site%3D%5C%22us-east-2%5C%22%2C%20asserts_source%3D%5C%22app_o11y_spanmetrics%5C%22%2C%20asserts_request_type%3D~%5C%22inbound%5C%22%2C%20namespace%3D%5C%22ecommerce-prod%5C%22%2C%20asserts_request_type!%3D%5C%22client_connections%5C%22%2C%20asserts_request_type!%3D%5C%22logger%5C%22%7D)%22%2C%22refId%22%3A%22lowerAnomalyThreshold%22%2C%22legendFormat%22%3A%22Lower%20Anomaly%20Threshold%22%2C%22datasource%22%3A%7B%22type%22%3A%22prometheus%22%2C%22uid%22%3A%22grafanacloud-prom%22%7D%2C%22interval%22%3A%222m%22%2C%22intervalMs%22%3A120000%7D%5D%2C%22range%22%3A%7B%22from%22%3A%22now-24h%22%2C%22to%22%3A%22now%22%7D%7D
+            - generic [ref=e1088]:
+              - region [ref=e1093]:
+                - generic [ref=e1094]:
+                  - heading "Duration heatmap" [level=2] [ref=e1096]
+                  - button "Switch to barchart view" [ref=e1097] [cursor=pointer]
+                  - link "Explore" [ref=e1100] [cursor=pointer]:
+                    - /url: /explore?left=%7B%22datasource%22%3A%22grafanacloud-prom%22%2C%22queries%22%3A%5B%7B%22datasource%22%3A%7B%22type%22%3A%22prometheus%22%2C%22uid%22%3A%22grafanacloud-prom%22%7D%2C%22refId%22%3A%22native%22%2C%22format%22%3A%22heatmap%22%2C%22expr%22%3A%22((sum%20by%20()%20(increase(%7Basserts_metric_latency%3D%5C%22native_histogram_seconds%5C%22%2C%20job%3D%5C%22ecommerce-prod%2Fproductcatalogservice%5C%22%2C%20service%3D~%5C%22%7Cproductcatalogservice%5C%22%2C%20asserts_env%3D%5C%22devfedb13-cluster%5C%22%2C%20asserts_site%3D%5C%22us-east-2%5C%22%2C%20asserts_source%3D%5C%22app_o11y_spanmetrics%5C%22%2C%20asserts_request_type%3D~%5C%22inbound%5C%22%2C%20namespace%3D%5C%22ecommerce-prod%5C%22%2C%20asserts_request_type!%3D%5C%22client_connections%5C%22%2C%20asserts_request_type!%3D%5C%22logger%5C%22%7D%20%5B%24__rate_interval%5D))))%22%2C%22instant%22%3Afalse%2C%22interval%22%3A%222m%22%2C%22intervalMs%22%3A120000%7D%5D%2C%22range%22%3A%7B%22from%22%3A%22now-24h%22%2C%22to%22%3A%22now%22%7D%7D
+                - generic [ref=e1628]:
+                  - generic [ref=e1629]: "1.00"
+                  - generic [ref=e1630]: "208"
+                  - generic [ref=e1631]: "416"
+                  - generic [ref=e1632]: "623"
+              - region [ref=e1109]:
+                - generic [ref=e1110]:
+                  - heading "Outbound & databases" [level=2] [ref=e1112]
+                  - link "Explore" [ref=e1113] [cursor=pointer]:
+                    - /url: /explore?left=%7B%22datasource%22%3A%22grafanacloud-prom%22%2C%22queries%22%3A%5B%7B%22expr%22%3A%22histogram_quantile(0.95%2C%20sum(rate(%7Basserts_metric_latency%3D%5C%22native_histogram_seconds%5C%22%2C%20asserts_request_type%3D%5C%22outbound%5C%22%2C%20asserts_relation_src_service%3D%5C%22productcatalogservice%5C%22%2C%20asserts_source%3D%5C%22%5C%22%2C%20asserts_env%3D%5C%22devfedb13-cluster%5C%22%2C%20asserts_relation_src_namespace%3D~%5C%22ecommerce%5C%5C%5C%5Cx2dprod%5C%22%7D%20%5B%24__rate_interval%5D))%20by%20(asserts_relation_dst_service%2C%20asserts_relation_dst_namespace%2C%20dst_asserts_env))%5CnOR%5Cnhistogram_quantile(0.95%2C%20sum(rate(%7Basserts_metric_latency%3D%5C%22histogram_seconds%5C%22%2C%20asserts_request_type%3D%5C%22outbound%5C%22%2C%20asserts_relation_src_service%3D%5C%22productcatalogservice%5C%22%2C%20asserts_source%3D%5C%22%5C%22%2C%20asserts_env%3D%5C%22devfedb13-cluster%5C%22%2C%20asserts_relation_src_namespace%3D~%5C%22ecommerce%5C%5C%5C%5Cx2dprod%5C%22%7D%20%5B%24__rate_interval%5D))%20by%20(le%2C%20asserts_relation_dst_service%2C%20asserts_relation_dst_namespace%2C%20dst_asserts_env))%5CnOR%5Cnhistogram_quantile(0.95%2C%20sum(rate(%7Basserts_metric_latency%3D%5C%22histogram_milliseconds%5C%22%2C%20asserts_request_type%3D%5C%22outbound%5C%22%2C%20asserts_relation_src_service%3D%5C%22productcatalogservice%5C%22%2C%20asserts_source%3D%5C%22%5C%22%2C%20asserts_env%3D%5C%22devfedb13-cluster%5C%22%2C%20asserts_relation_src_namespace%3D~%5C%22ecommerce%5C%5C%5C%5Cx2dprod%5C%22%7D%20%5B%24__rate_interval%5D))%20by%20(le%2C%20asserts_relation_dst_service%2C%20asserts_relation_dst_namespace%2C%20dst_asserts_env)%20%2F%201e3)%5Cn%22%2C%22refId%22%3A%22serviceOverviewOutboundDuration%22%2C%22timeRangeCompare%22%3Afalse%2C%22interval%22%3A%2215m%22%2C%22intervalMs%22%3A900000%2C%22datasource%22%3A%7B%22type%22%3A%22prometheus%22%2C%22uid%22%3A%22grafanacloud-prom%22%7D%7D%2C%7B%22expr%22%3A%22((sum%20by%20(asserts_relation_dst_service%2C%20asserts_relation_dst_namespace%2C%20dst_asserts_env)%20(rate(%7Basserts_metric_error%3D%5C%22total%5C%22%2C%20asserts_request_type%3D%5C%22outbound%5C%22%2C%20asserts_relation_src_service%3D%5C%22productcatalogservice%5C%22%2C%20asserts_source%3D%5C%22%5C%22%2C%20asserts_env%3D%5C%22devfedb13-cluster%5C%22%2C%20asserts_relation_src_namespace%3D~%5C%22ecommerce%5C%5C%5C%5Cx2dprod%5C%22%7D%20%5B%24__rate_interval%5D)))%20OR%20(sum%20by%20(asserts_relation_dst_service%2C%20asserts_relation_dst_namespace%2C%20dst_asserts_env)%20(rate(%7Basserts_metric_request%3D%5C%22total%5C%22%2C%20asserts_request_type%3D%5C%22outbound%5C%22%2C%20asserts_relation_src_service%3D%5C%22productcatalogservice%5C%22%2C%20asserts_source%3D%5C%22%5C%22%2C%20asserts_env%3D%5C%22devfedb13-cluster%5C%22%2C%20asserts_relation_src_namespace%3D~%5C%22ecommerce%5C%5C%5C%5Cx2dprod%5C%22%7D%20%5B%24__rate_interval%5D)))%20*%200)%20%2F%20(sum%20by%20(asserts_relation_dst_service%2C%20asserts_relation_dst_namespace%2C%20dst_asserts_env)%20(rate(%7Basserts_metric_request%3D%5C%22total%5C%22%2C%20asserts_request_type%3D%5C%22outbound%5C%22%2C%20asserts_relation_src_service%3D%5C%22productcatalogservice%5C%22%2C%20asserts_source%3D%5C%22%5C%22%2C%20asserts_env%3D%5C%22devfedb13-cluster%5C%22%2C%20asserts_relation_src_namespace%3D~%5C%22ecommerce%5C%5C%5C%5Cx2dprod%5C%22%7D%20%5B%24__rate_interval%5D)))%22%2C%22refId%22%3A%22serviceOverviewOutboundErrors%22%2C%22timeRangeCompare%22%3Afalse%2C%22interval%22%3A%2215m%22%2C%22intervalMs%22%3A900000%2C%22datasource%22%3A%7B%22type%22%3A%22prometheus%22%2C%22uid%22%3A%22grafanacloud-prom%22%7D%7D%2C%7B%22expr%22%3A%22sum%20by%20(asserts_relation_dst_service%2C%20asserts_relation_dst_namespace%2C%20dst_asserts_env)%20(rate(%7Basserts_metric_request%3D%5C%22total%5C%22%2C%20asserts_request_type%3D%5C%22outbound%5C%22%2C%20asserts_relation_src_service%3D%5C%22productcatalogservice%5C%22%2C%20asserts_source%3D%5C%22%5C%22%2C%20asserts_env%3D%5C%22devfedb13-cluster%5C%22%2C%20asserts_relation_src_namespace%3D~%5C%22ecommerce%5C%5C%5C%5Cx2dprod%5C%22%7D%20%5B%24__rate_interval%5D))%22%2C%22refId%22%3A%22serviceOverviewOutboundRate%22%2C%22timeRangeCompare%22%3Afalse%2C%22interval%22%3A%2215m%22%2C%22intervalMs%22%3A900000%2C%22datasource%22%3A%7B%22type%22%3A%22prometheus%22%2C%22uid%22%3A%22grafanacloud-prom%22%7D%7D%5D%2C%22range%22%3A%7B%22from%22%3A%22now-24h%22%2C%22to%22%3A%22now%22%7D%7D
+                - generic [ref=e1117]: No data
+            - generic [ref=e1120]:
+              - region [ref=e1125]:
+                - generic [ref=e1126]:
+                  - heading "Operations" [level=2] [ref=e1128]
+                  - link "Explore" [ref=e1129] [cursor=pointer]:
+                    - /url: /explore?left=%7B%22datasource%22%3A%22grafanacloud-prom%22%2C%22queries%22%3A%5B%7B%22expr%22%3A%22((histogram_quantile(0.95%2C%20sum(rate(%7Basserts_metric_latency%3D%5C%22native_histogram_seconds%5C%22%2C%20job%3D%5C%22ecommerce-prod%2Fproductcatalogservice%5C%22%2C%20service%3D~%5C%22%7Cproductcatalogservice%5C%22%2C%20asserts_env%3D%5C%22devfedb13-cluster%5C%22%2C%20asserts_site%3D%5C%22us-east-2%5C%22%2C%20asserts_source%3D%5C%22app_o11y_spanmetrics%5C%22%2C%20asserts_request_type%3D~%5C%22inbound%5C%22%2C%20namespace%3D%5C%22ecommerce-prod%5C%22%2C%20asserts_request_type!%3D%5C%22client_connections%5C%22%2C%20asserts_request_type!%3D%5C%22logger%5C%22%7D%20%5B%24__rate_interval%5D))%20by%20(asserts_request_context))))%22%2C%22refId%22%3A%22serviceEntityOperationsDuration%22%2C%22timeRangeCompare%22%3Afalse%2C%22interval%22%3A%2215m%22%2C%22intervalMs%22%3A900000%2C%22datasource%22%3A%7B%22type%22%3A%22prometheus%22%2C%22uid%22%3A%22grafanacloud-prom%22%7D%7D%2C%7B%22expr%22%3A%22(((sum(rate(%7Basserts_metric_error%3D%5C%22total%5C%22%2C%20job%3D%5C%22ecommerce-prod%2Fproductcatalogservice%5C%22%2C%20service%3D~%5C%22%7Cproductcatalogservice%5C%22%2C%20asserts_env%3D%5C%22devfedb13-cluster%5C%22%2C%20asserts_site%3D%5C%22us-east-2%5C%22%2C%20asserts_source%3D%5C%22app_o11y_spanmetrics%5C%22%2C%20asserts_request_type%3D~%5C%22inbound%5C%22%2C%20namespace%3D%5C%22ecommerce-prod%5C%22%2C%20asserts_request_type!%3D%5C%22client_connections%5C%22%2C%20asserts_request_type!%3D%5C%22logger%5C%22%7D%5B%24__rate_interval%5D))%20by%20(asserts_request_context)))%20OR%20((sum(rate(%7Basserts_metric_request%3D%5C%22total%5C%22%2C%20job%3D%5C%22ecommerce-prod%2Fproductcatalogservice%5C%22%2C%20service%3D~%5C%22%7Cproductcatalogservice%5C%22%2C%20asserts_env%3D%5C%22devfedb13-cluster%5C%22%2C%20asserts_site%3D%5C%22us-east-2%5C%22%2C%20asserts_source%3D%5C%22app_o11y_spanmetrics%5C%22%2C%20asserts_request_type%3D~%5C%22inbound%5C%22%2C%20namespace%3D%5C%22ecommerce-prod%5C%22%2C%20asserts_request_type!%3D%5C%22client_connections%5C%22%2C%20asserts_request_type!%3D%5C%22logger%5C%22%7D%5B%24__rate_interval%5D))%20by%20(asserts_request_context))%20%5CnOR%20%5Cn(avg_over_time((sum%20by%20(asserts_request_context)(%7Basserts_metric_request%3D%5C%22gauge%5C%22%2C%20job%3D%5C%22ecommerce-prod%2Fproductcatalogservice%5C%22%2C%20service%3D~%5C%22%7Cproductcatalogservice%5C%22%2C%20asserts_env%3D%5C%22devfedb13-cluster%5C%22%2C%20asserts_site%3D%5C%22us-east-2%5C%22%2C%20asserts_source%3D%5C%22app_o11y_spanmetrics%5C%22%2C%20asserts_request_type%3D~%5C%22inbound%5C%22%2C%20namespace%3D%5C%22ecommerce-prod%5C%22%2C%20asserts_request_type!%3D%5C%22client_connections%5C%22%2C%20asserts_request_type!%3D%5C%22logger%5C%22%7D))%5B%24__rate_interval%3A%5D)%20*%2060))%20*%200)%20%2F%20((sum(rate(%7Basserts_metric_request%3D%5C%22total%5C%22%2C%20job%3D%5C%22ecommerce-prod%2Fproductcatalogservice%5C%22%2C%20service%3D~%5C%22%7Cproductcatalogservice%5C%22%2C%20asserts_env%3D%5C%22devfedb13-cluster%5C%22%2C%20asserts_site%3D%5C%22us-east-2%5C%22%2C%20asserts_source%3D%5C%22app_o11y_spanmetrics%5C%22%2C%20asserts_request_type%3D~%5C%22inbound%5C%22%2C%20namespace%3D%5C%22ecommerce-prod%5C%22%2C%20asserts_request_type!%3D%5C%22client_connections%5C%22%2C%20asserts_request_type!%3D%5C%22logger%5C%22%7D%5B%24__rate_interval%5D))%20by%20(asserts_request_context))%20%5CnOR%20%5Cn(avg_over_time((sum%20by%20(asserts_request_context)(%7Basserts_metric_request%3D%5C%22gauge%5C%22%2C%20job%3D%5C%22ecommerce-prod%2Fproductcatalogservice%5C%22%2C%20service%3D~%5C%22%7Cproductcatalogservice%5C%22%2C%20asserts_env%3D%5C%22devfedb13-cluster%5C%22%2C%20asserts_site%3D%5C%22us-east-2%5C%22%2C%20asserts_source%3D%5C%22app_o11y_spanmetrics%5C%22%2C%20asserts_request_type%3D~%5C%22inbound%5C%22%2C%20namespace%3D%5C%22ecommerce-prod%5C%22%2C%20asserts_request_type!%3D%5C%22client_connections%5C%22%2C%20asserts_request_type!%3D%5C%22logger%5C%22%7D))%5B%24__rate_interval%3A%5D)%20*%2060))%22%2C%22refId%22%3A%22serviceEntityOperationsErrors%22%2C%22timeRangeCompare%22%3Afalse%2C%22interval%22%3A%2215m%22%2C%22intervalMs%22%3A900000%2C%22datasource%22%3A%7B%22type%22%3A%22prometheus%22%2C%22uid%22%3A%22grafanacloud-prom%22%7D%7D%2C%7B%22expr%22%3A%22((sum(rate(%7Basserts_metric_request%3D%5C%22total%5C%22%2C%20job%3D%5C%22ecommerce-prod%2Fproductcatalogservice%5C%22%2C%20service%3D~%5C%22%7Cproductcatalogservice%5C%22%2C%20asserts_env%3D%5C%22devfedb13-cluster%5C%22%2C%20asserts_site%3D%5C%22us-east-2%5C%22%2C%20asserts_source%3D%5C%22app_o11y_spanmetrics%5C%22%2C%20asserts_request_type%3D~%5C%22inbound%5C%22%2C%20namespace%3D%5C%22ecommerce-prod%5C%22%2C%20asserts_request_type!%3D%5C%22client_connections%5C%22%2C%20asserts_request_type!%3D%5C%22logger%5C%22%7D%5B%24__rate_interval%5D))%20by%20(asserts_request_context))%20%5CnOR%20%5Cn(avg_over_time((sum%20by%20(asserts_request_context)(%7Basserts_metric_request%3D%5C%22gauge%5C%22%2C%20job%3D%5C%22ecommerce-prod%2Fproductcatalogservice%5C%22%2C%20service%3D~%5C%22%7Cproductcatalogservice%5C%22%2C%20asserts_env%3D%5C%22devfedb13-cluster%5C%22%2C%20asserts_site%3D%5C%22us-east-2%5C%22%2C%20asserts_source%3D%5C%22app_o11y_spanmetrics%5C%22%2C%20asserts_request_type%3D~%5C%22inbound%5C%22%2C%20namespace%3D%5C%22ecommerce-prod%5C%22%2C%20asserts_request_type!%3D%5C%22client_connections%5C%22%2C%20asserts_request_type!%3D%5C%22logger%5C%22%7D))%5B%24__rate_interval%3A%5D)%20*%2060))%22%2C%22refId%22%3A%22serviceEntityOperationsRate%22%2C%22timeRangeCompare%22%3Afalse%2C%22interval%22%3A%2215m%22%2C%22intervalMs%22%3A900000%2C%22datasource%22%3A%7B%22type%22%3A%22prometheus%22%2C%22uid%22%3A%22grafanacloud-prom%22%7D%7D%5D%2C%22range%22%3A%7B%22from%22%3A%22now-24h%22%2C%22to%22%3A%22now%22%7D%7D
+                - generic [ref=e1133]:
+                  - grid [ref=e1134]:
+                    - row [ref=e1135]:
+                      - columnheader [ref=e1136] [cursor=pointer]:
+                        - generic [ref=e1137]:
+                          - button "Operation" [ref=e1138]
+                          - button "Filter Operation" [ref=e1139]
+                      - columnheader [ref=e1142] [cursor=pointer]:
+                        - button "Latency, p95" [ref=e1144]
+                      - columnheader [ref=e1147] [cursor=pointer]:
+                        - button "Error Ratio" [ref=e1149]
+                      - columnheader [ref=e1151] [cursor=pointer]:
+                        - button "Request Rate" [ref=e1153]
+                    - row [ref=e1155]:
+                      - gridcell [ref=e1156]:
+                        - link "oteldemo.ProductCatalogService/ListProducts" [ref=e1157] [cursor=pointer]:
+                          - /url: ""
+                      - gridcell [ref=e1158]:
+                        - link "6.38 ms" [ref=e1159] [cursor=pointer]:
+                          - /url: ""
+                      - gridcell [ref=e1169]:
+                        - link "0%" [ref=e1170] [cursor=pointer]:
+                          - /url: ""
+                      - gridcell [ref=e1180]:
+                        - link "0.79 req/s" [ref=e1181] [cursor=pointer]:
+                          - /url: ""
+                    - row [ref=e1191]:
+                      - gridcell [ref=e1192]:
+                        - link "oteldemo.ProductCatalogService/GetProduct" [ref=e1193] [cursor=pointer]:
+                          - /url: ""
+                      - gridcell [ref=e1194]:
+                        - link "5.66 ms" [ref=e1195] [cursor=pointer]:
+                          - /url: ""
+                      - gridcell [ref=e1205]:
+                        - link "0%" [ref=e1206] [cursor=pointer]:
+                          - /url: ""
+                      - gridcell [ref=e1216]:
+                        - link "1.71 req/s" [ref=e1217] [cursor=pointer]:
+                          - /url: ""
+                  - navigation [ref=e1228]:
+                    - list [ref=e1229]:
+                      - listitem [ref=e1230]:
+                        - button "previous page" [disabled] [ref=e1231]
+                      - listitem [ref=e1234]:
+                        - button "1" [ref=e1235] [cursor=pointer]
+                      - listitem [ref=e1237]:
+                        - button "next page" [disabled] [ref=e1238]
+              - region [ref=e1246]:
+                - generic [ref=e1247]:
+                  - heading "Inbound" [level=2] [ref=e1249]
+                  - link "Explore" [ref=e1250] [cursor=pointer]:
+                    - /url: /explore?left=%7B%22datasource%22%3A%22grafanacloud-prom%22%2C%22queries%22%3A%5B%7B%22expr%22%3A%22histogram_quantile(0.95%2C%20sum(rate(%7Basserts_metric_latency%3D%5C%22native_histogram_seconds%5C%22%2C%20asserts_request_type%3D%5C%22inbound%5C%22%2C%20asserts_relation_dst_service%3D%5C%22productcatalogservice%5C%22%2C%20asserts_source%3D%5C%22app_o11y_servicegraph%5C%22%2C%20dst_asserts_env%3D%5C%22devfedb13-cluster%5C%22%2C%20asserts_relation_dst_namespace%3D~%5C%22ecommerce%5C%5C%5C%5Cx2dprod%5C%22%7D%20%5B%24__rate_interval%5D))%20by%20(asserts_relation_src_service%2C%20asserts_relation_src_namespace%2C%20asserts_env))%5CnOR%5Cnhistogram_quantile(0.95%2C%20sum(rate(%7Basserts_metric_latency%3D%5C%22histogram_seconds%5C%22%2C%20asserts_request_type%3D%5C%22inbound%5C%22%2C%20asserts_relation_dst_service%3D%5C%22productcatalogservice%5C%22%2C%20asserts_source%3D%5C%22app_o11y_servicegraph%5C%22%2C%20dst_asserts_env%3D%5C%22devfedb13-cluster%5C%22%2C%20asserts_relation_dst_namespace%3D~%5C%22ecommerce%5C%5C%5C%5Cx2dprod%5C%22%7D%20%5B%24__rate_interval%5D))%20by%20(le%2C%20asserts_relation_src_service%2C%20asserts_relation_src_namespace%2C%20asserts_env))%5CnOR%5Cnhistogram_quantile(0.95%2C%20sum(rate(%7Basserts_metric_latency%3D%5C%22histogram_milliseconds%5C%22%2C%20asserts_request_type%3D%5C%22inbound%5C%22%2C%20asserts_relation_dst_service%3D%5C%22productcatalogservice%5C%22%2C%20asserts_source%3D%5C%22app_o11y_servicegraph%5C%22%2C%20dst_asserts_env%3D%5C%22devfedb13-cluster%5C%22%2C%20asserts_relation_dst_namespace%3D~%5C%22ecommerce%5C%5C%5C%5Cx2dprod%5C%22%7D%20%5B%24__rate_interval%5D))%20by%20(le%2C%20asserts_relation_src_service%2C%20asserts_relation_src_namespace%2C%20asserts_env)%20%2F%201e3)%5Cn%22%2C%22refId%22%3A%22serviceOverviewInboundDuration%22%2C%22timeRangeCompare%22%3Afalse%2C%22interval%22%3A%2215m%22%2C%22intervalMs%22%3A900000%2C%22datasource%22%3A%7B%22type%22%3A%22prometheus%22%2C%22uid%22%3A%22grafanacloud-prom%22%7D%7D%2C%7B%22expr%22%3A%22((sum%20by%20(asserts_relation_src_service%2C%20asserts_relation_src_namespace%2C%20asserts_env)%20(rate(%7Basserts_metric_error%3D%5C%22total%5C%22%2C%20asserts_request_type%3D%5C%22outbound%5C%22%2C%20asserts_relation_dst_service%3D%5C%22productcatalogservice%5C%22%2C%20asserts_source%3D%5C%22app_o11y_servicegraph%5C%22%2C%20dst_asserts_env%3D%5C%22devfedb13-cluster%5C%22%2C%20asserts_relation_dst_namespace%3D~%5C%22ecommerce%5C%5C%5C%5Cx2dprod%5C%22%7D%20%5B%24__rate_interval%5D)))%20OR%20(sum%20by%20(asserts_relation_src_service%2C%20asserts_relation_src_namespace%2C%20asserts_env)%20(rate(%7Basserts_metric_request%3D%5C%22total%5C%22%2C%20asserts_request_type%3D%5C%22outbound%5C%22%2C%20asserts_relation_dst_service%3D%5C%22productcatalogservice%5C%22%2C%20asserts_source%3D%5C%22app_o11y_servicegraph%5C%22%2C%20dst_asserts_env%3D%5C%22devfedb13-cluster%5C%22%2C%20asserts_relation_dst_namespace%3D~%5C%22ecommerce%5C%5C%5C%5Cx2dprod%5C%22%7D%20%5B%24__rate_interval%5D)))%20*%200)%20%2F%20(sum%20by%20(asserts_relation_src_service%2C%20asserts_relation_src_namespace%2C%20asserts_env)%20(rate(%7Basserts_metric_request%3D%5C%22total%5C%22%2C%20asserts_request_type%3D%5C%22outbound%5C%22%2C%20asserts_relation_dst_service%3D%5C%22productcatalogservice%5C%22%2C%20asserts_source%3D%5C%22app_o11y_servicegraph%5C%22%2C%20dst_asserts_env%3D%5C%22devfedb13-cluster%5C%22%2C%20asserts_relation_dst_namespace%3D~%5C%22ecommerce%5C%5C%5C%5Cx2dprod%5C%22%7D%20%5B%24__rate_interval%5D)))%22%2C%22refId%22%3A%22serviceOverviewInboundErrors%22%2C%22timeRangeCompare%22%3Afalse%2C%22interval%22%3A%2215m%22%2C%22intervalMs%22%3A900000%2C%22datasource%22%3A%7B%22type%22%3A%22prometheus%22%2C%22uid%22%3A%22grafanacloud-prom%22%7D%7D%2C%7B%22expr%22%3A%22sum%20by%20(asserts_relation_src_service%2C%20asserts_relation_src_namespace%2C%20asserts_env)%20(rate(%7Basserts_metric_request%3D%5C%22total%5C%22%2C%20asserts_request_type%3D%5C%22outbound%5C%22%2C%20asserts_relation_dst_service%3D%5C%22productcatalogservice%5C%22%2C%20asserts_source%3D%5C%22app_o11y_servicegraph%5C%22%2C%20dst_asserts_env%3D%5C%22devfedb13-cluster%5C%22%2C%20asserts_relation_dst_namespace%3D~%5C%22ecommerce%5C%5C%5C%5Cx2dprod%5C%22%7D%20%5B%24__rate_interval%5D))%22%2C%22refId%22%3A%22serviceOverviewInboundRate%22%2C%22timeRangeCompare%22%3Afalse%2C%22interval%22%3A%2215m%22%2C%22intervalMs%22%3A900000%2C%22datasource%22%3A%7B%22type%22%3A%22prometheus%22%2C%22uid%22%3A%22grafanacloud-prom%22%7D%7D%5D%2C%22range%22%3A%7B%22from%22%3A%22now-24h%22%2C%22to%22%3A%22now%22%7D%7D
+                - generic [ref=e1254]:
+                  - grid [ref=e1639]:
+                    - row [ref=e1640]:
+                      - columnheader [ref=e1641] [cursor=pointer]:
+                        - button "Name" [ref=e1643]
+                      - columnheader [ref=e1645] [cursor=pointer]:
+                        - button "Latency, p95" [ref=e1647]
+                      - columnheader [ref=e1651] [cursor=pointer]:
+                        - button "Error Ratio" [ref=e1653]
+                      - columnheader [ref=e1655] [cursor=pointer]:
+                        - button "Request Rate" [ref=e1657]
+                    - row [ref=e1659]:
+                      - gridcell "ecommerce-prod/frontend devfedb13-cluster" [ref=e1660]:
+                        - generic [ref=e1661] [cursor=pointer]:
+                          - generic [ref=e1662]: ecommerce-prod/frontend
+                          - generic [ref=e1663]: devfedb13-cluster
+                      - gridcell "6.35 ms" [ref=e1664]
+                      - gridcell "0%" [ref=e1674]
+                      - gridcell "1.91 req/s" [ref=e1684]
+                    - row [ref=e1694]:
+                      - gridcell "ecommerce-prod/recommendationservice devfedb13-cluster" [ref=e1695]:
+                        - generic [ref=e1696] [cursor=pointer]:
+                          - generic [ref=e1697]: ecommerce-prod/recommendationservice
+                          - generic [ref=e1698]: devfedb13-cluster
+                      - gridcell "5.27 ms" [ref=e1699]
+                      - gridcell "0%" [ref=e1709]
+                      - gridcell "0.51 req/s" [ref=e1719]
+                    - row [ref=e1729]:
+                      - gridcell "ecommerce-prod/checkoutservice devfedb13-cluster" [ref=e1730]:
+                        - generic [ref=e1731] [cursor=pointer]:
+                          - generic [ref=e1732]: ecommerce-prod/checkoutservice
+                          - generic [ref=e1733]: devfedb13-cluster
+                      - gridcell "3.56 ms" [ref=e1734]
+                      - gridcell "0%" [ref=e1744]
+                      - gridcell "0.09 req/s" [ref=e1754]
+                  - navigation [ref=e1765]:
+                    - list [ref=e1766]:
+                      - listitem [ref=e1767]:
+                        - button "previous page" [disabled] [ref=e1768]
+                      - listitem [ref=e1772]:
+                        - button "1" [ref=e1773] [cursor=pointer]
+                      - listitem [ref=e1775]:
+                        - button "next page" [disabled] [ref=e1776]
+            - generic [ref=e1261]:
+              - button "Expand row" [ref=e1262] [cursor=pointer]:
+                - heading "Resources" [ref=e1265]
+              - generic [ref=e1266]: (6 panels)
+            - generic [ref=e1273]:
+              - button "Expand row" [ref=e1274] [cursor=pointer]:
+                - heading "Service KPIs" [ref=e1277]
+              - generic [ref=e1278]: (3 panels)
+            - generic [ref=e1285]:
+              - button "Expand row" [ref=e1286] [cursor=pointer]:
+                - heading "Service instances" [ref=e1289]
+              - generic [ref=e1290]: (1 panel)

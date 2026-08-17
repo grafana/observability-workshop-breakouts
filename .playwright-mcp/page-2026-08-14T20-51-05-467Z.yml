@@ -1,0 +1,334 @@
+- generic [active] [ref=f82e1]:
+  - generic [ref=f82e9]:
+    - generic [ref=f82e10]:
+      - link "Skip to main content" [ref=f82e11] [cursor=pointer]:
+        - /url: "#pageContent"
+      - generic [ref=f82e13]:
+        - generic [ref=f82e14]:
+          - generic [ref=f82e15]:
+            - link [ref=f82e16] [cursor=pointer]:
+              - /url: /
+              - img "Grafana" [ref=f82e17]
+            - link "Grafana" [ref=f82e18] [cursor=pointer]:
+              - /url: /
+          - button "Close menu" [ref=f82e19] [cursor=pointer]
+        - navigation "Navigation" [ref=f82e22]:
+          - list "Navigation" [ref=f82e27]:
+            - listitem [ref=f82e28]:
+              - generic [ref=f82e29]:
+                - link [ref=f82e32] [cursor=pointer]:
+                  - /url: /bookmarks
+                  - paragraph [ref=f82e37]: Bookmarks
+                - 'button "Expand section: Bookmarks" [ref=f82e39] [cursor=pointer]'
+            - listitem [ref=f82e42]:
+              - generic [ref=f82e43]:
+                - link [ref=f82e46] [cursor=pointer]:
+                  - /url: /dashboards?starred
+                  - paragraph [ref=f82e51]: Starred
+                - 'button "Expand section: Starred" [ref=f82e54] [cursor=pointer]'
+            - listitem [ref=f82e57]:
+              - generic [ref=f82e58]:
+                - link [ref=f82e61] [cursor=pointer]:
+                  - /url: /dashboards
+                  - paragraph [ref=f82e66]: Dashboards
+                - 'button "Expand section: Dashboards" [ref=f82e69] [cursor=pointer]'
+            - listitem [ref=f82e72]:
+              - link [ref=f82e76] [cursor=pointer]:
+                - /url: /explore
+                - paragraph [ref=f82e81]: Explore
+            - listitem [ref=f82e83]:
+              - generic [ref=f82e84]:
+                - link [ref=f82e87] [cursor=pointer]:
+                  - /url: /drilldown
+                  - paragraph [ref=f82e95]: Drilldown
+                - 'button "Expand section: Drilldown" [ref=f82e98] [cursor=pointer]'
+            - listitem [ref=f82e101]:
+              - generic [ref=f82e102]:
+                - link [ref=f82e105] [cursor=pointer]:
+                  - /url: /a/grafana-assistant-app
+                  - paragraph [ref=f82e111]: Assistant
+                - 'button "Expand section: Assistant" [ref=f82e114] [cursor=pointer]'
+            - listitem [ref=f82e117]:
+              - generic [ref=f82e118]:
+                - link [ref=f82e121] [cursor=pointer]:
+                  - /url: /alerts-and-incidents
+                  - paragraph [ref=f82e126]: Alerts & IRM
+                - 'button "Expand section: Alerts &amp; IRM" [ref=f82e129] [cursor=pointer]'
+            - listitem [ref=f82e132]:
+              - generic [ref=f82e133]:
+                - link [ref=f82e136] [cursor=pointer]:
+                  - /url: /a/grafana-ml-app/home
+                  - paragraph [ref=f82e143]: AI & machine learning
+                - 'button "Expand section: AI &amp; machine learning" [ref=f82e146] [cursor=pointer]'
+            - listitem [ref=f82e149]:
+              - generic [ref=f82e150]:
+                - link [ref=f82e153] [cursor=pointer]:
+                  - /url: adaptive-telemetry
+                  - generic [ref=f82e155]:
+                    - paragraph [ref=f82e173]: Adaptive Telemetry
+                    - generic [ref=f82e174]: New!
+                - 'button "Expand section: Adaptive Telemetry" [ref=f82e180] [cursor=pointer]'
+            - listitem [ref=f82e183]:
+              - generic [ref=f82e184]:
+                - link [ref=f82e187] [cursor=pointer]:
+                  - /url: /a/grafana-cmab-app/
+                  - generic [ref=f82e189]:
+                    - paragraph [ref=f82e192]: Cost Management and Billing
+                    - generic [ref=f82e193]: New!
+                - 'button "Expand section: Cost Management and Billing" [ref=f82e199] [cursor=pointer]'
+            - listitem [ref=f82e202]:
+              - generic [ref=f82e203]:
+                - link [ref=f82e206] [cursor=pointer]:
+                  - /url: /testing-and-synthetics
+                  - paragraph [ref=f82e213]: Testing & synthetics
+                - 'button "Expand section: Testing &amp; synthetics" [ref=f82e216] [cursor=pointer]'
+            - listitem [ref=f82e219]:
+              - generic [ref=f82e220]:
+                - link [ref=f82e223] [cursor=pointer]:
+                  - /url: /observability
+                  - paragraph [ref=f82e228]: Observability
+                - 'button "Collapse section: Observability" [expanded] [ref=f82e231] [cursor=pointer]'
+              - list [ref=f82e234]:
+                - listitem [ref=f82e235]:
+                  - link [ref=f82e239] [cursor=pointer]:
+                    - /url: /a/grafana-asserts-app/entities
+                    - paragraph [ref=f82e242]: Entity graph
+                - listitem [ref=f82e244]:
+                  - link [ref=f82e248] [cursor=pointer]:
+                    - /url: /a/grafana-asserts-app/catalog
+                    - paragraph [ref=f82e251]: Entity catalog
+                - listitem [ref=f82e253]:
+                  - link [ref=f82e257] [cursor=pointer]:
+                    - /url: /a/grafana-asserts-app/assertions
+                    - paragraph [ref=f82e260]: RCA workbench
+                - listitem [ref=f82e262]:
+                  - link [ref=f82e266] [cursor=pointer]:
+                    - /url: /a/grafana-asserts-app/slo
+                    - paragraph [ref=f82e269]: Health target
+                - listitem [ref=f82e271]:
+                  - link [ref=f82e275] [cursor=pointer]:
+                    - /url: /a/grafana-asserts-app/rules
+                    - paragraph [ref=f82e278]: Rules
+                - listitem [ref=f82e280]:
+                  - link [ref=f82e284] [cursor=pointer]:
+                    - /url: /a/grafana-asserts-app/configuration
+                    - paragraph [ref=f82e287]: Configuration
+                - listitem [ref=f82e289]:
+                  - generic [ref=f82e290]:
+                    - link [ref=f82e293] [cursor=pointer]:
+                      - /url: /a/grafana-agento11y-app
+                      - generic [ref=f82e295]:
+                        - paragraph [ref=f82e296]: Agent
+                        - generic [ref=f82e297]: New!
+                    - 'button "Expand section: Agent" [ref=f82e303] [cursor=pointer]'
+                - listitem [ref=f82e306]:
+                  - generic [ref=f82e307]:
+                    - link [ref=f82e310] [cursor=pointer]:
+                      - /url: /a/grafana-kowalski-app
+                      - paragraph [ref=f82e313]: Frontend
+                    - 'button "Expand section: Frontend" [ref=f82e316] [cursor=pointer]'
+                - listitem [ref=f82e319]:
+                  - generic [ref=f82e320]:
+                    - link [ref=f82e323] [cursor=pointer]:
+                      - /url: /a/grafana-app-observability-app
+                      - paragraph [ref=f82e326]: Application
+                    - 'button "Expand section: Application" [ref=f82e329] [cursor=pointer]'
+                - listitem [ref=f82e332]:
+                  - generic [ref=f82e333]:
+                    - link [ref=f82e336] [cursor=pointer]:
+                      - /url: /a/grafana-dbo11y-app/
+                      - generic [ref=f82e338]:
+                        - paragraph [ref=f82e339]: Database
+                        - generic [ref=f82e340]: New!
+                    - 'button "Collapse section: Database" [expanded] [ref=f82e346] [cursor=pointer]'
+                  - list [ref=f82e349]:
+                    - listitem [ref=f82e350]:
+                      - link [ref=f82e355] [cursor=pointer]:
+                        - /url: /a/grafana-dbo11y-app/overview
+                        - paragraph [ref=f82e358]: Queries Overview
+                    - listitem [ref=f82e360]:
+                      - link [ref=f82e365] [cursor=pointer]:
+                        - /url: /a/grafana-dbo11y-app/configuration
+                        - paragraph [ref=f82e368]: Configuration
+                - listitem [ref=f82e370]:
+                  - generic [ref=f82e371]:
+                    - link [ref=f82e374] [cursor=pointer]:
+                      - /url: /a/grafana-k8s-app/home
+                      - paragraph [ref=f82e377]: Kubernetes
+                    - 'button "Expand section: Kubernetes" [ref=f82e380] [cursor=pointer]'
+                - listitem [ref=f82e383]:
+                  - generic [ref=f82e384]:
+                    - link [ref=f82e387] [cursor=pointer]:
+                      - /url: /a/grafana-csp-app
+                      - paragraph [ref=f82e390]: Cloud provider
+                    - 'button "Expand section: Cloud provider" [ref=f82e393] [cursor=pointer]'
+            - listitem [ref=f82e396]:
+              - generic [ref=f82e397]:
+                - link [ref=f82e400] [cursor=pointer]:
+                  - /url: /connections
+                  - paragraph [ref=f82e405]: Connections
+                - 'button "Expand section: Connections" [ref=f82e408] [cursor=pointer]'
+            - listitem [ref=f82e411]:
+              - generic [ref=f82e412]:
+                - link [ref=f82e415] [cursor=pointer]:
+                  - /url: /apps
+                  - paragraph [ref=f82e420]: More apps
+                - 'button "Expand section: More apps" [ref=f82e423] [cursor=pointer]'
+            - listitem [ref=f82e426]:
+              - generic [ref=f82e427]:
+                - link [ref=f82e430] [cursor=pointer]:
+                  - /url: /admin
+                  - paragraph [ref=f82e435]: Administration
+                - 'button "Expand section: Administration" [ref=f82e438] [cursor=pointer]'
+          - separator [ref=f82e441]
+          - button "Undock menu" [ref=f82e443] [cursor=pointer]
+      - banner [ref=f82e446]:
+        - generic [ref=f82e447]:
+          - navigation "Breadcrumbs" [ref=f82e449]:
+            - list [ref=f82e450]:
+              - listitem [ref=f82e451]:
+                - link "Explore" [ref=f82e452] [cursor=pointer]:
+                  - /url: /explore
+              - listitem [ref=f82e456]:
+                - generic "grafanacloud-devfedb13-traces" [ref=f82e457]
+          - generic [ref=f82e458]:
+            - generic [ref=f82e460]:
+              - button "Search..." [ref=f82e464] [cursor=pointer]
+              - generic [ref=f82e465]: ⌘+k
+            - button "New" [ref=f82e467] [cursor=pointer]
+            - button "Help" [ref=f82e473] [cursor=pointer]
+            - button "Open Grafana Assistant" [ref=f82e477] [cursor=pointer]
+            - button "Profile" [ref=f82e482] [cursor=pointer]:
+              - img "User avatar" [ref=f82e483]
+      - main [ref=f82e486]:
+        - generic [ref=f82e489]:
+          - heading "Explore" [level=1] [ref=f82e490]
+          - generic [ref=f82e493]:
+            - navigation "Explore toolbar" [ref=f82e495]:
+              - navigation "Search links" [ref=f82e497]:
+                - generic [ref=f82e498]:
+                  - button "Content outline" [expanded] [ref=f82e500] [cursor=pointer]:
+                    - generic [ref=f82e503]: Outline
+                  - generic [ref=f82e508] [cursor=pointer]:
+                    - img "Tempo logo" [ref=f82e510]
+                    - combobox "Select a data source" [ref=f82e511]
+                  - button "Go queryless" [ref=f82e516] [cursor=pointer]
+              - generic [ref=f82e518]:
+                - button "Split the pane" [ref=f82e520] [cursor=pointer]:
+                  - generic [ref=f82e523]: Split
+                - button "Add" [ref=f82e525] [cursor=pointer]
+                - generic [ref=f82e530]:
+                  - button "Move time range backwards" [ref=f82e531] [cursor=pointer]
+                  - 'button "Time range selected: Last 24 hours" [ref=f82e534] [cursor=pointer]'
+                  - button "Move time range forwards" [ref=f82e539] [cursor=pointer]
+                  - button "Zoom out time range" [ref=f82e542] [cursor=pointer]
+                - generic [ref=f82e546]:
+                  - button "Run query" [ref=f82e547] [cursor=pointer]
+                  - button "Auto refresh turned off. Choose refresh time interval" [ref=f82e550] [cursor=pointer]
+                - generic [ref=f82e554]:
+                  - button "Copy shortened URL" [ref=f82e555] [cursor=pointer]
+                  - button "Open copy link options" [ref=f82e558] [cursor=pointer]
+            - generic [ref=f82e562]:
+              - generic [ref=f82e567]:
+                - button "Collapse outline" [expanded] [ref=f82e569] [cursor=pointer]:
+                  - img "arrow-from-right" [ref=f82e570]
+                - button "Queries" [ref=f82e573] [cursor=pointer]:
+                  - img "arrow" [ref=f82e574]
+                - button "Table" [ref=f82e578] [cursor=pointer]:
+                  - img "table" [ref=f82e579]
+              - generic [ref=f82e584]:
+                - generic [ref=f82e586]:
+                  - generic [ref=f82e590]:
+                    - generic [ref=f82e592]:
+                      - generic [ref=f82e593]:
+                        - button "Collapse query row" [expanded] [ref=f82e594] [cursor=pointer]
+                        - generic [ref=f82e597]:
+                          - button "A" [ref=f82e598] [cursor=pointer]
+                          - emphasis [ref=f82e600]: (grafanacloud-devfedb13-traces)
+                      - generic [ref=f82e601]:
+                        - button "Saved queries" [ref=f82e602] [cursor=pointer]
+                        - button "Show data source help" [ref=f82e609] [cursor=pointer]
+                        - button "Create recorded query" [ref=f82e613] [cursor=pointer]
+                        - button "Duplicate query" [ref=f82e617] [cursor=pointer]
+                        - button "Hide response" [ref=f82e621] [cursor=pointer]
+                        - button "Remove query" [ref=f82e625] [cursor=pointer]
+                        - button "Drag and drop to reorder" [ref=f82e628]:
+                          - img "Drag and drop to reorder" [ref=f82e629]
+                    - generic [ref=f82e632]:
+                      - generic [ref=f82e634]:
+                        - generic [ref=f82e635]: Query type
+                        - generic [ref=f82e637]:
+                          - radiogroup [ref=f82e638]:
+                            - generic [ref=f82e639]:
+                              - radio "Search" [ref=f82e640] [cursor=pointer]
+                              - generic "Search" [ref=f82e641] [cursor=pointer]
+                            - generic [ref=f82e643]:
+                              - radio "TraceQL" [checked] [ref=f82e644] [cursor=pointer]
+                              - generic "TraceQL" [ref=f82e645] [cursor=pointer]
+                            - generic [ref=f82e647]:
+                              - radio "Service Graph" [ref=f82e648] [cursor=pointer]
+                              - generic "Service Graph" [ref=f82e649] [cursor=pointer]
+                          - button "Import trace" [ref=f82e651] [cursor=pointer]
+                      - generic [ref=f82e653]:
+                        - text: Build complex queries using TraceQL to select a list of traces.
+                        - link "Documentation" [ref=f82e654] [cursor=pointer]:
+                          - /url: https://grafana.com/docs/tempo/latest/traceql/
+                      - code [ref=f82e660]:
+                        - generic [ref=f82e661]:
+                          - generic [ref=f82e666]: "{resource.service.name=\"productcatalogservice\" && status=error}"
+                          - textbox "Editor content;Press Alt+F1 for Accessibility Options." [ref=f82e671]: "{resource.service.name=\"productcatalogservice\" && status=error}"
+                      - generic [ref=f82e675]:
+                        - generic [ref=f82e678] [cursor=pointer]:
+                          - 'button "Search Options Limit: 20 Spans Limit: 3 Table Format: Traces | Streaming: Enabled" [ref=f82e679]'
+                          - generic [ref=f82e683]:
+                            - heading "Search Options" [level=6] [ref=f82e684]
+                            - generic [ref=f82e685]:
+                              - generic [ref=f82e686]: "Limit: 20"
+                              - generic [ref=f82e687]: "Spans Limit: 3"
+                              - generic [ref=f82e688]: "Table Format: Traces"
+                              - generic [ref=f82e689]: "|"
+                              - generic [ref=f82e690]: "Streaming: Enabled"
+                        - generic [ref=f82e693] [cursor=pointer]:
+                          - 'button "Metrics Options Step: auto Type: Range | Streaming: Disabled" [ref=f82e694]'
+                          - generic [ref=f82e698]:
+                            - heading "Metrics Options" [level=6] [ref=f82e699]
+                            - generic [ref=f82e700]:
+                              - generic [ref=f82e701]: "Step: auto"
+                              - generic [ref=f82e702]: "Type: Range"
+                              - generic [ref=f82e703]: "|"
+                              - generic [ref=f82e704]: "Streaming: Disabled"
+                  - generic [ref=f82e705]:
+                    - button "Add query" [ref=f82e706] [cursor=pointer]
+                    - button "Add from saved queries" [ref=f82e710] [cursor=pointer]
+                    - button "Query history" [ref=f82e714] [cursor=pointer]
+                    - button "Query inspector" [ref=f82e718] [cursor=pointer]
+                - main [ref=f82e722]:
+                  - region [ref=f82e726]:
+                    - heading "Table - Streaming Progress" [level=2] [ref=f82e729]
+                    - grid [ref=f82e731]:
+                      - row [ref=f82e732]:
+                        - columnheader [ref=f82e733] [cursor=pointer]:
+                          - button "State" [ref=f82e735]
+                        - columnheader [ref=f82e737] [cursor=pointer]:
+                          - button "Elapsed Time" [ref=f82e739]
+                        - columnheader [ref=f82e741] [cursor=pointer]:
+                          - button "Total Blocks" [ref=f82e743]
+                        - columnheader [ref=f82e745] [cursor=pointer]:
+                          - button "Completed Jobs" [ref=f82e747]
+                        - columnheader [ref=f82e749] [cursor=pointer]:
+                          - button "Total Jobs" [ref=f82e751]
+                        - columnheader [ref=f82e753] [cursor=pointer]:
+                          - button "Progress" [ref=f82e755]
+                      - row [ref=f82e757]:
+                        - gridcell "Done" [ref=f82e758]
+                        - gridcell "1.09 s" [ref=f82e759]
+                        - gridcell "91" [ref=f82e760]
+                        - gridcell "94" [ref=f82e761]
+                        - gridcell "94" [ref=f82e762]
+                        - gridcell "100%" [ref=f82e763]
+    - log [ref=f82e769]
+  - generic [ref=f82e771]:
+    - alert
+    - alert
+    - complementary
+    - complementary

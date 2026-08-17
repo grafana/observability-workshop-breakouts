@@ -1,0 +1,577 @@
+- generic [ref=f106e9]:
+  - generic [ref=f106e10]:
+    - link "Skip to main content" [ref=f106e11] [cursor=pointer]:
+      - /url: "#pageContent"
+    - generic [ref=f106e13]:
+      - generic [ref=f106e14]:
+        - generic [ref=f106e15]:
+          - link [ref=f106e16] [cursor=pointer]:
+            - /url: /
+            - img "Grafana" [ref=f106e17]
+          - link "Grafana" [ref=f106e18] [cursor=pointer]:
+            - /url: /
+        - button "Close menu" [ref=f106e19] [cursor=pointer]
+      - navigation "Navigation" [ref=f106e22]:
+        - list "Navigation" [ref=f106e27]:
+          - listitem [ref=f106e28]:
+            - generic [ref=f106e29]:
+              - link [ref=f106e32] [cursor=pointer]:
+                - /url: /bookmarks
+                - paragraph [ref=f106e37]: Bookmarks
+              - 'button "Expand section: Bookmarks" [ref=f106e39] [cursor=pointer]'
+          - listitem [ref=f106e42]:
+            - generic [ref=f106e43]:
+              - link [ref=f106e46] [cursor=pointer]:
+                - /url: /dashboards?starred
+                - paragraph [ref=f106e51]: Starred
+              - 'button "Expand section: Starred" [ref=f106e54] [cursor=pointer]'
+          - listitem [ref=f106e57]:
+            - generic [ref=f106e58]:
+              - link [ref=f106e61] [cursor=pointer]:
+                - /url: /dashboards
+                - paragraph [ref=f106e66]: Dashboards
+              - 'button "Expand section: Dashboards" [ref=f106e69] [cursor=pointer]'
+          - listitem [ref=f106e72]:
+            - link [ref=f106e76] [cursor=pointer]:
+              - /url: /explore
+              - paragraph [ref=f106e81]: Explore
+          - listitem [ref=f106e83]:
+            - generic [ref=f106e84]:
+              - link [ref=f106e87] [cursor=pointer]:
+                - /url: /drilldown
+                - paragraph [ref=f106e95]: Drilldown
+              - 'button "Collapse section: Drilldown" [expanded] [ref=f106e98] [cursor=pointer]'
+            - list [ref=f106e101]:
+              - listitem [ref=f106e102]:
+                - link [ref=f106e106] [cursor=pointer]:
+                  - /url: /a/grafana-metricsdrilldown-app/drilldown
+                  - paragraph [ref=f106e109]: Metrics
+              - listitem [ref=f106e111]:
+                - link [ref=f106e115] [cursor=pointer]:
+                  - /url: /a/grafana-lokiexplore-app/explore
+                  - paragraph [ref=f106e118]: Logs
+              - listitem [ref=f106e120]:
+                - link [ref=f106e124] [cursor=pointer]:
+                  - /url: /a/grafana-exploretraces-app/
+                  - paragraph [ref=f106e127]: Traces
+              - listitem [ref=f106e129]:
+                - link [ref=f106e133] [cursor=pointer]:
+                  - /url: /a/grafana-pyroscope-app/explore
+                  - paragraph [ref=f106e136]: Profiles
+          - listitem [ref=f106e138]:
+            - generic [ref=f106e139]:
+              - link [ref=f106e142] [cursor=pointer]:
+                - /url: /a/grafana-assistant-app
+                - paragraph [ref=f106e148]: Assistant
+              - 'button "Expand section: Assistant" [ref=f106e151] [cursor=pointer]'
+          - listitem [ref=f106e154]:
+            - generic [ref=f106e155]:
+              - link [ref=f106e158] [cursor=pointer]:
+                - /url: /alerts-and-incidents
+                - paragraph [ref=f106e163]: Alerts & IRM
+              - 'button "Expand section: Alerts &amp; IRM" [ref=f106e166] [cursor=pointer]'
+          - listitem [ref=f106e169]:
+            - generic [ref=f106e170]:
+              - link [ref=f106e173] [cursor=pointer]:
+                - /url: /a/grafana-ml-app/home
+                - paragraph [ref=f106e180]: AI & machine learning
+              - 'button "Expand section: AI &amp; machine learning" [ref=f106e183] [cursor=pointer]'
+          - listitem [ref=f106e186]:
+            - generic [ref=f106e187]:
+              - link [ref=f106e190] [cursor=pointer]:
+                - /url: adaptive-telemetry
+                - generic [ref=f106e192]:
+                  - paragraph [ref=f106e210]: Adaptive Telemetry
+                  - generic [ref=f106e211]: New!
+              - 'button "Expand section: Adaptive Telemetry" [ref=f106e217] [cursor=pointer]'
+          - listitem [ref=f106e220]:
+            - generic [ref=f106e221]:
+              - link [ref=f106e224] [cursor=pointer]:
+                - /url: /a/grafana-cmab-app/
+                - generic [ref=f106e226]:
+                  - paragraph [ref=f106e229]: Cost Management and Billing
+                  - generic [ref=f106e230]: New!
+              - 'button "Expand section: Cost Management and Billing" [ref=f106e236] [cursor=pointer]'
+          - listitem [ref=f106e239]:
+            - generic [ref=f106e240]:
+              - link [ref=f106e243] [cursor=pointer]:
+                - /url: /testing-and-synthetics
+                - paragraph [ref=f106e250]: Testing & synthetics
+              - 'button "Expand section: Testing &amp; synthetics" [ref=f106e253] [cursor=pointer]'
+          - listitem [ref=f106e256]:
+            - generic [ref=f106e257]:
+              - link [ref=f106e260] [cursor=pointer]:
+                - /url: /observability
+                - paragraph [ref=f106e265]: Observability
+              - 'button "Collapse section: Observability" [expanded] [ref=f106e268] [cursor=pointer]'
+            - list [ref=f106e271]:
+              - listitem [ref=f106e272]:
+                - link [ref=f106e276] [cursor=pointer]:
+                  - /url: /a/grafana-asserts-app/entities
+                  - paragraph [ref=f106e279]: Entity graph
+              - listitem [ref=f106e281]:
+                - link [ref=f106e285] [cursor=pointer]:
+                  - /url: /a/grafana-asserts-app/catalog
+                  - paragraph [ref=f106e288]: Entity catalog
+              - listitem [ref=f106e290]:
+                - link [ref=f106e294] [cursor=pointer]:
+                  - /url: /a/grafana-asserts-app/assertions
+                  - paragraph [ref=f106e297]: RCA workbench
+              - listitem [ref=f106e299]:
+                - link [ref=f106e303] [cursor=pointer]:
+                  - /url: /a/grafana-asserts-app/slo
+                  - paragraph [ref=f106e306]: Health target
+              - listitem [ref=f106e308]:
+                - link [ref=f106e312] [cursor=pointer]:
+                  - /url: /a/grafana-asserts-app/rules
+                  - paragraph [ref=f106e315]: Rules
+              - listitem [ref=f106e317]:
+                - link [ref=f106e321] [cursor=pointer]:
+                  - /url: /a/grafana-asserts-app/configuration
+                  - paragraph [ref=f106e324]: Configuration
+              - listitem [ref=f106e326]:
+                - generic [ref=f106e327]:
+                  - link [ref=f106e330] [cursor=pointer]:
+                    - /url: /a/grafana-agento11y-app
+                    - generic [ref=f106e332]:
+                      - paragraph [ref=f106e333]: Agent
+                      - generic [ref=f106e334]: New!
+                  - 'button "Expand section: Agent" [ref=f106e340] [cursor=pointer]'
+              - listitem [ref=f106e343]:
+                - generic [ref=f106e344]:
+                  - link [ref=f106e347] [cursor=pointer]:
+                    - /url: /a/grafana-kowalski-app
+                    - paragraph [ref=f106e350]: Frontend
+                  - 'button "Expand section: Frontend" [ref=f106e353] [cursor=pointer]'
+              - listitem [ref=f106e356]:
+                - generic [ref=f106e357]:
+                  - link [ref=f106e360] [cursor=pointer]:
+                    - /url: /a/grafana-app-observability-app
+                    - paragraph [ref=f106e363]: Application
+                  - 'button "Expand section: Application" [ref=f106e366] [cursor=pointer]'
+              - listitem [ref=f106e369]:
+                - generic [ref=f106e370]:
+                  - link [ref=f106e373] [cursor=pointer]:
+                    - /url: /a/grafana-dbo11y-app/
+                    - generic [ref=f106e375]:
+                      - paragraph [ref=f106e376]: Database
+                      - generic [ref=f106e377]: New!
+                  - 'button "Collapse section: Database" [expanded] [ref=f106e383] [cursor=pointer]'
+                - list [ref=f106e386]:
+                  - listitem [ref=f106e387]:
+                    - link [ref=f106e392] [cursor=pointer]:
+                      - /url: /a/grafana-dbo11y-app/overview
+                      - paragraph [ref=f106e395]: Queries Overview
+                  - listitem [ref=f106e397]:
+                    - link [ref=f106e402] [cursor=pointer]:
+                      - /url: /a/grafana-dbo11y-app/configuration
+                      - paragraph [ref=f106e405]: Configuration
+              - listitem [ref=f106e407]:
+                - generic [ref=f106e408]:
+                  - link [ref=f106e411] [cursor=pointer]:
+                    - /url: /a/grafana-k8s-app/home
+                    - paragraph [ref=f106e414]: Kubernetes
+                  - 'button "Expand section: Kubernetes" [ref=f106e417] [cursor=pointer]'
+              - listitem [ref=f106e420]:
+                - generic [ref=f106e421]:
+                  - link [ref=f106e424] [cursor=pointer]:
+                    - /url: /a/grafana-csp-app
+                    - paragraph [ref=f106e427]: Cloud provider
+                  - 'button "Expand section: Cloud provider" [ref=f106e430] [cursor=pointer]'
+          - listitem [ref=f106e433]:
+            - generic [ref=f106e434]:
+              - link [ref=f106e437] [cursor=pointer]:
+                - /url: /connections
+                - paragraph [ref=f106e442]: Connections
+              - 'button "Expand section: Connections" [ref=f106e445] [cursor=pointer]'
+          - listitem [ref=f106e448]:
+            - generic [ref=f106e449]:
+              - link [ref=f106e452] [cursor=pointer]:
+                - /url: /apps
+                - paragraph [ref=f106e457]: More apps
+              - 'button "Expand section: More apps" [ref=f106e460] [cursor=pointer]'
+          - listitem [ref=f106e463]:
+            - generic [ref=f106e464]:
+              - link [ref=f106e467] [cursor=pointer]:
+                - /url: /admin
+                - paragraph [ref=f106e472]: Administration
+              - 'button "Expand section: Administration" [ref=f106e475] [cursor=pointer]'
+        - separator [ref=f106e478]
+        - button "Undock menu" [ref=f106e480] [cursor=pointer]
+    - banner [ref=f106e483]:
+      - generic [ref=f106e484]:
+        - navigation "Breadcrumbs" [ref=f106e486]:
+          - list [ref=f106e487]:
+            - listitem [ref=f106e488]:
+              - link "Drilldown" [ref=f106e489] [cursor=pointer]:
+                - /url: /drilldown
+            - listitem [ref=f106e493]:
+              - link "Traces" [ref=f106e494] [cursor=pointer]:
+                - /url: /a/grafana-exploretraces-app/
+            - listitem [ref=f106e498]:
+              - generic "Traces Drilldown" [ref=f106e499]
+        - generic [ref=f106e500]:
+          - generic [ref=f106e502]:
+            - button "Search..." [ref=f106e506] [cursor=pointer]
+            - generic [ref=f106e507]: ⌘+k
+          - button "New" [ref=f106e509] [cursor=pointer]
+          - button "Help" [ref=f106e515] [cursor=pointer]
+          - button "Open Grafana Assistant" [ref=f106e519] [cursor=pointer]
+          - button "Profile" [ref=f106e524] [cursor=pointer]:
+            - img "User avatar" [ref=f106e525]
+    - main [ref=f106e528]:
+      - generic [ref=f106e532]:
+        - generic [ref=f106e533]:
+          - generic [ref=f106e534]:
+            - generic [ref=f106e536]:
+              - generic [ref=f106e537]: Data source
+              - generic [ref=f106e538] [cursor=pointer]:
+                - log [ref=f106e540]
+                - generic [ref=f106e542]:
+                  - generic [ref=f106e543]: grafanacloud-devfedb13-traces
+                  - combobox [ref=f106e545]
+            - generic [ref=f106e549]:
+              - button "Save in Saved queries Queries" [ref=f106e550] [cursor=pointer]
+              - button "Load Saved query" [ref=f106e553] [cursor=pointer]
+              - generic [ref=f106e556]:
+                - generic [ref=f106e557]: Insights
+                - switch "Insights" [checked] [ref=f106e562]
+              - generic [ref=f106e564]:
+                - button "Move 1h 30m backward" [ref=f106e565] [cursor=pointer]
+                - 'button "Time range selected: Last 3 hours" [ref=f106e568] [cursor=pointer]':
+                  - generic [ref=f106e571]: Last 3 hours
+                - button "Move time range forwards" [ref=f106e576] [cursor=pointer]
+                - button "Zoom out time range" [ref=f106e579] [cursor=pointer]
+              - generic [ref=f106e582]:
+                - button [ref=f106e583] [cursor=pointer]
+                - button "Auto refresh turned off. Choose refresh time interval" [ref=f106e586] [cursor=pointer]
+              - button "Plugin info" [ref=f106e589] [cursor=pointer]
+          - generic [ref=f106e592]:
+            - generic [ref=f106e593]:
+              - generic [ref=f106e594]:
+                - generic [ref=f106e595]: Filters
+                - radiogroup [ref=f106e596]:
+                  - generic [ref=f106e597]:
+                    - radio "Root spans" [checked] [ref=f106e598] [cursor=pointer]
+                    - generic "Root spans" [ref=f106e599] [cursor=pointer]
+                  - generic [ref=f106e601]:
+                    - radio "All spans" [ref=f106e602] [cursor=pointer]
+                    - generic "All spans" [ref=f106e603] [cursor=pointer]
+                - generic [ref=f106e605] [cursor=pointer]:
+                  - log [ref=f106e607]
+                  - combobox [ref=f106e610]
+              - generic [ref=f106e615]:
+                - button "Edit filter with key resource.service.namespace" [ref=f106e617] [cursor=pointer]:
+                  - generic [ref=f106e618]: resource.service.namespace = banking-prod
+                  - button "Remove filter with key resource.service.namespace" [ref=f106e619]
+                - combobox "+ label = value" [ref=f106e623]
+                - button "Clear all" [ref=f106e626] [cursor=pointer]
+            - generic [ref=f106e629]:
+              - generic [ref=f106e630]: Trace ID
+              - textbox "Enter an ID and press Enter" [ref=f106e633]
+        - generic [ref=f106e635]:
+          - generic [ref=f106e636]: Select metric type
+          - generic [ref=f106e640]:
+            - generic [ref=f106e641]:
+              - generic [ref=f106e643] [cursor=pointer]:
+                - generic [ref=f106e644]:
+                  - generic [ref=f106e645]:
+                    - generic [ref=f106e646]:
+                      - radiogroup [ref=f106e647]:
+                        - radio [checked] [ref=f106e649]
+                      - generic [ref=f106e650]: Histogram by duration
+                    - generic [ref=f106e651]: Click and drag to compare selection with baseline.
+                  - button "Slowest traces selected" [disabled] [ref=f106e654]
+                - generic [ref=f106e673]:
+                  - button "Annotation region" [ref=f106e674]
+                  - button "Annotation region" [ref=f106e675]
+                  - button "Annotation region" [ref=f106e676]
+                  - button "Annotation region" [ref=f106e677]
+                  - button "Annotation region" [ref=f106e678]
+                  - button "Annotation region" [ref=f106e679]
+                  - button "Annotation region" [ref=f106e680]
+                  - button "Annotation region" [ref=f106e681]
+                  - button "Annotation region" [ref=f106e682]
+                  - button "Annotation region" [ref=f106e683]
+                  - button "Annotation region" [ref=f106e684]
+                  - button "Annotation region" [ref=f106e685]
+                  - button "Annotation region" [ref=f106e686]
+                  - button "Annotation region" [ref=f106e687]
+              - generic [ref=f106e689]:
+                - generic [ref=f106e691] [cursor=pointer]:
+                  - radiogroup [ref=f106e693]:
+                    - radio [ref=f106e695]
+                  - generic [ref=f106e704]:
+                    - generic [ref=f106e711]:
+                      - button "Annotation region" [ref=f106e712]
+                      - button "Annotation region" [ref=f106e713]
+                      - button "Annotation region" [ref=f106e714]
+                      - button "Annotation region" [ref=f106e715]
+                      - button "Annotation region" [ref=f106e716]
+                      - button "Annotation region" [ref=f106e717]
+                      - button "Annotation region" [ref=f106e718]
+                      - button "Annotation region" [ref=f106e719]
+                      - button "Annotation region" [ref=f106e720]
+                      - button "Annotation region" [ref=f106e721]
+                      - button "Annotation region" [ref=f106e722]
+                      - button "Annotation region" [ref=f106e723]
+                      - button "Annotation region" [ref=f106e724]
+                      - button "Annotation region" [ref=f106e725]
+                    - generic:
+                      - button [ref=f106e728]
+                      - button [ref=f106e732]
+                      - button [ref=f106e736]
+                      - button [ref=f106e740]
+                      - button [ref=f106e744]
+                      - button [ref=f106e748]
+                      - button [ref=f106e752]
+                      - button [ref=f106e756]
+                      - button [ref=f106e760]
+                      - button [ref=f106e764]
+                      - button [ref=f106e768]
+                      - button [ref=f106e772]
+                      - button [ref=f106e776]
+                      - button [ref=f106e780]
+                      - button [ref=f106e784]
+                      - button [ref=f106e788]
+                      - button [ref=f106e792]
+                      - button [ref=f106e796]
+                      - button [ref=f106e800]
+                      - button [ref=f106e804]
+                      - button [ref=f106e808]
+                      - button [ref=f106e812]
+                      - button [ref=f106e816]
+                      - button [ref=f106e820]
+                      - button [ref=f106e824]
+                      - button [ref=f106e828]
+                      - button [ref=f106e832]
+                      - button [ref=f106e836]
+                      - button [ref=f106e840]
+                      - button [ref=f106e844]
+                      - button [ref=f106e848]
+                      - button [ref=f106e852]
+                      - button [ref=f106e856]
+                      - button [ref=f106e860]
+                      - button [ref=f106e864]
+                      - button [ref=f106e868]
+                      - button [ref=f106e872]
+                      - button [ref=f106e876]
+                      - button [ref=f106e880]
+                      - button [ref=f106e884]
+                      - button [ref=f106e888]
+                      - button [ref=f106e892]
+                      - button [ref=f106e896]
+                      - button [ref=f106e900]
+                      - button [ref=f106e904]
+                      - button [ref=f106e908]
+                      - button [ref=f106e912]
+                      - button [ref=f106e916]
+                      - button [ref=f106e920]
+                      - button [ref=f106e924]
+                      - button [ref=f106e928]
+                      - button [ref=f106e932]
+                      - button [ref=f106e936]
+                      - button [ref=f106e940]
+                      - button [ref=f106e944]
+                      - button [ref=f106e948]
+                      - button [ref=f106e952]
+                      - button [ref=f106e956]
+                      - button [ref=f106e960]
+                      - button [ref=f106e964]
+                      - button [ref=f106e968]
+                      - button [ref=f106e972]
+                      - button [ref=f106e976]
+                      - button [ref=f106e980]
+                      - button [ref=f106e984]
+                      - button [ref=f106e988]
+                      - button [ref=f106e992]
+                      - button [ref=f106e996]
+                      - button [ref=f106e1000]
+                      - button [ref=f106e1004]
+                      - button [ref=f106e1008]
+                      - button [ref=f106e1012]
+                - generic [ref=f106e1016] [cursor=pointer]:
+                  - radiogroup [ref=f106e1018]:
+                    - radio [ref=f106e1020]
+                  - region "Errors rate" [ref=f106e1026]:
+                    - generic [ref=f106e1029]:
+                      - generic [ref=f106e1036]:
+                        - button "Annotation region" [ref=f106e1037]
+                        - button "Annotation region" [ref=f106e1038]
+                        - button "Annotation region" [ref=f106e1039]
+                        - button "Annotation region" [ref=f106e1040]
+                        - button "Annotation region" [ref=f106e1041]
+                        - button "Annotation region" [ref=f106e1042]
+                        - button "Annotation region" [ref=f106e1043]
+                        - button "Annotation region" [ref=f106e1044]
+                        - button "Annotation region" [ref=f106e1045]
+                        - button "Annotation region" [ref=f106e1046]
+                        - button "Annotation region" [ref=f106e1047]
+                        - button "Annotation region" [ref=f106e1048]
+                        - button "Annotation region" [ref=f106e1049]
+                        - button "Annotation region" [ref=f106e1050]
+                      - generic:
+                        - button [ref=f106e1053]
+                        - button [ref=f106e1057]
+                        - button [ref=f106e1061]
+                        - button [ref=f106e1065]
+                        - button [ref=f106e1069]
+                        - button [ref=f106e1073]
+                        - button [ref=f106e1077]
+                        - button [ref=f106e1081]
+                        - button [ref=f106e1085]
+                        - button [ref=f106e1089]
+                        - button [ref=f106e1093]
+                        - button [ref=f106e1097]
+                        - button [ref=f106e1101]
+                        - button [ref=f106e1105]
+                        - button [ref=f106e1109]
+                        - button [ref=f106e1113]
+                        - button [ref=f106e1117]
+                        - button [ref=f106e1121]
+                        - button [ref=f106e1125]
+                        - button [ref=f106e1129]
+                        - button [ref=f106e1133]
+                        - button [ref=f106e1137]
+                        - button [ref=f106e1141]
+                        - button [ref=f106e1145]
+                        - button [ref=f106e1149]
+                        - button [ref=f106e1153]
+                        - button [ref=f106e1157]
+                        - button [ref=f106e1161]
+            - generic [ref=f106e1165]:
+              - button "Copy url" [ref=f106e1168] [cursor=pointer]
+              - tablist [ref=f106e1172]:
+                - tab "Breakdown" [selected] [ref=f106e1174] [cursor=pointer]
+                - tab "Root cause latency" [ref=f106e1176] [cursor=pointer]
+                - tab "Comparison" [ref=f106e1178] [cursor=pointer]
+                - tab "Slow traces200" [ref=f106e1180] [cursor=pointer]
+            - generic [ref=f106e1182]:
+              - generic [ref=f106e1183]:
+                - generic [ref=f106e1184]: Attributes are ordered by their average duration.
+                - generic [ref=f106e1186]:
+                  - generic [ref=f106e1188]:
+                    - generic [ref=f106e1189]: Percentiles
+                    - generic [ref=f106e1194]:
+                      - generic [ref=f106e1195]:
+                        - generic [ref=f106e1196]: p90
+                        - button "Remove p90" [ref=f106e1198] [cursor=pointer]
+                      - combobox [ref=f106e1201] [cursor=pointer]
+                      - button [ref=f106e1203] [cursor=pointer]
+                  - generic [ref=f106e1205]:
+                    - generic [ref=f106e1206]: View
+                    - radiogroup [ref=f106e1209]:
+                      - generic [ref=f106e1210]:
+                        - radio "Single" [ref=f106e1211] [cursor=pointer]
+                        - generic "Single" [ref=f106e1212] [cursor=pointer]
+                      - generic [ref=f106e1214]:
+                        - radio "Grid" [checked] [ref=f106e1215] [cursor=pointer]
+                        - generic "Grid" [ref=f106e1216] [cursor=pointer]
+                      - generic [ref=f106e1218]:
+                        - radio "Rows" [ref=f106e1219] [cursor=pointer]
+                        - generic "Rows" [ref=f106e1220] [cursor=pointer]
+              - generic [ref=f106e1223]:
+                - generic [ref=f106e1224]:
+                  - generic [ref=f106e1225]:
+                    - generic [ref=f106e1226]: Attributes
+                    - generic [ref=f106e1228]:
+                      - strong [ref=f106e1229]: "Selected:"
+                      - text: resource.service.name
+                    - textbox "Search attributes..." [ref=f106e1236]
+                    - tablist [ref=f106e1239]:
+                      - tab "Favorites" [selected] [ref=f106e1241] [cursor=pointer]
+                      - tab "All" [ref=f106e1243] [cursor=pointer]
+                      - tab "Resource" [ref=f106e1245] [cursor=pointer]
+                      - tab "Span" [ref=f106e1247] [cursor=pointer]
+                  - list [ref=f106e1248]:
+                    - listitem "service.name" [ref=f106e1249]:
+                      - generic [ref=f106e1250]:
+                        - generic [ref=f106e1251]: resource.
+                        - generic [ref=f106e1252]: service.name
+                      - button "Remove from favorites" [ref=f106e1253] [cursor=pointer]
+                    - 'listitem "Filtered: service.namespace" [ref=f106e1256]':
+                      - generic [ref=f106e1257]:
+                        - generic [ref=f106e1258]: resource.
+                        - generic [ref=f106e1261]: service.namespace
+                      - button "Remove from favorites" [ref=f106e1262] [cursor=pointer]
+                    - listitem "service.version" [ref=f106e1265]:
+                      - generic [ref=f106e1266]:
+                        - generic [ref=f106e1267]: resource.
+                        - generic [ref=f106e1268]: service.version
+                      - button "Remove from favorites" [ref=f106e1269] [cursor=pointer]
+                    - listitem "cluster" [ref=f106e1272]:
+                      - generic [ref=f106e1273]:
+                        - generic [ref=f106e1274]: resource.
+                        - generic [ref=f106e1275]: cluster
+                      - button "Remove from favorites" [ref=f106e1276] [cursor=pointer]
+                    - listitem "deployment.environment" [ref=f106e1279]:
+                      - generic [ref=f106e1280]:
+                        - generic [ref=f106e1281]: resource.
+                        - generic [ref=f106e1282]: deployment.environment
+                      - button "Remove from favorites" [ref=f106e1283] [cursor=pointer]
+                    - listitem "k8s.namespace.name" [ref=f106e1286]:
+                      - generic [ref=f106e1287]:
+                        - generic [ref=f106e1288]: resource.
+                        - generic [ref=f106e1289]: k8s.namespace.name
+                      - button "Remove from favorites" [ref=f106e1290] [cursor=pointer]
+                    - listitem "k8s.pod.name" [ref=f106e1293]:
+                      - generic [ref=f106e1294]:
+                        - generic [ref=f106e1295]: resource.
+                        - generic [ref=f106e1296]: k8s.pod.name
+                      - button "Remove from favorites" [ref=f106e1297] [cursor=pointer]
+                    - listitem "k8s.node.name" [ref=f106e1300]:
+                      - generic [ref=f106e1301]:
+                        - generic [ref=f106e1302]: resource.
+                        - generic [ref=f106e1303]: k8s.node.name
+                      - button "Remove from favorites" [ref=f106e1304] [cursor=pointer]
+                    - listitem "name" [ref=f106e1307]:
+                      - generic [ref=f106e1308]:
+                        - generic [ref=f106e1309]: span.
+                        - generic [ref=f106e1310]: name
+                      - button "Remove from favorites" [ref=f106e1311] [cursor=pointer]
+                    - listitem "kind" [ref=f106e1314]:
+                      - generic [ref=f106e1315]:
+                        - generic [ref=f106e1316]: span.
+                        - generic [ref=f106e1317]: kind
+                      - button "Remove from favorites" [ref=f106e1318] [cursor=pointer]
+                    - listitem "rootName" [ref=f106e1321]:
+                      - generic [ref=f106e1322]:
+                        - generic [ref=f106e1323]: span.
+                        - generic [ref=f106e1324]: rootName
+                      - button "Remove from favorites" [ref=f106e1325] [cursor=pointer]
+                    - listitem "rootServiceName" [ref=f106e1328]:
+                      - generic [ref=f106e1329]:
+                        - generic [ref=f106e1330]: span.
+                        - generic [ref=f106e1331]: rootServiceName
+                      - button "Remove from favorites" [ref=f106e1332] [cursor=pointer]
+                    - listitem "status" [ref=f106e1335]:
+                      - generic [ref=f106e1336]:
+                        - generic [ref=f106e1337]: span.
+                        - generic [ref=f106e1338]: status
+                      - button "Remove from favorites" [ref=f106e1339] [cursor=pointer]
+                    - listitem "statusMessage" [ref=f106e1342]:
+                      - generic [ref=f106e1343]:
+                        - generic [ref=f106e1344]: span.
+                        - generic [ref=f106e1345]: statusMessage
+                      - button "Remove from favorites" [ref=f106e1346] [cursor=pointer]
+                    - listitem "http.status_code" [ref=f106e1349]:
+                      - generic [ref=f106e1350]:
+                        - generic [ref=f106e1351]: span.
+                        - generic [ref=f106e1352]: http.status_code
+                      - button "Remove from favorites" [ref=f106e1353] [cursor=pointer]
+                - generic [ref=f106e1356]:
+                  - textbox "Search" [ref=f106e1365]
+                  - generic [ref=f106e1366]:
+                    - region [ref=f106e1372]:
+                      - generic [ref=f106e1373]:
+                        - heading "customer-chat" [level=2] [ref=f106e1375]
+                        - group "Add to filters" [ref=f106e1376]:
+                          - button "Include" [ref=f106e1377] [cursor=pointer]
+                          - button "Exclude" [ref=f106e1378] [cursor=pointer]
+                    - region [ref=f106e1395]:
+                      - generic [ref=f106e1396]:
+                        - heading "flagd" [level=2] [ref=f106e1398]
+                        - group "Add to filters" [ref=f106e1399]:
+                          - button "Include" [ref=f106e1400] [cursor=pointer]
+                          - button "Exclude" [ref=f106e1401] [cursor=pointer]
+  - log [ref=f106e1432]

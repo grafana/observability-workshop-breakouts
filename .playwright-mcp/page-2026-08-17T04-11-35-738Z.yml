@@ -1,0 +1,340 @@
+- generic [ref=f148e9]:
+  - generic [ref=f148e10]:
+    - link "Skip to main content" [ref=f148e11] [cursor=pointer]:
+      - /url: "#pageContent"
+    - generic [ref=f148e13]:
+      - generic [ref=f148e14]:
+        - generic [ref=f148e15]:
+          - link [ref=f148e16] [cursor=pointer]:
+            - /url: /
+            - img "Grafana" [ref=f148e17]
+          - link "Grafana" [ref=f148e18] [cursor=pointer]:
+            - /url: /
+        - button "Close menu" [ref=f148e19] [cursor=pointer]
+      - navigation "Navigation" [ref=f148e22]:
+        - list "Navigation" [ref=f148e27]:
+          - listitem [ref=f148e28]:
+            - generic [ref=f148e29]:
+              - link [ref=f148e32] [cursor=pointer]:
+                - /url: /bookmarks
+                - paragraph [ref=f148e37]: Bookmarks
+              - 'button "Expand section: Bookmarks" [ref=f148e39] [cursor=pointer]'
+          - listitem [ref=f148e42]:
+            - generic [ref=f148e43]:
+              - link [ref=f148e46] [cursor=pointer]:
+                - /url: /dashboards?starred
+                - paragraph [ref=f148e51]: Starred
+              - 'button "Expand section: Starred" [ref=f148e54] [cursor=pointer]'
+          - listitem [ref=f148e57]:
+            - generic [ref=f148e58]:
+              - link [ref=f148e61] [cursor=pointer]:
+                - /url: /dashboards
+                - paragraph [ref=f148e66]: Dashboards
+              - 'button "Expand section: Dashboards" [ref=f148e69] [cursor=pointer]'
+          - listitem [ref=f148e72]:
+            - link [ref=f148e76] [cursor=pointer]:
+              - /url: /explore
+              - paragraph [ref=f148e81]: Explore
+          - listitem [ref=f148e83]:
+            - generic [ref=f148e84]:
+              - link [ref=f148e87] [cursor=pointer]:
+                - /url: /drilldown
+                - paragraph [ref=f148e95]: Drilldown
+              - 'button "Collapse section: Drilldown" [expanded] [ref=f148e98] [cursor=pointer]'
+            - list [ref=f148e101]:
+              - listitem [ref=f148e102]:
+                - link [ref=f148e106] [cursor=pointer]:
+                  - /url: /a/grafana-metricsdrilldown-app/drilldown
+                  - paragraph [ref=f148e109]: Metrics
+              - listitem [ref=f148e111]:
+                - link [ref=f148e115] [cursor=pointer]:
+                  - /url: /a/grafana-lokiexplore-app/explore
+                  - paragraph [ref=f148e118]: Logs
+              - listitem [ref=f148e120]:
+                - link [ref=f148e124] [cursor=pointer]:
+                  - /url: /a/grafana-exploretraces-app/
+                  - paragraph [ref=f148e127]: Traces
+              - listitem [ref=f148e129]:
+                - link [ref=f148e133] [cursor=pointer]:
+                  - /url: /a/grafana-pyroscope-app/explore
+                  - paragraph [ref=f148e136]: Profiles
+          - listitem [ref=f148e138]:
+            - generic [ref=f148e139]:
+              - link [ref=f148e142] [cursor=pointer]:
+                - /url: /a/grafana-assistant-app
+                - paragraph [ref=f148e148]: Assistant
+              - 'button "Expand section: Assistant" [ref=f148e151] [cursor=pointer]'
+          - listitem [ref=f148e154]:
+            - generic [ref=f148e155]:
+              - link [ref=f148e158] [cursor=pointer]:
+                - /url: /alerts-and-incidents
+                - paragraph [ref=f148e163]: Alerts & IRM
+              - 'button "Expand section: Alerts &amp; IRM" [ref=f148e166] [cursor=pointer]'
+          - listitem [ref=f148e169]:
+            - generic [ref=f148e170]:
+              - link [ref=f148e173] [cursor=pointer]:
+                - /url: /a/grafana-ml-app/home
+                - paragraph [ref=f148e180]: AI & machine learning
+              - 'button "Expand section: AI &amp; machine learning" [ref=f148e183] [cursor=pointer]'
+          - listitem [ref=f148e186]:
+            - generic [ref=f148e187]:
+              - link [ref=f148e190] [cursor=pointer]:
+                - /url: adaptive-telemetry
+                - generic [ref=f148e192]:
+                  - paragraph [ref=f148e210]: Adaptive Telemetry
+                  - generic [ref=f148e211]: New!
+              - 'button "Expand section: Adaptive Telemetry" [ref=f148e217] [cursor=pointer]'
+          - listitem [ref=f148e220]:
+            - generic [ref=f148e221]:
+              - link [ref=f148e224] [cursor=pointer]:
+                - /url: /a/grafana-cmab-app/
+                - generic [ref=f148e226]:
+                  - paragraph [ref=f148e229]: Cost Management and Billing
+                  - generic [ref=f148e230]: New!
+              - 'button "Expand section: Cost Management and Billing" [ref=f148e236] [cursor=pointer]'
+          - listitem [ref=f148e239]:
+            - generic [ref=f148e240]:
+              - link [ref=f148e243] [cursor=pointer]:
+                - /url: /testing-and-synthetics
+                - paragraph [ref=f148e250]: Testing & synthetics
+              - 'button "Expand section: Testing &amp; synthetics" [ref=f148e253] [cursor=pointer]'
+          - listitem [ref=f148e256]:
+            - generic [ref=f148e257]:
+              - link [ref=f148e260] [cursor=pointer]:
+                - /url: /observability
+                - paragraph [ref=f148e265]: Observability
+              - 'button "Collapse section: Observability" [expanded] [ref=f148e268] [cursor=pointer]'
+            - list [ref=f148e271]:
+              - listitem [ref=f148e272]:
+                - link [ref=f148e276] [cursor=pointer]:
+                  - /url: /a/grafana-asserts-app/entities
+                  - paragraph [ref=f148e279]: Entity graph
+              - listitem [ref=f148e281]:
+                - link [ref=f148e285] [cursor=pointer]:
+                  - /url: /a/grafana-asserts-app/catalog
+                  - paragraph [ref=f148e288]: Entity catalog
+              - listitem [ref=f148e290]:
+                - link [ref=f148e294] [cursor=pointer]:
+                  - /url: /a/grafana-asserts-app/assertions
+                  - paragraph [ref=f148e297]: RCA workbench
+              - listitem [ref=f148e299]:
+                - link [ref=f148e303] [cursor=pointer]:
+                  - /url: /a/grafana-asserts-app/slo
+                  - paragraph [ref=f148e306]: Health target
+              - listitem [ref=f148e308]:
+                - link [ref=f148e312] [cursor=pointer]:
+                  - /url: /a/grafana-asserts-app/rules
+                  - paragraph [ref=f148e315]: Rules
+              - listitem [ref=f148e317]:
+                - link [ref=f148e321] [cursor=pointer]:
+                  - /url: /a/grafana-asserts-app/configuration
+                  - paragraph [ref=f148e324]: Configuration
+              - listitem [ref=f148e326]:
+                - generic [ref=f148e327]:
+                  - link [ref=f148e330] [cursor=pointer]:
+                    - /url: /a/grafana-agento11y-app
+                    - generic [ref=f148e332]:
+                      - paragraph [ref=f148e333]: Agent
+                      - generic [ref=f148e334]: New!
+                  - 'button "Expand section: Agent" [ref=f148e340] [cursor=pointer]'
+              - listitem [ref=f148e343]:
+                - generic [ref=f148e344]:
+                  - link [ref=f148e347] [cursor=pointer]:
+                    - /url: /a/grafana-kowalski-app
+                    - paragraph [ref=f148e350]: Frontend
+                  - 'button "Expand section: Frontend" [ref=f148e353] [cursor=pointer]'
+              - listitem [ref=f148e356]:
+                - generic [ref=f148e357]:
+                  - link [ref=f148e360] [cursor=pointer]:
+                    - /url: /a/grafana-app-observability-app
+                    - paragraph [ref=f148e363]: Application
+                  - 'button "Expand section: Application" [ref=f148e366] [cursor=pointer]'
+              - listitem [ref=f148e369]:
+                - generic [ref=f148e370]:
+                  - link [ref=f148e373] [cursor=pointer]:
+                    - /url: /a/grafana-dbo11y-app/
+                    - generic [ref=f148e375]:
+                      - paragraph [ref=f148e376]: Database
+                      - generic [ref=f148e377]: New!
+                  - 'button "Collapse section: Database" [expanded] [ref=f148e383] [cursor=pointer]'
+                - list [ref=f148e386]:
+                  - listitem [ref=f148e387]:
+                    - link [ref=f148e392] [cursor=pointer]:
+                      - /url: /a/grafana-dbo11y-app/overview
+                      - paragraph [ref=f148e395]: Queries Overview
+                  - listitem [ref=f148e397]:
+                    - link [ref=f148e402] [cursor=pointer]:
+                      - /url: /a/grafana-dbo11y-app/configuration
+                      - paragraph [ref=f148e405]: Configuration
+              - listitem [ref=f148e407]:
+                - generic [ref=f148e408]:
+                  - link [ref=f148e411] [cursor=pointer]:
+                    - /url: /a/grafana-k8s-app/home
+                    - paragraph [ref=f148e414]: Kubernetes
+                  - 'button "Expand section: Kubernetes" [ref=f148e417] [cursor=pointer]'
+              - listitem [ref=f148e420]:
+                - generic [ref=f148e421]:
+                  - link [ref=f148e424] [cursor=pointer]:
+                    - /url: /a/grafana-csp-app
+                    - paragraph [ref=f148e427]: Cloud provider
+                  - 'button "Expand section: Cloud provider" [ref=f148e430] [cursor=pointer]'
+          - listitem [ref=f148e433]:
+            - generic [ref=f148e434]:
+              - link [ref=f148e437] [cursor=pointer]:
+                - /url: /connections
+                - paragraph [ref=f148e442]: Connections
+              - 'button "Expand section: Connections" [ref=f148e445] [cursor=pointer]'
+          - listitem [ref=f148e448]:
+            - generic [ref=f148e449]:
+              - link [ref=f148e452] [cursor=pointer]:
+                - /url: /apps
+                - paragraph [ref=f148e457]: More apps
+              - 'button "Expand section: More apps" [ref=f148e460] [cursor=pointer]'
+          - listitem [ref=f148e463]:
+            - generic [ref=f148e464]:
+              - link [ref=f148e467] [cursor=pointer]:
+                - /url: /admin
+                - paragraph [ref=f148e472]: Administration
+              - 'button "Expand section: Administration" [ref=f148e475] [cursor=pointer]'
+        - separator [ref=f148e478]
+        - button "Undock menu" [ref=f148e480] [cursor=pointer]
+    - banner [ref=f148e483]:
+      - generic [ref=f148e484]:
+        - navigation "Breadcrumbs" [ref=f148e486]:
+          - list [ref=f148e487]:
+            - listitem [ref=f148e488]:
+              - link "Observability" [ref=f148e489] [cursor=pointer]:
+                - /url: /observability
+            - listitem [ref=f148e493]:
+              - generic "Entity catalog" [ref=f148e494]
+        - generic [ref=f148e495]:
+          - generic [ref=f148e497]:
+            - button "Search..." [ref=f148e501] [cursor=pointer]
+            - generic [ref=f148e502]: ⌘+k
+          - button "New" [ref=f148e504] [cursor=pointer]
+          - button "Help" [ref=f148e510] [cursor=pointer]
+          - button "Open Grafana Assistant" [ref=f148e514] [cursor=pointer]
+          - button "Profile" [ref=f148e519] [cursor=pointer]:
+            - img "User avatar" [ref=f148e520]
+    - main [ref=f148e523]:
+      - generic [ref=f148e526]:
+        - generic [ref=f148e527]:
+          - generic [ref=f148e532]:
+            - generic [ref=f148e533]:
+              - generic [ref=f148e534]: Env
+              - generic [ref=f148e535] [cursor=pointer]:
+                - log [ref=f148e537]
+                - generic [ref=f148e539]:
+                  - generic [ref=f148e540]:
+                    - generic [ref=f148e541]: all
+                    - button "Remove" [ref=f148e542]
+                  - combobox [ref=f148e546]
+            - generic [ref=f148e550]:
+              - generic [ref=f148e551]: Region
+              - generic [ref=f148e552] [cursor=pointer]:
+                - log [ref=f148e554]
+                - generic [ref=f148e556]:
+                  - generic [ref=f148e557]:
+                    - generic [ref=f148e558]: all
+                    - button "Remove" [ref=f148e559]
+                  - combobox [ref=f148e563]
+            - generic [ref=f148e567]:
+              - generic [ref=f148e568]: K8s namespace
+              - generic [ref=f148e569] [cursor=pointer]:
+                - log [ref=f148e571]
+                - generic [ref=f148e573]:
+                  - generic [ref=f148e574]:
+                    - generic [ref=f148e575]: ecommerce-prod
+                    - button "Remove" [ref=f148e576]
+                  - combobox [ref=f148e580]
+          - generic [ref=f148e585]:
+            - button "Entity Graph" [ref=f148e586] [cursor=pointer]
+            - generic [ref=f148e592]:
+              - generic [ref=f148e593]:
+                - button "Move time range backwards" [ref=f148e594] [cursor=pointer]
+                - 'button "Time range selected: Last 1 hour" [ref=f148e597] [cursor=pointer]':
+                  - generic [ref=f148e600]: Last 1 hour
+                - button "Move time range forwards" [ref=f148e605] [cursor=pointer]
+                - button "Zoom out time range" [ref=f148e608] [cursor=pointer]
+              - button [ref=f148e612] [cursor=pointer]
+            - button "Documentation" [ref=f148e615] [cursor=pointer]
+            - generic [ref=f148e618]:
+              - button "RCA Workbench 0" [disabled] [ref=f148e619]:
+                - generic [ref=f148e623]:
+                  - generic [ref=f148e624]: RCA Workbench
+                  - generic [ref=f148e625]: "0"
+              - button "Open RCA Workbench" [disabled] [ref=f148e626]
+        - generic [ref=f148e630]:
+          - generic [ref=f148e631]:
+            - button "Filters" [ref=f148e632] [cursor=pointer]
+            - 'button "Entity: Service +1" [ref=f148e637] [cursor=pointer]':
+              - generic [ref=f148e639]:
+                - text: "Entity:"
+                - strong [ref=f148e640]: Service
+                - generic [ref=f148e641]: "+1"
+            - generic [ref=f148e644]:
+              - generic [ref=f148e647]:
+                - generic [ref=f148e648] [cursor=pointer]: Only OTel services
+                - switch "Only OTel services" [ref=f148e650]
+              - radiogroup "Instrumentation status" [ref=f148e655]:
+                - generic [ref=f148e656]:
+                  - radio "Instrumented" [checked] [ref=f148e657] [cursor=pointer]
+                  - generic "Instrumented" [ref=f148e658] [cursor=pointer]
+                - generic [ref=f148e660]:
+                  - radio "Uninstrumented" [ref=f148e661] [cursor=pointer]
+                  - generic "Uninstrumented" [ref=f148e662] [cursor=pointer]
+                - generic [ref=f148e664]:
+                  - radio "All" [ref=f148e665] [cursor=pointer]
+                  - generic "All" [ref=f148e666] [cursor=pointer]
+          - generic [ref=f148e670]:
+            - tablist [ref=f148e674]:
+              - tab "Performance" [selected] [ref=f148e676] [cursor=pointer]
+              - tab "Instrumentation quality2" [ref=f148e678] [cursor=pointer]
+            - generic [ref=f148e679]:
+              - table [ref=f148e685]:
+                - rowgroup [ref=f148e686]:
+                  - row [ref=f148e687]:
+                    - columnheader [ref=f148e688]:
+                      - button "Sort column Insights" [ref=f148e689] [cursor=pointer]: Insights
+                    - columnheader [ref=f148e693]:
+                      - button "Sort column Name" [ref=f148e694] [cursor=pointer]: Name
+                    - columnheader [ref=f148e695]:
+                      - button "Sort column Technology" [ref=f148e696] [cursor=pointer]: Technology
+                    - columnheader [ref=f148e697]:
+                      - button "Sort column Latency P95" [ref=f148e698] [cursor=pointer]: Latency P95
+                    - columnheader [ref=f148e699]:
+                      - button "Sort column Error Ratio %" [ref=f148e700] [cursor=pointer]: Error Ratio %
+                    - columnheader [ref=f148e701]:
+                      - button "Sort column Request Rate" [ref=f148e702] [cursor=pointer]: Request Rate
+                    - columnheader [ref=f148e703]:
+                      - button [ref=f148e705] [cursor=pointer]
+                - rowgroup [ref=f148e709]:
+                  - row [ref=f148e710]:
+                    - cell "" [ref=f148e711]
+                    - cell "ecommerce-prod/productcatalogservice devfedb13-cluster·us-east-2·ecommerce-prod" [ref=f148e717]:
+                      - generic [ref=f148e718]:
+                        - button "ecommerce-prod/productcatalogservice" [ref=f148e722] [cursor=pointer]
+                        - generic [ref=f148e723]: devfedb13-cluster·us-east-2·ecommerce-prod
+                    - cell [ref=f148e724]
+                    - cell "6.10 ms" [ref=f148e734]
+                    - cell "0%" [ref=f148e746]
+                    - cell "4.76 req/s" [ref=f148e757]
+                    - cell [ref=f148e769]:
+                      - button "RCA Workbench" [ref=f148e771] [cursor=pointer]
+                  - row [ref=f148e775]:
+                    - cell "" [ref=f148e776]
+                    - cell "ecommerce-prod/productcatalogservice-europe devfedb13-cluster·us-east-2·ecommerce-prod" [ref=f148e782]:
+                      - generic [ref=f148e783]:
+                        - button "ecommerce-prod/productcatalogservice-europe" [ref=f148e787] [cursor=pointer]
+                        - generic [ref=f148e788]: devfedb13-cluster·us-east-2·ecommerce-prod
+                    - cell [ref=f148e789]
+                    - cell "No Data" [ref=f148e799]
+                    - cell "No Data" [ref=f148e802]
+                    - cell "No Data" [ref=f148e805]
+                    - cell [ref=f148e808]:
+                      - button "RCA Workbench" [ref=f148e810] [cursor=pointer]
+              - separator [ref=f148e815]
+              - generic [ref=f148e818]:
+                - paragraph [ref=f148e819]: "Rows per page:"
+                - combobox "Rows per page:" [ref=f148e822] [cursor=pointer]: "15"
+  - log [ref=f148e823]

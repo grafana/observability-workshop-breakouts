@@ -1,0 +1,523 @@
+- generic [active] [ref=f91e1]:
+  - generic [ref=f91e9]:
+    - generic [ref=f91e10]:
+      - link "Skip to main content" [ref=f91e11] [cursor=pointer]:
+        - /url: "#pageContent"
+      - generic [ref=f91e13]:
+        - generic [ref=f91e14]:
+          - generic [ref=f91e15]:
+            - link [ref=f91e16] [cursor=pointer]:
+              - /url: /
+              - img "Grafana" [ref=f91e17]
+            - link "Grafana" [ref=f91e18] [cursor=pointer]:
+              - /url: /
+          - button "Close menu" [ref=f91e19] [cursor=pointer]
+        - navigation "Navigation" [ref=f91e22]:
+          - list "Navigation" [ref=f91e27]:
+            - listitem [ref=f91e28]:
+              - generic [ref=f91e29]:
+                - link [ref=f91e32] [cursor=pointer]:
+                  - /url: /bookmarks
+                  - paragraph [ref=f91e37]: Bookmarks
+                - 'button "Expand section: Bookmarks" [ref=f91e39] [cursor=pointer]'
+            - listitem [ref=f91e42]:
+              - generic [ref=f91e43]:
+                - link [ref=f91e46] [cursor=pointer]:
+                  - /url: /dashboards?starred
+                  - paragraph [ref=f91e51]: Starred
+                - 'button "Expand section: Starred" [ref=f91e54] [cursor=pointer]'
+            - listitem [ref=f91e57]:
+              - generic [ref=f91e58]:
+                - link [ref=f91e61] [cursor=pointer]:
+                  - /url: /dashboards
+                  - paragraph [ref=f91e66]: Dashboards
+                - 'button "Expand section: Dashboards" [ref=f91e69] [cursor=pointer]'
+            - listitem [ref=f91e72]:
+              - link [ref=f91e76] [cursor=pointer]:
+                - /url: /explore
+                - paragraph [ref=f91e81]: Explore
+            - listitem [ref=f91e83]:
+              - generic [ref=f91e84]:
+                - link [ref=f91e87] [cursor=pointer]:
+                  - /url: /drilldown
+                  - paragraph [ref=f91e95]: Drilldown
+                - 'button "Expand section: Drilldown" [ref=f91e98] [cursor=pointer]'
+            - listitem [ref=f91e101]:
+              - generic [ref=f91e102]:
+                - link [ref=f91e105] [cursor=pointer]:
+                  - /url: /a/grafana-assistant-app
+                  - paragraph [ref=f91e111]: Assistant
+                - 'button "Expand section: Assistant" [ref=f91e114] [cursor=pointer]'
+            - listitem [ref=f91e117]:
+              - generic [ref=f91e118]:
+                - link [ref=f91e121] [cursor=pointer]:
+                  - /url: /alerts-and-incidents
+                  - paragraph [ref=f91e126]: Alerts & IRM
+                - 'button "Expand section: Alerts &amp; IRM" [ref=f91e129] [cursor=pointer]'
+            - listitem [ref=f91e132]:
+              - generic [ref=f91e133]:
+                - link [ref=f91e136] [cursor=pointer]:
+                  - /url: /a/grafana-ml-app/home
+                  - paragraph [ref=f91e143]: AI & machine learning
+                - 'button "Expand section: AI &amp; machine learning" [ref=f91e146] [cursor=pointer]'
+            - listitem [ref=f91e149]:
+              - generic [ref=f91e150]:
+                - link [ref=f91e153] [cursor=pointer]:
+                  - /url: adaptive-telemetry
+                  - generic [ref=f91e155]:
+                    - paragraph [ref=f91e173]: Adaptive Telemetry
+                    - generic [ref=f91e174]: New!
+                - 'button "Expand section: Adaptive Telemetry" [ref=f91e180] [cursor=pointer]'
+            - listitem [ref=f91e183]:
+              - generic [ref=f91e184]:
+                - link [ref=f91e187] [cursor=pointer]:
+                  - /url: /a/grafana-cmab-app/
+                  - generic [ref=f91e189]:
+                    - paragraph [ref=f91e192]: Cost Management and Billing
+                    - generic [ref=f91e193]: New!
+                - 'button "Expand section: Cost Management and Billing" [ref=f91e199] [cursor=pointer]'
+            - listitem [ref=f91e202]:
+              - generic [ref=f91e203]:
+                - link [ref=f91e206] [cursor=pointer]:
+                  - /url: /testing-and-synthetics
+                  - paragraph [ref=f91e213]: Testing & synthetics
+                - 'button "Expand section: Testing &amp; synthetics" [ref=f91e216] [cursor=pointer]'
+            - listitem [ref=f91e219]:
+              - generic [ref=f91e220]:
+                - link [ref=f91e223] [cursor=pointer]:
+                  - /url: /observability
+                  - paragraph [ref=f91e228]: Observability
+                - 'button "Collapse section: Observability" [expanded] [ref=f91e231] [cursor=pointer]'
+              - list [ref=f91e234]:
+                - listitem [ref=f91e235]:
+                  - link [ref=f91e239] [cursor=pointer]:
+                    - /url: /a/grafana-asserts-app/entities
+                    - paragraph [ref=f91e242]: Entity graph
+                - listitem [ref=f91e244]:
+                  - link [ref=f91e248] [cursor=pointer]:
+                    - /url: /a/grafana-asserts-app/catalog
+                    - paragraph [ref=f91e251]: Entity catalog
+                - listitem [ref=f91e253]:
+                  - link [ref=f91e257] [cursor=pointer]:
+                    - /url: /a/grafana-asserts-app/assertions
+                    - paragraph [ref=f91e260]: RCA workbench
+                - listitem [ref=f91e262]:
+                  - link [ref=f91e266] [cursor=pointer]:
+                    - /url: /a/grafana-asserts-app/slo
+                    - paragraph [ref=f91e269]: Health target
+                - listitem [ref=f91e271]:
+                  - link [ref=f91e275] [cursor=pointer]:
+                    - /url: /a/grafana-asserts-app/rules
+                    - paragraph [ref=f91e278]: Rules
+                - listitem [ref=f91e280]:
+                  - link [ref=f91e284] [cursor=pointer]:
+                    - /url: /a/grafana-asserts-app/configuration
+                    - paragraph [ref=f91e287]: Configuration
+                - listitem [ref=f91e289]:
+                  - generic [ref=f91e290]:
+                    - link [ref=f91e293] [cursor=pointer]:
+                      - /url: /a/grafana-agento11y-app
+                      - generic [ref=f91e295]:
+                        - paragraph [ref=f91e296]: Agent
+                        - generic [ref=f91e297]: New!
+                    - 'button "Expand section: Agent" [ref=f91e303] [cursor=pointer]'
+                - listitem [ref=f91e306]:
+                  - generic [ref=f91e307]:
+                    - link [ref=f91e310] [cursor=pointer]:
+                      - /url: /a/grafana-kowalski-app
+                      - paragraph [ref=f91e313]: Frontend
+                    - 'button "Expand section: Frontend" [ref=f91e316] [cursor=pointer]'
+                - listitem [ref=f91e319]:
+                  - generic [ref=f91e320]:
+                    - link [ref=f91e323] [cursor=pointer]:
+                      - /url: /a/grafana-app-observability-app
+                      - paragraph [ref=f91e326]: Application
+                    - 'button "Expand section: Application" [ref=f91e329] [cursor=pointer]'
+                - listitem [ref=f91e332]:
+                  - generic [ref=f91e333]:
+                    - link [ref=f91e336] [cursor=pointer]:
+                      - /url: /a/grafana-dbo11y-app/
+                      - generic [ref=f91e338]:
+                        - paragraph [ref=f91e339]: Database
+                        - generic [ref=f91e340]: New!
+                    - 'button "Collapse section: Database" [expanded] [ref=f91e346] [cursor=pointer]'
+                  - list [ref=f91e349]:
+                    - listitem [ref=f91e350]:
+                      - link [ref=f91e355] [cursor=pointer]:
+                        - /url: /a/grafana-dbo11y-app/overview
+                        - paragraph [ref=f91e358]: Queries Overview
+                    - listitem [ref=f91e360]:
+                      - link [ref=f91e365] [cursor=pointer]:
+                        - /url: /a/grafana-dbo11y-app/configuration
+                        - paragraph [ref=f91e368]: Configuration
+                - listitem [ref=f91e370]:
+                  - generic [ref=f91e371]:
+                    - link [ref=f91e374] [cursor=pointer]:
+                      - /url: /a/grafana-k8s-app/home
+                      - paragraph [ref=f91e377]: Kubernetes
+                    - 'button "Expand section: Kubernetes" [ref=f91e380] [cursor=pointer]'
+                - listitem [ref=f91e383]:
+                  - generic [ref=f91e384]:
+                    - link [ref=f91e387] [cursor=pointer]:
+                      - /url: /a/grafana-csp-app
+                      - paragraph [ref=f91e390]: Cloud provider
+                    - 'button "Expand section: Cloud provider" [ref=f91e393] [cursor=pointer]'
+            - listitem [ref=f91e396]:
+              - generic [ref=f91e397]:
+                - link [ref=f91e400] [cursor=pointer]:
+                  - /url: /connections
+                  - paragraph [ref=f91e405]: Connections
+                - 'button "Expand section: Connections" [ref=f91e408] [cursor=pointer]'
+            - listitem [ref=f91e411]:
+              - generic [ref=f91e412]:
+                - link [ref=f91e415] [cursor=pointer]:
+                  - /url: /apps
+                  - paragraph [ref=f91e420]: More apps
+                - 'button "Expand section: More apps" [ref=f91e423] [cursor=pointer]'
+            - listitem [ref=f91e426]:
+              - generic [ref=f91e427]:
+                - link [ref=f91e430] [cursor=pointer]:
+                  - /url: /admin
+                  - paragraph [ref=f91e435]: Administration
+                - 'button "Expand section: Administration" [ref=f91e438] [cursor=pointer]'
+          - separator [ref=f91e441]
+          - button "Undock menu" [ref=f91e443] [cursor=pointer]
+      - banner [ref=f91e446]:
+        - generic [ref=f91e447]:
+          - navigation "Breadcrumbs" [ref=f91e449]:
+            - list [ref=f91e450]:
+              - listitem [ref=f91e451]:
+                - link "Explore" [ref=f91e452] [cursor=pointer]:
+                  - /url: /explore
+              - listitem [ref=f91e456]:
+                - generic "grafanacloud-devfedb13-traces" [ref=f91e457]
+          - generic [ref=f91e458]:
+            - generic [ref=f91e460]:
+              - button "Search..." [ref=f91e464] [cursor=pointer]
+              - generic [ref=f91e465]: ⌘+k
+            - button "New" [ref=f91e467] [cursor=pointer]
+            - button "Help" [ref=f91e473] [cursor=pointer]
+            - button "Open Grafana Assistant" [ref=f91e477] [cursor=pointer]
+            - button "Profile" [ref=f91e482] [cursor=pointer]:
+              - img "User avatar" [ref=f91e483]
+      - main [ref=f91e486]:
+        - generic [ref=f91e489]:
+          - heading "Explore" [level=1] [ref=f91e490]
+          - generic [ref=f91e493]:
+            - navigation "Explore toolbar" [ref=f91e495]:
+              - navigation "Search links" [ref=f91e497]:
+                - generic [ref=f91e498]:
+                  - button "Content outline" [expanded] [ref=f91e500] [cursor=pointer]:
+                    - generic [ref=f91e503]: Outline
+                  - generic [ref=f91e508] [cursor=pointer]:
+                    - img "Tempo logo" [ref=f91e510]
+                    - combobox "Select a data source" [ref=f91e511]
+                  - button "Go queryless" [ref=f91e516] [cursor=pointer]
+              - generic [ref=f91e518]:
+                - button "Split the pane" [ref=f91e520] [cursor=pointer]:
+                  - generic [ref=f91e523]: Split
+                - button "Add" [ref=f91e525] [cursor=pointer]
+                - generic [ref=f91e530]:
+                  - button "Move time range backwards" [ref=f91e531] [cursor=pointer]
+                  - 'button "Time range selected: Last 24 hours" [ref=f91e534] [cursor=pointer]'
+                  - button "Move time range forwards" [ref=f91e539] [cursor=pointer]
+                  - button "Zoom out time range" [ref=f91e542] [cursor=pointer]
+                - generic [ref=f91e546]:
+                  - button "Run query" [ref=f91e547] [cursor=pointer]
+                  - button "Auto refresh turned off. Choose refresh time interval" [ref=f91e550] [cursor=pointer]
+                - generic [ref=f91e554]:
+                  - button "Copy shortened URL" [ref=f91e555] [cursor=pointer]
+                  - button "Open copy link options" [ref=f91e558] [cursor=pointer]
+            - generic [ref=f91e562]:
+              - generic [ref=f91e567]:
+                - button "Collapse outline" [expanded] [ref=f91e569] [cursor=pointer]:
+                  - img "arrow-from-right" [ref=f91e570]
+                - button "Queries" [ref=f91e573] [cursor=pointer]:
+                  - img "arrow" [ref=f91e574]
+                - button "Table" [ref=f91e578] [cursor=pointer]:
+                  - img "table" [ref=f91e579]
+              - generic [ref=f91e584]:
+                - generic [ref=f91e586]:
+                  - generic [ref=f91e590]:
+                    - generic [ref=f91e592]:
+                      - generic [ref=f91e593]:
+                        - button "Collapse query row" [expanded] [ref=f91e594] [cursor=pointer]
+                        - generic [ref=f91e597]:
+                          - button "A" [ref=f91e598] [cursor=pointer]
+                          - emphasis [ref=f91e600]: (grafanacloud-devfedb13-traces)
+                      - generic [ref=f91e601]:
+                        - button "Saved queries" [ref=f91e602] [cursor=pointer]
+                        - button "Show data source help" [ref=f91e609] [cursor=pointer]
+                        - button "Create recorded query" [ref=f91e613] [cursor=pointer]
+                        - button "Duplicate query" [ref=f91e617] [cursor=pointer]
+                        - button "Hide response" [ref=f91e621] [cursor=pointer]
+                        - button "Remove query" [ref=f91e625] [cursor=pointer]
+                        - button "Drag and drop to reorder" [ref=f91e628]:
+                          - img "Drag and drop to reorder" [ref=f91e629]
+                    - generic [ref=f91e632]:
+                      - generic [ref=f91e634]:
+                        - generic [ref=f91e635]: Query type
+                        - generic [ref=f91e637]:
+                          - radiogroup [ref=f91e638]:
+                            - generic [ref=f91e639]:
+                              - radio "Search" [ref=f91e640] [cursor=pointer]
+                              - generic "Search" [ref=f91e641] [cursor=pointer]
+                            - generic [ref=f91e643]:
+                              - radio "TraceQL" [checked] [ref=f91e644] [cursor=pointer]
+                              - generic "TraceQL" [ref=f91e645] [cursor=pointer]
+                            - generic [ref=f91e647]:
+                              - radio "Service Graph" [ref=f91e648] [cursor=pointer]
+                              - generic "Service Graph" [ref=f91e649] [cursor=pointer]
+                          - button "Import trace" [ref=f91e651] [cursor=pointer]
+                      - generic [ref=f91e653]:
+                        - text: Build complex queries using TraceQL to select a list of traces.
+                        - link "Documentation" [ref=f91e654] [cursor=pointer]:
+                          - /url: https://grafana.com/docs/tempo/latest/traceql/
+                      - code [ref=f91e660]:
+                        - generic [ref=f91e661]:
+                          - generic [ref=f91e672]:
+                            - generic [ref=f91e673]: "{resource.k8s.namespace.name=\"ecommerce-prod\" && resource."
+                            - generic [ref=f91e675]: service.name=~"frontend|checkoutservice|
+                            - generic [ref=f91e677]: "recommendationservice\" && status=error}"
+                          - textbox "Editor content;Press Alt+F1 for Accessibility Options." [ref=f91e679]: "{resource.k8s.namespace.name=\"ecommerce-prod\" && resource.service.name=~\"frontend|checkoutservice|recommendationservice\" && status=error}"
+                      - generic [ref=f91e686]:
+                        - generic [ref=f91e689] [cursor=pointer]:
+                          - 'button "Search Options Limit: 20 Spans Limit: 3 Table Format: Traces | Streaming: Enabled" [ref=f91e690]'
+                          - generic [ref=f91e694]:
+                            - heading "Search Options" [level=6] [ref=f91e695]
+                            - generic [ref=f91e696]:
+                              - generic [ref=f91e697]: "Limit: 20"
+                              - generic [ref=f91e698]: "Spans Limit: 3"
+                              - generic [ref=f91e699]: "Table Format: Traces"
+                              - generic [ref=f91e700]: "|"
+                              - generic [ref=f91e701]: "Streaming: Enabled"
+                        - generic [ref=f91e704] [cursor=pointer]:
+                          - 'button "Metrics Options Step: auto Type: Range | Streaming: Disabled" [ref=f91e705]'
+                          - generic [ref=f91e709]:
+                            - heading "Metrics Options" [level=6] [ref=f91e710]
+                            - generic [ref=f91e711]:
+                              - generic [ref=f91e712]: "Step: auto"
+                              - generic [ref=f91e713]: "Type: Range"
+                              - generic [ref=f91e714]: "|"
+                              - generic [ref=f91e715]: "Streaming: Disabled"
+                  - generic [ref=f91e716]:
+                    - button "Add query" [ref=f91e717] [cursor=pointer]
+                    - button "Add from saved queries" [ref=f91e721] [cursor=pointer]
+                    - button "Query history" [ref=f91e725] [cursor=pointer]
+                    - button "Query inspector" [ref=f91e729] [cursor=pointer]
+                - main [ref=f91e733]:
+                  - generic [ref=f91e735]:
+                    - region [ref=f91e737]:
+                      - heading "Table - Streaming Progress" [level=2] [ref=f91e740]
+                      - grid [ref=f91e742]:
+                        - row [ref=f91e743]:
+                          - columnheader [ref=f91e744] [cursor=pointer]:
+                            - button "State" [ref=f91e746]
+                          - columnheader [ref=f91e748] [cursor=pointer]:
+                            - button "Elapsed Time" [ref=f91e750]
+                          - columnheader [ref=f91e752] [cursor=pointer]:
+                            - button "Total Blocks" [ref=f91e754]
+                          - columnheader [ref=f91e756] [cursor=pointer]:
+                            - button "Completed Jobs" [ref=f91e758]
+                          - columnheader [ref=f91e760] [cursor=pointer]:
+                            - button "Total Jobs" [ref=f91e762]
+                          - columnheader [ref=f91e764] [cursor=pointer]:
+                            - button "Progress" [ref=f91e766]
+                        - row [ref=f91e768]:
+                          - gridcell "Done" [ref=f91e769]
+                          - gridcell "916 ms" [ref=f91e770]
+                          - gridcell "86" [ref=f91e771]
+                          - gridcell "26" [ref=f91e772]
+                          - gridcell "89" [ref=f91e773]
+                          - gridcell "100%" [ref=f91e774]
+                    - region [ref=f91e781]:
+                      - heading "Table - Traces" [level=2] [ref=f91e784]
+                      - treegrid [ref=f91e786]:
+                        - row [ref=f91e787]:
+                          - columnheader "Expand nested rows" [ref=f91e788]
+                          - columnheader [ref=f91e790] [cursor=pointer]:
+                            - button "Trace ID" [ref=f91e792]
+                          - columnheader [ref=f91e794] [cursor=pointer]:
+                            - button "Start time" [ref=f91e796]
+                          - columnheader [ref=f91e798] [cursor=pointer]:
+                            - button "Service" [ref=f91e800]
+                          - columnheader [ref=f91e802] [cursor=pointer]:
+                            - button "Name" [ref=f91e804]
+                          - columnheader [ref=f91e806] [cursor=pointer]:
+                            - button "Duration" [ref=f91e808]
+                        - row [ref=f91e810]:
+                          - gridcell [ref=f91e811]:
+                            - button "Expand row" [ref=f91e812] [cursor=pointer]
+                          - gridcell [ref=f91e815]:
+                            - link "c6d86d3d760442187c7fcc854c8aec6d" [ref=f91e816] [cursor=pointer]:
+                              - /url: /explore?left=%7B%22range%22%3A%7B%22from%22%3A%22now-24h%22%2C%22to%22%3A%22now%22%7D%2C%22datasource%22%3A%22grafanacloud-traces%22%2C%22queries%22%3A%5B%7B%22query%22%3A%22c6d86d3d760442187c7fcc854c8aec6d%22%2C%22queryType%22%3A%22traceql%22%2C%22datasource%22%3A%7B%22uid%22%3A%22grafanacloud-traces%22%7D%7D%5D%7D
+                          - gridcell "2026-08-16 20:58:50" [ref=f91e817]
+                          - gridcell "ecommerce" [ref=f91e818]
+                          - gridcell "HTTP GET" [ref=f91e819]
+                          - gridcell "42 ms" [ref=f91e820]
+                        - row [ref=f91e821]:
+                          - gridcell [ref=f91e822]:
+                            - button "Expand row" [ref=f91e823] [cursor=pointer]
+                          - gridcell [ref=f91e826]:
+                            - link "755b93599462aa4862d5f593b92258f7" [ref=f91e827] [cursor=pointer]:
+                              - /url: /explore?left=%7B%22range%22%3A%7B%22from%22%3A%22now-24h%22%2C%22to%22%3A%22now%22%7D%2C%22datasource%22%3A%22grafanacloud-traces%22%2C%22queries%22%3A%5B%7B%22query%22%3A%22755b93599462aa4862d5f593b92258f7%22%2C%22queryType%22%3A%22traceql%22%2C%22datasource%22%3A%7B%22uid%22%3A%22grafanacloud-traces%22%7D%7D%5D%7D
+                          - gridcell "2026-08-16 20:56:41" [ref=f91e828]
+                          - gridcell "ecommerce" [ref=f91e829]
+                          - gridcell "HTTP POST" [ref=f91e830]
+                          - gridcell "471 ms" [ref=f91e831]
+                        - row [ref=f91e832]:
+                          - gridcell [ref=f91e833]:
+                            - button "Expand row" [ref=f91e834] [cursor=pointer]
+                          - gridcell [ref=f91e837]:
+                            - link "345c3d709c698f730e5b7cfebea27f0c" [ref=f91e838] [cursor=pointer]:
+                              - /url: /explore?left=%7B%22range%22%3A%7B%22from%22%3A%22now-24h%22%2C%22to%22%3A%22now%22%7D%2C%22datasource%22%3A%22grafanacloud-traces%22%2C%22queries%22%3A%5B%7B%22query%22%3A%22345c3d709c698f730e5b7cfebea27f0c%22%2C%22queryType%22%3A%22traceql%22%2C%22datasource%22%3A%7B%22uid%22%3A%22grafanacloud-traces%22%7D%7D%5D%7D
+                          - gridcell "2026-08-16 09:52:46" [ref=f91e839]
+                          - gridcell "ecommerce" [ref=f91e840]
+                          - gridcell "HTTP GET" [ref=f91e841]
+                          - gridcell "100 ms" [ref=f91e842]
+                        - row [ref=f91e843]:
+                          - gridcell [ref=f91e844]:
+                            - button "Expand row" [ref=f91e845] [cursor=pointer]
+                          - gridcell [ref=f91e848]:
+                            - link "6b7e08ea803c49b01649a799afe67fac" [ref=f91e849] [cursor=pointer]:
+                              - /url: /explore?left=%7B%22range%22%3A%7B%22from%22%3A%22now-24h%22%2C%22to%22%3A%22now%22%7D%2C%22datasource%22%3A%22grafanacloud-traces%22%2C%22queries%22%3A%5B%7B%22query%22%3A%226b7e08ea803c49b01649a799afe67fac%22%2C%22queryType%22%3A%22traceql%22%2C%22datasource%22%3A%7B%22uid%22%3A%22grafanacloud-traces%22%7D%7D%5D%7D
+                          - gridcell "2026-08-16 09:50:07" [ref=f91e850]
+                          - gridcell "ecommerce" [ref=f91e851]
+                          - gridcell "HTTP POST" [ref=f91e852]
+                          - gridcell "863 ms" [ref=f91e853]
+                        - row [ref=f91e854]:
+                          - gridcell [ref=f91e855]:
+                            - button "Expand row" [ref=f91e856] [cursor=pointer]
+                          - gridcell [ref=f91e859]:
+                            - link "6e5b2a5d349c16adc2515eb7a3fa443" [ref=f91e860] [cursor=pointer]:
+                              - /url: /explore?left=%7B%22range%22%3A%7B%22from%22%3A%22now-24h%22%2C%22to%22%3A%22now%22%7D%2C%22datasource%22%3A%22grafanacloud-traces%22%2C%22queries%22%3A%5B%7B%22query%22%3A%226e5b2a5d349c16adc2515eb7a3fa443%22%2C%22queryType%22%3A%22traceql%22%2C%22datasource%22%3A%7B%22uid%22%3A%22grafanacloud-traces%22%7D%7D%5D%7D
+                          - gridcell "2026-08-16 07:49:20" [ref=f91e861]
+                          - gridcell "frontendproxy" [ref=f91e862]
+                          - gridcell "GET" [ref=f91e863]
+                          - gridcell "10 ms" [ref=f91e864]
+                        - row [ref=f91e865]:
+                          - gridcell [ref=f91e866]:
+                            - button "Expand row" [ref=f91e867] [cursor=pointer]
+                          - gridcell [ref=f91e870]:
+                            - link "2aede0045fb78b50adb9be1bd461ec" [ref=f91e871] [cursor=pointer]:
+                              - /url: /explore?left=%7B%22range%22%3A%7B%22from%22%3A%22now-24h%22%2C%22to%22%3A%22now%22%7D%2C%22datasource%22%3A%22grafanacloud-traces%22%2C%22queries%22%3A%5B%7B%22query%22%3A%222aede0045fb78b50adb9be1bd461ec%22%2C%22queryType%22%3A%22traceql%22%2C%22datasource%22%3A%7B%22uid%22%3A%22grafanacloud-traces%22%7D%7D%5D%7D
+                          - gridcell "2026-08-16 07:47:05" [ref=f91e872]
+                          - gridcell "frontendproxy" [ref=f91e873]
+                          - gridcell "GET" [ref=f91e874]
+                          - gridcell "11 ms" [ref=f91e875]
+                        - row [ref=f91e876]:
+                          - gridcell [ref=f91e877]:
+                            - button "Expand row" [ref=f91e878] [cursor=pointer]
+                          - gridcell [ref=f91e881]:
+                            - link "61f7d08f526ae883727a7c35c793206" [ref=f91e882] [cursor=pointer]:
+                              - /url: /explore?left=%7B%22range%22%3A%7B%22from%22%3A%22now-24h%22%2C%22to%22%3A%22now%22%7D%2C%22datasource%22%3A%22grafanacloud-traces%22%2C%22queries%22%3A%5B%7B%22query%22%3A%2261f7d08f526ae883727a7c35c793206%22%2C%22queryType%22%3A%22traceql%22%2C%22datasource%22%3A%7B%22uid%22%3A%22grafanacloud-traces%22%7D%7D%5D%7D
+                          - gridcell "2026-08-16 07:43:52" [ref=f91e883]
+                          - gridcell "frontendproxy" [ref=f91e884]
+                          - gridcell "GET" [ref=f91e885]
+                          - gridcell "75 ms" [ref=f91e886]
+                        - row [ref=f91e887]:
+                          - gridcell [ref=f91e888]:
+                            - button "Expand row" [ref=f91e889] [cursor=pointer]
+                          - gridcell [ref=f91e892]:
+                            - link "5a4802133adb76a966b1e06aafa3f51" [ref=f91e893] [cursor=pointer]:
+                              - /url: /explore?left=%7B%22range%22%3A%7B%22from%22%3A%22now-24h%22%2C%22to%22%3A%22now%22%7D%2C%22datasource%22%3A%22grafanacloud-traces%22%2C%22queries%22%3A%5B%7B%22query%22%3A%225a4802133adb76a966b1e06aafa3f51%22%2C%22queryType%22%3A%22traceql%22%2C%22datasource%22%3A%7B%22uid%22%3A%22grafanacloud-traces%22%7D%7D%5D%7D
+                          - gridcell "2026-08-16 07:43:34" [ref=f91e894]
+                          - gridcell "frontendproxy" [ref=f91e895]
+                          - gridcell "GET" [ref=f91e896]
+                          - gridcell "10 ms" [ref=f91e897]
+                        - row [ref=f91e898]:
+                          - gridcell [ref=f91e899]:
+                            - button "Expand row" [ref=f91e900] [cursor=pointer]
+                          - gridcell [ref=f91e903]:
+                            - link "cb802e71a11094da67c3907a459e5b" [ref=f91e904] [cursor=pointer]:
+                              - /url: /explore?left=%7B%22range%22%3A%7B%22from%22%3A%22now-24h%22%2C%22to%22%3A%22now%22%7D%2C%22datasource%22%3A%22grafanacloud-traces%22%2C%22queries%22%3A%5B%7B%22query%22%3A%22cb802e71a11094da67c3907a459e5b%22%2C%22queryType%22%3A%22traceql%22%2C%22datasource%22%3A%7B%22uid%22%3A%22grafanacloud-traces%22%7D%7D%5D%7D
+                          - gridcell "2026-08-16 07:43:16" [ref=f91e905]
+                          - gridcell "frontendproxy" [ref=f91e906]
+                          - gridcell "GET" [ref=f91e907]
+                          - gridcell "9 ms" [ref=f91e908]
+                        - row [ref=f91e909]:
+                          - gridcell [ref=f91e910]:
+                            - button "Expand row" [ref=f91e911] [cursor=pointer]
+                          - gridcell [ref=f91e914]:
+                            - link "37d524e9a22f6c5432c188348bffa46" [ref=f91e915] [cursor=pointer]:
+                              - /url: /explore?left=%7B%22range%22%3A%7B%22from%22%3A%22now-24h%22%2C%22to%22%3A%22now%22%7D%2C%22datasource%22%3A%22grafanacloud-traces%22%2C%22queries%22%3A%5B%7B%22query%22%3A%2237d524e9a22f6c5432c188348bffa46%22%2C%22queryType%22%3A%22traceql%22%2C%22datasource%22%3A%7B%22uid%22%3A%22grafanacloud-traces%22%7D%7D%5D%7D
+                          - gridcell "2026-08-16 07:43:11" [ref=f91e916]
+                          - gridcell "frontendproxy" [ref=f91e917]
+                          - gridcell "GET" [ref=f91e918]
+                          - gridcell "10 ms" [ref=f91e919]
+                        - row [ref=f91e920]:
+                          - gridcell [ref=f91e921]:
+                            - button "Expand row" [ref=f91e922] [cursor=pointer]
+                          - gridcell [ref=f91e925]:
+                            - link "2093c80ffac06368f79d31a0b817c2a" [ref=f91e926] [cursor=pointer]:
+                              - /url: /explore?left=%7B%22range%22%3A%7B%22from%22%3A%22now-24h%22%2C%22to%22%3A%22now%22%7D%2C%22datasource%22%3A%22grafanacloud-traces%22%2C%22queries%22%3A%5B%7B%22query%22%3A%222093c80ffac06368f79d31a0b817c2a%22%2C%22queryType%22%3A%22traceql%22%2C%22datasource%22%3A%7B%22uid%22%3A%22grafanacloud-traces%22%7D%7D%5D%7D
+                          - gridcell "2026-08-16 07:42:30" [ref=f91e927]
+                          - gridcell "frontendproxy" [ref=f91e928]
+                          - gridcell "GET" [ref=f91e929]
+                          - gridcell "10 ms" [ref=f91e930]
+                        - row [ref=f91e931]:
+                          - gridcell [ref=f91e932]:
+                            - button "Expand row" [ref=f91e933] [cursor=pointer]
+                          - gridcell [ref=f91e936]:
+                            - link "6f92fbd54412bc5f3c86dadbad2c43a" [ref=f91e937] [cursor=pointer]:
+                              - /url: /explore?left=%7B%22range%22%3A%7B%22from%22%3A%22now-24h%22%2C%22to%22%3A%22now%22%7D%2C%22datasource%22%3A%22grafanacloud-traces%22%2C%22queries%22%3A%5B%7B%22query%22%3A%226f92fbd54412bc5f3c86dadbad2c43a%22%2C%22queryType%22%3A%22traceql%22%2C%22datasource%22%3A%7B%22uid%22%3A%22grafanacloud-traces%22%7D%7D%5D%7D
+                          - gridcell "2026-08-16 07:42:23" [ref=f91e938]
+                          - gridcell "frontendproxy" [ref=f91e939]
+                          - gridcell "GET" [ref=f91e940]
+                          - gridcell "10 ms" [ref=f91e941]
+                        - row [ref=f91e942]:
+                          - gridcell [ref=f91e943]:
+                            - button "Expand row" [ref=f91e944] [cursor=pointer]
+                          - gridcell [ref=f91e947]:
+                            - link "434499c2ac79b979da9b90200b01546" [ref=f91e948] [cursor=pointer]:
+                              - /url: /explore?left=%7B%22range%22%3A%7B%22from%22%3A%22now-24h%22%2C%22to%22%3A%22now%22%7D%2C%22datasource%22%3A%22grafanacloud-traces%22%2C%22queries%22%3A%5B%7B%22query%22%3A%22434499c2ac79b979da9b90200b01546%22%2C%22queryType%22%3A%22traceql%22%2C%22datasource%22%3A%7B%22uid%22%3A%22grafanacloud-traces%22%7D%7D%5D%7D
+                          - gridcell "2026-08-16 07:41:27" [ref=f91e949]
+                          - gridcell "frontendproxy" [ref=f91e950]
+                          - gridcell "GET" [ref=f91e951]
+                          - gridcell "10 ms" [ref=f91e952]
+                        - row [ref=f91e953]:
+                          - gridcell [ref=f91e954]:
+                            - button "Expand row" [ref=f91e955] [cursor=pointer]
+                          - gridcell [ref=f91e958]:
+                            - link "76a3c88cf4510c22fd93656915eb2ff" [ref=f91e959] [cursor=pointer]:
+                              - /url: /explore?left=%7B%22range%22%3A%7B%22from%22%3A%22now-24h%22%2C%22to%22%3A%22now%22%7D%2C%22datasource%22%3A%22grafanacloud-traces%22%2C%22queries%22%3A%5B%7B%22query%22%3A%2276a3c88cf4510c22fd93656915eb2ff%22%2C%22queryType%22%3A%22traceql%22%2C%22datasource%22%3A%7B%22uid%22%3A%22grafanacloud-traces%22%7D%7D%5D%7D
+                          - gridcell "2026-08-16 07:40:27" [ref=f91e960]
+                          - gridcell "frontendproxy" [ref=f91e961]
+                          - gridcell "GET" [ref=f91e962]
+                          - gridcell "38 ms" [ref=f91e963]
+                        - row [ref=f91e964]:
+                          - gridcell [ref=f91e965]:
+                            - button "Expand row" [ref=f91e966] [cursor=pointer]
+                          - gridcell [ref=f91e969]:
+                            - link "74650fbda9d38217c31c58082e7b85" [ref=f91e970] [cursor=pointer]:
+                              - /url: /explore?left=%7B%22range%22%3A%7B%22from%22%3A%22now-24h%22%2C%22to%22%3A%22now%22%7D%2C%22datasource%22%3A%22grafanacloud-traces%22%2C%22queries%22%3A%5B%7B%22query%22%3A%2274650fbda9d38217c31c58082e7b85%22%2C%22queryType%22%3A%22traceql%22%2C%22datasource%22%3A%7B%22uid%22%3A%22grafanacloud-traces%22%7D%7D%5D%7D
+                          - gridcell "2026-08-16 07:40:08" [ref=f91e971]
+                          - gridcell "frontendproxy" [ref=f91e972]
+                          - gridcell "GET" [ref=f91e973]
+                          - gridcell "11 ms" [ref=f91e974]
+                        - row [ref=f91e975]:
+                          - gridcell [ref=f91e976]:
+                            - button "Expand row" [ref=f91e977] [cursor=pointer]
+                          - gridcell [ref=f91e980]:
+                            - link "37d649385d7e2d892a17715b2c8414c" [ref=f91e981] [cursor=pointer]:
+                              - /url: /explore?left=%7B%22range%22%3A%7B%22from%22%3A%22now-24h%22%2C%22to%22%3A%22now%22%7D%2C%22datasource%22%3A%22grafanacloud-traces%22%2C%22queries%22%3A%5B%7B%22query%22%3A%2237d649385d7e2d892a17715b2c8414c%22%2C%22queryType%22%3A%22traceql%22%2C%22datasource%22%3A%7B%22uid%22%3A%22grafanacloud-traces%22%7D%7D%5D%7D
+                          - gridcell "2026-08-16 07:39:06" [ref=f91e982]
+                          - gridcell "frontendproxy" [ref=f91e983]
+                          - gridcell "GET" [ref=f91e984]
+                          - gridcell "10 ms" [ref=f91e985]
+                        - row [ref=f91e986]:
+                          - gridcell [ref=f91e987]:
+                            - button "Expand row" [ref=f91e988] [cursor=pointer]
+                          - gridcell [ref=f91e991]:
+                            - link "62cbcde6def3bd9f25b4f6118844dbb" [ref=f91e992] [cursor=pointer]:
+                              - /url: /explore?left=%7B%22range%22%3A%7B%22from%22%3A%22now-24h%22%2C%22to%22%3A%22now%22%7D%2C%22datasource%22%3A%22grafanacloud-traces%22%2C%22queries%22%3A%5B%7B%22query%22%3A%2262cbcde6def3bd9f25b4f6118844dbb%22%2C%22queryType%22%3A%22traceql%22%2C%22datasource%22%3A%7B%22uid%22%3A%22grafanacloud-traces%22%7D%7D%5D%7D
+                          - gridcell "2026-08-16 07:39:05" [ref=f91e993]
+                          - gridcell "frontendproxy" [ref=f91e994]
+                          - gridcell "GET" [ref=f91e995]
+                          - gridcell "10 ms" [ref=f91e996]
+    - log [ref=f91e997]
+  - generic [ref=f91e999]:
+    - alert
+    - alert
+    - complementary
+    - complementary

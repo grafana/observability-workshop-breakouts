@@ -1,0 +1,443 @@
+- generic [ref=f124e9]:
+  - generic [ref=f124e10]:
+    - link "Skip to main content" [ref=f124e11] [cursor=pointer]:
+      - /url: "#pageContent"
+    - generic [ref=f124e13]:
+      - generic [ref=f124e14]:
+        - generic [ref=f124e15]:
+          - link [ref=f124e16] [cursor=pointer]:
+            - /url: /
+            - img "Grafana" [ref=f124e17]
+          - link "Grafana" [ref=f124e18] [cursor=pointer]:
+            - /url: /
+        - button "Close menu" [ref=f124e19] [cursor=pointer]
+      - navigation "Navigation" [ref=f124e22]:
+        - list "Navigation" [ref=f124e27]:
+          - listitem [ref=f124e28]:
+            - generic [ref=f124e29]:
+              - link [ref=f124e32] [cursor=pointer]:
+                - /url: /bookmarks
+                - paragraph [ref=f124e37]: Bookmarks
+              - 'button "Expand section: Bookmarks" [ref=f124e39] [cursor=pointer]'
+          - listitem [ref=f124e42]:
+            - generic [ref=f124e43]:
+              - link [ref=f124e46] [cursor=pointer]:
+                - /url: /dashboards?starred
+                - paragraph [ref=f124e51]: Starred
+              - 'button "Expand section: Starred" [ref=f124e54] [cursor=pointer]'
+          - listitem [ref=f124e57]:
+            - generic [ref=f124e58]:
+              - link [ref=f124e61] [cursor=pointer]:
+                - /url: /dashboards
+                - paragraph [ref=f124e66]: Dashboards
+              - 'button "Expand section: Dashboards" [ref=f124e69] [cursor=pointer]'
+          - listitem [ref=f124e72]:
+            - link [ref=f124e76] [cursor=pointer]:
+              - /url: /explore
+              - paragraph [ref=f124e81]: Explore
+          - listitem [ref=f124e83]:
+            - generic [ref=f124e84]:
+              - link [ref=f124e87] [cursor=pointer]:
+                - /url: /drilldown
+                - paragraph [ref=f124e95]: Drilldown
+              - 'button "Collapse section: Drilldown" [expanded] [ref=f124e98] [cursor=pointer]'
+            - list [ref=f124e101]:
+              - listitem [ref=f124e102]:
+                - link [ref=f124e106] [cursor=pointer]:
+                  - /url: /a/grafana-metricsdrilldown-app/drilldown
+                  - paragraph [ref=f124e109]: Metrics
+              - listitem [ref=f124e111]:
+                - link [ref=f124e115] [cursor=pointer]:
+                  - /url: /a/grafana-lokiexplore-app/explore
+                  - paragraph [ref=f124e118]: Logs
+              - listitem [ref=f124e120]:
+                - link [ref=f124e124] [cursor=pointer]:
+                  - /url: /a/grafana-exploretraces-app/
+                  - paragraph [ref=f124e127]: Traces
+              - listitem [ref=f124e129]:
+                - link [ref=f124e133] [cursor=pointer]:
+                  - /url: /a/grafana-pyroscope-app/explore
+                  - paragraph [ref=f124e136]: Profiles
+          - listitem [ref=f124e138]:
+            - generic [ref=f124e139]:
+              - link [ref=f124e142] [cursor=pointer]:
+                - /url: /a/grafana-assistant-app
+                - paragraph [ref=f124e148]: Assistant
+              - 'button "Expand section: Assistant" [ref=f124e151] [cursor=pointer]'
+          - listitem [ref=f124e154]:
+            - generic [ref=f124e155]:
+              - link [ref=f124e158] [cursor=pointer]:
+                - /url: /alerts-and-incidents
+                - paragraph [ref=f124e163]: Alerts & IRM
+              - 'button "Expand section: Alerts &amp; IRM" [ref=f124e166] [cursor=pointer]'
+          - listitem [ref=f124e169]:
+            - generic [ref=f124e170]:
+              - link [ref=f124e173] [cursor=pointer]:
+                - /url: /a/grafana-ml-app/home
+                - paragraph [ref=f124e180]: AI & machine learning
+              - 'button "Expand section: AI &amp; machine learning" [ref=f124e183] [cursor=pointer]'
+          - listitem [ref=f124e186]:
+            - generic [ref=f124e187]:
+              - link [ref=f124e190] [cursor=pointer]:
+                - /url: adaptive-telemetry
+                - generic [ref=f124e192]:
+                  - paragraph [ref=f124e210]: Adaptive Telemetry
+                  - generic [ref=f124e211]: New!
+              - 'button "Expand section: Adaptive Telemetry" [ref=f124e217] [cursor=pointer]'
+          - listitem [ref=f124e220]:
+            - generic [ref=f124e221]:
+              - link [ref=f124e224] [cursor=pointer]:
+                - /url: /a/grafana-cmab-app/
+                - generic [ref=f124e226]:
+                  - paragraph [ref=f124e229]: Cost Management and Billing
+                  - generic [ref=f124e230]: New!
+              - 'button "Expand section: Cost Management and Billing" [ref=f124e236] [cursor=pointer]'
+          - listitem [ref=f124e239]:
+            - generic [ref=f124e240]:
+              - link [ref=f124e243] [cursor=pointer]:
+                - /url: /testing-and-synthetics
+                - paragraph [ref=f124e250]: Testing & synthetics
+              - 'button "Expand section: Testing &amp; synthetics" [ref=f124e253] [cursor=pointer]'
+          - listitem [ref=f124e256]:
+            - generic [ref=f124e257]:
+              - link [ref=f124e260] [cursor=pointer]:
+                - /url: /observability
+                - paragraph [ref=f124e265]: Observability
+              - 'button "Collapse section: Observability" [expanded] [ref=f124e268] [cursor=pointer]'
+            - list [ref=f124e271]:
+              - listitem [ref=f124e272]:
+                - link [ref=f124e276] [cursor=pointer]:
+                  - /url: /a/grafana-asserts-app/entities
+                  - paragraph [ref=f124e279]: Entity graph
+              - listitem [ref=f124e281]:
+                - link [ref=f124e285] [cursor=pointer]:
+                  - /url: /a/grafana-asserts-app/catalog
+                  - paragraph [ref=f124e288]: Entity catalog
+              - listitem [ref=f124e290]:
+                - link [ref=f124e294] [cursor=pointer]:
+                  - /url: /a/grafana-asserts-app/assertions
+                  - paragraph [ref=f124e297]: RCA workbench
+              - listitem [ref=f124e299]:
+                - link [ref=f124e303] [cursor=pointer]:
+                  - /url: /a/grafana-asserts-app/slo
+                  - paragraph [ref=f124e306]: Health target
+              - listitem [ref=f124e308]:
+                - link [ref=f124e312] [cursor=pointer]:
+                  - /url: /a/grafana-asserts-app/rules
+                  - paragraph [ref=f124e315]: Rules
+              - listitem [ref=f124e317]:
+                - link [ref=f124e321] [cursor=pointer]:
+                  - /url: /a/grafana-asserts-app/configuration
+                  - paragraph [ref=f124e324]: Configuration
+              - listitem [ref=f124e326]:
+                - generic [ref=f124e327]:
+                  - link [ref=f124e330] [cursor=pointer]:
+                    - /url: /a/grafana-agento11y-app
+                    - generic [ref=f124e332]:
+                      - paragraph [ref=f124e333]: Agent
+                      - generic [ref=f124e334]: New!
+                  - 'button "Expand section: Agent" [ref=f124e340] [cursor=pointer]'
+              - listitem [ref=f124e343]:
+                - generic [ref=f124e344]:
+                  - link [ref=f124e347] [cursor=pointer]:
+                    - /url: /a/grafana-kowalski-app
+                    - paragraph [ref=f124e350]: Frontend
+                  - 'button "Expand section: Frontend" [ref=f124e353] [cursor=pointer]'
+              - listitem [ref=f124e356]:
+                - generic [ref=f124e357]:
+                  - link [ref=f124e360] [cursor=pointer]:
+                    - /url: /a/grafana-app-observability-app
+                    - paragraph [ref=f124e363]: Application
+                  - 'button "Expand section: Application" [ref=f124e366] [cursor=pointer]'
+              - listitem [ref=f124e369]:
+                - generic [ref=f124e370]:
+                  - link [ref=f124e373] [cursor=pointer]:
+                    - /url: /a/grafana-dbo11y-app/
+                    - generic [ref=f124e375]:
+                      - paragraph [ref=f124e376]: Database
+                      - generic [ref=f124e377]: New!
+                  - 'button "Collapse section: Database" [expanded] [ref=f124e383] [cursor=pointer]'
+                - list [ref=f124e386]:
+                  - listitem [ref=f124e387]:
+                    - link [ref=f124e392] [cursor=pointer]:
+                      - /url: /a/grafana-dbo11y-app/overview
+                      - paragraph [ref=f124e395]: Queries Overview
+                  - listitem [ref=f124e397]:
+                    - link [ref=f124e402] [cursor=pointer]:
+                      - /url: /a/grafana-dbo11y-app/configuration
+                      - paragraph [ref=f124e405]: Configuration
+              - listitem [ref=f124e407]:
+                - generic [ref=f124e408]:
+                  - link [ref=f124e411] [cursor=pointer]:
+                    - /url: /a/grafana-k8s-app/home
+                    - paragraph [ref=f124e414]: Kubernetes
+                  - 'button "Expand section: Kubernetes" [ref=f124e417] [cursor=pointer]'
+              - listitem [ref=f124e420]:
+                - generic [ref=f124e421]:
+                  - link [ref=f124e424] [cursor=pointer]:
+                    - /url: /a/grafana-csp-app
+                    - paragraph [ref=f124e427]: Cloud provider
+                  - 'button "Expand section: Cloud provider" [ref=f124e430] [cursor=pointer]'
+          - listitem [ref=f124e433]:
+            - generic [ref=f124e434]:
+              - link [ref=f124e437] [cursor=pointer]:
+                - /url: /connections
+                - paragraph [ref=f124e442]: Connections
+              - 'button "Expand section: Connections" [ref=f124e445] [cursor=pointer]'
+          - listitem [ref=f124e448]:
+            - generic [ref=f124e449]:
+              - link [ref=f124e452] [cursor=pointer]:
+                - /url: /apps
+                - paragraph [ref=f124e457]: More apps
+              - 'button "Expand section: More apps" [ref=f124e460] [cursor=pointer]'
+          - listitem [ref=f124e463]:
+            - generic [ref=f124e464]:
+              - link [ref=f124e467] [cursor=pointer]:
+                - /url: /admin
+                - paragraph [ref=f124e472]: Administration
+              - 'button "Expand section: Administration" [ref=f124e475] [cursor=pointer]'
+        - separator [ref=f124e478]
+        - button "Undock menu" [ref=f124e480] [cursor=pointer]
+    - banner [ref=f124e483]:
+      - generic [ref=f124e484]:
+        - navigation "Breadcrumbs" [ref=f124e486]:
+          - list [ref=f124e487]:
+            - listitem [ref=f124e488]:
+              - link "Observability" [ref=f124e489] [cursor=pointer]:
+                - /url: /observability
+            - listitem [ref=f124e493]:
+              - link "Database" [ref=f124e494] [cursor=pointer]:
+                - /url: /a/grafana-dbo11y-app/
+            - listitem [ref=f124e498]:
+              - generic "Queries Overview" [ref=f124e499]
+        - generic [ref=f124e500]:
+          - generic [ref=f124e502]:
+            - button "Search..." [ref=f124e506] [cursor=pointer]
+            - generic [ref=f124e507]: ⌘+k
+          - button "New" [ref=f124e509] [cursor=pointer]
+          - button "Help" [ref=f124e515] [cursor=pointer]
+          - button "Open Grafana Assistant" [ref=f124e519] [cursor=pointer]
+          - button "Profile" [ref=f124e524] [cursor=pointer]:
+            - img "User avatar" [ref=f124e525]
+    - main [ref=f124e528]:
+      - generic [ref=f124e531]:
+        - generic [ref=f124e532]:
+          - heading "Queries Overview" [level=1] [ref=f124e536]
+          - generic [ref=f124e538]:
+            - generic [ref=f124e539]:
+              - generic [ref=f124e545] [cursor=pointer]:
+                - img "Prometheus logo" [ref=f124e547]
+                - combobox "Select a data source" [ref=f124e548]
+              - generic [ref=f124e557] [cursor=pointer]:
+                - img "Loki logo" [ref=f124e559]
+                - combobox "Select a data source" [ref=f124e560]
+              - generic [ref=f124e564]:
+                - button "Move 1h 30m backward" [ref=f124e565] [cursor=pointer]
+                - 'button "Time range selected: Last 3 hours" [ref=f124e568] [cursor=pointer]':
+                  - generic [ref=f124e571]: Last 3 hours
+                - button "Move time range forwards" [ref=f124e576] [cursor=pointer]
+                - button "Zoom out time range" [ref=f124e579] [cursor=pointer]
+              - generic [ref=f124e582]:
+                - button [ref=f124e583] [cursor=pointer]
+                - button "Auto refresh turned off. Choose refresh time interval" [ref=f124e586] [cursor=pointer]
+              - generic [ref=f124e589]:
+                - button "RCA Workbench 0" [disabled] [ref=f124e590]:
+                  - generic [ref=f124e594]:
+                    - generic [ref=f124e595]: RCA Workbench
+                    - generic [ref=f124e596]: "0"
+                - button "Open RCA Workbench" [disabled] [ref=f124e597]
+            - link "Give feedback" [ref=f124e601] [cursor=pointer]:
+              - /url: https://docs.google.com/forms/d/e/1FAIpQLSe8NJFlPoPN62grDM8hOBDVZM57HHQVXIEbQNTQ4foBMa7IQw/viewform?usp=header
+        - generic [ref=f124e606]:
+          - generic [ref=f124e608]:
+            - generic [ref=f124e610]:
+              - heading "Search" [level=6] [ref=f124e614]
+              - generic [ref=f124e619]:
+                - textbox "Search by query" [ref=f124e624]: accounts
+                - button "clear search" [ref=f124e626] [cursor=pointer]
+            - generic [ref=f124e629]:
+              - button "Saved views" [ref=f124e631] [cursor=pointer]
+              - generic [ref=f124e636]:
+                - generic [ref=f124e637]: Engine
+                - generic [ref=f124e638] [cursor=pointer]:
+                  - log [ref=f124e640]
+                  - generic [ref=f124e641]:
+                    - generic [ref=f124e642]:
+                      - generic [ref=f124e643]:
+                        - generic [ref=f124e644]: MySQL
+                        - button "Remove" [ref=f124e645]
+                      - generic [ref=f124e648]:
+                        - generic [ref=f124e649]: PostgreSQL
+                        - button "Remove" [ref=f124e650]
+                      - combobox "Engine" [ref=f124e654]
+                    - button "Clear value" [ref=f124e656]
+              - generic [ref=f124e660]:
+                - generic [ref=f124e661]: Group by
+                - generic [ref=f124e662] [cursor=pointer]:
+                  - log [ref=f124e664]
+                  - generic [ref=f124e666]:
+                    - generic [ref=f124e667]: Group by label
+                    - combobox "Group by selector" [ref=f124e669]
+              - generic [ref=f124e673]:
+                - generic [ref=f124e674]: Filters
+                - generic [ref=f124e675]:
+                  - combobox "Filters" [ref=f124e677]
+                  - button "Clear all" [ref=f124e680] [cursor=pointer]
+          - generic [ref=f124e684]:
+            - generic [ref=f124e686]:
+              - region [ref=f124e691]:
+                - generic [ref=f124e692]:
+                  - heading "Instances" [level=2] [ref=f124e694]
+                  - link "Explore" [ref=f124e699] [cursor=pointer]:
+                    - /url: /explore?left=%7B%22datasource%22%3A%22grafanacloud-prom%22%2C%22queries%22%3A%5B%7B%22refId%22%3A%22Instances%20stat%22%2C%22expr%22%3A%22count(count%20by%20(server_id)%20(database_observability_connection_info%7Bjob%3D~%5C%22integrations%2Fdb-o11y%5C%22%2C%20server_id!%3D%5C%22%5C%22%2C%20engine%3D%5C%22mysql%5C%22%2C%20%7D%20or%20database_observability_connection_info%7Bjob%3D~%5C%22integrations%2Fdb-o11y%5C%22%2C%20server_id!%3D%5C%22%5C%22%2C%20engine%3D%5C%22postgres%5C%22%2C%20%7D))%22%2C%22queryType%22%3A%22instant%22%2C%22interval%22%3A%221m%22%2C%22intervalMs%22%3A60000%2C%22datasource%22%3A%7B%22type%22%3A%22prometheus%22%2C%22uid%22%3A%22grafanacloud-prom%22%7D%7D%5D%2C%22range%22%3A%7B%22from%22%3A%22now-3h%22%2C%22to%22%3A%22now%22%7D%7D
+                - 'generic "count(count by (server_id) (database_observability_connection_info{job=~\"integrations/db-o11y\", server_id!=\"\", engine=\"mysql\", } or database_observability_connection_info{job=~\"integrations/db-o11y\", server_id!=\"\", engine=\"postgres\", }))" [ref=f124e706]': "4"
+              - region [ref=f124e714]:
+                - generic [ref=f124e715]:
+                  - heading "Databases" [level=2] [ref=f124e717]
+                  - link "Explore" [ref=f124e722] [cursor=pointer]:
+                    - /url: /explore?left=%7B%22datasource%22%3A%22grafanacloud-prom%22%2C%22queries%22%3A%5B%7B%22refId%22%3A%22Schema%20stat%22%2C%22expr%22%3A%22last_over_time((count(count%20by%20(schema%2C%20server_id)%20(mysql_perf_schema_events_statements_total%7Bjob%3D~%5C%22integrations%2Fdb-o11y%5C%22%2C%20digest%3D~%5C%22()%5C%22%2C%20%7D)%20or%20count%20by%20(datname%2C%20server_id)%20(pg_stat_statements_calls_total%7Bjob%3D~%5C%22integrations%2Fdb-o11y%5C%22%2C%20queryid%3D~%5C%22(-197758654588465157%7C-2505274146931292128%7C-4904290121134632403%7C-5058096123243958000%7C-6598923614496493247%7C-732914750433980748%7C2894017140851549097%7C3890639232125765865%7C4428338003384551987%7C5087821059466631612%7C7447953874934161013%7C8020481805575289432)%5C%22%2C%20%7D)))%5B%24__range%3A%5D)%22%2C%22queryType%22%3A%22instant%22%2C%22interval%22%3A%221m%22%2C%22intervalMs%22%3A60000%2C%22datasource%22%3A%7B%22type%22%3A%22prometheus%22%2C%22uid%22%3A%22grafanacloud-prom%22%7D%7D%5D%2C%22range%22%3A%7B%22from%22%3A%22now-3h%22%2C%22to%22%3A%22now%22%7D%7D
+                - 'generic "last_over_time((count(count by (schema, server_id) (mysql_perf_schema_events_statements_total{job=~\"integrations/db-o11y\", digest=~\"()\", }) or count by (datname, server_id) (pg_stat_statements_calls_total{job=~\"integrations/db-o11y\", queryid=~\"(-197758654588465157|-2505274146931292128|-4904290121134632403|-5058096123243958000|-6598923614496493247|-732914750433980748|2894017140851549097|3890639232125765865|4428338003384551987|5087821059466631612|7447953874934161013|8020481805575289432)\", })))[10800s:])" [ref=f124e729]': "1"
+              - region [ref=f124e737]:
+                - generic [ref=f124e738]:
+                  - heading "Tables" [level=2] [ref=f124e740]
+                  - link "Explore" [ref=f124e745] [cursor=pointer]:
+                    - /url: /explore?left=%7B%22datasource%22%3A%22grafanacloud-logs%22%2C%22queries%22%3A%5B%7B%22refId%22%3A%22Tables%22%2C%22expr%22%3A%22count(count_over_time(%7Bjob%3D%5C%22integrations%2Fdb-o11y%5C%22%2C%20op%3D%5C%22table_detection%5C%22%7D%20%7C%20logfmt%20%20%7C%20table%3D~%5C%22.%2B%5C%22%20%20%5B15m%5D))%22%2C%22instant%22%3Atrue%2C%22interval%22%3A%221m%22%2C%22intervalMs%22%3A60000%2C%22datasource%22%3A%7B%22type%22%3A%22loki%22%2C%22uid%22%3A%22grafanacloud-logs%22%7D%7D%5D%2C%22range%22%3A%7B%22from%22%3A%22now-3h%22%2C%22to%22%3A%22now%22%7D%7D
+                - 'generic "Value #Tables" [ref=f124e752]': "29"
+              - region [ref=f124e760]:
+                - generic [ref=f124e761]:
+                  - heading "Total Queries Executed" [level=2] [ref=f124e763]
+                  - link "Explore" [ref=f124e764] [cursor=pointer]:
+                    - /url: /explore?left=%7B%22datasource%22%3A%22grafanacloud-prom%22%2C%22queries%22%3A%5B%7B%22refId%22%3A%22totalQueriesExecutedStat%22%2C%22expr%22%3A%22round(sum(increase(mysql_perf_schema_events_statements_total%7Bjob%3D~%5C%22integrations%2Fdb-o11y%5C%22%2C%20digest%3D~%5C%22()%5C%22%2C%20%7D%5B%24__range%5D)%20or%20increase(pg_stat_statements_calls_total%7Bjob%3D~%5C%22integrations%2Fdb-o11y%5C%22%2C%20queryid%3D~%5C%22(-197758654588465157%7C-2505274146931292128%7C-4904290121134632403%7C-5058096123243958000%7C-6598923614496493247%7C-732914750433980748%7C2894017140851549097%7C3890639232125765865%7C4428338003384551987%7C5087821059466631612%7C7447953874934161013%7C8020481805575289432)%5C%22%2C%20%7D%5B%24__range%5D)))%22%2C%22queryType%22%3A%22range%22%2C%22interval%22%3A%221m%22%2C%22intervalMs%22%3A60000%2C%22datasource%22%3A%7B%22type%22%3A%22prometheus%22%2C%22uid%22%3A%22grafanacloud-prom%22%7D%7D%5D%2C%22range%22%3A%7B%22from%22%3A%22now-3h%22%2C%22to%22%3A%22now%22%7D%7D
+                - 'generic "round(sum(increase(mysql_perf_schema_events_statements_total{job=~\"integrations/db-o11y\", digest=~\"()\", }[10800s]) or increase(pg_stat_statements_calls_total{job=~\"integrations/db-o11y\", queryid=~\"(-197758654588465157|-2505274146931292128|-4904290121134632403|-5058096123243958000|-6598923614496493247|-732914750433980748|2894017140851549097|3890639232125765865|4428338003384551987|5087821059466631612|7447953874934161013|8020481805575289432)\", }[10800s])))" [ref=f124e771]': 2.15 K
+              - region [ref=f124e779]:
+                - generic [ref=f124e780]:
+                  - heading "Current rate" [level=2] [ref=f124e782]
+                  - link "Explore" [ref=f124e787] [cursor=pointer]:
+                    - /url: /explore?left=%7B%22datasource%22%3A%22grafanacloud-prom%22%2C%22queries%22%3A%5B%7B%22refId%22%3A%22currentRateStat%22%2C%22expr%22%3A%22last_over_time((sum(rate(mysql_perf_schema_events_statements_total%7Bjob%3D~%5C%22integrations%2Fdb-o11y%5C%22%2C%20digest%3D~%5C%22()%5C%22%2C%20%7D%5B%24__rate_interval%5D)%20or%20rate(pg_stat_statements_calls_total%7Bjob%3D~%5C%22integrations%2Fdb-o11y%5C%22%2C%20queryid%3D~%5C%22(-197758654588465157%7C-2505274146931292128%7C-4904290121134632403%7C-5058096123243958000%7C-6598923614496493247%7C-732914750433980748%7C2894017140851549097%7C3890639232125765865%7C4428338003384551987%7C5087821059466631612%7C7447953874934161013%7C8020481805575289432)%5C%22%2C%20%7D%5B%24__rate_interval%5D)))%5B%24__range%3A%5D)%22%2C%22queryType%22%3A%22instant%22%2C%22interval%22%3A%221m%22%2C%22intervalMs%22%3A60000%2C%22datasource%22%3A%7B%22type%22%3A%22prometheus%22%2C%22uid%22%3A%22grafanacloud-prom%22%7D%7D%5D%2C%22range%22%3A%7B%22from%22%3A%22now-3h%22%2C%22to%22%3A%22now%22%7D%7D
+                - 'generic "last_over_time((sum(rate(mysql_perf_schema_events_statements_total{job=~\"integrations/db-o11y\", digest=~\"()\", }[4m0s]) or rate(pg_stat_statements_calls_total{job=~\"integrations/db-o11y\", queryid=~\"(-197758654588465157|-2505274146931292128|-4904290121134632403|-5058096123243958000|-6598923614496493247|-732914750433980748|2894017140851549097|3890639232125765865|4428338003384551987|5087821059466631612|7447953874934161013|8020481805575289432)\", }[4m0s])))[10800s:])" [ref=f124e794]': 0 qps
+            - generic [ref=f124e800]:
+              - region [ref=f124e805]:
+                - generic [ref=f124e806]:
+                  - heading "Duration Avg" [level=2] [ref=f124e808]
+                  - link "Explore" [ref=f124e809] [cursor=pointer]:
+                    - /url: /explore?left=%7B%22datasource%22%3A%22grafanacloud-prom%22%2C%22queries%22%3A%5B%7B%22refId%22%3A%22OverviewDurationAvgPanel%22%2C%22expr%22%3A%22(sum(rate(mysql_perf_schema_events_statements_seconds_total%7Bjob%3D~%5C%22integrations%2Fdb-o11y%5C%22%2C%20digest%3D~%5C%22()%5C%22%2C%20%7D%5B%24__rate_interval%3A%5D)%20or%20rate(pg_stat_statements_seconds_total%7Bjob%3D~%5C%22integrations%2Fdb-o11y%5C%22%2C%20queryid%3D~%5C%22(-197758654588465157%7C-2505274146931292128%7C-4904290121134632403%7C-5058096123243958000%7C-6598923614496493247%7C-732914750433980748%7C2894017140851549097%7C3890639232125765865%7C4428338003384551987%7C5087821059466631612%7C7447953874934161013%7C8020481805575289432)%5C%22%2C%20%7D%5B%24__rate_interval%3A%5D)))%20%2F%20(sum(rate(mysql_perf_schema_events_statements_total%7Bjob%3D~%5C%22integrations%2Fdb-o11y%5C%22%2C%20digest%3D~%5C%22()%5C%22%2C%20%7D%5B%24__rate_interval%3A%5D)%20or%20rate(pg_stat_statements_calls_total%7Bjob%3D~%5C%22integrations%2Fdb-o11y%5C%22%2C%20queryid%3D~%5C%22(-197758654588465157%7C-2505274146931292128%7C-4904290121134632403%7C-5058096123243958000%7C-6598923614496493247%7C-732914750433980748%7C2894017140851549097%7C3890639232125765865%7C4428338003384551987%7C5087821059466631612%7C7447953874934161013%7C8020481805575289432)%5C%22%2C%20%7D%5B%24__rate_interval%3A%5D)))%20*%201000%22%2C%22interval%22%3A%221m%22%2C%22intervalMs%22%3A60000%2C%22datasource%22%3A%7B%22type%22%3A%22prometheus%22%2C%22uid%22%3A%22grafanacloud-prom%22%7D%7D%5D%2C%22range%22%3A%7B%22from%22%3A%22now-3h%22%2C%22to%22%3A%22now%22%7D%7D
+              - region [ref=f124e828]:
+                - generic [ref=f124e829]:
+                  - heading "Errors" [level=2] [ref=f124e831]
+                  - link "Explore" [ref=f124e836] [cursor=pointer]:
+                    - /url: /explore?left=%7B%22datasource%22%3A%22grafanacloud-prom%22%2C%22queries%22%3A%5B%7B%22refId%22%3A%22OverviewErrorPanel%22%2C%22expr%22%3A%22(sum(rate(mysql_perf_schema_events_statements_errors_total%7Bjob%3D~%5C%22integrations%2Fdb-o11y%5C%22%2C%20digest%3D~%5C%22()%5C%22%2C%20%7D%5B%24__rate_interval%3A%5D)%20or%20rate(database_observability_pg_errors_total%7Bjob%3D~%5C%22integrations%2Fdb-o11y%5C%22%2C%20%7D%5B%24__rate_interval%3A%5D)))%20%2F%20(sum(rate(mysql_perf_schema_events_statements_total%7Bjob%3D~%5C%22integrations%2Fdb-o11y%5C%22%2C%20digest%3D~%5C%22()%5C%22%2C%20%7D%5B%24__rate_interval%3A%5D)%20or%20rate(pg_stat_statements_calls_total%7Bjob%3D~%5C%22integrations%2Fdb-o11y%5C%22%2C%20queryid%3D~%5C%22(-197758654588465157%7C-2505274146931292128%7C-4904290121134632403%7C-5058096123243958000%7C-6598923614496493247%7C-732914750433980748%7C2894017140851549097%7C3890639232125765865%7C4428338003384551987%7C5087821059466631612%7C7447953874934161013%7C8020481805575289432)%5C%22%2C%20%7D%5B%24__rate_interval%3A%5D)%20or%20rate(database_observability_pg_errors_total%7Bjob%3D~%5C%22integrations%2Fdb-o11y%5C%22%2C%20%7D%5B%24__rate_interval%3A%5D)))%22%2C%22interval%22%3A%221m%22%2C%22intervalMs%22%3A60000%2C%22datasource%22%3A%7B%22type%22%3A%22prometheus%22%2C%22uid%22%3A%22grafanacloud-prom%22%7D%7D%5D%2C%22range%22%3A%7B%22from%22%3A%22now-3h%22%2C%22to%22%3A%22now%22%7D%7D
+                - generic [ref=f124e840]: No data
+              - region [ref=f124e847]:
+                - generic [ref=f124e848]:
+                  - heading "Rate" [level=2] [ref=f124e850]
+                  - link "Explore" [ref=f124e851] [cursor=pointer]:
+                    - /url: /explore?left=%7B%22datasource%22%3A%22grafanacloud-prom%22%2C%22queries%22%3A%5B%7B%22refId%22%3A%22OverviewRatePanel%22%2C%22expr%22%3A%22sum(rate(mysql_perf_schema_events_statements_total%7Bjob%3D~%5C%22integrations%2Fdb-o11y%5C%22%2C%20digest%3D~%5C%22()%5C%22%2C%20%7D%5B%24__rate_interval%3A%5D)%20or%20rate(pg_stat_statements_calls_total%7Bjob%3D~%5C%22integrations%2Fdb-o11y%5C%22%2C%20queryid%3D~%5C%22(-197758654588465157%7C-2505274146931292128%7C-4904290121134632403%7C-5058096123243958000%7C-6598923614496493247%7C-732914750433980748%7C2894017140851549097%7C3890639232125765865%7C4428338003384551987%7C5087821059466631612%7C7447953874934161013%7C8020481805575289432)%5C%22%2C%20%7D%5B%24__rate_interval%3A%5D))%22%2C%22interval%22%3A%221m%22%2C%22intervalMs%22%3A60000%2C%22datasource%22%3A%7B%22type%22%3A%22prometheus%22%2C%22uid%22%3A%22grafanacloud-prom%22%7D%7D%5D%2C%22range%22%3A%7B%22from%22%3A%22now-3h%22%2C%22to%22%3A%22now%22%7D%7D
+            - region [ref=f124e870]:
+              - generic [ref=f124e871]:
+                - heading "Cumulative duration of wait events by group / type" [level=2] [ref=f124e873]
+                - combobox "Wait events dropdown" [ref=f124e882] [cursor=pointer]: Duration of wait events (by group)
+                - link "Explore" [ref=f124e883] [cursor=pointer]:
+                  - /url: /explore?left=%7B%22datasource%22%3A%22grafanacloud-logs%22%2C%22queries%22%3A%5B%7B%22refId%22%3A%22WaitEvents-0ms%22%2C%22expr%22%3A%22((sum%20by%20(wait_event_type)%20(sum_over_time(%7Bjob%3D%5C%22integrations%2Fdb-o11y%5C%22%2C%20op%3D%5C%22wait_event_v2%5C%22%2C%20server_id!%3D%5C%22%5C%22%7D%20%7C%20logfmt%20%7C%20backend_type%20%3D~%20%5C%22%5E(client%20backend)%3F%24%5C%22%20%7C%20queryid%20!%3D%20%5C%220%5C%22%20%7C%20label_format%20digest%3Dqueryid%20%7C%20digest%3D~%5C%22()%7C(-197758654588465157%7C-2505274146931292128%7C-4904290121134632403%7C-5058096123243958000%7C-6598923614496493247%7C-732914750433980748%7C2894017140851549097%7C3890639232125765865%7C4428338003384551987%7C5087821059466631612%7C7447953874934161013%7C8020481805575289432)%5C%22%20%7C%20wait_time%3E%3D0ms%20%7C%20unwrap%20duration_seconds(wait_time)%5B%24__auto%5D)))%20or%20(sum%20by%20(wait_event_type)%20(label_replace(label_replace(label_replace(label_replace(label_replace(label_replace(sum_over_time(%7Bjob%3D%5C%22integrations%2Fdb-o11y%5C%22%2C%20op%3D%5C%22wait_event%5C%22%2C%20server_id!%3D%5C%22%5C%22%7D%20%7C%20logfmt%20%7C%20backend_type%20%3D~%20%5C%22%5E(client%20backend)%3F%24%5C%22%20%7C%20queryid%20!%3D%20%5C%220%5C%22%20%7C%20label_format%20digest%3Dqueryid%20%7C%20digest%3D~%5C%22()%7C(-197758654588465157%7C-2505274146931292128%7C-4904290121134632403%7C-5058096123243958000%7C-6598923614496493247%7C-732914750433980748%7C2894017140851549097%7C3890639232125765865%7C4428338003384551987%7C5087821059466631612%7C7447953874934161013%7C8020481805575289432)%5C%22%20%7C%20wait_time%3E%3D0ms%20%7C%20(wait_event_type%3D~%5C%22(IO)%7C(Lock%7CLWLock%7CActivity%7CExtension%7CInjectionPoint%7CIPC%7CTimeout%7CBufferPin)%7C(Client)%5C%22%20or%20wait_event_name%3D~%5C%22(wait%2Fio%2F(file%7Ctable).%2B)%7C(wait%2F((io%2Flock%7Csynch)%7Clock).%2B)%7C(wait%2Fio%2Fsocket.%2B)%5C%22)%20%7C%20unwrap%20duration_seconds(wait_time)%5B%24__auto%5D)%2C%20%5C%22wait_event_type%5C%22%2C%20%5C%22IO%20Wait%5C%22%2C%20%5C%22wait_event_type%5C%22%2C%20%5C%22IO%5C%22)%2C%20%5C%22wait_event_type%5C%22%2C%20%5C%22Lock%20Wait%5C%22%2C%20%5C%22wait_event_type%5C%22%2C%20%5C%22Lock%7CLWLock%7CActivity%7CExtension%7CInjectionPoint%7CIPC%7CTimeout%7CBufferPin%5C%22)%2C%20%5C%22wait_event_type%5C%22%2C%20%5C%22Network%20Wait%5C%22%2C%20%5C%22wait_event_type%5C%22%2C%20%5C%22Client%5C%22)%2C%20%5C%22wait_event_type%5C%22%2C%20%5C%22IO%20Wait%5C%22%2C%20%5C%22wait_event_name%5C%22%2C%20%5C%22wait%2Fio%2F(file%7Ctable).%2B%5C%22)%2C%20%5C%22wait_event_type%5C%22%2C%20%5C%22Lock%20Wait%5C%22%2C%20%5C%22wait_event_name%5C%22%2C%20%5C%22wait%2F((io%2Flock%7Csynch)%7Clock).%2B%5C%22)%2C%20%5C%22wait_event_type%5C%22%2C%20%5C%22Network%20Wait%5C%22%2C%20%5C%22wait_event_name%5C%22%2C%20%5C%22wait%2Fio%2Fsocket.%2B%5C%22))))%20%3E%200%22%2C%22datasource%22%3A%7B%22type%22%3A%22loki%22%2C%22uid%22%3A%22grafanacloud-logs%22%7D%2C%22interval%22%3A%225m%22%2C%22intervalMs%22%3A300000%7D%5D%2C%22range%22%3A%7B%22from%22%3A%22now-3h%22%2C%22to%22%3A%22now%22%7D%7D
+              - generic [ref=f124e887]: No data
+            - generic [ref=f124e892]:
+              - generic [ref=f124e893]:
+                - heading "Top 4 out of 4 queries sorted by Wait Events Duration (descending)" [level=2] [ref=f124e896]
+                - button "Edit column selection" [ref=f124e897] [cursor=pointer]
+              - table [ref=f124e901]:
+                - rowgroup [ref=f124e902]:
+                  - row [ref=f124e903]:
+                    - columnheader "Query" [ref=f124e904]
+                    - columnheader "Database" [ref=f124e905]
+                    - columnheader "Instance" [ref=f124e906]
+                    - columnheader [ref=f124e909]:
+                      - button "Sort column Wait Events Duration" [ref=f124e910] [cursor=pointer]: Wait Events Duration
+                    - columnheader [ref=f124e916]:
+                      - button "Sort column Calls" [ref=f124e917] [cursor=pointer]: Calls
+                    - columnheader [ref=f124e920]:
+                      - button "Sort column Duration" [ref=f124e921] [cursor=pointer]: Duration
+                    - columnheader [ref=f124e924]:
+                      - button "Sort column Errors" [ref=f124e925] [cursor=pointer]: Errors
+                    - columnheader [ref=f124e928]:
+                      - button "Sort column Rate" [ref=f124e929] [cursor=pointer]: Rate
+                    - columnheader [ref=f124e932]:
+                      - button "Sort column Lock Time" [ref=f124e933] [cursor=pointer]: Lock Time
+                    - columnheader [ref=f124e936]:
+                      - button "Sort column Rows Examined" [ref=f124e937] [cursor=pointer]: Rows Examined
+                    - columnheader [ref=f124e940]:
+                      - button "Sort column Rows Sent" [ref=f124e941] [cursor=pointer]: Rows Sent
+                    - columnheader [ref=f124e944]:
+                      - button "Sort column Rows" [ref=f124e945] [cursor=pointer]: Rows
+                - rowgroup [ref=f124e948]:
+                  - row [ref=f124e949]:
+                    - cell [ref=f124e950]:
+                      - generic [ref=f124e951]:
+                        - img "PostgreSQL" [ref=f124e953]
+                        - link "SELECT a.currency, COALESCE(SUM(CASE p.direction WHEN $2 THEN p.amount_minor ELSE -p.amount_minor END), $3) AS balance_minor FROM accounts a LEFT JOIN postings p ON p.account_id = a.id AND p.currency = a.currency WHERE a.id = $1 GROUP BY a.currency" [ref=f124e962] [cursor=pointer]:
+                          - /url: /a/grafana-dbo11y-app/overview/postgres/8273fed283d6567708204e24318abfc2b341f932ffa4f63c6c2369ece3dfb326/bankingledger/-5058096123243958000?from=now-3h&to=now
+                    - cell "bankingledger" [ref=f124e964]
+                    - cell "postgres" [ref=f124e966]:
+                      - generic "postgres" [ref=f124e973] [cursor=pointer]
+                    - cell [ref=f124e974]
+                    - cell "149" [ref=f124e981]
+                    - cell "1.18 ms" [ref=f124e983]
+                    - cell "No Data" [ref=f124e995]
+                    - cell "0.00 req/s" [ref=f124e1007]
+                    - cell "- ns" [ref=f124e1019]
+                    - cell "-" [ref=f124e1021]
+                    - cell "-" [ref=f124e1023]
+                    - cell "1.00" [ref=f124e1025]
+                  - row [ref=f124e1027]:
+                    - cell [ref=f124e1028]:
+                      - generic [ref=f124e1029]:
+                        - img "PostgreSQL" [ref=f124e1031]
+                        - link "SELECT a.type, COALESCE(SUM(CASE p.direction WHEN $2 THEN p.amount_minor ELSE -p.amount_minor END), $3) FROM accounts a LEFT JOIN postings p ON p.account_id = a.id WHERE a.id = $1 GROUP BY a.type" [ref=f124e1040] [cursor=pointer]:
+                          - /url: /a/grafana-dbo11y-app/overview/postgres/8273fed283d6567708204e24318abfc2b341f932ffa4f63c6c2369ece3dfb326/bankingledger/2894017140851549097?from=now-3h&to=now
+                    - cell "bankingledger" [ref=f124e1042]
+                    - cell "postgres" [ref=f124e1044]:
+                      - generic "postgres" [ref=f124e1051] [cursor=pointer]
+                    - cell [ref=f124e1052]
+                    - cell "246" [ref=f124e1059]
+                    - cell "1.27 ms" [ref=f124e1061]
+                    - cell "No Data" [ref=f124e1073]
+                    - cell "0.00 req/s" [ref=f124e1085]
+                    - cell "- ns" [ref=f124e1097]
+                    - cell "-" [ref=f124e1099]
+                    - cell "-" [ref=f124e1101]
+                    - cell "1.00" [ref=f124e1103]
+                  - row [ref=f124e1105]:
+                    - cell [ref=f124e1106]:
+                      - generic [ref=f124e1107]:
+                        - img "PostgreSQL" [ref=f124e1109]
+                        - link "SELECT id, customer_id, type, status, display_name, account_number, region, currency, extract($2 from opened_at)::bigint FROM accounts WHERE customer_id = $1 ORDER BY opened_at" [ref=f124e1118] [cursor=pointer]:
+                          - /url: /a/grafana-dbo11y-app/overview/postgres/8273fed283d6567708204e24318abfc2b341f932ffa4f63c6c2369ece3dfb326/bankingledger/5087821059466631612?from=now-3h&to=now
+                    - cell "bankingledger" [ref=f124e1120]
+                    - cell "postgres" [ref=f124e1122]:
+                      - generic "postgres" [ref=f124e1129] [cursor=pointer]
+                    - cell [ref=f124e1130]
+                    - cell "1,109" [ref=f124e1137]
+                    - cell "143.79 µs" [ref=f124e1139]
+                    - cell "No Data" [ref=f124e1151]
+                    - cell "0.00 req/s" [ref=f124e1163]
+                    - cell "- ns" [ref=f124e1175]
+                    - cell "-" [ref=f124e1177]
+                    - cell "-" [ref=f124e1179]
+                    - cell "4.46" [ref=f124e1181]
+                  - row [ref=f124e1183]:
+                    - cell [ref=f124e1184]:
+                      - generic [ref=f124e1185]:
+                        - img "PostgreSQL" [ref=f124e1187]
+                        - link "SELECT id, customer_id, type, status, display_name, account_number, region, currency, extract($2 from opened_at)::bigint FROM accounts WHERE id = $1" [ref=f124e1196] [cursor=pointer]:
+                          - /url: /a/grafana-dbo11y-app/overview/postgres/8273fed283d6567708204e24318abfc2b341f932ffa4f63c6c2369ece3dfb326/bankingledger/7447953874934161013?from=now-3h&to=now
+                    - cell "bankingledger" [ref=f124e1198]
+                    - cell "postgres" [ref=f124e1200]:
+                      - generic "postgres" [ref=f124e1207] [cursor=pointer]
+                    - cell [ref=f124e1208]
+                    - cell "654" [ref=f124e1215]
+                    - cell "28.21 µs" [ref=f124e1217]
+                    - cell "No Data" [ref=f124e1229]
+                    - cell "0.00 req/s" [ref=f124e1241]
+                    - cell "- ns" [ref=f124e1253]
+                    - cell "-" [ref=f124e1255]
+                    - cell "-" [ref=f124e1257]
+                    - cell "1.00" [ref=f124e1259]
+  - log [ref=f124e1261]

@@ -1,0 +1,228 @@
+- generic [ref=f109e9]:
+  - generic [ref=f109e10]:
+    - link "Skip to main content" [ref=f109e11] [cursor=pointer]:
+      - /url: "#pageContent"
+    - generic [ref=f109e13]:
+      - generic [ref=f109e14]:
+        - generic [ref=f109e15]:
+          - link [ref=f109e16] [cursor=pointer]:
+            - /url: /
+            - img "Grafana" [ref=f109e17]
+          - link "Grafana" [ref=f109e18] [cursor=pointer]:
+            - /url: /
+        - button "Close menu" [ref=f109e19] [cursor=pointer]
+      - navigation "Navigation" [ref=f109e22]:
+        - list "Navigation" [ref=f109e27]:
+          - listitem [ref=f109e28]:
+            - generic [ref=f109e29]:
+              - link [ref=f109e32] [cursor=pointer]:
+                - /url: /bookmarks
+                - paragraph [ref=f109e37]: Bookmarks
+              - 'button "Expand section: Bookmarks" [ref=f109e39] [cursor=pointer]'
+          - listitem [ref=f109e42]:
+            - generic [ref=f109e43]:
+              - link [ref=f109e46] [cursor=pointer]:
+                - /url: /dashboards?starred
+                - paragraph [ref=f109e51]: Starred
+              - 'button "Expand section: Starred" [ref=f109e54] [cursor=pointer]'
+          - listitem [ref=f109e57]:
+            - generic [ref=f109e58]:
+              - link [ref=f109e61] [cursor=pointer]:
+                - /url: /dashboards
+                - paragraph [ref=f109e66]: Dashboards
+              - 'button "Expand section: Dashboards" [ref=f109e69] [cursor=pointer]'
+          - listitem [ref=f109e72]:
+            - link [ref=f109e76] [cursor=pointer]:
+              - /url: /explore
+              - paragraph [ref=f109e81]: Explore
+          - listitem [ref=f109e83]:
+            - generic [ref=f109e84]:
+              - link [ref=f109e87] [cursor=pointer]:
+                - /url: /drilldown
+                - paragraph [ref=f109e95]: Drilldown
+              - 'button "Collapse section: Drilldown" [expanded] [ref=f109e98] [cursor=pointer]'
+            - list [ref=f109e101]:
+              - listitem [ref=f109e102]:
+                - link [ref=f109e106] [cursor=pointer]:
+                  - /url: /a/grafana-metricsdrilldown-app/drilldown
+                  - paragraph [ref=f109e109]: Metrics
+              - listitem [ref=f109e111]:
+                - link [ref=f109e115] [cursor=pointer]:
+                  - /url: /a/grafana-lokiexplore-app/explore
+                  - paragraph [ref=f109e118]: Logs
+              - listitem [ref=f109e120]:
+                - link [ref=f109e124] [cursor=pointer]:
+                  - /url: /a/grafana-exploretraces-app/
+                  - paragraph [ref=f109e127]: Traces
+              - listitem [ref=f109e129]:
+                - link [ref=f109e133] [cursor=pointer]:
+                  - /url: /a/grafana-pyroscope-app/explore
+                  - paragraph [ref=f109e136]: Profiles
+          - listitem [ref=f109e138]:
+            - generic [ref=f109e139]:
+              - link [ref=f109e142] [cursor=pointer]:
+                - /url: /a/grafana-assistant-app
+                - paragraph [ref=f109e148]: Assistant
+              - 'button "Expand section: Assistant" [ref=f109e151] [cursor=pointer]'
+          - listitem [ref=f109e154]:
+            - generic [ref=f109e155]:
+              - link [ref=f109e158] [cursor=pointer]:
+                - /url: /alerts-and-incidents
+                - paragraph [ref=f109e163]: Alerts & IRM
+              - 'button "Expand section: Alerts &amp; IRM" [ref=f109e166] [cursor=pointer]'
+          - listitem [ref=f109e169]:
+            - generic [ref=f109e170]:
+              - link [ref=f109e173] [cursor=pointer]:
+                - /url: /a/grafana-ml-app/home
+                - paragraph [ref=f109e180]: AI & machine learning
+              - 'button "Expand section: AI &amp; machine learning" [ref=f109e183] [cursor=pointer]'
+          - listitem [ref=f109e186]:
+            - generic [ref=f109e187]:
+              - link [ref=f109e190] [cursor=pointer]:
+                - /url: adaptive-telemetry
+                - generic [ref=f109e192]:
+                  - paragraph [ref=f109e210]: Adaptive Telemetry
+                  - generic [ref=f109e211]: New!
+              - 'button "Expand section: Adaptive Telemetry" [ref=f109e217] [cursor=pointer]'
+          - listitem [ref=f109e220]:
+            - generic [ref=f109e221]:
+              - link [ref=f109e224] [cursor=pointer]:
+                - /url: /a/grafana-cmab-app/
+                - generic [ref=f109e226]:
+                  - paragraph [ref=f109e229]: Cost Management and Billing
+                  - generic [ref=f109e230]: New!
+              - 'button "Expand section: Cost Management and Billing" [ref=f109e236] [cursor=pointer]'
+          - listitem [ref=f109e239]:
+            - generic [ref=f109e240]:
+              - link [ref=f109e243] [cursor=pointer]:
+                - /url: /testing-and-synthetics
+                - paragraph [ref=f109e250]: Testing & synthetics
+              - 'button "Expand section: Testing &amp; synthetics" [ref=f109e253] [cursor=pointer]'
+          - listitem [ref=f109e256]:
+            - generic [ref=f109e257]:
+              - link [ref=f109e260] [cursor=pointer]:
+                - /url: /observability
+                - paragraph [ref=f109e265]: Observability
+              - 'button "Collapse section: Observability" [expanded] [ref=f109e268] [cursor=pointer]'
+            - list [ref=f109e271]:
+              - listitem [ref=f109e272]:
+                - link [ref=f109e276] [cursor=pointer]:
+                  - /url: /a/grafana-asserts-app/entities
+                  - paragraph [ref=f109e279]: Entity graph
+              - listitem [ref=f109e281]:
+                - link [ref=f109e285] [cursor=pointer]:
+                  - /url: /a/grafana-asserts-app/catalog
+                  - paragraph [ref=f109e288]: Entity catalog
+              - listitem [ref=f109e290]:
+                - link [ref=f109e294] [cursor=pointer]:
+                  - /url: /a/grafana-asserts-app/assertions
+                  - paragraph [ref=f109e297]: RCA workbench
+              - listitem [ref=f109e299]:
+                - link [ref=f109e303] [cursor=pointer]:
+                  - /url: /a/grafana-asserts-app/slo
+                  - paragraph [ref=f109e306]: Health target
+              - listitem [ref=f109e308]:
+                - link [ref=f109e312] [cursor=pointer]:
+                  - /url: /a/grafana-asserts-app/rules
+                  - paragraph [ref=f109e315]: Rules
+              - listitem [ref=f109e317]:
+                - link [ref=f109e321] [cursor=pointer]:
+                  - /url: /a/grafana-asserts-app/configuration
+                  - paragraph [ref=f109e324]: Configuration
+              - listitem [ref=f109e326]:
+                - generic [ref=f109e327]:
+                  - link [ref=f109e330] [cursor=pointer]:
+                    - /url: /a/grafana-agento11y-app
+                    - generic [ref=f109e332]:
+                      - paragraph [ref=f109e333]: Agent
+                      - generic [ref=f109e334]: New!
+                  - 'button "Expand section: Agent" [ref=f109e340] [cursor=pointer]'
+              - listitem [ref=f109e343]:
+                - generic [ref=f109e344]:
+                  - link [ref=f109e347] [cursor=pointer]:
+                    - /url: /a/grafana-kowalski-app
+                    - paragraph [ref=f109e350]: Frontend
+                  - 'button "Expand section: Frontend" [ref=f109e353] [cursor=pointer]'
+              - listitem [ref=f109e356]:
+                - generic [ref=f109e357]:
+                  - link [ref=f109e360] [cursor=pointer]:
+                    - /url: /a/grafana-app-observability-app
+                    - paragraph [ref=f109e363]: Application
+                  - 'button "Expand section: Application" [ref=f109e366] [cursor=pointer]'
+              - listitem [ref=f109e369]:
+                - generic [ref=f109e370]:
+                  - link [ref=f109e373] [cursor=pointer]:
+                    - /url: /a/grafana-dbo11y-app/
+                    - generic [ref=f109e375]:
+                      - paragraph [ref=f109e376]: Database
+                      - generic [ref=f109e377]: New!
+                  - 'button "Collapse section: Database" [expanded] [ref=f109e383] [cursor=pointer]'
+                - list [ref=f109e386]:
+                  - listitem [ref=f109e387]:
+                    - link [ref=f109e392] [cursor=pointer]:
+                      - /url: /a/grafana-dbo11y-app/overview
+                      - paragraph [ref=f109e395]: Queries Overview
+                  - listitem [ref=f109e397]:
+                    - link [ref=f109e402] [cursor=pointer]:
+                      - /url: /a/grafana-dbo11y-app/configuration
+                      - paragraph [ref=f109e405]: Configuration
+              - listitem [ref=f109e407]:
+                - generic [ref=f109e408]:
+                  - link [ref=f109e411] [cursor=pointer]:
+                    - /url: /a/grafana-k8s-app/home
+                    - paragraph [ref=f109e414]: Kubernetes
+                  - 'button "Expand section: Kubernetes" [ref=f109e417] [cursor=pointer]'
+              - listitem [ref=f109e420]:
+                - generic [ref=f109e421]:
+                  - link [ref=f109e424] [cursor=pointer]:
+                    - /url: /a/grafana-csp-app
+                    - paragraph [ref=f109e427]: Cloud provider
+                  - 'button "Expand section: Cloud provider" [ref=f109e430] [cursor=pointer]'
+          - listitem [ref=f109e433]:
+            - generic [ref=f109e434]:
+              - link [ref=f109e437] [cursor=pointer]:
+                - /url: /connections
+                - paragraph [ref=f109e442]: Connections
+              - 'button "Expand section: Connections" [ref=f109e445] [cursor=pointer]'
+          - listitem [ref=f109e448]:
+            - generic [ref=f109e449]:
+              - link [ref=f109e452] [cursor=pointer]:
+                - /url: /apps
+                - paragraph [ref=f109e457]: More apps
+              - 'button "Expand section: More apps" [ref=f109e460] [cursor=pointer]'
+          - listitem [ref=f109e463]:
+            - generic [ref=f109e464]:
+              - link [ref=f109e467] [cursor=pointer]:
+                - /url: /admin
+                - paragraph [ref=f109e472]: Administration
+              - 'button "Expand section: Administration" [ref=f109e475] [cursor=pointer]'
+        - separator [ref=f109e478]
+        - button "Undock menu" [ref=f109e480] [cursor=pointer]
+    - banner [ref=f109e483]:
+      - generic [ref=f109e484]:
+        - navigation "Breadcrumbs" [ref=f109e486]:
+          - list [ref=f109e487]:
+            - listitem [ref=f109e488]:
+              - link "Observability" [ref=f109e489] [cursor=pointer]:
+                - /url: /observability
+            - listitem [ref=f109e493]:
+              - link "Database" [ref=f109e494] [cursor=pointer]:
+                - /url: /a/grafana-dbo11y-app/
+            - listitem [ref=f109e498]:
+              - generic "Not found" [ref=f109e499]
+        - generic [ref=f109e500]:
+          - generic [ref=f109e502]:
+            - button "Search..." [ref=f109e506] [cursor=pointer]
+            - generic [ref=f109e507]: ⌘+k
+          - button "New" [ref=f109e509] [cursor=pointer]
+          - button "Help" [ref=f109e515] [cursor=pointer]
+          - button "Open Grafana Assistant" [ref=f109e519] [cursor=pointer]
+          - button "Profile" [ref=f109e524] [cursor=pointer]:
+            - img "User avatar" [ref=f109e525]
+    - main [ref=f109e528]:
+      - generic [ref=f109e531]:
+        - generic [ref=f109e533]:
+          - heading "Not found" [level=1] [ref=f109e536]
+          - generic [ref=f109e537]: The url did not match any page
+        - generic [ref=f109e538]: If you found your way here using a link then there might be a bug in this application.
+  - log [ref=f109e544]

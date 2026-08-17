@@ -1,0 +1,1130 @@
+- generic [active] [ref=f103e1]:
+  - generic [ref=f103e9]:
+    - generic [ref=f103e10]:
+      - link "Skip to main content" [ref=f103e11] [cursor=pointer]:
+        - /url: "#pageContent"
+      - generic [ref=f103e13]:
+        - generic [ref=f103e14]:
+          - generic [ref=f103e15]:
+            - link [ref=f103e16] [cursor=pointer]:
+              - /url: /
+              - img "Grafana" [ref=f103e17]
+            - link "Grafana" [ref=f103e18] [cursor=pointer]:
+              - /url: /
+          - button "Close menu" [ref=f103e19] [cursor=pointer]
+        - navigation "Navigation" [ref=f103e22]:
+          - list "Navigation" [ref=f103e27]:
+            - listitem [ref=f103e28]:
+              - generic [ref=f103e29]:
+                - link [ref=f103e32] [cursor=pointer]:
+                  - /url: /bookmarks
+                  - paragraph [ref=f103e37]: Bookmarks
+                - 'button "Expand section: Bookmarks" [ref=f103e39] [cursor=pointer]'
+            - listitem [ref=f103e42]:
+              - generic [ref=f103e43]:
+                - link [ref=f103e46] [cursor=pointer]:
+                  - /url: /dashboards?starred
+                  - paragraph [ref=f103e51]: Starred
+                - 'button "Expand section: Starred" [ref=f103e54] [cursor=pointer]'
+            - listitem [ref=f103e57]:
+              - generic [ref=f103e58]:
+                - link [ref=f103e61] [cursor=pointer]:
+                  - /url: /dashboards
+                  - paragraph [ref=f103e66]: Dashboards
+                - 'button "Expand section: Dashboards" [ref=f103e69] [cursor=pointer]'
+            - listitem [ref=f103e72]:
+              - link [ref=f103e76] [cursor=pointer]:
+                - /url: /explore
+                - paragraph [ref=f103e81]: Explore
+            - listitem [ref=f103e83]:
+              - generic [ref=f103e84]:
+                - link [ref=f103e87] [cursor=pointer]:
+                  - /url: /drilldown
+                  - paragraph [ref=f103e95]: Drilldown
+                - 'button "Expand section: Drilldown" [ref=f103e98] [cursor=pointer]'
+            - listitem [ref=f103e101]:
+              - generic [ref=f103e102]:
+                - link [ref=f103e105] [cursor=pointer]:
+                  - /url: /a/grafana-assistant-app
+                  - paragraph [ref=f103e111]: Assistant
+                - 'button "Expand section: Assistant" [ref=f103e114] [cursor=pointer]'
+            - listitem [ref=f103e117]:
+              - generic [ref=f103e118]:
+                - link [ref=f103e121] [cursor=pointer]:
+                  - /url: /alerts-and-incidents
+                  - paragraph [ref=f103e126]: Alerts & IRM
+                - 'button "Expand section: Alerts &amp; IRM" [ref=f103e129] [cursor=pointer]'
+            - listitem [ref=f103e132]:
+              - generic [ref=f103e133]:
+                - link [ref=f103e136] [cursor=pointer]:
+                  - /url: /a/grafana-ml-app/home
+                  - paragraph [ref=f103e143]: AI & machine learning
+                - 'button "Expand section: AI &amp; machine learning" [ref=f103e146] [cursor=pointer]'
+            - listitem [ref=f103e149]:
+              - generic [ref=f103e150]:
+                - link [ref=f103e153] [cursor=pointer]:
+                  - /url: adaptive-telemetry
+                  - generic [ref=f103e155]:
+                    - paragraph [ref=f103e173]: Adaptive Telemetry
+                    - generic [ref=f103e174]: New!
+                - 'button "Expand section: Adaptive Telemetry" [ref=f103e180] [cursor=pointer]'
+            - listitem [ref=f103e183]:
+              - generic [ref=f103e184]:
+                - link [ref=f103e187] [cursor=pointer]:
+                  - /url: /a/grafana-cmab-app/
+                  - generic [ref=f103e189]:
+                    - paragraph [ref=f103e192]: Cost Management and Billing
+                    - generic [ref=f103e193]: New!
+                - 'button "Expand section: Cost Management and Billing" [ref=f103e199] [cursor=pointer]'
+            - listitem [ref=f103e202]:
+              - generic [ref=f103e203]:
+                - link [ref=f103e206] [cursor=pointer]:
+                  - /url: /testing-and-synthetics
+                  - paragraph [ref=f103e213]: Testing & synthetics
+                - 'button "Expand section: Testing &amp; synthetics" [ref=f103e216] [cursor=pointer]'
+            - listitem [ref=f103e219]:
+              - generic [ref=f103e220]:
+                - link [ref=f103e223] [cursor=pointer]:
+                  - /url: /observability
+                  - paragraph [ref=f103e228]: Observability
+                - 'button "Collapse section: Observability" [expanded] [ref=f103e231] [cursor=pointer]'
+              - list [ref=f103e234]:
+                - listitem [ref=f103e235]:
+                  - link [ref=f103e239] [cursor=pointer]:
+                    - /url: /a/grafana-asserts-app/entities
+                    - paragraph [ref=f103e242]: Entity graph
+                - listitem [ref=f103e244]:
+                  - link [ref=f103e248] [cursor=pointer]:
+                    - /url: /a/grafana-asserts-app/catalog
+                    - paragraph [ref=f103e251]: Entity catalog
+                - listitem [ref=f103e253]:
+                  - link [ref=f103e257] [cursor=pointer]:
+                    - /url: /a/grafana-asserts-app/assertions
+                    - paragraph [ref=f103e260]: RCA workbench
+                - listitem [ref=f103e262]:
+                  - link [ref=f103e266] [cursor=pointer]:
+                    - /url: /a/grafana-asserts-app/slo
+                    - paragraph [ref=f103e269]: Health target
+                - listitem [ref=f103e271]:
+                  - link [ref=f103e275] [cursor=pointer]:
+                    - /url: /a/grafana-asserts-app/rules
+                    - paragraph [ref=f103e278]: Rules
+                - listitem [ref=f103e280]:
+                  - link [ref=f103e284] [cursor=pointer]:
+                    - /url: /a/grafana-asserts-app/configuration
+                    - paragraph [ref=f103e287]: Configuration
+                - listitem [ref=f103e289]:
+                  - generic [ref=f103e290]:
+                    - link [ref=f103e293] [cursor=pointer]:
+                      - /url: /a/grafana-agento11y-app
+                      - generic [ref=f103e295]:
+                        - paragraph [ref=f103e296]: Agent
+                        - generic [ref=f103e297]: New!
+                    - 'button "Expand section: Agent" [ref=f103e303] [cursor=pointer]'
+                - listitem [ref=f103e306]:
+                  - generic [ref=f103e307]:
+                    - link [ref=f103e310] [cursor=pointer]:
+                      - /url: /a/grafana-kowalski-app
+                      - paragraph [ref=f103e313]: Frontend
+                    - 'button "Expand section: Frontend" [ref=f103e316] [cursor=pointer]'
+                - listitem [ref=f103e319]:
+                  - generic [ref=f103e320]:
+                    - link [ref=f103e323] [cursor=pointer]:
+                      - /url: /a/grafana-app-observability-app
+                      - paragraph [ref=f103e326]: Application
+                    - 'button "Expand section: Application" [ref=f103e329] [cursor=pointer]'
+                - listitem [ref=f103e332]:
+                  - generic [ref=f103e333]:
+                    - link [ref=f103e336] [cursor=pointer]:
+                      - /url: /a/grafana-dbo11y-app/
+                      - generic [ref=f103e338]:
+                        - paragraph [ref=f103e339]: Database
+                        - generic [ref=f103e340]: New!
+                    - 'button "Collapse section: Database" [expanded] [ref=f103e346] [cursor=pointer]'
+                  - list [ref=f103e349]:
+                    - listitem [ref=f103e350]:
+                      - link [ref=f103e355] [cursor=pointer]:
+                        - /url: /a/grafana-dbo11y-app/overview
+                        - paragraph [ref=f103e358]: Queries Overview
+                    - listitem [ref=f103e360]:
+                      - link [ref=f103e365] [cursor=pointer]:
+                        - /url: /a/grafana-dbo11y-app/configuration
+                        - paragraph [ref=f103e368]: Configuration
+                - listitem [ref=f103e370]:
+                  - generic [ref=f103e371]:
+                    - link [ref=f103e374] [cursor=pointer]:
+                      - /url: /a/grafana-k8s-app/home
+                      - paragraph [ref=f103e377]: Kubernetes
+                    - 'button "Expand section: Kubernetes" [ref=f103e380] [cursor=pointer]'
+                - listitem [ref=f103e383]:
+                  - generic [ref=f103e384]:
+                    - link [ref=f103e387] [cursor=pointer]:
+                      - /url: /a/grafana-csp-app
+                      - paragraph [ref=f103e390]: Cloud provider
+                    - 'button "Expand section: Cloud provider" [ref=f103e393] [cursor=pointer]'
+            - listitem [ref=f103e396]:
+              - generic [ref=f103e397]:
+                - link [ref=f103e400] [cursor=pointer]:
+                  - /url: /connections
+                  - paragraph [ref=f103e405]: Connections
+                - 'button "Expand section: Connections" [ref=f103e408] [cursor=pointer]'
+            - listitem [ref=f103e411]:
+              - generic [ref=f103e412]:
+                - link [ref=f103e415] [cursor=pointer]:
+                  - /url: /apps
+                  - paragraph [ref=f103e420]: More apps
+                - 'button "Expand section: More apps" [ref=f103e423] [cursor=pointer]'
+            - listitem [ref=f103e426]:
+              - generic [ref=f103e427]:
+                - link [ref=f103e430] [cursor=pointer]:
+                  - /url: /admin
+                  - paragraph [ref=f103e435]: Administration
+                - 'button "Expand section: Administration" [ref=f103e438] [cursor=pointer]'
+          - separator [ref=f103e441]
+          - button "Undock menu" [ref=f103e443] [cursor=pointer]
+      - banner [ref=f103e446]:
+        - generic [ref=f103e447]:
+          - navigation "Breadcrumbs" [ref=f103e449]:
+            - list [ref=f103e450]:
+              - listitem [ref=f103e451]:
+                - link "Explore" [ref=f103e452] [cursor=pointer]:
+                  - /url: /explore
+              - listitem [ref=f103e456]:
+                - generic "grafanacloud-devfedb13-traces | grafanacloud-devfedb13-traces" [ref=f103e993]
+          - generic [ref=f103e458]:
+            - generic [ref=f103e460]:
+              - button "Search..." [ref=f103e464] [cursor=pointer]
+              - generic [ref=f103e465]: ⌘+k
+            - button "New" [ref=f103e467] [cursor=pointer]
+            - button "Help" [ref=f103e473] [cursor=pointer]
+            - button "Open Grafana Assistant" [ref=f103e477] [cursor=pointer]
+            - button "Profile" [ref=f103e482] [cursor=pointer]:
+              - img "User avatar" [ref=f103e483]
+      - main [ref=f103e486]:
+        - generic [ref=f103e489]:
+          - heading "Explore" [level=1] [ref=f103e490]
+          - generic [ref=f103e491]:
+            - generic [ref=f103e493]:
+              - navigation "Explore toolbar" [ref=f103e495]:
+                - navigation "Search links" [ref=f103e497]:
+                  - generic [ref=f103e498]:
+                    - button "Content outline" [expanded] [ref=f103e500] [cursor=pointer]
+                    - generic [ref=f103e508] [cursor=pointer]:
+                      - img "Tempo logo" [ref=f103e510]
+                      - combobox "Select a data source" [ref=f103e511]
+                    - button "Go queryless" [ref=f103e516] [cursor=pointer]
+                - generic [ref=f103e518]:
+                  - generic [ref=f103e546]:
+                    - button "Run query" [ref=f103e547] [cursor=pointer]
+                    - button "Auto refresh turned off. Choose refresh time interval" [ref=f103e550] [cursor=pointer]
+                  - button "Show more items" [ref=f103e995] [cursor=pointer]
+              - generic [ref=f103e562]:
+                - generic [ref=f103e567]:
+                  - button "Collapse outline" [expanded] [ref=f103e569] [cursor=pointer]:
+                    - img "arrow-from-right" [ref=f103e570]
+                  - button "Queries" [ref=f103e573] [cursor=pointer]:
+                    - img "arrow" [ref=f103e574]
+                  - button "Table" [ref=f103e578] [cursor=pointer]:
+                    - img "table" [ref=f103e579]
+                - generic [ref=f103e584]:
+                  - generic [ref=f103e586]:
+                    - generic [ref=f103e590]:
+                      - generic [ref=f103e592]:
+                        - generic [ref=f103e593]:
+                          - button "Collapse query row" [expanded] [ref=f103e594] [cursor=pointer]
+                          - generic [ref=f103e597]:
+                            - button "A" [ref=f103e598] [cursor=pointer]
+                            - emphasis [ref=f103e600]: (grafanacloud-devfedb13-traces)
+                        - generic [ref=f103e601]:
+                          - button "Saved queries" [ref=f103e602] [cursor=pointer]
+                          - button "Show data source help" [ref=f103e609] [cursor=pointer]
+                          - button "Create recorded query" [ref=f103e613] [cursor=pointer]
+                          - button "Duplicate query" [ref=f103e617] [cursor=pointer]
+                          - button "Hide response" [ref=f103e621] [cursor=pointer]
+                          - button "Remove query" [ref=f103e625] [cursor=pointer]
+                          - button "Drag and drop to reorder" [ref=f103e628]:
+                            - img "Drag and drop to reorder" [ref=f103e629]
+                      - generic [ref=f103e632]:
+                        - generic [ref=f103e634]:
+                          - generic [ref=f103e635]: Query type
+                          - generic [ref=f103e637]:
+                            - radiogroup [ref=f103e638]:
+                              - generic [ref=f103e639]:
+                                - radio "Search" [ref=f103e640] [cursor=pointer]
+                                - generic "Search" [ref=f103e641] [cursor=pointer]
+                              - generic [ref=f103e643]:
+                                - radio "TraceQL" [checked] [ref=f103e644] [cursor=pointer]
+                                - generic "TraceQL" [ref=f103e645] [cursor=pointer]
+                              - generic [ref=f103e647]:
+                                - radio "Service Graph" [ref=f103e648] [cursor=pointer]
+                                - generic "Service Graph" [ref=f103e649] [cursor=pointer]
+                            - button "Import trace" [ref=f103e651] [cursor=pointer]
+                        - generic [ref=f103e653]:
+                          - text: Build complex queries using TraceQL to select a list of traces.
+                          - link "Documentation" [ref=f103e654] [cursor=pointer]:
+                            - /url: https://grafana.com/docs/tempo/latest/traceql/
+                        - code [ref=f103e660]:
+                          - generic [ref=f103e661]:
+                            - generic [ref=f103e670]:
+                              - generic [ref=f103e1005]: "{resource.k8s.namespace."
+                              - generic [ref=f103e1007]: name="banking-prod" && name="db.
+                              - generic [ref=f103e1009]: "Query\"} | count() > 20"
+                            - textbox "Editor content;Press Alt+F1 for Accessibility Options." [ref=f103e675]: "{resource.k8s.namespace.name=\"banking-prod\" && name=\"db.Query\"} | count() > 20"
+                        - generic [ref=f103e679]:
+                          - generic [ref=f103e682] [cursor=pointer]:
+                            - 'button "Search Options Limit: 20 Spans Limit: 3 Table Format: Traces | Streaming: Enabled" [ref=f103e683]'
+                            - generic [ref=f103e687]:
+                              - heading "Search Options" [level=6] [ref=f103e688]
+                              - generic [ref=f103e689]:
+                                - generic [ref=f103e690]: "Limit: 20"
+                                - generic [ref=f103e691]: "Spans Limit: 3"
+                                - generic [ref=f103e692]: "Table Format: Traces"
+                                - generic [ref=f103e693]: "|"
+                                - generic [ref=f103e694]: "Streaming: Enabled"
+                          - generic [ref=f103e697] [cursor=pointer]:
+                            - 'button "Metrics Options Step: auto Type: Range | Streaming: Disabled" [ref=f103e698]'
+                            - generic [ref=f103e702]:
+                              - heading "Metrics Options" [level=6] [ref=f103e703]
+                              - generic [ref=f103e704]:
+                                - generic [ref=f103e705]: "Step: auto"
+                                - generic [ref=f103e706]: "Type: Range"
+                                - generic [ref=f103e707]: "|"
+                                - generic [ref=f103e708]: "Streaming: Disabled"
+                    - generic [ref=f103e709]:
+                      - button "Add query" [ref=f103e710] [cursor=pointer]
+                      - button "Add from saved queries" [ref=f103e714] [cursor=pointer]
+                      - button "Query history" [ref=f103e718] [cursor=pointer]
+                      - button "Query inspector" [ref=f103e722] [cursor=pointer]
+                  - main [ref=f103e726]:
+                    - generic [ref=f103e728]:
+                      - region [ref=f103e730]:
+                        - heading "Table - Streaming Progress" [level=2] [ref=f103e733]
+                        - grid [ref=f103e735]:
+                          - row [ref=f103e1011]:
+                            - columnheader [ref=f103e737] [cursor=pointer]:
+                              - button "State" [ref=f103e739]
+                            - columnheader [ref=f103e741] [cursor=pointer]:
+                              - button "Elapsed Time" [ref=f103e743]
+                            - columnheader [ref=f103e745] [cursor=pointer]:
+                              - button "Total Blocks" [ref=f103e747]
+                            - columnheader [ref=f103e749] [cursor=pointer]:
+                              - button "Completed Jobs" [ref=f103e751]
+                          - row [ref=f103e1012]:
+                            - gridcell "Done" [ref=f103e762]
+                            - gridcell "808 ms" [ref=f103e763]
+                            - gridcell "19" [ref=f103e764]
+                            - gridcell "1" [ref=f103e765]
+                      - region [ref=f103e774]:
+                        - heading "Table - Traces" [level=2] [ref=f103e777]
+                        - treegrid [ref=f103e779]:
+                          - row [ref=f103e1013]:
+                            - columnheader "Expand nested rows" [ref=f103e781]
+                            - columnheader [ref=f103e783] [cursor=pointer]:
+                              - button "Trace ID" [ref=f103e785]
+                            - columnheader [ref=f103e787] [cursor=pointer]:
+                              - button "Start time" [ref=f103e789]
+                            - columnheader [ref=f103e791] [cursor=pointer]:
+                              - button "Service" [ref=f103e793]
+                          - row [ref=f103e1014]:
+                            - gridcell [ref=f103e804]:
+                              - button "Expand row" [ref=f103e805] [cursor=pointer]
+                            - gridcell [ref=f103e808]:
+                              - link "b4ea827a6bfd668bd461cc055d28cbfd" [ref=f103e809] [cursor=pointer]:
+                                - /url: /explore?left=%7B%22range%22%3A%7B%22from%22%3A%22now-3h%22%2C%22to%22%3A%22now%22%7D%2C%22datasource%22%3A%22grafanacloud-traces%22%2C%22queries%22%3A%5B%7B%22query%22%3A%22b4ea827a6bfd668bd461cc055d28cbfd%22%2C%22queryType%22%3A%22traceql%22%2C%22datasource%22%3A%7B%22uid%22%3A%22grafanacloud-traces%22%7D%7D%5D%7D
+                            - gridcell "2026-08-16 21:45:17" [ref=f103e810]
+                            - gridcell "banking" [ref=f103e811]
+                          - row [ref=f103e1015]:
+                            - gridcell [ref=f103e815]:
+                              - button "Expand row" [ref=f103e816] [cursor=pointer]
+                            - gridcell [ref=f103e819]:
+                              - link "3151cdbfe833a2141dceb481c7d9a27f" [ref=f103e820] [cursor=pointer]:
+                                - /url: /explore?left=%7B%22range%22%3A%7B%22from%22%3A%22now-3h%22%2C%22to%22%3A%22now%22%7D%2C%22datasource%22%3A%22grafanacloud-traces%22%2C%22queries%22%3A%5B%7B%22query%22%3A%223151cdbfe833a2141dceb481c7d9a27f%22%2C%22queryType%22%3A%22traceql%22%2C%22datasource%22%3A%7B%22uid%22%3A%22grafanacloud-traces%22%7D%7D%5D%7D
+                            - gridcell "2026-08-16 21:45:13" [ref=f103e821]
+                            - gridcell "banking" [ref=f103e822]
+                          - row [ref=f103e1016]:
+                            - gridcell [ref=f103e826]:
+                              - button "Expand row" [ref=f103e827] [cursor=pointer]
+                            - gridcell [ref=f103e830]:
+                              - link "3cd483e4a9f9da9f2ac2f9ca019f370f" [ref=f103e831] [cursor=pointer]:
+                                - /url: /explore?left=%7B%22range%22%3A%7B%22from%22%3A%22now-3h%22%2C%22to%22%3A%22now%22%7D%2C%22datasource%22%3A%22grafanacloud-traces%22%2C%22queries%22%3A%5B%7B%22query%22%3A%223cd483e4a9f9da9f2ac2f9ca019f370f%22%2C%22queryType%22%3A%22traceql%22%2C%22datasource%22%3A%7B%22uid%22%3A%22grafanacloud-traces%22%7D%7D%5D%7D
+                            - gridcell "2026-08-16 21:45:05" [ref=f103e832]
+                            - gridcell "banking" [ref=f103e833]
+                          - row [ref=f103e1017]:
+                            - gridcell [ref=f103e837]:
+                              - button "Expand row" [ref=f103e838] [cursor=pointer]
+                            - gridcell [ref=f103e841]:
+                              - link "e15f6cc8ce67691d77d7e75fc8e9c47a" [ref=f103e842] [cursor=pointer]:
+                                - /url: /explore?left=%7B%22range%22%3A%7B%22from%22%3A%22now-3h%22%2C%22to%22%3A%22now%22%7D%2C%22datasource%22%3A%22grafanacloud-traces%22%2C%22queries%22%3A%5B%7B%22query%22%3A%22e15f6cc8ce67691d77d7e75fc8e9c47a%22%2C%22queryType%22%3A%22traceql%22%2C%22datasource%22%3A%7B%22uid%22%3A%22grafanacloud-traces%22%7D%7D%5D%7D
+                            - gridcell "2026-08-16 21:44:59" [ref=f103e843]
+                            - gridcell "banking" [ref=f103e844]
+                          - row [ref=f103e1018]:
+                            - gridcell [ref=f103e848]:
+                              - button "Expand row" [ref=f103e849] [cursor=pointer]
+                            - gridcell [ref=f103e852]:
+                              - link "78372e80c6d9e2336f82af91e416368b" [ref=f103e853] [cursor=pointer]:
+                                - /url: /explore?left=%7B%22range%22%3A%7B%22from%22%3A%22now-3h%22%2C%22to%22%3A%22now%22%7D%2C%22datasource%22%3A%22grafanacloud-traces%22%2C%22queries%22%3A%5B%7B%22query%22%3A%2278372e80c6d9e2336f82af91e416368b%22%2C%22queryType%22%3A%22traceql%22%2C%22datasource%22%3A%7B%22uid%22%3A%22grafanacloud-traces%22%7D%7D%5D%7D
+                            - gridcell "2026-08-16 21:44:55" [ref=f103e854]
+                            - gridcell "banking" [ref=f103e855]
+                          - row [ref=f103e1019]:
+                            - gridcell [ref=f103e859]:
+                              - button "Expand row" [ref=f103e860] [cursor=pointer]
+                            - gridcell [ref=f103e863]:
+                              - link "6bb56b3dc27c07b93bdb03f58d8e2e6a" [ref=f103e864] [cursor=pointer]:
+                                - /url: /explore?left=%7B%22range%22%3A%7B%22from%22%3A%22now-3h%22%2C%22to%22%3A%22now%22%7D%2C%22datasource%22%3A%22grafanacloud-traces%22%2C%22queries%22%3A%5B%7B%22query%22%3A%226bb56b3dc27c07b93bdb03f58d8e2e6a%22%2C%22queryType%22%3A%22traceql%22%2C%22datasource%22%3A%7B%22uid%22%3A%22grafanacloud-traces%22%7D%7D%5D%7D
+                            - gridcell "2026-08-16 21:44:44" [ref=f103e865]
+                            - gridcell "banking" [ref=f103e866]
+                          - row [ref=f103e1020]:
+                            - gridcell [ref=f103e870]:
+                              - button "Expand row" [ref=f103e871] [cursor=pointer]
+                            - gridcell [ref=f103e874]:
+                              - link "3c94905e5d6a5828f52cbdf053162996" [ref=f103e875] [cursor=pointer]:
+                                - /url: /explore?left=%7B%22range%22%3A%7B%22from%22%3A%22now-3h%22%2C%22to%22%3A%22now%22%7D%2C%22datasource%22%3A%22grafanacloud-traces%22%2C%22queries%22%3A%5B%7B%22query%22%3A%223c94905e5d6a5828f52cbdf053162996%22%2C%22queryType%22%3A%22traceql%22%2C%22datasource%22%3A%7B%22uid%22%3A%22grafanacloud-traces%22%7D%7D%5D%7D
+                            - gridcell "2026-08-16 21:44:39" [ref=f103e876]
+                            - gridcell "banking" [ref=f103e877]
+                          - row [ref=f103e1021]:
+                            - gridcell [ref=f103e881]:
+                              - button "Expand row" [ref=f103e882] [cursor=pointer]
+                            - gridcell [ref=f103e885]:
+                              - link "86c5b8497f5e082c092c83e1e7248522" [ref=f103e886] [cursor=pointer]:
+                                - /url: /explore?left=%7B%22range%22%3A%7B%22from%22%3A%22now-3h%22%2C%22to%22%3A%22now%22%7D%2C%22datasource%22%3A%22grafanacloud-traces%22%2C%22queries%22%3A%5B%7B%22query%22%3A%2286c5b8497f5e082c092c83e1e7248522%22%2C%22queryType%22%3A%22traceql%22%2C%22datasource%22%3A%7B%22uid%22%3A%22grafanacloud-traces%22%7D%7D%5D%7D
+                            - gridcell "2026-08-16 21:44:16" [ref=f103e887]
+                            - gridcell "frontend" [ref=f103e888]
+                          - row [ref=f103e1022]:
+                            - gridcell [ref=f103e892]:
+                              - button "Expand row" [ref=f103e893] [cursor=pointer]
+                            - gridcell [ref=f103e896]:
+                              - link "cc5c4e2dc7da343f5c1eceaf8f251629" [ref=f103e897] [cursor=pointer]:
+                                - /url: /explore?left=%7B%22range%22%3A%7B%22from%22%3A%22now-3h%22%2C%22to%22%3A%22now%22%7D%2C%22datasource%22%3A%22grafanacloud-traces%22%2C%22queries%22%3A%5B%7B%22query%22%3A%22cc5c4e2dc7da343f5c1eceaf8f251629%22%2C%22queryType%22%3A%22traceql%22%2C%22datasource%22%3A%7B%22uid%22%3A%22grafanacloud-traces%22%7D%7D%5D%7D
+                            - gridcell "2026-08-16 21:44:15" [ref=f103e898]
+                            - gridcell "frontend" [ref=f103e899]
+                          - row [ref=f103e1023]:
+                            - gridcell [ref=f103e903]:
+                              - button "Expand row" [ref=f103e904] [cursor=pointer]
+                            - gridcell [ref=f103e907]:
+                              - link "d5d3640f5ea002aa17824d3921d466d1" [ref=f103e908] [cursor=pointer]:
+                                - /url: /explore?left=%7B%22range%22%3A%7B%22from%22%3A%22now-3h%22%2C%22to%22%3A%22now%22%7D%2C%22datasource%22%3A%22grafanacloud-traces%22%2C%22queries%22%3A%5B%7B%22query%22%3A%22d5d3640f5ea002aa17824d3921d466d1%22%2C%22queryType%22%3A%22traceql%22%2C%22datasource%22%3A%7B%22uid%22%3A%22grafanacloud-traces%22%7D%7D%5D%7D
+                            - gridcell "2026-08-16 21:44:15" [ref=f103e909]
+                            - gridcell "frontend" [ref=f103e910]
+                          - row [ref=f103e1024]:
+                            - gridcell [ref=f103e914]:
+                              - button "Expand row" [ref=f103e915] [cursor=pointer]
+                            - gridcell [ref=f103e918]:
+                              - link "8546ec2b38ba22c5f9bb2dbea4cc990c" [ref=f103e919] [cursor=pointer]:
+                                - /url: /explore?left=%7B%22range%22%3A%7B%22from%22%3A%22now-3h%22%2C%22to%22%3A%22now%22%7D%2C%22datasource%22%3A%22grafanacloud-traces%22%2C%22queries%22%3A%5B%7B%22query%22%3A%228546ec2b38ba22c5f9bb2dbea4cc990c%22%2C%22queryType%22%3A%22traceql%22%2C%22datasource%22%3A%7B%22uid%22%3A%22grafanacloud-traces%22%7D%7D%5D%7D
+                            - gridcell "2026-08-16 21:43:42" [ref=f103e920]
+                            - gridcell "banking" [ref=f103e921]
+                          - row [ref=f103e1025]:
+                            - gridcell [ref=f103e925]:
+                              - button "Expand row" [ref=f103e926] [cursor=pointer]
+                            - gridcell [ref=f103e929]:
+                              - link "91dd5b6413f33a197dbf24b29559fe1b" [ref=f103e930] [cursor=pointer]:
+                                - /url: /explore?left=%7B%22range%22%3A%7B%22from%22%3A%22now-3h%22%2C%22to%22%3A%22now%22%7D%2C%22datasource%22%3A%22grafanacloud-traces%22%2C%22queries%22%3A%5B%7B%22query%22%3A%2291dd5b6413f33a197dbf24b29559fe1b%22%2C%22queryType%22%3A%22traceql%22%2C%22datasource%22%3A%7B%22uid%22%3A%22grafanacloud-traces%22%7D%7D%5D%7D
+                            - gridcell "2026-08-16 21:43:37" [ref=f103e931]
+                            - gridcell "banking" [ref=f103e932]
+                          - row [ref=f103e1026]:
+                            - gridcell [ref=f103e936]:
+                              - button "Expand row" [ref=f103e937] [cursor=pointer]
+                            - gridcell [ref=f103e940]:
+                              - link "9e6dadbf6ac2da290d6405d34a431dd5" [ref=f103e941] [cursor=pointer]:
+                                - /url: /explore?left=%7B%22range%22%3A%7B%22from%22%3A%22now-3h%22%2C%22to%22%3A%22now%22%7D%2C%22datasource%22%3A%22grafanacloud-traces%22%2C%22queries%22%3A%5B%7B%22query%22%3A%229e6dadbf6ac2da290d6405d34a431dd5%22%2C%22queryType%22%3A%22traceql%22%2C%22datasource%22%3A%7B%22uid%22%3A%22grafanacloud-traces%22%7D%7D%5D%7D
+                            - gridcell "2026-08-16 21:43:09" [ref=f103e942]
+                            - gridcell "banking" [ref=f103e943]
+                          - row [ref=f103e1027]:
+                            - gridcell [ref=f103e947]:
+                              - button "Expand row" [ref=f103e948] [cursor=pointer]
+                            - gridcell [ref=f103e951]:
+                              - link "74bdcd927e97460fb8c5943dde1b3376" [ref=f103e952] [cursor=pointer]:
+                                - /url: /explore?left=%7B%22range%22%3A%7B%22from%22%3A%22now-3h%22%2C%22to%22%3A%22now%22%7D%2C%22datasource%22%3A%22grafanacloud-traces%22%2C%22queries%22%3A%5B%7B%22query%22%3A%2274bdcd927e97460fb8c5943dde1b3376%22%2C%22queryType%22%3A%22traceql%22%2C%22datasource%22%3A%7B%22uid%22%3A%22grafanacloud-traces%22%7D%7D%5D%7D
+                            - gridcell "2026-08-16 21:42:36" [ref=f103e953]
+                            - gridcell "banking" [ref=f103e954]
+                          - row [ref=f103e1028]:
+                            - gridcell [ref=f103e958]:
+                              - button "Expand row" [ref=f103e959] [cursor=pointer]
+                            - gridcell [ref=f103e962]:
+                              - link "54443864772d6c5966bd785d905c5dad" [ref=f103e963] [cursor=pointer]:
+                                - /url: /explore?left=%7B%22range%22%3A%7B%22from%22%3A%22now-3h%22%2C%22to%22%3A%22now%22%7D%2C%22datasource%22%3A%22grafanacloud-traces%22%2C%22queries%22%3A%5B%7B%22query%22%3A%2254443864772d6c5966bd785d905c5dad%22%2C%22queryType%22%3A%22traceql%22%2C%22datasource%22%3A%7B%22uid%22%3A%22grafanacloud-traces%22%7D%7D%5D%7D
+                            - gridcell "2026-08-16 21:42:33" [ref=f103e964]
+                            - gridcell "banking" [ref=f103e965]
+                          - row [ref=f103e1029]:
+                            - gridcell [ref=f103e969]:
+                              - button "Expand row" [ref=f103e970] [cursor=pointer]
+                            - gridcell [ref=f103e973]:
+                              - link "77384840d1464b363da77937c4ae5250" [ref=f103e974] [cursor=pointer]:
+                                - /url: /explore?left=%7B%22range%22%3A%7B%22from%22%3A%22now-3h%22%2C%22to%22%3A%22now%22%7D%2C%22datasource%22%3A%22grafanacloud-traces%22%2C%22queries%22%3A%5B%7B%22query%22%3A%2277384840d1464b363da77937c4ae5250%22%2C%22queryType%22%3A%22traceql%22%2C%22datasource%22%3A%7B%22uid%22%3A%22grafanacloud-traces%22%7D%7D%5D%7D
+                            - gridcell "2026-08-16 21:42:32" [ref=f103e975]
+                            - gridcell "frontend" [ref=f103e976]
+                          - row [ref=f103e1030]:
+                            - gridcell [ref=f103e980]:
+                              - button "Expand row" [ref=f103e981] [cursor=pointer]
+                            - gridcell [ref=f103e984]:
+                              - link "e4ff227ada895f72805c117c7a431c41" [ref=f103e985] [cursor=pointer]:
+                                - /url: /explore?left=%7B%22range%22%3A%7B%22from%22%3A%22now-3h%22%2C%22to%22%3A%22now%22%7D%2C%22datasource%22%3A%22grafanacloud-traces%22%2C%22queries%22%3A%5B%7B%22query%22%3A%22e4ff227ada895f72805c117c7a431c41%22%2C%22queryType%22%3A%22traceql%22%2C%22datasource%22%3A%7B%22uid%22%3A%22grafanacloud-traces%22%7D%7D%5D%7D
+                            - gridcell "2026-08-16 21:42:31" [ref=f103e986]
+                            - gridcell "frontend" [ref=f103e987]
+            - generic [ref=f103e1032]:
+              - navigation "Explore toolbar" [ref=f103e1034]:
+                - navigation "Search links" [ref=f103e1036]:
+                  - generic [ref=f103e1037]:
+                    - button "Content outline" [expanded] [ref=f103e1039] [cursor=pointer]
+                    - generic [ref=f103e1046] [cursor=pointer]:
+                      - img "Tempo logo" [ref=f103e1048]
+                      - combobox "Select a data source" [ref=f103e1049]
+                - generic [ref=f103e1054]:
+                  - generic [ref=f103e1056]:
+                    - button "Move time range backwards" [ref=f103e1057] [cursor=pointer]
+                    - 'button "Time range selected: 2026-08-16 18:55:56 to 2026-08-16 21:55:56" [ref=f103e1060] [cursor=pointer]'
+                    - button "Unsynced times" [ref=f103e1065] [cursor=pointer]
+                    - button "Move time range forwards" [ref=f103e1068] [cursor=pointer]
+                    - button "Zoom out time range" [ref=f103e1071] [cursor=pointer]
+                  - generic [ref=f103e1075]:
+                    - button "Run query" [ref=f103e1076] [cursor=pointer]
+                    - button "Auto refresh turned off. Choose refresh time interval" [ref=f103e1079] [cursor=pointer]
+                  - generic [ref=f103e1083]:
+                    - button "Copy shortened URL" [ref=f103e1084] [cursor=pointer]
+                    - button "Open copy link options" [ref=f103e1087] [cursor=pointer]
+                  - button "Show more items" [ref=f103e1091] [cursor=pointer]
+              - generic [ref=f103e1098]:
+                - generic [ref=f103e1100]:
+                  - generic [ref=f103e1106]:
+                    - generic [ref=f103e1107]:
+                      - button "Expand query row" [ref=f103e1108] [cursor=pointer]
+                      - generic [ref=f103e1111]:
+                        - button "A" [ref=f103e1112] [cursor=pointer]
+                        - emphasis [ref=f103e1113]: (grafanacloud-devfedb13-traces)
+                      - generic [ref=f103e1114]: b4ea827a6bfd668bd461cc055d28cbfd
+                    - generic [ref=f103e1115]:
+                      - button "Saved queries" [ref=f103e1116] [cursor=pointer]
+                      - button "Show data source help" [ref=f103e1123] [cursor=pointer]
+                      - button "Create recorded query" [ref=f103e1127] [cursor=pointer]
+                      - button "Duplicate query" [ref=f103e1131] [cursor=pointer]
+                      - button "Hide response" [ref=f103e1135] [cursor=pointer]
+                      - button "Remove query" [ref=f103e1139] [cursor=pointer]
+                      - button "Drag and drop to reorder" [ref=f103e1142]:
+                        - img "Drag and drop to reorder" [ref=f103e1143]
+                  - generic [ref=f103e1145]:
+                    - button "Add query" [ref=f103e1146] [cursor=pointer]
+                    - button "Add from saved queries" [ref=f103e1150] [cursor=pointer]
+                    - button "Query history" [ref=f103e1154] [cursor=pointer]
+                    - button "Query inspector" [ref=f103e1158] [cursor=pointer]
+                - main [ref=f103e1162]:
+                  - region [ref=f103e1166]:
+                    - heading "Trace" [level=2] [ref=f103e1169]
+                    - generic [ref=f103e1170]:
+                      - generic [ref=f103e1171]:
+                        - generic [ref=f103e1172]:
+                          - generic [ref=f103e1173]:
+                            - 'heading "banking: HTTP GET" [level=1] [ref=f103e1174]'
+                            - generic [ref=f103e1175]:
+                              - generic [ref=f103e1176]: GET
+                              - generic [ref=f103e1177]: "200"
+                          - generic [ref=f103e1178]:
+                            - button "Explain in Assistant" [ref=f103e1180] [cursor=pointer]
+                            - link "Feedback" [ref=f103e1185] [cursor=pointer]:
+                              - /url: https://forms.gle/RZDEx8ScyZNguDoC8
+                            - generic [ref=f103e1189]:
+                              - button "Share" [ref=f103e1190] [cursor=pointer]
+                              - button "Open share trace options menu" [ref=f103e1194] [cursor=pointer]
+                        - generic [ref=f103e1197]:
+                          - generic [ref=f103e1198]:
+                            - generic [ref=f103e1199]: Trace ID
+                            - button "b4ea827a6bfd668bd461cc055d28cbfd" [ref=f103e1201] [cursor=pointer]
+                          - generic [ref=f103e1204]:
+                            - generic [ref=f103e1205]: Start time
+                            - generic [ref=f103e1206]:
+                              - generic [ref=f103e1207]: 2026-08-16 21:45:17.374
+                              - generic [ref=f103e1208]: (12 minutes ago)
+                          - generic [ref=f103e1209]:
+                            - generic [ref=f103e1210]: Duration
+                            - generic [ref=f103e1211]: 85ms
+                          - generic [ref=f103e1212]:
+                            - generic [ref=f103e1213]: Services
+                            - generic [ref=f103e1214]: "6"
+                          - generic [ref=f103e1215]:
+                            - generic [ref=f103e1216]: URL
+                            - generic [ref=f103e1217]: https://bank.devfedb13.field-eng-demo.grafana.net/api/transactions?accountId=acct-syn-0267-chk&pageToken=eyJwb3N0ZWRfYXRfdW5peCI6MTc4NTM3NzQ5OSwibGVkZ2VyX3Bvc2l0aW9uIjowLCJpZCI6InR4LXN5bi0wMjY3LWNoay0wMTgifQ
+                        - generic [ref=f103e1219] [cursor=pointer]:
+                          - button "Overview" [expanded] [ref=f103e1220]
+                          - generic [ref=f103e1223]: Overview
+                        - generic [ref=f103e1227]:
+                          - generic [ref=f103e1228]: 0μs
+                          - generic [ref=f103e1229]: 21.25ms
+                          - generic [ref=f103e1230]: 42.5ms
+                          - generic [ref=f103e1231]: 63.75ms
+                          - generic [ref=f103e1232]: 85ms
+                        - generic [ref=f103e1246]:
+                          - generic [ref=f103e1247]: Filters
+                          - generic [ref=f103e1251]:
+                            - combobox "Filter by attribute or text" [ref=f103e1253]
+                            - button "Clear all" [ref=f103e1256] [cursor=pointer]
+                          - generic [ref=f103e1259]:
+                            - generic [ref=f103e1260]:
+                              - button "Critical path" [ref=f103e1262] [cursor=pointer]
+                              - button "Errors" [ref=f103e1265] [cursor=pointer]
+                              - button "High latency" [ref=f103e1268] [cursor=pointer]
+                            - generic [ref=f103e1270]:
+                              - generic [ref=f103e1271]:
+                                - generic [ref=f103e1272]:
+                                  - button "Prev result button" [disabled] [ref=f103e1273]
+                                  - button "Next result button" [disabled] [ref=f103e1276]
+                                - generic [ref=f103e1279]: 76 spans
+                              - generic [ref=f103e1284]:
+                                - generic [ref=f103e1285] [cursor=pointer]: Show all spans
+                                - switch "Show all spans" [checked] [disabled] [ref=f103e1287]
+                      - generic [ref=f103e1289]:
+                        - generic [ref=f103e1290]:
+                          - generic [ref=f103e1291]:
+                            - heading "Service & Operation" [level=4] [ref=f103e1292]
+                            - generic [ref=f103e1294]:
+                              - generic [ref=f103e1295]:
+                                - button "Expand +1" [ref=f103e1296] [cursor=pointer]
+                                - button "Collapse +1" [ref=f103e1299] [cursor=pointer]
+                              - generic [ref=f103e1302]:
+                                - button "Expand all" [ref=f103e1303] [cursor=pointer]
+                                - button "Collapse all" [ref=f103e1306] [cursor=pointer]
+                          - generic [ref=f103e1309]:
+                            - generic:
+                              - generic: 0μs
+                              - generic: 21.25ms
+                              - generic: 42.5ms
+                              - generic: 63.75ms
+                              - generic: 85ms
+                        - generic [ref=f103e1313]:
+                          - generic:
+                            - generic [ref=f103e1315]:
+                              - generic [ref=f103e1317]:
+                                - switch [checked] [ref=f103e1318]
+                                - switch "banking HTTP GET (85ms)" [ref=f103e1323] [cursor=pointer]:
+                                  - text: banking HTTP GET
+                                  - generic [ref=f103e1324]: (85ms)
+                              - generic [ref=f103e1325] [cursor=pointer]: 85ms
+                            - generic [ref=f103e1332]:
+                              - generic [ref=f103e1334]:
+                                - switch [checked] [ref=f103e1335]
+                                - switch "banking-prod/frontend GET (79.76ms)" [ref=f103e1341] [cursor=pointer]:
+                                  - text: banking-prod/frontend GET
+                                  - generic [ref=f103e1342]: (79.76ms)
+                              - generic [ref=f103e1343] [cursor=pointer]: 79.76ms
+                            - generic [ref=f103e1349]:
+                              - generic [ref=f103e1351]:
+                                - switch [checked] [ref=f103e1352]
+                                - switch "GET /api/transactions?accountId=acct-syn-0267-chk&pageToken=eyJwb3N0ZWRfYXRfdW5peCI6MTc4NTM3NzQ5OSwibGVkZ2VyX3Bvc2l0aW9uIjowLCJpZCI6InR4LXN5bi0wMjY3LWNoay0wMTgifQ (79.16ms)" [ref=f103e1359] [cursor=pointer]:
+                                  - text: GET /api/transactions?accountId=acct-syn-0267-chk&pageToken=eyJwb3N0ZWRfYXRfdW5peCI6MTc4NTM3NzQ5OSwibGVkZ2VyX3Bvc2l0aW9uIjowLCJpZCI6InR4LXN5bi0wMjY3LWNoay0wMTgifQ
+                                  - generic [ref=f103e1360]: (79.16ms)
+                              - generic [ref=f103e1361] [cursor=pointer]: 79.16ms
+                            - generic [ref=f103e1368]:
+                              - generic [ref=f103e1370]:
+                                - switch [checked] [ref=f103e1371]
+                                - switch "executing api route (pages) /api/transactions (76.9ms)" [ref=f103e1379] [cursor=pointer]:
+                                  - text: executing api route (pages) /api/transactions
+                                  - generic [ref=f103e1380]: (76.9ms)
+                              - generic [ref=f103e1381] [cursor=pointer]: 76.9ms
+                            - generic [ref=f103e1388]:
+                              - generic [ref=f103e1390]:
+                                - switch [checked] [ref=f103e1391]
+                                - switch "grpc.banking.v1.AuthService/ValidateSession (1.3ms)" [ref=f103e1400] [cursor=pointer]:
+                                  - text: grpc.banking.v1.AuthService/ValidateSession
+                                  - generic [ref=f103e1401]: (1.3ms)
+                              - generic [ref=f103e1402] [cursor=pointer]: 1.3ms
+                            - generic [ref=f103e1408]:
+                              - generic [ref=f103e1410]:
+                                - generic [ref=f103e1411]: "-"
+                                - switch "banking-prod/auth banking.v1.AuthService/ValidateSession (83.03μs)" [ref=f103e1419] [cursor=pointer]:
+                                  - text: banking-prod/auth banking.v1.AuthService/ValidateSession
+                                  - generic [ref=f103e1420]: (83.03μs)
+                              - generic [ref=f103e1421] [cursor=pointer]: 83.03μs
+                            - generic [ref=f103e1426]:
+                              - generic [ref=f103e1428]:
+                                - switch [checked] [ref=f103e1429]
+                                - switch "banking-prod/frontend grpc.banking.v1.AccountService/GetAccount (3.54ms)" [ref=f103e1438] [cursor=pointer]:
+                                  - text: banking-prod/frontend grpc.banking.v1.AccountService/GetAccount
+                                  - generic [ref=f103e1439]: (3.54ms)
+                              - generic [ref=f103e1440] [cursor=pointer]: 3.54ms
+                            - generic [ref=f103e1445]:
+                              - generic [ref=f103e1447]:
+                                - switch [checked] [ref=f103e1448]
+                                - switch "banking-prod/account banking.v1.AccountService/GetAccount (2.61ms)" [ref=f103e1458] [cursor=pointer]:
+                                  - text: banking-prod/account banking.v1.AccountService/GetAccount
+                                  - generic [ref=f103e1459]: (2.61ms)
+                              - generic [ref=f103e1460] [cursor=pointer]: 2.61ms
+                            - generic [ref=f103e1465]:
+                              - generic [ref=f103e1467]:
+                                - generic [ref=f103e1468]: "-"
+                                - switch "db.Query (1.03ms)" [ref=f103e1477] [cursor=pointer]:
+                                  - text: db.Query
+                                  - generic [ref=f103e1478]: (1.03ms)
+                              - generic [ref=f103e1479] [cursor=pointer]: 1.03ms
+                            - generic [ref=f103e1484]:
+                              - generic [ref=f103e1486]:
+                                - switch [checked] [ref=f103e1487]
+                                - switch "banking.v1.BalanceService/GetBalance (1.41ms)" [ref=f103e1498] [cursor=pointer]:
+                                  - text: banking.v1.BalanceService/GetBalance
+                                  - generic [ref=f103e1499]: (1.41ms)
+                              - generic [ref=f103e1500] [cursor=pointer]: 1.41ms
+                            - generic [ref=f103e1505]:
+                              - generic [ref=f103e1507]:
+                                - switch [checked] [ref=f103e1508]
+                                - switch "banking-prod/balance banking.v1.BalanceService/GetBalance (1.13ms)" [ref=f103e1520] [cursor=pointer]:
+                                  - text: banking-prod/balance banking.v1.BalanceService/GetBalance
+                                  - generic [ref=f103e1521]: (1.13ms)
+                              - generic [ref=f103e1522] [cursor=pointer]: 1.13ms
+                            - generic [ref=f103e1527]:
+                              - generic [ref=f103e1529]:
+                                - generic [ref=f103e1530]: "-"
+                                - switch "db.Query (24.16μs)" [ref=f103e1541] [cursor=pointer]:
+                                  - text: db.Query
+                                  - generic [ref=f103e1542]: (24.16μs)
+                              - generic [ref=f103e1543] [cursor=pointer]: 24.16μs
+                            - generic [ref=f103e1548]:
+                              - generic [ref=f103e1550]:
+                                - generic [ref=f103e1551]: "-"
+                                - switch "db.Prepare (511.43μs)" [ref=f103e1562] [cursor=pointer]:
+                                  - text: db.Prepare
+                                  - generic [ref=f103e1563]: (511.43μs)
+                              - generic [ref=f103e1564] [cursor=pointer]: 511.43μs
+                            - generic [ref=f103e1569]:
+                              - generic [ref=f103e1571]:
+                                - generic [ref=f103e1572]: "-"
+                                - switch "stmt.Query (442.48μs)" [ref=f103e1583] [cursor=pointer]:
+                                  - text: stmt.Query
+                                  - generic [ref=f103e1584]: (442.48μs)
+                              - generic [ref=f103e1585] [cursor=pointer]: 442.48μs
+                            - generic [ref=f103e1590]:
+                              - generic [ref=f103e1592]:
+                                - switch [checked] [ref=f103e1593]
+                                - switch "banking-prod/frontend grpc.banking.v1.TransactionService/ListTransactions (71.59ms)" [ref=f103e1602] [cursor=pointer]:
+                                  - text: banking-prod/frontend grpc.banking.v1.TransactionService/ListTransactions
+                                  - generic [ref=f103e1603]: (71.59ms)
+                              - generic [ref=f103e1604] [cursor=pointer]: 71.59ms
+                            - generic [ref=f103e1611]:
+                              - generic [ref=f103e1613]:
+                                - switch [checked] [ref=f103e1614]
+                                - switch "banking-prod/transaction banking.v1.TransactionService/ListTransactions (69.54ms)" [ref=f103e1624] [cursor=pointer]:
+                                  - text: banking-prod/transaction banking.v1.TransactionService/ListTransactions
+                                  - generic [ref=f103e1625]: (69.54ms)
+                              - generic [ref=f103e1626] [cursor=pointer]: 69.54ms
+                            - generic [ref=f103e1693]:
+                              - generic [ref=f103e1695]:
+                                - generic [ref=f103e1696]: "-"
+                                - switch "db.Query (18.43μs)" [ref=f103e1705] [cursor=pointer]:
+                                  - text: db.Query
+                                  - generic [ref=f103e1706]: (18.43μs)
+                              - generic [ref=f103e1707] [cursor=pointer]: 18.43μs
+                            - generic [ref=f103e1713]:
+                              - generic [ref=f103e1715]:
+                                - generic [ref=f103e1716]: "-"
+                                - switch "db.Prepare (1.43ms)" [ref=f103e1725] [cursor=pointer]:
+                                  - text: db.Prepare
+                                  - generic [ref=f103e1726]: (1.43ms)
+                              - generic [ref=f103e1727] [cursor=pointer]: 1.43ms
+                            - generic [ref=f103e1733]:
+                              - generic [ref=f103e1735]:
+                                - generic [ref=f103e1736]: "-"
+                                - switch "stmt.Query (1.61ms)" [ref=f103e1745] [cursor=pointer]:
+                                  - text: stmt.Query
+                                  - generic [ref=f103e1746]: (1.61ms)
+                              - generic [ref=f103e1747] [cursor=pointer]: 1.61ms
+                            - generic [ref=f103e1753]:
+                              - generic [ref=f103e1755]:
+                                - generic [ref=f103e1756]: "-"
+                                - switch "db.Query (11.78μs)" [ref=f103e1765] [cursor=pointer]:
+                                  - text: db.Query
+                                  - generic [ref=f103e1766]: (11.78μs)
+                              - generic [ref=f103e1767] [cursor=pointer]: 11.78μs
+                            - generic [ref=f103e1773]:
+                              - generic [ref=f103e1775]:
+                                - generic [ref=f103e1776]: "-"
+                                - switch "db.Prepare (1.19ms)" [ref=f103e1785] [cursor=pointer]:
+                                  - text: db.Prepare
+                                  - generic [ref=f103e1786]: (1.19ms)
+                              - generic [ref=f103e1787] [cursor=pointer]: 1.19ms
+                            - generic [ref=f103e1793]:
+                              - generic [ref=f103e1795]:
+                                - generic [ref=f103e1796]: "-"
+                                - switch "stmt.Query (2.19ms)" [ref=f103e1805] [cursor=pointer]:
+                                  - text: stmt.Query
+                                  - generic [ref=f103e1806]: (2.19ms)
+                              - generic [ref=f103e1807] [cursor=pointer]: 2.19ms
+                            - generic [ref=f103e1813]:
+                              - generic [ref=f103e1815]:
+                                - generic [ref=f103e1816]: "-"
+                                - switch "db.Query (10.7μs)" [ref=f103e1825] [cursor=pointer]:
+                                  - text: db.Query
+                                  - generic [ref=f103e1826]: (10.7μs)
+                              - generic [ref=f103e1827] [cursor=pointer]: 10.7μs
+                            - generic [ref=f103e1833]:
+                              - generic [ref=f103e1835]:
+                                - generic [ref=f103e1836]: "-"
+                                - switch "db.Prepare (1.11ms)" [ref=f103e1845] [cursor=pointer]:
+                                  - text: db.Prepare
+                                  - generic [ref=f103e1846]: (1.11ms)
+                              - generic [ref=f103e1847] [cursor=pointer]: 1.11ms
+                            - generic [ref=f103e1853]:
+                              - generic [ref=f103e1855]:
+                                - generic [ref=f103e1856]: "-"
+                                - switch "stmt.Query (2.09ms)" [ref=f103e1865] [cursor=pointer]:
+                                  - text: stmt.Query
+                                  - generic [ref=f103e1866]: (2.09ms)
+                              - generic [ref=f103e1867] [cursor=pointer]: 2.09ms
+                            - generic [ref=f103e1873]:
+                              - generic [ref=f103e1875]:
+                                - generic [ref=f103e1876]: "-"
+                                - switch "db.Query (7.72μs)" [ref=f103e1885] [cursor=pointer]:
+                                  - text: db.Query
+                                  - generic [ref=f103e1886]: (7.72μs)
+                              - generic [ref=f103e1887] [cursor=pointer]: 7.72μs
+                            - generic [ref=f103e1893]:
+                              - generic [ref=f103e1895]:
+                                - generic [ref=f103e1896]: "-"
+                                - switch "db.Prepare (1.11ms)" [ref=f103e1905] [cursor=pointer]:
+                                  - text: db.Prepare
+                                  - generic [ref=f103e1906]: (1.11ms)
+                              - generic [ref=f103e1907] [cursor=pointer]: 1.11ms
+                            - generic [ref=f103e1913]:
+                              - generic [ref=f103e1915]:
+                                - generic [ref=f103e1916]: "-"
+                                - switch "stmt.Query (2.1ms)" [ref=f103e1925] [cursor=pointer]:
+                                  - text: stmt.Query
+                                  - generic [ref=f103e1926]: (2.1ms)
+                              - generic [ref=f103e1927] [cursor=pointer]: 2.1ms
+                            - generic [ref=f103e1933]:
+                              - generic [ref=f103e1935]:
+                                - generic [ref=f103e1936]: "-"
+                                - switch "db.Query (12.63μs)" [ref=f103e1945] [cursor=pointer]:
+                                  - text: db.Query
+                                  - generic [ref=f103e1946]: (12.63μs)
+                              - generic [ref=f103e1947] [cursor=pointer]: 12.63μs
+                            - generic [ref=f103e1953]:
+                              - generic [ref=f103e1955]:
+                                - generic [ref=f103e1956]: "-"
+                                - switch "db.Prepare (1.11ms)" [ref=f103e1965] [cursor=pointer]:
+                                  - text: db.Prepare
+                                  - generic [ref=f103e1966]: (1.11ms)
+                              - generic [ref=f103e1967] [cursor=pointer]: 1.11ms
+                            - generic [ref=f103e1973]:
+                              - generic [ref=f103e1975]:
+                                - generic [ref=f103e1976]: "-"
+                                - switch "stmt.Query (2.14ms)" [ref=f103e1985] [cursor=pointer]:
+                                  - text: stmt.Query
+                                  - generic [ref=f103e1986]: (2.14ms)
+                              - generic [ref=f103e1987] [cursor=pointer]: 2.14ms
+                            - generic [ref=f103e1993]:
+                              - generic [ref=f103e1995]:
+                                - generic [ref=f103e1996]: "-"
+                                - switch "db.Query (11.51μs)" [ref=f103e2005] [cursor=pointer]:
+                                  - text: db.Query
+                                  - generic [ref=f103e2006]: (11.51μs)
+                              - generic [ref=f103e2007] [cursor=pointer]: 11.51μs
+                            - generic [ref=f103e2013]:
+                              - generic [ref=f103e2015]:
+                                - generic [ref=f103e2016]: "-"
+                                - switch "db.Prepare (1.1ms)" [ref=f103e2025] [cursor=pointer]:
+                                  - text: db.Prepare
+                                  - generic [ref=f103e2026]: (1.1ms)
+                              - generic [ref=f103e2027] [cursor=pointer]: 1.1ms
+                            - generic [ref=f103e2033]:
+                              - generic [ref=f103e2035]:
+                                - generic [ref=f103e2036]: "-"
+                                - switch "stmt.Query (2.06ms)" [ref=f103e2045] [cursor=pointer]:
+                                  - text: stmt.Query
+                                  - generic [ref=f103e2046]: (2.06ms)
+                              - generic [ref=f103e2047] [cursor=pointer]: 2.06ms
+                            - generic [ref=f103e2053]:
+                              - generic [ref=f103e2055]:
+                                - generic [ref=f103e2056]: "-"
+                                - switch "db.Query (5.91μs)" [ref=f103e2065] [cursor=pointer]:
+                                  - text: db.Query
+                                  - generic [ref=f103e2066]: (5.91μs)
+                              - generic [ref=f103e2067] [cursor=pointer]: 5.91μs
+                            - generic [ref=f103e2073]:
+                              - generic [ref=f103e2075]:
+                                - generic [ref=f103e2076]: "-"
+                                - switch "db.Prepare (1.1ms)" [ref=f103e2085] [cursor=pointer]:
+                                  - text: db.Prepare
+                                  - generic [ref=f103e2086]: (1.1ms)
+                              - generic [ref=f103e2087] [cursor=pointer]: 1.1ms
+                            - generic [ref=f103e2093]:
+                              - generic [ref=f103e2095]:
+                                - generic [ref=f103e2096]: "-"
+                                - switch "stmt.Query (2.08ms)" [ref=f103e2105] [cursor=pointer]:
+                                  - text: stmt.Query
+                                  - generic [ref=f103e2106]: (2.08ms)
+                              - generic [ref=f103e2107] [cursor=pointer]: 2.08ms
+                            - generic [ref=f103e2113]:
+                              - generic [ref=f103e2115]:
+                                - generic [ref=f103e2116]: "-"
+                                - switch "db.Query (7.05μs)" [ref=f103e2125] [cursor=pointer]:
+                                  - text: db.Query
+                                  - generic [ref=f103e2126]: (7.05μs)
+                              - generic [ref=f103e2127] [cursor=pointer]: 7.05μs
+                            - generic [ref=f103e2133]:
+                              - generic [ref=f103e2135]:
+                                - generic [ref=f103e2136]: "-"
+                                - switch "db.Prepare (1.15ms)" [ref=f103e2145] [cursor=pointer]:
+                                  - text: db.Prepare
+                                  - generic [ref=f103e2146]: (1.15ms)
+                              - generic [ref=f103e2147] [cursor=pointer]: 1.15ms
+                            - generic [ref=f103e2153]:
+                              - generic [ref=f103e2155]:
+                                - generic [ref=f103e2156]: "-"
+                                - switch "stmt.Query (2.12ms)" [ref=f103e2165] [cursor=pointer]:
+                                  - text: stmt.Query
+                                  - generic [ref=f103e2166]: (2.12ms)
+                              - generic [ref=f103e2167] [cursor=pointer]: 2.12ms
+                            - generic [ref=f103e2173]:
+                              - generic [ref=f103e2175]:
+                                - generic [ref=f103e2176]: "-"
+                                - switch "db.Query (8.59μs)" [ref=f103e2185] [cursor=pointer]:
+                                  - text: db.Query
+                                  - generic [ref=f103e2186]: (8.59μs)
+                              - generic [ref=f103e2187] [cursor=pointer]: 8.59μs
+                            - generic [ref=f103e2193]:
+                              - generic [ref=f103e2195]:
+                                - generic [ref=f103e2196]: "-"
+                                - switch "db.Prepare (1.1ms)" [ref=f103e2205] [cursor=pointer]:
+                                  - text: db.Prepare
+                                  - generic [ref=f103e2206]: (1.1ms)
+                              - generic [ref=f103e2207] [cursor=pointer]: 1.1ms
+                            - generic [ref=f103e2213]:
+                              - generic [ref=f103e2215]:
+                                - generic [ref=f103e2216]: "-"
+                                - switch "stmt.Query (2.07ms)" [ref=f103e2225] [cursor=pointer]:
+                                  - text: stmt.Query
+                                  - generic [ref=f103e2226]: (2.07ms)
+                              - generic [ref=f103e2227] [cursor=pointer]: 2.07ms
+                            - generic [ref=f103e2233]:
+                              - generic [ref=f103e2235]:
+                                - generic [ref=f103e2236]: "-"
+                                - switch "db.Query (7.27μs)" [ref=f103e2245] [cursor=pointer]:
+                                  - text: db.Query
+                                  - generic [ref=f103e2246]: (7.27μs)
+                              - generic [ref=f103e2247] [cursor=pointer]: 7.27μs
+                            - generic [ref=f103e2253]:
+                              - generic [ref=f103e2255]:
+                                - generic [ref=f103e2256]: "-"
+                                - switch "db.Prepare (1.09ms)" [ref=f103e2265] [cursor=pointer]:
+                                  - text: db.Prepare
+                                  - generic [ref=f103e2266]: (1.09ms)
+                              - generic [ref=f103e2267] [cursor=pointer]: 1.09ms
+                            - generic [ref=f103e2273]:
+                              - generic [ref=f103e2275]:
+                                - generic [ref=f103e2276]: "-"
+                                - switch "stmt.Query (2.12ms)" [ref=f103e2285] [cursor=pointer]:
+                                  - text: stmt.Query
+                                  - generic [ref=f103e2286]: (2.12ms)
+                              - generic [ref=f103e2287] [cursor=pointer]: 2.12ms
+                            - generic [ref=f103e2293]:
+                              - generic [ref=f103e2295]:
+                                - generic [ref=f103e2296]: "-"
+                                - switch "db.Query (13.73μs)" [ref=f103e2305] [cursor=pointer]:
+                                  - text: db.Query
+                                  - generic [ref=f103e2306]: (13.73μs)
+                              - generic [ref=f103e2307] [cursor=pointer]: 13.73μs
+                            - generic [ref=f103e2313]:
+                              - generic [ref=f103e2315]:
+                                - generic [ref=f103e2316]: "-"
+                                - switch "db.Prepare (1.12ms)" [ref=f103e2325] [cursor=pointer]:
+                                  - text: db.Prepare
+                                  - generic [ref=f103e2326]: (1.12ms)
+                              - generic [ref=f103e2327] [cursor=pointer]: 1.12ms
+                            - generic [ref=f103e2333]:
+                              - generic [ref=f103e2335]:
+                                - generic [ref=f103e2336]: "-"
+                                - switch "stmt.Query (2.13ms)" [ref=f103e2345] [cursor=pointer]:
+                                  - text: stmt.Query
+                                  - generic [ref=f103e2346]: (2.13ms)
+                              - generic [ref=f103e2347] [cursor=pointer]: 2.13ms
+                            - generic [ref=f103e2353]:
+                              - generic [ref=f103e2355]:
+                                - generic [ref=f103e2356]: "-"
+                                - switch "db.Query (14.72μs)" [ref=f103e2365] [cursor=pointer]:
+                                  - text: db.Query
+                                  - generic [ref=f103e2366]: (14.72μs)
+                              - generic [ref=f103e2367] [cursor=pointer]: 14.72μs
+                            - generic [ref=f103e2373]:
+                              - generic [ref=f103e2375]:
+                                - generic [ref=f103e2376]: "-"
+                                - switch "db.Prepare (1.1ms)" [ref=f103e2385] [cursor=pointer]:
+                                  - text: db.Prepare
+                                  - generic [ref=f103e2386]: (1.1ms)
+                              - generic [ref=f103e2387] [cursor=pointer]: 1.1ms
+                            - generic [ref=f103e2393]:
+                              - generic [ref=f103e2395]:
+                                - generic [ref=f103e2396]: "-"
+                                - switch "stmt.Query (2.09ms)" [ref=f103e2405] [cursor=pointer]:
+                                  - text: stmt.Query
+                                  - generic [ref=f103e2406]: (2.09ms)
+                              - generic [ref=f103e2407] [cursor=pointer]: 2.09ms
+                            - generic [ref=f103e2413]:
+                              - generic [ref=f103e2415]:
+                                - generic [ref=f103e2416]: "-"
+                                - switch "db.Query (6.83μs)" [ref=f103e2425] [cursor=pointer]:
+                                  - text: db.Query
+                                  - generic [ref=f103e2426]: (6.83μs)
+                              - generic [ref=f103e2427] [cursor=pointer]: 6.83μs
+                            - generic [ref=f103e2433]:
+                              - generic [ref=f103e2435]:
+                                - generic [ref=f103e2436]: "-"
+                                - switch "db.Prepare (1.1ms)" [ref=f103e2445] [cursor=pointer]:
+                                  - text: db.Prepare
+                                  - generic [ref=f103e2446]: (1.1ms)
+                              - generic [ref=f103e2447] [cursor=pointer]: 1.1ms
+                            - generic [ref=f103e2453]:
+                              - generic [ref=f103e2455]:
+                                - generic [ref=f103e2456]: "-"
+                                - switch "stmt.Query (2.09ms)" [ref=f103e2465] [cursor=pointer]:
+                                  - text: stmt.Query
+                                  - generic [ref=f103e2466]: (2.09ms)
+                              - generic [ref=f103e2467] [cursor=pointer]: 2.09ms
+                            - generic [ref=f103e2473]:
+                              - generic [ref=f103e2475]:
+                                - generic [ref=f103e2476]: "-"
+                                - switch "db.Query (8.55μs)" [ref=f103e2485] [cursor=pointer]:
+                                  - text: db.Query
+                                  - generic [ref=f103e2486]: (8.55μs)
+                              - generic [ref=f103e2487] [cursor=pointer]: 8.55μs
+                            - generic [ref=f103e2493]:
+                              - generic [ref=f103e2495]:
+                                - generic [ref=f103e2496]: "-"
+                                - switch "db.Prepare (1.18ms)" [ref=f103e2505] [cursor=pointer]:
+                                  - text: db.Prepare
+                                  - generic [ref=f103e2506]: (1.18ms)
+                              - generic [ref=f103e2507] [cursor=pointer]: 1.18ms
+                            - generic [ref=f103e2513]:
+                              - generic [ref=f103e2515]:
+                                - generic [ref=f103e2516]: "-"
+                                - switch "stmt.Query (2.11ms)" [ref=f103e2525] [cursor=pointer]:
+                                  - text: stmt.Query
+                                  - generic [ref=f103e2526]: (2.11ms)
+                              - generic [ref=f103e2527] [cursor=pointer]: 2.11ms
+                            - generic [ref=f103e2533]:
+                              - generic [ref=f103e2535]:
+                                - generic [ref=f103e2536]: "-"
+                                - switch "db.Query (8.79μs)" [ref=f103e2545] [cursor=pointer]:
+                                  - text: db.Query
+                                  - generic [ref=f103e2546]: (8.79μs)
+                              - generic [ref=f103e2547] [cursor=pointer]: 8.79μs
+                            - generic [ref=f103e2553]:
+                              - generic [ref=f103e2555]:
+                                - generic [ref=f103e2556]: "-"
+                                - switch "db.Prepare (1.18ms)" [ref=f103e2565] [cursor=pointer]:
+                                  - text: db.Prepare
+                                  - generic [ref=f103e2566]: (1.18ms)
+                              - generic [ref=f103e2567] [cursor=pointer]: 1.18ms
+                            - generic [ref=f103e2573]:
+                              - generic [ref=f103e2575]:
+                                - generic [ref=f103e2576]: "-"
+                                - switch "stmt.Query (2.15ms)" [ref=f103e2585] [cursor=pointer]:
+                                  - text: stmt.Query
+                                  - generic [ref=f103e2586]: (2.15ms)
+                              - generic [ref=f103e2587] [cursor=pointer]: 2.15ms
+                            - generic [ref=f103e2593]:
+                              - generic [ref=f103e2595]:
+                                - generic [ref=f103e2596]: "-"
+                                - switch "db.Query (9.95μs)" [ref=f103e2605] [cursor=pointer]:
+                                  - text: db.Query
+                                  - generic [ref=f103e2606]: (9.95μs)
+                              - generic [ref=f103e2607] [cursor=pointer]: 9.95μs
+                            - generic [ref=f103e2613]:
+                              - generic [ref=f103e2615]:
+                                - generic [ref=f103e2616]: "-"
+                                - switch "db.Prepare (1.22ms)" [ref=f103e2625] [cursor=pointer]:
+                                  - text: db.Prepare
+                                  - generic [ref=f103e2626]: (1.22ms)
+                              - generic [ref=f103e2627] [cursor=pointer]: 1.22ms
+                            - generic [ref=f103e2633]:
+                              - generic [ref=f103e2635]:
+                                - generic [ref=f103e2636]: "-"
+                                - switch "stmt.Query (2.48ms)" [ref=f103e2645] [cursor=pointer]:
+                                  - text: stmt.Query
+                                  - generic [ref=f103e2646]: (2.48ms)
+                              - generic [ref=f103e2647] [cursor=pointer]: 2.48ms
+                            - generic [ref=f103e2653]:
+                              - generic [ref=f103e2655]:
+                                - generic [ref=f103e2656]: "-"
+                                - switch "db.Query (8.97μs)" [ref=f103e2665] [cursor=pointer]:
+                                  - text: db.Query
+                                  - generic [ref=f103e2666]: (8.97μs)
+                              - generic [ref=f103e2667] [cursor=pointer]: 8.97μs
+                            - generic [ref=f103e2673]:
+                              - generic [ref=f103e2675]:
+                                - generic [ref=f103e2676]: "-"
+                                - switch "db.Prepare (1.19ms)" [ref=f103e2685] [cursor=pointer]:
+                                  - text: db.Prepare
+                                  - generic [ref=f103e2686]: (1.19ms)
+                              - generic [ref=f103e2687] [cursor=pointer]: 1.19ms
+                            - generic [ref=f103e2693]:
+                              - generic [ref=f103e2695]:
+                                - generic [ref=f103e2696]: "-"
+                                - switch "stmt.Query (2.12ms)" [ref=f103e2705] [cursor=pointer]:
+                                  - text: stmt.Query
+                                  - generic [ref=f103e2706]: (2.12ms)
+                              - generic [ref=f103e2707] [cursor=pointer]: 2.12ms
+                            - generic [ref=f103e2713]:
+                              - generic [ref=f103e2715]:
+                                - generic [ref=f103e2716]: "-"
+                                - switch "db.Query (8.15μs)" [ref=f103e2725] [cursor=pointer]:
+                                  - text: db.Query
+                                  - generic [ref=f103e2726]: (8.15μs)
+                              - generic [ref=f103e2727] [cursor=pointer]: 8.15μs
+                            - generic [ref=f103e2733]:
+                              - generic [ref=f103e2735]:
+                                - generic [ref=f103e2736]: "-"
+                                - switch "db.Prepare (1.2ms)" [ref=f103e2745] [cursor=pointer]:
+                                  - text: db.Prepare
+                                  - generic [ref=f103e2746]: (1.2ms)
+                              - generic [ref=f103e2747] [cursor=pointer]: 1.2ms
+                            - generic [ref=f103e2753]:
+                              - generic [ref=f103e2755]:
+                                - generic [ref=f103e2756]: "-"
+                                - switch "stmt.Query (2.22ms)" [ref=f103e2765] [cursor=pointer]:
+                                  - text: stmt.Query
+                                  - generic [ref=f103e2766]: (2.22ms)
+                              - generic [ref=f103e2767] [cursor=pointer]: 2.22ms
+                            - generic [ref=f103e2773]:
+                              - generic [ref=f103e2775]:
+                                - generic [ref=f103e2776]: "-"
+                                - switch "db.Query (7.16μs)" [ref=f103e2785] [cursor=pointer]:
+                                  - text: db.Query
+                                  - generic [ref=f103e2786]: (7.16μs)
+                              - generic [ref=f103e2787] [cursor=pointer]: 7.16μs
+                            - generic [ref=f103e2793]:
+                              - generic [ref=f103e2795]:
+                                - generic [ref=f103e2796]: "-"
+                                - switch "db.Prepare (1.17ms)" [ref=f103e2805] [cursor=pointer]:
+                                  - text: db.Prepare
+                                  - generic [ref=f103e2806]: (1.17ms)
+                              - generic [ref=f103e2807] [cursor=pointer]: 1.17ms
+                            - generic [ref=f103e2813]:
+                              - generic [ref=f103e2815]:
+                                - generic [ref=f103e2816]: "-"
+                                - switch "stmt.Query (2.27ms)" [ref=f103e2825] [cursor=pointer]:
+                                  - text: stmt.Query
+                                  - generic [ref=f103e2826]: (2.27ms)
+                              - generic [ref=f103e2827] [cursor=pointer]: 2.27ms
+                            - generic [ref=f103e2833]:
+                              - generic [ref=f103e2835]:
+                                - generic [ref=f103e2836]: "-"
+                                - switch "db.Query (8.06μs)" [ref=f103e2845] [cursor=pointer]:
+                                  - text: db.Query
+                                  - generic [ref=f103e2846]: (8.06μs)
+                              - generic [ref=f103e2847] [cursor=pointer]: 8.06μs
+                            - generic [ref=f103e2853]:
+                              - generic [ref=f103e2855]:
+                                - generic [ref=f103e2856]: "-"
+                                - switch "db.Prepare (1.18ms)" [ref=f103e2865] [cursor=pointer]:
+                                  - text: db.Prepare
+                                  - generic [ref=f103e2866]: (1.18ms)
+                              - generic [ref=f103e2867] [cursor=pointer]: 1.18ms
+                            - generic [ref=f103e2873]:
+                              - generic [ref=f103e2875]:
+                                - generic [ref=f103e2876]: "-"
+                                - switch "stmt.Query (2.69ms)" [ref=f103e2885] [cursor=pointer]:
+                                  - text: stmt.Query
+                                  - generic [ref=f103e2886]: (2.69ms)
+                              - generic [ref=f103e2887] [cursor=pointer]: 2.69ms
+    - log [ref=f103e990]
+  - generic [ref=f103e992]:
+    - alert
+    - alert
+    - complementary
+    - complementary

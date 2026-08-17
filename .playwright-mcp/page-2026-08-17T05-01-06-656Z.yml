@@ -1,0 +1,581 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e9]:
+    - generic [ref=e10]:
+      - link "Skip to main content" [ref=e11] [cursor=pointer]:
+        - /url: "#pageContent"
+      - generic [ref=e13]:
+        - generic [ref=e14]:
+          - generic [ref=e15]:
+            - link [ref=e16] [cursor=pointer]:
+              - /url: /
+              - img "Grafana" [ref=e17]
+            - link "Grafana" [ref=e18] [cursor=pointer]:
+              - /url: /
+          - button "Close menu" [ref=e19] [cursor=pointer]
+        - navigation "Navigation" [ref=e22]:
+          - list "Navigation" [ref=e27]:
+            - listitem [ref=e28]:
+              - generic [ref=e29]:
+                - link [ref=e32] [cursor=pointer]:
+                  - /url: /bookmarks
+                  - paragraph [ref=e37]: Bookmarks
+                - 'button "Expand section: Bookmarks" [ref=e39] [cursor=pointer]'
+            - listitem [ref=e42]:
+              - generic [ref=e43]:
+                - link [ref=e46] [cursor=pointer]:
+                  - /url: /dashboards?starred
+                  - paragraph [ref=e51]: Starred
+                - 'button "Expand section: Starred" [ref=e54] [cursor=pointer]'
+            - listitem [ref=e57]:
+              - generic [ref=e58]:
+                - link [ref=e61] [cursor=pointer]:
+                  - /url: /dashboards
+                  - paragraph [ref=e66]: Dashboards
+                - 'button "Expand section: Dashboards" [ref=e69] [cursor=pointer]'
+            - listitem [ref=e72]:
+              - link [ref=e76] [cursor=pointer]:
+                - /url: /explore
+                - paragraph [ref=e81]: Explore
+            - listitem [ref=e83]:
+              - generic [ref=e84]:
+                - link [ref=e87] [cursor=pointer]:
+                  - /url: /drilldown
+                  - paragraph [ref=e95]: Drilldown
+                - 'button "Collapse section: Drilldown" [expanded] [ref=e98] [cursor=pointer]'
+              - list [ref=e101]:
+                - listitem [ref=e102]:
+                  - link [ref=e106] [cursor=pointer]:
+                    - /url: /a/grafana-metricsdrilldown-app/drilldown
+                    - paragraph [ref=e109]: Metrics
+                - listitem [ref=e111]:
+                  - link [ref=e115] [cursor=pointer]:
+                    - /url: /a/grafana-lokiexplore-app/explore
+                    - paragraph [ref=e118]: Logs
+                - listitem [ref=e120]:
+                  - link [ref=e124] [cursor=pointer]:
+                    - /url: /a/grafana-exploretraces-app/
+                    - paragraph [ref=e127]: Traces
+                - listitem [ref=e129]:
+                  - link [ref=e133] [cursor=pointer]:
+                    - /url: /a/grafana-pyroscope-app/explore
+                    - paragraph [ref=e136]: Profiles
+            - listitem [ref=e138]:
+              - generic [ref=e139]:
+                - link [ref=e142] [cursor=pointer]:
+                  - /url: /a/grafana-assistant-app
+                  - paragraph [ref=e148]: Assistant
+                - 'button "Expand section: Assistant" [ref=e151] [cursor=pointer]'
+            - listitem [ref=e154]:
+              - generic [ref=e155]:
+                - link [ref=e158] [cursor=pointer]:
+                  - /url: /alerts-and-incidents
+                  - paragraph [ref=e163]: Alerts & IRM
+                - 'button "Expand section: Alerts &amp; IRM" [ref=e166] [cursor=pointer]'
+            - listitem [ref=e169]:
+              - generic [ref=e170]:
+                - link [ref=e173] [cursor=pointer]:
+                  - /url: /a/grafana-ml-app/home
+                  - paragraph [ref=e180]: AI & machine learning
+                - 'button "Expand section: AI &amp; machine learning" [ref=e183] [cursor=pointer]'
+            - listitem [ref=e186]:
+              - generic [ref=e187]:
+                - link [ref=e190] [cursor=pointer]:
+                  - /url: adaptive-telemetry
+                  - generic [ref=e192]:
+                    - paragraph [ref=e210]: Adaptive Telemetry
+                    - generic [ref=e211]: New!
+                - 'button "Expand section: Adaptive Telemetry" [ref=e217] [cursor=pointer]'
+            - listitem [ref=e220]:
+              - generic [ref=e221]:
+                - link [ref=e224] [cursor=pointer]:
+                  - /url: /a/grafana-cmab-app/
+                  - generic [ref=e226]:
+                    - paragraph [ref=e229]: Cost Management and Billing
+                    - generic [ref=e230]: New!
+                - 'button "Expand section: Cost Management and Billing" [ref=e236] [cursor=pointer]'
+            - listitem [ref=e239]:
+              - generic [ref=e240]:
+                - link [ref=e243] [cursor=pointer]:
+                  - /url: /testing-and-synthetics
+                  - paragraph [ref=e250]: Testing & synthetics
+                - 'button "Expand section: Testing &amp; synthetics" [ref=e253] [cursor=pointer]'
+            - listitem [ref=e256]:
+              - generic [ref=e257]:
+                - link [ref=e260] [cursor=pointer]:
+                  - /url: /observability
+                  - paragraph [ref=e265]: Observability
+                - 'button "Collapse section: Observability" [expanded] [ref=e268] [cursor=pointer]'
+              - list [ref=e271]:
+                - listitem [ref=e272]:
+                  - link [ref=e276] [cursor=pointer]:
+                    - /url: /a/grafana-asserts-app/entities
+                    - paragraph [ref=e279]: Entity graph
+                - listitem [ref=e281]:
+                  - link [ref=e285] [cursor=pointer]:
+                    - /url: /a/grafana-asserts-app/catalog
+                    - paragraph [ref=e288]: Entity catalog
+                - listitem [ref=e290]:
+                  - link [ref=e294] [cursor=pointer]:
+                    - /url: /a/grafana-asserts-app/assertions
+                    - paragraph [ref=e297]: RCA workbench
+                - listitem [ref=e299]:
+                  - link [ref=e303] [cursor=pointer]:
+                    - /url: /a/grafana-asserts-app/slo
+                    - paragraph [ref=e306]: Health target
+                - listitem [ref=e308]:
+                  - link [ref=e312] [cursor=pointer]:
+                    - /url: /a/grafana-asserts-app/rules
+                    - paragraph [ref=e315]: Rules
+                - listitem [ref=e317]:
+                  - link [ref=e321] [cursor=pointer]:
+                    - /url: /a/grafana-asserts-app/configuration
+                    - paragraph [ref=e324]: Configuration
+                - listitem [ref=e326]:
+                  - generic [ref=e327]:
+                    - link [ref=e330] [cursor=pointer]:
+                      - /url: /a/grafana-agento11y-app
+                      - generic [ref=e332]:
+                        - paragraph [ref=e333]: Agent
+                        - generic [ref=e334]: New!
+                    - 'button "Expand section: Agent" [ref=e340] [cursor=pointer]'
+                - listitem [ref=e343]:
+                  - generic [ref=e344]:
+                    - link [ref=e347] [cursor=pointer]:
+                      - /url: /a/grafana-kowalski-app
+                      - paragraph [ref=e350]: Frontend
+                    - 'button "Expand section: Frontend" [ref=e353] [cursor=pointer]'
+                - listitem [ref=e356]:
+                  - generic [ref=e357]:
+                    - link [ref=e360] [cursor=pointer]:
+                      - /url: /a/grafana-app-observability-app
+                      - paragraph [ref=e363]: Application
+                    - 'button "Expand section: Application" [ref=e366] [cursor=pointer]'
+                - listitem [ref=e369]:
+                  - generic [ref=e370]:
+                    - link [ref=e373] [cursor=pointer]:
+                      - /url: /a/grafana-dbo11y-app/
+                      - generic [ref=e375]:
+                        - paragraph [ref=e376]: Database
+                        - generic [ref=e377]: New!
+                    - 'button "Collapse section: Database" [expanded] [ref=e383] [cursor=pointer]'
+                  - list [ref=e386]:
+                    - listitem [ref=e387]:
+                      - link [ref=e392] [cursor=pointer]:
+                        - /url: /a/grafana-dbo11y-app/overview
+                        - paragraph [ref=e395]: Queries Overview
+                    - listitem [ref=e397]:
+                      - link [ref=e402] [cursor=pointer]:
+                        - /url: /a/grafana-dbo11y-app/configuration
+                        - paragraph [ref=e405]: Configuration
+                - listitem [ref=e407]:
+                  - generic [ref=e408]:
+                    - link [ref=e411] [cursor=pointer]:
+                      - /url: /a/grafana-k8s-app/home
+                      - paragraph [ref=e414]: Kubernetes
+                    - 'button "Expand section: Kubernetes" [ref=e417] [cursor=pointer]'
+                - listitem [ref=e420]:
+                  - generic [ref=e421]:
+                    - link [ref=e424] [cursor=pointer]:
+                      - /url: /a/grafana-csp-app
+                      - paragraph [ref=e427]: Cloud provider
+                    - 'button "Expand section: Cloud provider" [ref=e430] [cursor=pointer]'
+            - listitem [ref=e433]:
+              - generic [ref=e434]:
+                - link [ref=e437] [cursor=pointer]:
+                  - /url: /connections
+                  - paragraph [ref=e442]: Connections
+                - 'button "Expand section: Connections" [ref=e445] [cursor=pointer]'
+            - listitem [ref=e448]:
+              - generic [ref=e449]:
+                - link [ref=e452] [cursor=pointer]:
+                  - /url: /apps
+                  - paragraph [ref=e457]: More apps
+                - 'button "Expand section: More apps" [ref=e460] [cursor=pointer]'
+            - listitem [ref=e463]:
+              - generic [ref=e464]:
+                - link [ref=e467] [cursor=pointer]:
+                  - /url: /admin
+                  - paragraph [ref=e472]: Administration
+                - 'button "Expand section: Administration" [ref=e475] [cursor=pointer]'
+          - separator [ref=e478]
+          - button "Undock menu" [ref=e480] [cursor=pointer]
+      - banner [ref=e483]:
+        - generic [ref=e484]:
+          - navigation "Breadcrumbs" [ref=e486]:
+            - list [ref=e487]:
+              - listitem [ref=e488]:
+                - link "Explore" [ref=e489] [cursor=pointer]:
+                  - /url: /explore
+              - listitem [ref=e493]:
+                - generic "grafanacloud-devfedb13-logs" [ref=e494]
+          - generic [ref=e495]:
+            - generic [ref=e497]:
+              - button "Search..." [ref=e501] [cursor=pointer]
+              - generic [ref=e502]: ⌘+k
+            - button "New" [ref=e504] [cursor=pointer]
+            - button "Help" [ref=e510] [cursor=pointer]
+            - button "Open Grafana Assistant" [ref=e514] [cursor=pointer]
+            - button "Profile" [ref=e519] [cursor=pointer]:
+              - img "User avatar" [ref=e520]
+      - main [ref=e523]:
+        - generic [ref=e526]:
+          - heading "Explore" [level=1] [ref=e527]
+          - generic [ref=e530]:
+            - navigation "Explore toolbar" [ref=e532]:
+              - navigation "Search links" [ref=e534]:
+                - generic [ref=e535]:
+                  - button "Content outline" [expanded] [ref=e537] [cursor=pointer]:
+                    - generic [ref=e540]: Outline
+                  - generic [ref=e545] [cursor=pointer]:
+                    - img "Loki logo" [ref=e547]
+                    - combobox "Select a data source" [ref=e548]
+                  - button "Go queryless" [ref=e553] [cursor=pointer]
+              - generic [ref=e557]:
+                - button "Add" [ref=e559] [cursor=pointer]
+                - generic [ref=e564]:
+                  - button "Move time range backwards" [ref=e565] [cursor=pointer]
+                  - 'button "Time range selected: now-17h to now-15h" [ref=e568] [cursor=pointer]'
+                  - button "Move time range forwards" [ref=e573] [cursor=pointer]
+                  - button "Zoom out time range" [ref=e576] [cursor=pointer]
+                - generic [ref=e580]:
+                  - button "Run query" [ref=e581] [cursor=pointer]
+                  - button "Auto refresh turned off. Choose refresh time interval" [ref=e584] [cursor=pointer]
+                - generic [ref=e588]:
+                  - button "Copy shortened URL" [ref=e589] [cursor=pointer]
+                  - button "Open copy link options" [ref=e592] [cursor=pointer]
+                - button "Start live stream your logs" [ref=e597] [cursor=pointer]:
+                  - generic [ref=e600]: Live
+                - button "Show more items" [ref=e602] [cursor=pointer]
+            - generic [ref=e606]:
+              - generic [ref=e611]:
+                - button "Collapse outline" [expanded] [ref=e613] [cursor=pointer]:
+                  - img "arrow-from-right" [ref=e614]
+                - button "Queries" [ref=e617] [cursor=pointer]:
+                  - img "arrow" [ref=e618]
+                - button "Logs" [ref=e622] [cursor=pointer]:
+                  - img "gf-logs" [ref=e623]
+              - generic [ref=e628]:
+                - generic [ref=e630]:
+                  - generic [ref=e634]:
+                    - generic [ref=e636]:
+                      - generic [ref=e637]:
+                        - button "Collapse query row" [expanded] [ref=e638] [cursor=pointer]
+                        - generic [ref=e641]:
+                          - button "A" [ref=e642] [cursor=pointer]
+                          - emphasis [ref=e644]: (grafanacloud-devfedb13-logs)
+                      - generic [ref=e645]:
+                        - button "Saved queries" [ref=e646] [cursor=pointer]
+                        - button "Show data source help" [ref=e653] [cursor=pointer]
+                        - button "Create recorded query" [ref=e657] [cursor=pointer]
+                        - button "Adaptive Logs" [ref=e660] [cursor=pointer]
+                        - button "Duplicate query" [ref=e665] [cursor=pointer]
+                        - button "Hide response" [ref=e669] [cursor=pointer]
+                        - button "Remove query" [ref=e673] [cursor=pointer]
+                        - button "Drag and drop to reorder" [ref=e676]:
+                          - img "Drag and drop to reorder" [ref=e677]
+                    - generic [ref=e680]:
+                      - generic [ref=e681]:
+                        - generic [ref=e682]:
+                          - button "Kick start your query" [ref=e683] [cursor=pointer]
+                          - button "Label browser" [ref=e685] [cursor=pointer]
+                        - generic [ref=e687]:
+                          - generic [ref=e688] [cursor=pointer]: Explain query
+                          - switch "Explain query" [ref=e690]
+                        - radiogroup [ref=e693]:
+                          - generic [ref=e694]:
+                            - radio "Builder" [ref=e695] [cursor=pointer]
+                            - generic "Builder" [ref=e696] [cursor=pointer]
+                          - generic [ref=e698]:
+                            - radio "Code" [checked] [ref=e699] [cursor=pointer]
+                            - generic "Code" [ref=e700] [cursor=pointer]
+                      - generic [ref=e703]:
+                        - code [ref=e710]:
+                          - generic [ref=e711]:
+                            - generic [ref=e716]: "{job=\"ecommerce-prod/productcatalogservice\"} |= `cache stats`"
+                            - textbox "Editor content;Press Alt+F1 for Accessibility Options." [ref=e721]: "{job=\"ecommerce-prod/productcatalogservice\"} |= `cache stats`"
+                        - generic [ref=e723]:
+                          - generic [ref=e725] [cursor=pointer]:
+                            - 'button "Options Type: Range Line limit: 1000 Direction: Backward" [ref=e726]'
+                            - generic [ref=e730]:
+                              - heading "Options" [level=6] [ref=e731]
+                              - generic [ref=e732]:
+                                - generic [ref=e733]: "Type: Range"
+                                - generic [ref=e734]: "Line limit: 1000"
+                                - generic [ref=e735]: "Direction: Backward"
+                          - paragraph [ref=e739]: This query will process approximately 3.0 KiB.
+                  - generic [ref=e740]:
+                    - button "Add query" [ref=e741] [cursor=pointer]
+                    - button "Add from saved queries" [ref=e745] [cursor=pointer]
+                    - button "Query history" [ref=e749] [cursor=pointer]
+                    - button "Query inspector" [ref=e753] [cursor=pointer]
+                - main [ref=e757]:
+                  - generic [ref=e759]:
+                    - region [ref=e762]:
+                      - heading [level=2] [ref=e765]:
+                        - button "Logs volume" [expanded] [ref=e766] [cursor=pointer]
+                      - generic [ref=e772]:
+                        - generic [ref=e773]:
+                          - button "Annotation region" [ref=e783] [cursor=pointer]
+                          - list [ref=e790]:
+                            - listitem [ref=e791]:
+                              - generic [ref=e793]:
+                                - button "All series selected" [ref=e795] [cursor=pointer]: info
+                                - list [ref=e796]:
+                                  - listitem [ref=e797]:
+                                    - generic "The sum of all values" [ref=e798]: "Total: 143"
+                        - generic [ref=e799]: grafanacloud-devfedb13-logs
+                    - region [ref=e802]:
+                      - generic [ref=e803]:
+                        - heading "Logs" [level=2] [ref=e805]
+                        - radiogroup [ref=e807]:
+                          - generic [ref=e808]:
+                            - radio "Logs" [checked] [ref=e809] [cursor=pointer]
+                            - generic "Logs" [ref=e810] [cursor=pointer]
+                          - generic [ref=e812]:
+                            - radio "Table" [ref=e813] [cursor=pointer]
+                            - generic "Table" [ref=e814] [cursor=pointer]
+                      - generic [ref=e816]:
+                        - generic [ref=e819]:
+                          - generic [ref=e820]: 143 lines displayed
+                          - generic [ref=e822]:
+                            - generic [ref=e823]: "Total bytes processed:"
+                            - generic [ref=e824]: 44.5 kB
+                          - generic [ref=e825]:
+                            - generic [ref=e826]: "Common labels:"
+                            - generic [ref=e828]:
+                              - generic [ref=e829]: app_kubernetes_io_name=productcatalogservice
+                              - generic [ref=e831]: cloud_region=us-east-2
+                              - generic [ref=e833]: cluster=devfedb13-cluster
+                              - button "Expand labels" [ref=e835] [cursor=pointer]:
+                                - generic [ref=e836]: "9"
+                        - generic [ref=e841]:
+                          - generic [ref=e842]:
+                            - button "Expand" [ref=e846] [cursor=pointer]
+                            - button "Scroll to bottom" [ref=e852] [cursor=pointer]
+                            - button "Sorted by newest logs first - Click to show oldest first" [ref=e858] [cursor=pointer]
+                            - button "Search in logs result" [ref=e865] [cursor=pointer]
+                            - button "Deduplication" [ref=e871] [cursor=pointer]
+                            - button "Filter logs result by level" [ref=e877] [cursor=pointer]
+                            - button "Log timestamps" [pressed] [ref=e885] [cursor=pointer]:
+                              - generic [ref=e888]: ms
+                            - button "Set line wrap" [pressed] [ref=e893] [cursor=pointer]:
+                              - generic [ref=e896]: +
+                            - button "Columns are not supported with line wrapping enabled" [disabled] [pressed] [ref=e900]
+                            - button "Disable highlighting" [pressed] [ref=e906] [cursor=pointer]
+                            - button "Set small font" [pressed] [ref=e912] [cursor=pointer]
+                            - button "Download" [ref=e919] [cursor=pointer]
+                            - button "Scroll to top" [ref=e925] [cursor=pointer]
+                          - generic [ref=e930]:
+                            - generic [ref=e933] [cursor=pointer]:
+                              - button "Log menu" [ref=e935]
+                              - generic [ref=e938]:
+                                - generic [ref=e939]: 2026-08-16 07:46:51.721
+                                - generic "info" [ref=e940]
+                                - generic [ref=e941]: "time=\"2026-08-16T12:46:47Z\" level=info msg=\"cache stats: entries=164 hits=0 misses=164 pending_events=164 sent_events=0\""
+                            - generic [ref=e944] [cursor=pointer]:
+                              - button "Log menu" [ref=e946]
+                              - generic [ref=e949]:
+                                - generic [ref=e950]: 2026-08-16 07:46:41.720
+                                - generic "info" [ref=e951]
+                                - generic [ref=e952]: "time=\"2026-08-16T12:46:37Z\" level=info msg=\"cache stats: entries=154 hits=0 misses=154 pending_events=154 sent_events=0\""
+                            - generic [ref=e955] [cursor=pointer]:
+                              - button "Log menu" [ref=e957]
+                              - generic [ref=e960]:
+                                - generic [ref=e961]: 2026-08-16 07:46:31.720
+                                - generic "info" [ref=e962]
+                                - generic [ref=e963]: "time=\"2026-08-16T12:46:27Z\" level=info msg=\"cache stats: entries=144 hits=0 misses=144 pending_events=144 sent_events=0\""
+                            - generic [ref=e966] [cursor=pointer]:
+                              - button "Log menu" [ref=e968]
+                              - generic [ref=e971]:
+                                - generic [ref=e972]: 2026-08-16 07:46:21.620
+                                - generic "info" [ref=e973]
+                                - generic [ref=e974]: "time=\"2026-08-16T12:46:17Z\" level=info msg=\"cache stats: entries=135 hits=0 misses=135 pending_events=135 sent_events=0\""
+                            - generic [ref=e977] [cursor=pointer]:
+                              - button "Log menu" [ref=e979]
+                              - generic [ref=e982]:
+                                - generic [ref=e983]: 2026-08-16 07:46:11.621
+                                - generic "info" [ref=e984]
+                                - generic [ref=e985]: "time=\"2026-08-16T12:46:07Z\" level=info msg=\"cache stats: entries=125 hits=0 misses=125 pending_events=125 sent_events=0\""
+                            - generic [ref=e988] [cursor=pointer]:
+                              - button "Log menu" [ref=e990]
+                              - generic [ref=e993]:
+                                - generic [ref=e994]: 2026-08-16 07:46:01.820
+                                - generic "info" [ref=e995]
+                                - generic [ref=e996]: "time=\"2026-08-16T12:45:57Z\" level=info msg=\"cache stats: entries=115 hits=0 misses=115 pending_events=115 sent_events=0\""
+                            - generic [ref=e999] [cursor=pointer]:
+                              - button "Log menu" [ref=e1001]
+                              - generic [ref=e1004]:
+                                - generic [ref=e1005]: 2026-08-16 07:45:51.821
+                                - generic "info" [ref=e1006]
+                                - generic [ref=e1007]: "time=\"2026-08-16T12:45:47Z\" level=info msg=\"cache stats: entries=105 hits=0 misses=105 pending_events=105 sent_events=0\""
+                            - generic [ref=e1010] [cursor=pointer]:
+                              - button "Log menu" [ref=e1012]
+                              - generic [ref=e1015]:
+                                - generic [ref=e1016]: 2026-08-16 07:45:41.821
+                                - generic "info" [ref=e1017]
+                                - generic [ref=e1018]: "time=\"2026-08-16T12:45:37Z\" level=info msg=\"cache stats: entries=96 hits=0 misses=96 pending_events=96 sent_events=0\""
+                            - generic [ref=e1021] [cursor=pointer]:
+                              - button "Log menu" [ref=e1023]
+                              - generic [ref=e1026]:
+                                - generic [ref=e1027]: 2026-08-16 07:45:31.821
+                                - generic "info" [ref=e1028]
+                                - generic [ref=e1029]: "time=\"2026-08-16T12:45:27Z\" level=info msg=\"cache stats: entries=86 hits=0 misses=86 pending_events=86 sent_events=0\""
+                            - generic [ref=e1032] [cursor=pointer]:
+                              - button "Log menu" [ref=e1034]
+                              - generic [ref=e1037]:
+                                - generic [ref=e1038]: 2026-08-16 07:45:21.820
+                                - generic "info" [ref=e1039]
+                                - generic [ref=e1040]: "time=\"2026-08-16T12:45:17Z\" level=info msg=\"cache stats: entries=76 hits=0 misses=76 pending_events=76 sent_events=0\""
+                            - generic [ref=e1043] [cursor=pointer]:
+                              - button "Log menu" [ref=e1045]
+                              - generic [ref=e1048]:
+                                - generic [ref=e1049]: 2026-08-16 07:45:11.721
+                                - generic "info" [ref=e1050]
+                                - generic [ref=e1051]: "time=\"2026-08-16T12:45:07Z\" level=info msg=\"cache stats: entries=66 hits=0 misses=66 pending_events=66 sent_events=0\""
+                            - generic [ref=e1054] [cursor=pointer]:
+                              - button "Log menu" [ref=e1056]
+                              - generic [ref=e1059]:
+                                - generic [ref=e1060]: 2026-08-16 07:45:01.721
+                                - generic "info" [ref=e1061]
+                                - generic [ref=e1062]: "time=\"2026-08-16T12:44:57Z\" level=info msg=\"cache stats: entries=57 hits=0 misses=57 pending_events=57 sent_events=0\""
+                          - generic [ref=e1064]:
+                            - button "Collapse sidebar" [ref=e1065] [cursor=pointer]
+                            - textbox "Search fields by name" [ref=e1073]
+                            - generic [ref=e1074]:
+                              - generic [ref=e1077]:
+                                - checkbox "Show log level" [checked] [ref=e1079]
+                                - generic [ref=e1081] [cursor=pointer]: Show log level
+                              - generic [ref=e1082]: Selected fields
+                              - generic [ref=e1083]: Suggested
+                              - generic [ref=e1084]:
+                                - generic [ref=e1087]:
+                                  - checkbox "app_kubernetes_io_name" [ref=e1089]
+                                  - generic [ref=e1091] [cursor=pointer]: app_kubernetes_io_name
+                                - generic [ref=e1094]:
+                                  - checkbox "cluster" [ref=e1096]
+                                  - generic [ref=e1098] [cursor=pointer]: cluster
+                                - generic [ref=e1101]:
+                                  - checkbox "container" [ref=e1103]
+                                  - generic [ref=e1105] [cursor=pointer]: container
+                                - generic [ref=e1108]:
+                                  - checkbox "deployment_environment" [ref=e1110]
+                                  - generic [ref=e1112] [cursor=pointer]: deployment_environment
+                                - generic [ref=e1115]:
+                                  - checkbox "job" [ref=e1117]
+                                  - generic [ref=e1119] [cursor=pointer]: job
+                                - generic [ref=e1122]:
+                                  - checkbox "k8s_cluster_name" [ref=e1124]
+                                  - generic [ref=e1126] [cursor=pointer]: k8s_cluster_name
+                                - generic [ref=e1129]:
+                                  - checkbox "namespace" [ref=e1131]
+                                  - generic [ref=e1133] [cursor=pointer]: namespace
+                                - generic [ref=e1136]:
+                                  - checkbox "pod" [ref=e1138]
+                                  - generic [ref=e1140] [cursor=pointer]: pod
+                                - generic [ref=e1143]:
+                                  - checkbox "service_instance_id" [ref=e1145]
+                                  - generic [ref=e1147] [cursor=pointer]: service_instance_id
+                                - generic [ref=e1150]:
+                                  - checkbox "service_name" [ref=e1152]
+                                  - generic [ref=e1154] [cursor=pointer]: service_name
+                                - generic [ref=e1157]:
+                                  - checkbox "service_namespace" [ref=e1159]
+                                  - generic [ref=e1161] [cursor=pointer]: service_namespace
+                              - generic [ref=e1162]: Fields
+                              - generic [ref=e1163]:
+                                - generic "app_kubernetes_io_name appears in 100% of log lines" [ref=e1164]:
+                                  - generic [ref=e1165]:
+                                    - generic [ref=e1166]:
+                                      - checkbox "app_kubernetes_io_name" [ref=e1168]
+                                      - generic [ref=e1170] [cursor=pointer]: app_kubernetes_io_name
+                                    - button "100%" [ref=e1171] [cursor=pointer]
+                                - generic "cloud_region appears in 100% of log lines" [ref=e1172]:
+                                  - generic [ref=e1173]:
+                                    - generic [ref=e1174]:
+                                      - checkbox "cloud_region" [ref=e1176]
+                                      - generic [ref=e1178] [cursor=pointer]: cloud_region
+                                    - button "100%" [ref=e1179] [cursor=pointer]
+                                - generic "cluster appears in 100% of log lines" [ref=e1180]:
+                                  - generic [ref=e1181]:
+                                    - generic [ref=e1182]:
+                                      - checkbox "cluster" [ref=e1184]
+                                      - generic [ref=e1186] [cursor=pointer]: cluster
+                                    - button "100%" [ref=e1187] [cursor=pointer]
+                                - generic "container appears in 100% of log lines" [ref=e1188]:
+                                  - generic [ref=e1189]:
+                                    - generic [ref=e1190]:
+                                      - checkbox "container" [ref=e1192]
+                                      - generic [ref=e1194] [cursor=pointer]: container
+                                    - button "100%" [ref=e1195] [cursor=pointer]
+                                - generic "deployment_environment appears in 100% of log lines" [ref=e1196]:
+                                  - generic [ref=e1197]:
+                                    - generic [ref=e1198]:
+                                      - checkbox "deployment_environment" [ref=e1200]
+                                      - generic [ref=e1202] [cursor=pointer]: deployment_environment
+                                    - button "100%" [ref=e1203] [cursor=pointer]
+                                - generic "detected_level appears in 100% of log lines" [ref=e1204]:
+                                  - generic [ref=e1205]:
+                                    - generic [ref=e1206]:
+                                      - checkbox "detected_level" [ref=e1208]
+                                      - generic [ref=e1210] [cursor=pointer]: detected_level
+                                    - button "100%" [ref=e1211] [cursor=pointer]
+                                - generic "job appears in 100% of log lines" [ref=e1212]:
+                                  - generic [ref=e1213]:
+                                    - generic [ref=e1214]:
+                                      - checkbox "job" [ref=e1216]
+                                      - generic [ref=e1218] [cursor=pointer]: job
+                                    - button "100%" [ref=e1219] [cursor=pointer]
+                                - generic "k8s_cluster_name appears in 100% of log lines" [ref=e1220]:
+                                  - generic [ref=e1221]:
+                                    - generic [ref=e1222]:
+                                      - checkbox "k8s_cluster_name" [ref=e1224]
+                                      - generic [ref=e1226] [cursor=pointer]: k8s_cluster_name
+                                    - button "100%" [ref=e1227] [cursor=pointer]
+                                - generic "namespace appears in 100% of log lines" [ref=e1228]:
+                                  - generic [ref=e1229]:
+                                    - generic [ref=e1230]:
+                                      - checkbox "namespace" [ref=e1232]
+                                      - generic [ref=e1234] [cursor=pointer]: namespace
+                                    - button "100%" [ref=e1235] [cursor=pointer]
+                                - generic "pod appears in 100% of log lines" [ref=e1236]:
+                                  - generic [ref=e1237]:
+                                    - generic [ref=e1238]:
+                                      - checkbox "pod" [ref=e1240]
+                                      - generic [ref=e1242] [cursor=pointer]: pod
+                                    - button "100%" [ref=e1243] [cursor=pointer]
+                                - generic "service_instance_id appears in 100% of log lines" [ref=e1244]:
+                                  - generic [ref=e1245]:
+                                    - generic [ref=e1246]:
+                                      - checkbox "service_instance_id" [ref=e1248]
+                                      - generic [ref=e1250] [cursor=pointer]: service_instance_id
+                                    - button "100%" [ref=e1251] [cursor=pointer]
+                                - generic "service_name appears in 100% of log lines" [ref=e1252]:
+                                  - generic [ref=e1253]:
+                                    - generic [ref=e1254]:
+                                      - checkbox "service_name" [ref=e1256]
+                                      - generic [ref=e1258] [cursor=pointer]: service_name
+                                    - button "100%" [ref=e1259] [cursor=pointer]
+                                - generic "service_namespace appears in 100% of log lines" [ref=e1260]:
+                                  - generic [ref=e1261]:
+                                    - generic [ref=e1262]:
+                                      - checkbox "service_namespace" [ref=e1264]
+                                      - generic [ref=e1266] [cursor=pointer]: service_namespace
+                                    - button "100%" [ref=e1267] [cursor=pointer]
+                                - generic "traceID appears in 0% of log lines" [ref=e1268]:
+                                  - generic [ref=e1269]:
+                                    - generic [ref=e1270]:
+                                      - checkbox "traceID" [ref=e1272]
+                                      - generic [ref=e1274] [cursor=pointer]: traceID
+                                    - button "0%" [ref=e1275] [cursor=pointer]
+                                - generic "traceID (field) appears in 0% of log lines" [ref=e1276]:
+                                  - generic [ref=e1277]:
+                                    - generic [ref=e1278]:
+                                      - checkbox "traceID (field)" [ref=e1280]
+                                      - generic [ref=e1282] [cursor=pointer]: traceID (field)
+                                    - button "0%" [ref=e1283] [cursor=pointer]
+    - log [ref=e1285]
+  - generic [ref=e1287]:
+    - alert
+    - alert
+    - complementary
+    - complementary
