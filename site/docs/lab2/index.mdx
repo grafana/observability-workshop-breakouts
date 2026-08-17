@@ -10,7 +10,7 @@ import EnvLink from '@site/src/components/EnvLink';
 
 A new complaint about the `ecommerce` store: product pages hang for several seconds before the recommendations appear. It's slow rather than broken, and it started recently. This time the trail doesn't stop at the browser - it leads through a trace and into the database.
 
-In this lab you'll use [Database Observability](https://grafana.com/docs/grafana-cloud/monitor-applications/database-observability/) (GA since April 2026; MySQL and PostgreSQL, self-managed or managed - RDS, Aurora, Cloud SQL, Azure; collected by Grafana Alloy with no agent on the database host). You'll work through the **Queries Overview**, per-query metrics, the **Explain Plan**, **Table Schema Details**, and the Grafana Assistant's query optimization.
+In this lab you'll use [Database Observability](https://grafana.com/docs/grafana-cloud/monitor-applications/database-observability/). It's been GA since April 2026 and covers MySQL and PostgreSQL, self-managed or managed (RDS, Aurora, Cloud SQL, Azure). Grafana Alloy collects the data, with no agent on the database host. You'll work through the **Queries Overview**, per-query metrics, the **Explain Plan**, **Table Schema Details**, and the Grafana Assistant's query optimization.
 
 ## Instructions
 
@@ -18,9 +18,9 @@ Use the Grafana Cloud stack from the slides. This lab uses the `ecommerce` app a
 
 :::info The scenario running
 
-A k6 load test drives steady browse and checkout traffic while the **`recommendationsFromOrderAnalysis`** feature flag switches the recommendation service to build its "you might also like" results with an inefficient query against the orders database. Expect product pages to hang for several seconds while recommendations load, with the delay tracing down to a single expensive SQL query - not a broken service.
+A k6 load test drives steady browse and checkout traffic. The **`recommendationsFromOrderAnalysis`** feature flag switches the recommendation service to build its "you might also like" results with an inefficient query against the orders database. Expect product pages to hang for several seconds while recommendations load. The delay traces down to a single expensive SQL query, not a broken service.
 
-It runs automatically **every day during a default window of 09:00-10:00 UTC** - the accumulated query history from each run is what fills the Queries Overview, samples, and explain plans.
+It runs automatically **every day during a default window of 09:00-10:00 UTC**. The query history that each run accumulates is what fills the Queries Overview, samples, and explain plans.
 
 :::
 
@@ -36,19 +36,26 @@ Try each question on your own first. The **Show answer** block under each questi
 
 ## Getting there: frontend -> trace -> query
 
-You'll start at the slow **user action**, follow it into a **trace** to see *which* service and database are involved, and then open **Database Observability** to inspect the query itself.
+You'll start at the slow **user action** and follow it into a **trace**, to see which service and database are involved. Then you'll open **Database Observability** to inspect the query itself.
 
 Start in Frontend Observability: either navigate by hand (left menu -> **Observability -> Frontend -> `ecommerce`**) and set the time range to the lab window (09:00-10:00 UTC), or <EnvLink appIdKey="frontendAppId" path="/a/grafana-kowalski-app/apps/{appId}" from="09:00" to="10:00">jump straight there</EnvLink>: the link takes you to the right place and time range automatically (needs your environment ID and Frontend Observability app ID from the Welcome page).
 
 :::note Time range keeps resetting?
-Two gotchas caught us while building this lab: (1) switching Frontend Observability tabs can flip the time picker back to your **browser** timezone (so a `09:00-10:00 UTC` window shows as `04:00-05:00` local, for example) - the data is the same, but re-set it to **UTC** if you want the times to match the lab; (2) the **Database** app snaps to its own default range when it opens, so you'll re-apply the window there. If a screen looks empty, fix the time range first.
+
+Two problems caught us while building this lab:
+
+1. Switching Frontend Observability tabs can flip the time picker back to your **browser** timezone. A `09:00-10:00 UTC` window then shows as `04:00-05:00` local, for example. The data is the same, but re-set it to **UTC** if you want the times to match the lab.
+2. The **Database** app snaps to its own default range when it opens, so you'll re-apply the window there.
+
+If a screen looks empty, fix the time range first.
+
 :::
 
-**Step 1 - Find the slow user action.** Click the **User actions** tab. This lists the key interactions instrumented in the app (add-product-to-cart, initiate-checkout, open-product-detail, order-complete...) with their **Duration** and **Duration P95**. Two stand out as slow - **`open-product-detail`** and **`order-complete`** - both with a **Duration P95 measured in seconds** (and climbing over the environment's lifetime as the orders table grows). Click **`open-product-detail`**.
+**Step 1 - Find the slow user action.** Click the **User actions** tab. This lists the key interactions instrumented in the app (add-product-to-cart, initiate-checkout, open-product-detail, order-complete...) with their **Duration** and **Duration P95**. Two stand out as slow: **`open-product-detail`** and **`order-complete`**, both with a **Duration P95 measured in seconds**. The P95 keeps climbing over the environment's lifetime as the orders table grows. Click **`open-product-detail`**.
 
 ![The User actions tab: open-product-detail and order-complete both slow, p95 in the seconds](/img/lab2/2.1-user-actions-list.png)
 
-**Step 2 - Read the user action.** The action page shows **Total executions**, **Error rate** (0 - nothing is *failing*, it's just slow), and a **Duration p95 in the seconds**, with a chart where the duration jumps at the start of the window. This is the customer-facing symptom: opening a product detail page went from ~500ms to many seconds - and it keeps getting slower as the orders table grows, into the minutes.
+**Step 2 - Read the user action.** The action page shows **Total executions**, **Error rate** (0 - nothing is *failing*, it's just slow), and a **Duration p95 in the seconds**. A chart shows the duration jumping at the start of the window. This is the customer-facing symptom: opening a product detail page went from ~500ms to many seconds. It keeps getting slower as the orders table grows, into the minutes.
 
 ![The open-product-detail user action: p95 in the seconds, 0 errors, with the Traces sub-tab](/img/lab2/2.1-user-action.png)
 
@@ -56,12 +63,12 @@ Two gotchas caught us while building this lab: (1) switching Frontend Observabil
 
 ![The Traces sub-tab listing the slow requests](/img/lab2/2.1-trace-list.png)
 
-**Step 4 - Read the trace.** The slow trace is the `GET /api/recommendations` request - seconds end to end (and much longer as the data grows). The waterfall walks the request from the browser through `frontendproxy` and the `frontend` API route down to the span that consumes essentially the whole request: **`oteldemo.RecommendationService/ListRecommendations`**. That tells you *where* the time goes - the recommendation service and its call to the orders database - but not yet *why*.
+**Step 4 - Read the trace.** The slow trace is the `GET /api/recommendations` request: seconds end to end, and much longer as the data grows. The waterfall walks the request from the browser, through `frontendproxy` and the `frontend` API route, down to the span that takes almost the whole request: **`oteldemo.RecommendationService/ListRecommendations`**. That tells you *where* the time goes, the recommendation service and its call to the orders database. It doesn't yet tell you *why*.
 
 ![The trace for GET /api/recommendations - dominated by RecommendationService/ListRecommendations](/img/lab2/2.1-trace-to-db.png)
 
 :::note Does it matter whether you picked open-product-detail or order-complete?
-No. Both pages show "you might also like" recommendations, so both fire the same `GET /api/recommendations` call - and open a trace from *either* action and you land on the same `ListRecommendations` span eating essentially the whole request. Whichever you chose, you're looking at the same root cause. (That's also a preview of the blast radius: one slow query, showing up across multiple customer journeys.)
+No. Both pages show "you might also like" recommendations, so both fire the same `GET /api/recommendations` call. Open a trace from *either* action and you land on the same `ListRecommendations` span, which takes almost the whole request. Whichever you chose, you're looking at the same root cause. (It's also a preview of the blast radius: one slow query, appearing across multiple customer journeys.)
 
 ![The order-complete action's slow trace is the same /api/recommendations -> ListRecommendations span](/img/lab2/2.1-order-complete-trace.png)
 :::
@@ -74,7 +81,7 @@ No. Both pages show "you might also like" recommendations, so both fire the same
 <EnvLink path="/a/grafana-dbo11y-app/overview" from="09:00" to="10:00">Open Database Observability (Queries Overview)</EnvLink> - needs only your environment ID from the Welcome page. Note the Database app tends to reset to its own default range when it loads, so if the window looks off, re-apply **09:00-10:00** (previous day) and switch the timezone to **UTC** using the time picker.
 :::
 
-**Verify you're in the right place.** Database Observability opens on **Queries Overview**, showing datasources for your stack (`...-prom` and `...-logs`), engine filters for **MySQL** and **PostgreSQL**, and RED summary tiles across the top (Instances, Databases, Tables, Total Queries Executed, Current rate) over Duration / Errors / Rate charts. If you see that, continue to Question 1.
+**Verify you're in the right place.** Database Observability opens on **Queries Overview**. It shows datasources for your stack (`...-prom` and `...-logs`), engine filters for **MySQL** and **PostgreSQL**, and RED summary tiles across the top (Instances, Databases, Tables, Total Queries Executed, Current rate) over Duration / Errors / Rate charts. If you see that, continue to Question 1.
 
 ![Database Observability - Queries Overview landing](/img/lab2/2.2-queries-overview.png)
 
@@ -86,12 +93,12 @@ No. Both pages show "you might also like" recommendations, so both fire the same
 
 The **Queries Overview** dashboard ranks every normalized query with its RED metrics - **Rate**, **Errors**, and **Duration** - plus row counts and wait times.
 
-<TryIt where="Database Observability → Queries Overview; try sorting the columns." />
+<TryIt where="Database Observability → Queries Overview. Try sorting the columns." />
 
 <details className="answer-reveal">
 <summary>Show answer</summary>
 
-Sorting by **Duration** puts a single `SELECT` at the top - a recommendation query against the **orders** database (instance `orders-db`), with ~369s of total duration across 55 calls. Everything below it is in the low seconds or milliseconds, so this one query dwarfs the rest.
+Sorting by **Duration** puts a single `SELECT` at the top: a recommendation query against the **orders** database (instance `orders-db`), with ~369s of total duration across 55 calls. Everything below it is in the low seconds or milliseconds, so this one query is far larger than the rest.
 
 Queries are shown normalized (literal values replaced with placeholders), so every execution of the same statement collapses into one ranked row.
 
@@ -103,7 +110,7 @@ Queries are shown normalized (literal values replaced with placeholders), so eve
 
 ![Queries Overview sorted by Duration - the recommendation SELECT on orders-db is far and away the slowest](/img/lab2/2.2-queries-by-duration.png)
 
-Hover the query text (or open it) to read the full statement - it's a tangle of **correlated subqueries** against `order_items` and `cart_items`, which is exactly why it's so expensive (you'll confirm this in the Explain Plan in Question 3).
+Hover the query text (or open it) to read the full statement. It's a set of nested **correlated subqueries** against `order_items` and `cart_items`, which is why it's so expensive (you'll confirm this in the Explain Plan in Question 3).
 
 ![The full recommendation query - nested correlated subqueries](/img/lab2/2.2-query-text.png)
 
@@ -124,7 +131,7 @@ A query can be a problem because it runs thousands of times (each one cheap), or
 
 This query has a modest call count but a high average duration - and a huge **Rows Examined** count compared to **Rows Sent**. It reads enormous numbers of rows to return only a few. That's an expensive-per-run query, not a high-frequency one.
 
-Click the query to open **Query Details**; the **Rows** panel makes it vivid - **Rows Examined** peaks around **22.9M rows/s** while **Rows Sent** is about **10 rows/s**. Meanwhile the **Duration** panel shows average runs of ~9 minutes (P99 over 11). It scans millions of rows to hand back a handful.
+Click the query to open **Query Details**. The **Rows** panel makes the imbalance clear: **Rows Examined** peaks around **22.9M rows/s** while **Rows Sent** is about **10 rows/s**. The **Duration** panel shows average runs of ~9 minutes (P99 over 11). It scans millions of rows to return a handful.
 
 **How to find it:**
 
@@ -177,13 +184,13 @@ The **Table Schema Details** tab lists each table's columns, indexes, and foreig
 <details className="answer-reveal">
 <summary>Show answer</summary>
 
-**No - and that's the more useful finding.** On `order_items`, both columns the query touches - **`product_id`** and **`order_id`** - carry the **Indexed** badge (BTREE indexes; they're also the table's foreign keys). The index the query needs already exists.
+**No - and that's the more useful finding.** On `order_items`, both columns the query touches (**`product_id`** and **`order_id`**) carry the **Indexed** badge. They're BTREE indexes, and also the table's foreign keys. The index the query needs already exists.
 
 ![Table Schema Details - order_items: product_id and order_id are both indexed](/img/lab2/2.4-table-schema.png)
 
-So why did the Explain Plan (Question 3) still show a full scan? Look back at the SQL: it filters on `UPPER(product_id) IN (...)` and `DATE(order_date) >= ...`. Wrapping an indexed column in a function makes the predicate **non-sargable** - MySQL can't use the BTREE index and falls back to scanning the whole table. An index is worthless if the query is written to defeat it.
+So why did the Explain Plan (Question 3) still show a full scan? Look back at the SQL: it filters on `UPPER(product_id) IN (...)` and `DATE(order_date) >= ...`. Wrapping an indexed column in a function makes the predicate **non-sargable**. MySQL can't use the BTREE index, so it scans the whole table instead. An index is worthless if the query is written to defeat it.
 
-So the fix isn't "add the missing index" - it's to stop wrapping the column in a function (or add a functional/expression index matching `UPPER(product_id)`), on top of rewriting the correlated subquery from Question 3. If any indexes are genuinely worth adding, they're on other tables - the Assistant flags candidates in Question 6.
+So the fix isn't "add the missing index". It's to stop wrapping the column in a function (or add a functional index that matches `UPPER(product_id)`), on top of rewriting the correlated subquery from Question 3. If any indexes are genuinely worth adding, they're on other tables. The Assistant flags candidates in Question 6.
 
 **How to find it:**
 
@@ -199,7 +206,7 @@ So the fix isn't "add the missing index" - it's to stop wrapping the column in a
 
 **Correlate the query with the database instance's CPU. Did this query cause the DB-wide slowdown?**
 
-A single expensive query doesn't just slow itself down - by saturating CPU it slows every query on the instance.
+A single expensive query doesn't just slow itself down. By saturating CPU, it slows every query on the instance.
 
 > **Why this matters:** this is the difference between "the DB is slow" and "*this query* is why the DB is slow."
 
@@ -210,7 +217,7 @@ Jump to the host CPU: <EnvLink path="/a/grafana-csp-app/aws/dashboards/rds" from
 <details className="answer-reveal">
 <summary>Show answer</summary>
 
-This query's CPU time climbs across the window - and the **instance** it runs on is an **AWS RDS** database (`orders-db`, `us-east-1`), whose host CPU saturates at the same time. Because the orders database also handles order inserts and lookups, those get slower too - which is why the impact reached checkout and the frontend, not just recommendations.
+This query's CPU time climbs across the window. The **instance** it runs on is an **AWS RDS** database (`orders-db`, `us-east-1`), and its host CPU saturates at the same time. Because the orders database also handles order inserts and lookups, those get slower too. That's why the impact reached checkout and the frontend, not just recommendations.
 
 **How to find it:**
 
@@ -232,7 +239,7 @@ This query's CPU time climbs across the window - and the **instance** it runs on
 
    ![RDS fleet overview - orders-db at ~100% CPU max](/img/lab2/2.5-rds-fleet.png)
 
-4. The instance dashboard's **CPU Utilization Average** and **Maximum** panels sit pegged at 100% from the moment the scenario starts (~09:12) - crossing the alert threshold - and drop back only when it ends. Line this up against the query's CPU time from step 1: the query's cost and the instance's saturation rise and fall together.
+4. The instance dashboard's **CPU Utilization Average** and **Maximum** panels sit pegged at 100% from the moment the scenario starts (~09:12). They cross the alert threshold and drop back only when the scenario ends. Line this up against the query's CPU time from step 1: the query's cost and the instance's saturation rise and fall together.
 
    ![RDS instance CPU pinned at 100% for the incident window](/img/lab2/2.5-rds-cpu.png)
 
@@ -244,7 +251,7 @@ This query's CPU time climbs across the window - and the **instance** it runs on
 
 **From Query Details, ask the [Grafana Assistant](https://grafana.com/docs/grafana-cloud/machine-learning/assistant/) to optimize the query. Does its diagnosis match yours - and what does it recommend?**
 
-The Assistant is built into Database Observability - no need to leave Query Details. Open it from the **sparkle icon** at the top-right (or the **Explain this query** button), and it automatically pulls the SQL, the tables, the Explain Plan, and the RED/CPU metrics as context, so it reasons about *this exact query* rather than a generic one.
+The Assistant is built into Database Observability, so there's no need to leave Query Details. Open it from the **sparkle icon** at the top-right (or the **Explain this query** button). It automatically pulls the SQL, the tables, the Explain Plan, and the RED/CPU metrics as context, so it reasons about *this exact query* rather than a generic one.
 
 <TryIt where="the sparkle (Assistant) icon top-right, or the Explain this query button on Query Details. Ask: This query is slow - explain why and suggest how to optimize it.">Ask the Assistant before revealing the answer.</TryIt>
 
@@ -264,7 +271,15 @@ And it proposes concrete, dialect-specific fixes with ready-to-run SQL: rewrite 
 <img src={require('@site/static/img/lab2/2.6-assistant-fix.png').default} alt="The Assistant's optimization recommendations with ALTER TABLE / CREATE INDEX statements" width="500" />
 
 :::note Trust, but verify
-Check each recommendation against your own evidence before acting on it: the **JOIN rewrite** addresses the correlated subquery from the **Explain Plan** (Question 3); dropping the `UPPER()` wrapper (or adding a functional index) lets the query finally *use* the `order_items` index you confirmed in **Table Schema Details** (Question 4); and both cut the **Rows Examined** and **CPU** you saw in Questions 2 and 5. The diagnosis and fix line up with what you found - so it's safe to take forward (in practice: test on a copy and confirm the new Explain Plan uses the index). LLM output varies between runs; judge it on whether it matches the evidence, not on the wording.
+
+Check each recommendation against your own evidence before acting on it:
+
+- The **JOIN rewrite** addresses the correlated subquery from the **Explain Plan** (Question 3).
+- Dropping the `UPPER()` wrapper (or adding a functional index) lets the query finally *use* the `order_items` index you confirmed in **Table Schema Details** (Question 4).
+- Both cut the **Rows Examined** and **CPU** you saw in Questions 2 and 5.
+
+The diagnosis and fix line up with what you found, so it's safe to take forward. In practice, test on a copy and confirm the new Explain Plan uses the index. LLM output varies between runs. Judge it on whether it matches the evidence, not on the wording.
+
 :::
 
 **How to find it:**
@@ -288,7 +303,7 @@ Every entity in Grafana Cloud carries **Insights** from the Knowledge Graph. On 
 <details className="answer-reveal">
 <summary>Show answer</summary>
 
-The instance's own insights already name the problem - high CPU load and spikes - and the Assistant's analysis correlates them back to the cause: it points at the **recommendation service** as a caller of the orders DB and recommends checking the **slow-query log / Performance Insights** for the incident window to find "the actual query driving CPU." That's the same query you found by hand - reached this time from the infrastructure side.
+The instance's own insights already name the problem: high CPU load and spikes. The Assistant's analysis correlates them back to the cause. It points at the **recommendation service** as a caller of the orders DB, and recommends checking the **slow-query log / Performance Insights** for the incident window to find "the actual query driving CPU." That's the same query you found by hand, reached this time from the infrastructure side.
 
 **How to find it:**
 
@@ -308,6 +323,6 @@ The instance's own insights already name the problem - high CPU load and spikes 
 
 ## Wrap-up
 
-You started at a slow product page, followed the `open-product-detail` user action into a trace, and saw the recommendation service's call to the orders database eating essentially the whole request. From there Database Observability let you name the exact query, diagnose it (correlated subquery, full scans, an index defeated by `UPPER()`), confirm it saturated the RDS instance's CPU, and get a concrete fix from the Assistant - which you verified against the plan and schema you'd already read.
+You started at a slow product page, followed the `open-product-detail` user action into a trace, and saw the recommendation service's call to the orders database take almost the whole request. From there, Database Observability let you name the exact query and diagnose it: a correlated subquery, full scans, and an index defeated by `UPPER()`. You confirmed it saturated the RDS instance's CPU, then got a concrete fix from the Assistant, which you verified against the plan and schema you'd already read.
 
 In Lab 3, the problem has a much wider blast radius, and you'll use the Knowledge Graph to map it.
