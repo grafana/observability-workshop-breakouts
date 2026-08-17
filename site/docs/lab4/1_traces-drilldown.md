@@ -16,7 +16,7 @@ Open **Drilldown** -> **Traces** and select the banking Tempo data source. Every
 
 :::tip Jump straight there
 
-<EnvLink path="/a/grafana-exploretraces-app/explore" from="12:00" to="13:00" params="var-ds=grafanacloud-traces&var-primarySignal=nestedSetParent%3C0&var-filters=&var-metric=rate&var-groupBy=resource.service.name&var-spanListColumns=&var-latencyThreshold=&var-partialLatencyThreshold=&var-durationPercentiles=0.9&actionView=breakdown">Open Traces Drilldown</EnvLink> - opens Traces Drilldown on the Rate metric, broken down by service, with the lab window (previous day, UTC) applied. The N+1 runs continuously, so any other recent range works just as well. Needs your environment ID from the Welcome page.
+<EnvLink path="/a/grafana-exploretraces-app/explore" timeParam="none" params="from=now-1h&to=now&var-ds=grafanacloud-traces&var-primarySignal=nestedSetParent%3C0&var-filters=&var-metric=rate&var-groupBy=resource.service.name&var-spanListColumns=&var-latencyThreshold=&var-partialLatencyThreshold=&var-durationPercentiles=0.9&actionView=breakdown">Open Traces Drilldown</EnvLink> - opens Traces Drilldown on the Rate metric, broken down by service, over the last hour. Unlike the other labs there's no incident window to pin: the N+1 runs continuously, so a recent range always shows it. Needs your environment ID from the Welcome page.
 
 :::
 
