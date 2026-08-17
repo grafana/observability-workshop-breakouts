@@ -1,0 +1,110 @@
+- generic [ref=f9e1]:
+  - generic [ref=f9e9]:
+    - generic [ref=f9e10]:
+      - link "Skip to main content" [ref=f9e11] [cursor=pointer]:
+        - /url: "#pageContent"
+      - banner [ref=f9e483]:
+        - generic [ref=f9e484]:
+          - generic [ref=f9e485]:
+            - link [ref=f9e1534] [cursor=pointer]:
+              - /url: /
+              - img "Grafana" [ref=f9e1535]
+            - button "Main menu" [active] [ref=f9e1536] [cursor=pointer]
+            - navigation "Breadcrumbs" [ref=f9e486]:
+              - list [ref=f9e487]:
+                - listitem [ref=f9e488]:
+                  - link "Observability" [ref=f9e489] [cursor=pointer]:
+                    - /url: /observability
+                - listitem [ref=f9e493]:
+                  - link "Database" [ref=f9e494] [cursor=pointer]:
+                    - /url: /a/grafana-dbo11y-app/
+                - listitem [ref=f9e498]:
+                  - link "Queries Overview" [ref=f9e1125] [cursor=pointer]:
+                    - /url: /a/grafana-dbo11y-app/overview?from=now-24h&to=now
+                - listitem [ref=f9e1129]:
+                  - link "Query Details" [ref=f9e1558] [cursor=pointer]:
+                    - /url: /a/grafana-dbo11y-app/overview/mysql/fecdae5de4fbcb7d1dfd820271e3f523f180525de894924f458d1aa385154630/bankingcustomer/18cff2310544bdc0ee193ebb4b877601aaf049ec62ed6ab5bc09da46ac1a7543?from=now-24h&to=now
+                - listitem [ref=f9e1562]:
+                  - generic "Query Samples" [ref=f9e1563]
+          - generic [ref=f9e500]:
+            - generic [ref=f9e502]:
+              - button "Search..." [ref=f9e506] [cursor=pointer]
+              - generic [ref=f9e507]: ⌘+k
+            - button "New" [ref=f9e509] [cursor=pointer]
+            - button "Help" [ref=f9e515] [cursor=pointer]
+            - button "Open Grafana Assistant" [ref=f9e519] [cursor=pointer]
+            - button "Profile" [ref=f9e524] [cursor=pointer]:
+              - img "User avatar" [ref=f9e525]
+      - main [ref=f9e528]:
+        - generic [ref=f9e1565]:
+          - generic [ref=f9e1566]:
+            - generic [ref=f9e1570]:
+              - img "MySQL" [ref=f9e1573]
+              - heading "Query Details" [level=1] [ref=f9e1578]
+              - generic [ref=f9e1579]: MySQL
+            - generic [ref=f9e1581]:
+              - generic [ref=f9e1582]:
+                - generic [ref=f9e1588] [cursor=pointer]:
+                  - img "Prometheus logo" [ref=f9e1590]
+                  - combobox "Select a data source" [ref=f9e1591]
+                - generic [ref=f9e1600] [cursor=pointer]:
+                  - img "Loki logo" [ref=f9e1602]
+                  - combobox "Select a data source" [ref=f9e1603]
+                - generic [ref=f9e1607]:
+                  - button "Move 12h backward" [ref=f9e1608] [cursor=pointer]
+                  - 'button "Time range selected: Last 24 hours" [ref=f9e1611] [cursor=pointer]':
+                    - generic [ref=f9e1614]: Last 24 hours
+                  - button "Move time range forwards" [ref=f9e1619] [cursor=pointer]
+                  - button "Zoom out time range" [ref=f9e1622] [cursor=pointer]
+                - generic [ref=f9e1625]:
+                  - button [ref=f9e1626] [cursor=pointer]
+                  - button "Auto refresh turned off. Choose refresh time interval" [ref=f9e1629] [cursor=pointer]
+              - link "Give feedback" [ref=f9e1633] [cursor=pointer]:
+                - /url: https://docs.google.com/forms/d/e/1FAIpQLSe8NJFlPoPN62grDM8hOBDVZM57HHQVXIEbQNTQ4foBMa7IQw/viewform?usp=header
+          - tablist [ref=f9e1639]:
+            - tab "Query Performance" [ref=f9e1641] [cursor=pointer]
+            - tab "Query Samples" [selected] [ref=f9e1643] [cursor=pointer]
+            - tab "Wait Events" [ref=f9e1645] [cursor=pointer]
+            - tab "Table Schema Details" [ref=f9e1647] [cursor=pointer]
+            - tab "Explain Plan" [ref=f9e1649] [cursor=pointer]
+          - generic [ref=f9e1653]:
+            - 'alert "Error with: Query Samples Panel" [ref=f9e1655]':
+              - generic [ref=f9e1662]:
+                - text: "Error with: Query Samples Panel"
+                - button "Show error details" [ref=f9e1664] [cursor=pointer]
+            - generic [ref=f9e1666]:
+              - generic [ref=f9e1667]:
+                - group "Query sample filters" [ref=f9e1669]:
+                  - button "Add sample filter" [ref=f9e1671] [cursor=pointer]:
+                    - generic [ref=f9e1674]: Filters
+                - generic [ref=f9e1678]:
+                  - button "Analyze samples" [ref=f9e1679] [cursor=pointer]
+                  - button "More AI actions" [ref=f9e1684] [cursor=pointer]
+              - region [ref=f9e1691]:
+                - generic [ref=f9e1692]:
+                  - button "Panel status" [ref=f9e1694] [cursor=pointer]
+                  - heading "Select a query sample" [level=2] [ref=f9e1698]
+                  - link "Explore" [ref=f9e1699] [cursor=pointer]:
+                    - /url: /explore?left=%7B%22datasource%22%3A%22--%20Mixed%20--%22%2C%22queries%22%3A%5B%7B%22refId%22%3A%22Duration%20AVG%22%2C%22datasource%22%3A%7B%22type%22%3A%22prometheus%22%2C%22uid%22%3A%22grafanacloud-prom%22%7D%2C%22expr%22%3A%22(%5Cn%20%20%20%20(%5Cn%20%20%20%20%20%20sum(rate(mysql_perf_schema_events_statements_seconds_total%7Bjob%3D%5C%22integrations%2Fdb-o11y%5C%22%2C%20server_id%3D%5C%22fecdae5de4fbcb7d1dfd820271e3f523f180525de894924f458d1aa385154630%5C%22%2C%20digest%3D%5C%2218cff2310544bdc0ee193ebb4b877601aaf049ec62ed6ab5bc09da46ac1a7543%5C%22%2C%20schema%3D%5C%22bankingcustomer%5C%22%7D%5B%24__rate_interval%3A%5D)%20or%20on()%20vector(0))%5Cn%20%20%20%20)%20%2F%20(%5Cn%20%20%20%20%20%20sum(rate(mysql_perf_schema_events_statements_total%7Bjob%3D%5C%22integrations%2Fdb-o11y%5C%22%2C%20server_id%3D%5C%22fecdae5de4fbcb7d1dfd820271e3f523f180525de894924f458d1aa385154630%5C%22%2C%20digest%3D%5C%2218cff2310544bdc0ee193ebb4b877601aaf049ec62ed6ab5bc09da46ac1a7543%5C%22%2C%20schema%3D%5C%22bankingcustomer%5C%22%7D%5B%24__rate_interval%3A%5D)%20or%20on()%20vector(0))%5Cn%20%20%20%20)%5Cn%20%20)%22%2C%22legendFormat%22%3A%22AVG%20Duration%22%2C%22interval%22%3A%222m%22%2C%22intervalMs%22%3A120000%7D%2C%7B%22refId%22%3A%22Duration%20P95%22%2C%22datasource%22%3A%7B%22type%22%3A%22prometheus%22%2C%22uid%22%3A%22grafanacloud-prom%22%7D%2C%22expr%22%3A%22(%5Cn%20%20%20%20%20%20(rate(mysql_perf_schema_events_statements_total%7Bjob%3D%5C%22integrations%2Fdb-o11y%5C%22%2C%20server_id%3D%5C%22fecdae5de4fbcb7d1dfd820271e3f523f180525de894924f458d1aa385154630%5C%22%2C%20digest%3D%5C%2218cff2310544bdc0ee193ebb4b877601aaf049ec62ed6ab5bc09da46ac1a7543%5C%22%2C%20schema%3D%5C%22bankingcustomer%5C%22%7D%5B%24__rate_interval%5D)%5Cn%20%20%20%20%20%20%20%20%3E%20bool%200%5Cn%20%20%20%20%20%20)%20*%20on()%5Cn%20%20%20%20%20%20(mysql_perf_schema_events_statements_latency%7Bquantile%3D~%5C%2295%7C95.0%5C%22%2C%20job%3D%5C%22integrations%2Fdb-o11y%5C%22%2C%20server_id%3D%5C%22fecdae5de4fbcb7d1dfd820271e3f523f180525de894924f458d1aa385154630%5C%22%2C%20digest%3D%5C%2218cff2310544bdc0ee193ebb4b877601aaf049ec62ed6ab5bc09da46ac1a7543%5C%22%2C%20schema%3D%5C%22bankingcustomer%5C%22%7D)%5Cn%20%20%20%20%20%20)%20!%3D%200%22%2C%22legendFormat%22%3A%22P95%22%2C%22interval%22%3A%222m%22%2C%22intervalMs%22%3A120000%7D%2C%7B%22refId%22%3A%22Duration%20P99%22%2C%22datasource%22%3A%7B%22type%22%3A%22prometheus%22%2C%22uid%22%3A%22grafanacloud-prom%22%7D%2C%22expr%22%3A%22(%5Cn%20%20%20%20%20%20(rate(mysql_perf_schema_events_statements_total%7Bjob%3D%5C%22integrations%2Fdb-o11y%5C%22%2C%20server_id%3D%5C%22fecdae5de4fbcb7d1dfd820271e3f523f180525de894924f458d1aa385154630%5C%22%2C%20digest%3D%5C%2218cff2310544bdc0ee193ebb4b877601aaf049ec62ed6ab5bc09da46ac1a7543%5C%22%2C%20schema%3D%5C%22bankingcustomer%5C%22%7D%5B%24__rate_interval%5D)%5Cn%20%20%20%20%20%20%20%20%3E%20bool%200%5Cn%20%20%20%20%20%20)%20*%20on()%5Cn%20%20%20%20%20%20(mysql_perf_schema_events_statements_latency%7Bquantile%3D~%5C%2299%7C99.0%5C%22%2C%20job%3D%5C%22integrations%2Fdb-o11y%5C%22%2C%20server_id%3D%5C%22fecdae5de4fbcb7d1dfd820271e3f523f180525de894924f458d1aa385154630%5C%22%2C%20digest%3D%5C%2218cff2310544bdc0ee193ebb4b877601aaf049ec62ed6ab5bc09da46ac1a7543%5C%22%2C%20schema%3D%5C%22bankingcustomer%5C%22%7D)%5Cn%20%20%20%20%20%20)%20!%3D%200%22%2C%22legendFormat%22%3A%22P99%22%2C%22interval%22%3A%222m%22%2C%22intervalMs%22%3A120000%7D%2C%7B%22refId%22%3A%22Query%20Samples%20Panel%22%2C%22datasource%22%3A%7B%22type%22%3A%22loki%22%2C%22uid%22%3A%22grafanacloud-logs%22%7D%2C%22expr%22%3A%22topk(500%2C%20last_over_time(%7Bjob%3D%5C%22integrations%2Fdb-o11y%5C%22%2C%20op%3D%5C%22query_sample%5C%22%2C%20server_id%3D%5C%22fecdae5de4fbcb7d1dfd820271e3f523f180525de894924f458d1aa385154630%5C%22%7D%20%7C%3D%20%5C%2218cff2310544bdc0ee193ebb4b877601aaf049ec62ed6ab5bc09da46ac1a7543%5C%22%20%7C%20logfmt%20%7C%20schema%3D%5C%22bankingcustomer%5C%22%20%7C%20unwrap%20duration_seconds(elapsed_time)%5B%24__auto%5D))%22%2C%22instant%22%3Atrue%2C%22queryType%22%3A%22range%22%2C%22meta%22%3A%7B%22querySamplesPanel%22%3Atrue%2C%22engineName%22%3A%22mysql%22%7D%2C%22interval%22%3A%222m%22%2C%22intervalMs%22%3A120000%7D%5D%2C%22range%22%3A%7B%22from%22%3A%22now-24h%22%2C%22to%22%3A%22now%22%7D%7D
+                - list [ref=f9e1720]:
+                  - listitem [ref=f9e1721]:
+                    - generic [ref=f9e1723]:
+                      - button "Edit color for AVG Duration" [ref=f9e1724] [cursor=pointer]
+                      - button "All series selected" [ref=f9e1725] [cursor=pointer]: AVG Duration
+                  - listitem [ref=f9e1726]:
+                    - generic [ref=f9e1728]:
+                      - button "Edit color for P95" [ref=f9e1729] [cursor=pointer]
+                      - button "All series selected" [ref=f9e1730] [cursor=pointer]: P95
+                  - listitem [ref=f9e1731]:
+                    - generic [ref=f9e1733]:
+                      - button "Edit color for P99" [ref=f9e1734] [cursor=pointer]
+                      - button "All series selected" [ref=f9e1735] [cursor=pointer]: P99
+              - status "Quick Tip" [ref=f9e1738]
+    - generic:
+      - log [ref=f9e1124]
+      - tooltip "Main menu" [ref=f9e1557]
+  - generic [ref=f9e1533]:
+    - alert
+    - alert
+    - complementary
+    - complementary

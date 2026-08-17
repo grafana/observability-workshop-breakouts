@@ -1,0 +1,507 @@
+- generic [active] [ref=f30e1]:
+  - generic [ref=f30e9]:
+    - generic [ref=f30e10]:
+      - link "Skip to main content" [ref=f30e11] [cursor=pointer]:
+        - /url: "#pageContent"
+      - banner [ref=f30e13]:
+        - generic [ref=f30e14]:
+          - generic [ref=f30e15]:
+            - link [ref=f30e16] [cursor=pointer]:
+              - /url: /
+              - img "Grafana" [ref=f30e17]
+            - button "Main menu" [ref=f30e18] [cursor=pointer]
+            - navigation "Breadcrumbs" [ref=f30e23]:
+              - list [ref=f30e24]:
+                - listitem [ref=f30e25]:
+                  - link "Explore" [ref=f30e26] [cursor=pointer]:
+                    - /url: /explore
+                - listitem [ref=f30e30]:
+                  - generic "grafanacloud-devfedb13-traces" [ref=f30e31]
+          - generic [ref=f30e32]:
+            - generic [ref=f30e34]:
+              - button "Search..." [ref=f30e38] [cursor=pointer]
+              - generic [ref=f30e39]: ⌘+k
+            - button "New" [ref=f30e41] [cursor=pointer]
+            - button "Help" [ref=f30e47] [cursor=pointer]
+            - button "Open Grafana Assistant" [ref=f30e51] [cursor=pointer]
+            - button "Profile" [ref=f30e56] [cursor=pointer]:
+              - img "User avatar" [ref=f30e57]
+      - main [ref=f30e60]:
+        - generic [ref=f30e63]:
+          - heading "Explore" [level=1] [ref=f30e64]
+          - generic [ref=f30e67]:
+            - navigation "Explore toolbar" [ref=f30e69]:
+              - navigation "Search links" [ref=f30e71]:
+                - generic [ref=f30e72]:
+                  - button "Content outline" [expanded] [ref=f30e74] [cursor=pointer]:
+                    - generic [ref=f30e77]: Outline
+                  - generic [ref=f30e82] [cursor=pointer]:
+                    - img "Tempo logo" [ref=f30e84]
+                    - combobox "Select a data source" [ref=f30e85]
+                  - button "Go queryless" [ref=f30e90] [cursor=pointer]
+              - generic [ref=f30e92]:
+                - button "Split the pane" [ref=f30e94] [cursor=pointer]:
+                  - generic [ref=f30e97]: Split
+                - button "Add" [ref=f30e99] [cursor=pointer]
+                - generic [ref=f30e104]:
+                  - button "Move time range backwards" [ref=f30e105] [cursor=pointer]
+                  - 'button "Time range selected: Last 1 hour" [ref=f30e108] [cursor=pointer]'
+                  - button "Move time range forwards" [ref=f30e113] [cursor=pointer]
+                  - button "Zoom out time range" [ref=f30e116] [cursor=pointer]
+                - generic [ref=f30e120]:
+                  - button "Run query" [ref=f30e121] [cursor=pointer]
+                  - button "Auto refresh turned off. Choose refresh time interval" [ref=f30e124] [cursor=pointer]
+                - generic [ref=f30e128]:
+                  - button "Copy shortened URL" [ref=f30e129] [cursor=pointer]
+                  - button "Open copy link options" [ref=f30e132] [cursor=pointer]
+            - generic [ref=f30e136]:
+              - generic [ref=f30e141]:
+                - button "Collapse outline" [expanded] [ref=f30e143] [cursor=pointer]:
+                  - img "arrow-from-right" [ref=f30e144]
+                - button "Queries" [ref=f30e147] [cursor=pointer]:
+                  - img "arrow" [ref=f30e148]
+                - button "Traces" [ref=f30e152] [cursor=pointer]:
+                  - img "file-alt" [ref=f30e153]
+              - generic [ref=f30e158]:
+                - generic [ref=f30e160]:
+                  - generic [ref=f30e164]:
+                    - generic [ref=f30e166]:
+                      - generic [ref=f30e167]:
+                        - button "Collapse query row" [expanded] [ref=f30e168] [cursor=pointer]
+                        - generic [ref=f30e171]:
+                          - button "A" [ref=f30e172] [cursor=pointer]
+                          - emphasis [ref=f30e174]: (grafanacloud-devfedb13-traces)
+                      - generic [ref=f30e175]:
+                        - button "Saved queries" [ref=f30e176] [cursor=pointer]
+                        - button "Show data source help" [ref=f30e183] [cursor=pointer]
+                        - button "Create recorded query" [ref=f30e187] [cursor=pointer]
+                        - button "Duplicate query" [ref=f30e191] [cursor=pointer]
+                        - button "Hide response" [ref=f30e195] [cursor=pointer]
+                        - button "Remove query" [ref=f30e199] [cursor=pointer]
+                        - button "Drag and drop to reorder" [ref=f30e202]:
+                          - img "Drag and drop to reorder" [ref=f30e203]
+                    - generic [ref=f30e206]:
+                      - generic [ref=f30e208]:
+                        - generic [ref=f30e209]: Query type
+                        - generic [ref=f30e211]:
+                          - radiogroup [ref=f30e212]:
+                            - generic [ref=f30e213]:
+                              - radio "Search" [ref=f30e214] [cursor=pointer]
+                              - generic "Search" [ref=f30e215] [cursor=pointer]
+                            - generic [ref=f30e217]:
+                              - radio "TraceQL" [checked] [ref=f30e218] [cursor=pointer]
+                              - generic "TraceQL" [ref=f30e219] [cursor=pointer]
+                            - generic [ref=f30e221]:
+                              - radio "Service Graph" [ref=f30e222] [cursor=pointer]
+                              - generic "Service Graph" [ref=f30e223] [cursor=pointer]
+                          - button "Import trace" [ref=f30e225] [cursor=pointer]
+                      - generic [ref=f30e227]:
+                        - text: Build complex queries using TraceQL to select a list of traces.
+                        - link "Documentation" [ref=f30e228] [cursor=pointer]:
+                          - /url: https://grafana.com/docs/tempo/latest/traceql/
+                      - code [ref=f30e234]:
+                        - generic [ref=f30e235]:
+                          - generic [ref=f30e240]: 10a234ecd6cbeb6e35badb3251ea9c68
+                          - textbox "Editor content;Press Alt+F1 for Accessibility Options." [ref=f30e245]: 10a234ecd6cbeb6e35badb3251ea9c68
+                      - generic [ref=f30e249]:
+                        - generic [ref=f30e252] [cursor=pointer]:
+                          - 'button "Search Options Limit: 20 Spans Limit: 3 Table Format: Traces | Streaming: Enabled" [ref=f30e253]'
+                          - generic [ref=f30e257]:
+                            - heading "Search Options" [level=6] [ref=f30e258]
+                            - generic [ref=f30e259]:
+                              - generic [ref=f30e260]: "Limit: 20"
+                              - generic [ref=f30e261]: "Spans Limit: 3"
+                              - generic [ref=f30e262]: "Table Format: Traces"
+                              - generic [ref=f30e263]: "|"
+                              - generic [ref=f30e264]: "Streaming: Enabled"
+                        - generic [ref=f30e267] [cursor=pointer]:
+                          - 'button "Metrics Options Step: auto Type: Range | Streaming: Disabled" [ref=f30e268]'
+                          - generic [ref=f30e272]:
+                            - heading "Metrics Options" [level=6] [ref=f30e273]
+                            - generic [ref=f30e274]:
+                              - generic [ref=f30e275]: "Step: auto"
+                              - generic [ref=f30e276]: "Type: Range"
+                              - generic [ref=f30e277]: "|"
+                              - generic [ref=f30e278]: "Streaming: Disabled"
+                  - generic [ref=f30e279]:
+                    - button "Add query" [ref=f30e280] [cursor=pointer]
+                    - button "Add from saved queries" [ref=f30e284] [cursor=pointer]
+                    - button "Query history" [ref=f30e288] [cursor=pointer]
+                    - button "Query inspector" [ref=f30e292] [cursor=pointer]
+                - main [ref=f30e296]:
+                  - region [ref=f30e300]:
+                    - heading "Trace" [level=2] [ref=f30e303]
+                    - generic [ref=f30e304]:
+                      - generic [ref=f30e305]:
+                        - generic [ref=f30e306]:
+                          - generic [ref=f30e307]:
+                            - 'heading "banking: HTTP GET" [level=1] [ref=f30e308]'
+                            - generic [ref=f30e309]:
+                              - generic [ref=f30e310]: GET
+                              - generic [ref=f30e311]: "200"
+                          - generic [ref=f30e312]:
+                            - button "Explain in Assistant" [ref=f30e314] [cursor=pointer]
+                            - link "Feedback" [ref=f30e319] [cursor=pointer]:
+                              - /url: https://forms.gle/RZDEx8ScyZNguDoC8
+                            - generic [ref=f30e323]:
+                              - button "Share" [ref=f30e324] [cursor=pointer]
+                              - button "Open share trace options menu" [ref=f30e328] [cursor=pointer]
+                        - generic [ref=f30e331]:
+                          - generic [ref=f30e332]:
+                            - generic [ref=f30e333]: Trace ID
+                            - button "10a234ecd6cbeb6e35badb3251ea9c68" [ref=f30e335] [cursor=pointer]
+                          - generic [ref=f30e338]:
+                            - generic [ref=f30e339]: Start time
+                            - generic [ref=f30e340]:
+                              - generic [ref=f30e341]: 2026-08-17 01:54:06.441
+                              - generic [ref=f30e342]: (28 minutes ago)
+                          - generic [ref=f30e343]:
+                            - generic [ref=f30e344]: Duration
+                            - generic [ref=f30e345]: 60ms
+                          - generic [ref=f30e346]:
+                            - generic [ref=f30e347]: Services
+                            - generic [ref=f30e348]: "6"
+                          - generic [ref=f30e349]:
+                            - generic [ref=f30e350]: URL
+                            - generic [ref=f30e351]: https://bank.devfedb13.field-eng-demo.grafana.net/api/transactions?accountId=acct-syn-0364-chk
+                        - generic [ref=f30e353] [cursor=pointer]:
+                          - button "Overview" [expanded] [ref=f30e354]
+                          - generic [ref=f30e357]: Overview
+                        - generic [ref=f30e361]:
+                          - generic [ref=f30e362]: 0μs
+                          - generic [ref=f30e363]: 15ms
+                          - generic [ref=f30e364]: 30ms
+                          - generic [ref=f30e365]: 45ms
+                          - generic [ref=f30e366]: 60ms
+                        - generic [ref=f30e380]:
+                          - generic [ref=f30e381]: Filters
+                          - generic [ref=f30e385]:
+                            - combobox "Filter by attribute or text" [ref=f30e387]
+                            - button "Clear all" [ref=f30e390] [cursor=pointer]
+                          - generic [ref=f30e393]:
+                            - generic [ref=f30e394]:
+                              - button "Critical path" [ref=f30e396] [cursor=pointer]
+                              - button "Errors" [ref=f30e399] [cursor=pointer]
+                              - button "High latency" [ref=f30e402] [cursor=pointer]
+                            - generic [ref=f30e404]:
+                              - generic [ref=f30e405]:
+                                - generic [ref=f30e406]:
+                                  - button "Prev result button" [disabled] [ref=f30e407]
+                                  - button "Next result button" [disabled] [ref=f30e410]
+                                - generic [ref=f30e413]: 41 spans
+                              - generic [ref=f30e418]:
+                                - generic [ref=f30e419] [cursor=pointer]: Show all spans
+                                - switch "Show all spans" [checked] [disabled] [ref=f30e421]
+                      - generic [ref=f30e423]:
+                        - generic [ref=f30e424]:
+                          - generic [ref=f30e425]:
+                            - heading "Service & Operation" [level=4] [ref=f30e426]
+                            - generic [ref=f30e428]:
+                              - generic [ref=f30e429]:
+                                - button "Expand +1" [ref=f30e430] [cursor=pointer]
+                                - button "Collapse +1" [ref=f30e433] [cursor=pointer]
+                              - generic [ref=f30e436]:
+                                - button "Expand all" [ref=f30e437] [cursor=pointer]
+                                - button "Collapse all" [ref=f30e440] [cursor=pointer]
+                          - generic [ref=f30e443]:
+                            - generic:
+                              - generic: 0μs
+                              - generic: 15ms
+                              - generic: 30ms
+                              - generic: 45ms
+                              - generic: 60ms
+                        - generic [ref=f30e447]:
+                          - generic:
+                            - generic [ref=f30e449]:
+                              - generic [ref=f30e451]:
+                                - switch [checked] [ref=f30e452]
+                                - switch "banking HTTP GET (60ms)" [ref=f30e457] [cursor=pointer]:
+                                  - text: banking HTTP GET
+                                  - generic [ref=f30e458]: (60ms)
+                              - generic [ref=f30e459] [cursor=pointer]: 60ms
+                            - generic [ref=f30e466]:
+                              - generic [ref=f30e468]:
+                                - switch [checked] [ref=f30e469]
+                                - switch "banking-prod/frontend GET (45.82ms)" [ref=f30e475] [cursor=pointer]:
+                                  - text: banking-prod/frontend GET
+                                  - generic [ref=f30e476]: (45.82ms)
+                              - generic [ref=f30e477] [cursor=pointer]: 45.82ms
+                            - generic [ref=f30e483]:
+                              - generic [ref=f30e485]:
+                                - switch [checked] [ref=f30e486]
+                                - switch "GET /api/transactions?accountId=acct-syn-0364-chk (45.25ms)" [ref=f30e493] [cursor=pointer]:
+                                  - text: GET /api/transactions?accountId=acct-syn-0364-chk
+                                  - generic [ref=f30e494]: (45.25ms)
+                              - generic [ref=f30e495] [cursor=pointer]: 45.25ms
+                            - generic [ref=f30e502]:
+                              - generic [ref=f30e504]:
+                                - switch [checked] [ref=f30e505]
+                                - switch "executing api route (pages) /api/transactions (43.18ms)" [ref=f30e513] [cursor=pointer]:
+                                  - text: executing api route (pages) /api/transactions
+                                  - generic [ref=f30e514]: (43.18ms)
+                              - generic [ref=f30e515] [cursor=pointer]: 43.18ms
+                            - generic [ref=f30e522]:
+                              - generic [ref=f30e524]:
+                                - switch [checked] [ref=f30e525]
+                                - switch "grpc.banking.v1.AuthService/ValidateSession (1.65ms)" [ref=f30e534] [cursor=pointer]:
+                                  - text: grpc.banking.v1.AuthService/ValidateSession
+                                  - generic [ref=f30e535]: (1.65ms)
+                              - generic [ref=f30e536] [cursor=pointer]: 1.65ms
+                            - generic [ref=f30e543]:
+                              - generic [ref=f30e545]:
+                                - generic [ref=f30e546]: "-"
+                                - switch "banking-prod/auth banking.v1.AuthService/ValidateSession (74.44μs)" [ref=f30e554] [cursor=pointer]:
+                                  - text: banking-prod/auth banking.v1.AuthService/ValidateSession
+                                  - generic [ref=f30e555]: (74.44μs)
+                              - generic [ref=f30e556] [cursor=pointer]: 74.44μs
+                            - generic [ref=f30e562]:
+                              - generic [ref=f30e564]:
+                                - switch [checked] [ref=f30e565]
+                                - switch "banking-prod/frontend grpc.banking.v1.AccountService/GetAccount (2.64ms)" [ref=f30e574] [cursor=pointer]:
+                                  - text: banking-prod/frontend grpc.banking.v1.AccountService/GetAccount
+                                  - generic [ref=f30e575]: (2.64ms)
+                              - generic [ref=f30e576] [cursor=pointer]: 2.64ms
+                            - generic [ref=f30e581]:
+                              - generic [ref=f30e583]:
+                                - switch [checked] [ref=f30e584]
+                                - switch "banking-prod/account banking.v1.AccountService/GetAccount (1.91ms)" [ref=f30e594] [cursor=pointer]:
+                                  - text: banking-prod/account banking.v1.AccountService/GetAccount
+                                  - generic [ref=f30e595]: (1.91ms)
+                              - generic [ref=f30e596] [cursor=pointer]: 1.91ms
+                            - generic [ref=f30e601]:
+                              - generic [ref=f30e603]:
+                                - generic [ref=f30e604]: "-"
+                                - switch "db.Query (1.07ms)" [ref=f30e613] [cursor=pointer]:
+                                  - text: db.Query
+                                  - generic [ref=f30e614]: (1.07ms)
+                              - generic [ref=f30e615] [cursor=pointer]: 1.07ms
+                            - generic [ref=f30e620]:
+                              - generic [ref=f30e622]:
+                                - switch [checked] [ref=f30e623]
+                                - switch "banking.v1.BalanceService/GetBalance (754.33μs)" [ref=f30e634] [cursor=pointer]:
+                                  - text: banking.v1.BalanceService/GetBalance
+                                  - generic [ref=f30e635]: (754.33μs)
+                              - generic [ref=f30e636] [cursor=pointer]: 754.33μs
+                            - generic [ref=f30e641]:
+                              - generic [ref=f30e643]:
+                                - switch [checked] [ref=f30e644]
+                                - switch "banking-prod/balance banking.v1.BalanceService/GetBalance (318.85μs)" [ref=f30e656] [cursor=pointer]:
+                                  - text: banking-prod/balance banking.v1.BalanceService/GetBalance
+                                  - generic [ref=f30e657]: (318.85μs)
+                              - generic [ref=f30e658] [cursor=pointer]: 318.85μs
+                            - generic [ref=f30e663]:
+                              - generic [ref=f30e665]:
+                                - generic [ref=f30e666]: "-"
+                                - switch "db.Query (232.22μs)" [ref=f30e677] [cursor=pointer]:
+                                  - text: db.Query
+                                  - generic [ref=f30e678]: (232.22μs)
+                              - generic [ref=f30e679] [cursor=pointer]: 232.22μs
+                            - generic [ref=f30e684]:
+                              - generic [ref=f30e686]:
+                                - switch [checked] [ref=f30e687]
+                                - switch "banking-prod/frontend grpc.banking.v1.TransactionService/ListTransactions (38.37ms)" [ref=f30e696] [cursor=pointer]:
+                                  - text: banking-prod/frontend grpc.banking.v1.TransactionService/ListTransactions
+                                  - generic [ref=f30e697]: (38.37ms)
+                              - generic [ref=f30e698] [cursor=pointer]: 38.37ms
+                            - generic [ref=f30e704]:
+                              - generic [ref=f30e706]:
+                                - switch [checked] [ref=f30e707]
+                                - switch "banking-prod/transaction banking.v1.TransactionService/ListTransactions (37.16ms)" [ref=f30e717] [cursor=pointer]:
+                                  - text: banking-prod/transaction banking.v1.TransactionService/ListTransactions
+                                  - generic [ref=f30e718]: (37.16ms)
+                              - generic [ref=f30e719] [cursor=pointer]: 37.16ms
+                            - generic [ref=f30e752]:
+                              - generic [ref=f30e754]:
+                                - generic [ref=f30e755]: "-"
+                                - switch "db.Query (653.5μs)" [ref=f30e764] [cursor=pointer]:
+                                  - text: db.Query
+                                  - generic [ref=f30e765]: (653.5μs)
+                              - generic [ref=f30e766] [cursor=pointer]: 653.5μs
+                            - generic [ref=f30e772]:
+                              - generic [ref=f30e774]:
+                                - generic [ref=f30e775]: "-"
+                                - switch "db.Query (1.22ms)" [ref=f30e784] [cursor=pointer]:
+                                  - text: db.Query
+                                  - generic [ref=f30e785]: (1.22ms)
+                              - generic [ref=f30e786] [cursor=pointer]: 1.22ms
+                            - generic [ref=f30e792]:
+                              - generic [ref=f30e794]:
+                                - generic [ref=f30e795]: "-"
+                                - switch "db.Query (1.11ms)" [ref=f30e804] [cursor=pointer]:
+                                  - text: db.Query
+                                  - generic [ref=f30e805]: (1.11ms)
+                              - generic [ref=f30e806] [cursor=pointer]: 1.11ms
+                            - generic [ref=f30e812]:
+                              - generic [ref=f30e814]:
+                                - generic [ref=f30e815]: "-"
+                                - switch "db.Query (1.08ms)" [ref=f30e824] [cursor=pointer]:
+                                  - text: db.Query
+                                  - generic [ref=f30e825]: (1.08ms)
+                              - generic [ref=f30e826] [cursor=pointer]: 1.08ms
+                            - generic [ref=f30e832]:
+                              - generic [ref=f30e834]:
+                                - generic [ref=f30e835]: "-"
+                                - switch "db.Query (1.08ms)" [ref=f30e844] [cursor=pointer]:
+                                  - text: db.Query
+                                  - generic [ref=f30e845]: (1.08ms)
+                              - generic [ref=f30e846] [cursor=pointer]: 1.08ms
+                            - generic [ref=f30e852]:
+                              - generic [ref=f30e854]:
+                                - generic [ref=f30e855]: "-"
+                                - switch "db.Query (1.06ms)" [ref=f30e864] [cursor=pointer]:
+                                  - text: db.Query
+                                  - generic [ref=f30e865]: (1.06ms)
+                              - generic [ref=f30e866] [cursor=pointer]: 1.06ms
+                            - generic [ref=f30e872]:
+                              - generic [ref=f30e874]:
+                                - generic [ref=f30e875]: "-"
+                                - switch "db.Query (1.06ms)" [ref=f30e884] [cursor=pointer]:
+                                  - text: db.Query
+                                  - generic [ref=f30e885]: (1.06ms)
+                              - generic [ref=f30e886] [cursor=pointer]: 1.06ms
+                            - generic [ref=f30e892]:
+                              - generic [ref=f30e894]:
+                                - generic [ref=f30e895]: "-"
+                                - switch "db.Query (1.1ms)" [ref=f30e904] [cursor=pointer]:
+                                  - text: db.Query
+                                  - generic [ref=f30e905]: (1.1ms)
+                              - generic [ref=f30e906] [cursor=pointer]: 1.1ms
+                            - generic [ref=f30e912]:
+                              - generic [ref=f30e914]:
+                                - generic [ref=f30e915]: "-"
+                                - switch "db.Query (1.06ms)" [ref=f30e924] [cursor=pointer]:
+                                  - text: db.Query
+                                  - generic [ref=f30e925]: (1.06ms)
+                              - generic [ref=f30e926] [cursor=pointer]: 1.06ms
+                            - generic [ref=f30e932]:
+                              - generic [ref=f30e934]:
+                                - generic [ref=f30e935]: "-"
+                                - switch "db.Query (1.06ms)" [ref=f30e944] [cursor=pointer]:
+                                  - text: db.Query
+                                  - generic [ref=f30e945]: (1.06ms)
+                              - generic [ref=f30e946] [cursor=pointer]: 1.06ms
+                            - generic [ref=f30e952]:
+                              - generic [ref=f30e954]:
+                                - generic [ref=f30e955]: "-"
+                                - switch "db.Query (1.08ms)" [ref=f30e964] [cursor=pointer]:
+                                  - text: db.Query
+                                  - generic [ref=f30e965]: (1.08ms)
+                              - generic [ref=f30e966] [cursor=pointer]: 1.08ms
+                            - generic [ref=f30e972]:
+                              - generic [ref=f30e974]:
+                                - generic [ref=f30e975]: "-"
+                                - switch "db.Query (1.49ms)" [ref=f30e984] [cursor=pointer]:
+                                  - text: db.Query
+                                  - generic [ref=f30e985]: (1.49ms)
+                              - generic [ref=f30e986] [cursor=pointer]: 1.49ms
+                            - generic [ref=f30e992]:
+                              - generic [ref=f30e994]:
+                                - generic [ref=f30e995]: "-"
+                                - switch "db.Query (1.39ms)" [ref=f30e1004] [cursor=pointer]:
+                                  - text: db.Query
+                                  - generic [ref=f30e1005]: (1.39ms)
+                              - generic [ref=f30e1006] [cursor=pointer]: 1.39ms
+                            - generic [ref=f30e1012]:
+                              - generic [ref=f30e1014]:
+                                - generic [ref=f30e1015]: "-"
+                                - switch "db.Query (1.08ms)" [ref=f30e1024] [cursor=pointer]:
+                                  - text: db.Query
+                                  - generic [ref=f30e1025]: (1.08ms)
+                              - generic [ref=f30e1026] [cursor=pointer]: 1.08ms
+                            - generic [ref=f30e1032]:
+                              - generic [ref=f30e1034]:
+                                - generic [ref=f30e1035]: "-"
+                                - switch "db.Query (1.06ms)" [ref=f30e1044] [cursor=pointer]:
+                                  - text: db.Query
+                                  - generic [ref=f30e1045]: (1.06ms)
+                              - generic [ref=f30e1046] [cursor=pointer]: 1.06ms
+                            - generic [ref=f30e1052]:
+                              - generic [ref=f30e1054]:
+                                - generic [ref=f30e1055]: "-"
+                                - switch "db.Query (1.06ms)" [ref=f30e1064] [cursor=pointer]:
+                                  - text: db.Query
+                                  - generic [ref=f30e1065]: (1.06ms)
+                              - generic [ref=f30e1066] [cursor=pointer]: 1.06ms
+                            - generic [ref=f30e1072]:
+                              - generic [ref=f30e1074]:
+                                - generic [ref=f30e1075]: "-"
+                                - switch "db.Query (1.04ms)" [ref=f30e1084] [cursor=pointer]:
+                                  - text: db.Query
+                                  - generic [ref=f30e1085]: (1.04ms)
+                              - generic [ref=f30e1086] [cursor=pointer]: 1.04ms
+                            - generic [ref=f30e1092]:
+                              - generic [ref=f30e1094]:
+                                - generic [ref=f30e1095]: "-"
+                                - switch "db.Query (1.06ms)" [ref=f30e1104] [cursor=pointer]:
+                                  - text: db.Query
+                                  - generic [ref=f30e1105]: (1.06ms)
+                              - generic [ref=f30e1106] [cursor=pointer]: 1.06ms
+                            - generic [ref=f30e1112]:
+                              - generic [ref=f30e1114]:
+                                - generic [ref=f30e1115]: "-"
+                                - switch "db.Query (1.04ms)" [ref=f30e1124] [cursor=pointer]:
+                                  - text: db.Query
+                                  - generic [ref=f30e1125]: (1.04ms)
+                              - generic [ref=f30e1126] [cursor=pointer]: 1.04ms
+                            - generic [ref=f30e1132]:
+                              - generic [ref=f30e1134]:
+                                - generic [ref=f30e1135]: "-"
+                                - switch "db.Query (1.03ms)" [ref=f30e1144] [cursor=pointer]:
+                                  - text: db.Query
+                                  - generic [ref=f30e1145]: (1.03ms)
+                              - generic [ref=f30e1146] [cursor=pointer]: 1.03ms
+                            - generic [ref=f30e1152]:
+                              - generic [ref=f30e1154]:
+                                - generic [ref=f30e1155]: "-"
+                                - switch "db.Query (1.04ms)" [ref=f30e1164] [cursor=pointer]:
+                                  - text: db.Query
+                                  - generic [ref=f30e1165]: (1.04ms)
+                              - generic [ref=f30e1166] [cursor=pointer]: 1.04ms
+                            - generic [ref=f30e1172]:
+                              - generic [ref=f30e1174]:
+                                - generic [ref=f30e1175]: "-"
+                                - switch "db.Query (1.02ms)" [ref=f30e1184] [cursor=pointer]:
+                                  - text: db.Query
+                                  - generic [ref=f30e1185]: (1.02ms)
+                              - generic [ref=f30e1186] [cursor=pointer]: 1.02ms
+                            - generic [ref=f30e1192]:
+                              - generic [ref=f30e1194]:
+                                - generic [ref=f30e1195]: "-"
+                                - switch "db.Query (1.03ms)" [ref=f30e1204] [cursor=pointer]:
+                                  - text: db.Query
+                                  - generic [ref=f30e1205]: (1.03ms)
+                              - generic [ref=f30e1206] [cursor=pointer]: 1.03ms
+                            - generic [ref=f30e1212]:
+                              - generic [ref=f30e1214]:
+                                - generic [ref=f30e1215]: "-"
+                                - switch "db.Query (1.03ms)" [ref=f30e1224] [cursor=pointer]:
+                                  - text: db.Query
+                                  - generic [ref=f30e1225]: (1.03ms)
+                              - generic [ref=f30e1226] [cursor=pointer]: 1.03ms
+                            - generic [ref=f30e1232]:
+                              - generic [ref=f30e1234]:
+                                - generic [ref=f30e1235]: "-"
+                                - switch "db.Query (1.05ms)" [ref=f30e1244] [cursor=pointer]:
+                                  - text: db.Query
+                                  - generic [ref=f30e1245]: (1.05ms)
+                              - generic [ref=f30e1246] [cursor=pointer]: 1.05ms
+                            - generic [ref=f30e1252]:
+                              - generic [ref=f30e1254]:
+                                - generic [ref=f30e1255]: "-"
+                                - switch "db.Query (1.22ms)" [ref=f30e1264] [cursor=pointer]:
+                                  - text: db.Query
+                                  - generic [ref=f30e1265]: (1.22ms)
+                              - generic [ref=f30e1266] [cursor=pointer]: 1.22ms
+                            - generic [ref=f30e1272]:
+                              - generic [ref=f30e1274]:
+                                - generic [ref=f30e1275]: "-"
+                                - switch "db.Query (1.26ms)" [ref=f30e1284] [cursor=pointer]:
+                                  - text: db.Query
+                                  - generic [ref=f30e1285]: (1.26ms)
+                              - generic [ref=f30e1286] [cursor=pointer]: 1.26ms
+    - log [ref=f30e1291]
+  - generic [ref=f30e1293]:
+    - alert
+    - alert
+    - complementary
+    - complementary

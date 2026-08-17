@@ -1,0 +1,880 @@
+- generic [ref=f39e9]:
+  - generic [ref=f39e10]:
+    - link "Skip to main content" [ref=f39e11] [cursor=pointer]:
+      - /url: "#pageContent"
+    - banner [ref=f39e13]:
+      - generic [ref=f39e14]:
+        - generic [ref=f39e15]:
+          - link [ref=f39e16] [cursor=pointer]:
+            - /url: /
+            - img "Grafana" [ref=f39e17]
+          - button "Main menu" [ref=f39e18] [cursor=pointer]
+          - navigation "Breadcrumbs" [ref=f39e23]:
+            - list [ref=f39e24]:
+              - listitem [ref=f39e25]:
+                - link "Drilldown" [ref=f39e26] [cursor=pointer]:
+                  - /url: /drilldown
+              - listitem [ref=f39e30]:
+                - link "Traces" [ref=f39e31] [cursor=pointer]:
+                  - /url: /a/grafana-exploretraces-app/
+              - listitem [ref=f39e35]:
+                - generic "Traces Drilldown" [ref=f39e36]
+        - generic [ref=f39e37]:
+          - generic [ref=f39e39]:
+            - button "Search..." [ref=f39e43] [cursor=pointer]
+            - generic [ref=f39e44]: ⌘+k
+          - button "New" [ref=f39e46] [cursor=pointer]
+          - button "Help" [ref=f39e52] [cursor=pointer]
+          - button "Open Grafana Assistant" [ref=f39e56] [cursor=pointer]
+          - button "Profile" [ref=f39e61] [cursor=pointer]:
+            - img "User avatar" [ref=f39e62]
+    - main [ref=f39e65]:
+      - generic [ref=f39e69]:
+        - generic [ref=f39e70]:
+          - generic [ref=f39e71]:
+            - generic [ref=f39e73]:
+              - generic [ref=f39e74]: Data source
+              - generic [ref=f39e75] [cursor=pointer]:
+                - log [ref=f39e77]
+                - generic [ref=f39e79]:
+                  - generic [ref=f39e80]: grafanacloud-devfedb13-traces
+                  - combobox [ref=f39e82]
+            - generic [ref=f39e86]:
+              - button "Save in Saved queries Queries" [ref=f39e87] [cursor=pointer]
+              - button "Load Saved query" [ref=f39e90] [cursor=pointer]
+              - generic [ref=f39e93]:
+                - generic [ref=f39e94]: Insights
+                - switch "Insights" [checked] [ref=f39e99]
+              - generic [ref=f39e101]:
+                - button "Move 1h 30m backward" [ref=f39e102] [cursor=pointer]
+                - 'button "Time range selected: Last 3 hours" [ref=f39e105] [cursor=pointer]':
+                  - generic [ref=f39e108]: Last 3 hours
+                - button "Move time range forwards" [ref=f39e113] [cursor=pointer]
+                - button "Zoom out time range" [ref=f39e116] [cursor=pointer]
+              - generic [ref=f39e119]:
+                - button [ref=f39e120] [cursor=pointer]
+                - button "Auto refresh turned off. Choose refresh time interval" [ref=f39e123] [cursor=pointer]
+              - button "Plugin info" [ref=f39e126] [cursor=pointer]
+          - generic [ref=f39e129]:
+            - generic [ref=f39e130]:
+              - generic [ref=f39e131]:
+                - generic [ref=f39e132]: Filters
+                - radiogroup [ref=f39e133]:
+                  - generic [ref=f39e134]:
+                    - radio "Root spans" [checked] [ref=f39e135] [cursor=pointer]
+                    - generic "Root spans" [ref=f39e136] [cursor=pointer]
+                  - generic [ref=f39e138]:
+                    - radio "All spans" [ref=f39e139] [cursor=pointer]
+                    - generic "All spans" [ref=f39e140] [cursor=pointer]
+                - generic [ref=f39e142] [cursor=pointer]:
+                  - log [ref=f39e144]
+                  - combobox [ref=f39e147]
+              - generic [ref=f39e152]:
+                - button "Edit filter with key resource.k8s.namespace.name" [ref=f39e154] [cursor=pointer]:
+                  - generic [ref=f39e155]: resource.k8s.namespace.name = banking-prod
+                  - button "Remove filter with key resource.k8s.namespace.name" [ref=f39e156]
+                - combobox "+ label = value" [ref=f39e160]
+                - button "Clear all" [ref=f39e163] [cursor=pointer]
+            - generic [ref=f39e166]:
+              - generic [ref=f39e167]: Trace ID
+              - textbox "Enter an ID and press Enter" [ref=f39e170]
+        - generic [ref=f39e172]:
+          - generic [ref=f39e173]: Select metric type
+          - generic [ref=f39e177]:
+            - generic [ref=f39e178]:
+              - generic [ref=f39e180] [cursor=pointer]:
+                - generic [ref=f39e181]:
+                  - generic [ref=f39e182]:
+                    - generic [ref=f39e183]:
+                      - radiogroup [ref=f39e184]:
+                        - radio [checked] [ref=f39e186]
+                      - generic [ref=f39e187]: Histogram by duration
+                    - generic [ref=f39e188]: Click and drag to compare selection with baseline.
+                  - button "Slowest traces selected" [disabled] [ref=f39e191]
+                - generic [ref=f39e210]:
+                  - button "Annotation region" [ref=f39e211]
+                  - button "Annotation region" [ref=f39e212]
+                  - button "Annotation region" [ref=f39e213]
+                  - button "Annotation region" [ref=f39e214]
+                  - button "Annotation region" [ref=f39e215]
+                  - button "Annotation region" [ref=f39e216]
+                  - button "Annotation region" [ref=f39e217]
+                  - button "Annotation region" [ref=f39e218]
+                  - button "Annotation region" [ref=f39e219]
+                  - button "Annotation region" [ref=f39e220]
+                  - button "Annotation region" [ref=f39e221]
+                  - button "Annotation region" [ref=f39e222]
+                  - button "Annotation region" [ref=f39e223]
+                  - button "Annotation region" [ref=f39e224]
+                  - button "Annotation region" [ref=f39e225]
+                  - button "Annotation region" [ref=f39e226]
+                  - button "Annotation region" [ref=f39e227]
+                  - button "Annotation region" [ref=f39e228]
+                  - button "Annotation region" [ref=f39e229]
+                  - button "Annotation region" [ref=f39e230]
+              - generic [ref=f39e232]:
+                - generic [ref=f39e234] [cursor=pointer]:
+                  - radiogroup [ref=f39e236]:
+                    - radio [ref=f39e238]
+                  - generic [ref=f39e247]:
+                    - generic [ref=f39e254]:
+                      - button "Annotation region" [ref=f39e255]
+                      - button "Annotation region" [ref=f39e256]
+                      - button "Annotation region" [ref=f39e257]
+                      - button "Annotation region" [ref=f39e258]
+                      - button "Annotation region" [ref=f39e259]
+                      - button "Annotation region" [ref=f39e260]
+                      - button "Annotation region" [ref=f39e261]
+                      - button "Annotation region" [ref=f39e262]
+                      - button "Annotation region" [ref=f39e263]
+                      - button "Annotation region" [ref=f39e264]
+                      - button "Annotation region" [ref=f39e265]
+                      - button "Annotation region" [ref=f39e266]
+                      - button "Annotation region" [ref=f39e267]
+                      - button "Annotation region" [ref=f39e268]
+                      - button "Annotation region" [ref=f39e269]
+                      - button "Annotation region" [ref=f39e270]
+                      - button "Annotation region" [ref=f39e271]
+                      - button "Annotation region" [ref=f39e272]
+                      - button "Annotation region" [ref=f39e273]
+                      - button "Annotation region" [ref=f39e274]
+                    - generic:
+                      - button [ref=f39e277]
+                      - button [ref=f39e281]
+                      - button [ref=f39e285]
+                      - button [ref=f39e289]
+                      - button [ref=f39e293]
+                      - button [ref=f39e297]
+                      - button [ref=f39e301]
+                      - button [ref=f39e305]
+                      - button [ref=f39e309]
+                      - button [ref=f39e313]
+                      - button [ref=f39e317]
+                      - button [ref=f39e321]
+                      - button [ref=f39e325]
+                      - button [ref=f39e329]
+                      - button [ref=f39e333]
+                      - button [ref=f39e337]
+                      - button [ref=f39e341]
+                      - button [ref=f39e345]
+                      - button [ref=f39e349]
+                      - button [ref=f39e353]
+                      - button [ref=f39e357]
+                      - button [ref=f39e361]
+                      - button [ref=f39e365]
+                      - button [ref=f39e369]
+                      - button [ref=f39e373]
+                      - button [ref=f39e377]
+                      - button [ref=f39e381]
+                      - button [ref=f39e385]
+                      - button [ref=f39e389]
+                      - button [ref=f39e393]
+                      - button [ref=f39e397]
+                      - button [ref=f39e401]
+                      - button [ref=f39e405]
+                      - button [ref=f39e409]
+                      - button [ref=f39e413]
+                      - button [ref=f39e417]
+                      - button [ref=f39e421]
+                      - button [ref=f39e425]
+                      - button [ref=f39e429]
+                      - button [ref=f39e433]
+                      - button [ref=f39e437]
+                      - button [ref=f39e441]
+                      - button [ref=f39e445]
+                      - button [ref=f39e449]
+                      - button [ref=f39e453]
+                      - button [ref=f39e457]
+                      - button [ref=f39e461]
+                      - button [ref=f39e465]
+                      - button [ref=f39e469]
+                      - button [ref=f39e473]
+                      - button [ref=f39e477]
+                      - button [ref=f39e481]
+                      - button [ref=f39e485]
+                      - button [ref=f39e489]
+                      - button [ref=f39e493]
+                      - button [ref=f39e497]
+                      - button [ref=f39e501]
+                      - button [ref=f39e505]
+                      - button [ref=f39e509]
+                      - button [ref=f39e513]
+                      - button [ref=f39e517]
+                      - button [ref=f39e521]
+                      - button [ref=f39e525]
+                      - button [ref=f39e529]
+                - generic [ref=f39e533] [cursor=pointer]:
+                  - radiogroup [ref=f39e535]:
+                    - radio [ref=f39e537]
+                  - region "Errors rate" [ref=f39e543]:
+                    - generic [ref=f39e546]:
+                      - generic [ref=f39e553]:
+                        - button "Annotation region" [ref=f39e554]
+                        - button "Annotation region" [ref=f39e555]
+                        - button "Annotation region" [ref=f39e556]
+                        - button "Annotation region" [ref=f39e557]
+                        - button "Annotation region" [ref=f39e558]
+                        - button "Annotation region" [ref=f39e559]
+                        - button "Annotation region" [ref=f39e560]
+                        - button "Annotation region" [ref=f39e561]
+                        - button "Annotation region" [ref=f39e562]
+                        - button "Annotation region" [ref=f39e563]
+                        - button "Annotation region" [ref=f39e564]
+                        - button "Annotation region" [ref=f39e565]
+                        - button "Annotation region" [ref=f39e566]
+                        - button "Annotation region" [ref=f39e567]
+                        - button "Annotation region" [ref=f39e568]
+                        - button "Annotation region" [ref=f39e569]
+                        - button "Annotation region" [ref=f39e570]
+                        - button "Annotation region" [ref=f39e571]
+                        - button "Annotation region" [ref=f39e572]
+                        - button "Annotation region" [ref=f39e573]
+                      - generic:
+                        - button [ref=f39e576]
+                        - button [ref=f39e580]
+                        - button [ref=f39e584]
+                        - button [ref=f39e588]
+                        - button [ref=f39e592]
+                        - button [ref=f39e596]
+                        - button [ref=f39e600]
+                        - button [ref=f39e604]
+                        - button [ref=f39e608]
+                        - button [ref=f39e612]
+                        - button [ref=f39e616]
+                        - button [ref=f39e620]
+                        - button [ref=f39e624]
+                        - button [ref=f39e628]
+                        - button [ref=f39e632]
+                        - button [ref=f39e636]
+                        - button [ref=f39e640]
+                        - button [ref=f39e644]
+                        - button [ref=f39e648]
+                        - button [ref=f39e652]
+                        - button [ref=f39e656]
+                        - button [ref=f39e660]
+                        - button [ref=f39e664]
+                        - button [ref=f39e668]
+                        - button [ref=f39e672]
+                        - button [ref=f39e676]
+                        - button [ref=f39e680]
+                        - button [ref=f39e684]
+                        - button [ref=f39e688]
+                        - button [ref=f39e692]
+                        - button [ref=f39e696]
+                        - button [ref=f39e700]
+                        - button [ref=f39e704]
+                        - button [ref=f39e708]
+                        - button [ref=f39e712]
+                        - button [ref=f39e716]
+                        - button [ref=f39e720]
+                        - button [ref=f39e724]
+                        - button [ref=f39e728]
+                        - button [ref=f39e732]
+                        - button [ref=f39e736]
+                        - button [ref=f39e740]
+                        - button [ref=f39e744]
+                        - button [ref=f39e748]
+                        - button [ref=f39e752]
+                        - button [ref=f39e756]
+                        - button [ref=f39e760]
+                        - button [ref=f39e764]
+                        - button [ref=f39e768]
+                        - button [ref=f39e772]
+                        - button [ref=f39e776]
+                        - button [ref=f39e780]
+                        - button [ref=f39e784]
+                        - button [ref=f39e788]
+                        - button [ref=f39e792]
+                        - button [ref=f39e796]
+                        - button [ref=f39e800]
+                        - button [ref=f39e804]
+                        - button [ref=f39e808]
+                        - button [ref=f39e812]
+            - generic [ref=f39e816]:
+              - button "Copy url" [ref=f39e819] [cursor=pointer]
+              - tablist [ref=f39e823]:
+                - tab "Breakdown" [ref=f39e825] [cursor=pointer]
+                - tab "Root cause latency" [selected] [ref=f39e827] [cursor=pointer]
+                - tab "Comparison" [ref=f39e829] [cursor=pointer]
+                - tab "Slow traces200" [ref=f39e831] [cursor=pointer]
+            - generic [ref=f39e833]:
+              - generic [ref=f39e834]:
+                - generic [ref=f39e835]: Analyse the structure of slow spans from the traces that match the current filters.
+                - generic [ref=f39e836]: Each panel represents an aggregate view compiled using spans from multiple traces.
+              - generic [ref=f39e838]:
+                - region [ref=f39e843]:
+                  - heading "Structure for frontend [357 spans used]" [level=2] [ref=f39e846]
+                  - generic [ref=f39e849]:
+                    - generic [ref=f39e850]:
+                      - generic [ref=f39e851]:
+                        - heading "Service & Operation" [level=4] [ref=f39e852]
+                        - generic [ref=f39e854]:
+                          - generic [ref=f39e855]:
+                            - button "Expand +1" [ref=f39e856] [cursor=pointer]
+                            - button "Collapse +1" [ref=f39e859] [cursor=pointer]
+                          - generic [ref=f39e862]:
+                            - button "Expand all" [ref=f39e863] [cursor=pointer]
+                            - button "Collapse all" [ref=f39e866] [cursor=pointer]
+                      - generic [ref=f39e869]:
+                        - generic:
+                          - generic: 0μs
+                          - generic: 133.36ms
+                          - generic: 266.72ms
+                          - generic: 400.08ms
+                          - generic: 533.44ms
+                    - generic [ref=f39e873]:
+                      - generic:
+                        - generic [ref=f39e875]:
+                          - generic [ref=f39e877]:
+                            - switch [checked] [ref=f39e878]
+                            - switch "frontend GET (350.54ms)" [ref=f39e883]:
+                              - text: frontend GET
+                              - generic [ref=f39e884]: (350.54ms)
+                            - button [ref=f39e886] [cursor=pointer]
+                          - generic [ref=f39e889]: 350.54ms
+                        - generic [ref=f39e895]:
+                          - generic [ref=f39e897]:
+                            - switch [checked] [ref=f39e898]
+                            - switch "GET /api/transfers (219.89ms)" [ref=f39e904]:
+                              - text: GET /api/transfers
+                              - generic [ref=f39e905]: (219.89ms)
+                            - button [ref=f39e907] [cursor=pointer]
+                          - generic [ref=f39e910]: 219.89ms
+                        - generic [ref=f39e915]:
+                          - generic [ref=f39e917]:
+                            - switch [checked] [ref=f39e918]
+                            - switch "executing api route (pages) /api/transfers (217.54ms)" [ref=f39e925]:
+                              - text: executing api route (pages) /api/transfers
+                              - generic [ref=f39e926]: (217.54ms)
+                            - button [ref=f39e928] [cursor=pointer]
+                          - generic [ref=f39e931]: 217.54ms
+                        - generic [ref=f39e936]:
+                          - generic [ref=f39e938]:
+                            - generic [ref=f39e939]: "-"
+                            - switch "grpc.banking.v1.AuthService/ValidateSession (292.27ms)" [ref=f39e945]:
+                              - text: grpc.banking.v1.AuthService/ValidateSession
+                              - generic [ref=f39e946]: (292.27ms)
+                            - button [ref=f39e948] [cursor=pointer]
+                          - generic [ref=f39e951]: 292.27ms
+                        - generic [ref=f39e956]:
+                          - generic [ref=f39e958]:
+                            - switch [checked] [ref=f39e959]
+                            - switch "grpc.banking.v1.TransferService/ListTransfers (189.03ms)" [ref=f39e967]:
+                              - text: grpc.banking.v1.TransferService/ListTransfers
+                              - generic [ref=f39e968]: (189.03ms)
+                            - button [ref=f39e970] [cursor=pointer]
+                          - generic [ref=f39e973]: 189.03ms
+                        - generic [ref=f39e978]:
+                          - generic [ref=f39e980]:
+                            - switch [checked] [ref=f39e981]
+                            - switch "transfer banking.v1.TransferService/ListTransfers (141.6ms)" [ref=f39e990]:
+                              - text: transfer banking.v1.TransferService/ListTransfers
+                              - generic [ref=f39e991]: (141.6ms)
+                            - button [ref=f39e993] [cursor=pointer]
+                          - generic [ref=f39e996]: 141.6ms
+                        - generic [ref=f39e1001]:
+                          - generic [ref=f39e1003]:
+                            - generic [ref=f39e1004]: "-"
+                            - switch "db.Query (140.83ms)" [ref=f39e1012]:
+                              - text: db.Query
+                              - generic [ref=f39e1013]: (140.83ms)
+                            - button [ref=f39e1015] [cursor=pointer]
+                          - generic [ref=f39e1018]: 140.83ms
+                        - generic [ref=f39e1023]:
+                          - generic [ref=f39e1025]:
+                            - switch [checked] [ref=f39e1026]
+                            - switch "frontend GET /api/accounts (375.76ms)" [ref=f39e1032]:
+                              - text: frontend GET /api/accounts
+                              - generic [ref=f39e1033]: (375.76ms)
+                            - button [ref=f39e1035] [cursor=pointer]
+                          - generic [ref=f39e1038]: 375.76ms
+                        - generic [ref=f39e1044]:
+                          - generic [ref=f39e1046]:
+                            - switch [checked] [ref=f39e1047]
+                            - switch "executing api route (pages) /api/accounts (373.84ms)" [ref=f39e1054]:
+                              - text: executing api route (pages) /api/accounts
+                              - generic [ref=f39e1055]: (373.84ms)
+                            - button [ref=f39e1057] [cursor=pointer]
+                          - generic [ref=f39e1060]: 373.84ms
+                        - generic [ref=f39e1066]:
+                          - generic [ref=f39e1068]:
+                            - generic [ref=f39e1069]: "-"
+                            - switch "grpc.banking.v1.AuthService/ValidateSession (152.39ms)" [ref=f39e1075]:
+                              - text: grpc.banking.v1.AuthService/ValidateSession
+                              - generic [ref=f39e1076]: (152.39ms)
+                            - button [ref=f39e1078] [cursor=pointer]
+                          - generic [ref=f39e1081]: 152.39ms
+                        - generic [ref=f39e1086]:
+                          - generic [ref=f39e1088]:
+                            - switch [checked] [ref=f39e1089]
+                            - switch "grpc.banking.v1.AccountService/ListAccounts (326.82ms)" [ref=f39e1097]:
+                              - text: grpc.banking.v1.AccountService/ListAccounts
+                              - generic [ref=f39e1098]: (326.82ms)
+                            - button [ref=f39e1100] [cursor=pointer]
+                          - generic [ref=f39e1103]: 326.82ms
+                        - generic [ref=f39e1109]:
+                          - generic [ref=f39e1111]:
+                            - switch [checked] [ref=f39e1112]
+                            - switch "account banking.v1.AccountService/ListAccounts (324.81ms)" [ref=f39e1121]:
+                              - text: account banking.v1.AccountService/ListAccounts
+                              - generic [ref=f39e1122]: (324.81ms)
+                            - button [ref=f39e1124] [cursor=pointer]
+                          - generic [ref=f39e1127]: 324.81ms
+                        - generic [ref=f39e1133]:
+                          - generic [ref=f39e1135]:
+                            - switch [checked] [ref=f39e1136]
+                            - switch "banking.v1.BalanceService/GetBalance (207.11ms)" [ref=f39e1146]:
+                              - text: banking.v1.BalanceService/GetBalance
+                              - generic [ref=f39e1147]: (207.11ms)
+                            - button [ref=f39e1149] [cursor=pointer]
+                          - generic [ref=f39e1152]: 207.11ms
+                        - generic [ref=f39e1157]:
+                          - generic [ref=f39e1159]:
+                            - switch [checked] [ref=f39e1160]
+                            - switch "balance banking.v1.BalanceService/GetBalance (199.28ms)" [ref=f39e1171]:
+                              - text: balance banking.v1.BalanceService/GetBalance
+                              - generic [ref=f39e1172]: (199.28ms)
+                            - button [ref=f39e1174] [cursor=pointer]
+                          - generic [ref=f39e1177]: 199.28ms
+                        - generic [ref=f39e1182]:
+                          - generic [ref=f39e1184]:
+                            - generic [ref=f39e1185]: "-"
+                            - switch "db.Query (209.12ms)" [ref=f39e1195]:
+                              - text: db.Query
+                              - generic [ref=f39e1196]: (209.12ms)
+                            - button [ref=f39e1198] [cursor=pointer]
+                          - generic [ref=f39e1201]: 209.12ms
+                        - generic [ref=f39e1207]:
+                          - generic [ref=f39e1209]:
+                            - switch [checked] [ref=f39e1210]
+                            - switch "frontend GET /api/payees (324.48ms)" [ref=f39e1216]:
+                              - text: frontend GET /api/payees
+                              - generic [ref=f39e1217]: (324.48ms)
+                            - button [ref=f39e1219] [cursor=pointer]
+                          - generic [ref=f39e1222]: 324.48ms
+                        - generic [ref=f39e1227]:
+                          - generic [ref=f39e1229]:
+                            - switch [checked] [ref=f39e1230]
+                            - switch "executing api route (pages) /api/payees (322.83ms)" [ref=f39e1237]:
+                              - text: executing api route (pages) /api/payees
+                              - generic [ref=f39e1238]: (322.83ms)
+                            - button [ref=f39e1240] [cursor=pointer]
+                          - generic [ref=f39e1243]: 322.83ms
+                        - generic [ref=f39e1248]:
+                          - generic [ref=f39e1250]:
+                            - generic [ref=f39e1251]: "-"
+                            - switch "grpc.banking.v1.AuthService/ValidateSession (219.28ms)" [ref=f39e1257]:
+                              - text: grpc.banking.v1.AuthService/ValidateSession
+                              - generic [ref=f39e1258]: (219.28ms)
+                            - button [ref=f39e1260] [cursor=pointer]
+                          - generic [ref=f39e1263]: 219.28ms
+                        - generic [ref=f39e1268]:
+                          - generic [ref=f39e1270]:
+                            - switch [checked] [ref=f39e1271]
+                            - switch "grpc.banking.v1.PayeeService/ListPayees (267.13ms)" [ref=f39e1279]:
+                              - text: grpc.banking.v1.PayeeService/ListPayees
+                              - generic [ref=f39e1280]: (267.13ms)
+                            - button [ref=f39e1282] [cursor=pointer]
+                          - generic [ref=f39e1285]: 267.13ms
+                        - generic [ref=f39e1290]:
+                          - generic [ref=f39e1292]:
+                            - switch [checked] [ref=f39e1293]
+                            - switch "payee banking.v1.PayeeService/ListPayees (316.6ms)" [ref=f39e1302]:
+                              - text: payee banking.v1.PayeeService/ListPayees
+                              - generic [ref=f39e1303]: (316.6ms)
+                            - button [ref=f39e1305] [cursor=pointer]
+                          - generic [ref=f39e1308]: 316.6ms
+                        - generic [ref=f39e1313]:
+                          - generic [ref=f39e1315]:
+                            - generic [ref=f39e1316]: "-"
+                            - switch "db.Query (316.46ms)" [ref=f39e1324]:
+                              - text: db.Query
+                              - generic [ref=f39e1325]: (316.46ms)
+                            - button [ref=f39e1327] [cursor=pointer]
+                          - generic [ref=f39e1330]: 316.46ms
+                        - generic [ref=f39e1335]:
+                          - generic [ref=f39e1337]:
+                            - switch [checked] [ref=f39e1338]
+                            - switch "frontend GET /favicon.ico (208.68ms)" [ref=f39e1344]:
+                              - text: frontend GET /favicon.ico
+                              - generic [ref=f39e1345]: (208.68ms)
+                            - button [ref=f39e1347] [cursor=pointer]
+                          - generic [ref=f39e1350]: 208.68ms
+                        - generic [ref=f39e1355]:
+                          - generic [ref=f39e1357]:
+                            - generic [ref=f39e1358]: "-"
+                            - switch "resolve page components (202.75ms)" [ref=f39e1363]:
+                              - text: resolve page components
+                              - generic [ref=f39e1364]: (202.75ms)
+                            - button [ref=f39e1366] [cursor=pointer]
+                          - generic [ref=f39e1369]: 202.75ms
+                        - generic [ref=f39e1374]:
+                          - generic [ref=f39e1376]:
+                            - switch [checked] [ref=f39e1377]
+                            - switch "executing api route (pages) /api/loans (497.58ms)" [ref=f39e1382]:
+                              - text: executing api route (pages) /api/loans
+                              - generic [ref=f39e1383]: (497.58ms)
+                            - button [ref=f39e1385] [cursor=pointer]
+                          - generic [ref=f39e1388]: 497.58ms
+                        - generic [ref=f39e1393]:
+                          - generic [ref=f39e1395]:
+                            - generic [ref=f39e1396]: "-"
+                            - switch "grpc.banking.v1.AuthService/ValidateSession (494.86ms)" [ref=f39e1400]:
+                              - text: grpc.banking.v1.AuthService/ValidateSession
+                              - generic [ref=f39e1401]: (494.86ms)
+                            - button [ref=f39e1403] [cursor=pointer]
+                          - generic [ref=f39e1406]: 494.86ms
+                        - generic [ref=f39e1411]:
+                          - generic [ref=f39e1413]:
+                            - switch [checked] [ref=f39e1414]
+                            - switch "executing api route (pages) /api/loan-products (498.79ms)" [ref=f39e1419]:
+                              - text: executing api route (pages) /api/loan-products
+                              - generic [ref=f39e1420]: (498.79ms)
+                            - button [ref=f39e1422] [cursor=pointer]
+                          - generic [ref=f39e1425]: 498.79ms
+                        - generic [ref=f39e1430]:
+                          - generic [ref=f39e1432]:
+                            - generic [ref=f39e1433]: "-"
+                            - switch "grpc.banking.v1.AuthService/ValidateSession (497.08ms)" [ref=f39e1437]:
+                              - text: grpc.banking.v1.AuthService/ValidateSession
+                              - generic [ref=f39e1438]: (497.08ms)
+                            - button [ref=f39e1440] [cursor=pointer]
+                          - generic [ref=f39e1443]: 497.08ms
+                        - generic [ref=f39e1448]:
+                          - generic [ref=f39e1450]:
+                            - switch [checked] [ref=f39e1451]
+                            - switch "executing api route (pages) /api/profiles (414.22ms)" [ref=f39e1456]:
+                              - text: executing api route (pages) /api/profiles
+                              - generic [ref=f39e1457]: (414.22ms)
+                            - button [ref=f39e1459] [cursor=pointer]
+                          - generic [ref=f39e1462]: 414.22ms
+                        - generic [ref=f39e1467]:
+                          - generic [ref=f39e1469]:
+                            - generic [ref=f39e1470]: "-"
+                            - switch "grpc.banking.v1.AuthService/ListProfiles (413.9ms)" [ref=f39e1474]:
+                              - text: grpc.banking.v1.AuthService/ListProfiles
+                              - generic [ref=f39e1475]: (413.9ms)
+                            - button [ref=f39e1477] [cursor=pointer]
+                          - generic [ref=f39e1480]: 413.9ms
+                        - generic [ref=f39e1485]:
+                          - generic [ref=f39e1487]:
+                            - switch [checked] [ref=f39e1488]
+                            - switch "executing api route (pages) /api/transactions (451.6ms)" [ref=f39e1493]:
+                              - text: executing api route (pages) /api/transactions
+                              - generic [ref=f39e1494]: (451.6ms)
+                            - button [ref=f39e1496] [cursor=pointer]
+                          - generic [ref=f39e1499]: 451.6ms
+                        - generic [ref=f39e1504]:
+                          - generic [ref=f39e1506]:
+                            - generic [ref=f39e1507]: "-"
+                            - switch "grpc.banking.v1.AuthService/ValidateSession (191.06ms)" [ref=f39e1511]:
+                              - text: grpc.banking.v1.AuthService/ValidateSession
+                              - generic [ref=f39e1512]: (191.06ms)
+                            - button [ref=f39e1514] [cursor=pointer]
+                          - generic [ref=f39e1517]: 191.06ms
+                        - generic [ref=f39e1522]:
+                          - generic [ref=f39e1524]:
+                            - switch [checked] [ref=f39e1525]
+                            - switch "grpc.banking.v1.TransactionService/ListTransactions (407.95ms)" [ref=f39e1531]:
+                              - text: grpc.banking.v1.TransactionService/ListTransactions
+                              - generic [ref=f39e1532]: (407.95ms)
+                            - button [ref=f39e1534] [cursor=pointer]
+                          - generic [ref=f39e1537]: 407.95ms
+                        - generic [ref=f39e1542]:
+                          - generic [ref=f39e1544]:
+                            - switch [checked] [ref=f39e1545]
+                            - switch "transaction banking.v1.TransactionService/ListTransactions (362.99ms)" [ref=f39e1552]:
+                              - text: transaction banking.v1.TransactionService/ListTransactions
+                              - generic [ref=f39e1553]: (362.99ms)
+                            - button [ref=f39e1555] [cursor=pointer]
+                          - generic [ref=f39e1558]: 362.99ms
+                        - generic [ref=f39e1563]:
+                          - generic [ref=f39e1565]:
+                            - generic [ref=f39e1566]: "-"
+                            - switch "db.Query (139.28ms)" [ref=f39e1572]:
+                              - text: db.Query
+                              - generic [ref=f39e1573]: (139.28ms)
+                            - button [ref=f39e1575] [cursor=pointer]
+                          - generic [ref=f39e1578]: 139.28ms
+                        - generic [ref=f39e1583]:
+                          - generic [ref=f39e1585]:
+                            - switch [checked] [ref=f39e1586]
+                            - switch "frontend grpc.banking.v1.AccountService/GetAccount (45.42ms)" [ref=f39e1592]:
+                              - text: frontend grpc.banking.v1.AccountService/GetAccount
+                              - generic [ref=f39e1593]: (45.42ms)
+                            - button [ref=f39e1595] [cursor=pointer]
+                          - generic [ref=f39e1598]: 45.42ms
+                        - generic [ref=f39e1603]:
+                          - generic [ref=f39e1605]:
+                            - switch [checked] [ref=f39e1606]
+                            - switch "account banking.v1.AccountService/GetAccount (44.23ms)" [ref=f39e1613]:
+                              - text: account banking.v1.AccountService/GetAccount
+                              - generic [ref=f39e1614]: (44.23ms)
+                            - button [ref=f39e1616] [cursor=pointer]
+                          - generic [ref=f39e1619]: 44.23ms
+                        - generic [ref=f39e1624]:
+                          - generic [ref=f39e1626]:
+                            - switch [checked] [ref=f39e1627]
+                            - switch "banking.v1.BalanceService/GetBalance (43.28ms)" [ref=f39e1635]:
+                              - text: banking.v1.BalanceService/GetBalance
+                              - generic [ref=f39e1636]: (43.28ms)
+                            - button [ref=f39e1638] [cursor=pointer]
+                          - generic [ref=f39e1641]: 43.28ms
+                        - generic [ref=f39e1646]:
+                          - generic [ref=f39e1648]:
+                            - switch [checked] [ref=f39e1649]
+                            - switch "balance banking.v1.BalanceService/GetBalance (42.34ms)" [ref=f39e1658]:
+                              - text: balance banking.v1.BalanceService/GetBalance
+                              - generic [ref=f39e1659]: (42.34ms)
+                            - button [ref=f39e1661] [cursor=pointer]
+                          - generic [ref=f39e1664]: 42.34ms
+                        - generic [ref=f39e1669]:
+                          - generic [ref=f39e1671]:
+                            - generic [ref=f39e1672]: "-"
+                            - switch "db.Query (42.14ms)" [ref=f39e1680]:
+                              - text: db.Query
+                              - generic [ref=f39e1681]: (42.14ms)
+                            - button [ref=f39e1683] [cursor=pointer]
+                          - generic [ref=f39e1686]: 42.14ms
+                    - button "Scroll to top" [ref=f39e1690] [cursor=pointer]
+                - region [ref=f39e1697]:
+                  - heading "Structure for frontend [191 spans used]" [level=2] [ref=f39e1700]
+                  - generic [ref=f39e1703]:
+                    - generic [ref=f39e1704]:
+                      - generic [ref=f39e1705]:
+                        - heading "Service & Operation" [level=4] [ref=f39e1706]
+                        - generic [ref=f39e1708]:
+                          - generic [ref=f39e1709]:
+                            - button "Expand +1" [ref=f39e1710] [cursor=pointer]
+                            - button "Collapse +1" [ref=f39e1713] [cursor=pointer]
+                          - generic [ref=f39e1716]:
+                            - button "Expand all" [ref=f39e1717] [cursor=pointer]
+                            - button "Collapse all" [ref=f39e1720] [cursor=pointer]
+                      - generic [ref=f39e1723]:
+                        - generic:
+                          - generic: 0μs
+                          - generic: 77.84ms
+                          - generic: 155.69ms
+                          - generic: 233.53ms
+                          - generic: 311.37ms
+                    - generic [ref=f39e1727]:
+                      - generic:
+                        - generic [ref=f39e1729]:
+                          - generic [ref=f39e1731]:
+                            - switch [checked] [ref=f39e1732]
+                            - switch "frontend POST (231.3ms)" [ref=f39e1737]:
+                              - text: frontend POST
+                              - generic [ref=f39e1738]: (231.3ms)
+                            - button [ref=f39e1740] [cursor=pointer]
+                          - generic [ref=f39e1743]: 231.3ms
+                        - generic [ref=f39e1749]:
+                          - generic [ref=f39e1751]:
+                            - switch [checked] [ref=f39e1752]
+                            - switch "POST /api/chat (228.58ms)" [ref=f39e1758]:
+                              - text: POST /api/chat
+                              - generic [ref=f39e1759]: (228.58ms)
+                            - button [ref=f39e1761] [cursor=pointer]
+                          - generic [ref=f39e1764]: 228.58ms
+                        - generic [ref=f39e1769]:
+                          - generic [ref=f39e1771]:
+                            - switch [checked] [ref=f39e1772]
+                            - switch "executing api route (pages) /api/chat (226.7ms)" [ref=f39e1779]:
+                              - text: executing api route (pages) /api/chat
+                              - generic [ref=f39e1780]: (226.7ms)
+                            - button [ref=f39e1782] [cursor=pointer]
+                          - generic [ref=f39e1785]: 226.7ms
+                        - generic [ref=f39e1790]:
+                          - generic [ref=f39e1792]:
+                            - generic [ref=f39e1793]: "-"
+                            - switch "grpc.banking.v1.AuthService/ValidateSession (66.81ms)" [ref=f39e1799]:
+                              - text: grpc.banking.v1.AuthService/ValidateSession
+                              - generic [ref=f39e1800]: (66.81ms)
+                            - button [ref=f39e1802] [cursor=pointer]
+                          - generic [ref=f39e1805]: 66.81ms
+                        - generic [ref=f39e1810]:
+                          - generic [ref=f39e1812]:
+                            - generic [ref=f39e1813]: "-"
+                            - switch "POST (222.62ms)" [ref=f39e1819]:
+                              - text: POST
+                              - generic [ref=f39e1820]: (222.62ms)
+                            - button [ref=f39e1822] [cursor=pointer]
+                          - generic [ref=f39e1825]: 222.62ms
+                        - generic [ref=f39e1830]:
+                          - generic [ref=f39e1832]:
+                            - switch [checked] [ref=f39e1833]
+                            - switch "POST /api/login (271.97ms)" [ref=f39e1839]:
+                              - text: POST /api/login
+                              - generic [ref=f39e1840]: (271.97ms)
+                            - button [ref=f39e1842] [cursor=pointer]
+                          - generic [ref=f39e1845]: 271.97ms
+                        - generic [ref=f39e1851]:
+                          - generic [ref=f39e1853]:
+                            - switch [checked] [ref=f39e1854]
+                            - switch "executing api route (pages) /api/login (270.51ms)" [ref=f39e1861]:
+                              - text: executing api route (pages) /api/login
+                              - generic [ref=f39e1862]: (270.51ms)
+                            - button [ref=f39e1864] [cursor=pointer]
+                          - generic [ref=f39e1867]: 270.51ms
+                        - generic [ref=f39e1872]:
+                          - generic [ref=f39e1874]:
+                            - generic [ref=f39e1875]: "-"
+                            - switch "grpc.banking.v1.AuthService/Login (270.11ms)" [ref=f39e1881]:
+                              - text: grpc.banking.v1.AuthService/Login
+                              - generic [ref=f39e1882]: (270.11ms)
+                            - button [ref=f39e1884] [cursor=pointer]
+                          - generic [ref=f39e1887]: 270.11ms
+                        - generic [ref=f39e1893]:
+                          - generic [ref=f39e1895]:
+                            - switch [checked] [ref=f39e1896]
+                            - switch "POST /api/transfers (221.83ms)" [ref=f39e1902]:
+                              - text: POST /api/transfers
+                              - generic [ref=f39e1903]: (221.83ms)
+                            - button [ref=f39e1905] [cursor=pointer]
+                          - generic [ref=f39e1908]: 221.83ms
+                        - generic [ref=f39e1913]:
+                          - generic [ref=f39e1915]:
+                            - switch [checked] [ref=f39e1916]
+                            - switch "executing api route (pages) /api/transfers (220.36ms)" [ref=f39e1923]:
+                              - text: executing api route (pages) /api/transfers
+                              - generic [ref=f39e1924]: (220.36ms)
+                            - button [ref=f39e1926] [cursor=pointer]
+                          - generic [ref=f39e1929]: 220.36ms
+                        - generic [ref=f39e1934]:
+                          - generic [ref=f39e1936]:
+                            - switch [checked] [ref=f39e1937]
+                            - switch "grpc.banking.v1.TransferService/CreateOwnAccountTransfer (218.32ms)" [ref=f39e1945]:
+                              - text: grpc.banking.v1.TransferService/CreateOwnAccountTransfer
+                              - generic [ref=f39e1946]: (218.32ms)
+                            - button [ref=f39e1948] [cursor=pointer]
+                          - generic [ref=f39e1951]: 218.32ms
+                        - generic [ref=f39e1956]:
+                          - generic [ref=f39e1958]:
+                            - switch [checked] [ref=f39e1959]
+                            - switch "transfer banking.v1.TransferService/CreateOwnAccountTransfer (214.69ms)" [ref=f39e1968]:
+                              - text: transfer banking.v1.TransferService/CreateOwnAccountTransfer
+                              - generic [ref=f39e1969]: (214.69ms)
+                            - button [ref=f39e1971] [cursor=pointer]
+                          - generic [ref=f39e1974]: 214.69ms
+                        - generic [ref=f39e1979]:
+                          - generic [ref=f39e1981]:
+                            - switch [checked] [ref=f39e1982]
+                            - switch "banking.v1.LedgerService/PostJournal (146.47ms)" [ref=f39e1992]:
+                              - text: banking.v1.LedgerService/PostJournal
+                              - generic [ref=f39e1993]: (146.47ms)
+                            - button [ref=f39e1995] [cursor=pointer]
+                          - generic [ref=f39e1998]: 146.47ms
+                        - generic [ref=f39e2003]:
+                          - generic [ref=f39e2005]:
+                            - switch [checked] [ref=f39e2006]
+                            - switch "ledger banking.v1.LedgerService/PostJournal (139.2ms)" [ref=f39e2017]:
+                              - text: ledger banking.v1.LedgerService/PostJournal
+                              - generic [ref=f39e2018]: (139.2ms)
+                            - button [ref=f39e2020] [cursor=pointer]
+                          - generic [ref=f39e2023]: 139.2ms
+                        - generic [ref=f39e2028]:
+                          - generic [ref=f39e2030]:
+                            - generic [ref=f39e2031]: "-"
+                            - switch "db.Query (166.38ms)" [ref=f39e2041]:
+                              - text: db.Query
+                              - generic [ref=f39e2042]: (166.38ms)
+                            - button [ref=f39e2044] [cursor=pointer]
+                          - generic [ref=f39e2047]: 166.38ms
+                    - button "Scroll to top" [ref=f39e2051] [cursor=pointer]
+                - region [ref=f39e2058]:
+                  - heading "Structure for customer-chat [45 spans used]" [level=2] [ref=f39e2061]
+                  - generic [ref=f39e2064]:
+                    - generic [ref=f39e2065]:
+                      - generic [ref=f39e2066]:
+                        - heading "Service & Operation" [level=4] [ref=f39e2067]
+                        - generic [ref=f39e2069]:
+                          - generic [ref=f39e2070]:
+                            - button "Expand +1" [ref=f39e2071] [cursor=pointer]
+                            - button "Collapse +1" [ref=f39e2074] [cursor=pointer]
+                          - generic [ref=f39e2077]:
+                            - button "Expand all" [ref=f39e2078] [cursor=pointer]
+                            - button "Collapse all" [ref=f39e2081] [cursor=pointer]
+                      - generic [ref=f39e2084]:
+                        - generic:
+                          - generic: 0μs
+                          - generic: 53.28ms
+                          - generic: 106.56ms
+                          - generic: 159.84ms
+                          - generic: 213.11ms
+                    - generic [ref=f39e2090]:
+                      - generic [ref=f39e2092]:
+                        - generic [ref=f39e2093]: "-"
+                        - switch "customer-chat agent.banking-general-agent (213.11ms)" [ref=f39e2096]:
+                          - text: customer-chat agent.banking-general-agent
+                          - generic [ref=f39e2097]: (213.11ms)
+                        - button [ref=f39e2099] [cursor=pointer]
+                      - generic [ref=f39e2102]: 213.11ms
+                    - button "Scroll to top" [ref=f39e2107] [cursor=pointer]
+                - region [ref=f39e2114]:
+                  - heading "Structure for ledger [35 spans used]" [level=2] [ref=f39e2117]
+                  - generic [ref=f39e2120]:
+                    - generic [ref=f39e2121]:
+                      - generic [ref=f39e2122]:
+                        - heading "Service & Operation" [level=4] [ref=f39e2123]
+                        - generic [ref=f39e2125]:
+                          - generic [ref=f39e2126]:
+                            - button "Expand +1" [ref=f39e2127] [cursor=pointer]
+                            - button "Collapse +1" [ref=f39e2130] [cursor=pointer]
+                          - generic [ref=f39e2133]:
+                            - button "Expand all" [ref=f39e2134] [cursor=pointer]
+                            - button "Collapse all" [ref=f39e2137] [cursor=pointer]
+                      - generic [ref=f39e2140]:
+                        - generic:
+                          - generic: 0μs
+                          - generic: 81.76ms
+                          - generic: 163.51ms
+                          - generic: 245.27ms
+                          - generic: 327.03ms
+                    - generic [ref=f39e2146]:
+                      - generic [ref=f39e2148]:
+                        - generic [ref=f39e2149]: "-"
+                        - switch "ledger db.Query (327.03ms)" [ref=f39e2152]:
+                          - text: ledger db.Query
+                          - generic [ref=f39e2153]: (327.03ms)
+                        - button [ref=f39e2155] [cursor=pointer]
+                      - generic [ref=f39e2158]: 327.03ms
+                    - button "Scroll to top" [ref=f39e2163] [cursor=pointer]
+                - region [ref=f39e2170]:
+                  - heading "Structure for support-analysis [16 spans used]" [level=2] [ref=f39e2173]
+                  - generic [ref=f39e2176]:
+                    - generic [ref=f39e2177]:
+                      - generic [ref=f39e2178]:
+                        - heading "Service & Operation" [level=4] [ref=f39e2179]
+                        - generic [ref=f39e2181]:
+                          - generic [ref=f39e2182]:
+                            - button "Expand +1" [ref=f39e2183] [cursor=pointer]
+                            - button "Collapse +1" [ref=f39e2186] [cursor=pointer]
+                          - generic [ref=f39e2189]:
+                            - button "Expand all" [ref=f39e2190] [cursor=pointer]
+                            - button "Collapse all" [ref=f39e2193] [cursor=pointer]
+                      - generic [ref=f39e2196]:
+                        - generic:
+                          - generic: 0μs
+                          - generic: 57.69ms
+                          - generic: 115.38ms
+                          - generic: 173.07ms
+                          - generic: 230.76ms
+                    - generic [ref=f39e2200]:
+                      - generic:
+                        - generic [ref=f39e2202]:
+                          - generic [ref=f39e2204]:
+                            - switch [checked] [ref=f39e2205]
+                            - switch "support-analysis support_analysis.analyze (230.76ms)" [ref=f39e2210]:
+                              - text: support-analysis support_analysis.analyze
+                              - generic [ref=f39e2211]: (230.76ms)
+                            - button [ref=f39e2213] [cursor=pointer]
+                          - generic [ref=f39e2216]: 230.76ms
+                        - generic [ref=f39e2223]:
+                          - generic [ref=f39e2225]:
+                            - generic [ref=f39e2226]: "-"
+                            - switch "banking.v1.SupportService/GetSupportTicketForAdmin (63.9ms)" [ref=f39e2230]:
+                              - text: banking.v1.SupportService/GetSupportTicketForAdmin
+                              - generic [ref=f39e2231]: (63.9ms)
+                            - button [ref=f39e2233] [cursor=pointer]
+                          - generic [ref=f39e2236]: 63.9ms
+                    - button "Scroll to top" [ref=f39e2241] [cursor=pointer]
+  - log [ref=f39e2244]

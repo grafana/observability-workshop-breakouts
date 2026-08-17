@@ -1,0 +1,39 @@
+[    2440ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://devfedb13.grafana.net/apis/userstorage.grafana.app/v0alpha1/namespaces/stacks-1757201/user-storage/saved-queries:dfuhj9wjtgge8e:0
+[    3741ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://devfedb13.grafana.net/apis/userstorage.grafana.app/v0alpha1/namespaces/stacks-1757201/user-storage/grafana-dbo11y-app:dfuhj9wjtgge8e:0
+[    4040ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://devfedb13.grafana.net/apis/userstorage.grafana.app/v0alpha1/namespaces/stacks-1757201/user-storage/grafana-runtime:dfuhj9wjtgge8e:0
+[    4673ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://devfedb13.grafana.net/api/ds/query?ds_type=loki&requestId=SQR102_1:0
+[    4675ms] [ERROR] Error: maximum number of series (500) reached for a single query; consider reducing query cardinality by adding more specific stream selectors, reducing the time range, or aggregating results with functions like sum(), count() or topk()
+    at m (https://plugins-cdn.grafana.net/loki/13.1.0/public/plugins/loki/module.js:4:134079)
+    at O (https://plugins-cdn.grafana.net/loki/13.1.0/public/plugins/loki/module.js:9:176601)
+    at Object.next (https://plugins-cdn.grafana.net/loki/13.1.0/public/plugins/loki/module.js:9:177109)
+    at A.next (https://grafana-assets.grafana.net/grafana/13.2.0-31683987170/public/build/5304.b4fd8c663d86a74bb4cd.js:378:16736)
+    at U._next (https://grafana-assets.grafana.net/grafana/13.2.0-31683987170/public/build/5304.b4fd8c663d86a74bb4cd.js:378:16340)
+    at U.next (https://grafana-assets.grafana.net/grafana/13.2.0-31683987170/public/build/5304.b4fd8c663d86a74bb4cd.js:378:15968)
+    at https://plugins-cdn.grafana.net/loki/13.1.0/public/plugins/loki/module.js:9:75730
+    at s._next (https://plugins-cdn.grafana.net/loki/13.1.0/public/plugins/loki/module.js:9:75144)
+    at t.next (https://plugins-cdn.grafana.net/loki/13.1.0/public/plugins/loki/module.js:9:73188)
+    at https://grafana-assets.grafana.net/grafana/13.2.0-31683987170/public/build/5304.b4fd8c663d86a74bb4cd.js:378:34680 @ https://edge.fullstory.com/s/fs.js:1
+[    4950ms] [WARNING] [FilterByValue] Could not find index for field name: Value #TimesCalled @ https://edge.fullstory.com/s/fs.js:1
+[    4951ms] [WARNING] [FilterByValue] Could not find index for field name: Value #TimesCalled @ https://edge.fullstory.com/s/fs.js:1
+[    5650ms] [WARNING] [FilterByValue] Could not find index for field name: Value #TimesCalled @ https://edge.fullstory.com/s/fs.js:1
+[    5650ms] [WARNING] [FilterByValue] Could not find index for field name: Value #TimesCalled @ https://edge.fullstory.com/s/fs.js:1
+[    5853ms] [WARNING] [FilterByValue] Could not find index for field name: Value #TimesCalled @ https://edge.fullstory.com/s/fs.js:1
+[    5853ms] [WARNING] [FilterByValue] Could not find index for field name: Value #TimesCalled @ https://edge.fullstory.com/s/fs.js:1
+[    5853ms] [WARNING] [FilterByValue] Could not find index for field name: Value @ https://edge.fullstory.com/s/fs.js:1
+[    5853ms] [WARNING] [FilterByValue] Could not find index for field name: Value @ https://edge.fullstory.com/s/fs.js:1
+[    6317ms] [WARNING] [FilterByValue] Could not find index for field name: Value @ https://edge.fullstory.com/s/fs.js:1
+[    6317ms] [WARNING] [FilterByValue] Could not find index for field name: Value @ https://edge.fullstory.com/s/fs.js:1
+[   29503ms] [WARNING] SceneObject already has a parent set that is different from the new parent. You cannot share the same SceneObject instance in multiple scenes or in multiple different places of the same scene graph. Use SceneObject.clone() to duplicate a SceneObject or store a state key reference and use sceneGraph.findObject to locate it. c l @ https://edge.fullstory.com/s/fs.js:1
+[  124059ms] [WARNING] SceneObject already has a parent set that is different from the new parent. You cannot share the same SceneObject instance in multiple scenes or in multiple different places of the same scene graph. Use SceneObject.clone() to duplicate a SceneObject or store a state key reference and use sceneGraph.findObject to locate it. p p @ https://edge.fullstory.com/s/fs.js:1
+[  124571ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://devfedb13.grafana.net/api/ds/query?ds_type=loki&requestId=mixed-1-SQR172_1:0
+[  124571ms] [ERROR] Error: maximum number of series (500) reached for a single query; consider reducing query cardinality by adding more specific stream selectors, reducing the time range, or aggregating results with functions like sum(), count() or topk()
+    at m (https://plugins-cdn.grafana.net/loki/13.1.0/public/plugins/loki/module.js:4:134079)
+    at O (https://plugins-cdn.grafana.net/loki/13.1.0/public/plugins/loki/module.js:9:176601)
+    at Object.next (https://plugins-cdn.grafana.net/loki/13.1.0/public/plugins/loki/module.js:9:177109)
+    at A.next (https://grafana-assets.grafana.net/grafana/13.2.0-31683987170/public/build/5304.b4fd8c663d86a74bb4cd.js:378:16736)
+    at U._next (https://grafana-assets.grafana.net/grafana/13.2.0-31683987170/public/build/5304.b4fd8c663d86a74bb4cd.js:378:16340)
+    at U.next (https://grafana-assets.grafana.net/grafana/13.2.0-31683987170/public/build/5304.b4fd8c663d86a74bb4cd.js:378:15968)
+    at https://plugins-cdn.grafana.net/loki/13.1.0/public/plugins/loki/module.js:9:75730
+    at s._next (https://plugins-cdn.grafana.net/loki/13.1.0/public/plugins/loki/module.js:9:75144)
+    at t.next (https://plugins-cdn.grafana.net/loki/13.1.0/public/plugins/loki/module.js:9:73188)
+    at https://grafana-assets.grafana.net/grafana/13.2.0-31683987170/public/build/5304.b4fd8c663d86a74bb4cd.js:378:34680 @ https://edge.fullstory.com/s/fs.js:1
