@@ -8,15 +8,22 @@ import EnvLink from '@site/src/components/EnvLink';
 
 # Lab 3 - Map the incident with the Knowledge Graph
 
-This time the `ecommerce` store is throwing errors - 500s across multiple pages, coming and going. Several services look unhealthy at once, and it's not obvious which one is the cause and which are collateral damage.
+This time the `ecommerce` store is throwing errors - 500s across multiple pages, coming and going at intervals. Several services look unhealthy at once, and it is not clear which one caused the problem and which ones are affected by it as a result.
 
-In this lab you'll use the **[Knowledge Graph](https://grafana.com/docs/grafana-cloud/knowledge-graph/introduction/)**. It automatically models your applications and infrastructure into a graph of **entities** (services, pods, nodes, namespaces, databases) and their **relationships**, with continuously generated health **insights**. You'll work with its three surfaces:
+In this lab you will use the **[Knowledge Graph](https://grafana.com/docs/grafana-cloud/knowledge-graph/introduction/)**. It automatically models your applications and infrastructure as a graph of **entities** (services, pods, nodes, namespaces, databases) and their **relationships**, with continuously generated health **insights**. You will work with its three surfaces:
 
 - **Entity Catalog** - a searchable inventory of everything, with health at a glance
-- **Entity Graph** - the visual dependency map
-- **RCA Workbench** - a timeline of insights showing what failed, in what order
+- **Entity Graph** - the visual dependency map showing what calls what
+- **RCA Workbench** - a timeline of insights showing what failed, in what order, so you can find the first event
 
-Because the failure is a crash-looping pod, you'll also use **[Kubernetes Monitoring](https://grafana.com/docs/grafana-cloud/monitor-infrastructure/kubernetes-monitoring/)** for the infrastructure detail: the OOMKill, the memory climbing into its limit, and right-sizing. You'll use **Drilldown** for the logs and traces, and the **Grafana Assistant** to finish.
+Because the failure is a crash-looping pod, you will also use **[Kubernetes Monitoring](https://grafana.com/docs/grafana-cloud/monitor-infrastructure/kubernetes-monitoring/)** for infrastructure detail: the OOMKill, the memory climbing into its limit, and right-sizing options. You will use Drilldown for logs and traces, and the Grafana Assistant to synthesize what you find.
+
+## Learning objectives
+
+- Use the Knowledge Graph to distinguish root causes from blast radius
+- Read the RCA Workbench to identify the sequence of events and first trigger
+- Correlate infrastructure metrics (OOMKill, crash loops) with application behavior
+- Link infrastructure incidents to root causes using the Entity Graph and Assistant
 
 ## Instructions
 
@@ -24,9 +31,9 @@ Use the Grafana Cloud stack from the slides. This lab uses the `ecommerce` app r
 
 :::info The scenario running
 
-A k6 load test drives steady traffic. The **`productCatalogResponseCache`** feature flag turns on an in-memory response cache in `productcatalogservice` that grows without bound. Memory climbs into the pod's limit until it is OOMKilled and crash-loops, throwing 500s across the store. Expect several services to look unhealthy at once: the crash-looping pod is the cause, the rest are collateral.
+There is steady traffic against the store. The `productCatalogResponseCache` feature flag turns on an in-memory response cache in `productcatalogservice` that grows without bound. Memory climbs into the pod's limit until the kernel OOMKills it, which causes the pod to crash-loop and throw 500s across the store. You will see several services look unhealthy at once, but the crash-looping pod is the cause and the rest are affected by it.
 
-It runs automatically **every day during a default window of 12:00-13:00 UTC**. The feature flag flips on at the start of the window - that flip is the "first event" you'll be looking for on the RCA timeline.
+It runs automatically every day during a default window of 12:00-13:00 UTC. The feature flag flips on at the start of the window, and that flip is the first event you will be looking for on the RCA timeline.
 
 :::
 
@@ -38,7 +45,7 @@ Try each question on your own first. The **Show answer** block under each questi
 
 :::
 
-*Errors are everywhere and several services look bad at once. Start with the map, not a single dashboard.*
+When errors are everywhere and several services look bad at once, start with the map rather than drilling into a single dashboard. The map shows you relationships and causality, which a single dashboard cannot.
 
 Open **Observability** -> **Entity catalog**. This is the inventory of every entity the Knowledge Graph has discovered - services, pods, nodes, namespaces, databases - each showing its health through **insight rings** and type-appropriate KPIs.
 
@@ -52,7 +59,7 @@ Then either set the time range yourself to cover when the errors began (the 12:0
 
 **Filter the catalog to the ecommerce namespace. Which entity has the worst health, and what kind of insight is firing on it?**
 
-Every entity shows two insight rings: the **outer** ring is its *own* insights, the **inner** ring is insights **propagated from things it depends on**. Colors are red (critical), yellow (warning), blue (info). The entity with critical insights of its own is where to look. Entities that only light up on the inner ring are downstream of the problem.
+Every entity shows two insight rings: the outer ring shows its own insights, and the inner ring shows insights propagated from things it depends on. Colors are red (critical), yellow (warning), blue (info). The entity that shows critical insights in its own ring, not just from upstream dependencies, is the source. Entities that only light up on the inner ring are downstream and affected by the problem, not causing it.
 
 <TryIt where="the Entity catalog, namespace = ecommerce-prod. Look for the service with a red insight ring, then open it and use its KPI drawer." />
 
@@ -281,18 +288,69 @@ Add the connected **Services** (the **+** adds all 8 at once, and the pod and na
 
 ![Adding all connected Services to the workbench](/img/lab3/3.5-add-services.png)
 
-## Question 6: What was the first event?
+## Question 6: What does the Assistant conclude?
 
-**Read the Timeline in time order. What is the earliest insight - before the memory saturation and the crashes?**
+**Ask the Assistant to analyze the workbench. What root cause and sequence does it report?**
 
-The failure and error insights are loud, but they're symptoms.
+Rather than manual detective work, let's start with the [Grafana Assistant](https://grafana.com/docs/grafana-cloud/knowledge-graph/troubleshoot-infra-apps/workbench-ai/). It reasons over the same entities, relationships, and insight timeline. Click **Analyze RCA Workbench** (bottom-right) and read its conclusion, then verify it against the timeline you have open.
 
-<TryIt where="the Timeline, read in time order - scroll to the earliest entries." />
+<TryIt where="the Analyze RCA Workbench button, bottom-right of the workbench.">Ask the Assistant before revealing the answer below.</TryIt>
 
 <details className="answer-reveal">
 <summary>Show answer</summary>
 
-The earliest insight is a change event on **`flagd`**, the feature-flag service (an **Amend** insight, shown in blue). Its short blue bar starts before every red band on the timeline, right before `productcatalogservice`'s failure begins.
+Click **Analyze RCA Workbench** (bottom-right) and the Assistant works over the same insight timeline.
+
+![The Analyze RCA Workbench button in the timeline](/img/lab3/3.9-analyze-button.png)
+
+It reconstructs the sequence from the workbench summary. It converts the raw timestamps to UTC and maps when the flag changed, when the OOM hit, and when each downstream service started erroring.
+
+![The Assistant reasoning through the workbench timeline](/img/lab3/3.9-assistant-thinking.png)
+
+It lands on a causal chain: an **Impact Chain** from the flag flip to the OOM to the cascading caller errors:
+
+![The Assistant's Impact Chain - feature flag change to productcatalogservice OOM to cascading downstream errors](/img/lab3/3.9-assistant-analyze.png)
+
+```
+A feature-flag change (productCatalogResponseCache) enabled an in-memory cache on
+productcatalogservice; ~1 minute later the pod is OOMKilled and crash-loops
+(failure). Its callers - checkoutservice, recommendationservice, frontend,
+frontendproxy - then breach their error ratios in order. Root cause: the flag
+change; the frontend 500s are the symptom.
+```
+
+Each step is backed by the graph: `flagd` flipped the flag at 12:16, the OOM hits at 12:17, and every downstream breach traces along the `ROUTES` / `CALLS` edges back to a caller of `productcatalogservice`.
+
+![The Assistant grounding its hypothesis in specific timestamps and service-graph edges](/img/lab3/3.9-assistant-evidence.png)
+
+**How to find it:**
+
+1. In the **RCA workbench**, click **Analyze RCA Workbench** (bottom-right).
+2. Let its analysis finish before asking follow-ups.
+3. Read its Impact Chain, the primary hypothesis, and the evidence it cites.
+
+:::note
+
+LLM output varies between runs. Judge the Assistant on whether it names the same root cause and the same order of events you'll find on the timeline below.
+
+:::
+
+</details>
+
+---
+
+## Question 7: What was the first event?
+
+**Now verify the Assistant's story by checking the timeline yourself. What is the earliest insight - before the memory saturation and the crashes?**
+
+The failure and error insights are loud, but they're symptoms. Check what the Assistant found against the timeline.
+
+<TryIt where="the Timeline, read in time order - scroll to the earliest entries to verify the flag change." />
+
+<details className="answer-reveal">
+<summary>Show answer</summary>
+
+The earliest insight is a change event on **`flagd`**, the feature-flag service (an **Amend** insight, shown in blue). Its short blue bar starts before every red band on the timeline, right before `productcatalogservice`'s failure begins - confirming what the Assistant reported.
 
 ![The timeline - flagd's blue Amend bar precedes every red band](/img/lab3/3.6-first-event.png)
 
@@ -303,23 +361,21 @@ Expand the `flagd` row and the amend names itself: a **FeatureFlagStateChange** 
 3. **Failure** - the pod is OOMKilled and crash-loops (red).
 4. **Error** - `frontend` starts returning 500s (red).
 
-The flag change is the root cause. The 500s customers noticed are the last link in the chain.
+The flag change is the root cause. The 500s customers noticed are the last link in the chain - exactly what the Assistant identified.
 
 ![Expanding flagd - the FeatureFlagStateChange amend insight](/img/lab3/3.6-feature-flag.png)
-
-> **Why this matters:** "what changed first" is usually the fix, and it's the one thing a single dashboard can't tell you.
 
 **How to find it:**
 
 1. In the **RCA workbench**, read the **Timeline** in time order - the blue **Amend** bar on `ecommerce-prod/flagd` is the earliest event.
 2. Expand the `flagd` row - the amend is a **FeatureFlagStateChange**.
-3. Trace the sequence forward through Saturation -> Failure -> Error.
+3. Trace the sequence forward through Saturation -> Failure -> Error - compare this against Question 6's Assistant analysis.
 
 </details>
 
 ---
 
-## Question 7: What do the logs actually show?
+## Question 8: What do the logs actually show?
 
 **Open `productcatalogservice`'s logs for the incident window. Does the crash show up - and if not, what does?**
 
@@ -361,7 +417,7 @@ When a crash isn't in the app logs, use the infrastructure signals: restarts, la
 
 ---
 
-## Question 8: See the impact on traces <Badge variant="optional">Optional</Badge>
+## Question 9: See the impact on traces <Badge variant="optional">Optional</Badge>
 
 **Open the traces. Where do the errors actually show up - on `productcatalogservice`, or somewhere else?**
 
@@ -401,66 +457,11 @@ The service that crashed shows no errors. The ones that depend on it show all of
 
 ---
 
-## Verify the Assistant
-
-You reconstructed the incident by hand. Now have the [Grafana Assistant](https://grafana.com/docs/grafana-cloud/knowledge-graph/troubleshoot-infra-apps/workbench-ai/) do it from the same graph, and check that its story matches yours.
-
-Inside the RCA Workbench, the Assistant runs in **Knowledge Graph mode**: it reasons over the entities, relationships, and insight timeline you're looking at. Click **Analyze RCA Workbench** (or open the Assistant and reference entities with `@`).
-
-:::note
-
-LLM output varies between runs. Judge the Assistant on whether it names the same root cause and the same order of events you found on the timeline.
-
-:::
-
-## Question 9: What does the Assistant conclude?
-
-**Ask the Assistant to analyze the workbench. What root cause and sequence does it report?**
-
-<TryIt where="the Analyze RCA Workbench button, bottom-right of the workbench.">Ask the Assistant before revealing the answer below.</TryIt>
-
-<details className="answer-reveal">
-<summary>Show answer</summary>
-
-Click **Analyze RCA Workbench** (bottom-right) and the Assistant works over the same insight timeline you just read.
-
-![The Analyze RCA Workbench button in the timeline](/img/lab3/3.9-analyze-button.png)
-
-It reconstructs the sequence from the workbench summary. It converts the raw timestamps to UTC and maps when the flag changed, when the OOM hit, and when each downstream service started erroring.
-
-![The Assistant reasoning through the workbench timeline](/img/lab3/3.9-assistant-thinking.png)
-
-It lands on the same causal chain you assembled by hand: an **Impact Chain** from the flag flip to the OOM to the cascading caller errors:
-
-![The Assistant's Impact Chain - feature flag change to productcatalogservice OOM to cascading downstream errors](/img/lab3/3.9-assistant-analyze.png)
-
-```
-A feature-flag change (productCatalogResponseCache) enabled an in-memory cache on
-productcatalogservice; ~1 minute later the pod is OOMKilled and crash-loops
-(failure). Its callers - checkoutservice, recommendationservice, frontend,
-frontendproxy - then breach their error ratios in order. Root cause: the flag
-change; the frontend 500s are the symptom.
-```
-
-Each step is backed by the graph: `flagd` flipped the flag at 12:16, the OOM hits at 12:17, and every downstream breach traces along the `ROUTES` / `CALLS` edges back to a caller of `productcatalogservice`. It even sets aside a `RequestRateAnomaly` that began *before* the flag change, and calls it a pre-existing condition rather than part of the chain.
-
-![The Assistant grounding its hypothesis in specific timestamps and service-graph edges](/img/lab3/3.9-assistant-evidence.png)
-
-**How to find it:**
-
-1. In the **RCA workbench**, click **Analyze RCA Workbench** (bottom-right).
-2. Let its analysis finish before asking follow-ups.
-3. Read its Impact Chain, the primary hypothesis, and the evidence it cites.
-
-</details>
-
----
-
 ## Question 10: Verify against the timeline
 
-**Does the Assistant's story match the graph - the source entity, the order of events, and the propagation path?**
+**Compare the Assistant's story with the Entity Graph and Entity Catalog. Do the source entity, the order of events, and the propagation path all match?**
 
-<TryIt where="the Assistant's summary, side by side with the Timeline and Entity Graph you already have open." />
+<TryIt where="the Assistant's summary from Question 6, side by side with the Timeline, Entity Graph, and Entity Catalog you already have open." />
 
 <details className="answer-reveal">
 <summary>Show answer</summary>
@@ -485,6 +486,6 @@ The knowledge graph gives the Assistant the same typed map of entities and relat
 
 ## Wrap-up
 
-You identified the source entity from its own vs propagated insights (Entity Catalog) and saw the blast radius from failing service to frontend (Entity Graph). You confirmed the OOMKill and right-sizing fix (Kubernetes Monitoring), found the feature-flag change that started it all (RCA Workbench), confirmed the crash in logs and its impact in traces (Drilldown), and verified the Assistant's analysis against the same timeline.
+You started with the Assistant's hypothesis from the RCA Workbench, then manually verified each claim. You checked the source entity and its critical insights (Entity Catalog), the blast radius through the services that call it (Entity Graph), the memory saturation and OOMKill (Kubernetes Monitoring), the feature-flag change that started it all (Timeline), the cache-filling behavior in logs (Drilldown), and the error propagation in traces. By combining the Assistant's end-to-end perspective with your own verification of each claim, you built real confidence in the root cause instead of just trusting automation.
 
-In Lab 4, you'll take these tools to a different application - the banking app.
+In Lab 4, you will take these tools to a different application - the banking app - and use them on a different kind of problem.

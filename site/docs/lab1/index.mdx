@@ -8,9 +8,16 @@ import EnvLink from '@site/src/components/EnvLink';
 
 # Lab 1 - See what your users see
 
-Support tickets are coming in about the `ecommerce` store: the site feels sluggish, and product images are slow to appear. Backend dashboards look fine - CPU is low, error rates are flat, and every service reports healthy.
+You are receiving support tickets about the `ecommerce` store. Users report that the site feels sluggish, and product images are slow to appear. When you check the backend dashboards, they look fine - CPU is low, error rates are flat, and every service reports healthy. This is the key challenge: the customer-facing problem is real, but your infrastructure metrics do not show it.
 
-In this lab you'll use [Frontend Observability](https://grafana.com/docs/grafana-cloud/monitor-applications/frontend-observability/), Grafana's real user monitoring product, powered by the [Faro Web SDK](https://grafana.com/docs/grafana-cloud/monitor-applications/frontend-observability/instrument/faro/). You'll find a problem that only exists in the browser. You'll work through Core Web Vitals, per-page performance, errors, user sessions, and the trace correlation that links the frontend to the backend.
+In this lab you will use [Frontend Observability](https://grafana.com/docs/grafana-cloud/monitor-applications/frontend-observability/), Grafana's real user monitoring product, to find problems that only exist in the browser. Backend dashboards alone would miss these. You'll work through Core Web Vitals, per-page performance, errors, user sessions, and the trace correlation that links the frontend to the backend so you can see the full picture.
+
+## Learning objectives
+
+- Understand Core Web Vitals and how they signal real user experience degradation
+- Use Frontend Observability to identify frontend performance regressions
+- Correlate frontend and backend traces to confirm where time is actually spent
+- Distinguish between performance issues and availability issues
 
 ## Instructions
 
@@ -18,9 +25,9 @@ Go to the URL in the slides for your Grafana Cloud stack. This lab uses the `eco
 
 :::info The scenario running
 
-A k6 load test drives steady user traffic against the store. The **`imageSlowLoad`** feature flag injects the fault: it adds a 1.5-3 second delay to the banner and product images. Expect Largest Contentful Paint (LCP) to be in the "poor" range on image-heavy pages. Page loads still succeed and errors stay flat, so this is a pure performance regression with no backend errors.
+There is steady user traffic against the store. The `imageSlowLoad` feature flag injects a fault: it adds a 1.5-3 second delay to the banner and product images. On image-heavy pages, you should expect to see Largest Contentful Paint (LCP) in the "poor" range. Page loads still succeed and errors stay flat, so this is a pure performance regression with no backend errors appearing.
 
-It runs automatically **every day during a default window of 06:00-08:00 UTC**.
+It runs automatically every day during a default window of 06:00-08:00 UTC.
 
 :::
 
@@ -32,11 +39,11 @@ Try each question on your own first. The **Show answer** block under each questi
 
 :::
 
-*Imagine you're on call. Customers say the ecommerce site feels slow, but every backend dashboard is green. Where do you start? At the same place your users do: in the browser.*
+When you are on call and customers say the ecommerce site feels slow, but every backend dashboard is green, where do you start? At the same place your users do: in the browser.
 
-In Grafana, open the left-hand menu and select **Observability** -> **Frontend**. You'll see a list of every application instrumented with Faro. Click into the `ecommerce` app.
+In Grafana, open the left-hand menu and select **Observability** -> **Frontend**. You will see a list of every application instrumented with Frontend Observability. Click into the `ecommerce` app.
 
-Then either set the time range yourself - cover **the slow-images window** (06:00-08:00 UTC - see the lab intro), starting about an hour before it so you can see the healthy baseline and the moment the slowdown began, and avoiding a much wider range like 24 hours, which would pick up the other lab scenarios and muddy the picture - or <EnvLink appIdKey="frontendAppId" path="/a/grafana-kowalski-app/apps/{appId}" from="06:00" to="08:00">jump straight there</EnvLink>: the link takes you to the right place and time range automatically (needs your environment ID and Frontend Observability app ID from the Welcome page).
+Next, set the time range to cover the slow-images window (06:00-08:00 UTC from the lab intro above). Start the range about an hour before that window so you can see the healthy baseline and the moment the slowdown began. Avoid a much wider range like 24 hours, which would pick up the other lab scenarios and make the picture unclear. Alternatively, <EnvLink appIdKey="frontendAppId" path="/a/grafana-kowalski-app/apps/{appId}" from="06:00" to="08:00">jump straight there</EnvLink>: the link takes you to the right place and time range automatically (needs your environment ID and Frontend Observability app ID from the Welcome page).
 
 <div style={{maxWidth: '340px'}}>
 
@@ -54,14 +61,14 @@ The app opens on the **Overview** tab.
 
 **How many page loads have there been, and are any of them failing?**
 
-Before you look for problems, get your baseline.
+Before you look for problems, get your baseline. It is important to establish what healthy looks like so you can recognize what is not.
 
 <TryIt where="the Page Loads panel on the Overview tab - successful loads in blue, failed loads in red." />
 
 <details className="answer-reveal">
 <summary>Show answer</summary>
 
-Traffic is steady and the **Page Loads** panel is essentially all blue - pages are loading successfully. Nothing is failing outright, so this is a performance problem, not an availability problem.
+Traffic is steady and the **Page Loads** panel is essentially all blue, which means pages are loading successfully. Nothing is failing outright, so this is a performance problem rather than an availability problem. This distinction matters: a broken system requires a different investigation path than a slow one.
 
 **How to find it:**
 
@@ -83,7 +90,7 @@ Traffic is steady and the **Page Loads** panel is essentially all blue - pages a
 
 **Which Core Web Vital is in the "poor" (red) range, and what does it measure?**
 
-Grafana surfaces Google's [Core Web Vitals](https://grafana.com/docs/grafana-cloud/monitor-applications/frontend-observability/instrument/web-vitals/) as color-coded tiles - green (good), amber (needs improvement), red (poor) - measured at the 75th percentile of real users.
+Grafana surfaces Google's [Core Web Vitals](https://grafana.com/docs/grafana-cloud/monitor-applications/frontend-observability/instrument/web-vitals/) as color-coded tiles - green (good), amber (needs improvement), red (poor) - measured at the 75th percentile of real users. The answer below explains what each vital measures.
 
 <TryIt where="the Core Web Vitals row on the Overview tab. Hover the ? on each tile to see what it measures." />
 
@@ -170,16 +177,16 @@ The slowdown is global. With **Explore by** set to **LCP**, every region is red 
 
 **Open the Errors tab. Are exceptions elevated during this window?**
 
-It's easy to assume that "slow" and "broken" go together.
+It is easy to assume that "slow" and "broken" go together, but they are separate problems requiring different fixes.
 
 <TryIt where="the Errors tab - the Top Exceptions, Top URLs, and Top Browsers panels." />
 
 <details className="answer-reveal">
 <summary>Show answer</summary>
 
-No. Exceptions are flat - **Top Exceptions** shows nothing new that lines up with the slowdown. The pages render correctly. They're just slow.
+Exceptions are flat, so there is nothing new in **Top Exceptions** that lines up with the slowdown. The pages render correctly. They are just slow.
 
-> **Why this matters:** there is no error to catch here - no 500 in a log, no failing span. The only evidence of a real, revenue-affecting problem is a Web Vital measured in the browser. Without RUM, this incident is invisible.
+This matters because there is no error to catch here - no 500 in a log, no failing span. The only evidence of a real, revenue-affecting problem is a Web Vital measured in the browser. Without real user monitoring, this incident would be invisible to you.
 
 **How to find it:**
 
@@ -197,9 +204,9 @@ No. Exceptions are flat - **Top Exceptions** shows nothing new that lines up wit
 
 **Open a session on an affected page. In its event timeline, what specifically took so long?**
 
-Each session is one visitor's timeline - navigations, network calls, errors, and traces in order.
+Each session is one visitor's timeline - navigations, network calls, errors, traces, and a video replay of the user's experience (session replay).
 
-<TryIt where="the Sessions tab. Click a Session ID to open the session. Its Activity section lists every event, starting with the Page Load event." />
+<TryIt where="the Sessions tab. Click a Session ID to open the session. Its Activity section lists every event, starting with the Page Load event. You can also watch the session replay to see the page as the user did." />
 
 > **Seeing "No session data in this time range"?** Two common causes:
 >
@@ -239,7 +246,7 @@ That localizes the problem completely: image assets, on image-heavy pages, in th
 
 **Follow a slow page's request into its backend trace. Where did the time actually go?**
 
-Faro links browser spans to backend distributed traces (the backend returns a `Server-Timing` / `traceparent` header, and Faro stitches them together). Before calling this a frontend issue, confirm it with a trace.
+Frontend Observability links browser activity to backend traces, so you can see exactly where time is spent. Before calling this a frontend issue, confirm it with a trace.
 
 <TryIt where="an HTTP event in the session's Activity list - the Traces tab in its drawer shows the linked backend trace." />
 
@@ -273,6 +280,6 @@ The application is fast. Open an API request from a session and view its trace: 
 
 ## Wrap-up
 
-You found a customer-facing problem that never showed up in a backend dashboard: a slow-image regression visible only through real user monitoring. You confirmed the LCP regression, narrowed it to the image-heavy pages, ruled out errors, and pinned the slow image requests in a real user session. A trace then proved the application itself was healthy: the delay sits in front of it, on the image responses. You also saw how **Explain in Assistant** reads a trace and reaches the same conclusion, which you verified against your own findings.
+You found a customer-facing problem that never showed up in a backend dashboard: a slow-image regression visible only through real user monitoring. You confirmed the LCP regression, narrowed it to the image-heavy pages, ruled out errors, and pinned the slow image requests in a real user session. A trace then proved the application itself was healthy, which means the delay sits in front of it at the image response level. You also saw how the Assistant reads a trace and reaches the same conclusion, and you verified that conclusion against your own findings. This is the pattern you will repeat across the labs: find the signal, trace it to the source, and verify with the tools available.
 
 In Lab 2, a similar frontend symptom will lead somewhere different - into a database query.

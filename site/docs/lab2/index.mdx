@@ -8,9 +8,16 @@ import EnvLink from '@site/src/components/EnvLink';
 
 # Lab 2 - From symptom to slow query
 
-A new complaint about the `ecommerce` store: product pages hang for several seconds before the recommendations appear. It's slow rather than broken, and it started recently. This time the trail doesn't stop at the browser - it leads through a trace and into the database.
+A new complaint is coming in about the `ecommerce` store: product pages hang for several seconds before the recommendations appear. It is slow rather than broken, and it started recently. This time the trail does not stop at the browser - it leads through a trace and into the database, which is where the real investigation begins.
 
-In this lab you'll use [Database Observability](https://grafana.com/docs/grafana-cloud/monitor-applications/database-observability/). It's been GA since April 2026 and covers MySQL and PostgreSQL, self-managed or managed (RDS, Aurora, Cloud SQL, Azure). Grafana Alloy collects the data, with no agent on the database host. You'll work through the **Queries Overview**, per-query metrics, the **Explain Plan**, **Table Schema Details**, and the Grafana Assistant's query optimization.
+In this lab you will use [Database Observability](https://grafana.com/docs/grafana-cloud/monitor-applications/database-observability/). It has been GA since April 2026 and covers MySQL and PostgreSQL, whether self-managed or managed (RDS, Aurora, Cloud SQL, Azure). Grafana Alloy collects the data with no agent required on the database host. You will work through the Queries Overview, per-query metrics, the Explain Plan, Table Schema Details, and the Grafana Assistant's query optimization. Together, these give you both the high-level problem and the specific fix needed.
+
+## Learning objectives
+
+- Correlate frontend symptoms to backend database queries using traces
+- Identify expensive queries by their execution profile (high duration, rows examined)
+- Use Explain Plans to diagnose full table scans and non-sargable predicates
+- Verify fixes with the Grafana Assistant and reconcile them against database metrics
 
 ## Instructions
 
@@ -18,9 +25,9 @@ Use the Grafana Cloud stack from the slides. This lab uses the `ecommerce` app a
 
 :::info The scenario running
 
-A k6 load test drives steady browse and checkout traffic. The **`recommendationsFromOrderAnalysis`** feature flag switches the recommendation service to build its "you might also like" results with an inefficient query against the orders database. Expect product pages to hang for several seconds while recommendations load. The delay traces down to a single expensive SQL query, not a broken service.
+There is steady browse and checkout traffic against the store. The `recommendationsFromOrderAnalysis` feature flag switches the recommendation service to build its "you might also like" results with an inefficient query against the orders database. Product pages hang for several seconds while recommendations load. The delay traces down to a single expensive SQL query, not a broken service itself.
 
-It runs automatically **every day during a default window of 09:00-10:00 UTC**. The query history that each run accumulates is what fills the Queries Overview, samples, and explain plans.
+It runs automatically every day during a default window of 09:00-10:00 UTC. The query history that each run accumulates is what fills the Queries Overview, samples, and explain plans.
 
 :::
 
@@ -32,7 +39,7 @@ Try each question on your own first. The **Show answer** block under each questi
 
 :::
 
-*The complaint is about the frontend, but the delay is coming from somewhere downstream. Follow it.*
+The complaint comes from the frontend, but the delay originates somewhere downstream. Your job is to follow it there and find the root cause.
 
 ## Getting there: frontend -> trace -> query
 
@@ -122,14 +129,14 @@ Hover the query text (or open it) to read the full statement. It's a set of nest
 
 **Look at the Calls, Duration, and Rows Examined columns for that query. What do they tell you?**
 
-A query can be a problem because it runs thousands of times (each one cheap), or because each individual run is expensive. The columns tell you which - and that changes the fix.
+A query can be a problem for two different reasons: it runs thousands of times with each execution cheap, or each individual run is expensive. These columns tell you which one you are dealing with, and that choice determines the fix.
 
 <TryIt where="the query's row in the Queries Overview - the Calls, Duration (avg), Rows Examined, and Rows Sent columns." />
 
 <details className="answer-reveal">
 <summary>Show answer</summary>
 
-This query has a modest call count but a high average duration - and a huge **Rows Examined** count compared to **Rows Sent**. It reads enormous numbers of rows to return only a few. That's an expensive-per-run query, not a high-frequency one.
+This query has a modest call count but a high average duration, and a huge **Rows Examined** count compared to **Rows Sent**. It reads enormous numbers of rows but returns only a few. This is an expensive-per-run query, not a high-frequency one. That distinction matters for how you fix it.
 
 Click the query to open **Query Details**. The **Rows** panel makes the imbalance clear: **Rows Examined** peaks around **22.9M rows/s** while **Rows Sent** is about **10 rows/s**. The **Duration** panel shows average runs of ~9 minutes (P99 over 11). It scans millions of rows to return a handful.
 
@@ -323,6 +330,6 @@ The instance's own insights already name the problem: high CPU load and spikes. 
 
 ## Wrap-up
 
-You started at a slow product page, followed the `open-product-detail` user action into a trace, and saw the recommendation service's call to the orders database take almost the whole request. From there, Database Observability let you name the exact query and diagnose it: a correlated subquery, full scans, and an index defeated by `UPPER()`. You confirmed it saturated the RDS instance's CPU, then got a concrete fix from the Assistant, which you verified against the plan and schema you'd already read.
+You started at a slow product page and followed the `open-product-detail` user action into a trace, where you saw the recommendation service's call to the orders database take almost the whole request. Database Observability then let you name the exact query and diagnose it: a correlated subquery, full scans, and an index defeated by `UPPER()`. You confirmed it saturated the RDS instance's CPU, which is why the slowdown reached customers. The Assistant gave you a concrete fix, which you verified against the explain plan and schema you had already read. This workflow - trace to query to plan to fix - is the one you will use whenever database performance questions arise.
 
-In Lab 3, the problem has a much wider blast radius, and you'll use the Knowledge Graph to map it.
+In Lab 3, the problem has a much wider blast radius across multiple services, and you will use the Knowledge Graph to map it.

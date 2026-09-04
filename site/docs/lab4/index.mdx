@@ -8,9 +8,16 @@ import EnvLink from '@site/src/components/EnvLink';
 
 # Lab 4 - Follow the N+1 by its shape
 
-A new application this time: **Grafana Bank**, an online-banking app. The **transaction history** page loads fine, and nothing is erroring. But each load fires more than twenty near-identical database queries. It's fast today, so nothing has alerted. This is a latent N+1: the page works now, but the query count grows with traffic and won't scale.
+This is a new application: **Grafana Bank**, an online-banking app. The **transaction history** page loads fine, and nothing is erroring. However, each load fires more than twenty near-identical database queries. It is fast today, so no alert has triggered, but this is a latent N+1 problem. The page works now, but the query count grows with traffic, and eventually it will not scale.
 
-In this lab you'll lead with **[Traces Drilldown](https://grafana.com/docs/grafana/latest/explore/simplified-exploration/traces/)**, then confirm what you find in **Database Observability**. Traces Drilldown is queryless: you explore by clicking through **Rate / Errors / Duration** and span attributes, with no TraceQL to write. The problem here is an access pattern, an N+1 query. Trace shape reveals that pattern. Single-query metrics miss it.
+In this lab you will start with the Grafana Assistant as an explorer, then confirm what it finds by investigating manually in Traces Drilldown and Database Observability. Traces Drilldown is queryless - you explore by clicking through Rate / Errors / Duration and span attributes without writing TraceQL. The problem here is an access pattern: an N+1 query. Trace shape reveals that pattern in ways that single-query metrics cannot.
+
+## Learning objectives
+
+- Use Traces Drilldown to identify access patterns that metrics alone would miss
+- Distinguish between fast-per-query and N+1 patterns by trace shape and call count
+- Correlate trace repetition with database metrics to confirm the pattern
+- Understand why request-level context matters when using the Assistant
 
 ## Instructions
 
@@ -18,9 +25,9 @@ Use the Grafana Cloud stack from the slides. This lab uses the **banking** app.
 
 :::info The scenario running
 
-A k6 load test drives steady traffic against the banking app. The **`transactionsNPlusOne`** feature flag makes the transaction-history endpoint enrich each transaction row one at a time: one database lookup per row instead of a single batched query. That's the N+1. The page responds quickly with nothing erroring, but a single request fans out into 25+ tiny, near-identical `SELECT m.name, c.name FROM merchants ... WHERE m.lookup_ref = ?` queries.
+There is steady traffic against the banking app. The `transactionsNPlusOne` feature flag makes the transaction-history endpoint enrich each transaction row one at a time: one database lookup per row instead of a single batched query. That is the N+1 pattern. The page responds quickly with nothing erroring, but a single request fans out into 25+ tiny, near-identical queries.
 
-**It's always on.** Unlike the other labs, the N+1 runs continuously in the banking app, on a steady stream of traffic. Any recent window shows it - there's no incident time to pin.
+It is always on. Unlike the other labs, the N+1 runs continuously in the banking app on a steady stream of traffic. Any recent window shows it, so there is no specific incident time to pin.
 
 :::
 
@@ -32,19 +39,54 @@ Try each question on your own first. The **Show answer** block under each questi
 
 :::
 
-*The transaction history page works and isn't erroring. Duration alone won't flag it - the answer is in the shape of the trace.*
+The transaction history page works and is not erroring. Duration alone will not flag this problem because the answer is in the shape of the trace - in the repetition that metrics cannot see.
 
-Open **Drilldown** -> **Traces** and select the banking Tempo data source. Everything here works by clicking - choose a signal, a RED metric, and filters as chips.
+## Question 1: Ask the Assistant to explore the banking app
 
-Then either set the time range yourself - about the **last 3 hours**. There's no incident window to pin. The N+1 runs continuously, so any recent window works, and 3 hours gives Database Observability plenty of samples later. Or <EnvLink path="/a/grafana-exploretraces-app/explore" timeParam="none" params="from=now-3h&to=now&var-ds=grafanacloud-traces&var-primarySignal=nestedSetParent%3C0&var-filters=resource.k8s.namespace.name%7C%3D%7Cbanking-prod&var-metric=rate&var-groupBy=resource.service.name&var-spanListColumns=&var-latencyThreshold=&var-partialLatencyThreshold=&var-durationPercentiles=0.9&actionView=breakdown&timezone=browser">jump straight there</EnvLink>: the link takes you to the right place and time range automatically, opening Traces Drilldown on the Rate metric, filtered to the `banking-prod` namespace and broken down by service, over the last 3 hours (needs your environment ID from the Welcome page).
+**Ask the Assistant to investigate the transaction-history request across both traces and the database. Is there anything inefficient about how it accesses data?**
 
-![Traces Drilldown](/img/lab4/4.1-traces-drilldown.png)
+Start with the [Grafana Assistant](https://grafana.com/docs/grafana-cloud/machine-learning/assistant/). Rather than asking a pre-built question, ask it to explore and report what it finds. This approach trains it to work as an investigator, not just to apply a fix.
+
+Use a prompt like: *"The banking app's transaction-history page loads fine with no errors. Does the request have an efficient data-access pattern across traces and the database? Investigate."*
+
+<TryIt where="the Grafana Assistant button in the top-right corner of Grafana.">Investigate before revealing the answer below.</TryIt>
+
+<details className="answer-reveal">
+<summary>Show answer</summary>
+
+The Assistant should identify an N+1 pattern: a single request fires many repeated, identical database queries, each one fast but wasteful in aggregate. It should recognize that this pattern will not show up in RED metrics alone because the page is not slow and not erroring.
+
+```
+The transaction-history request executes the same merchant/category lookup
+(SELECT m.name, c.name FROM merchants m JOIN categories c ... WHERE
+m.lookup_ref = ?) 25+ times per request - a high call count with a per-call
+duration of only a millisecond or two. That's an N+1 access pattern: many round-trips instead of
+one query. It isn't slow yet, but it won't scale.
+Fix: fetch the lookups in a single batched query or JOIN.
+```
+
+The key is whether it identified:
+- **The repeated span** within a single request (25+ identical merchant/category lookups)
+- **The high call count** in the database metrics
+- **The access pattern** (N+1) that won't scale
+
+If it did, you now have a hypothesis to verify. If it missed something, you'll fill in the gaps in the questions below.
+
+**How to find it:**
+
+1. Open the **Grafana Assistant**.
+2. Ask it to investigate the transaction-history request's data-access pattern across traces and database.
+3. Read its conclusion and any evidence it cites.
+
+</details>
 
 ---
 
-## Question 1: Is the transaction history request even slow?
+## Question 2: Verify - Is the transaction history request even slow?
 
-**Using the RED metrics, check the rate, errors, and duration for the banking services. What do they tell you?**
+**Verify the Assistant's claim that RED metrics alone wouldn't flag this. Check the rate, errors, and duration for the banking services.**
+
+Open **Drilldown** -> **Traces** and select the banking Tempo data source. Either set the time range yourself - about the **last 3 hours** - or <EnvLink path="/a/grafana-exploretraces-app/explore" timeParam="none" params="from=now-3h&to=now&var-ds=grafanacloud-traces&var-primarySignal=nestedSetParent%3C0&var-filters=resource.k8s.namespace.name%7C%3D%7Cbanking-prod&var-metric=rate&var-groupBy=resource.service.name&var-spanListColumns=&var-latencyThreshold=&var-partialLatencyThreshold=&var-durationPercentiles=0.9&actionView=breakdown&timezone=browser">jump straight there</EnvLink>.
 
 Traces Drilldown opens on the RED metrics - **Rate**, **Errors**, and a **Duration** heatmap. Add a `service.namespace` filter for `banking-prod` and select **Duration**.
 
@@ -73,9 +115,9 @@ The problem here isn't latency, so RED alone won't surface it. You have to look 
 
 ---
 
-## Question 2: What is the request actually doing?
+## Question 3: Verify - What is the request actually doing?
 
-**Open the Root cause latency tab. Where is the transaction-history request spending its time?**
+**Verify the Assistant's claim by looking at where the transaction-history request spends its time. Open the Root cause latency tab.**
 
 With the **Duration** metric selected, the **Root cause latency** tab builds an aggregated span tree from the matching traces, showing where the wall-clock time goes.
 
@@ -108,9 +150,9 @@ The important thing is what that `db.Query` bar hides. The structure rolls repea
 
 ---
 
-## Question 3: Confirm it in a single trace
+## Question 4: Verify - Confirm it in a single trace
 
-**Open one transaction-history trace and expand the DB spans. What query runs, and how many times?**
+**Confirm the repeated query. Open one transaction-history trace and expand the DB spans. What query runs, and how many times?**
 
 Aggregates point the way. A single trace confirms it.
 
@@ -153,9 +195,9 @@ Open **Database Observability** -> **Queries Overview** and find the query you s
 
 ---
 
-## Question 4: How does an N+1 look in the Queries Overview?
+## Question 5: Verify - How does an N+1 look in the Queries Overview?
 
-**Find the repeated query. What stands out about its Calls versus its Duration?**
+**Verify from the database side. Find the repeated query the trace showed. What stands out about its Calls versus its Duration?**
 
 In Lab 2 the culprit rose to the top when you sorted by **Duration**. An N+1 query has the opposite profile.
 
@@ -168,13 +210,17 @@ With the **MySQL** engine selected, search for `merchants` (the table the trace 
 
 ![Queries Overview - MySQL engine, searching for merchants](/img/lab4/4.5-queries-overview.png)
 
-One row comes back: `SELECT m.name, c.name FROM merchants m JOIN categories c ON c.id = m.category_id WHERE m.lookup_ref = ?` (instance `mysql`, database **bankingcustomer**), and its **Calls** count is already in the **thousands**. Queries are normalized, so every per-row execution collapses into this single row. The Calls column names the N+1 right away.
+One row comes back: `SELECT m.name, c.name FROM merchants m JOIN categories c ON c.id = m.category_id WHERE m.lookup_ref = ?` (instance `mysql`, database **bankingcustomer**), and its **Calls** count is already in the **tens of thousands**. Queries are normalized here - the `?` placeholder means every per-row execution, whatever `lookup_ref` it passed, collapses into this one row. So the fan-out that was spread across dozens of spans in the trace lands in a single number: the Calls column.
 
 ![The merchants query in the list - thousands of calls](/img/lab4/4.5-query-list.png)
 
-Open it and the profile is the mirror image of Lab 2's slow query: **Times Called** in the thousands (this run: ~8,790 in an hour) against an average **Duration** of just a few milliseconds (P99 in the low teens), with **Errors** flat at zero. Each execution is cheap and fast. There are just a huge number of them, and no single one would ever trip a slow-query threshold.
+Open it and the profile is the mirror image of Lab 2's slow query: **Times Called** in the tens of thousands (this run: ~23,574 over three hours) against an average **Duration** of a few milliseconds (P99 around 25ms), with **Errors** flat at zero. Each execution is cheap and fast. There are just a huge number of them, and no single one would ever trip a slow-query threshold.
 
 ![Query Details - thousands of calls against a few-millisecond duration, zero errors](/img/lab4/4.5-queries-by-calls.png)
+
+A high call count on its own doesn't prove an N+1 - plenty of healthy queries run tens of thousands of times across just as many requests. What makes this one an N+1 is where those calls come from. Over the same 3-hour window, the transaction endpoint served only about a thousand requests, yet this query ran more than 23,000 times. Divide one by the other and you get roughly two dozen executions per request - the same fan-out you counted in the trace. That is the tell: not the raw call count, but that the calls are concentrated into so few requests.
+
+This is why both views matter. Database Observability shows you a query is unusually busy; the trace shows you *why* - one request firing it 25-plus times. The database can't see request boundaries, so it can't tell an N+1 from honest traffic on its own. The trace supplies the missing context, and the two together name the pattern.
 
 **How to find it:**
 
@@ -187,9 +233,9 @@ Open it and the profile is the mirror image of Lab 2's slow query: **Times Calle
 
 ---
 
-## Question 5: How cheap is each execution?
+## Question 6: Verify - How cheap is each execution?
 
-**Open Query Samples. What does the per-execution timing look like - and what does the panel's own behaviour tell you?**
+**Verify the Assistant's claim by looking at individual executions. Open Query Samples - what does the per-execution timing look like?**
 
 **Query Samples** tries to plot real individual executions with their durations.
 
@@ -216,96 +262,66 @@ Over a wide range there are so many executions that the individual-sample panel 
 
 ---
 
-## Question 6: Why did the database metrics look "fine"? <Badge variant="optional">Optional</Badge>
+## Question 7: Verify - Why did the database metrics look "fine"? <Badge variant="optional">Optional</Badge>
 
-**Why wouldn't a standard slow-query or DB-CPU alert have caught this?**
+**Understand why a standard slow-query alert wouldn't have caught this. Why wouldn't DB-CPU alerts trigger either?**
 
-<TryIt where="no new screens - compare the Calls and Duration columns you've already seen, and think back to the trace." />
+<TryIt where="the Queries Overview list - scroll it right to see the Errors, Rate, Rows Examined and Rows Sent columns for the merchants query." />
 
 <details className="answer-reveal">
 <summary>Show answer</summary>
 
-Each query is fast and cheap, so per-query duration looks healthy and the database isn't CPU-saturated. Nothing crosses a slow-query line. The cost is the round-trip overhead multiplied by 25-plus calls per request - work that accrues in the application, *between* the queries, not inside any one of them. Today it hides in a fast page. As transaction volume grows, that per-row fan-out is where the page falls over.
+Every per-query metric an alert would watch looks healthy: **Duration** ~3ms, **Errors** 0%, a modest **Rate** of ~2 req/s. Each query is fast and cheap, so nothing crosses a slow-query line and the database isn't CPU-saturated.
+
+![The merchants query row - Duration, Errors and Rate all benign, but Rows Examined 5,003 to Rows Sent 1](/img/lab4/4.5-rows-examined.png)
+
+The one column that hints at trouble is **Rows Examined vs Rows Sent** - 5,003 scanned to return 1 - because `lookup_ref` is unindexed and every execution scans the table. But `merchants` is small, so that scan is still cheap, and a duration or CPU alert never sees it. (Hold that thought for the Assistant questions.)
+
+The real cost isn't in any single query. It's the round-trip overhead multiplied by 25-plus calls per request - work that accrues in the application, *between* the queries, not inside any one of them. Today it hides in a fast page. As transaction volume grows, that per-row fan-out is where the page falls over.
 
 That's why the trace found it first (it shows the repetition) and Database Observability confirmed it via call count rather than duration. The fix is architectural: fetch the rows in one batched query / JOIN instead of one at a time.
 
 **How to find it:**
 
-1. Compare this query's avg **Duration** (a millisecond or two) with its **Calls** (very high).
-2. Recall the trace: the time was the sum of many small spans, plus the overhead between them.
+1. In the Queries Overview list, scroll right to the merchants query's **Rows Examined** and **Rows Sent** columns.
+2. Note the benign **Duration**, **Errors** and **Rate**, then recall the trace: the real cost was the sum of many small spans, plus the overhead between them.
 
 </details>
 
 ---
 
-## Verify the Assistant
+## Question 8: Verify the Assistant's evidence
 
-*One last time: ask the [Grafana Assistant](https://grafana.com/docs/grafana-cloud/machine-learning/assistant/) to investigate, and check that it recognizes the pattern you found.*
+**Go back to the Assistant's conclusion from Question 1. Did it identify the pattern using real evidence - the repeated span and the call count?**
 
-:::note
-
-LLM output varies between runs. Judge the Assistant on whether it identifies the N+1 pattern and backs it with the same evidence - the high call count and the repeated span.
-
-:::
-
----
-
-## Question 7: What does the Assistant find?
-
-**Ask the Assistant to investigate the transaction-history request's data-access pattern.**
-
-Use a prompt like: *"On the banking app, look at the GET /api/transactions request across traces and the database. Is its database access pattern efficient? Nothing is erroring."*
-
-<TryIt where="the Grafana Assistant button in the top-right corner of Grafana.">Ask Grafana Assistant before revealing the answer below.</TryIt>
+<TryIt where="the Assistant's explanation and tool calls from Question 1 - check them against the trace (Questions 3-4) and the query metrics (Questions 5-6)." />
 
 <details className="answer-reveal">
 <summary>Show answer</summary>
 
-The Assistant should identify the N+1 pattern - a single request issuing many repeated, identical database queries, each fast but wasteful in aggregate - and recommend batching them into one query / JOIN.
+Check the Assistant's reasoning from Question 1 against what you just verified:
 
-```
-The transaction-history request executes the same merchant/category lookup
-(SELECT m.name, c.name FROM merchants m JOIN categories c ... WHERE
-m.lookup_ref = ?) 25+ times per request - a high call count with a per-call
-duration of only a millisecond or two. That's an N+1 access pattern: many round-trips instead of
-one query. It isn't slow yet, but it won't scale.
-Fix: fetch the lookups in a single batched query or JOIN.
-```
-
-**How to find it:**
-
-1. Open the **Grafana Assistant**.
-2. Ask it to investigate the transaction-history request across traces and the database.
-3. Read its conclusion and recommended fix.
-
-![Assistant identifies the N+1](/img/lab4/4.7-assistant-summary.png)
-
-</details>
-
----
-
-## Question 8: Verify its evidence
-
-**Did the Assistant reach the N+1 conclusion from real evidence - the repeated span and the call count?**
-
-<TryIt where="the Assistant's expanded tool calls - check them against the trace and the Calls column you saw earlier." />
-
-<details className="answer-reveal">
-<summary>Show answer</summary>
-
-Check its reasoning against yours:
-
-- Did it observe the **repeated database span** within one trace (the 25+ identical merchant/category lookups)?
-- Did it note the **high Calls / low Duration** shape in the query metrics?
-- Does its fix (batch / JOIN) actually address an N+1? An index suggestion, for example, wouldn't - the problem is the round-trip count, not the per-query cost.
+- Did it observe the **repeated database span** within one trace (the 25+ identical merchant/category lookups)? You confirmed this in Questions 3-4.
+- Did it note the **high Calls / low Duration** shape in the query metrics? You confirmed this in Questions 5-6.
+- Does its fix (batch / JOIN) actually address an N+1? The round-trip count is the problem, not the per-query cost.
 
 If the evidence maps to what you found, the conclusion is sound.
 
+**Now try a narrower view for comparison.** On the merchants Query Details page, use the query-scoped **Explain this query** button. This Assistant sees only the single query, not the request around it. It gives a sharp analysis - and reaches a different conclusion.
+
+![The query-scoped Explain this query Assistant - a full table scan on the unindexed lookup_ref](/img/lab4/4.7-explain-this-query.png)
+
+It finds the full table scan: `lookup_ref` is unindexed, so every execution scans ~5,003 rows to return 1. Its fix is to **add an index**.
+
+![The Assistant's performance impact - the 5,000-to-1 scan and an add-an-index recommendation](/img/lab4/4.7-explain-impact.png)
+
+That fix is real, but it isn't the N+1 fix. An index makes each of the 25-plus lookups faster; it doesn't remove the 25-plus round-trips. The evidence an AI reaches depends on the context you give it - the request-level view finds the N+1; the query-level view finds the index.
+
 **How to find it:**
 
-1. Expand the Assistant's tool calls.
-2. Confirm it cited the repeated span and the call count.
-3. Sanity-check that the fix fits an N+1 specifically.
+1. Review the Assistant's explanation from Question 1 and expand its tool calls - confirm it cited the repeated span and the call count.
+2. Compare against the manual verification you did: the repeated query (Question 3-4), the high call count (Question 5), the individual samples (Question 6).
+3. Then visit the merchants Query Details page and click **Explain this query** - see how it reaches a different conclusion from a narrower context.
 
 </details>
 
@@ -313,6 +329,8 @@ If the evidence maps to what you found, the conclusion is sound.
 
 ## Wrap-up
 
-Across four labs you've used **Frontend Observability**, **Database Observability**, **Kubernetes Monitoring**, the **Knowledge Graph** (Entity Catalog, Entity Graph, RCA Workbench), **Drilldown** for logs and traces, and the **Grafana Assistant** - each on a problem it's suited to. The pattern is the same everywhere: start from the user's symptom, pick the right lens, follow the evidence, and verify the AI.
+You started with the Assistant's hypothesis about the N+1 pattern and then manually verified it across three dimensions: the trace (repeated queries, each in milliseconds), the Queries Overview (high call count, low duration), and the Query Samples (dense band of fast executions). By letting the Assistant explore first as an investigator rather than just to apply a fix, you then confirmed or challenged its findings with hard evidence. This is the approach to take with AI in observability: leverage its end-to-end perspective, but always verify with the data you can see.
 
-Thanks for taking part!
+Across four labs you have used **Frontend Observability**, **Database Observability**, **Kubernetes Monitoring**, the **Knowledge Graph** (Entity Catalog, Entity Graph, RCA Workbench), **Drilldown** for logs and traces, and the **Grafana Assistant**. Each tool is suited to a specific kind of problem, but the pattern is the same everywhere: start from the symptom, pick the right lens, follow the evidence, and work with the AI as a thought partner, not as an answer machine that you must simply trust.
+
+Thank you for taking part in this workshop. The skills you have learned here will carry forward to every incident investigation you do.
